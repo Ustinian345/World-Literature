@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { continents } from "@/lib/data";
+import { continents, getWorksByContinent } from "@/lib/data";
 
 export function generateStaticParams() {
   return continents.map((c) => ({ slug: c.slug }));
@@ -25,6 +25,8 @@ async function ContinentContent({
   if (!continent) {
     notFound();
   }
+
+  const continentWorks = getWorksByContinent(continent.slug);
 
   // 找到相邻大洲用于底部导航
   const currentIndex = continents.findIndex((c) => c.slug === slug);
@@ -98,7 +100,7 @@ async function ContinentContent({
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
-            {continent.works.map((work) => (
+            {continentWorks.map((work) => (
               <article
                 key={work.title}
                 className="group flex flex-col overflow-hidden rounded-xl border border-sand/50 bg-warm-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover sm:flex-row"

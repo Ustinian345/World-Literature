@@ -73,21 +73,32 @@ export default function RootLayout({
 
             {/* 导航链接 */}
             <nav className="hidden items-center gap-1 md:flex" aria-label="主导航">
+              <Link
+                href="/"
+                className="rounded-md px-3 py-2 font-[system-ui] text-sm font-medium text-umber-light transition-colors hover:bg-sand/50 hover:text-umber"
+              >
+                首页
+              </Link>
+              <Link
+                href="/browse"
+                className="rounded-md px-3 py-2 font-[system-ui] text-sm font-medium text-umber-light transition-colors hover:bg-sand/50 hover:text-umber"
+              >
+                浏览全部
+              </Link>
               {[
-                { href: "#home", label: "首页" },
-                { href: "#asia", label: "亚洲" },
-                { href: "#europe", label: "欧洲" },
-                { href: "#africa", label: "非洲" },
-                { href: "#americas", label: "美洲" },
-                { href: "#oceania", label: "大洋洲" },
+                { href: "/continents/asia", label: "亚洲" },
+                { href: "/continents/europe", label: "欧洲" },
+                { href: "/continents/africa", label: "非洲" },
+                { href: "/continents/americas", label: "美洲" },
+                { href: "/continents/oceania", label: "大洋洲" },
               ].map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="rounded-md px-3 py-2 font-[system-ui] text-sm font-medium text-umber-light transition-colors hover:bg-sand/50 hover:text-umber"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </nav>
 
