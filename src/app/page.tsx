@@ -161,7 +161,7 @@ export default function Home() {
             {featuredWorks.map((work) => (
               <Link
                 key={work.title}
-                href={`/continents/${work.continent}`}
+                href={`/works/${work.id}`}
                 className="group flex flex-col overflow-hidden rounded-lg border border-sand bg-warm-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
               >
                 <div

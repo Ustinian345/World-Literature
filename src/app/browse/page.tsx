@@ -180,7 +180,7 @@ export default function BrowsePage() {
               {filtered.map((work) => (
                 <Link
                   key={work.id}
-                  href={`/continents/${work.continent}`}
+                  href={`/works/${work.id}`}
                   className="group flex flex-col overflow-hidden rounded-xl border border-sand/50 bg-warm-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
                 >
                   {/* 封面渐变色块 */}
