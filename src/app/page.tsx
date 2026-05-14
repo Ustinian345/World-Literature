@@ -16,7 +16,7 @@ export default function Home() {
           </span>
 
           {/* 主标题 */}
-          <h1 className="mt-6 font-[family-name:var(--font-heading-cn)] text-5xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-heading-cn text-5xl font-black leading-tight text-white sm:text-6xl lg:text-7xl">
             世界文学
             <br />
             <span className="text-amber">总站</span>
@@ -63,7 +63,7 @@ export default function Home() {
             { value: "3,000+", label: "作品 / Works" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-1">
-              <span className="font-[family-name:var(--font-heading-en)] text-4xl font-black text-amber sm:text-5xl">
+              <span className="font-heading-en text-4xl font-black text-amber sm:text-5xl">
                 {stat.value}
               </span>
               <span className="font-[system-ui] text-xs text-cream/50 sm:text-sm">
@@ -81,7 +81,7 @@ export default function Home() {
             <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-amber-dark">
               Curator&apos;s Picks
             </span>
-            <h2 className="mt-3 font-[family-name:var(--font-heading-cn)] text-3xl font-bold text-umber sm:text-4xl">
+            <h2 className="mt-3 font-heading-cn text-3xl font-bold text-umber sm:text-4xl">
               精选推荐
             </h2>
             <p className="mx-auto mt-3 max-w-lg text-base text-umber-light">
@@ -121,7 +121,7 @@ export default function Home() {
                 <div
                   className={`flex h-48 items-center justify-center bg-gradient-to-br ${work.gradient}`}
                 >
-                  <span className="font-[family-name:var(--font-heading-cn)] text-2xl font-bold text-white/80">
+                  <span className="font-heading-cn text-2xl font-bold text-white/80">
                     {work.title}
                   </span>
                 </div>
@@ -130,13 +130,13 @@ export default function Home() {
                   <span className="font-[system-ui] text-xs font-medium text-amber-dark">
                     {work.country}
                   </span>
-                  <h3 className="mt-1 font-[family-name:var(--font-heading-cn)] text-xl font-bold text-umber">
+                  <h3 className="mt-1 font-heading-cn text-xl font-bold text-umber">
                     {work.title}
                   </h3>
-                  <p className="mt-0.5 font-[family-name:var(--font-body)] text-base italic text-umber-light">
+                  <p className="mt-0.5 font-body text-base italic text-umber-light">
                     {work.author}
                   </p>
-                  <blockquote className="mt-3 border-l-2 border-terracotta-light pl-3 font-[family-name:var(--font-body)] text-sm leading-relaxed text-umber-light/80">
+                  <blockquote className="mt-3 border-l-2 border-terracotta-light pl-3 font-body text-sm leading-relaxed text-umber-light/80">
                     {work.excerpt}
                   </blockquote>
                 </div>
@@ -218,7 +218,7 @@ export default function Home() {
               <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-amber-dark">
                 {continent.subtitle}
               </span>
-              <h2 className="mt-2 font-[family-name:var(--font-heading-cn)] text-3xl font-bold text-umber sm:text-4xl">
+              <h2 className="mt-2 font-heading-cn text-3xl font-bold text-umber sm:text-4xl">
                 {continent.title}
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-umber-light">
@@ -242,7 +242,7 @@ export default function Home() {
                     <span className="font-[system-ui] text-xs font-medium text-amber-dark">
                       {c.name}
                     </span>
-                    <h3 className="mt-1 font-[family-name:var(--font-heading-cn)] text-lg font-bold text-umber">
+                    <h3 className="mt-1 font-heading-cn text-lg font-bold text-umber">
                       {c.work}
                     </h3>
                   </div>
@@ -256,7 +256,7 @@ export default function Home() {
       {/* ===== 底部 CTA ===== */}
       <section className="bg-umber py-20 text-center">
         <div className="mx-auto max-w-2xl px-5">
-          <h2 className="font-[family-name:var(--font-heading-cn)] text-3xl font-bold text-cream sm:text-4xl">
+          <h2 className="font-heading-cn text-3xl font-bold text-cream sm:text-4xl">
             开启你的文学之旅
           </h2>
           <p className="mt-4 text-lg text-cream/60">

@@ -59,12 +59,12 @@ export default function RootLayout({
         </a>
 
         {/* 导航栏 */}
-        <header className="fixed top-0 z-100 flex h-16 w-full items-center border-b border-sand/40 bg-cream/90 backdrop-blur-sm transition-shadow">
+        <header className="fixed top-0 z-50 flex h-16 w-full items-center border-b border-sand/40 bg-cream/90 backdrop-blur-sm transition-shadow">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5">
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2 font-[family-name:var(--font-heading-cn)] text-xl font-bold text-umber no-underline"
+              className="flex items-center gap-2 font-heading-cn text-xl font-bold text-umber no-underline"
               aria-label="世界文学总站 — 回到首页"
             >
               <span aria-hidden="true">&#9998;</span>
@@ -137,7 +137,7 @@ export default function RootLayout({
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
               {/* 品牌 */}
               <div>
-                <p className="font-[family-name:var(--font-heading-cn)] text-lg font-bold text-cream">
+                <p className="font-heading-cn text-lg font-bold text-cream">
                   世界文学
                 </p>
                 <p className="mt-3 font-[system-ui] text-sm leading-relaxed">
