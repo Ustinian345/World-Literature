@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Playfair_Display, Noto_Serif_SC, EB_Garamond } from "next/font/google";
 import "./globals.css";
 
@@ -61,14 +62,14 @@ export default function RootLayout({
         <header className="fixed top-0 z-100 flex h-16 w-full items-center border-b border-sand/40 bg-cream/90 backdrop-blur-sm transition-shadow">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5">
             {/* Logo */}
-            <a
+            <Link
               href="/"
               className="flex items-center gap-2 font-[family-name:var(--font-heading-cn)] text-xl font-bold text-umber no-underline"
               aria-label="世界文学总站 — 回到首页"
             >
               <span aria-hidden="true">&#9998;</span>
               <span className="hidden sm:inline">世界文学</span>
-            </a>
+            </Link>
 
             {/* 导航链接 */}
             <nav className="hidden items-center gap-1 md:flex" aria-label="主导航">
