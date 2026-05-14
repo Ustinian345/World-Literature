@@ -3,16 +3,17 @@ import { notFound } from "next/navigation";
 import { allWorks, continents } from "@/lib/data";
 import { bookDetails } from "@/lib/book-data";
 import { generateWorkDetail } from "@/lib/analysis-generator";
+import { BookCover } from "@/components/BookCover";
+import { HeroParticles } from "@/components/HeroParticles";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { PlotTimeline } from "@/components/PlotTimeline";
+import { FlipCharacters } from "@/components/FlipCharacters";
 
 export function generateStaticParams() {
   return allWorks.map((w) => ({ id: w.id }));
 }
 
-export default function WorkPage({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
+export default function WorkPage({ params }: { params: Promise<{ id: string }> }) {
   return <WorkContent params={params} />;
 }
 
@@ -23,16 +24,23 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
   const detail = bookDetails[id] || generateWorkDetail(work);
   const continent = continents.find((c) => c.slug === work.continent);
+  const readTime = Math.max(3, Math.ceil(
+    (detail.plotSummary.length + detail.themeAnalysis.length + detail.techniques.length + detail.insights.length) / 800
+  ));
 
   return (
     <>
-      {/* ===== Hero 头部 ===== */}
-      <section className={`mt-16 bg-gradient-to-br ${work.gradient} relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 mx-auto max-w-4xl px-5 py-16 sm:py-24">
+      <ScrollProgress />
+      {/* ===== Hero 头部 — 视差+粒子+3D封面 ===== */}
+      <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${work.gradient}`}>
+        <HeroParticles gradient={work.gradient} />
+        <div className="absolute inset-0 bg-black/25" />
+
+        <div className="relative z-10 mx-auto max-w-6xl px-5 py-12 sm:py-20">
+          {/* 面包屑 */}
           <Link
             href={`/continents/${work.continent}`}
-            className="inline-flex items-center gap-1.5 font-[system-ui] text-sm text-white/70 transition-colors hover:text-white"
+            className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-4 py-1.5 font-[system-ui] text-sm text-white/80 backdrop-blur-sm transition-colors hover:bg-white/20 hover:text-white"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path d="m15 18-6-6 6-6" />
@@ -40,179 +48,213 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             {continent?.icon} {continent?.name}文学
           </Link>
 
-          <div className="mt-6">
-            <h1 className="font-heading-cn text-4xl font-black text-white sm:text-5xl lg:text-6xl">
-              {work.title}
-            </h1>
-            {work.titleEn && (
-              <p className="mt-2 font-heading-en text-xl italic text-white/60">
-                {work.titleEn}
-              </p>
-            )}
+          {/* 书名 + 3D封面 */}
+          <div className="mt-8 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+            {/* 3D书本封面 */}
+            <div className="shrink-0 -rotate-2 transition-transform duration-500 hover:rotate-0 hover:scale-105">
+              <BookCover
+                title={work.title}
+                author={work.author}
+                gradient={work.gradient}
+              />
+            </div>
+
+            {/* 文字区域 */}
+            <div className="flex flex-col text-center sm:text-left">
+              <div className="mb-3 flex flex-wrap justify-center gap-1.5 sm:justify-start">
+                {work.genre.map((g) => (
+                  <span key={g} className="rounded-full border border-white/30 bg-white/10 px-3 py-0.5 font-[system-ui] text-xs text-white/90 backdrop-blur-sm">
+                    {g}
+                  </span>
+                ))}
+              </div>
+
+              <h1 className="font-heading-cn text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+                {work.title}
+              </h1>
+
+              {work.titleEn && (
+                <p className="mt-2 font-heading-en text-xl italic text-white/55">
+                  {work.titleEn}
+                </p>
+              )}
+
+              <div className="mt-4 flex flex-wrap items-center gap-3 font-[system-ui] text-base text-white/75">
+                <span className="text-2xl">{work.flag}</span>
+                <span className="font-medium">{work.country}</span>
+                <span className="text-white/40">·</span>
+                <span className="font-body text-lg italic">{work.author}</span>
+                {work.year && (
+                  <>
+                    <span className="text-white/40">·</span>
+                    <span>{work.year > 0 ? `${work.year}年` : `公元前${-work.year}年`}</span>
+                  </>
+                )}
+              </div>
+
+              {/* 元数据标签 */}
+              <div className="mt-4 flex flex-wrap items-center gap-3 font-[system-ui] text-sm text-white/60">
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 backdrop-blur-sm">
+                  📖 约{readTime}分钟阅读
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 backdrop-blur-sm">
+                  🏷️ {work.era.replace(" (—", " — ").replace(")", "")}
+                </span>
+                <span className="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 backdrop-blur-sm">
+                  🎨 {work.themes.slice(0, 3).join(" · ")}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 底部渐变波浪 */}
+        <div className="relative z-10 h-16">
+          <svg className="absolute bottom-0 w-full" viewBox="0 0 1440 64" preserveAspectRatio="none">
+            <path d="M0,32 C360,64 720,0 1080,32 C1260,48 1380,16 1440,16 L1440,64 L0,64 Z" fill="var(--color-cream)" opacity="0.15" />
+            <path d="M0,48 C480,16 960,64 1440,48 L1440,64 L0,64 Z" fill="var(--color-cream)" opacity="0.25" />
+          </svg>
+        </div>
+      </section>
+
+      {/* ===== 简介 — 首字下沉 ===== */}
+      <section className="bg-cream py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl px-5">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-terracotta text-xl shadow-md">📖</span>
+            <h2 className="font-heading-cn text-2xl font-bold text-umber">作品简介</h2>
           </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3 font-[system-ui] text-sm text-white/75">
-            <span className="text-xl">{work.flag}</span>
-            <span>{work.country}</span>
-            <span>· {work.author}</span>
-            {work.year && (
-              <span>· {work.year > 0 ? `${work.year}年` : `公元前${-work.year}年`}</span>
-            )}
-            <span>· {work.era.replace(" (—", " — ").replace(")", "")}</span>
-          </div>
+          <div className="rounded-2xl border border-sand/40 bg-warm-white p-6 shadow-card sm:p-8">
+            {/* 关键信息面板 */}
+            <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {[
+                { label: "地区", value: `${work.flag} ${work.country}` },
+                { label: "作者", value: work.author },
+                { label: "年代", value: work.era.replace(" (—", " — ").replace(")", "") },
+                { label: "体裁", value: work.genre[0] },
+              ].map((info) => (
+                <div key={info.label} className="rounded-xl bg-cream px-3 py-2.5 text-center">
+                  <div className="font-[system-ui] text-[10px] uppercase tracking-wider text-umber-light/50">{info.label}</div>
+                  <div className="mt-0.5 font-[system-ui] text-xs font-medium text-umber">{info.value}</div>
+                </div>
+              ))}
+            </div>
 
-          <div className="mt-3 flex flex-wrap gap-1.5">
-            {work.genre.map((g) => (
-              <span key={g} className="rounded-full border border-white/30 px-3 py-0.5 font-[system-ui] text-xs text-white/80">
-                {g}
+            <p className="font-body text-lg leading-relaxed text-umber-light first-line:font-bold first-line:text-umber">
+              {work.excerpt}
+            </p>
+            <p className="mt-4 font-body text-lg leading-relaxed text-umber-light">
+              {detail.plotSummary}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== 人物介绍 — 翻转卡片 ===== */}
+      {detail.characters.length > 0 && (
+        <section className="bg-gradient-to-b from-cream to-parchment py-12 sm:py-16">
+          <div className="mx-auto max-w-4xl px-5">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-dark text-xl shadow-md">🎭</span>
+              <h2 className="font-heading-cn text-2xl font-bold text-umber">人物介绍</h2>
+            </div>
+            <FlipCharacters characters={detail.characters} />
+          </div>
+        </section>
+      )}
+
+      {/* ===== 情节脉络 — SVG动画时间线 ===== */}
+      {detail.plotNodes.length > 0 && (
+        <section className="bg-warm-white py-12 sm:py-16">
+          <div className="mx-auto max-w-4xl px-5">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-terracotta text-xl shadow-md">🕐</span>
+              <h2 className="font-heading-cn text-2xl font-bold text-umber">情节脉络</h2>
+              <span className="ml-auto rounded-full bg-parchment px-3 py-1 font-[system-ui] text-xs text-umber-light/60">
+                {detail.plotNodes.length} 个关键节点
               </span>
+            </div>
+            <PlotTimeline nodes={detail.plotNodes} gradient={work.gradient} />
+          </div>
+        </section>
+      )}
+
+      {/* ===== 主题分析 — 彩色卡片 ===== */}
+      <section className="bg-cream py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl px-5">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-umber text-xl shadow-md">💡</span>
+            <h2 className="font-heading-cn text-2xl font-bold text-umber">主题分析</h2>
+          </div>
+          <div className="space-y-5">
+            {detail.themeAnalysis.split(/\n\n/).filter(Boolean).map((paragraph, i) => (
+              <div
+                key={i}
+                className="group rounded-2xl border border-sand/40 bg-warm-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-card sm:p-6"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-amber/20 to-terracotta/20 font-heading-en text-sm font-bold text-terracotta">
+                    {i + 1}
+                  </span>
+                  <p className="font-body text-base leading-relaxed text-umber-light">{paragraph}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ===== 简介 ===== */}
-      <section className="bg-cream py-12 sm:py-16">
+      {/* ===== 写作手法 — 卡片网格 ===== */}
+      <section className="bg-gradient-to-b from-cream to-parchment py-12 sm:py-16">
         <div className="mx-auto max-w-4xl px-5">
-          <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-umber">
-            <span className="text-3xl">📖</span> 作品简介
-          </h2>
-          <p className="mt-4 font-body text-lg leading-relaxed text-umber-light">
-            {work.excerpt}
-          </p>
-          {detail && (
-            <p className="mt-4 font-body text-lg leading-relaxed text-umber-light">
-              {detail.plotSummary}
-            </p>
-          )}
+          <div className="flex items-center gap-3 mb-8">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-dark text-xl shadow-md">✍️</span>
+            <h2 className="font-heading-cn text-2xl font-bold text-umber">手法与语言分析</h2>
+          </div>
+          <div className="space-y-5">
+            {detail.techniques.split(/\n\n/).filter(Boolean).map((paragraph, i) => (
+              <div
+                key={i}
+                className="rounded-2xl border-l-4 border-amber bg-white p-5 shadow-sm transition-all duration-300 hover:border-l-[6px] hover:shadow-card sm:p-6"
+                style={{ transitionDelay: `${i * 50}ms` }}
+              >
+                <p className="font-body text-base leading-relaxed text-umber-light">{paragraph}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ===== 人物介绍 ===== */}
-      {detail && (
-        <section className="bg-warm-white py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-5">
-            <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-umber">
-              <span className="text-3xl">🎭</span> 人物介绍
-            </h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              {detail.characters.map((ch) => (
-                <div
-                  key={ch.name}
-                  className="rounded-xl border border-sand/50 bg-cream p-5 transition-shadow hover:shadow-card"
-                >
-                  <div className="flex items-baseline gap-2">
-                    <h3 className="font-heading-cn text-lg font-bold text-umber">
-                      {ch.name}
-                    </h3>
-                    <span className="rounded bg-amber/15 px-2 py-0.5 font-[system-ui] text-xs text-amber-dark">
-                      {ch.role}
-                    </span>
-                  </div>
-                  <p className="mt-2 font-body text-sm leading-relaxed text-umber-light">
-                    {ch.description}
-                  </p>
-                </div>
-              ))}
-            </div>
+      {/* ===== 经典摘抄 — 打字机风格 ===== */}
+      {detail.excerpts.length > 0 && (
+        <section className="bg-umber py-12 sm:py-16 relative overflow-hidden">
+          {/* 背景装饰 */}
+          <div className="pointer-events-none absolute inset-0 opacity-5">
+            <div className="absolute -top-20 -right-20 text-[20rem] font-heading-en text-white select-none">&ldquo;</div>
+            <div className="absolute -bottom-20 -left-20 text-[20rem] font-heading-en text-white select-none">&rdquo;</div>
           </div>
-        </section>
-      )}
 
-      {/* ===== 情节脉络 (CSS 时间线) ===== */}
-      {detail && detail.plotNodes.length > 0 && (
-        <section className="bg-cream py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-5">
-            <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-umber">
-              <span className="text-3xl">🕐</span> 情节脉络
-            </h2>
-
-            <div className="relative mt-8">
-              {/* 时间线竖线 */}
-              <div className="absolute left-4 top-2 bottom-2 w-0.5 bg-gradient-to-b from-terracotta via-amber to-terracotta-light sm:left-1/2 sm:-translate-x-px" />
-
-              <div className="space-y-8">
-                {detail.plotNodes.map((node, i) => (
-                  <div
-                    key={i}
-                    className={`relative flex items-start gap-6 sm:gap-10 ${
-                      i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-                    }`}
-                  >
-                    {/* 时间线圆点 */}
-                    <div className="absolute left-4 z-10 flex h-8 w-8 -translate-x-1/2 items-center justify-center rounded-full border-4 border-cream bg-terracotta sm:left-1/2">
-                      <span className="font-[system-ui] text-[10px] font-bold text-white">{i + 1}</span>
-                    </div>
-
-                    {/* 内容卡片 */}
-                    <div className={`ml-12 flex-1 sm:ml-0 sm:w-1/2 ${i % 2 === 0 ? "sm:pr-10 sm:text-right" : "sm:pl-10"}`}>
-                      <div className="rounded-xl border border-sand/50 bg-warm-white p-5 shadow-sm transition-shadow hover:shadow-card">
-                        <h4 className="font-heading-cn text-base font-bold text-umber">{node.label}</h4>
-                        <p className="mt-1.5 font-body text-sm leading-relaxed text-umber-light">{node.description}</p>
-                      </div>
-                    </div>
-
-                    {/* 右侧空白占位 */}
-                    <div className="hidden flex-1 sm:block sm:w-1/2" />
-                  </div>
-                ))}
-              </div>
+          <div className="relative z-10 mx-auto max-w-4xl px-5">
+            <div className="flex items-center gap-3 mb-8">
+              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-light/20 text-xl shadow-md">📝</span>
+              <h2 className="font-heading-cn text-2xl font-bold text-cream">经典摘抄</h2>
             </div>
-          </div>
-        </section>
-      )}
-
-      {/* ===== 主题分析 ===== */}
-      {detail && (
-        <section className="bg-warm-white py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-5">
-            <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-umber">
-              <span className="text-3xl">💡</span> 主题分析
-            </h2>
-            <div className="mt-4 space-y-4 font-body text-lg leading-relaxed text-umber-light">
-              {detail.themeAnalysis.split(/。\s*/).filter(Boolean).map((s, i) => (
-                <p key={i} className="rounded-lg border-l-4 border-terracotta-light bg-cream p-4 pl-5">
-                  {s.trim()}。
-                </p>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ===== 写作手法 ===== */}
-      {detail && (
-        <section className="bg-cream py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-5">
-            <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-umber">
-              <span className="text-3xl">✍️</span> 手法与语言分析
-            </h2>
-            <div className="mt-4 space-y-4 font-body text-lg leading-relaxed text-umber-light">
-              {detail.techniques.split(/。\s*/).filter(Boolean).map((s, i) => (
-                <p key={i} className="rounded-lg border-l-4 border-amber bg-parchment p-4 pl-5">
-                  {s.trim()}。
-                </p>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ===== 经典摘抄 ===== */}
-      {detail && detail.excerpts.length > 0 && (
-        <section className="bg-umber py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-5">
-            <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-cream">
-              <span className="text-3xl">📝</span> 经典摘抄
-            </h2>
-            <div className="mt-6 space-y-6">
+            <div className="space-y-8">
               {detail.excerpts.map((ex, i) => (
-                <blockquote key={i} className="rounded-xl border border-cream/10 bg-white/5 p-6">
-                  <p className="font-heading-cn text-xl leading-relaxed text-amber-light">
+                <blockquote key={i} className="group relative rounded-2xl border border-cream/10 bg-white/5 p-6 backdrop-blur-sm transition-all duration-300 hover:bg-white/8 sm:p-8">
+                  {/* 引用标记 */}
+                  <svg className="absolute -top-3 -left-3 h-8 w-8 text-amber-light/40" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
+                  </svg>
+
+                  <p className="font-heading-cn text-xl leading-relaxed text-amber-light sm:text-2xl">
                     「{ex.quote}」
                   </p>
-                  <footer className="mt-3 border-t border-cream/10 pt-3 font-body text-sm italic text-cream/50">
-                    {ex.context}
+                  <footer className="mt-4 flex items-center gap-3 border-t border-cream/10 pt-4">
+                    <div className="h-px flex-1 bg-cream/10" />
+                    <span className="font-body text-sm italic text-cream/45">{ex.context}</span>
+                    <div className="h-px flex-1 bg-cream/10" />
                   </footer>
                 </blockquote>
               ))}
@@ -222,41 +264,27 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       )}
 
       {/* ===== 阅读启发 ===== */}
-      {detail && (
-        <section className="bg-cream py-12 sm:py-16">
-          <div className="mx-auto max-w-4xl px-5">
-            <h2 className="flex items-center gap-3 font-heading-cn text-2xl font-bold text-umber">
-              <span className="text-3xl">🌟</span> 阅读启发
-            </h2>
-            <div className="mt-4 rounded-xl border border-amber/30 bg-gradient-to-br from-amber/5 to-terracotta/5 p-6">
-              <p className="font-body text-lg leading-relaxed text-umber-light">
-                {detail.insights}
-              </p>
+      <section className="bg-cream py-12 sm:py-16">
+        <div className="mx-auto max-w-4xl px-5">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber to-terracotta text-xl shadow-md">🌟</span>
+            <h2 className="font-heading-cn text-2xl font-bold text-umber">阅读启发</h2>
+          </div>
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber/5 via-cream to-terracotta/5 p-6 sm:p-8">
+            {/* 装饰元素 */}
+            <div className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-amber/5 blur-3xl" />
+            <div className="absolute -bottom-10 -left-10 h-40 w-40 rounded-full bg-terracotta/5 blur-3xl" />
+            <div className="relative">
+              <div className="flex items-start gap-3">
+                <span className="text-3xl">💭</span>
+                <p className="font-body text-lg leading-relaxed text-umber-light">
+                  {detail.insights}
+                </p>
+              </div>
             </div>
           </div>
-        </section>
-      )}
-
-      {/* 暂无详细分析的回退 */}
-      {!detail && (
-        <section className="bg-cream py-20 text-center">
-          <div className="mx-auto max-w-lg px-5">
-            <span className="text-5xl">📚</span>
-            <h2 className="mt-4 font-heading-cn text-2xl font-bold text-umber">
-              详细分析正在撰写中
-            </h2>
-            <p className="mt-3 font-body text-umber-light">
-              本书的深度文学分析（人物、情节脉络、主题、写作手法、摘抄及启发）即将上线，敬请期待。
-            </p>
-            <Link
-              href={`/continents/${work.continent}`}
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-terracotta px-6 py-2.5 font-[system-ui] text-sm text-white hover:bg-terracotta-dark"
-            >
-              浏览{continent?.name}其他作品
-            </Link>
-          </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* ===== 底部导航 ===== */}
       <section className="bg-parchment py-12">
@@ -264,15 +292,17 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           <div className="flex flex-wrap justify-center gap-3">
             <Link
               href={`/continents/${work.continent}`}
-              className="rounded-full border border-sand/50 bg-warm-white px-5 py-2 font-[system-ui] text-sm text-umber-light shadow-sm transition-all hover:border-amber/30 hover:text-umber"
+              className="inline-flex items-center gap-2 rounded-full border border-sand/50 bg-warm-white px-5 py-2.5 font-[system-ui] text-sm text-umber-light shadow-sm transition-all hover:border-amber/30 hover:text-umber hover:shadow-card"
             >
-              ← 返回{continent?.name}文学
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path d="m15 18-6-6 6-6" /></svg>
+              返回{continent?.name}文学
             </Link>
             <Link
               href="/browse"
-              className="rounded-full border border-sand/50 bg-warm-white px-5 py-2 font-[system-ui] text-sm text-umber-light shadow-sm transition-all hover:border-amber/30 hover:text-umber"
+              className="inline-flex items-center gap-2 rounded-full bg-umber px-5 py-2.5 font-[system-ui] text-sm text-cream shadow-sm transition-all hover:bg-umber-light"
             >
-              浏览全部作品 →
+              浏览全部作品
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path d="m9 18 6-6-6-6" /></svg>
             </Link>
           </div>
         </div>
