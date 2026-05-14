@@ -3,7 +3,11 @@
 import { useState, useMemo, use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { continents, getWorksByContinent, allGenres, allThemes, allEras } from "@/lib/data";
+import { continents, allWorks, allGenres, allThemes, allEras } from "@/lib/data";
+
+function getWorksByContinent(slug: string) {
+  return allWorks.filter((w) => w.continent === slug);
+}
 import type { Genre, Theme, Era } from "@/lib/data";
 
 export function ContinentContent({

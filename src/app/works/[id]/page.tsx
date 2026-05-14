@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { works, continents } from "@/lib/data";
+import { allWorks, continents } from "@/lib/data";
 import { bookDetails } from "@/lib/book-data";
+import { generateWorkDetail } from "@/lib/analysis-generator";
 
 export function generateStaticParams() {
-  return works.map((w) => ({ id: w.id }));
+  return allWorks.map((w) => ({ id: w.id }));
 }
 
 export default function WorkPage({
@@ -17,10 +18,10 @@ export default function WorkPage({
 
 async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const work = works.find((w) => w.id === id);
+  const work = allWorks.find((w) => w.id === id);
   if (!work) notFound();
 
-  const detail = bookDetails[id];
+  const detail = bookDetails[id] || generateWorkDetail(work);
   const continent = continents.find((c) => c.slug === work.continent);
 
   return (

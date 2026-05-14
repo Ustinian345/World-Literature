@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { works, allGenres, allThemes, allEras, continents } from "@/lib/data";
+import { allWorks as works, allGenres, allThemes, allEras, continents } from "@/lib/data";
 import type { Genre, Theme, Era, Continent } from "@/lib/data";
 
 export default function BrowsePage() {

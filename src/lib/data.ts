@@ -229,6 +229,19 @@ export const allEras: Era[] = ["古代 (—500)", "中世纪 (500—1500)", "文
 export const featuredWorks = works.filter((w) => w.featured);
 
 /** 热门话题 */
+/* ---------- 合并扩展数据 ---------- */
+
+import { uniqueExpandedWorks } from "./works";
+
+/** 全部作品 = 核心106部 + 扩展数据 */
+const allWorks = [...works, ...uniqueExpandedWorks.filter((ew) => !works.some((cw) => cw.id === ew.id))];
+
+export { allWorks as allWorks };
+
+export function getAllWorks(): Work[] {
+  return allWorks;
+}
+
 export const hotTopics = [
   { tag: "诺贝尔文学奖", href: "/browse", count: works.filter((w) => ["海明威", "泰戈尔", "川端康成", "马尔克斯", "库切", "莫里森", "怀特"].some((a) => w.author.includes(a))).length },
   { tag: "女性作家", href: "/browse", count: works.filter((w) => ["紫式部", "清少纳言", "简·奥斯汀", "艾米莉·勃朗特", "乔治·艾略特", "弗洛拉·恩瓦帕", "布奇·埃梅切塔", "伊莎贝尔·阿连德", "托妮·莫里森", "凯丽·休姆"].some((a) => w.author.includes(a))).length },
