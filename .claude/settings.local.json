@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /tmp)",
+      "Bash(npx create-next-app@latest *)",
+      "Bash(mv CLAUDE.md.bak /tmp/CLAUDE.md.bak)",
+      "Bash(mv .claude.bak /tmp/.claude.bak)"
+    ]
+  }
+}
