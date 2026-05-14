@@ -2,7 +2,8 @@ import type { Work } from "../data";
 import { asianWorks } from "./asia";
 import { europeanWorks } from "./europe";
 import { africanWorks, americasWorks, oceaniaWorks } from "./africa-americas-oceania";
-import { bulkWorks, generatedWorks } from "./bulk-expansion";
+import { bulkWorks } from "./bulk-expansion";
+import { realWorks } from "./real-expansion";
 
 export const expandedWorks: Work[] = [
   ...asianWorks,
@@ -11,7 +12,7 @@ export const expandedWorks: Work[] = [
   ...americasWorks,
   ...oceaniaWorks,
   ...bulkWorks,
-  ...generatedWorks,
+  ...realWorks,
 ];
 
 // 去重
