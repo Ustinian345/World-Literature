@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { allWorks, continents } from "@/lib/data";
 import { bookDetails } from "@/lib/book-data";
+import { allCharacters } from "@/lib/character-data";
 import { generateWorkDetail } from "@/lib/analysis-generator";
 import { BookCover } from "@/components/BookCover";
 import { HeroParticles } from "@/components/HeroParticles";
@@ -22,7 +23,16 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
   const work = allWorks.find((w) => w.id === id);
   if (!work) notFound();
 
-  const detail = bookDetails[id] || generateWorkDetail(work);
+  const generated = generateWorkDetail(work);
+  const custom = bookDetails[id];
+  const realCharacters = allCharacters[id];
+  // Start with generated content (plot, themes, techniques)
+  // Overlay custom book details if they exist
+  let detail = custom ? ({ ...generated, ...custom } as typeof generated) : generated;
+  // Characters ALWAYS from character-data.ts if available (single source of truth)
+  if (realCharacters) {
+    detail = { ...detail, characters: realCharacters };
+  }
   const continent = continents.find((c) => c.slug === work.continent);
   const readTime = Math.max(3, Math.ceil(
     (detail.plotSummary.length + detail.themeAnalysis.length + detail.techniques.length + detail.insights.length) / 800

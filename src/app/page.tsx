@@ -1,7 +1,10 @@
 import Link from "next/link";
-import { continents, featuredWorks, hotTopics } from "@/lib/data";
+import { continents, featuredWorks, hotTopics, allWorks } from "@/lib/data";
 
 export default function Home() {
+  const countrySet = new Set(allWorks.map(w => w.country));
+  const totalCountries = countrySet.size;
+
   return (
     <>
       {/* ===== 英雄区 ===== */}
@@ -56,8 +59,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-4xl grid-cols-3 divide-x divide-cream/10 px-5">
           {[
             { value: "6", label: "大洲 Continents" },
-            { value: "100+", label: "国家 Countries" },
-            { value: "3,000+", label: "作品 Works" },
+            { value: totalCountries + "+", label: "国家 Countries" },
+            { value: allWorks.length + "+", label: "作品 Works" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col items-center gap-1">
               <span className="font-heading-en text-4xl font-black text-amber sm:text-5xl">

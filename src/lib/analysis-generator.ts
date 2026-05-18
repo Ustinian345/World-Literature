@@ -4,7 +4,7 @@
 // ================================================================
 
 import type { Work } from "./data";
-import type { WorkDetail, Character, PlotNode, Excerpt } from "./book-data";
+import type { WorkDetail, PlotNode, Excerpt } from "./book-data";
 
 /* ---------- 辅助 ---------- */
 
@@ -102,202 +102,6 @@ function getCultureContext(work: Work): CultureContext {
   if (["尼日利亚", "肯尼亚", "南非", "塞内加尔", "加纳", "埃及", "苏丹", "津巴布韦", "喀麦隆"].some(c => country.includes(c))) return cultureDB.africa;
   if (["澳大利亚", "新西兰"].some(c => country.includes(c))) return cultureDB.oceania;
   return cultureDB.westEurope;
-}
-
-/* ---------- 人物姓名库 ---------- */
-
-const nameDB: Record<string, { male: string[]; female: string[]; family: string[] }> = {
-  china: {
-    family: ["林", "苏", "沈", "陆", "顾", "周", "陈", "赵", "柳", "萧", "韩", "叶", "卫", "慕容"],
-    male: ["文渊", "子安", "明远", "景行", "逸飞", "云深", "怀瑾", "清和", "知远", "若虚", "修竹", "凌云"],
-    female: ["若兰", "素心", "明瑾", "望舒", "采薇", "灵均", "幽兰", "清漪", "晓霜", "落霞", "映月", "飞琼"],
-  },
-  japan: {
-    family: ["佐藤", "田中", "高橋", "渡辺", "中村", "小林", "加藤", "吉田", "山田", "松本"],
-    male: ["健一", "直人", "拓也", "翔太", "大輔", "誠", "智也", "陽太", "涼介", "優真"],
-    female: ["由美子", "恵美", "千夏", "明日香", "美咲", "桜", "葵", "陽子", "凛", "楓"],
-  },
-  india: {
-    family: ["夏尔马", "古普塔", "帕特尔", "雷迪", "库马尔", "辛格", "乔希", "梅赫塔"],
-    male: ["阿琼", "维克拉姆", "拉胡尔", "迪帕克", "阿米特", "卡尔提克", "希瓦", "拉维"],
-    female: ["普丽雅", "安贾莉", "迪维亚", "拉克希米", "米拉", "西塔", "卡维塔", "妮哈"],
-  },
-  persia: {
-    family: ["", ""],
-    male: ["菲尔多斯", "贾姆希德", "巴赫拉姆", "达拉布", "库斯老", "鲁斯坦姆", "卡乌斯"],
-    female: ["希琳", "蕾莉", "薇思", "沙赫扎德", "帕里", "马赫塔布", "古尔巴努"],
-  },
-  russia: {
-    family: ["伊万诺夫", "彼得罗夫", "索科洛夫", "沃尔科夫", "莫罗佐夫", "库兹涅佐夫"],
-    male: ["德米特里", "阿列克谢", "尼古拉", "弗拉基米尔", "谢尔盖", "米哈伊尔", "鲍里斯", "安德烈"],
-    female: ["安娜", "叶卡捷琳娜", "玛丽亚", "奥尔加", "娜塔莉亚", "索菲亚", "薇拉", "塔季扬娜"],
-  },
-  westEurope: {
-    family: ["", ""],
-    male: ["威廉", "亨利", "爱德华", "查尔斯", "托马斯", "让-皮埃尔", "弗朗索瓦", "古斯塔夫", "汉斯", "弗里德里希"],
-    female: ["伊丽莎白", "凯瑟琳", "玛格丽特", "夏洛特", "艾玛", "玛丽", "安妮", "索菲", "克拉拉", "海伦"],
-  },
-  latinAmerica: {
-    family: ["", ""],
-    male: ["何塞", "卡洛斯", "胡安", "米格尔", "佩德罗", "迭戈", "巴勃罗", "费尔南多", "加夫列尔"],
-    female: ["玛丽亚", "卡门", "伊莎贝尔", "埃琳娜", "卢西亚", "索菲亚", "瓦伦蒂娜", "罗莎"],
-  },
-  africa: {
-    family: ["", ""],
-    male: ["奥孔库沃", "奥比", "恩沃耶", "伊克梅富纳", "埃泽乌鲁", "科菲", "阿马杜", "巴巴", "伊德里斯", "齐库"],
-    female: ["埃弗鲁", "阿米娜", "法蒂玛", "恩戈齐", "阿达玛", "奇迪", "莫妮克", "阿伊莎"],
-  },
-  oceania: {
-    family: ["", ""],
-    male: ["杰克", "詹姆斯", "托马斯", "帕特里克", "内德", "利亚姆", "诺亚"],
-    female: ["露西", "格蕾丝", "鲁比", "玛蒂尔达", "夏洛特", "艾拉"],
-  },
-  usa: {
-    family: ["", ""],
-    male: ["以实玛利", "亚哈", "哈克", "盖茨比", "霍尔顿", "阿提克斯", "塞林格", "威廉"],
-    female: ["海丝特", "黛西", "斯嘉丽", "嘉莉", "西莉", "埃斯特", "乔"],
-  },
-};
-
-function getName(work: Work, seed: number): { male: string; female: string } {
-  const country = work.country;
-  const db = (() => {
-    if (country.includes("中国")) return nameDB.china;
-    if (country.includes("日本")) return nameDB.japan;
-    if (country.includes("印度")) return nameDB.india;
-    if (country.includes("波斯") || country.includes("伊朗")) return nameDB.persia;
-    if (country.includes("俄")) return nameDB.russia;
-    if (country.includes("美")) return nameDB.usa;
-    if (["哥伦比亚", "阿根廷", "秘鲁", "智利", "墨西哥", "巴西"].some(c => country.includes(c))) return nameDB.latinAmerica;
-    if (["尼日利亚", "肯尼亚", "南非", "塞内加尔", "加纳", "埃及", "苏丹"].some(c => country.includes(c))) return nameDB.africa;
-    if (["澳大利亚", "新西兰"].some(c => country.includes(c))) return nameDB.oceania;
-    return nameDB.westEurope;
-  })();
-
-  const prefix = db.family.length > 0 && db.family[0] !== "" ? pick(db.family, seed) : "";
-  const male = prefix ? prefix + pick(db.male, seed + 1) : pick(db.male, seed + 1);
-  const female = prefix ? prefix + pick(db.female, seed + 2) : pick(db.female, seed + 2);
-  return { male, female };
-}
-
-/* ---------- 人物生成 ---------- */
-
-function generateCharacters(work: Work, seed: number): Character[] {
-  const names = getName(work, seed);
-  const chars: Character[] = [];
-  const s = seed;
-
-  const isNarrative = work.genre.some(g => ["小说", "戏剧", "史诗"].includes(g));
-  const isPoetry = work.genre.includes("诗歌");
-  const isEssay = work.genre.includes("散文/随笔");
-  const isFolklore = work.genre.includes("民间故事");
-
-  if (isNarrative) {
-    // === 小说/戏剧/史诗：生成 3-5 个具体角色 ===
-
-    // --- 角色1：核心人物（必有）---
-    const heroArchetypes = [
-      {
-        role: "悲剧英雄",
-        desc: `${names.male}是${work.country}${work.era.replace(" (—", "(")}社会的一个缩影。他出身平凡却怀揣着超越自身处境的理想——这理想与${work.themes[0] || "命运"}密切相关。作者以极其精细的笔触刻画了他从天真到幻灭的精神历程：最初他相信可以通过个人努力改变命运，但在经历了${work.themes[1] || work.themes[0] || "一连串打击"}之后，他终于明白有些事情远比个人的意志更加强大。他的悲剧不在于失败，而在于明知会失败却依然前行——这种'知其不可为而为之'的勇气使他超越了具体的时代而成为一个永恒的文学形象。`,
-      },
-      {
-        role: "追寻者",
-        desc: `${names.male}的一生是一场漫长的追寻——他追寻的不是某个具体的目标，而是${work.themes[0] || "生命的意义"}本身。在${work.country}${work.era.replace(" (—", "(")}的时代背景下，这种追寻显得尤为孤独：他周围的人安于现状、顺从命运，只有他始终不安地追问、不断地出发。作者赋予了他一种近乎偏执的敏感——他能看到常人看不到的东西，也因此承受了常人无法理解的痛苦。他的旅程不仅是地理上的远行，更是精神上的朝圣。当他最终站在旅程终点时，所谓的'答案'已不再重要——追寻本身已经改变了他，也改变了每一个阅读他故事的读者。`,
-      },
-      {
-        role: "觉醒者",
-        desc: `${names.female}原本是${work.country}社会中最普通不过的一个女性——顺从、沉默、安于她被分配的角色。但${work.themes[0] || "命运"}的冲击唤醒了蛰伏在她灵魂深处的力量。她的觉醒不是一蹴而就的，而是经历了无数次的怀疑、退缩和重新站起。作者以惊人的细腻捕捉了她内心的每一次波动：当她第一次质疑外界强加给她的规则时，当她在深夜独自面对自己真实的欲望时，当她最终做出那个改变一切的决定时——这些时刻构成了全书最动人的情感暗流。她的故事在${work.era.replace(" (—", "(")}的社会背景下显得尤为珍贵，因为她所挑战的不是某一个人，而是一整套根深蒂固的秩序。`,
-      },
-    ];
-
-    // --- 角色2：对立力量（必有）---
-    const antagonistArchetypes = [
-      {
-        role: "体制的化身",
-        desc: `${names.male}并非通常意义上的'坏人'——事实上，在大多数场合下他温文尔雅、受人尊敬。但他所代表的力量——${work.themes[1] || "传统秩序"}的不可动摇性——使他成为了主人公最危险的对立者。他不是出于个人恶意而与主人公对抗，而是因为主人公的存在本身就是对这套秩序的根本挑战。在这部作品中，作者通过这一人物的塑造提出了一个令人不安的问题：当'恶'不是来自个人的邪恶而是来自体制本身的运作逻辑时，反抗的意义何在？`,
-      },
-      {
-        role: "诱惑者",
-        desc: `${names.female}身上凝聚着${work.themes[0] || "欲望"}的全部魅力与危险。她/他不是以强迫而是以引诱的方式进入主人公的世界——她/他让主人公看到了另一种生活的可能，一种既有致命吸引力又暗藏毁灭风险的可能。在与她/他的互动中，主人公暴露了自己性格中最脆弱也最真实的一面。这一人物的复杂性在于：她/他既非纯粹的善也非纯粹的恶——她/他是欲望本身的化身，而欲望总是同时带来欢乐与痛苦。`,
-      },
-      {
-        role: "对手兼镜像",
-        desc: `${names.male}与主人公之间的关系远非简单的'敌对'所能概括。在某种程度上，他是主人公'本可以成为的那个人'——或者说，他是主人公的黑暗镜像。两人出身相近、资质相当，却在人生的关键节点做出了截然不同的选择。作者通过这两个人物的对照，巧妙地呈现了${work.themes[0] || "选择"}与${work.themes[1] || "命运"}之间的微妙关系：是选择塑造了命运，还是命运早已决定了选择？当两人最终对决时，那不仅是两个个体的冲突，更是两种人生哲学的对撞。`,
-      },
-    ];
-
-    // --- 角色3：关键人物（根据主题变化）---
-    const supportArchetypes = [
-      {
-        role: "精神导师",
-        desc: `${names.male}在作品中的出场可能不多，但每一次出现都深刻地改变了主人公的人生方向。他/她的话语往往简短而含蓄，却蕴含着${work.country}文化中千锤百炼的智慧。他/她并不直接告诉主人公该做什么，而是通过一种近乎禅宗的方式——一个故事、一个问句、一段沉默——让主人公自己找到答案。在${work.themes[0] || "关键"}的问题上，导师提供的是启示而非教条，是方向而非地图。他的离去（或死亡）往往是主人公精神独立的真正起点。`,
-      },
-      {
-        role: "红颜知己/灵魂伴侣",
-        desc: `${names.female}是这部作品中唯一真正'看见'主人公的人。在所有人都只看到主人公的表象时，她穿透了层层的伪装直达他的灵魂深处。她与主人公的关系超越了世俗的界定——不是妻不是妾不是恋人，而是一种更为本质的灵魂契合。她以自己的善解人意和坚定的支持成为了主人公在黑暗时刻的精神支柱。但她并非一个被动的'支持者'——她有着自己独立的精神世界和判断力，她选择站在主人公身边不是因为盲目的爱，而是因为深刻的认同。`,
-      },
-      {
-        role: "叛离者",
-        desc: `${names.male}最初是主人公最亲近的同盟者之一，却在中途选择了离开——甚至背叛。这一转折不是出于利益的计算，而是出于信念的分歧。他/她所信奉的价值与主人公走上了不同的方向，而两者之间没有简单的是非对错。这一人物的存在使作品的道德版图变得更加复杂：在${work.themes[0] || "核心"}问题上，'正确'与'错误'的边界从未如此模糊。他/她的离场留下了一个无法填补的空缺——而这空缺本身构成了主人公精神成长的关键契机。`,
-      },
-      {
-        role: "默默守护者",
-        desc: `${names.female}自始至终站在主人公身后，却从不要求任何回报。她/他的手并不强大，却总是在最关键时刻伸出。在${work.country}${work.era.replace(" (—", "(")}的社会环境中，她/他的位置是边缘的、被忽视的，但正是从这种边缘的位置上，她/他看到了那些站在舞台中央的人所看不见的东西。她的善良不是软弱的善良，而是一种经历了苦难之后仍然愿意去爱的勇气。作者通过这一人物向那些在历史中被遗忘的'小人物'致以了最深的敬意。`,
-      },
-    ];
-
-    const hero = pick(heroArchetypes, s);
-    const antag = pick(antagonistArchetypes, s + 3);
-    const supp1 = pick(supportArchetypes, s + 7);
-    const supp2 = pick(supportArchetypes, s + 13);
-
-    chars.push({ name: names.male, role: hero.role, description: hero.desc });
-    chars.push({ name: pick([names.male, names.female], s + 1), role: antag.role, description: antag.desc });
-    chars.push({ name: pick([names.female, names.male], s + 2), role: supp1.role, description: supp1.desc });
-    // 史诗和长篇小说多一些人物
-    if (work.genre.includes("史诗") || work.genre.includes("小说")) {
-      const supp2b = pick(supportArchetypes, s + 19);
-      // 避开重复角色类型
-      const usedRoles = [hero.role, antag.role, supp1.role];
-      if (!usedRoles.includes(supp2b.role)) {
-        chars.push({ name: pick([names.male, names.female], s + 5), role: supp2b.role, description: supp2b.desc });
-      } else {
-        chars.push({ name: pick([names.male, names.female], s + 5), role: supp2.role, description: supp2.desc });
-      }
-    }
-
-  } else if (isPoetry) {
-    // === 诗歌：抒情主体 + 具体的意象人格 ===
-    const poetArchetypes = [
-      { role: "漂泊的吟游者", desc: `诗集的声音是一个在${work.country}大地上独自漫游的灵魂。他/她走过山川河流、市井荒村，将所见所感凝结为诗句。${work.themes[0] || "自然"}是他/她永远的主题——不是作为被观察的客体，而是作为与诗人对话的活的存在。在这部诗集中，每一个景象都是一种心境，每一次季节的更替都是一种生命的隐喻。诗人在孤独中完成了与世界的对话。` },
-      { role: "被放逐的隐士", desc: `这部诗集的声音来自一个被${work.country}主流社会边缘化的人。在政治失意或仕途受挫之后，他/她将精神的归宿转向了山林、田园和诗酒。但这种'隐居'并非真正的逃避——在那些看似闲适的诗句之下，是对${work.themes[0] || "现实"}的深沉忧虑。诗人以'不说'的方式说出了最想说的话，以'忘却'的姿态记住了最不该忘记的东西。` },
-      { role: "恋人", desc: `诗集的抒情主体沉浸在一段刻骨铭心的${work.themes.includes("爱情") ? "爱情" : "情感"}之中。他/她将最私密的感受——思念的焦灼、重逢的狂喜、别离的痛楚——化为公共的诗篇。${work.country}诗歌传统中的独特象征系统在这部诗集中被运用到了极致：每一个意象都同时是写实的和隐喻的，每一种情感都在具体的景物中找到了对应。` },
-    ];
-    const poet = pick(poetArchetypes, s);
-    chars.push({ name: `"我"（抒情主体）`, role: poet.role, description: poet.desc });
-
-  } else if (isEssay || isFolklore) {
-    // === 散文/民间故事 ===
-    chars.push({
-      name: "叙述者",
-      role: isEssay ? "思考的主体" : "故事的传承者",
-      description: isEssay
-        ? `这部作品的叙述者是${work.country}${work.era.replace(" (—", "(")}社会中一个敏锐的观察者。他/她将日常生活的细微体验与${work.themes[0] || "生命"}的终极思考交织在一起，在平凡的细节中发现了不平凡的意义。他/她的声音兼具学者式的博学和常人式的亲切——仿佛一位智者在炉边与你促膝长谈。`
-        : `这部民间故事的叙述声音是集体性的——它背后是${work.country}世世代代口耳相传的无名讲述者。在这部作品中，古老的故事原型被赋予了${work.country}特有的色彩与温度。故事中的角色既是具体的人物，也是${work.themes.join("与")}等人类基本经验的象征性承载者。`,
-    });
-  }
-
-  // 哲学类作品的特殊处理
-  if (work.genre.includes("哲学")) {
-    chars.push({
-      name: "思想的对话者",
-      role: "哲思的人格化",
-      description: `${names.male}并非通常意义上的'角色'，而是${work.country}哲学传统中某种思想立场的人格化。在作品中，他与不同的声音展开了一场跨越时空的对话——这些声音有时来自他的同时代人，有时来自古老的传统，有时来自他自己内心的怀疑。通过这些对话，${work.title}所探讨的核心问题——${work.themes.join("、")}——获得了多角度的、立体的呈现。`,
-    });
-  }
-
-  return chars;
 }
 
 /* ---------- 情节脉络生成 ---------- */
@@ -493,7 +297,7 @@ export function generateWorkDetail(work: Work): WorkDetail {
 
   return {
     id: work.id,
-    characters: generateCharacters(work, seed),
+    characters: [], // Characters sourced from character-data.ts (single source of truth)
     plotSummary: `${work.excerpt}\n\n${work.author}的《${work.title}》是${work.country}文学中的一座丰碑。这部创作于${work.era.replace(" (—", "(")}的作品，以${
       work.genre[0]
     }的形式探讨了${work.themes.slice(0, 3).join("、")}等核心主题。${getCultureContext(work).tradition.split("。")[0]}，而《${

@@ -225,10 +225,6 @@ export const allGenres: Genre[] = ["小说", "诗歌", "戏剧", "史诗", "散�
 export const allThemes: Theme[] = ["爱情", "战争", "历史", "哲学", "社会", "冒险", "心理", "魔幻", "宗教", "自然"];
 export const allEras: Era[] = ["古代 (—500)", "中世纪 (500—1500)", "文艺复兴 (1500—1700)", "近代 (1700—1900)", "现代 (1900—1950)", "当代 (1950—)"];
 
-/** 获取精选作品 */
-export const featuredWorks = works.filter((w) => w.featured);
-
-/** 热门话题 */
 /* ---------- 合并扩展数据 ---------- */
 
 import { uniqueExpandedWorks } from "./works";
@@ -242,13 +238,17 @@ export function getAllWorks(): Work[] {
   return allWorks;
 }
 
+/** 获取精选作品 — from allWorks */
+export const featuredWorks = allWorks.filter((w) => w.featured).slice(0, 12);
+
+/** 热门话题 — counts from allWorks */
 export const hotTopics = [
-  { tag: "诺贝尔文学奖", href: "/browse", count: works.filter((w) => ["海明威", "泰戈尔", "川端康成", "马尔克斯", "库切", "莫里森", "怀特"].some((a) => w.author.includes(a))).length },
-  { tag: "女性作家", href: "/browse", count: works.filter((w) => ["紫式部", "清少纳言", "简·奥斯汀", "艾米莉·勃朗特", "乔治·艾略特", "弗洛拉·恩瓦帕", "布奇·埃梅切塔", "伊莎贝尔·阿连德", "托妮·莫里森", "凯丽·休姆"].some((a) => w.author.includes(a))).length },
-  { tag: "魔幻现实主义", href: "/browse", count: works.filter((w) => w.themes.includes("魔幻")).length },
-  { tag: "存在主义", href: "/browse", count: works.filter((w) => ["加缪", "萨特", "贝克特", "卡夫卡"].some((a) => w.author.includes(a))).length },
-  { tag: "反乌托邦", href: "/browse", count: works.filter((w) => w.id === "1984").length },
-  { tag: "史诗传统", href: "/browse", count: works.filter((w) => w.genre.includes("史诗")).length },
-  { tag: "诗歌复兴", href: "/browse", count: works.filter((w) => w.genre.includes("诗歌")).length },
-  { tag: "后殖民文学", href: "/browse", count: works.filter((w) => ["阿契贝", "恩古吉", "库切", "萨利赫", "阿尔马"].some((a) => w.author.includes(a))).length },
+  { tag: "诺贝尔文学奖", href: "/browse", count: allWorks.filter((w) => ["海明威", "泰戈尔", "川端康成", "马尔克斯", "库切", "莫里森", "格拉斯", "石黑一雄", "帕慕克"].some((a) => w.author.includes(a))).length },
+  { tag: "女性作家", href: "/browse", count: allWorks.filter((w) => ["紫式部", "清少纳言", "简·奥斯汀", "艾米莉·勃朗特", "乔治·艾略特", "弗洛拉·恩瓦帕", "布奇·埃梅切塔", "伊莎贝尔·阿连德", "托妮·莫里森", "凯丽·休姆", "张爱玲", "阿特伍德"].some((a) => w.author.includes(a))).length },
+  { tag: "魔幻现实主义", href: "/browse", count: allWorks.filter((w) => w.themes.includes("魔幻")).length },
+  { tag: "存在主义", href: "/browse", count: allWorks.filter((w) => ["加缪", "萨特", "贝克特", "卡夫卡", "陀思妥耶夫斯基"].some((a) => w.author.includes(a))).length },
+  { tag: "反乌托邦", href: "/browse", count: allWorks.filter((w) => w.id === "1984" || w.themes.includes("社会")).length },
+  { tag: "史诗传统", href: "/browse", count: allWorks.filter((w) => w.genre.includes("史诗")).length },
+  { tag: "诗歌复兴", href: "/browse", count: allWorks.filter((w) => w.genre.includes("诗歌")).length },
+  { tag: "后殖民文学", href: "/browse", count: allWorks.filter((w) => ["阿契贝", "恩古吉", "库切", "萨利赫", "法农", "奈保尔", "拉什迪"].some((a) => w.author.includes(a))).length },
 ];
