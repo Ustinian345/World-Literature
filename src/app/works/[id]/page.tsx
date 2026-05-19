@@ -14,7 +14,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { ReadingControls } from "@/components/ReadingControls";
 import { RelatedWorks } from "@/components/RelatedWorks";
 import { CulturalPattern } from "@/components/CulturalPattern";
-import { HeroBackground } from "@/components/HeroBackground";
+import { SceneIllustration } from "@/components/SceneIllustration";
 import { QuoteCopy } from "@/components/QuoteCopy";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { ShareButton } from "@/components/ShareButton";
@@ -57,27 +57,16 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       <ScrollProgress />
       <BookmarkButton workId={id} />
 
-      {/* ===== Hero 头部 — 场景背景 + 文化图案 + 粒子 ===== */}
-      <section className="relative mt-16 overflow-hidden">
-        {/* 底层：场景插画背景（6源爬虫） */}
-        <HeroBackground
-          title={work.title}
-          titleEn={work.titleEn}
-          author={work.author}
-          continent={work.continent}
-          gradient={work.gradient}
-          characters={detail.characters.map(c => c.name)}
-          plotNodes={detail.plotNodes.map(n => n.label)}
-        />
-
-        {/* 纹理层：文化图案 */}
-        <CulturalPattern continent={work.continent} opacity={0.03} />
+      {/* ===== Hero 头部 — 渐变 + 文化图案 + 粒子 ===== */}
+      <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${work.gradient}`}>
+        {/* 文化图案纹理 */}
+        <CulturalPattern continent={work.continent} opacity={0.05} />
 
         {/* 动态粒子 */}
         <HeroParticles gradient={work.gradient} />
 
-        {/* 呼吸动效叠加 — 极淡 */}
-        <div className="absolute inset-0 bg-black/5 hero-gradient-overlay pointer-events-none" />
+        {/* 暗色叠加 + 呼吸动效 */}
+        <div className="absolute inset-0 bg-black/20 hero-gradient-overlay" />
 
         <div className="relative z-20 mx-auto max-w-6xl px-5 py-14 sm:py-24">
           {/* 面包屑 */}
@@ -215,6 +204,15 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
               </div>
             </div>
           </div>
+
+          {/* 经典场景插画 */}
+          <SceneIllustration
+            title={work.title}
+            titleEn={work.titleEn}
+            author={work.author}
+            characters={detail.characters.map(c => c.name)}
+            plotNodes={detail.plotNodes.map(n => n.label)}
+          />
         </div>
         </SectionReveal>
       </section>
