@@ -57,9 +57,9 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       <ScrollProgress />
       <BookmarkButton workId={id} />
 
-      {/* ===== Hero 头部 — 场景背景 + 文化图案 + 粒子 + 视差 ===== */}
-      <section className="relative mt-16 overflow-hidden bg-umber">
-        {/* 底层：场景插画背景（Openverse API） */}
+      {/* ===== Hero 头部 — 场景背景 + 文化图案 + 粒子 ===== */}
+      <section className="relative mt-16 overflow-hidden">
+        {/* 底层：场景插画背景（6源爬虫） */}
         <HeroBackground
           title={work.title}
           titleEn={work.titleEn}
@@ -71,13 +71,13 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
         />
 
         {/* 纹理层：文化图案 */}
-        <CulturalPattern continent={work.continent} opacity={0.04} />
+        <CulturalPattern continent={work.continent} opacity={0.03} />
 
         {/* 动态粒子 */}
         <HeroParticles gradient={work.gradient} />
 
-        {/* 呼吸动效叠加 */}
-        <div className="absolute inset-0 bg-black/15 hero-gradient-overlay" />
+        {/* 呼吸动效叠加 — 极淡 */}
+        <div className="absolute inset-0 bg-black/5 hero-gradient-overlay pointer-events-none" />
 
         <div className="relative z-20 mx-auto max-w-6xl px-5 py-14 sm:py-24">
           {/* 面包屑 */}

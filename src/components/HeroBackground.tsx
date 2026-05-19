@@ -153,26 +153,26 @@ export function HeroBackground({ title, titleEn, author, continent, gradient, ch
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Base gradient */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-55`} />
+      {/* Base gradient — always present as fallback */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
 
-      {/* Scene image with parallax */}
+      {/* Scene image with parallax — higher opacity so it's visible */}
       {bgUrl && (
         <div
           ref={parallaxRef}
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${bgUrl})`,
-            opacity: source === "openlibrary" || source === "google-books" ? 0.5 : 0.32,
+            opacity: 0.7,
           }}
         />
       )}
 
       {/* Loading skeleton */}
-      {!bgUrl && <div className="absolute inset-0 animate-pulse bg-umber/8" />}
+      {!bgUrl && <div className="absolute inset-0 animate-pulse bg-white/5" />}
 
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-umber/45 via-umber/8 to-umber/75" />
+      {/* Subtle dark overlay — just enough for white text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
     </div>
   );
 }
