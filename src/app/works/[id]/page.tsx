@@ -212,7 +212,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             author={work.author}
             gradient={work.gradient}
             characters={detail.characters}
-            plotNodes={detail.plotNodes.map(n => n.label)}
+            plotNodes={detail.plotNodes.map(n => ({ label: n.label, description: n.description }))}
           />
         </div>
         </SectionReveal>
