@@ -66,6 +66,8 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           author={work.author}
           continent={work.continent}
           gradient={work.gradient}
+          characters={detail.characters.map(c => c.name)}
+          plotNodes={detail.plotNodes.map(n => n.label)}
         />
 
         {/* 纹理层：文化图案 */}
