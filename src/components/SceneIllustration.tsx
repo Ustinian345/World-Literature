@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { sceneImageUrls } from "@/lib/scene-images";
+import { ImageHotspots, generateAutoHotspots } from "@/components/ImageHotspots";
+import { hotspotData } from "@/lib/hotspot-data";
+import type { Hotspot } from "@/lib/hotspot-data";
 
 const imageCache = new Map<string, { fast: string | null; scene: string | null }>();
 
@@ -9,7 +12,7 @@ interface Props {
   title: string;
   titleEn: string;
   author: string;
-  characters?: string[];
+  characters?: Array<{ name: string; role: string; description: string }>;
   plotNodes?: string[];
   gradient: string;
 }
@@ -25,6 +28,11 @@ export function SceneIllustration({ title, titleEn, author, characters, plotNode
   const displayUrl = sceneUrl || fastUrl;
   const showSkeleton = !fastUrl;
 
+  // Compute hotspots: manual data or auto-generate
+  const charNames: string[] = characters?.map((c) => c.name) || [];
+  const manualHotspots: Hotspot[] | undefined = hotspotData[title] || hotspotData[titleEn] || undefined;
+  const hotspots: Hotspot[] = generateAutoHotspots(charNames, manualHotspots);
+
   useEffect(() => {
     let cancelled = false;
     const cacheKey = `scene|${title}|${titleEn}|${author}`;
@@ -34,7 +42,7 @@ export function SceneIllustration({ title, titleEn, author, characters, plotNode
       if (!cancelled) {
         setFastUrl(cached.fast);
         setSceneUrl(cached.scene);
-        if (cached.scene) setLabel(plotNodes?.[0] || "");
+        if (cached.scene) setLabel(plotNodes?.[0] || charNames[0] || "");
       }
       return;
     }
@@ -73,7 +81,7 @@ export function SceneIllustration({ title, titleEn, author, characters, plotNode
 
       // === Phase 2: Try to get a scene illustration from Wikimedia ===
       // Only search once per book; use simple English queries
-      const queries = buildSimpleQueries(title, titleEn, characters);
+      const queries = buildSimpleQueries(title, titleEn, charNames);
 
       for (const q of queries) {
         if (scene) break;
@@ -103,7 +111,7 @@ export function SceneIllustration({ title, titleEn, author, characters, plotNode
       if (!cancelled) {
         if (scene) {
           setSceneUrl(scene);
-          setLabel(plotNodes?.[0] || characters?.[0] || "");
+          setLabel(plotNodes?.[0] || characters?.[0]?.name || "");
         }
         imageCache.set(cacheKey, { fast, scene });
       }
@@ -142,6 +150,11 @@ export function SceneIllustration({ title, titleEn, author, characters, plotNode
             }`}
             onLoad={() => setLoaded(true)}
           />
+        )}
+
+        {/* Image hotspots — character markers */}
+        {displayUrl && loaded && hotspots.length > 0 && characters && (
+          <ImageHotspots hotspots={hotspots} characters={characters} />
         )}
 
         {/* Bottom gradient for caption readability */}

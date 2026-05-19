@@ -211,7 +211,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             titleEn={work.titleEn}
             author={work.author}
             gradient={work.gradient}
-            characters={detail.characters.map(c => c.name)}
+            characters={detail.characters}
             plotNodes={detail.plotNodes.map(n => n.label)}
           />
         </div>
