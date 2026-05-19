@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { sceneImageUrls } from "@/lib/scene-images";
-import { ImageHotspots, generateAutoHotspots } from "@/components/ImageHotspots";
+import { ImageHotspots } from "@/components/ImageHotspots";
 import { hotspotData } from "@/lib/hotspot-data";
-import type { Hotspot } from "@/lib/hotspot-data";
 
 const imageCache = new Map<string, { fast: string | null; scene: string | null }>();
 
@@ -28,10 +27,9 @@ export function SceneIllustration({ title, titleEn, author, characters, plotNode
   const displayUrl = sceneUrl || fastUrl;
   const showSkeleton = !fastUrl;
 
-  // Compute hotspots: manual data or auto-generate
+  // Only show hotspots when manual curated data exists — no auto-generation
   const charNames: string[] = characters?.map((c) => c.name) || [];
-  const manualHotspots: Hotspot[] | undefined = hotspotData[title] || hotspotData[titleEn] || undefined;
-  const hotspots: Hotspot[] = generateAutoHotspots(charNames, manualHotspots);
+  const hotspots = hotspotData[title] || hotspotData[titleEn] || [];
 
   useEffect(() => {
     let cancelled = false;

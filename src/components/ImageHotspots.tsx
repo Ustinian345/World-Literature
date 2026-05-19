@@ -101,35 +101,5 @@ export function ImageHotspots({ hotspots, characters }: Props) {
   );
 }
 
-/**
- * Generate approximate hotspot positions when no manual data exists.
- * Distributes markers evenly across the image based on character count.
- */
-export function generateAutoHotspots(
-  characterNames: string[],
-  hotspotData?: Hotspot[],
-): Hotspot[] {
-  // Use manual data if available
-  if (hotspotData && hotspotData.length > 0) return hotspotData;
-
-  // Auto-place up to 5 characters in a horizontal spread
-  const count = Math.min(characterNames.length, 5);
-  if (count === 0) return [];
-
-  const positions: Array<{ x: number; y: number }> = [];
-  const spacing = 80 / (count + 1); // leave 10% margin on each side
-
-  for (let i = 0; i < count; i++) {
-    const x = 10 + spacing * (i + 1);
-    // Alternate heights for visual variety
-    const y = count <= 2 ? 55 : 35 + (i % 2) * 30;
-    positions.push({ x, y });
-  }
-
-  return characterNames.slice(0, count).map((name, i) => ({
-    characterName: name,
-    x: positions[i].x,
-    y: positions[i].y,
-    description: "",
-  }));
-}
+// Hotspots are only shown when manually curated data exists (hotspot-data.ts).
+// No auto-generation — inaccurate markers are worse than no markers.
