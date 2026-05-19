@@ -14,6 +14,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { ReadingControls } from "@/components/ReadingControls";
 import { RelatedWorks } from "@/components/RelatedWorks";
 import { CulturalPattern } from "@/components/CulturalPattern";
+import { HeroBackground } from "@/components/HeroBackground";
 import { QuoteCopy } from "@/components/QuoteCopy";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { ShareButton } from "@/components/ShareButton";
@@ -56,19 +57,24 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       <ScrollProgress />
       <BookmarkButton workId={id} />
 
-      {/* ===== Hero 头部 — 文化图案 + 粒子 + 视差 ===== */}
-      <section className="relative mt-16 overflow-hidden bg-gradient-to-br from-umber via-umber/95 to-umber/90">
-        {/* 底层：文化图案 */}
-        <CulturalPattern continent={work.continent} opacity={0.05} />
+      {/* ===== Hero 头部 — 场景背景 + 文化图案 + 粒子 + 视差 ===== */}
+      <section className="relative mt-16 overflow-hidden bg-umber">
+        {/* 底层：场景插画背景（Openverse API） */}
+        <HeroBackground
+          title={work.title}
+          author={work.author}
+          continent={work.continent}
+          gradient={work.gradient}
+        />
 
-        {/* 中层：渐变叠加 */}
-        <div className={`absolute inset-0 bg-gradient-to-br ${work.gradient} opacity-70`} />
+        {/* 纹理层：文化图案 */}
+        <CulturalPattern continent={work.continent} opacity={0.04} />
 
-        {/* 上层：粒子 */}
+        {/* 动态粒子 */}
         <HeroParticles gradient={work.gradient} />
 
-        {/* 文字叠加层 */}
-        <div className="absolute inset-0 bg-black/20 hero-gradient-overlay" />
+        {/* 呼吸动效叠加 */}
+        <div className="absolute inset-0 bg-black/15 hero-gradient-overlay" />
 
         <div className="relative z-20 mx-auto max-w-6xl px-5 py-14 sm:py-24">
           {/* 面包屑 */}
