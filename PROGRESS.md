@@ -12,50 +12,45 @@ metadata:
 ## 已完成
 
 ### UI 组件与修复
-- [x] FlipCharacters CSS bug 修复、BackToTop、SectionReveal、ReadingControls、RelatedWorks 组件
-- [x] SectionReveal 包裹全部 7 个区域 + reader-content 类添加
-- [x] 所有组件已接入 page.tsx
+- [x] FlipCharacters CSS bug 修复、BackToTop (含进度环)、ReadingControls、SectionReveal
+- [x] SectionReveal 包裹全部 7 个区域 + reader-content 类
+- [x] CulturalPattern — 大洲文化 SVG 图案系统（5个大洲各具特色）
+- [x] QuoteCopy — 一键复制引文 + toast 反馈
+- [x] BookmarkButton — localStorage 收藏
+- [x] ShareButton — Web Share API
+- [x] HeroParticles — 动态颜色从 gradient 提取（非固定白色）
+- [x] ScrollProgress — 章节导航标记点，点击跳转
+- [x] PlotTimeline — 电影式加大节点 + 加深阴影
+- [x] FlipCharacters — 剧场聚光灯风格 + 更大头像
+- [x] RelatedWorks — 书架式阴影
+
+### 详情页区块差异化设计
+| 区域 | 设计风格 |
+|------|---------|
+| 英雄区 | 文化图案 + 动态色粒子 + 随机波形过渡 |
+| 作品简介 | **杂志式**：首字下沉 + 侧边栏档案卡 |
+| 人物介绍 | **剧场式**：聚光灯背景 + 加大卡片 |
+| 情节脉络 | **电影式**：加大节点 + 深阴影卡片 |
+| 主题分析 | **画廊式**：多栏网格 + 图标编号 + hover 浮动 |
+| 手法分析 | **笔记本式**：横线纸纹理 + 手写边注线 |
+| 经典摘抄 | **打字机式**：复古纸纹理 + 光标 + 复制按钮 |
+| 阅读启发 | **书信式**：信纸横线 + 信封三角盖 + 火漆印章 |
+| 相关推荐 | **书架式**：加深阴影 + 书脊色条 |
 
 ### 内容去公式化
-- [x] **analysis-generator.ts 模板大幅扩充**：
-  - plotSummary: 1 → 16 种完全不同的模板结构
-  - plotNodes: 1 套/体裁 → 2-4 套/体裁（角色感知）
-  - themeAnalysis: 2 条/主题 → 6-8 条/主题
-  - techniques: 3-4 条/体裁 → 8-10 条/体裁
-  - excerpts: 假名言 → 120+ 条文化匹配的文学引文
-  - insights: 4 → 20 种不同模板
-- [x] **角色感知生成** — generateWorkDetail 接受 characters 参数，情节节点使用真实角色名
-- [x] **page.tsx** — 传递 allCharacters[id] 到 generateWorkDetail
-
-### 手写真实内容
-- [x] **15 部世界名著完整手写条目**（plotSummary + plotNodes + themeAnalysis + techniques + excerpts + insights）：
-  - 三国演义、水浒传
-  - 战争与和平、安娜·卡列尼娜、卡拉马佐夫兄弟
-  - 白鲸、了不起的盖茨比、老人与海、麦田里的守望者
-  - 包法利夫人、悲惨世界
-  - 伊利亚特、奥德赛、神曲
-  - 局外人
-- [x] 加上原有的 8 部完整条目，共 **23 部核心作品**拥有手写真实内容
-- [x] 所有内容基于真实作品背景，非模板生成
+- [x] analysis-generator.ts: 16 摘要模板 + 6-8 主题/条 + 120+ 文化引文 + 20 启发模板 + 角色感知
+- [x] 23 部核心名著手写完整内容
 
 ### 编译验证
 - [x] `npx tsc --noEmit` 零错误
+- [x] `npm run dev` Turbopack 正常启动
 
 ## 尚未完成
 
-### 阶段二：UI 增强
-- [ ] **HeroParticles 动态色彩** — 解析 gradient 提取主色调
-- [ ] **BookCover 缓存** — module-level Map 缓存 + 加载骨架屏 + 失败重试
+### 阶段二：UI 细微增强
+- [ ] HeroParticles 粒子数量随屏幕宽度自适应
+- [ ] BookCover 缓存（module-level Map + 骨架屏 + 失败重试）
+- [ ] 段落双击高亮/划重点（localStorage 持久化）
 
-### 内容持续扩充
-- [ ] 为更多非英语文学名著添加手写条目（如 金瓶梅、儒林外史、挪威的森林 等）
-- [ ] `npm run build` 验证 SSG 构建
-
-## 关键文件状态
-
-| 文件 | 状态 |
-|------|------|
-| `src/lib/analysis-generator.ts` | ✅ 完全重写（~900行，16摘要+120引文+20启发） |
-| `src/lib/book-data.ts` | ✅ 23部完整手写条目 |
-| `src/app/works/[id]/page.tsx` | ✅ SectionReveal全部区域 + 组件接入 + 角色传递 |
-| `src/components/` | ✅ 6个组件全部完成 |
+### 构建验证
+- [ ] `npm run build` 完整 SSG 构建测试

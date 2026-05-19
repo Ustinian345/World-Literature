@@ -60,57 +60,51 @@ export function RelatedWorks({
   if (picked.length === 0) return null;
 
   return (
-    <section className="bg-parchment py-12 sm:py-16">
-      <div className="mx-auto max-w-4xl px-5">
-        <div className="flex items-center gap-3 mb-8">
-          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-dark text-xl shadow-md">
-            📚
-          </span>
-          <h2 className="font-heading-cn text-2xl font-bold text-umber">
-            相关推荐
-          </h2>
-        </div>
+    <div className="mx-auto max-w-5xl px-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {picked.slice(0, 6).map((w, i) => (
+          <Link
+            key={w.id}
+            href={`/works/${w.id}`}
+            className="group block rounded-2xl border border-sand/30 bg-warm-white p-6 shadow-bookshelf transition-all duration-500 hover:-translate-y-3 hover:shadow-xl"
+            style={{ transitionDelay: `${i * 50}ms` }}
+          >
+            {/* 书脊色条 */}
+            <div
+              className="-ml-6 -mt-6 mb-4 h-1.5 rounded-t-2xl"
+              style={{
+                background: `linear-gradient(to right, var(--color-terracotta), var(--color-amber))`,
+              }}
+            />
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {picked.slice(0, 6).map((w) => (
-            <Link
-              key={w.id}
-              href={`/works/${w.id}`}
-              className="group block rounded-2xl border border-sand/40 bg-warm-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
-            >
-              <div className="mb-2 flex items-center gap-2">
-                <span className="text-lg">{w.flag}</span>
-                <span className="font-[system-ui] text-xs text-umber-light/50">
-                  {w.country}
-                </span>
-                <span className="ml-auto rounded-full bg-parchment px-2 py-0.5 font-[system-ui] text-[10px] text-umber-light/40">
-                  {w.genre[0]}
-                </span>
-              </div>
+            <div className="mb-2 flex items-center gap-2">
+              <span className="text-lg">{w.flag}</span>
+              <span className="font-[system-ui] text-xs text-umber-light/40">
+                {w.country}
+              </span>
+              <span className="ml-auto rounded-full bg-parchment px-2.5 py-0.5 font-[system-ui] text-[10px] font-medium text-amber-dark">
+                {w.genre[0]}
+              </span>
+            </div>
 
-              <h3 className="font-heading-cn text-lg font-bold text-umber transition-colors group-hover:text-terracotta">
-                {w.title}
-              </h3>
-              {w.titleEn && (
-                <p className="mt-0.5 font-heading-en text-sm italic text-umber-light/40">
-                  {w.titleEn}
-                </p>
-              )}
-
-              <p className="mt-2 font-[system-ui] text-sm text-umber-light/60">
-                {w.author}
+            <h3 className="font-heading-cn text-lg font-bold text-umber transition-colors group-hover:text-terracotta">
+              {w.title}
+            </h3>
+            {w.titleEn && (
+              <p className="mt-0.5 font-heading-en text-sm italic text-umber-light/35">
+                {w.titleEn}
               </p>
+            )}
 
-              <div
-                className="mt-3 h-1.5 w-full rounded-full opacity-30"
-                style={{
-                  background: `linear-gradient(to right, var(--color-terracotta), var(--color-amber))`,
-                }}
-              />
-            </Link>
-          ))}
-        </div>
+            <p className="mt-2.5 font-body text-sm text-umber-light/50">
+              {w.author}
+            </p>
+
+            {/* 底部装饰线 */}
+            <div className="mt-4 h-px bg-gradient-to-r from-sand/50 to-transparent" />
+          </Link>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }

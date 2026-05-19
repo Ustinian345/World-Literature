@@ -129,3 +129,165 @@ body {
 .hero-gradient-overlay {
   animation: hero-breathe 6s ease-in-out infinite;
 }
+
+/* ============================================================
+   纸张与纹理背景
+   ============================================================ */
+
+/* 旧纸纹理 — 用于手法分析笔记本风格 */
+.bg-old-paper {
+  background:
+    linear-gradient(90deg, transparent 39px, var(--color-sand) 39px, var(--color-sand) 40px, transparent 40px),
+    linear-gradient(var(--color-warm-white) 0, var(--color-warm-white) 98%, var(--color-sand) 98%, var(--color-sand) 100%);
+  background-size: 40px 100%;
+}
+
+/* 信纸纹理 — 用于阅读启发书信风格 */
+.bg-letter-paper {
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 27px,
+      var(--color-sand) 27px,
+      var(--color-sand) 28px
+    ),
+    var(--color-warm-white);
+}
+
+/* 复古纸张颗粒感 — 用于摘抄打字机风格 */
+.bg-vintage-paper {
+  background-color: #f5f0e8;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(139, 119, 80, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(139, 119, 80, 0.06) 0%, transparent 50%);
+}
+
+/* 书本页纹理 — 用于简介杂志风格 */
+.bg-book-page {
+  background:
+    linear-gradient(90deg, transparent 0%, rgba(139, 119, 80, 0.03) 5%, transparent 10%),
+    var(--color-warm-white);
+}
+
+/* ============================================================
+   装饰性形状与图案
+   ============================================================ */
+
+/* 聚光灯效果 — 用于人物介绍剧场风格 */
+.bg-spotlight {
+  background: radial-gradient(
+    ellipse at 50% 0%,
+    rgba(255, 255, 240, 0.7) 0%,
+    rgba(250, 247, 242, 0.3) 40%,
+    var(--color-cream) 70%
+  );
+}
+
+/* 书籍阴影 — 用于相关推荐书架风格 */
+.shadow-bookshelf {
+  box-shadow:
+    0 1px 3px rgba(60, 36, 21, 0.08),
+    0 6px 12px rgba(60, 36, 21, 0.06),
+    0 12px 24px -8px rgba(60, 36, 21, 0.12);
+}
+
+/* 杂志首字下沉 — 用于作品简介 */
+.drop-cap::first-letter {
+  float: left;
+  font-size: 4.5rem;
+  line-height: 0.85;
+  font-weight: 900;
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
+  color: var(--color-terracotta);
+  font-family: var(--font-heading-cn);
+}
+
+/* ============================================================
+   动画关键帧
+   ============================================================ */
+
+/* 打字机光标闪烁 */
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typewriter-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--color-amber);
+  animation: cursor-blink 0.8s steps(1) infinite;
+  vertical-align: text-bottom;
+}
+
+/* Toast 弹出动画 */
+@keyframes toast-in {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes toast-out {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-10px); opacity: 0; }
+}
+.toast-enter {
+  animation: toast-in 0.3s ease-out;
+}
+.toast-exit {
+  animation: toast-out 0.3s ease-in forwards;
+}
+
+/* 书签弹出 */
+@keyframes bookmark-pop {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+.bookmark-animate {
+  animation: bookmark-pop 0.4s ease-out;
+}
+
+/* 画廊卡片 hover 放大 */
+@keyframes gallery-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+/* 分隔线绘制动画 */
+@keyframes divider-draw {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* ============================================================
+   交互工具类
+   ============================================================ */
+
+/* 可选中文本高亮 */
+::selection {
+  background: rgba(196, 115, 79, 0.2);
+  color: var(--color-umber);
+}
+
+/* 段落标注（用户"划重点"） */
+.paragraph-highlighted {
+  background: linear-gradient(180deg, transparent 60%, rgba(200, 150, 62, 0.25) 60%);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.paragraph-highlighted:hover {
+  background: linear-gradient(180deg, transparent 50%, rgba(200, 150, 62, 0.35) 50%);
+}
+
+/* 复制成功状态 */
+.copy-success {
+  transition: all 0.3s ease;
+}
+
+/* 收藏按钮心形 */
+.heart-filled {
+  color: var(--color-terracotta);
+  filter: drop-shadow(0 0 3px rgba(196, 115, 79, 0.3));
+}
