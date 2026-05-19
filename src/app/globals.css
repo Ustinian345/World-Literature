@@ -110,3 +110,22 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-clay);
 }
+
+/* 阅读控件字体变量 — ReadingControls 组件通过 CSS 自定义属性控制 */
+:root {
+  --reader-font-size: 18px;
+  --reader-font-family: var(--font-body);
+}
+.reader-content {
+  font-size: var(--reader-font-size);
+  font-family: var(--reader-font-family);
+}
+
+/* 英雄区呼吸式渐变动画 */
+@keyframes hero-breathe {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 0.9; }
+}
+.hero-gradient-overlay {
+  animation: hero-breathe 6s ease-in-out infinite;
+}

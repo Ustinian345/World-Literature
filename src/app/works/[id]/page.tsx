@@ -9,6 +9,10 @@ import { HeroParticles } from "@/components/HeroParticles";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { PlotTimeline } from "@/components/PlotTimeline";
 import { FlipCharacters } from "@/components/FlipCharacters";
+import { SectionReveal } from "@/components/SectionReveal";
+import { BackToTop } from "@/components/BackToTop";
+import { ReadingControls } from "@/components/ReadingControls";
+import { RelatedWorks } from "@/components/RelatedWorks";
 
 export function generateStaticParams() {
   return allWorks.map((w) => ({ id: w.id }));
@@ -23,9 +27,9 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
   const work = allWorks.find((w) => w.id === id);
   if (!work) notFound();
 
-  const generated = generateWorkDetail(work);
-  const custom = bookDetails[id];
   const realCharacters = allCharacters[id];
+  const generated = generateWorkDetail(work, realCharacters);
+  const custom = bookDetails[id];
   // Start with generated content (plot, themes, techniques)
   // Overlay custom book details if they exist
   let detail = custom ? ({ ...generated, ...custom } as typeof generated) : generated;
@@ -44,7 +48,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       {/* ===== Hero 头部 — 视差+粒子+3D封面 ===== */}
       <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${work.gradient}`}>
         <HeroParticles gradient={work.gradient} />
-        <div className="absolute inset-0 bg-black/25" />
+        <div className="absolute inset-0 bg-black/25 hero-gradient-overlay" />
 
         <div className="relative z-10 mx-auto max-w-6xl px-5 py-12 sm:py-20">
           {/* 面包屑 */}
@@ -129,6 +133,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
       {/* ===== 简介 — 首字下沉 ===== */}
       <section className="bg-cream py-12 sm:py-16">
+        <SectionReveal>
         <div className="mx-auto max-w-4xl px-5">
           <div className="flex items-center gap-3 mb-6">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-terracotta text-xl shadow-md">📖</span>
@@ -136,7 +141,6 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           </div>
 
           <div className="rounded-2xl border border-sand/40 bg-warm-white p-6 shadow-card sm:p-8">
-            {/* 关键信息面板 */}
             <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
               {[
                 { label: "地区", value: `${work.flag} ${work.country}` },
@@ -151,19 +155,21 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
               ))}
             </div>
 
-            <p className="font-body text-lg leading-relaxed text-umber-light first-line:font-bold first-line:text-umber">
+            <p className="reader-content text-lg leading-relaxed text-umber-light first-line:font-bold first-line:text-umber">
               {work.excerpt}
             </p>
-            <p className="mt-4 font-body text-lg leading-relaxed text-umber-light">
+            <p className="reader-content mt-4 text-lg leading-relaxed text-umber-light">
               {detail.plotSummary}
             </p>
           </div>
         </div>
+        </SectionReveal>
       </section>
 
       {/* ===== 人物介绍 — 翻转卡片 ===== */}
       {detail.characters.length > 0 && (
         <section className="bg-gradient-to-b from-cream to-parchment py-12 sm:py-16">
+          <SectionReveal>
           <div className="mx-auto max-w-4xl px-5">
             <div className="flex items-center gap-3 mb-8">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-dark text-xl shadow-md">🎭</span>
@@ -171,12 +177,14 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             </div>
             <FlipCharacters characters={detail.characters} />
           </div>
+          </SectionReveal>
         </section>
       )}
 
       {/* ===== 情节脉络 — SVG动画时间线 ===== */}
       {detail.plotNodes.length > 0 && (
         <section className="bg-warm-white py-12 sm:py-16">
+          <SectionReveal>
           <div className="mx-auto max-w-4xl px-5">
             <div className="flex items-center gap-3 mb-8">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-terracotta text-xl shadow-md">🕐</span>
@@ -187,11 +195,13 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             </div>
             <PlotTimeline nodes={detail.plotNodes} gradient={work.gradient} />
           </div>
+          </SectionReveal>
         </section>
       )}
 
       {/* ===== 主题分析 — 彩色卡片 ===== */}
       <section className="bg-cream py-12 sm:py-16">
+        <SectionReveal>
         <div className="mx-auto max-w-4xl px-5">
           <div className="flex items-center gap-3 mb-8">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-umber text-xl shadow-md">💡</span>
@@ -207,16 +217,18 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-amber/20 to-terracotta/20 font-heading-en text-sm font-bold text-terracotta">
                     {i + 1}
                   </span>
-                  <p className="font-body text-base leading-relaxed text-umber-light">{paragraph}</p>
+                  <p className="reader-content font-body text-base leading-relaxed text-umber-light">{paragraph}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+        </SectionReveal>
       </section>
 
       {/* ===== 写作手法 — 卡片网格 ===== */}
       <section className="bg-gradient-to-b from-cream to-parchment py-12 sm:py-16">
+        <SectionReveal>
         <div className="mx-auto max-w-4xl px-5">
           <div className="flex items-center gap-3 mb-8">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-dark text-xl shadow-md">✍️</span>
@@ -229,11 +241,12 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
                 className="rounded-2xl border-l-4 border-amber bg-white p-5 shadow-sm transition-all duration-300 hover:border-l-[6px] hover:shadow-card sm:p-6"
                 style={{ transitionDelay: `${i * 50}ms` }}
               >
-                <p className="font-body text-base leading-relaxed text-umber-light">{paragraph}</p>
+                <p className="reader-content font-body text-base leading-relaxed text-umber-light">{paragraph}</p>
               </div>
             ))}
           </div>
         </div>
+        </SectionReveal>
       </section>
 
       {/* ===== 经典摘抄 — 打字机风格 ===== */}
@@ -245,6 +258,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             <div className="absolute -bottom-20 -left-20 text-[20rem] font-heading-en text-white select-none">&rdquo;</div>
           </div>
 
+          <SectionReveal>
           <div className="relative z-10 mx-auto max-w-4xl px-5">
             <div className="flex items-center gap-3 mb-8">
               <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-light/20 text-xl shadow-md">📝</span>
@@ -258,7 +272,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
                     <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
                   </svg>
 
-                  <p className="font-heading-cn text-xl leading-relaxed text-amber-light sm:text-2xl">
+                  <p className="reader-content font-heading-cn text-xl leading-relaxed text-amber-light sm:text-2xl">
                     「{ex.quote}」
                   </p>
                   <footer className="mt-4 flex items-center gap-3 border-t border-cream/10 pt-4">
@@ -270,11 +284,13 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
               ))}
             </div>
           </div>
+          </SectionReveal>
         </section>
       )}
 
       {/* ===== 阅读启发 ===== */}
       <section className="bg-cream py-12 sm:py-16">
+        <SectionReveal>
         <div className="mx-auto max-w-4xl px-5">
           <div className="flex items-center gap-3 mb-8">
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber to-terracotta text-xl shadow-md">🌟</span>
@@ -287,14 +303,18 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             <div className="relative">
               <div className="flex items-start gap-3">
                 <span className="text-3xl">💭</span>
-                <p className="font-body text-lg leading-relaxed text-umber-light">
+                <p className="reader-content font-body text-lg leading-relaxed text-umber-light">
                   {detail.insights}
                 </p>
               </div>
             </div>
           </div>
         </div>
+        </SectionReveal>
       </section>
+
+      {/* ===== 相关推荐 ===== */}
+      <RelatedWorks currentId={id} allWorks={allWorks} />
 
       {/* ===== 底部导航 ===== */}
       <section className="bg-parchment py-12">
@@ -317,6 +337,9 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           </div>
         </div>
       </section>
+
+      <BackToTop />
+      <ReadingControls />
     </>
   );
 }

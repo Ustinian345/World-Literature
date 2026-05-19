@@ -19,7 +19,7 @@ export function FlipCharacters({ characters }: { characters: Character[] }) {
       {characters.map((ch, i) => (
         <div
           key={i}
-          className="group cursor-pointer perspective-1000"
+          className="group cursor-pointer [perspective:1000px]"
           onClick={() => toggle(i)}
           onKeyDown={(e) => { if (e.key === "Enter") toggle(i); }}
           tabIndex={0}
