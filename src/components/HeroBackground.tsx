@@ -1,96 +1,187 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
+import { sceneImageUrls } from "@/lib/scene-images";
 
-// Module-level cache — survives navigations within the same session
+// Module-level cache survives navigations within the same session
 const imageCache = new Map<string, string | null>();
 
 interface Props {
   title: string;
+  titleEn: string;
   author: string;
   continent: string;
   gradient: string;
 }
 
-export function HeroBackground({ title, author, continent, gradient }: Props) {
+export function HeroBackground({ title, titleEn, author, continent, gradient }: Props) {
   const [bgUrl, setBgUrl] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [source, setSource] = useState<string>("");
   const parallaxRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let cancelled = false;
 
     async function fetchImage() {
-      const cacheKey = `${title}|${author}`;
+      const cacheKey = `${title}|${titleEn}|${author}`;
       if (imageCache.has(cacheKey)) {
         const cached = imageCache.get(cacheKey);
         if (cached !== undefined) {
-          if (!cancelled) {
-            setBgUrl(cached);
-            setLoading(false);
-          }
+          if (!cancelled) { setBgUrl(cached); }
           return;
         }
       }
 
-      // Build search queries — try specific first, then broader
-      const queries = [
-        `${title} ${author} illustration`,           // e.g. "Divine Comedy Dante illustration"
-        `${title} classic book illustration`,         // broader
-        `${title} painting`,                          // even broader
-        `${getCultureKeyword(continent)} literature`, // cultural fallback
-      ];
-
       let foundUrl: string | null = null;
+      let foundSource = "";
 
-      for (const query of queries) {
-        if (foundUrl) break;
+      // === Source 1: Curated mapping ===
+      if (sceneImageUrls[title] || (titleEn && sceneImageUrls[titleEn])) {
+        foundUrl = sceneImageUrls[title] || sceneImageUrls[titleEn];
+        foundSource = "curated";
+      }
+
+      // === Source 2: Wikipedia API (English) ===
+      if (!foundUrl && titleEn) {
         try {
-          const url = `https://api.openverse.org/v1/images/?q=${encodeURIComponent(query)}&license=cc0,pdm&page_size=5`;
-          const res = await fetch(url, { headers: { "User-Agent": "WorldLiteratureHub/1.0" } });
-          if (!res.ok) continue;
-
-          const data = await res.json();
-          const results = data?.results;
-          if (!Array.isArray(results) || results.length === 0) continue;
-
-          // Pick the best image: prefer landscape orientation and decent size
-          for (const r of results) {
-            if (r.url && r.width && r.height && r.width / r.height >= 1.2) {
-              foundUrl = r.url;
-              break;
+          const wikiTitle = encodeURIComponent(titleEn);
+          const res = await fetch(
+            `https://en.wikipedia.org/api/rest_v1/page/summary/${wikiTitle}`,
+            { headers: { "User-Agent": "WorldLiteratureHub/1.0" } }
+          );
+          if (res.ok) {
+            const data = await res.json();
+            if (data.originalimage?.source) {
+              foundUrl = data.originalimage.source;
+              foundSource = "wikipedia-en";
+            } else if (data.thumbnail?.source) {
+              foundUrl = data.thumbnail.source;
+              foundSource = "wikipedia-en";
             }
           }
-          // If no landscape found, take the first one
-          if (!foundUrl && results[0]?.url) {
-            foundUrl = results[0].url;
+        } catch { /* continue */ }
+      }
+
+      // === Source 3: Wikipedia API (Chinese) ===
+      if (!foundUrl) {
+        try {
+          const res = await fetch(
+            `https://zh.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`,
+            { headers: { "User-Agent": "WorldLiteratureHub/1.0" } }
+          );
+          if (res.ok) {
+            const data = await res.json();
+            if (data.originalimage?.source) {
+              foundUrl = data.originalimage.source;
+              foundSource = "wikipedia-zh";
+            } else if (data.thumbnail?.source) {
+              foundUrl = data.thumbnail.source;
+              foundSource = "wikipedia-zh";
+            }
           }
-        } catch {
-          // API failure is fine — we fall back to gradient
-        }
+        } catch { /* continue */ }
+      }
+
+      // === Source 4: Wikimedia Commons API ===
+      if (!foundUrl) {
+        try {
+          const searchTerm = titleEn || title;
+          const commonsUrl =
+            `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(searchTerm + " illustration")}&gsrnamespace=6&prop=imageinfo&iiprop=url&format=json&gsrlimit=10&origin=*`;
+          const res = await fetch(commonsUrl, {
+            headers: { "User-Agent": "WorldLiteratureHub/1.0" },
+          });
+          if (res.ok) {
+            const data = await res.json();
+            const pages = data?.query?.pages;
+            if (pages) {
+              for (const page of Object.values(pages) as Array<{ imageinfo?: Array<{ url: string; width: number; height: number }> }>) {
+                if (page.imageinfo?.[0]) {
+                  const { url, width, height } = page.imageinfo[0];
+                  // Prefer landscape or large images, skip tiny thumbnails
+                  if (width > 400 && (width / height > 1.1 || width > 800)) {
+                    foundUrl = url;
+                    foundSource = "wikimedia-commons";
+                    break;
+                  }
+                }
+              }
+              // If no landscape found, take largest
+              if (!foundUrl) {
+                for (const page of Object.values(pages) as Array<{ imageinfo?: Array<{ url: string }> }>) {
+                  if (page.imageinfo?.[0]) {
+                    foundUrl = page.imageinfo[0].url;
+                    foundSource = "wikimedia-commons";
+                    break;
+                  }
+                }
+              }
+            }
+          }
+        } catch { /* continue */ }
+      }
+
+      // === Source 5: Open Library cover as hero background ===
+      if (!foundUrl) {
+        try {
+          const query = encodeURIComponent(`${titleEn || title} ${author}`);
+          const res = await fetch(
+            `https://openlibrary.org/search.json?q=${query}&limit=1`,
+            { headers: { "User-Agent": "WorldLiteratureHub/1.0" } }
+          );
+          if (res.ok) {
+            const data = await res.json();
+            const coverId = data.docs?.[0]?.cover_i;
+            if (coverId) {
+              foundUrl = `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`;
+              foundSource = "openlibrary";
+            }
+          }
+        } catch { /* continue */ }
+      }
+
+      // === Source 6: Google Books API (no key needed for public data) ===
+      if (!foundUrl && (titleEn || title)) {
+        try {
+          const gbQuery = encodeURIComponent(
+            `intitle:${titleEn || title}+inauthor:${author}`
+          );
+          const res = await fetch(
+            `https://www.googleapis.com/books/v1/volumes?q=${gbQuery}&maxResults=1&printType=books`
+          );
+          if (res.ok) {
+            const data = await res.json();
+            const thumb = data.items?.[0]?.volumeInfo?.imageLinks?.extraLarge ||
+                         data.items?.[0]?.volumeInfo?.imageLinks?.large ||
+                         data.items?.[0]?.volumeInfo?.imageLinks?.medium ||
+                         data.items?.[0]?.volumeInfo?.imageLinks?.thumbnail;
+            if (thumb) {
+              // Upgrade thumbnail to higher quality
+              foundUrl = thumb.replace("zoom=1", "zoom=3").replace("http:", "https:");
+              foundSource = "google-books";
+            }
+          }
+        } catch { /* continue */ }
       }
 
       imageCache.set(cacheKey, foundUrl);
       if (!cancelled) {
         setBgUrl(foundUrl);
-        setLoading(false);
+        setSource(foundSource);
       }
     }
 
     fetchImage();
     return () => { cancelled = true; };
-  }, [title, author, continent]);
+  }, [title, titleEn, author]);
 
-  // Parallax scroll effect
+  // Parallax scroll
   useEffect(() => {
     if (!bgUrl) return;
     const el = parallaxRef.current;
     if (!el) return;
-
     const onScroll = () => {
-      const scrollY = window.scrollY;
-      const speed = 0.35;
-      el.style.transform = `translateY(${scrollY * speed}px) scale(1.05)`;
+      el.style.transform = `translateY(${window.scrollY * 0.3}px) scale(1.05)`;
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -98,34 +189,28 @@ export function HeroBackground({ title, author, continent, gradient }: Props) {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Fallback: gradient background always visible */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-70`} />
+      {/* Base gradient — always visible */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-60`} />
 
       {/* Scene image with parallax */}
       {bgUrl && (
         <div
           ref={parallaxRef}
-          className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${bgUrl})`,
-            opacity: loading ? 0 : 0.4,
+            opacity: source === "openlibrary" || source === "google-books" ? 0.55 : 0.35,
           }}
         />
       )}
 
-      {/* Subtle dark overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-umber/40 via-umber/20 to-umber/60" />
+      {/* Loading pulse skeleton */}
+      {!bgUrl && (
+        <div className="absolute inset-0 animate-pulse bg-umber/10" />
+      )}
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-umber/40 via-umber/10 to-umber/70" />
     </div>
   );
-}
-
-function getCultureKeyword(continent: string): string {
-  switch (continent) {
-    case "asia": return "asian classical art painting";
-    case "europe": return "european classical painting literature";
-    case "africa": return "african art tradition";
-    case "americas": return "latin american art mural";
-    case "oceania": return "australian landscape painting";
-    default: return "classical art";
-  }
 }

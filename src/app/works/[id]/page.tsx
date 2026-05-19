@@ -62,6 +62,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
         {/* 底层：场景插画背景（Openverse API） */}
         <HeroBackground
           title={work.title}
+          titleEn={work.titleEn}
           author={work.author}
           continent={work.continent}
           gradient={work.gradient}
