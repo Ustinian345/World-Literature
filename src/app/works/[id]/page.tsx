@@ -61,7 +61,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
     <>
       <ScrollProgress />
       <BookmarkButton workId={id} />
-      <PageBackground title={work.title} author={work.author} />
+      <PageBackground workId={id} title={work.title} titleEn={work.titleEn} author={work.author} />
 
       <div className="relative z-10">
       {/* ===== Hero 头部 — 渐变 + 文化图案 + 粒子 ===== */}
