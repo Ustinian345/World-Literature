@@ -5,6 +5,7 @@ import { bookDetails } from "@/lib/book-data";
 import { allCharacters } from "@/lib/character-data";
 import { generateWorkDetail } from "@/lib/analysis-generator";
 import { BookCover } from "@/components/BookCover";
+import { PageBackground } from "@/components/PageBackground";
 import { HeroParticles } from "@/components/HeroParticles";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { PlotTimeline } from "@/components/PlotTimeline";
@@ -51,14 +52,20 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
     "M0,16 C180,48 360,0 540,32 C720,64 900,16 1080,48 C1260,72 1380,32 1440,40 L1440,64 L0,64 Z",
   ];
   const wavePath = waveShapes[work.title.length % waveShapes.length];
+  const heroGradient = work.gradient
+    .replace(/(from-\S+)/, "$1/90")
+    .replace(/(via-\S+)/, "$1/85")
+    .replace(/(to-\S+)/, "$1/85");
 
   return (
     <>
       <ScrollProgress />
       <BookmarkButton workId={id} />
+      <PageBackground title={work.title} author={work.author} />
 
+      <div className="relative z-10">
       {/* ===== Hero 头部 — 渐变 + 文化图案 + 粒子 ===== */}
-      <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${work.gradient}`}>
+      <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${heroGradient}`}>
         {/* 文化图案纹理 */}
         <CulturalPattern continent={work.continent} opacity={0.05} />
 
@@ -155,7 +162,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       </section>
 
       {/* ===== 作品简介 — 杂志式双栏布局 ===== */}
-      <section id="section-intro" className="bg-cream py-14 sm:py-20">
+      <section id="section-intro" className="bg-cream/85 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           {/* 区块标题 — 装饰性 */}
@@ -220,7 +227,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
       {/* ===== 人物介绍 — 剧场聚光灯风格 ===== */}
       {detail.characters.length > 0 && (
-        <section id="section-characters" className="bg-gradient-to-b from-parchment via-cream to-parchment py-14 sm:py-20 relative overflow-hidden">
+        <section id="section-characters" className="bg-gradient-to-b from-parchment/80 via-cream/80 to-parchment/80 py-14 sm:py-20 relative overflow-hidden">
           {/* 剧场幕布装饰 */}
           <div className="pointer-events-none absolute left-0 right-0 top-0 z-0 h-32 bg-gradient-to-b from-umber/5 to-transparent" />
 
@@ -246,7 +253,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
       {/* ===== 情节脉络 — 电影式时间线 ===== */}
       {detail.plotNodes.length > 0 && (
-        <section id="section-plot" className="bg-warm-white py-14 sm:py-20">
+        <section id="section-plot" className="bg-warm-white/85 py-14 sm:py-20">
           <SectionReveal>
           <div className="mx-auto max-w-5xl px-5">
             <div className="mb-10 flex items-center gap-4">
@@ -268,7 +275,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       )}
 
       {/* ===== 主题分析 — 画廊式网格 ===== */}
-      <section id="section-themes" className="bg-cream py-14 sm:py-20">
+      <section id="section-themes" className="bg-cream/85 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
@@ -312,7 +319,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       </section>
 
       {/* ===== 写作手法 — 笔记本手写风格 ===== */}
-      <section id="section-techniques" className="bg-gradient-to-b from-parchment to-cream py-14 sm:py-20">
+      <section id="section-techniques" className="bg-gradient-to-b from-parchment/80 to-cream/85 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
@@ -402,7 +409,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       )}
 
       {/* ===== 阅读启发 — 书信风格 ===== */}
-      <section id="section-insights" className="bg-cream py-14 sm:py-20">
+      <section id="section-insights" className="bg-cream/85 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
@@ -451,7 +458,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       </section>
 
       {/* ===== 相关推荐 — 书架风格 ===== */}
-      <section className="bg-gradient-to-b from-parchment via-parchment to-cream py-14 sm:py-20">
+      <section className="bg-gradient-to-b from-parchment/80 via-parchment/80 to-cream/85 py-14 sm:py-20">
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-dark text-white shadow-lg">
@@ -490,6 +497,8 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           </div>
         </div>
       </section>
+
+      </div>
 
       <BackToTop />
       <ReadingControls />
