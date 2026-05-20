@@ -226,6 +226,13 @@ export default function Home() {
                 </span>
               </Link>
             ))}
+            <Link
+              href="/awards"
+              className="inline-flex items-center gap-2 rounded-full border border-amber/40 bg-gradient-to-r from-amber-700/10 to-yellow-600/10 px-5 py-2.5 font-[system-ui] text-sm font-medium text-amber-dark shadow-sm transition-all hover:border-amber/60 hover:shadow-md"
+            >
+              🏆 文学奖项
+              <span className="rounded-full bg-amber/10 px-1.5 py-0.5 text-xs text-amber-dark">12</span>
+            </Link>
           </div>
         </div>
       </section>

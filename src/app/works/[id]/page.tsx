@@ -19,6 +19,7 @@ import { SceneIllustration } from "@/components/SceneIllustration";
 import { QuoteCopy } from "@/components/QuoteCopy";
 import { BookmarkButton } from "@/components/BookmarkButton";
 import { ShareButton } from "@/components/ShareButton";
+import { getAwardsByWork, getAward } from "@/lib/award-data";
 
 export function generateStaticParams() {
   return allWorks.map((w) => ({ id: w.id }));
@@ -44,6 +45,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
   const readTime = Math.max(3, Math.ceil(
     (detail.plotSummary.length + detail.themeAnalysis.length + detail.techniques.length + detail.insights.length) / 800
   ));
+  const workAwards = getAwardsByWork(id);
 
   // Pick a random wave shape for the hero bottom transition
   const waveShapes = [
@@ -152,6 +154,25 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
                   🎨 {work.themes.slice(0, 3).join(" · ")}
                 </span>
               </div>
+
+              {/* 获奖徽章 */}
+              {workAwards.length > 0 && (
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  {workAwards.map((aw) => {
+                    const awardDef = getAward(aw.awardSlug);
+                    if (!awardDef) return null;
+                    return (
+                      <Link
+                        key={`${aw.awardSlug}-${aw.year}`}
+                        href={`/awards/${aw.awardSlug}`}
+                        className={`inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r ${awardDef.gradient} px-3 py-1 font-[system-ui] text-xs font-medium text-white shadow-sm backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md`}
+                      >
+                        {awardDef.icon} {awardDef.name} {aw.year}
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
         </div>

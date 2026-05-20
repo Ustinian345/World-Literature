@@ -85,6 +85,12 @@ export default function RootLayout({
               >
                 浏览全部
               </Link>
+              <Link
+                href="/awards"
+                className="rounded-md px-3 py-2 font-[system-ui] text-sm font-medium text-umber-light transition-colors hover:bg-sand/50 hover:text-umber"
+              >
+                文学奖项
+              </Link>
               {[
                 { href: "/continents/asia", label: "亚洲" },
                 { href: "/continents/europe", label: "欧洲" },
