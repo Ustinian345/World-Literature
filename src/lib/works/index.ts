@@ -11,6 +11,7 @@ import { bookerRest, pulitzerRest, hugoRest, goncourtKey, cervantesAll, otherAwa
 import { luxunS1, luxunS2, luxunS3to8 } from "./award-expansion-4";
 import { luxunFictionRest, luxunPoetryRest, luxunProseRest } from "./award-expansion-5";
 import { luxunFinal } from "./award-expansion-6";
+import { luxunFinal7 } from "./award-expansion-7";
 
 export const expandedWorks: Work[] = [
   ...asianWorks,
@@ -38,6 +39,7 @@ export const expandedWorks: Work[] = [
   ...luxunPoetryRest,
   ...luxunProseRest,
   ...luxunFinal,
+  ...luxunFinal7,
 ];
 
 // 去重
