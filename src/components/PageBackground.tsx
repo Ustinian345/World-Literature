@@ -146,13 +146,11 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
         src={imgUrl}
         alt=""
         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 scale-110 ${
-          loaded ? "opacity-15" : "opacity-0"
+          loaded ? "opacity-25" : "opacity-0"
         }`}
-        style={{ filter: "blur(6px)" }}
+        style={{ filter: "blur(2px)" }}
         onLoad={() => setLoaded(true)}
       />
-      {/* Subtle dark overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-black/5" />
     </div>
   );
 }

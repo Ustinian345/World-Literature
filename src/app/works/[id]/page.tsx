@@ -53,9 +53,9 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
   ];
   const wavePath = waveShapes[work.title.length % waveShapes.length];
   const heroGradient = work.gradient
-    .replace(/(from-\S+)/, "$1/90")
-    .replace(/(via-\S+)/, "$1/85")
-    .replace(/(to-\S+)/, "$1/85");
+    .replace(/(from-\S+)/, "$1/55")
+    .replace(/(via-\S+)/, "$1/45")
+    .replace(/(to-\S+)/, "$1/45");
 
   return (
     <>
@@ -73,7 +73,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
         <HeroParticles gradient={work.gradient} />
 
         {/* 暗色叠加 + 呼吸动效 */}
-        <div className="absolute inset-0 bg-black/20 hero-gradient-overlay" />
+        <div className="absolute inset-0 bg-black/10 hero-gradient-overlay" />
 
         <div className="relative z-20 mx-auto max-w-6xl px-5 py-14 sm:py-24">
           {/* 面包屑 */}
@@ -162,7 +162,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       </section>
 
       {/* ===== 作品简介 — 杂志式双栏布局 ===== */}
-      <section id="section-intro" className="bg-cream/85 py-14 sm:py-20">
+      <section id="section-intro" className="bg-cream/35 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           {/* 区块标题 — 装饰性 */}
@@ -180,7 +180,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           <div className="gap-10 lg:flex">
             {/* 主体 — 首字下沉 */}
             <div className="flex-1">
-              <div className="rounded-2xl bg-book-page p-6 shadow-card sm:p-8">
+              <div className="rounded-2xl bg-book-page/90 p-6 shadow-card sm:p-8">
                 <p className="drop-cap reader-content text-lg leading-relaxed text-umber-light">
                   {work.excerpt}
                 </p>
@@ -192,7 +192,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
             {/* 侧边栏 — 信息卡片 */}
             <div className="mt-8 shrink-0 lg:mt-0 lg:w-64">
-              <div className="sticky top-24 space-y-3 rounded-2xl border border-sand/30 bg-warm-white p-5 shadow-card">
+              <div className="sticky top-24 space-y-3 rounded-2xl border border-sand/30 bg-warm-white/80 p-5 shadow-card">
                 <h3 className="font-heading-cn text-sm font-bold text-umber/50 uppercase tracking-wider">作品档案</h3>
                 <div className="h-px bg-sand/50" />
                 {[
@@ -227,7 +227,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
       {/* ===== 人物介绍 — 剧场聚光灯风格 ===== */}
       {detail.characters.length > 0 && (
-        <section id="section-characters" className="bg-gradient-to-b from-parchment/80 via-cream/80 to-parchment/80 py-14 sm:py-20 relative overflow-hidden">
+        <section id="section-characters" className="bg-gradient-to-b from-parchment/35 via-cream/35 to-parchment/35 py-14 sm:py-20 relative overflow-hidden">
           {/* 剧场幕布装饰 */}
           <div className="pointer-events-none absolute left-0 right-0 top-0 z-0 h-32 bg-gradient-to-b from-umber/5 to-transparent" />
 
@@ -253,7 +253,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
       {/* ===== 情节脉络 — 电影式时间线 ===== */}
       {detail.plotNodes.length > 0 && (
-        <section id="section-plot" className="bg-warm-white/85 py-14 sm:py-20">
+        <section id="section-plot" className="bg-warm-white/35 py-14 sm:py-20">
           <SectionReveal>
           <div className="mx-auto max-w-5xl px-5">
             <div className="mb-10 flex items-center gap-4">
@@ -275,7 +275,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       )}
 
       {/* ===== 主题分析 — 画廊式网格 ===== */}
-      <section id="section-themes" className="bg-cream/85 py-14 sm:py-20">
+      <section id="section-themes" className="bg-cream/35 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
@@ -295,7 +295,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
               return (
                 <div
                   key={i}
-                  className="group rounded-2xl border border-sand/30 bg-warm-white p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl sm:p-7"
+                  className="group rounded-2xl border border-sand/30 bg-warm-white/80 p-6 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl sm:p-7"
                 >
                   {/* 顶部色条 */}
                   <div
@@ -319,7 +319,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       </section>
 
       {/* ===== 写作手法 — 笔记本手写风格 ===== */}
-      <section id="section-techniques" className="bg-gradient-to-b from-parchment/80 to-cream/85 py-14 sm:py-20">
+      <section id="section-techniques" className="bg-gradient-to-b from-parchment/35 to-cream/35 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
@@ -331,7 +331,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
               <div className="mt-1 h-0.5 w-16 bg-gradient-to-r from-amber-dark to-transparent" />
             </div>
           </div>
-          <div className="rounded-2xl bg-old-paper p-6 shadow-card sm:p-10">
+          <div className="rounded-2xl bg-old-paper/90 p-6 shadow-card sm:p-10">
             <div className="space-y-8">
               {detail.techniques.split(/\n\n/).filter(Boolean).map((paragraph, i) => (
                 <div
@@ -377,7 +377,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             <div className="space-y-10">
               {detail.excerpts.map((ex, i) => (
                 <div key={i} className="group relative">
-                  <blockquote className="relative rounded-2xl border border-cream/8 bg-vintage-paper p-8 backdrop-blur-sm transition-all duration-500 hover:border-cream/15 sm:p-10">
+                  <blockquote className="relative rounded-2xl border border-cream/8 bg-vintage-paper/90 p-8 backdrop-blur-sm transition-all duration-500 hover:border-cream/15 sm:p-10">
                     {/* 引用标记 */}
                     <svg className="absolute -top-4 -left-4 h-10 w-10 text-amber/20" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
@@ -409,7 +409,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       )}
 
       {/* ===== 阅读启发 — 书信风格 ===== */}
-      <section id="section-insights" className="bg-cream/85 py-14 sm:py-20">
+      <section id="section-insights" className="bg-cream/35 py-14 sm:py-20">
         <SectionReveal>
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
@@ -423,7 +423,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           </div>
 
           {/* 信封式卡片 */}
-          <div className="relative rounded-2xl border border-sand/30 bg-letter-paper p-8 shadow-card sm:p-12">
+          <div className="relative rounded-2xl border border-sand/30 bg-letter-paper/90 p-8 shadow-card sm:p-12">
             {/* 信封三角盖 */}
             <div
               className="absolute -top-px left-8 right-8 h-10 rounded-t-lg border border-b-0 border-sand/30 bg-warm-white"
@@ -458,7 +458,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
       </section>
 
       {/* ===== 相关推荐 — 书架风格 ===== */}
-      <section className="bg-gradient-to-b from-parchment/80 via-parchment/80 to-cream/85 py-14 sm:py-20">
+      <section className="bg-gradient-to-b from-parchment/35 via-parchment/35 to-cream/35 py-14 sm:py-20">
         <div className="mx-auto max-w-5xl px-5">
           <div className="mb-10 flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-dark text-white shadow-lg">
