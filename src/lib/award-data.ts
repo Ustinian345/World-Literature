@@ -214,9 +214,12 @@ export const awards: Award[] = [
   },
 ];
 
-/* ========== 作品获奖映射 ========== */
+import { completeAwardWinners } from "./works/award-expansion";
 
-export const awardWinners: AwardWinner[] = [
+/* ========== 作品获奖映射（合并完整列表） ========== */
+
+// 原有的细致数据 + 从扩展导入的完整名单，去重
+const originalWinners: AwardWinner[] = [
   // ===== 诺贝尔文学奖 =====
   { workId: "gitanjali", awardSlug: "nobel-literature", year: 1913 },
   { workId: "magic-mountain", awardSlug: "nobel-literature", year: 1929 },
@@ -254,8 +257,6 @@ export const awardWinners: AwardWinner[] = [
   { workId: "death-and-kings-horseman", awardSlug: "nobel-literature", year: 1986 },
   { workId: "cairo-trilogy", awardSlug: "nobel-literature", year: 1988 },
   { workId: "as-i-lay-dying", awardSlug: "nobel-literature", year: 1949 },
-  { workId: "the-color-purple", awardSlug: "nobel-literature", year: 1983, category: "普利策小说奖" },
-  { workId: "snow-country", awardSlug: "nobel-literature", year: 1968 },
 
   // ===== 布克奖 =====
   { workId: "the-bone-people", awardSlug: "booker-prize", year: 1985 },
@@ -263,14 +264,13 @@ export const awardWinners: AwardWinner[] = [
   { workId: "true-history-kelly-gang", awardSlug: "booker-prize", year: 2001 },
   { workId: "disgrace", awardSlug: "booker-prize", year: 1999 },
   { workId: "schindlers-ark", awardSlug: "booker-prize", year: 1982 },
-  { workId: "the-english-patient", awardSlug: "booker-prize", year: 1992 },
-  { workId: "bk-in-006", awardSlug: "booker-prize", year: 1981, category: "Midnight's Children" },
-  { workId: "bk-in-007", awardSlug: "booker-prize", year: 1997, category: "The God of Small Things" },
-  { workId: "bk-af-001", awardSlug: "booker-prize", year: 1991, category: "The Famished Road" },
-  { workId: "bk-uk-008", awardSlug: "booker-prize", year: 1989, category: "The Remains of the Day" },
-  { workId: "re-ca-01", awardSlug: "booker-prize", year: 2000, category: "The Blind Assassin" },
-  { workId: "r2-in-02", awardSlug: "booker-prize", year: 2006, category: "The Inheritance of Loss" },
-  { workId: "re-in-06", awardSlug: "booker-prize", year: 2008, category: "The White Tiger" },
+  { workId: "bk-in-006", awardSlug: "booker-prize", year: 1981, category: "萨尔曼·拉什迪 · Midnight's Children" },
+  { workId: "bk-in-007", awardSlug: "booker-prize", year: 1997, category: "阿兰达蒂·洛伊" },
+  { workId: "bk-af-001", awardSlug: "booker-prize", year: 1991, category: "本·奥克瑞" },
+  { workId: "bk-uk-008", awardSlug: "booker-prize", year: 1989, category: "石黑一雄" },
+  { workId: "re-ca-01", awardSlug: "booker-prize", year: 2000, category: "玛格丽特·阿特伍德" },
+  { workId: "r2-in-02", awardSlug: "booker-prize", year: 2006, category: "姬兰·德赛" },
+  { workId: "re-in-06", awardSlug: "booker-prize", year: 2008, category: "阿拉文德·阿迪加" },
 
   // ===== 普利策小说奖 =====
   { workId: "the-grapes-of-wrath", awardSlug: "pulitzer-fiction", year: 1940 },
@@ -280,7 +280,7 @@ export const awardWinners: AwardWinner[] = [
   { workId: "the-color-purple", awardSlug: "pulitzer-fiction", year: 1983 },
   { workId: "re-nb-06", awardSlug: "pulitzer-fiction", year: 1957, category: "Long Day's Journey into Night" },
 
-  // ===== 雨果奖（最佳长篇小说） =====
+  // ===== 雨果奖 =====
   { workId: "x3-ch-008", awardSlug: "hugo-award", year: 2015, category: "最佳长篇小说 · 三体" },
 
   // ===== 塞万提斯奖 =====
@@ -303,6 +303,19 @@ export const awardWinners: AwardWinner[] = [
   // ===== 国际布克奖 =====
   { workId: "bk-kr-003", awardSlug: "intl-booker", year: 2016, category: "The Vegetarian · 韩江" },
 ];
+
+// 合并去重
+const seen = new Set<string>();
+const mergedWinners: AwardWinner[] = [];
+for (const w of [...originalWinners, ...completeAwardWinners]) {
+  const key = `${w.awardSlug}|${w.workId}|${w.year}`;
+  if (!seen.has(key)) {
+    seen.add(key);
+    mergedWinners.push(w);
+  }
+}
+
+export const awardWinners: AwardWinner[] = mergedWinners;
 
 /* ========== 辅助函数 ========== */
 

@@ -5,6 +5,7 @@ import { africanWorks, americasWorks, oceaniaWorks } from "./africa-americas-oce
 import { bulkWorks } from "./bulk-expansion";
 import { realWorks } from "./real-expansion";
 import { expansion1000 } from "./expansion-1000";
+import { awardWorks } from "./award-expansion";
 
 export const expandedWorks: Work[] = [
   ...asianWorks,
@@ -15,6 +16,7 @@ export const expandedWorks: Work[] = [
   ...bulkWorks,
   ...realWorks,
   ...expansion1000,
+  ...awardWorks,
 ];
 
 // 去重
