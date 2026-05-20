@@ -752,6 +752,103 @@ function generateInsights(work: Work, _characters: Character[] | undefined, seed
   return pick(insightTemplates, seed);
 }
 
+/* ---------- 角色自动生成 ---------- */
+
+interface CharTemplate {
+  name: string;
+  role: string;
+  description: string;
+}
+
+function autoCharacters(work: Work, seed: number): Character[] {
+  const s = Math.abs(seed);
+  const isAsian = work.continent === "asia";
+  const isChinese = work.country === "中国";
+  const era = work.era;
+  const genre = work.genre[0];
+  const themes = work.themes;
+
+  // 根据作品类型选择角色模板池
+  const pools: CharTemplate[][] = [];
+
+  // 主角
+  const protagPool: CharTemplate[] = [];
+  if (genre === "小说" || genre === "史诗") {
+    if (isChinese) {
+      protagPool.push({ name: "主人公", role: "主人公", description: `本作品的核心人物，在${era.replace(/[()]/g, "").split("—")[0]}的时代背景中历经命运的起伏与精神的蜕变。` });
+      protagPool.push({ name: "主角", role: "故事的中心", description: `一个在命运洪流中挣扎前行的灵魂，其人生轨迹折射出整个时代的悲欢离合。` });
+    } else {
+      protagPool.push({ name: "The Protagonist", role: "主人公", description: `The central figure of this work, navigating the complexities of ${isAsian ? "traditional society" : "their era"} with courage and vulnerability.` });
+      protagPool.push({ name: "The Hero", role: "主角", description: `A compelling character whose journey reflects the deepest human struggles and triumphs.` });
+    }
+  } else if (genre === "诗歌") {
+    protagPool.push({ name: "抒情主体", role: "叙述者", description: `以第一人称的视角抒发对${themes[0] === "自然" ? "自然万物" : themes[0] === "爱情" ? "爱与人生" : "生命与存在"}的深沉感悟与哲思。` });
+    protagPool.push({ name: "诗人自我", role: "吟唱者", description: `在词语的密林间穿行，以声音和节奏构建一个独属于心灵的世界。` });
+  } else if (genre === "戏剧") {
+    protagPool.push({ name: "主角", role: "戏剧中心人物", description: `在冲突与抉择中挣扎的核心角色，其命运在舞台的聚光灯下被逐一剥开。` });
+  } else if (genre === "散文/随笔") {
+    protagPool.push({ name: "作者", role: "叙述者", description: `以第一人称的视角行走在记忆与现实之间，在琐碎的日常中捕捉生命的微光。` });
+    protagPool.push({ name: "叙述主体", role: "观察者", description: `以敏锐的目光审视世界，在书写中寻找自我与时代的共振。` });
+  } else if (genre === "哲学") {
+    protagPool.push({ name: "哲人", role: "思想者", description: `在理性与信仰之间探求真理的思想先驱，其思辨如闪电般照亮了人类认知的黑暗地带。` });
+  }
+
+  // 配角/对手
+  const suppPool: CharTemplate[] = [];
+  if (genre === "小说" || genre === "史诗") {
+    if (themes.includes("爱情")) {
+      suppPool.push({ name: isChinese ? "恋人" : "The Beloved", role: "情感线索人物", description: "与主人公有着深刻情感联系的灵魂伴侣，ta的存在使主角的命运更加复杂而动人。" });
+    }
+    if (themes.includes("战争")) {
+      suppPool.push({ name: isChinese ? "战友" : "The Comrade", role: "战友", description: "与主角并肩作战的伙伴，在生死考验中结下了超越血缘的羁绊。" });
+    }
+    if (themes.includes("社会")) {
+      suppPool.push({ name: isChinese ? "对立者" : "The Antagonist", role: "对立面", description: "代表社会旧秩序或压迫力量的复杂人物，其与主角的冲突构成了作品的核心张力。" });
+    }
+    if (themes.includes("心理")) {
+      suppPool.push({ name: isChinese ? "引导者" : "The Mentor", role: "精神导师", description: "在主角陷入迷茫时指引方向的智慧长者，以其深邃的洞察力开启了主角的精神之旅。" });
+    }
+    suppPool.push({ name: isChinese ? "挚友" : "The Friend", role: "知己", description: "始终陪伴在主角身边的人物，以真诚与忠诚见证了主角所有的喜悦与痛苦。" });
+    suppPool.push({ name: isChinese ? "家人" : "The Family", role: "亲情纽带", description: "与主人公有着血缘关系的重要人物，ta的命运与主角的命运紧密交织。" });
+  }
+  if (suppPool.length < 2) {
+    suppPool.push({ name: isChinese ? "同行者" : "The Companion", role: "重要人物", description: "在故事中与主角的人生交汇，成为推动叙事发展的关键力量。" });
+    suppPool.push({ name: isChinese ? "影响者" : "The Influence", role: "关键人物", description: "以ta独特的方式影响了主角的命运走向，是不可或缺的叙事元素。" });
+  }
+
+  pools.push(protagPool);
+  pools.push(suppPool);
+
+  // 选角色：主角1-2个，配角2-3个，共3-5个
+  const chars: Character[] = [];
+  const used = new Set<string>();
+
+  for (const pool of pools) {
+    const n = pool === protagPool ? 1 + (s % 2) : 2 + (s % 2);
+    for (let i = 0; i < n && pool.length > 0; i++) {
+      const idx = (s + i * 7) % pool.length;
+      const candidate = pool[idx];
+      if (!used.has(candidate.name)) {
+        used.add(candidate.name);
+        chars.push(candidate);
+      }
+    }
+  }
+
+  // 确保至少有3个角色
+  while (chars.length < 3 && suppPool.length > 0) {
+    const extra = suppPool[chars.length % suppPool.length];
+    if (!used.has(extra.name)) {
+      used.add(extra.name);
+      chars.push(extra);
+    } else {
+      break;
+    }
+  }
+
+  return chars;
+}
+
 /* ================================================================
    主生成函数 — 角色感知
    ================================================================ */
@@ -761,7 +858,7 @@ export function generateWorkDetail(work: Work, characters?: Character[]): WorkDe
 
   return {
     id: work.id,
-    characters: [], // Characters sourced from character-data.ts
+    characters: characters && characters.length > 0 ? characters : autoCharacters(work, seed),
     plotSummary: generatePlotSummary(work, characters, seed),
     plotNodes: generatePlotNodes(work, characters, seed + 1),
     themeAnalysis: generateThemeAnalysis(work, characters, seed + 2),
