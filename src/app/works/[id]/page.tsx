@@ -82,16 +82,35 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
         <div className="absolute inset-0 bg-black/10 hero-gradient-overlay" />
 
         <div className="relative z-20 mx-auto max-w-6xl px-5 py-14 sm:py-24">
-          {/* 面包屑 */}
-          <Link
-            href={`/continents/${work.continent}`}
-            className="inline-flex items-center gap-1.5 rounded-full bg-white/8 px-4 py-1.5 font-[system-ui] text-sm text-white/70 backdrop-blur-sm transition-all hover:bg-white/15 hover:text-white"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-            {continent?.icon} {continent?.name}文学
-          </Link>
+          {/* 面包屑导航 */}
+          <div className="flex flex-wrap items-center gap-2">
+            <Link
+              href={`/continents/${work.continent}`}
+              className="inline-flex items-center gap-1.5 rounded-full bg-white/8 px-3 py-1 font-[system-ui] text-xs text-white/70 backdrop-blur-sm transition-all hover:bg-white/15 hover:text-white"
+            >
+              {continent?.icon} {continent?.name}文学
+            </Link>
+            <span className="text-white/20 text-xs">›</span>
+            <Link
+              href="/browse"
+              className="inline-flex items-center gap-1 rounded-full bg-white/8 px-2.5 py-1 font-[system-ui] text-xs text-white/50 backdrop-blur-sm transition-all hover:bg-white/12 hover:text-white/80"
+            >
+              {work.flag} {work.country}
+            </Link>
+            {workAwards.length > 0 && workAwards.map((aw) => {
+              const awardDef = getAward(aw.awardSlug);
+              if (!awardDef) return null;
+              return (
+                <Link
+                  key={`${aw.awardSlug}-${aw.year}`}
+                  href={`/awards/${aw.awardSlug}`}
+                  className={`inline-flex items-center gap-1 rounded-full bg-gradient-to-r ${awardDef.gradient} px-2.5 py-1 font-[system-ui] text-xs text-white/90 backdrop-blur-sm transition-all hover:scale-105 hover:shadow-md`}
+                >
+                  {awardDef.icon} {awardDef.name} {aw.year}
+                </Link>
+              );
+            })}
+          </div>
 
           {/* 分享按钮 — 右上角 */}
           <div className="absolute right-5 top-14 sm:right-auto sm:left-auto sm:top-14 md:right-5">
