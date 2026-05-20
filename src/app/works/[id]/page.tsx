@@ -180,7 +180,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           <div className="gap-10 lg:flex">
             {/* 主体 — 首字下沉 */}
             <div className="flex-1">
-              <div className="rounded-2xl bg-book-page/90 p-6 shadow-card sm:p-8">
+              <div className="rounded-2xl bg-book-page p-6 shadow-card sm:p-8">
                 <p className="drop-cap reader-content text-lg leading-relaxed text-umber-light">
                   {work.excerpt}
                 </p>
@@ -331,7 +331,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
               <div className="mt-1 h-0.5 w-16 bg-gradient-to-r from-amber-dark to-transparent" />
             </div>
           </div>
-          <div className="rounded-2xl bg-old-paper/90 p-6 shadow-card sm:p-10">
+          <div className="rounded-2xl bg-old-paper p-6 shadow-card sm:p-10">
             <div className="space-y-8">
               {detail.techniques.split(/\n\n/).filter(Boolean).map((paragraph, i) => (
                 <div
@@ -377,7 +377,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             <div className="space-y-10">
               {detail.excerpts.map((ex, i) => (
                 <div key={i} className="group relative">
-                  <blockquote className="relative rounded-2xl border border-cream/8 bg-vintage-paper/90 p-8 backdrop-blur-sm transition-all duration-500 hover:border-cream/15 sm:p-10">
+                  <blockquote className="relative rounded-2xl border border-cream/8 bg-vintage-paper p-8 backdrop-blur-sm transition-all duration-500 hover:border-cream/15 sm:p-10">
                     {/* 引用标记 */}
                     <svg className="absolute -top-4 -left-4 h-10 w-10 text-amber/20" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z" />
@@ -423,7 +423,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
           </div>
 
           {/* 信封式卡片 */}
-          <div className="relative rounded-2xl border border-sand/30 bg-letter-paper/90 p-8 shadow-card sm:p-12">
+          <div className="relative rounded-2xl border border-sand/30 bg-letter-paper p-8 shadow-card sm:p-12">
             {/* 信封三角盖 */}
             <div
               className="absolute -top-px left-8 right-8 h-10 rounded-t-lg border border-b-0 border-sand/30 bg-warm-white"
