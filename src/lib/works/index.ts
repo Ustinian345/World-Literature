@@ -7,6 +7,7 @@ import { realWorks } from "./real-expansion";
 import { expansion1000 } from "./expansion-1000";
 import { awardWorks } from "./award-expansion";
 import { maodunMissingWorks, luxunFictionWorks, remainingAwardWorks } from "./award-expansion-2";
+import { bookerRest, pulitzerRest, hugoRest, goncourtKey, cervantesAll, otherAwards } from "./award-expansion-3";
 
 export const expandedWorks: Work[] = [
   ...asianWorks,
@@ -21,6 +22,12 @@ export const expandedWorks: Work[] = [
   ...maodunMissingWorks,
   ...luxunFictionWorks,
   ...remainingAwardWorks,
+  ...bookerRest,
+  ...pulitzerRest,
+  ...hugoRest,
+  ...goncourtKey,
+  ...cervantesAll,
+  ...otherAwards,
 ];
 
 // 去重
