@@ -5,7 +5,7 @@ import { bookDetails } from "@/lib/book-data";
 import { allCharacters } from "@/lib/character-data";
 import { generateWorkDetail } from "@/lib/analysis-generator";
 import { BookCover } from "@/components/BookCover";
-import { PageBackground } from "@/components/PageBackground";
+import { RealPageBackground } from "@/components/RealPageBackground";
 import { HeroParticles } from "@/components/HeroParticles";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { PlotTimeline } from "@/components/PlotTimeline";
@@ -61,15 +61,10 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
     <>
       <ScrollProgress />
       <BookmarkButton workId={id} />
-      <PageBackground
+      <RealPageBackground
         workId={id}
         title={work.title}
-        titleEn={work.titleEn}
-        author={work.author}
         gradient={work.gradient}
-        continent={work.continent}
-        characters={detail.characters.map(c => ({ name: c.name, role: c.role }))}
-        plotNodes={detail.plotNodes.map(n => ({ label: n.label, description: n.description }))}
       />
 
       <div className="relative z-10">

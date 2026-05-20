@@ -1,0 +1,4 @@
+{
+  "_说明": "书籍真实背景图片数据。每个 key 是 workId，值包含 Unsplash/Pexels 真实图片链接及属性信息。批量脚本 scripts/batch-fetch-bg.ts 用于自动填充此文件。",
+  "_instructions": "运行 npm run bg:batch 以批量预生成热门书籍背景图。需要设置 UNSPLASH_ACCESS_KEY 环境变量。"
+}
