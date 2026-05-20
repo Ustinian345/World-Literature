@@ -8,6 +8,7 @@ import { expansion1000 } from "./expansion-1000";
 import { awardWorks } from "./award-expansion";
 import { maodunMissingWorks, luxunFictionWorks, remainingAwardWorks } from "./award-expansion-2";
 import { bookerRest, pulitzerRest, hugoRest, goncourtKey, cervantesAll, otherAwards } from "./award-expansion-3";
+import { luxunS1, luxunS2, luxunS3to8 } from "./award-expansion-4";
 
 export const expandedWorks: Work[] = [
   ...asianWorks,
@@ -28,6 +29,9 @@ export const expandedWorks: Work[] = [
   ...goncourtKey,
   ...cervantesAll,
   ...otherAwards,
+  ...luxunS1,
+  ...luxunS2,
+  ...luxunS3to8,
 ];
 
 // 去重

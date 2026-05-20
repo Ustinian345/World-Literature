@@ -217,10 +217,11 @@ export const awards: Award[] = [
 import { completeAwardWinners } from "./works/award-expansion";
 import { completeWinners2 } from "./works/award-expansion-2";
 import { completeWinners3 } from "./works/award-expansion-3";
+import { completeWinners4 } from "./works/award-expansion-4";
 
 /* ========== 作品获奖映射（合并完整列表） ========== */
 
-// 原有数据 + 扩展1/2/3，合并去重
+// 原有数据 + 扩展1/2/3/4，合并去重
 const originalWinners: AwardWinner[] = [
   // ===== 诺贝尔文学奖 =====
   { workId: "gitanjali", awardSlug: "nobel-literature", year: 1913 },
@@ -309,7 +310,7 @@ const originalWinners: AwardWinner[] = [
 // 合并去重
 const seen = new Set<string>();
 const mergedWinners: AwardWinner[] = [];
-for (const w of [...originalWinners, ...completeAwardWinners, ...completeWinners2, ...completeWinners3]) {
+for (const w of [...originalWinners, ...completeAwardWinners, ...completeWinners2, ...completeWinners3, ...completeWinners4]) {
   const key = `${w.awardSlug}|${w.workId}|${w.year}`;
   if (!seen.has(key)) {
     seen.add(key);
