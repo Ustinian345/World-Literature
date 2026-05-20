@@ -291,3 +291,12 @@ body {
   color: var(--color-terracotta);
   filter: drop-shadow(0 0 3px rgba(196, 115, 79, 0.3));
 }
+
+/* === 马赛克滚动动画 === */
+@keyframes scroll-row {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll-row {
+  animation: scroll-row linear infinite;
+}

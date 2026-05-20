@@ -4,6 +4,7 @@ import { useState, useMemo, use } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { continents, allWorks, allGenres, allThemes, allEras } from "@/lib/data";
+import { HeroMosaic } from "@/components/HeroMosaic";
 
 function getWorksByContinent(slug: string) {
   return allWorks.filter((w) => w.continent === slug);
@@ -56,7 +57,13 @@ export function ContinentContent({
     <>
       {/* ===== 大洲头部 ===== */}
       <section className={`mt-16 bg-gradient-to-br ${continent.gradient} relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-black/30" />
+        <HeroMosaic
+          gradients={continentWorks.map((w) => w.gradient)}
+          titles={continentWorks.map((w) => w.title)}
+          landmarks={continentLandmarks(continent.slug)}
+          speed={60}
+        />
+        <div className="absolute inset-0 bg-black/30 z-[5]" />
         <div className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:py-24">
           <Link
             href="/#continents"
@@ -234,4 +241,15 @@ export function ContinentContent({
       </section>
     </>
   );
+}
+
+function continentLandmarks(slug: string): string[] {
+  const map: Record<string, string[]> = {
+    asia: ["🏯", "⛩️", "🕌", "🏔️", "🐉", "🎋", "🏮", "🗼", "🛕", "🌋", "🌸", "🐼", "🏯", "🌏", "🎎", "🍜"],
+    europe: ["🏛️", "🏰", "⛪", "🗼", "🎭", "🕍", "🏺", "🎨", "🕌", "🏔️", "🌍", "💒", "🗿", "⚜️", "🎻", "🏛️"],
+    africa: ["🦁", "🐘", "🏜️", "🌍", "🌋", "🕌", "🥁", "🐪", "🏺", "🦒", "🌴", "⛰️", "🦛", "🎭", "🦅", "🏝️"],
+    americas: ["🗽", "🌎", "🏔️", "🏜️", "🦅", "🎸", "🌋", "🗿", "🌴", "🏙️", "🎭", "🦜", "⛰️", "🏟️", "🦬", "🌵"],
+    oceania: ["🌊", "🏝️", "🐨", "🗿", "🌏", "🦘", "🐬", "🏄", "🌴", "⛰️", "🦜", "🐠", "🌋", "🏖️", "🦈", "🌺"],
+  };
+  return map[slug] || ["📚", "🌍", "🏛️"];
 }

@@ -6,6 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { awards, getWinnersByAward, getAward } from "@/lib/award-data";
 import { allWorks } from "@/lib/data";
+import { HeroMosaic } from "@/components/HeroMosaic";
 
 export function generateStaticParams() {
   return awards.map((a) => ({ slug: a.slug }));
@@ -27,7 +28,6 @@ export default async function AwardPage({ params }: { params: Promise<{ slug: st
   if (!award) notFound();
 
   const winners = getWinnersByAward(slug);
-  // 按年份分组，将 workId 映射到实际 Work 对象
   const winnerWorks = winners
     .map((w) => {
       const work = allWorks.find((wk) => wk.id === w.workId);
@@ -35,11 +35,19 @@ export default async function AwardPage({ params }: { params: Promise<{ slug: st
     })
     .filter((x) => x.work != null);
 
+  const awardGradients = winnerWorks.map((x) => x.work!.gradient);
+  const awardTitles = winnerWorks.map((x) => x.work!.title);
+
   return (
     <div className="min-h-screen bg-cream">
-      {/* Hero — 奖项专属渐变色 */}
       <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${award.gradient}`}>
-        <div className="absolute inset-0 bg-black/15" />
+        <HeroMosaic
+          gradients={awardGradients}
+          titles={awardTitles}
+          landmarks={["🏆", "📖", "✒️", "🥇", "🎭", "🌟", "📚", "🏅", "🎨", "💡", "🔮", "⚡"]}
+          speed={50}
+        />
+        <div className="absolute inset-0 bg-black/15 z-[5]" />
         <div className="relative z-10 mx-auto max-w-5xl px-5 py-16 sm:py-24">
           <Link
             href="/awards"
