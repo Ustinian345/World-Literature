@@ -50,7 +50,7 @@ const workVisualQueries: Record<string, string> = {
   "three-kingdoms": "ancient Chinese battlefield war epic dramatic sky",
   "water-margin": "wild mountains marshland ancient Chinese fortress mist",
   "divine-comedy": "dramatic light heaven hell renaissance painting cathedral",
-  "don-quixote": "Spanish windmill golden field lone knight countryside",
+  "don-quixote": "La Mancha Spain countryside windmill vintage golden hour",
   "hamlet": "ancient castle misty graveyard moody dramatic atmosphere",
   "war-and-peace": "Russian winter palace ballroom aristocratic 19th century",
   "crime-and-punishment": "St Petersburg dark street winter lamp shadow",
@@ -67,7 +67,7 @@ const workVisualQueries: Record<string, string> = {
   "iliad": "ancient Greek warrior battlefield Trojan epic dramatic sky",
   "anna-karenina": "Russian train station snow winter aristocratic ballroom",
   "wuthering-heights": "English moor stormy weather wild landscape dark sky",
-  "things-fall-apart": "African village savanna Igbo culture traditional ceremony",
+  "things-fall-apart": "African village traditional ceremony Nigeria rural landscape",
   "brothers-karamazov": "Russian monastery winter town Orthodox church moody",
   "ulysses": "Dublin street early 1900s vintage city literary",
 };
@@ -322,9 +322,11 @@ export async function fetchRealBackground(ctx: BookSearchContext): Promise<BgIma
     result = await searchPexels(query);
   }
 
-  // 4. 如果第一次搜索无结果，尝试扩展查询（只用书名 + 作者）
+  // 4. 如果第一次搜索无结果，尝试更宽泛的英文查询
   if (!result) {
-    const fallbackQuery = `${ctx.titleEn} ${ctx.author.split(/[\s·]+/).pop()}`;
+    // 只用英文书名，去除括号和特殊字符
+    const cleanTitle = ctx.titleEn.replace(/\(.*?\)/g, "").replace(/[.,\/#!$%^&*;:{}=\-_`~()]/g, "").trim();
+    const fallbackQuery = `${cleanTitle} classic literature novel`;
     console.log(`[bg-fetcher] Fallback search: "${fallbackQuery}"`);
     result = await searchUnsplash(fallbackQuery);
     if (!result) {

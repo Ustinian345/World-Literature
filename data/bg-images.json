@@ -1,4 +1,84 @@
 {
   "_说明": "书籍真实背景图片数据。每个 key 是 workId，值包含 Unsplash/Pexels 真实图片链接及属性信息。批量脚本 scripts/batch-fetch-bg.ts 用于自动填充此文件。",
-  "_instructions": "运行 npm run bg:batch 以批量预生成热门书籍背景图。需要设置 UNSPLASH_ACCESS_KEY 环境变量。"
+  "_instructions": "运行 npm run bg:batch 以批量预生成热门书籍背景图。需要设置 UNSPLASH_ACCESS_KEY 环境变量。",
+  "dream-of-red-chamber": {
+    "url": "https://images.unsplash.com/photo-1542543237-95b74b733938?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxhbmNpZW50JTIwQ2hpbmVzZSUyMGdhcmRlbiUyMHBhdmlsaW9uJTIwbGFudGVybiUyMHJhaW4lMjBtb29keXxlbnwxfDB8fHwxNzc5MjU0MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "William Krause",
+    "photographerUrl": "https://unsplash.com/@williamk?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/ApHDYxgy-vo/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxhbmNpZW50JTIwQ2hpbmVzZSUyMGdhcmRlbiUyMHBhdmlsaW9uJTIwbGFudGVybiUyMHJhaW4lMjBtb29keXxlbnwxfDB8fHwxNzc5MjU0MjAxfDA",
+    "fetchedAt": "2026-05-20T05:16:41.654Z",
+    "searchQuery": "ancient Chinese garden pavilion lantern rain moody"
+  },
+  "tale-of-genji": {
+    "url": "https://images.unsplash.com/photo-1726116685142-5d8b42babeae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxKYXBhbmVzZSUyMGFuY2llbnQlMjBwYWxhY2UlMjBjaGVycnklMjBibG9zc29tJTIwSGVpYW4lMjBlcmElMjBlbGVnYW50fGVufDF8MHx8fDE3NzkyNTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Squids Z",
+    "photographerUrl": "https://unsplash.com/@squids93?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/hpR8Fg-Fs_s/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxKYXBhbmVzZSUyMGFuY2llbnQlMjBwYWxhY2UlMjBjaGVycnklMjBibG9zc29tJTIwSGVpYW4lMjBlcmElMjBlbGVnYW50fGVufDF8MHx8fDE3NzkyNTQyMDN8MA",
+    "fetchedAt": "2026-05-20T05:16:43.790Z",
+    "searchQuery": "Japanese ancient palace cherry blossom Heian era elegant"
+  },
+  "divine-comedy": {
+    "url": "https://images.unsplash.com/photo-1773476244123-ecc6ce289a3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxkcmFtYXRpYyUyMGxpZ2h0JTIwaGVhdmVuJTIwaGVsbCUyMHJlbmFpc3NhbmNlJTIwcGFpbnRpbmclMjBjYXRoZWRyYWx8ZW58MXwwfHx8MTc3OTI1NDIwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Egor Myznik",
+    "photographerUrl": "https://unsplash.com/@vonshnauzer?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/slmjp8X5JyE/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxkcmFtYXRpYyUyMGxpZ2h0JTIwaGVhdmVuJTIwaGVsbCUyMHJlbmFpc3NhbmNlJTIwcGFpbnRpbmclMjBjYXRoZWRyYWx8ZW58MXwwfHx8MTc3OTI1NDIwNXww",
+    "fetchedAt": "2026-05-20T05:16:45.938Z",
+    "searchQuery": "dramatic light heaven hell renaissance painting cathedral"
+  },
+  "don-quixote": {
+    "url": "https://images.unsplash.com/photo-1776569058231-b91b70e935d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwxfHxMYSUyME1hbmNoYSUyMFNwYWluJTIwY291bnRyeXNpZGUlMjB3aW5kbWlsbCUyMHZpbnRhZ2UlMjBnb2xkZW4lMjBob3VyfGVufDF8MHx8fDE3NzkyNTQ0OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Adam Young",
+    "photographerUrl": "https://unsplash.com/@hossua34?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/9XWZaXYXeMk/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwxfHxMYSUyME1hbmNoYSUyMFNwYWluJTIwY291bnRyeXNpZGUlMjB3aW5kbWlsbCUyMHZpbnRhZ2UlMjBnb2xkZW4lMjBob3VyfGVufDF8MHx8fDE3NzkyNTQ0OTJ8MA",
+    "fetchedAt": "2026-05-20T05:21:32.903Z",
+    "searchQuery": "La Mancha Spain countryside windmill vintage golden hour"
+  },
+  "hamlet": {
+    "url": "https://images.unsplash.com/photo-1707051772724-d976e49c785b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHw1fHxhbmNpZW50JTIwY2FzdGxlJTIwbWlzdHklMjBncmF2ZXlhcmQlMjBtb29keSUyMGRyYW1hdGljJTIwYXRtb3NwaGVyZXxlbnwxfDB8fHwxNzc5MjU0MjExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Rodion Kutsaiev",
+    "photographerUrl": "https://unsplash.com/@frostroomhead?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/gYC68k9trV8/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHw1fHxhbmNpZW50JTIwY2FzdGxlJTIwbWlzdHklMjBncmF2ZXlhcmQlMjBtb29keSUyMGRyYW1hdGljJTIwYXRtb3NwaGVyZXxlbnwxfDB8fHwxNzc5MjU0MjExfDA",
+    "fetchedAt": "2026-05-20T05:16:51.787Z",
+    "searchQuery": "ancient castle misty graveyard moody dramatic atmosphere"
+  },
+  "war-and-peace": {
+    "url": "https://images.unsplash.com/photo-1710204326042-1f28992414fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxSdXNzaWFuJTIwd2ludGVyJTIwcGFsYWNlJTIwYmFsbHJvb20lMjBhcmlzdG9jcmF0aWMlMjAxOXRoJTIwY2VudHVyeXxlbnwxfDB8fHwxNzc5MjU0MjE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Yunwei Song",
+    "photographerUrl": "https://unsplash.com/@shakespeare_cloud?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/4OOrJSuDN7Q/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwyfHxSdXNzaWFuJTIwd2ludGVyJTIwcGFsYWNlJTIwYmFsbHJvb20lMjBhcmlzdG9jcmF0aWMlMjAxOXRoJTIwY2VudHVyeXxlbnwxfDB8fHwxNzc5MjU0MjE4fDA",
+    "fetchedAt": "2026-05-20T05:16:58.842Z",
+    "searchQuery": "Russian winter palace ballroom aristocratic 19th century"
+  },
+  "things-fall-apart": {
+    "url": "https://images.unsplash.com/photo-1476275466078-4007374efbbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwxfHxUaGluZ3MlMjBGYWxsJTIwQXBhcnQlMjBjbGFzc2ljJTIwbGl0ZXJhdHVyZSUyMG5vdmVsfGVufDF8MHx8fDE3NzkyNTQ1MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Annelies Geneyn",
+    "photographerUrl": "https://unsplash.com/@anneliesgeneyn?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/bhBONc07WsI/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwxfHxUaGluZ3MlMjBGYWxsJTIwQXBhcnQlMjBjbGFzc2ljJTIwbGl0ZXJhdHVyZSUyMG5vdmVsfGVufDF8MHx8fDE3NzkyNTQ1MDN8MA",
+    "fetchedAt": "2026-05-20T05:21:43.456Z",
+    "searchQuery": "Things Fall Apart classic literature novel"
+  },
+  "hundred-years-solitude": {
+    "url": "https://images.unsplash.com/photo-1778188985186-25a9d5f7d2b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMHJhaW5mb3Jlc3QlMjBtYWdpY2FsJTIwcmVhbGlzbSUyMENvbG9tYmlhbiUyMGxhbmRzY2FwZXxlbnwxfDB8fHwxNzc5MjU0MjI0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    "status": "completed",
+    "source": "unsplash",
+    "photographer": "Miguel Ángel Pinto",
+    "photographerUrl": "https://unsplash.com/@miguept?utm_source=world-literature&utm_medium=referral",
+    "downloadLocation": "https://api.unsplash.com/photos/mzLk3DQkcSU/download?ixid=M3w5NTYxNTd8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMHJhaW5mb3Jlc3QlMjBtYWdpY2FsJTIwcmVhbGlzbSUyMENvbG9tYmlhbiUyMGxhbmRzY2FwZXxlbnwxfDB8fHwxNzc5MjU0MjI0fDA",
+    "fetchedAt": "2026-05-20T05:17:04.372Z",
+    "searchQuery": "tropical rainforest magical realism Colombian landscape"
+  }
 }

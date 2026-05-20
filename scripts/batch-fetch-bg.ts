@@ -11,6 +11,25 @@
 import * as path from "path";
 import { existsSync, readFileSync, writeFileSync } from "fs";
 
+// ---- 加载 .env.local（Node 脚本不会自动加载） ----
+function loadEnvFile(filePath: string) {
+  if (!existsSync(filePath)) return;
+  const content = readFileSync(filePath, "utf-8");
+  for (const line of content.split("\n")) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) continue;
+    const eqIdx = trimmed.indexOf("=");
+    if (eqIdx === -1) continue;
+    const key = trimmed.slice(0, eqIdx).trim();
+    const value = trimmed.slice(eqIdx + 1).trim();
+    if (!process.env[key]) {
+      process.env[key] = value;
+    }
+  }
+}
+loadEnvFile(path.join(__dirname, "..", ".env.local"));
+loadEnvFile(path.join(__dirname, "..", ".env"));
+
 // ---- 直接在脚本中内联需要的逻辑（避免 TS 模块解析问题） ----
 
 const DATA_PATH = path.join(__dirname, "..", "data", "bg-images.json");
