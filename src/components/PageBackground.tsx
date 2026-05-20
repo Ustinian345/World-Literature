@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 interface PageBackgroundProps {
   workId: string;
@@ -10,14 +10,6 @@ interface PageBackgroundProps {
   continent: string;
   characters?: Array<{ name: string; role: string }>;
   plotNodes?: Array<{ label: string; description: string }>;
-}
-
-interface ImageResult {
-  url: string;
-  width: number;
-  height: number;
-  title: string;
-  score: number;
 }
 
 const imageCache = new Map<string, string | null>();
@@ -33,81 +25,96 @@ export function PageBackground({
   plotNodes,
 }: PageBackgroundProps) {
   const [imgUrl, setImgUrl] = useState<string | null>(null);
-  const [sceneUrl, setSceneUrl] = useState<string | null>(null);
   const [loaded, setLoaded] = useState(false);
-  const abortRef = useRef<AbortController | null>(null);
-
   const cacheKey = `bg|${workId}`;
 
   useEffect(() => {
     let cancelled = false;
-    abortRef.current?.abort();
-    const ac = new AbortController();
-    abortRef.current = ac;
 
     if (imageCache.has(cacheKey)) {
       const cached = imageCache.get(cacheKey)!;
       if (!cancelled) setImgUrl(cached);
-      return;
+      return () => { cancelled = true; };
     }
 
-    // Build relevance keywords for filtering
-    const keywords = buildKeywords(title, titleEn, author, characters, plotNodes);
-
     async function load() {
-      // ===== Phase 1: Fetch cover + scene in PARALLEL =====
-      // Start OpenLibrary immediately — it's the fastest
-      const coverPromise = fetchCover(titleEn || title, author, ac.signal);
+      // ===== Phase 1: ALL sources in parallel, race to first result =====
+      const keywords = buildKeywords(title, titleEn, author, characters, plotNodes);
 
-      // Start 3 most-promising Wikimedia queries in parallel (limited to 3s each)
-      const sceneQueries = buildSceneQueries(title, titleEn, author, continent, characters, plotNodes);
-      const wikiPromises = sceneQueries.slice(0, 3).map((q) =>
-        searchWikimedia(q, keywords, ac.signal)
+      const sources: Array<() => Promise<string | null>> = [
+        // OpenLibrary with English title
+        () => fetchOpenLibrary(titleEn || title, author),
+        // OpenLibrary with original title (for Asian books)
+        ...(title !== titleEn && titleEn ? [() => fetchOpenLibrary(title, author)] : []),
+        // Google Books
+        () => fetchGoogleBooks(titleEn || title, author),
+        ...(title !== titleEn && titleEn ? [() => fetchGoogleBooks(title, author)] : []),
+        // Direct Wikimedia search for covers/frontispieces
+        () => searchWikimediaSimple(`"${titleEn || title}" ${author} cover`, keywords),
+        () => searchWikimediaSimple(`"${titleEn || title}" ${author} frontispiece`, keywords),
+        ...(title !== titleEn
+          ? [() => searchWikimediaSimple(`"${title}" 封面`, keywords)]
+          : []),
+      ];
+
+      // Fire all sources in parallel
+      const promises = sources.map((fn) =>
+        fn().catch(() => null)
       );
 
-      // Show cover as soon as it arrives
-      const cover = await coverPromise;
-      if (!cancelled && cover) {
-        setImgUrl(cover);
-      }
+      // Get the first successful result
+      let firstResult: string | null = null;
+      let bestScene: string | null = null;
 
-      // Wait for best scene image from Wikimedia
-      const wikiResults = await Promise.allSettled(wikiPromises);
-      let bestScene: ImageResult | null = null;
+      // Use Promise.any-like approach: show first available, collect best
+      const results = await Promise.allSettled(promises);
 
-      for (const r of wikiResults) {
+      for (const r of results) {
+        if (cancelled) break;
         if (r.status === "fulfilled" && r.value) {
-          if (!bestScene || r.value.score > bestScene.score) {
+          if (!firstResult) firstResult = r.value;
+          // Prefer scene images over covers (they have "commons" in URL)
+          if (r.value.includes("wikimedia") || r.value.includes("commons")) {
             bestScene = r.value;
           }
         }
       }
 
-      // Use scene if it has a decent relevance score (>= 1)
-      const result = bestScene && bestScene.score >= 1
-        ? bestScene.url
-        : cover;
-
-      // If still nothing, try Google Books
-      let finalResult = result;
-      if (!finalResult) {
-        finalResult = await fetchGoogleBooks(titleEn || title, author, ac.signal);
+      // Show immediately if we have anything
+      if (!cancelled) {
+        const result = bestScene || firstResult;
+        if (result) {
+          if (imageCache.size >= MAX_CACHE) {
+            const first = imageCache.keys().next().value;
+            if (first) imageCache.delete(first);
+          }
+          imageCache.set(cacheKey, result);
+          setImgUrl(result);
+        }
       }
 
-      if (!cancelled && finalResult) {
-        if (imageCache.size >= MAX_CACHE) {
-          const first = imageCache.keys().next().value;
-          if (first) imageCache.delete(first);
+      // ===== Phase 2: Better scene search in background =====
+      if (!cancelled && characters && plotNodes) {
+        const sceneQueries = buildSceneQueries(title, titleEn, author, continent, characters, plotNodes);
+        const scenePromises = sceneQueries.slice(0, 2).map((q) =>
+          searchWikimediaSimple(q, keywords).catch(() => null)
+        );
+        const sceneResults = await Promise.allSettled(scenePromises);
+        for (const r of sceneResults) {
+          if (cancelled) break;
+          if (r.status === "fulfilled" && r.value) {
+            const existing = imageCache.get(cacheKey);
+            if (existing) imageCache.set(cacheKey, r.value);
+            setImgUrl(r.value);
+            break;
+          }
         }
-        imageCache.set(cacheKey, finalResult);
-        setImgUrl(finalResult);
       }
     }
 
     load();
     return () => {
       cancelled = true;
-      ac.abort();
     };
   }, [cacheKey, title, titleEn, author, continent, characters, plotNodes]);
 
@@ -118,13 +125,13 @@ export function PageBackground({
       <img
         src={imgUrl}
         alt=""
-        className={`absolute inset-0 min-h-full min-w-full w-auto h-auto object-cover transition-opacity duration-700 ${
+        className={`absolute inset-0 w-full h-full transition-opacity duration-700 ${
           loaded ? "opacity-25" : "opacity-0"
         }`}
         style={{
+          objectFit: "cover",
           filter: "blur(2px)",
           transform: "scale(1.05)",
-          transformOrigin: "center center",
         }}
         onLoad={() => setLoaded(true)}
       />
@@ -132,70 +139,77 @@ export function PageBackground({
   );
 }
 
-// ===== Fetch OpenLibrary cover — fast < 1s =====
-async function fetchCover(
-  title: string,
-  author: string,
-  signal: AbortSignal
-): Promise<string | null> {
+// ===== Simple timeout wrapper =====
+function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => reject(new Error("timeout")), ms);
+    promise.then(
+      (v) => { clearTimeout(timer); resolve(v); },
+      (e) => { clearTimeout(timer); reject(e); }
+    );
+  });
+}
+
+// ===== OpenLibrary =====
+async function fetchOpenLibrary(title: string, author: string): Promise<string | null> {
   try {
     const q = encodeURIComponent(`${title} ${author}`);
-    const res = await fetch(
-      `https://openlibrary.org/search.json?q=${q}&limit=1`,
-      { signal }
+    const res = await withTimeout(
+      fetch(`https://openlibrary.org/search.json?q=${q}&limit=3`),
+      4000
     );
     if (!res.ok) return null;
-    const d = await res.json();
-    const cid = d.docs?.[0]?.cover_i;
-    if (cid) return `https://covers.openlibrary.org/b/id/${cid}-L.jpg`;
+    const data = await res.json();
+    // Try up to 3 results in case first has no cover
+    for (const doc of data.docs || []) {
+      if (doc.cover_i) {
+        return `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
+      }
+    }
   } catch {}
   return null;
 }
 
-// ===== Fetch Google Books — medium speed =====
-async function fetchGoogleBooks(
-  title: string,
-  author: string,
-  signal: AbortSignal
-): Promise<string | null> {
+// ===== Google Books =====
+async function fetchGoogleBooks(title: string, author: string): Promise<string | null> {
   try {
     const q = encodeURIComponent(`${title} ${author}`);
-    const res = await fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=${q}&maxResults=1`,
-      { signal }
+    const res = await withTimeout(
+      fetch(`https://www.googleapis.com/books/v1/volumes?q=${q}&maxResults=3`),
+      4000
     );
     if (!res.ok) return null;
-    const d = await res.json();
-    const t = d.items?.[0]?.volumeInfo?.imageLinks?.thumbnail;
-    if (t) return t.replace("zoom=1", "zoom=3").replace("http:", "https:");
+    const data = await res.json();
+    for (const item of data.items || []) {
+      const thumb = item.volumeInfo?.imageLinks?.thumbnail;
+      if (thumb) {
+        return thumb
+          .replace("zoom=1", "zoom=3")
+          .replace("http:", "https:")
+          .replace("&edge=curl", "");
+      }
+    }
   } catch {}
   return null;
 }
 
-// ===== Search Wikimedia with relevance filtering =====
-async function searchWikimedia(
+// ===== Wikimedia — simplified, lower threshold =====
+async function searchWikimediaSimple(
   query: string,
-  keywords: string[],
-  signal: AbortSignal
-): Promise<ImageResult | null> {
+  keywords: string[]
+): Promise<string | null> {
   try {
-    const tc = new AbortController();
-    const tid = setTimeout(() => tc.abort(), 3000); // 3s timeout
-    const combinedSignal = combineSignals(signal, tc.signal);
-
-    const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&prop=imageinfo&iiprop=url|size&format=json&gsrlimit=12&origin=*`;
-    const res = await fetch(url, {
-      signal: combinedSignal,
-      headers: { "User-Agent": "WLH/1.0" },
-    });
-    clearTimeout(tid);
+    const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&prop=imageinfo&iiprop=url|size&format=json&gsrlimit=10&origin=*`;
+    const res = await withTimeout(
+      fetch(url, { headers: { "User-Agent": "WLH/1.0" } }),
+      4000
+    );
     if (!res.ok) return null;
-
     const data = await res.json();
     const pages = data?.query?.pages;
     if (!pages) return null;
 
-    let best: ImageResult | null = null;
+    let best: { url: string; score: number } | null = null;
 
     for (const p of Object.values(pages) as Array<{
       title?: string;
@@ -204,58 +218,55 @@ async function searchWikimedia(
       const info = p.imageinfo?.[0];
       if (!info) continue;
 
-      // Skip tiny images, icons, and SVGs
-      if (info.width < 400 || info.height < 300) continue;
+      // Very minimal size requirement
+      if (info.width < 300 || info.height < 200) continue;
 
-      // Calculate relevance score
       const fileTitle = (p.title || "").toLowerCase();
+
+      // Only skip obviously bad matches
+      if (
+        fileTitle.includes("icon") ||
+        fileTitle.includes("logo.svg") ||
+        fileTitle.includes("diagram")
+      ) continue;
+
+      // Calculate relevance
       let score = 0;
       for (const kw of keywords) {
-        if (fileTitle.includes(kw.toLowerCase())) score++;
+        if (fileTitle.includes(kw.toLowerCase())) score += 2;
       }
 
-      // Bonus: prefer landscape-ish images for backgrounds
+      // Bonus for good aspect ratio for backgrounds
       const aspect = info.width / info.height;
-      const isGoodShape = aspect > 1.0 && aspect < 3.0;
+      if (aspect > 1.0 && aspect < 2.5) score += 2;
+      if (info.width > 800) score += 1;
+      if (info.height > 500) score += 1;
 
-      // Skip clearly irrelevant: modern photos, diagrams
-      const isBad =
-        fileTitle.includes("icon") ||
-        fileTitle.includes("logo") ||
-        fileTitle.includes("diagram") ||
-        fileTitle.includes("map") ||
-        fileTitle.includes("screenshot") ||
-        fileTitle.includes("photo") ||
-        fileTitle.includes("graph");
-
-      if (isBad) continue;
-
-      // Combined quality: relevance + size + shape
-      const quality =
-        score * 10 +
-        (isGoodShape ? 3 : 0) +
-        Math.min(info.width / 500, 4);
-
-      if (!best || quality > best.score) {
-        best = {
-          url: info.url,
-          width: info.width,
-          height: info.height,
-          title: p.title || "",
-          score: quality,
-        };
+      if (!best || score > best.score) {
+        best = { url: info.url, score };
       }
     }
 
-    // Require at least some relevance or good quality
-    if (best && best.score > 2) return best;
-    return null;
-  } catch {
-    return null;
-  }
+    // Accept anything with a decent quality signal
+    if (best && best.score >= 1) return best.url;
+    // If nothing scored, still return the largest image as last resort
+    if (!best) {
+      let largest: { url: string; w: number } | null = null;
+      for (const p of Object.values(pages) as Array<{
+        imageinfo?: Array<{ url: string; width: number }>;
+      }>) {
+        const info = p.imageinfo?.[0];
+        if (info && info.width > (largest?.w || 0)) {
+          largest = { url: info.url, w: info.width };
+        }
+      }
+      if (largest && largest.w > 400) return largest.url;
+    }
+  } catch {}
+  return null;
 }
 
-// ===== Build relevance keywords from book metadata =====
+// ===== Build relevance keywords =====
 function buildKeywords(
   title: string,
   titleEn: string,
@@ -265,33 +276,35 @@ function buildKeywords(
 ): string[] {
   const keywords: string[] = [];
 
-  // Title words (limit to meaningful ones)
-  const titleWords = (titleEn || title).split(/\s+/).filter((w) => w.length > 3);
+  // Title keywords
+  const titleWords = (titleEn || title).split(/[\s,，。]+/).filter((w) => w.length > 2);
   keywords.push(...titleWords.slice(0, 4));
 
-  // Author last name
-  const authorParts = author.split(/\s+/);
-  if (authorParts.length > 0) keywords.push(authorParts[authorParts.length - 1]);
+  // Author last name / whole name for short names
+  const authorParts = author.split(/[\s,，]+/);
+  keywords.push(author);
+  if (authorParts.length > 1) {
+    keywords.push(authorParts[authorParts.length - 1]);
+  }
 
-  // Main characters
+  // Characters
   if (characters) {
     for (const c of characters.slice(0, 3)) {
       keywords.push(c.name);
     }
   }
 
-  // Plot node keywords
+  // Plot nodes
   if (plotNodes) {
     for (const n of plotNodes.slice(0, 2)) {
-      const words = n.label.split(/\s+/).filter((w) => w.length > 3);
-      keywords.push(...words.slice(0, 2));
+      keywords.push(n.label);
     }
   }
 
-  return [...new Set(keywords)].slice(0, 12);
+  return [...new Set(keywords)].slice(0, 15);
 }
 
-// ===== Build scene search queries =====
+// ===== Build scene queries =====
 function buildSceneQueries(
   title: string,
   titleEn: string,
@@ -304,53 +317,30 @@ function buildSceneQueries(
   const t = titleEn || title;
   const isAsian = continent === "asia";
 
-  // Priority 1: Plot node scenes
   if (plotNodes && plotNodes.length > 0) {
-    for (const node of plotNodes.slice(0, 3)) {
+    for (const node of plotNodes.slice(0, 2)) {
       queries.push(`"${t}" ${node.label} illustration`);
       queries.push(`"${t}" ${node.label} painting`);
       if (isAsian && title !== t) {
         queries.push(`"${title}" ${node.label} 插画`);
-        queries.push(`"${title}" ${node.label} 绘画`);
       }
     }
   }
 
-  // Priority 2: Main character scenes
   if (characters && characters.length > 0) {
     const main = characters.slice(0, 2).map((c) => c.name);
     queries.push(`"${t}" ${main.join(" ")} illustration`);
-    queries.push(`"${t}" ${main.join(" ")} painting`);
     if (isAsian && title !== t) {
       queries.push(`"${title}" ${main.join(" ")} 场景`);
     }
   }
 
-  // Priority 3: Title + author scene
   queries.push(`"${t}" ${author} illustration`);
-  queries.push(`"${t}" ${author} painting`);
-  queries.push(`"${t}" dramatic scene painting`);
-  queries.push(`"${t}" classic illustration`);
-
-  // Priority 4: Asian-specific queries
   if (isAsian && title !== t) {
-    queries.push(`"${title}" 经典场景 插画`);
+    queries.push(`"${title}" 经典场景`);
     queries.push(`"${title}" ${author} 绘画`);
-    queries.push(`"${title}" illustration painting`);
   }
-
-  // Priority 5: Broad
   queries.push(`${t} literary illustration`);
-  queries.push(`${t} narrative art`);
 
   return queries;
-}
-
-// ===== Combine two AbortSignals =====
-function combineSignals(a: AbortSignal, b: AbortSignal): AbortSignal {
-  if (a.aborted || b.aborted) return AbortSignal.abort();
-  const ac = new AbortController();
-  a.addEventListener("abort", () => ac.abort(), { once: true });
-  b.addEventListener("abort", () => ac.abort(), { once: true });
-  return ac.signal;
 }
