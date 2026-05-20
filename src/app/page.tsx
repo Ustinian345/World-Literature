@@ -3,13 +3,13 @@ import { continents, featuredWorks, hotTopics, allWorks } from "@/lib/data";
 import { awards, getAwardStats } from "@/lib/award-data";
 import { textbookLevels, getTextbookStats } from "@/lib/textbook-data";
 import { HeroMosaic } from "@/components/HeroMosaic";
+import { getBookCoverImages } from "@/lib/mosaic-images";
 
 export default function Home() {
   const countrySet = new Set(allWorks.map(w => w.country));
   const totalCountries = countrySet.size;
 
-  const allGradients = allWorks.map((w) => w.gradient);
-  const allTitles = allWorks.map((w) => w.title);
+  const bookImages = getBookCoverImages();
 
   return (
     <>
@@ -18,12 +18,7 @@ export default function Home() {
         id="home"
         className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-5 text-center"
       >
-        <HeroMosaic
-          gradients={allGradients}
-          titles={allTitles}
-          landmarks={["🏛️", "🏯", "🗽", "🕌", "⛩️", "🏰", "🦁", "🌊", "🗼", "🎭", "🏺", "🕍", "🏔️", "🌋", "🕌", "🏝️"]}
-          speed={80}
-        />
+        <HeroMosaic bookImages={bookImages} speed={60} />
 
         <div className="relative z-10 mx-auto max-w-3xl">
           <span className="inline-block rounded-full border border-amber/40 px-4 py-1.5 font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-amber-light">

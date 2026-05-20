@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { awards, getWinnersByAward, getAward } from "@/lib/award-data";
 import { allWorks } from "@/lib/data";
 import { HeroMosaic } from "@/components/HeroMosaic";
+import { getBookCoverImages } from "@/lib/mosaic-images";
 
 export function generateStaticParams() {
   return awards.map((a) => ({ slug: a.slug }));
@@ -35,18 +36,12 @@ export default async function AwardPage({ params }: { params: Promise<{ slug: st
     })
     .filter((x) => x.work != null);
 
-  const awardGradients = winnerWorks.map((x) => x.work!.gradient);
-  const awardTitles = winnerWorks.map((x) => x.work!.title);
+  const bookImages = getBookCoverImages();
 
   return (
     <div className="min-h-screen bg-cream">
       <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${award.gradient}`}>
-        <HeroMosaic
-          gradients={awardGradients}
-          titles={awardTitles}
-          landmarks={["🏆", "📖", "✒️", "🥇", "🎭", "🌟", "📚", "🏅", "🎨", "💡", "🔮", "⚡"]}
-          speed={50}
-        />
+        <HeroMosaic bookImages={bookImages} speed={50} />
         <div className="absolute inset-0 bg-black/15 z-[5]" />
         <div className="relative z-10 mx-auto max-w-5xl px-5 py-16 sm:py-24">
           <Link

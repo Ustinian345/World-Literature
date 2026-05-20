@@ -5,6 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { continents, allWorks, allGenres, allThemes, allEras } from "@/lib/data";
 import { HeroMosaic } from "@/components/HeroMosaic";
+import { getBookCoverImages } from "@/lib/mosaic-images";
 
 function getWorksByContinent(slug: string) {
   return allWorks.filter((w) => w.continent === slug);
@@ -21,6 +22,7 @@ export function ContinentContent({
   if (!continent) notFound();
 
   const continentWorks = useMemo(() => getWorksByContinent(continent.slug), [continent.slug]);
+  const bookImages = getBookCoverImages();
 
   const [search, setSearch] = useState("");
   const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
@@ -57,12 +59,7 @@ export function ContinentContent({
     <>
       {/* ===== 大洲头部 ===== */}
       <section className={`mt-16 bg-gradient-to-br ${continent.gradient} relative overflow-hidden`}>
-        <HeroMosaic
-          gradients={continentWorks.map((w) => w.gradient)}
-          titles={continentWorks.map((w) => w.title)}
-          landmarks={continentLandmarks(continent.slug)}
-          speed={60}
-        />
+        <HeroMosaic bookImages={bookImages} continent={continent.slug} speed={50} />
         <div className="absolute inset-0 bg-black/30 z-[5]" />
         <div className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:py-24">
           <Link
@@ -241,15 +238,4 @@ export function ContinentContent({
       </section>
     </>
   );
-}
-
-function continentLandmarks(slug: string): string[] {
-  const map: Record<string, string[]> = {
-    asia: ["🏯", "⛩️", "🕌", "🏔️", "🐉", "🎋", "🏮", "🗼", "🛕", "🌋", "🌸", "🐼", "🏯", "🌏", "🎎", "🍜"],
-    europe: ["🏛️", "🏰", "⛪", "🗼", "🎭", "🕍", "🏺", "🎨", "🕌", "🏔️", "🌍", "💒", "🗿", "⚜️", "🎻", "🏛️"],
-    africa: ["🦁", "🐘", "🏜️", "🌍", "🌋", "🕌", "🥁", "🐪", "🏺", "🦒", "🌴", "⛰️", "🦛", "🎭", "🦅", "🏝️"],
-    americas: ["🗽", "🌎", "🏔️", "🏜️", "🦅", "🎸", "🌋", "🗿", "🌴", "🏙️", "🎭", "🦜", "⛰️", "🏟️", "🦬", "🌵"],
-    oceania: ["🌊", "🏝️", "🐨", "🗿", "🌏", "🦘", "🐬", "🏄", "🌴", "⛰️", "🦜", "🐠", "🌋", "🏖️", "🦈", "🌺"],
-  };
-  return map[slug] || ["📚", "🌍", "🏛️"];
 }
