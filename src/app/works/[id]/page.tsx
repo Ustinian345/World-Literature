@@ -66,6 +66,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
         title={work.title}
         titleEn={work.titleEn}
         author={work.author}
+        gradient={work.gradient}
         continent={work.continent}
         characters={detail.characters.map(c => ({ name: c.name, role: c.role }))}
         plotNodes={detail.plotNodes.map(n => ({ label: n.label, description: n.description }))}

@@ -7,19 +7,24 @@ interface PageBackgroundProps {
   title: string;
   titleEn: string;
   author: string;
+  gradient: string;
   continent: string;
   characters?: Array<{ name: string; role: string }>;
   plotNodes?: Array<{ label: string; description: string }>;
 }
 
 const imageCache = new Map<string, string | null>();
-const MAX_CACHE = 200;
+const MAX_CACHE = 150;
+
+// Track in-flight requests to avoid duplicates
+const inflight = new Map<string, Promise<string | null>>();
 
 export function PageBackground({
   workId,
   title,
   titleEn,
   author,
+  gradient,
   continent,
   characters,
   plotNodes,
@@ -34,88 +39,31 @@ export function PageBackground({
     if (imageCache.has(cacheKey)) {
       const cached = imageCache.get(cacheKey)!;
       if (!cancelled) setImgUrl(cached);
-      return () => { cancelled = true; };
+      return;
     }
 
     async function load() {
-      // ===== Phase 1: ALL sources in parallel, race to first result =====
-      const keywords = buildKeywords(title, titleEn, author, characters, plotNodes);
-
-      const sources: Array<() => Promise<string | null>> = [
-        // OpenLibrary with English title
-        () => fetchOpenLibrary(titleEn || title, author),
-        // OpenLibrary with original title (for Asian books)
-        ...(title !== titleEn && titleEn ? [() => fetchOpenLibrary(title, author)] : []),
-        // Google Books
-        () => fetchGoogleBooks(titleEn || title, author),
-        ...(title !== titleEn && titleEn ? [() => fetchGoogleBooks(title, author)] : []),
-        // Direct Wikimedia search for covers/frontispieces
-        () => searchWikimediaSimple(`"${titleEn || title}" ${author} cover`, keywords),
-        () => searchWikimediaSimple(`"${titleEn || title}" ${author} frontispiece`, keywords),
-        ...(title !== titleEn
-          ? [() => searchWikimediaSimple(`"${title}" 封面`, keywords)]
-          : []),
-      ];
-
-      // Fire all sources in parallel
-      const promises = sources.map((fn) =>
-        fn().catch(() => null)
-      );
-
-      // Get the first successful result
-      let firstResult: string | null = null;
-      let bestScene: string | null = null;
-
-      // Use Promise.any-like approach: show first available, collect best
-      const results = await Promise.allSettled(promises);
-
-      for (const r of results) {
-        if (cancelled) break;
-        if (r.status === "fulfilled" && r.value) {
-          if (!firstResult) firstResult = r.value;
-          // Prefer scene images over covers (they have "commons" in URL)
-          if (r.value.includes("wikimedia") || r.value.includes("commons")) {
-            bestScene = r.value;
-          }
-        }
+      let promise = inflight.get(cacheKey);
+      if (!promise) {
+        promise = fetchBestImage(title, titleEn, author, continent, characters, plotNodes);
+        inflight.set(cacheKey, promise);
       }
 
-      // Show immediately if we have anything
-      if (!cancelled) {
-        const result = bestScene || firstResult;
-        if (result) {
-          if (imageCache.size >= MAX_CACHE) {
-            const first = imageCache.keys().next().value;
-            if (first) imageCache.delete(first);
-          }
-          imageCache.set(cacheKey, result);
-          setImgUrl(result);
-        }
-      }
+      const result = await promise;
+      inflight.delete(cacheKey);
 
-      // ===== Phase 2: Better scene search in background =====
-      if (!cancelled && characters && plotNodes) {
-        const sceneQueries = buildSceneQueries(title, titleEn, author, continent, characters, plotNodes);
-        const scenePromises = sceneQueries.slice(0, 2).map((q) =>
-          searchWikimediaSimple(q, keywords).catch(() => null)
-        );
-        const sceneResults = await Promise.allSettled(scenePromises);
-        for (const r of sceneResults) {
-          if (cancelled) break;
-          if (r.status === "fulfilled" && r.value) {
-            const existing = imageCache.get(cacheKey);
-            if (existing) imageCache.set(cacheKey, r.value);
-            setImgUrl(r.value);
-            break;
-          }
+      if (!cancelled && result) {
+        if (imageCache.size >= MAX_CACHE) {
+          const first = imageCache.keys().next().value;
+          if (first) imageCache.delete(first);
         }
+        imageCache.set(cacheKey, result);
+        setImgUrl(result);
       }
     }
 
     load();
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, [cacheKey, title, titleEn, author, continent, characters, plotNodes]);
 
   if (!imgUrl) return null;
@@ -139,28 +87,76 @@ export function PageBackground({
   );
 }
 
-// ===== Simple timeout wrapper =====
-function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
-  return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error("timeout")), ms);
-    promise.then(
-      (v) => { clearTimeout(timer); resolve(v); },
-      (e) => { clearTimeout(timer); reject(e); }
-    );
-  });
+// ===== Main fetch logic: try sources sequentially, stop at first hit =====
+async function fetchBestImage(
+  title: string,
+  titleEn: string,
+  author: string,
+  continent: string,
+  characters?: Array<{ name: string; role: string }>,
+  plotNodes?: Array<{ label: string; description: string }>
+): Promise<string | null> {
+  const t = titleEn || title;
+  const keywords = buildKeywords(title, titleEn, author, characters, plotNodes);
+
+  // Try sources in order — each step only runs if the previous failed
+  // This prevents rate-limiting from firing all APIs at once
+
+  // 1. OpenLibrary (fastest, most reliable for covers)
+  let result = await tryOpenLibrary(t, author);
+  if (result) return result;
+
+  // 2. OpenLibrary with original title for non-English books
+  if (title !== t) {
+    result = await tryOpenLibrary(title, author);
+    if (result) return result;
+  }
+
+  // 3. Wikimedia with title + author
+  result = await searchWikimedia(`"${t}" ${author}`, keywords);
+  if (result) return result;
+
+  // 4. Wikimedia with original title
+  if (title !== t) {
+    result = await searchWikimedia(`"${title}" ${author}`, keywords);
+    if (result) return result;
+  }
+
+  // 5. Plot node based search (most specific)
+  if (plotNodes && plotNodes.length > 0) {
+    const node = plotNodes[0];
+    result = await searchWikimedia(`"${t}" ${node.label}`, keywords);
+    if (result) return result;
+    if (title !== t) {
+      result = await searchWikimedia(`"${title}" ${node.label}`, keywords);
+      if (result) return result;
+    }
+  }
+
+  // 6. Character based search
+  if (characters && characters.length > 0) {
+    const names = characters.slice(0, 2).map((c) => c.name).join(" ");
+    result = await searchWikimedia(`"${t}" ${names}`, keywords);
+    if (result) return result;
+  }
+
+  // 7. Google Books as last resort
+  result = await tryGoogleBooks(t, author);
+  if (result) return result;
+
+  return null;
 }
 
-// ===== OpenLibrary =====
-async function fetchOpenLibrary(title: string, author: string): Promise<string | null> {
+// ===== OpenLibrary — use title= param (same as BookCover) =====
+async function tryOpenLibrary(title: string, author: string): Promise<string | null> {
   try {
-    const q = encodeURIComponent(`${title} ${author}`);
-    const res = await withTimeout(
-      fetch(`https://openlibrary.org/search.json?q=${q}&limit=3`),
-      4000
+    const query = encodeURIComponent(`${title} ${author}`);
+    const res = await fetch(
+      `https://openlibrary.org/search.json?title=${query}&limit=5`,
+      { signal: AbortSignal.timeout(6000) }
     );
     if (!res.ok) return null;
     const data = await res.json();
-    // Try up to 3 results in case first has no cover
     for (const doc of data.docs || []) {
       if (doc.cover_i) {
         return `https://covers.openlibrary.org/b/id/${doc.cover_i}-L.jpg`;
@@ -171,12 +167,12 @@ async function fetchOpenLibrary(title: string, author: string): Promise<string |
 }
 
 // ===== Google Books =====
-async function fetchGoogleBooks(title: string, author: string): Promise<string | null> {
+async function tryGoogleBooks(title: string, author: string): Promise<string | null> {
   try {
     const q = encodeURIComponent(`${title} ${author}`);
-    const res = await withTimeout(
-      fetch(`https://www.googleapis.com/books/v1/volumes?q=${q}&maxResults=3`),
-      4000
+    const res = await fetch(
+      `https://www.googleapis.com/books/v1/volumes?q=${q}&maxResults=3`,
+      { signal: AbortSignal.timeout(6000) }
     );
     if (!res.ok) return null;
     const data = await res.json();
@@ -193,23 +189,26 @@ async function fetchGoogleBooks(title: string, author: string): Promise<string |
   return null;
 }
 
-// ===== Wikimedia — simplified, lower threshold =====
-async function searchWikimediaSimple(
+// ===== Wikimedia search =====
+async function searchWikimedia(
   query: string,
   keywords: string[]
 ): Promise<string | null> {
   try {
     const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&prop=imageinfo&iiprop=url|size&format=json&gsrlimit=10&origin=*`;
-    const res = await withTimeout(
-      fetch(url, { headers: { "User-Agent": "WLH/1.0" } }),
-      4000
-    );
+    const res = await fetch(url, {
+      signal: AbortSignal.timeout(6000),
+      headers: { "User-Agent": "WLH/1.0" },
+    });
     if (!res.ok) return null;
     const data = await res.json();
     const pages = data?.query?.pages;
     if (!pages) return null;
 
-    let best: { url: string; score: number } | null = null;
+    let bestUrl: string | null = null;
+    let bestScore = -Infinity;
+    let largestUrl: string | null = null;
+    let largestW = 0;
 
     for (const p of Object.values(pages) as Array<{
       title?: string;
@@ -218,55 +217,56 @@ async function searchWikimediaSimple(
       const info = p.imageinfo?.[0];
       if (!info) continue;
 
-      // Very minimal size requirement
+      // Track largest as ultimate fallback
+      if (info.width > largestW) {
+        largestW = info.width;
+        largestUrl = info.url;
+      }
+
       if (info.width < 300 || info.height < 200) continue;
 
       const fileTitle = (p.title || "").toLowerCase();
 
-      // Only skip obviously bad matches
-      if (
-        fileTitle.includes("icon") ||
-        fileTitle.includes("logo.svg") ||
-        fileTitle.includes("diagram")
-      ) continue;
+      // Skip obviously wrong results
+      if (fileTitle.includes("icon") && !fileTitle.includes("iconostasis")) continue;
+      if (fileTitle.includes("logo.svg")) continue;
+      if (fileTitle.includes("diagram")) continue;
+      if (fileTitle.includes(".pdf")) continue;
 
-      // Calculate relevance
+      // Score: keyword matches
       let score = 0;
       for (const kw of keywords) {
         if (fileTitle.includes(kw.toLowerCase())) score += 2;
       }
 
-      // Bonus for good aspect ratio for backgrounds
+      // Aspect ratio bonus
       const aspect = info.width / info.height;
-      if (aspect > 1.0 && aspect < 2.5) score += 2;
-      if (info.width > 800) score += 1;
-      if (info.height > 500) score += 1;
+      if (aspect > 0.8 && aspect < 2.5) score += 1;
+      if (aspect > 1.2 && aspect < 2.0) score += 1;
 
-      if (!best || score > best.score) {
-        best = { url: info.url, score };
+      // Size bonus
+      if (info.width > 600) score += 1;
+      if (info.width > 1000) score += 1;
+
+      if (score > bestScore) {
+        bestScore = score;
+        bestUrl = info.url;
       }
     }
 
-    // Accept anything with a decent quality signal
-    if (best && best.score >= 1) return best.url;
-    // If nothing scored, still return the largest image as last resort
-    if (!best) {
-      let largest: { url: string; w: number } | null = null;
-      for (const p of Object.values(pages) as Array<{
-        imageinfo?: Array<{ url: string; width: number }>;
-      }>) {
-        const info = p.imageinfo?.[0];
-        if (info && info.width > (largest?.w || 0)) {
-          largest = { url: info.url, w: info.width };
-        }
-      }
-      if (largest && largest.w > 400) return largest.url;
-    }
-  } catch {}
-  return null;
+    // Return scored result (even score 0 is fine after filtering)
+    if (bestUrl && bestScore >= 0) return bestUrl;
+
+    // Ultimate fallback: largest image > 400px wide
+    if (largestUrl && largestW > 400) return largestUrl;
+
+    return null;
+  } catch {
+    return null;
+  }
 }
 
-// ===== Build relevance keywords =====
+// ===== Build keywords =====
 function buildKeywords(
   title: string,
   titleEn: string,
@@ -276,71 +276,26 @@ function buildKeywords(
 ): string[] {
   const keywords: string[] = [];
 
-  // Title keywords
   const titleWords = (titleEn || title).split(/[\s,，。]+/).filter((w) => w.length > 2);
-  keywords.push(...titleWords.slice(0, 4));
+  keywords.push(...titleWords.slice(0, 3));
 
-  // Author last name / whole name for short names
-  const authorParts = author.split(/[\s,，]+/);
   keywords.push(author);
+  const authorParts = author.split(/[\s,，]+/);
   if (authorParts.length > 1) {
     keywords.push(authorParts[authorParts.length - 1]);
   }
 
-  // Characters
   if (characters) {
     for (const c of characters.slice(0, 3)) {
       keywords.push(c.name);
     }
   }
 
-  // Plot nodes
   if (plotNodes) {
     for (const n of plotNodes.slice(0, 2)) {
       keywords.push(n.label);
     }
   }
 
-  return [...new Set(keywords)].slice(0, 15);
-}
-
-// ===== Build scene queries =====
-function buildSceneQueries(
-  title: string,
-  titleEn: string,
-  author: string,
-  continent: string,
-  characters?: Array<{ name: string; role: string }>,
-  plotNodes?: Array<{ label: string; description: string }>
-): string[] {
-  const queries: string[] = [];
-  const t = titleEn || title;
-  const isAsian = continent === "asia";
-
-  if (plotNodes && plotNodes.length > 0) {
-    for (const node of plotNodes.slice(0, 2)) {
-      queries.push(`"${t}" ${node.label} illustration`);
-      queries.push(`"${t}" ${node.label} painting`);
-      if (isAsian && title !== t) {
-        queries.push(`"${title}" ${node.label} 插画`);
-      }
-    }
-  }
-
-  if (characters && characters.length > 0) {
-    const main = characters.slice(0, 2).map((c) => c.name);
-    queries.push(`"${t}" ${main.join(" ")} illustration`);
-    if (isAsian && title !== t) {
-      queries.push(`"${title}" ${main.join(" ")} 场景`);
-    }
-  }
-
-  queries.push(`"${t}" ${author} illustration`);
-  if (isAsian && title !== t) {
-    queries.push(`"${title}" 经典场景`);
-    queries.push(`"${title}" ${author} 绘画`);
-  }
-  queries.push(`${t} literary illustration`);
-
-  return queries;
+  return [...new Set(keywords)].slice(0, 12);
 }
