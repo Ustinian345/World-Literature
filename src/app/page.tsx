@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { continents, featuredWorks, hotTopics, allWorks } from "@/lib/data";
+import { awards, getAwardStats } from "@/lib/award-data";
 
 export default function Home() {
   const countrySet = new Set(allWorks.map(w => w.country));
@@ -145,8 +146,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== 文学奖项 ===== */}
+      <section id="awards" className="bg-parchment py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl px-5">
+          <div className="mb-12 text-center">
+            <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-amber-dark">
+              Literary Awards
+            </span>
+            <h2 className="mt-3 font-heading-cn text-3xl font-bold text-umber sm:text-4xl">
+              文学奖项
+            </h2>
+            <p className="mx-auto mt-3 max-w-lg text-base text-umber-light">
+              从诺贝尔文学奖到茅盾文学奖，通过奖项发现被历史铭记的杰作
+            </p>
+          </div>
+
+          <AwardsGrid />
+        </div>
+      </section>
+
       {/* ===== 精选推荐 ===== */}
-      <section id="featured" className="bg-parchment py-20 sm:py-28">
+      <section id="featured" className="bg-cream py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-12 text-center">
             <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-amber-dark">
@@ -257,5 +277,85 @@ export default function Home() {
         </div>
       </section>
     </>
+  );
+}
+
+function AwardsGrid() {
+  const stats = getAwardStats();
+  const showcase = [
+    awards.find((a) => a.slug === "nobel-literature")!,
+    awards.find((a) => a.slug === "booker-prize")!,
+    awards.find((a) => a.slug === "pulitzer-fiction")!,
+    awards.find((a) => a.slug === "maodun-prize")!,
+    awards.find((a) => a.slug === "luxun-prize")!,
+    awards.find((a) => a.slug === "hugo-award")!,
+  ].filter(Boolean);
+
+  return (
+    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {showcase.map((award) => (
+        <Link
+          key={award.slug}
+          href={`/awards/${award.slug}`}
+          className="group relative overflow-hidden rounded-xl border border-sand/60 bg-warm-white shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card-hover"
+        >
+          <div
+            className={`flex h-36 items-center justify-center bg-gradient-to-br ${award.gradient} relative overflow-hidden`}
+          >
+            <span className="text-5xl transition-transform duration-300 group-hover:scale-110">
+              {award.icon}
+            </span>
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <span className="rounded-full border-2 border-white/80 px-5 py-2 font-[system-ui] text-sm font-medium text-white">
+                探索 →
+              </span>
+            </div>
+          </div>
+          <div className="p-5">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.15em] text-amber-dark">
+                  {award.nameEn}
+                </span>
+                <h3 className="mt-1 font-heading-cn text-xl font-bold text-umber">
+                  {award.name}
+                </h3>
+              </div>
+              <svg
+                className="h-5 w-5 text-amber-dark/40 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"
+              >
+                <path d="m9 18 6-6-6-6" />
+              </svg>
+            </div>
+            <p className="mt-3 line-clamp-2 font-body text-sm leading-relaxed text-umber-light">
+              {award.description}
+            </p>
+            <div className="mt-4 flex gap-4 border-t border-sand/50 pt-3 font-[system-ui] text-xs text-umber-light/70">
+              <span>{award.flag} {award.country}</span>
+              <span>{award.established}年创立</span>
+              {(stats[award.slug] || 0) > 0 && (
+                <span className="font-medium text-amber-dark">{stats[award.slug]} 部收录</span>
+              )}
+            </div>
+          </div>
+        </Link>
+      ))}
+      <Link
+        href="/awards"
+        className="group relative overflow-hidden rounded-xl border-2 border-dashed border-sand/50 bg-warm-white/40 shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:border-amber/30 hover:shadow-card-hover"
+      >
+        <div className="flex h-full min-h-[260px] flex-col items-center justify-center p-8 text-center">
+          <span className="text-4xl transition-transform duration-300 group-hover:scale-110">🏆</span>
+          <h3 className="mt-4 font-heading-cn text-xl font-bold text-umber">查看全部奖项</h3>
+          <p className="mt-2 font-body text-sm leading-relaxed text-umber-light/60">
+            探索全部 12 个中外重要文学奖项
+          </p>
+          <span className="mt-4 rounded-full border border-amber/40 px-4 py-1.5 font-[system-ui] text-sm text-amber-dark transition-colors group-hover:bg-amber/10">
+            全部奖项 →
+          </span>
+        </div>
+      </Link>
+    </div>
   );
 }
