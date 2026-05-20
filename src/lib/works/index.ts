@@ -13,6 +13,7 @@ import { luxunFictionRest, luxunPoetryRest, luxunProseRest } from "./award-expan
 import { luxunFinal } from "./award-expansion-6";
 import { luxunFinal7 } from "./award-expansion-7";
 import { luxunTextbookWorks, zhuZiqingWorks, laosheWorks, otherMasters } from "./textbook-expansion";
+import { tbPrimaryFill, tbMiddleClassics, tbMiddleForeign, tbMiddlePoetry, tbClassical, tbHighForeign, tbHighModern } from "./textbook-expansion-2";
 
 export const expandedWorks: Work[] = [
   ...asianWorks,
@@ -45,6 +46,13 @@ export const expandedWorks: Work[] = [
   ...zhuZiqingWorks,
   ...laosheWorks,
   ...otherMasters,
+  ...tbPrimaryFill,
+  ...tbMiddleClassics,
+  ...tbMiddleForeign,
+  ...tbMiddlePoetry,
+  ...tbClassical,
+  ...tbHighForeign,
+  ...tbHighModern,
 ];
 
 // 去重

@@ -180,13 +180,15 @@ export const highWorks: TextbookWork[] = [
 ];
 
 import { newTextbookMappings } from "./works/textbook-expansion";
+import { textbookMappings2 } from "./works/textbook-expansion-2";
 
 /* ========== 辅助函数 ========== */
 
 export function getTextbookWorksByLevel(level: TextbookLevel): TextbookWork[] {
   const base = level === "primary" ? primaryWorks : level === "middle" ? middleWorks : highWorks;
-  const extra = newTextbookMappings.filter((m) => m.level === level);
-  return [...base, ...extra];
+  const extra1 = newTextbookMappings.filter((m) => m.level === level);
+  const extra2 = textbookMappings2.filter((m) => m.level === level);
+  return [...base, ...extra1, ...extra2];
 }
 
 export function getTextbookLevelInfo(slug: TextbookLevel): TextbookLevelInfo | undefined {
@@ -195,12 +197,14 @@ export function getTextbookLevelInfo(slug: TextbookLevel): TextbookLevelInfo | u
 
 export function getTextbookStats() {
   const all = [
-    ...primaryWorks, ...middleWorks, ...highWorks, ...newTextbookMappings,
+    ...primaryWorks, ...middleWorks, ...highWorks,
+    ...newTextbookMappings, ...textbookMappings2,
   ];
+  const fp = (l: TextbookLevel) => newTextbookMappings.filter((m) => m.level === l).length + textbookMappings2.filter((m) => m.level === l).length;
   return {
-    primary: primaryWorks.length + newTextbookMappings.filter((m) => m.level === "primary").length,
-    middle: middleWorks.length + newTextbookMappings.filter((m) => m.level === "middle").length,
-    high: highWorks.length + newTextbookMappings.filter((m) => m.level === "high").length,
+    primary: primaryWorks.length + fp("primary"),
+    middle: middleWorks.length + fp("middle"),
+    high: highWorks.length + fp("high"),
     total: all.length,
   };
 }
