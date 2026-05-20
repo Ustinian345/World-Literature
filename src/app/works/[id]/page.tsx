@@ -61,7 +61,15 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
     <>
       <ScrollProgress />
       <BookmarkButton workId={id} />
-      <PageBackground workId={id} title={work.title} titleEn={work.titleEn} author={work.author} />
+      <PageBackground
+        workId={id}
+        title={work.title}
+        titleEn={work.titleEn}
+        author={work.author}
+        continent={work.continent}
+        characters={detail.characters.map(c => ({ name: c.name, role: c.role }))}
+        plotNodes={detail.plotNodes.map(n => ({ label: n.label, description: n.description }))}
+      />
 
       <div className="relative z-10">
       {/* ===== Hero 头部 — 渐变 + 文化图案 + 粒子 ===== */}

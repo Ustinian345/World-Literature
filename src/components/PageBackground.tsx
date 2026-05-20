@@ -7,23 +7,30 @@ interface PageBackgroundProps {
   title: string;
   titleEn: string;
   author: string;
+  continent: string;
+  characters?: Array<{ name: string; role: string }>;
+  plotNodes?: Array<{ label: string; description: string }>;
 }
 
 const imageCache = new Map<string, string | null>();
+const MAX_CACHE = 200;
 
-export function PageBackground({ workId, title, titleEn, author }: PageBackgroundProps) {
+export function PageBackground({
+  workId,
+  title,
+  titleEn,
+  author,
+  continent,
+  characters,
+  plotNodes,
+}: PageBackgroundProps) {
   const [imgUrl, setImgUrl] = useState<string | null>(null);
   const [loaded, setLoaded] = useState(false);
   const abortRef = useRef<AbortController | null>(null);
 
   const cacheKey = `bg|${workId}`;
 
-  // Only apply to Dream of Red Chamber
-  const isTargetBook = workId === "dream-of-red-chamber";
-
   useEffect(() => {
-    if (!isTargetBook) return;
-
     let cancelled = false;
     abortRef.current?.abort();
     const ac = new AbortController();
@@ -38,21 +45,17 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
     async function load() {
       let result: string | null = null;
 
-      // ===== Phase 1: Wikimedia scene search with Chinese queries =====
-      const t = titleEn || title;
+      // ===== Phase 1: Wikimedia scene search =====
+      const queries = buildSceneQueries(
+        title,
+        titleEn,
+        author,
+        continent,
+        characters,
+        plotNodes
+      );
 
-      // Dramatic scene queries in Chinese — key scenes from Dream of Red Chamber
-      const sceneQueries = [
-        `"${title}" 黛玉葬花 painting`,
-        `"${title}" 大观园 场景 painting`,
-        `"${title}" 贾宝玉 林黛玉 painting`,
-        `"${title}" 红楼梦 孙温 painting`,
-        `"${title}" 金陵十二钗 painting`,
-        `"${t}" "Dream of the Red Chamber" scene painting`,
-        `"${t}" garden scene illustration`,
-      ];
-
-      for (const query of sceneQueries) {
+      for (const query of queries) {
         if (cancelled) break;
         try {
           const url = `https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrnamespace=6&prop=imageinfo&iiprop=url|size&format=json&gsrlimit=15&origin=*`;
@@ -70,19 +73,22 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
           const pages = data?.query?.pages;
           if (!pages) continue;
 
-          // Prefer landscape images with good resolution
           let best: { url: string; w: number } | null = null;
           for (const p of Object.values(pages) as Array<{
             imageinfo?: Array<{ url: string; width: number; height: number }>;
           }>) {
             const info = p.imageinfo?.[0];
             if (!info) continue;
-            // Prefer wide landscape images for full-page backgrounds
-            if (info.width > 1000 && info.height > 600 && info.width / info.height > 1.3) {
+            if (
+              info.width > 1000 &&
+              info.height > 600 &&
+              info.width / info.height > 1.3
+            ) {
               result = info.url;
               break;
             }
-            if (info.width > (best?.w || 0)) best = { url: info.url, w: info.width };
+            if (info.width > (best?.w || 0))
+              best = { url: info.url, w: info.width };
           }
           if (result) break;
           if (best && best.w > 800) {
@@ -95,7 +101,9 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
       // ===== Phase 2: OpenLibrary cover fallback =====
       if (!result) {
         try {
-          const q = encodeURIComponent(`${titleEn} ${author}`);
+          const q = encodeURIComponent(
+            `${titleEn || title} ${author}`
+          );
           const res = await fetch(
             `https://openlibrary.org/search.json?q=${q}&limit=1`,
             { signal: ac.signal }
@@ -103,29 +111,39 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
           if (res.ok) {
             const d = await res.json();
             const cid = d.docs?.[0]?.cover_i;
-            if (cid) result = `https://covers.openlibrary.org/b/id/${cid}-L.jpg`;
+            if (cid)
+              result = `https://covers.openlibrary.org/b/id/${cid}-L.jpg`;
           }
         } catch {}
       }
 
-      // Google Books fallback
+      // ===== Phase 3: Google Books fallback =====
       if (!result) {
         try {
-          const gbQ = encodeURIComponent(`${titleEn || title} ${author}`);
+          const gbQ = encodeURIComponent(
+            `${titleEn || title} ${author}`
+          );
           const res = await fetch(
             `https://www.googleapis.com/books/v1/volumes?q=${gbQ}&maxResults=1`,
             { signal: ac.signal }
           );
           if (res.ok) {
             const d = await res.json();
-            const t2 = d.items?.[0]?.volumeInfo?.imageLinks?.thumbnail;
+            const t2 =
+              d.items?.[0]?.volumeInfo?.imageLinks?.thumbnail;
             if (t2)
-              result = t2.replace("zoom=1", "zoom=3").replace("http:", "https:");
+              result = t2
+                .replace("zoom=1", "zoom=3")
+                .replace("http:", "https:");
           }
         } catch {}
       }
 
       if (!cancelled && result) {
+        if (imageCache.size >= MAX_CACHE) {
+          const first = imageCache.keys().next().value;
+          if (first) imageCache.delete(first);
+        }
         imageCache.set(cacheKey, result);
         setImgUrl(result);
       }
@@ -136,9 +154,9 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
       cancelled = true;
       ac.abort();
     };
-  }, [isTargetBook, cacheKey, title, titleEn, author]);
+  }, [cacheKey, title, titleEn, author, continent, characters, plotNodes]);
 
-  if (!isTargetBook || !imgUrl) return null;
+  if (!imgUrl) return null;
 
   return (
     <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
@@ -153,4 +171,59 @@ export function PageBackground({ workId, title, titleEn, author }: PageBackgroun
       />
     </div>
   );
+}
+
+// ===== Build scene search queries for any book =====
+function buildSceneQueries(
+  title: string,
+  titleEn: string,
+  author: string,
+  continent: string,
+  characters?: Array<{ name: string; role: string }>,
+  plotNodes?: Array<{ label: string; description: string }>
+): string[] {
+  const queries: string[] = [];
+  const t = titleEn || title;
+  const isAsian = continent === "asia";
+
+  // Priority 1: Plot node scenes (most specific)
+  if (plotNodes && plotNodes.length > 0) {
+    for (const node of plotNodes.slice(0, 3)) {
+      queries.push(`"${t}" ${node.label} illustration`);
+      queries.push(`"${t}" ${node.label} painting`);
+      if (isAsian && title !== t) {
+        queries.push(`"${title}" ${node.label} 插画`);
+        queries.push(`"${title}" ${node.label} 绘画`);
+      }
+    }
+  }
+
+  // Priority 2: Main character scenes
+  if (characters && characters.length > 0) {
+    const main = characters.slice(0, 2).map((c) => c.name);
+    queries.push(`"${t}" ${main.join(" ")} illustration`);
+    queries.push(`"${t}" ${main.join(" ")} painting`);
+    if (isAsian && title !== t) {
+      queries.push(`"${title}" ${main.join(" ")} 场景`);
+    }
+  }
+
+  // Priority 3: Title + author + scene keywords
+  queries.push(`"${t}" ${author} illustration`);
+  queries.push(`"${t}" ${author} painting`);
+  queries.push(`"${t}" dramatic scene painting`);
+  queries.push(`"${t}" classic illustration`);
+
+  // Priority 4: Original title queries for non-English works
+  if (isAsian && title !== t) {
+    queries.push(`"${title}" 经典场景 插画`);
+    queries.push(`"${title}" ${author} 绘画`);
+    queries.push(`"${title}" illustration painting`);
+  }
+
+  // Priority 5: Broad scene search
+  queries.push(`${t} literary illustration`);
+  queries.push(`${t} narrative art`);
+
+  return queries;
 }
