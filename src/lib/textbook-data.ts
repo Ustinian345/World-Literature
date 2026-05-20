@@ -179,12 +179,14 @@ export const highWorks: TextbookWork[] = [
   { title: "大堰河——我的保姆", author: "艾青", level: "high", grade: "选择性必修下册", type: "课文", description: "艾青在狱中怀念他的乳母大堰河——以最朴素的诗句为一个被侮辱与被损害的农村妇女立下了一座诗的丰碑。", gradient: "from-gray-600 via-green-500 to-black" },
 ];
 
+import { newTextbookMappings } from "./works/textbook-expansion";
+
 /* ========== 辅助函数 ========== */
 
 export function getTextbookWorksByLevel(level: TextbookLevel): TextbookWork[] {
-  if (level === "primary") return primaryWorks;
-  if (level === "middle") return middleWorks;
-  return highWorks;
+  const base = level === "primary" ? primaryWorks : level === "middle" ? middleWorks : highWorks;
+  const extra = newTextbookMappings.filter((m) => m.level === level);
+  return [...base, ...extra];
 }
 
 export function getTextbookLevelInfo(slug: TextbookLevel): TextbookLevelInfo | undefined {
@@ -192,10 +194,13 @@ export function getTextbookLevelInfo(slug: TextbookLevel): TextbookLevelInfo | u
 }
 
 export function getTextbookStats() {
+  const all = [
+    ...primaryWorks, ...middleWorks, ...highWorks, ...newTextbookMappings,
+  ];
   return {
-    primary: primaryWorks.length,
-    middle: middleWorks.length,
-    high: highWorks.length,
-    total: primaryWorks.length + middleWorks.length + highWorks.length,
+    primary: primaryWorks.length + newTextbookMappings.filter((m) => m.level === "primary").length,
+    middle: middleWorks.length + newTextbookMappings.filter((m) => m.level === "middle").length,
+    high: highWorks.length + newTextbookMappings.filter((m) => m.level === "high").length,
+    total: all.length,
   };
 }
