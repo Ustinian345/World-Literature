@@ -170,9 +170,12 @@ export function HeroMosaic({
                 <img
                   src={imgUrl}
                   alt=""
-                  className="w-full h-full"
+                  className="w-full h-full bg-stone-800"
                   style={{ objectFit: "cover" }}
                   loading="lazy"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).style.display = "none";
+                  }}
                 />
               </div>
             ))}
