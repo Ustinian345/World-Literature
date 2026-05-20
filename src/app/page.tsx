@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { continents, featuredWorks, hotTopics, allWorks } from "@/lib/data";
 import { awards, getAwardStats } from "@/lib/award-data";
+import { textbookLevels, getTextbookStats } from "@/lib/textbook-data";
 
 export default function Home() {
   const countrySet = new Set(allWorks.map(w => w.country));
@@ -165,8 +166,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== 教材文学 ===== */}
+      <section id="textbook" className="bg-cream py-20 sm:py-28">
+        <div className="mx-auto max-w-6xl px-5">
+          <div className="mb-12 text-center">
+            <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-emerald-700">Textbook Literature</span>
+            <h2 className="mt-3 font-heading-cn text-3xl font-bold text-umber sm:text-4xl">教材文学</h2>
+            <p className="mx-auto mt-3 max-w-lg text-base text-umber-light">
+              那些印在语文课本里的文字，构成了我们共同的文学记忆——从小学到高中，从古诗到世界名著
+            </p>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-3">
+            {textbookLevels.map((level) => (
+              <Link
+                key={level.slug}
+                href={`/textbook/${level.slug}`}
+                className="group relative overflow-hidden rounded-xl border border-sand/60 bg-warm-white shadow-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-card-hover"
+              >
+                <div className={`flex h-36 items-center justify-center bg-gradient-to-br ${level.gradient} relative overflow-hidden`}>
+                  <span className="text-5xl transition-transform duration-300 group-hover:scale-110">{level.icon}</span>
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <span className="rounded-full border-2 border-white/80 px-5 py-2 font-[system-ui] text-sm font-medium text-white">探索 →</span>
+                  </div>
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.15em] text-amber-dark">{level.grades}</span>
+                      <h3 className="mt-1 font-heading-cn text-xl font-bold text-umber">{level.name}</h3>
+                    </div>
+                    <svg className="h-5 w-5 text-amber-dark/40 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path d="m9 18 6-6-6-6" /></svg>
+                  </div>
+                  <p className="mt-3 line-clamp-2 font-body text-sm leading-relaxed text-umber-light">{level.description}</p>
+                  <div className="mt-4 flex gap-4 border-t border-sand/50 pt-3 font-[system-ui] text-xs text-umber-light/70">
+                    <span>{level.stats}</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ===== 精选推荐 ===== */}
-      <section id="featured" className="bg-cream py-20 sm:py-28">
+      <section id="featured" className="bg-parchment py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mb-12 text-center">
             <span className="font-[system-ui] text-xs font-medium uppercase tracking-[0.2em] text-amber-dark">
