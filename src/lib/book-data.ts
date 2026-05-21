@@ -635,7 +635,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Ramayana | Summary, Characters, Themes, & Facts - Britannica] At its core, the Ramayana is a classic tale of the triumph of good over evil. The concepts of good and evil form two poles of a moral axis; each ...\n\n[The Ramayana Study Guide | Literature Guide - LitCharts] The Ramayana: Detailed Summary & Analysis. In-depth summary and analysis of every chapter of The Ramayana. Visual theme-tracking, too.\n\n[The Ramayana Book Three Summary and Analysis | GradeSaver] The Ramayana study guide contains literature essays, quiz questions, major themes, characters, and a full summary and analysis.\n\n[Ram",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3", tier: "reference", fetchedAt: "2026-05-21T05:17:05.567Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3", tier: "reference", fetchedAt: "2026-05-21T05:21:51.296Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
