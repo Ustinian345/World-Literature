@@ -4939,5 +4939,725 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T08:16:58.753Z"
+  },
+  {
+    "bookId": "lux-1-r-xu",
+    "title": "大国长剑",
+    "author": "徐剑",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:17:44.308Z"
+  },
+  {
+    "bookId": "bk-af-001",
+    "title": "饥饿之路",
+    "author": "本·奥克里",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:17:44.551Z"
+  },
+  {
+    "bookId": "july-people",
+    "title": "七月的人民",
+    "author": "纳丁·戈迪默",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:17:53.405Z"
+  },
+  {
+    "bookId": "kafka-2017-atwood",
+    "title": "使女的故事",
+    "author": "玛格丽特·阿特伍德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:18:21.222Z"
+  },
+  {
+    "bookId": "lux-3-d-li-cun",
+    "title": "大河遗梦",
+    "author": "李存葆",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:18:29.647Z"
+  },
+  {
+    "bookId": "lux-8-d-shen",
+    "title": "大湖消息",
+    "author": "沈念",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:19:15.908Z"
+  },
+  {
+    "bookId": "gon-1987-benjelloun",
+    "title": "神圣的夜晚",
+    "author": "塔哈尔·本·杰隆",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:19:20.889Z"
+  },
+  {
+    "bookId": "exp-ch-013",
+    "title": "白鹿原",
+    "author": "陈忠实",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:19:35.756Z"
+  },
+  {
+    "bookId": "pul-2021-erdrich",
+    "title": "守夜人",
+    "author": "路易丝·厄德里奇",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:19:46.867Z"
+  },
+  {
+    "bookId": "booker-1983-coetzee",
+    "title": "迈克尔·K的生活与时代",
+    "author": "J.M. 库切",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:19:59.033Z"
+  },
+  {
+    "bookId": "lux-3-s-wei",
+    "title": "大老郑的女人",
+    "author": "魏微",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:20:03.349Z"
+  },
+  {
+    "bookId": "lux-7-r-xu",
+    "title": "大森林",
+    "author": "徐刚",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:20:49.607Z"
+  },
+  {
+    "bookId": "maodun-1997-liu-si",
+    "title": "白门柳",
+    "author": "刘斯奋",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:21:04.343Z"
+  },
+  {
+    "bookId": "pulitzer-1995-shields",
+    "title": "斯通日记",
+    "author": "卡罗尔·希尔兹",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:21:16.988Z"
+  },
+  {
+    "bookId": "nobel-2021-gurnah",
+    "title": "天堂",
+    "author": "阿卜杜勒拉扎克·古尔纳",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:21:22.415Z"
+  },
+  {
+    "bookId": "july-people",
+    "title": "七月的人民",
+    "author": "纳丁·戈迪默",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:21:25.277Z"
+  },
+  {
+    "bookId": "lux-2-d-li",
+    "title": "大雅村言",
+    "author": "李国文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:21:35.088Z"
+  },
+  {
+    "bookId": "intl-booker-2017-grossman",
+    "title": "当一匹马走进酒吧",
+    "author": "大卫·格罗斯曼",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:22:20.896Z"
+  },
+  {
+    "bookId": "lux-4-s-pan",
+    "title": "白水青菜",
+    "author": "潘向黎",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:22:31.628Z"
+  },
+  {
+    "bookId": "pul-2015-doerr",
+    "title": "所有我们看不见的光",
+    "author": "安东尼·多尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:22:43.464Z"
+  },
+  {
+    "bookId": "booker-1974-gordimer",
+    "title": "自然资源保护论者",
+    "author": "纳丁·戈迪默",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:22:49.510Z"
+  },
+  {
+    "bookId": "gon-1987-benjelloun",
+    "title": "神圣的夜晚",
+    "author": "塔哈尔·本·杰隆",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:22:50.789Z"
+  },
+  {
+    "bookId": "lux-2-p-zhu",
+    "title": "地球是一只泪眼",
+    "author": "朱增泉",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:23:06.782Z"
+  },
+  {
+    "bookId": "lux-8-s-zhong",
+    "title": "地上的天空",
+    "author": "钟求是",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:23:54.385Z"
+  },
+  {
+    "bookId": "lux-6-m-lv",
+    "title": "白杨木的春天",
+    "author": "吕新",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:23:57.461Z"
+  },
+  {
+    "bookId": "pul-1918-poole",
+    "title": "他的家庭",
+    "author": "欧内斯特·普尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:24:09.332Z"
+  },
+  {
+    "bookId": "hugo-1986-card",
+    "title": "安德的游戏",
+    "author": "奥森·斯科特·卡德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:24:14.900Z"
+  },
+  {
+    "bookId": "lux-6-r-xu-huai",
+    "title": "底色",
+    "author": "徐怀中",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:24:40.366Z"
+  },
+  {
+    "bookId": "nobel-2021-gurnah",
+    "title": "天堂",
+    "author": "阿卜杜勒拉扎克·古尔纳",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:24:48.592Z"
+  },
+  {
+    "bookId": "lux-5-s-lu",
+    "title": "伴宴",
+    "author": "鲁敏",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:25:24.201Z"
+  },
+  {
+    "bookId": "maodun-1991-liu",
+    "title": "第二个太阳",
+    "author": "刘白羽",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:25:26.582Z"
+  },
+  {
+    "bookId": "nobel-2013-munro",
+    "title": "逃离",
+    "author": "艾丽丝·门罗",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:25:34.396Z"
+  },
+  {
+    "bookId": "pul-1972-stegner",
+    "title": "安息角",
+    "author": "华莱士·斯特格纳",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:25:40.657Z"
+  },
+  {
+    "bookId": "lux-7-r-xu-chen",
+    "title": "第四极",
+    "author": "许晨",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:26:11.885Z"
+  },
+  {
+    "bookId": "booker-1974-gordimer",
+    "title": "自然资源保护论者",
+    "author": "纳丁·戈迪默",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:26:13.746Z"
+  },
+  {
+    "bookId": "lux-3-r-wang",
+    "title": "宝山",
+    "author": "李春雷",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:26:52.153Z"
+  },
+  {
+    "bookId": "maodun-2005-zong",
+    "title": "东藏记",
+    "author": "宗璞",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:26:57.092Z"
+  },
+  {
+    "bookId": "pul-2016-nguyen",
+    "title": "同情者",
+    "author": "阮清越",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:27:00.571Z"
+  },
+  {
+    "bookId": "nobel-1992-walcott",
+    "title": "奥梅罗斯",
+    "author": "德里克·沃尔科特",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:27:08.562Z"
+  },
+  {
+    "bookId": "hugo-1986-card",
+    "title": "安德的游戏",
+    "author": "奥森·斯科特·卡德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:27:40.662Z"
+  },
+  {
+    "bookId": "maodun-1982-wei",
+    "title": "东方",
+    "author": "魏巍",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:27:42.758Z"
+  },
+  {
+    "bookId": "lux-3-r-li-chun",
+    "title": "宝山",
+    "author": "李春雷",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:28:17.949Z"
+  },
+  {
+    "bookId": "pul-1982-updike",
+    "title": "兔子富了",
+    "author": "约翰·厄普代克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:28:25.537Z"
+  },
+  {
+    "bookId": "lux-1-r-guo-xiao",
+    "title": "东方大审判",
+    "author": "郭晓晔",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:28:31.245Z"
+  },
+  {
+    "bookId": "pul-2008-diaz",
+    "title": "奥斯卡·瓦奥的短暂而奇妙一生",
+    "author": "朱诺·迪亚斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:28:34.822Z"
+  },
+  {
+    "bookId": "pul-1972-stegner",
+    "title": "安息角",
+    "author": "华莱士·斯特格纳",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:29:07.539Z"
+  },
+  {
+    "bookId": "maodun-1982-li-guo",
+    "title": "冬天里的春天",
+    "author": "李国文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:29:17.012Z"
+  },
+  {
+    "bookId": "maodun-2023-yang",
+    "title": "宝水",
+    "author": "乔叶",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:29:45.158Z"
+  },
+  {
+    "bookId": "pul-1919-tarkington",
+    "title": "伟大的安伯逊家族",
+    "author": "布斯·塔金顿",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:29:51.301Z"
+  },
+  {
+    "bookId": "maodun-1991-sun",
+    "title": "都市风流",
+    "author": "孙力、余小惠",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:30:03.410Z"
+  },
+  {
+    "bookId": "nobel-1992-walcott",
+    "title": "奥梅罗斯",
+    "author": "德里克·沃尔科特",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:30:35.455Z"
+  },
+  {
+    "bookId": "lux-3-d-su",
+    "title": "独语东北",
+    "author": "素素",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:30:51.534Z"
+  },
+  {
+    "bookId": "nobel-2016-dylan",
+    "title": "鲍勃·迪伦诗歌集",
+    "author": "鲍勃·迪伦",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:30:59.383Z"
+  },
+  {
+    "bookId": "lux-7-d-ning",
+    "title": "北京：城与年",
+    "author": "宁肯",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:31:11.163Z"
+  },
+  {
+    "bookId": "pul-1923-cather",
+    "title": "我们中的一员",
+    "author": "维拉·凯瑟",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:31:17.222Z"
+  },
+  {
+    "bookId": "lux-1-r-wang-jia",
+    "title": "敦煌之恋",
+    "author": "王家达",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:31:28.252Z"
+  },
+  {
+    "bookId": "pul-2008-diaz",
+    "title": "奥斯卡·瓦奥的短暂而奇妙一生",
+    "author": "朱诺·迪亚斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:32:02.055Z"
+  },
+  {
+    "bookId": "lux-6-s-ma",
+    "title": "俄罗斯陆军腰带",
+    "author": "马晓丽",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:32:05.675Z"
+  },
+  {
+    "bookId": "pul-2011-egan",
+    "title": "暴徒小队来访",
+    "author": "詹妮弗·伊根",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:32:16.257Z"
+  },
+  {
+    "bookId": "maodun-2019-xu-ze",
+    "title": "北上",
+    "author": "徐则臣",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:32:27.757Z"
+  },
+  {
+    "bookId": "exp-ch-015",
+    "title": "额尔古纳河右岸",
+    "author": "迟子建",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:32:42.557Z"
+  },
+  {
+    "bookId": "nobel-1987-brodsky",
+    "title": "小于一",
+    "author": "约瑟夫·布罗茨基",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:33:14.288Z"
+  },
+  {
+    "bookId": "maodun-2008-chi",
+    "title": "额尔古纳河右岸",
+    "author": "迟子建",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:33:19.358Z"
+  },
+  {
+    "bookId": "booker-2016-beatty",
+    "title": "背叛者",
+    "author": "保罗·比蒂",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:33:34.234Z"
+  },
+  {
+    "bookId": "lux-2-m-gui",
+    "title": "被雨淋湿的河",
+    "author": "鬼子",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:33:48.338Z"
+  },
+  {
+    "bookId": "luxun-3-2-wang",
+    "title": "发廊情话",
+    "author": "王安忆",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:34:05.646Z"
+  },
+  {
+    "bookId": "nobel-2016-dylan",
+    "title": "鲍勃·迪伦诗歌集",
+    "author": "鲍勃·迪伦",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:34:08.285Z"
+  },
+  {
+    "bookId": "hugo-1984-brin",
+    "title": "星潮汹涌",
+    "author": "大卫·布林",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:34:31.014Z"
+  },
+  {
+    "bookId": "x3-ch-007",
+    "title": "繁花",
+    "author": "金宇澄",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:34:50.846Z"
+  },
+  {
+    "bookId": "hugo-1953-bester",
+    "title": "被毁灭的人",
+    "author": "阿尔弗雷德·贝斯特",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:35:00.043Z"
+  },
+  {
+    "bookId": "maodun-2023-liu-2",
+    "title": "本巴",
+    "author": "刘亮程",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:35:14.732Z"
+  },
+  {
+    "bookId": "pul-2011-egan",
+    "title": "暴徒小队来访",
+    "author": "詹妮弗·伊根",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:35:26.037Z"
+  },
+  {
+    "bookId": "lux-5-s-ci",
+    "title": "放生羊",
+    "author": "次仁罗布",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:35:27.407Z"
+  },
+  {
+    "bookId": "pulitzer-1967-malamud",
+    "title": "修配工",
+    "author": "伯纳德·马拉默德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:35:49.503Z"
+  },
+  {
+    "bookId": "luxun-8-2-ge",
+    "title": "飞发",
+    "author": "葛亮",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:36:04.060Z"
+  },
+  {
+    "bookId": "pul-1981-toole",
+    "title": "笨蛋联盟",
+    "author": "约翰·肯尼迪·图尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:36:16.654Z"
+  },
+  {
+    "bookId": "lux-5-d-lu-chun",
+    "title": "病了的字母",
+    "author": "陆春祥",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:36:31.326Z"
+  },
+  {
+    "bookId": "lux-5-d-zheng",
+    "title": "风行水上",
+    "author": "郑彦英",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:36:40.906Z"
+  },
+  {
+    "bookId": "booker-2016-beatty",
+    "title": "背叛者",
+    "author": "保罗·比蒂",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:36:44.698Z"
+  },
+  {
+    "bookId": "lux-7-m-xiao-bai",
+    "title": "封锁",
+    "author": "小白",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:37:17.528Z"
   }
 ]

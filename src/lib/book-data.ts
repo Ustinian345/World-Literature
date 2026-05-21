@@ -2796,14 +2796,34 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "hundred-years-solitude": {
     id: "hundred-years-solitude",
-    plotSummary: "One Hundred Years of Solitude (Spanish: Cien años de soledad, Latin American Spanish: [sjen ˈaɲos ðe soleˈðað]) is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo. The novel is often cited as one of the supreme achievements in world literature. It was recognized as one of the most important works of the Spanish language during the 4th International Conference of the Spanish Language held in Cartagena de Indias in March 2007.",
-    themeAnalysis: "One Hundred Years of Solitude (Spanish: Cien años de soledad, Latin American Spanish: [sjen ˈaɲos ðe soleˈðað]) is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo. The novel is often cited as one of the supreme achievements in world literature.",
-    techniques: "One Hundred Years of Solitude (Spanish: Cien años de soledad, Latin American Spanish: [sjen ˈaɲos ðe soleˈðað]) is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo. The novel is often cited as one of the supreme achievements in world literature.",
-    excerpts: [],
-    insights: "One Hundred Years of Solitude (Spanish: Cien años de soledad, Latin American Spanish: [sjen ˈaɲos ðe soleˈðað]) is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, whose patriarch, José Arcadio Buendía, founded the fictitious town of Macondo. The novel is often cited as one of the supreme achievements in world literature.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/One%20Hundred%20Years%20of%20Solitude"
-    // }
+    characters: [
+      { name: "Gabriel Garc", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "March", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "Aracataca", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "The Republic", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "Colombia", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "English Biography Early", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "Life Period", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" },
+      { name: "Greatness Later Life", role: "角色", description: "One Hundred Years of Solitude 中的主要角色。" }
+    ],
+    plotSummary: "Gabriel García Márquez was born on March 6, 1927, in Aracataca, The Republic of Colombia. He spent his childhood in his maternal grandparents&#x27; home. His grandfather was a respected retired army officer, who had been a colonel, was strong-willed, kind-hearted, and held radical ideas. His grandmother was well-versed in both ancient and modern knowledge and had a wealth of myths, legends, and ghost s\n\nEnglish Biography Early Life Period of Greatness Later Life Personal Life Major Works Writing Characteristics Themes Narrative Magic Realism Macondo Influence Evaluation Thoughts Key Information Gabriel García Márquez Colombian writer, journalist, and social activist Gabriel García Márquez (Spanish: Gabriel José de la Concordia García Márquez; March 6, 1927 – April 17, 2014) was a The Republic of Colombia writer, journalist, and social activist. He was a representative figure of Latin American Magical Realism literature, one of the most influential writers of the 20th century, and the r",
+    plotNodes: [
+      { label: "Part 1", description: "Gabriel García Márquez was born on March 6, 1927, in Aracataca, The Republic of Colombia." },
+      { label: "Part 2", description: "English Biography Early Life Period of Greatness Later Life Personal Life Major Works Writing Characteristics Themes Narrative Magic Realism Macondo Influence Evaluation Thoughts Key Information Gabri" }
+    ],
+    themeAnalysis: "[[PDF] MINZU AND THE RECEPTION OF GABRIEL GARCÍA MÁRQUEZ IN ...] All three themes are present in One Hundred Years of Solitude. In García Márquez's novel, the Spanish galleon is the disappointing finding ...\n\nGabriel García Márquez was born on March 6, 1927, in Aracataca, The Republic of Colombia. He spent his childhood in his maternal grandparents&#x27; home. His grandfather was a respected retired army officer, who had been a colonel, was strong-willed, kind-hearted, and held radical ideas. His grandmother was well-versed in both ancient and modern knowledge and had a wealth of myths, legends, and ghost s\n\nEnglish Biography Early Life Period of Greatness Later Life Personal Life Major Works Writing Characteristics Themes Narrative Magic Realism Macondo Influence Evaluation Thoughts Key I",
+    techniques: "Gabriel García Márquez was born on March 6, 1927, in Aracataca, The Republic of Colombia. He spent his childhood in his maternal grandparents&#x27; home. His grandfather was a respected retired army officer, who had been a colonel, was strong-willed, kind-hearted, and held radical ideas. His grandmother was well-versed in both ancient and modern knowledge and had a wealth of myths, legends, and ghost s\n\nEnglish Biography Early Life Period of Greatness Later Life Personal Life Major Works Writing Characteristics Themes Narrative Magic Realism Macondo Influence Evaluation Thoughts Key Informatio",
+    excerpts: [
+      { quote: "One Hundred Years of Solitude", context: "From One Hundred Years of Solitude" },
+      { quote: "One Hundred Years of Solitude", context: "From One Hundred Years of Solitude" }
+    ],
+    insights: "[One Hundred Years of Solitude - Wikipedia] One Hundred Years of Solitude is a 1967 novel by Colombian author Gabriel García Márquez that tells the multi-generational story of the Buendía family, ...\n\n[Gabriel García Márquez（Colombian writer, journalist, and social ...] He began writing One Hundred Years of Solitude in 1965. Upon its publication in 1967, the novel was hailed as a masterpiece, quickly translated into numerous ...\n\n[Gabriel García Márquez - Wikipedia] He is best known for his novels, such as No One Writes to the Colonel (1961); One Hundred Years of Solitude (1967), which has sol",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/One%20Hundred%20Years%20of%20Solitude", tier: "reference", fetchedAt: "2026-05-21T08:32:51.379Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "buddenbrooks": {
@@ -3385,5 +3405,73 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     techniques: "Get ready to explore Palace Walk and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Palace Walk Naguib Mahfouz Palace Walk Naguib Mahfouz 54 pages • 1-hour read Naguib Mahfouz Palace Walk Fiction | Novel | Adult | Published in 1956 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF P",
     excerpts: [],
     insights: "[Palace Walk Background | SuperSummary] The characters in the Cairo Trilogy often embody broader societal archetypes, and as such, their individual journeys serve as metaphors for the collective ...\n\n[Cairo Trilogy - Wikipedia] The Cairo Trilogy is a trilogy of novels written by the Egyptian novelist and Nobel Prize in Literature winner Naguib Mahfouz, and one of the major works of ...\n\n[Analysis of Naguib Mahfouz's The Cairo Trilogy] The Cairo Trilogy tells the story of patriarch al-Sayyid Ahmad Abd al-Jawad and his family over the course of more than 30 years, from World War I to eight ...",
+  },
+
+  "re-in-06": {
+    id: "re-in-06",
+    plotSummary: "[[PDF] Proceedings of the Annual Midwest Research-to-Practice ... - ERIC] ... re in (06, 18: 5-7). Ways of Helping. From the volunteers' perspectives, the process of helping is structured around sets of beliefs about ways to help ...\n\n[The Last of US (2013) - Gameclub – Wide Flank - Podtail] 05:23 - Deck-builders and roguelikes - we're in! 06:54 - Act 1 and the ambience of the cabin. 14:10 - The health scales. 15:10 - Sacrificing as a theme. 17 ...",
+    plotNodes: [
+      { label: "Part 1", description: "[[PDF] Proceedings of the Annual Midwest Research-to-Practice ..." },
+      { label: "Part 2", description: "[The Last of US (2013) - Gameclub – Wide Flank - Podtail] 05:23 - Deck-builders and roguelikes - we're in!" }
+    ],
+    themeAnalysis: "[The Last of US (2013) - Gameclub – Wide Flank - Podtail] 05:23 - Deck-builders and roguelikes - we're in! 06:54 - Act 1 and the ambience of the cabin. 14:10 - The health scales. 15:10 - Sacrificing as a theme. 17 ...\n\n[April 2013 - 365 Dry Martinis] ... themes before putting it all back in the box at the end. These ... Pink Floyd - \"When You're In\" 06/29/1973 Tampa, FL 1943. Fleetwood ...\n\n[#ubuntu.txt] ... themes [12:13] <Jasey> oops [12:13] <poningru> FlameSphere ... re in? [06:32] <_jim_> waylandbill im root [06:33] <MarcN|keynote> ...",
+    techniques: "[[PDF] Proceedings of the Annual Midwest Research-to-Practice ... - ERIC] ... re in (06, 18: 5-7). Ways of Helping. From the volunteers' perspectives, the process of helping is structured around sets of beliefs about ways to help ...",
+    excerpts: [],
+    insights: "[[PDF] Proceedings of the Annual Midwest Research-to-Practice ... - ERIC] ... re in (06, 18: 5-7). Ways of Helping. From the volunteers' perspectives, the process of helping is structured around sets of beliefs about ways to help ...\n\n[[PDF] ambassador robert a. bradtke - ADST.org] ... re in '06? BRADTKE: We're in '09. Q: Okay. BRADTKE: Zagreb was 2006 to 2009. So, we're in '09. The summer of '09. It was a wonderful time ...\n\n[Home Is Where the Ok Is? Early Okayplayer Message Boards & an ...] ” @SampolinMoAko gives a brief description of the era's effect on ... (This photo was the last RE in 0",
+  },
+
+  "booker-2008-adiga": {
+    id: "booker-2008-adiga",
+    characters: [
+      { name: "The Booker", role: "角色", description: "\"booker-2008-adiga\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Adiga", role: "角色", description: "\"booker-2008-adiga\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "[[PDF] POSTCOLONIAL WORLD LITERATURE - AUB ScholarWorks] The Booker?, 2008). Adiga's shocking victory, especially over authors who have more presence and experience within the literary field, helped secure a wide ...",
+    plotNodes: [
+      { label: "第 1 部分", description: "[[PDF] POSTCOLONIAL WORLD LITERATURE - AUB ScholarWorks] The Booker?, 2008). Adiga's shocking victory, especially over authors who have more presence and experience within the literary field, helped s" }
+    ],
+    themeAnalysis: "[[PDF] POSTCOLONIAL WORLD LITERATURE - AUB ScholarWorks] The Booker?, 2008). Adiga's shocking victory, especially over authors who have more presence and experience within the literary field, helped secure a wide ...",
+    techniques: "[[PDF] POSTCOLONIAL WORLD LITERATURE - AUB ScholarWorks] The Booker?, 2008). Adiga's shocking victory, especially over authors who have more presence and experience within the literary field, helped secure a wide ...",
+    excerpts: [],
+    insights: "[[PDF] POSTCOLONIAL WORLD LITERATURE - AUB ScholarWorks] The Booker?, 2008). Adiga's shocking victory, especially over authors who have more presence and experience within the literary field, helped secure a wide ...",
+  },
+
+  "death-and-kings-horseman": {
+    id: "death-and-kings-horseman",
+    characters: [
+      { name: "Death", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "King", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "Horseman", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "An Intriguing Complete", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "Analysis Death", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "Anita The Pedagogue", role: "角色", description: "death-and-kings-horseman 中的主要角色。" },
+      { name: "Summary Of Death", role: "角色", description: "death-and-kings-horseman 中的主要角色。" }
+    ],
+    plotSummary: "[Death and the King's Horseman: An Intriguing Complete ... - YouTube] LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AND THE KING'S HORSEMAN ... Summary and Analysis Death and King's Horseman. Anita The Pedagogue ...\n\n[Summary Of Death And The King'S Horseman By Wole Soyinka] Death and The King's Horseman - Themes and Character Analysis ... Summary and Analysis Death and King's Horseman. Anita The Pedagogue ...\n\n[Death and The King's Horseman - Themes and Character Analysis] ... Anita The Pedagogue · Summary and Analysis Death and King's Horseman. Anita The Pedagogue•5.1K views · 2:32:58. Go to channel Stash - Black ...\n\n[DEATH AND THE KING'S HORSEMAN - YouTube] LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AND THE KING'S HORSEMAN ... Summary and Analysis Death and King's Horseman. Anita The Pedagogue ...\n\n[Summary and Analysis Death and King's Horseman - YouTube] Summary and Analysis Death and King's Horseman. 5.1K views · 2 years ... LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AN",
+    plotNodes: [
+      { label: "Part 1", description: "[Death and the King's Horseman: An Intriguing Complete ..." },
+      { label: "Part 2", description: "[Summary Of Death And The King'S Horseman By Wole Soyinka] Death and The King's Horseman - Themes and Character Analysis ..." },
+      { label: "Part 3", description: "[Death and The King's Horseman - Themes and Character Analysis] ..." },
+      { label: "Part 4", description: "[DEATH AND THE KING'S HORSEMAN - YouTube] LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AND THE KING'S HORSEMAN ..." },
+      { label: "Part 5", description: "[Summary and Analysis Death and King's Horseman - YouTube] Summary and Analysis Death and King's Horseman." }
+    ],
+    themeAnalysis: "[Death and the King's Horseman: An Intriguing Complete ... - YouTube] LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AND THE KING'S HORSEMAN ... Summary and Analysis Death and King's Horseman. Anita The Pedagogue ...\n\n[Summary Of Death And The King'S Horseman By Wole Soyinka] Death and The King's Horseman - Themes and Character Analysis ... Summary and Analysis Death and King's Horseman. Anita The Pedagogue ...\n\n[Death and The King's Horseman - Themes and Character Analysis] ... Anita The Pedagogue · Summary and Analysis Death and King's Horseman. Anita The Pedagogue•5.1K views · 2:32:58. Go to channel Stash - Black ...\n\n[DEATH AND THE KING'S HORSEMAN - YouTube] LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AND THE KING'S HORSEMAN ... Summary and Analysis Death and King's Horseman. Anita",
+    techniques: "",
+    excerpts: [],
+    insights: "[Elesin's Duty and Cultural Conflict | PDF | Poetry - Scribd] death and king's horseman - Free download as Word Doc (.doc / .docx), PDF ... The document provides an in-depth summary and analysis of Wole Soyinka's play \"Death ...\n\n[Death and the King's Horseman: An Intriguing Complete ... - YouTube] LANGUAGE, THEMES & CHARACTERS ANALYSIS - DEATH AND THE KING'S HORSEMAN ... Summary and Analysis Death and King's Horseman. Anita The Pedagogue ...\n\n[Summary Of Death And The King'S Horseman By Wole Soyinka] Death and The King's Horseman - Themes and Character Analysis ... Summary and Analysis Death",
+  },
+
+  "nobel-2020-gluck": {
+    id: "nobel-2020-gluck",
+    plotSummary: "The Nobel Prize in Literature 2020 was awarded to Louise Glück &quot;for her unmistakable poetic voice that with austere beauty makes individual existence universal&quot;\n\nNavigate to: Summary -- Facts -- Biographical -- Nobel Prize lecture -- Prize presentation -- Interview -- Poetry -- Nobel diploma -- Photo gallery -- Other resources Prize announcement Press release Bio-bibliography Award ceremony video Award ceremony speech Louise Glück s Nobel Prize lecture was recorded on 27 March 2023 in Berkeley, California, USA. English English [pdf] Swedish Swedish [pdf] When I was a small child of, I think, about five or six, I staged a competition in my head, a contest to decide the greatest poem in the world. There were two finalists: Blake’s “The Little Black Boy” and Stephen Foster’s “Swanee River.” I paced up and down the second bedroom in my grandmother’s house in Cedarhurst, a village on the south shore of Long Island, reciting, in my head as I preferred, not from my mouth, Blake’s un",
+    plotNodes: [
+      { label: "Part 1", description: "The Nobel Prize in Literature 2020 was awarded to Louise Glück &quot;for her unmistakable poetic voice that with austere beauty makes individual existence universal&quot;" },
+      { label: "Part 2", description: "Navigate to: Summary -- Facts -- Biographical -- Nobel Prize lecture -- Prize presentation -- Interview -- Poetry -- Nobel diploma -- Photo gallery -- Other resources Prize announcement Press release " }
+    ],
+    themeAnalysis: "",
+    techniques: "",
+    excerpts: [],
+    insights: "[Louise Glück – Nobel Lecture - NobelPrize.org] Nobel Prize lecture. Navigate to: Summary, -- Facts · -- Biographical, -- Nobel ... 2020/gluck/lecture/>. Go to the top of the page. Nobel Prizes and laureates ...\n\nThe Nobel Prize in Literature 2020 was awarded to Louise Glück &quot;for her unmistakable poetic voice that with austere beauty makes individual existence universal&quot;\n\nNavigate to: Summary -- Facts -- Biographical -- Nobel Prize lecture -- Prize presentation -- Interview -- Poetry -- Nobel diploma -- Photo gallery -- Other resources Prize announcement Press release Bio-bibliograph",
   },
 };

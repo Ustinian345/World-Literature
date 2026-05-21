@@ -12,7 +12,9 @@
     "lit:fetch": "npx tsx scripts/fetch-literature-data.ts",
     "lit:scan": "npx tsx scripts/scan-completeness.ts",
     "lit:batch": "npx tsx scripts/fetch-literature-data.ts --batch",
-    "lit:batch-all": "npx tsx scripts/fetch-literature-data.ts --batch-all"
+    "lit:batch-all": "npx tsx scripts/fetch-literature-data.ts --batch-all",
+    "trends:fetch": "npx tsx scripts/fetch-daily-trends.ts",
+    "trends:dry": "npx tsx scripts/fetch-daily-trends.ts --dry-run"
   },
   "dependencies": {
     "next": "16.2.6",

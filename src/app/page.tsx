@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { Suspense } from "react";
 import { continents, featuredWorks, hotTopics, allWorks } from "@/lib/data";
 import { awards, getAwardStats } from "@/lib/award-data";
 import { textbookLevels, getTextbookStats } from "@/lib/textbook-data";
 import { HeroMosaic } from "@/components/HeroMosaic";
 import { getBookCoverImages } from "@/lib/mosaic-images";
+import TrendingTopics from "@/components/TrendingTopics";
 
 export default function Home() {
   const countrySet = new Set(allWorks.map(w => w.country));
@@ -304,6 +306,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== 今日文学焦点 ===== */}
+      <Suspense fallback={<div className="py-20 text-center text-stone-400">加载中...</div>}>
+        <TrendingTopics />
+      </Suspense>
+
       {/* ===== 底部 CTA ===== */}
       <section className="bg-umber py-20 text-center">
         <div className="mx-auto max-w-2xl px-5">
@@ -404,5 +411,6 @@ function AwardsGrid() {
         </div>
       </Link>
     </div>
+
   );
 }
