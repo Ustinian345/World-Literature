@@ -638,15 +638,36 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "gitanjali": {
     id: "gitanjali",
-    plotSummary: "Gitanjali (Bengali: গীতাঞ্জলি, lit. ''Song offering'') is a collection of poems by the Bengali poet Rabindranath Tagore. Tagore received the Nobel Prize for Literature in 1913, for its English translation, Song Offerings, making him the first non-European and the first Asian and the only Indian to receive this honour. It is part of the UNESCO Collection of Representative Works. Its central theme is devotion, and its motto is \"I am here to sing thee songs\" (No. XV).",
-    themeAnalysis: "Gitanjali (Bengali: গীতাঞ্জলি, lit. ''Song offering'') is a collection of poems by the Bengali poet Rabindranath Tagore. Tagore received the Nobel Prize for Literature in 1913, for its English translation, Song Offerings, making him the first non-European and the first Asian and the only Indian to receive this honour. It is part of the UNESCO Collection of Representative Works.",
-    techniques: "Gitanjali (Bengali: গীতাঞ্জলি, lit. ''Song offering'') is a collection of poems by the Bengali poet Rabindranath Tagore. Tagore received the Nobel Prize for Literature in 1913, for its English translation, Song Offerings, making him the first non-European and the first Asian and the only Indian to receive this honour. It is part of the UNESCO Collection of Representative Works.",
-    excerpts: [],
-    insights: "Gitanjali (Bengali: গীতাঞ্জলি, lit. ''Song offering'') is a collection of poems by the Bengali poet Rabindranath Tagore. Tagore received the Nobel Prize for Literature in 1913, for its English translation, Song Offerings, making him the first non-European and the first Asian and the only Indian to receive this honour. It is part of the UNESCO Collection of Representative Works.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Gitanjali"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E5%90%89%E6%AA%80%E8%BF%A6%E5%88%A9"
-    // }
+    plotSummary: "《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。泰戈尔凭借该作获得1913年诺贝尔文学奖。\n《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。\n\n第1—7首为序曲，说明作歌缘由，表现神与人的亲密关系。表现诗人对人神结合境界的向往和追求；\n\n第57—85首为第三乐章，主题是欢乐颂，歌颂神给世界带来的欢乐和光明；\n\n第86—100首是第四乐章，主题是死亡颂。",
+    plotNodes: [
+      { label: "第 1 部分", description: "《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。泰戈尔凭借该作获得1913年诺贝尔文学奖。 《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀" },
+      { label: "第 2 部分", description: "第1—7首为序曲，说明作歌缘由，表现神与人的亲密关系。表现诗人对人神结合境界的向往和追求；" },
+      { label: "第 3 部分", description: "第86—100首是第四乐章，主题是死亡颂。诗人渴望通过死亡获得永生，真正达到人与神合一的境界；" },
+      { label: "第 4 部分", description: "该诗集出版于1912年，其中的主要作品选自诗人发表于孟加拉文版的《吉檀迦利》《奉献集》《渡口集》和《歌之花环》等诗集。在译为英文的过程中，诗人有时将原作中的二三首诗糅合在一起。该诗集可以代表他这时期宗教抒情诗的主要倾向。 [3]" },
+      { label: "第 5 部分", description: "作为泛神论代表作的《吉檀迦利》，描写了诗人对神的赞颂，对神到来的渴望，与神失之交臂的失望，以及与神合一的狂欢，寄予了诗人对无限世界的向往和沉思。从诗行间，令人感受到诗人生命激情，若无形的力量，引导着读者走向诗人构筑的激情与爱的世界里。" },
+      { label: "第 6 部分", description: "印度本是一个崇尚宗教的国度，千百年来人们孜致以求努力在宗教的神秘世界之中寻找人生启迪和慰藉。泰戈尔将现代西方人文主义、科学思想与印度传统宗教相融合，潜心汲取印度各种教义中的积极因意，用西方现代文明与印度古典哲学精神相结合，创造了独特的“诗人的宗教”，这种生命哲学的深刻内涵，充分体现在《吉檀迦利》中。" }
+    ],
+    themeAnalysis: "《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。泰戈尔凭借该作获得1913年诺贝尔文学奖。\n《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。\n\n第1—7首为序曲，说明作歌缘由，表现神与人的亲密关系。表现诗人对人神结合境界的向往和追求；\n\n第57—85首为第三乐章，主题是欢乐颂，歌颂神给世界带来的欢乐和光明；\n\n第86—100首是第四乐章，主题是死亡颂。诗人渴望通过死亡获得永生，真正达到人与神合一的境界；\n\n该诗集出版于1912年，其中的主要作品选自诗人发表于孟加拉文版的《吉檀迦利》《奉献集》《渡口集》和《歌之花环》等诗集。",
+    techniques: "《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。泰戈尔凭借该作获得1913年诺贝尔文学奖。\n《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。\n\n第1—7首为序曲，说明作歌缘由，表现神与人的亲密关系。表现诗人对人神结合境界的向往和追求；\n\n第57—85首为第三乐章，主题是欢乐颂，歌颂神给世界带来的欢乐和光明；\n\n第86—100首是第四乐章，主题是死亡颂。",
+    excerpts: [
+      { quote: "你已经使我永生，这样做是你的欢乐。这脆薄的杯儿，你不断地把它倒空，又不断地以新生命来充满。这小小的苇笛，你携带着它逾山越谷，从笛管里吹出永新的音乐。在你双手的不朽的安抚下，我的小小的心，消融在无边快乐之中，发出不可言说的词调。", context: "来源：Gitanjali" }
+    ],
+    insights: "《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。泰戈尔凭借该作获得1913年诺贝尔文学奖。\n《吉檀迦利》是印度作家泰戈尔创作的诗集。这部宗教抒情诗集，是一份“奉献给神的祭品”（不少人以为“吉檀迦利”是奉献之意，其实是献诗之意）。泰戈尔向神敬献的歌是“生命之歌”，他以轻快、欢畅的笔调歌唱生命的枯荣、现实生活的欢乐和悲哀，表达了作者对祖国前途的关怀。\n\n第1—7首为序曲，说明作歌缘由，表现神与人的亲密关系。表现诗人对人神结合境界的向往和追求；\n\n第57—85首为第三乐章，主题是欢乐颂，歌颂神给世界带来的欢乐和光明；\n\n第86—100首是第四乐章，主题是死亡颂。",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%90%89%E6%AA%80%E8%BF%A6%E5%88%A9", tier: "reference", fetchedAt: "2026-05-21T04:47:08.476Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/7164", tier: "original_text", fetchedAt: "2026-05-21T04:47:22.626Z", contributedFields: ["insights"] },
+        { label: "Britannica", url: "https://www.britannica.com/topic/Gitanjali", tier: "reference", fetchedAt: "2026-05-21T04:47:22.626Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Gitanjali%20Rabindranath%20Tagore" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Gitanjali%20Rabindranath%20Tagore" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Gitanjali" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Gitanjali" },
+      ],
+    },
   },
 
   // ==================== 亚洲 — 波斯/中东 ====================
@@ -1656,9 +1677,24 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "gods-bits-of-wood": {
     id: "gods-bits-of-wood",
     characters: [
-      { name: "巴卡约科", role: "主人公", description: "铁路工人罢工运动的领袖，一个具有超凡魅力的组织者。他将不同种族、不同地区的工人团结在一起——他的名字在整个铁路沿线被工人们传颂。" },
-      { name: "拉玛", role: "重要人物", description: "罢工运动中的女性领袖之一。在男性工人被困于谈判时，她带领妇女们走上了街头——'神的木屑'指的就是这些看似微不足道但最终改变了历史进程的普通民众。" },
+      { name: "Bits", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "Wood Summary", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "Wood", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "Major Characters", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "African", role: "角色", description: "God's Bits of Wood 中的主要角色。" },
+      { name: "Wood Characters", role: "角色", description: "God's Bits of Wood 中的主要角色。" }
     ],
+    plotSummary: "Get ready to explore God&#x27;s Bits Of Wood and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide God’s Bits of Wood Ousmane Sembène God’s Bits of Wood Ousmane Sembène 46 pages • 1-hour read Ousmane Sembène God’s Bits of Wood Fiction | Novel | Adult | Published in 1960 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters 1-3 Chapters 4-6 Chapters 7-9 Chapters 10-12 Chapters 13-16 Chapters 17-20 Character List NEW Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Sum",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore God&#x27;s Bits Of Wood and its meaning." },
+      { label: "Part 2", description: "Study Guide God’s Bits of Wood Ousmane Sembène God’s Bits of Wood Ousmane Sembène 46 pages • 1-hour read Ousmane Sembène God’s Bits of Wood Fiction | Novel | Adult | Published in 1960 A modern alterna" }
+    ],
+    themeAnalysis: "Get ready to explore God&#x27;s Bits Of Wood and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide God’s Bits of Wood Ousmane Sembène God’s Bits of Wood Ousmane Sembène 46 pages • 1-hour read Ousmane Sembène God’s Bits of Wood Fiction | Novel | Adult | Published in 1960 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters 1-3 Chapters 4-6 Chapters 7-9 Chapters 10-12 Chapters 13-16",
+    techniques: "Get ready to explore God&#x27;s Bits Of Wood and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide God’s Bits of Wood Ousmane Sembène God’s Bits of Wood Ousmane Sembène 46 pages • 1-hour read Ousmane Sembène God’s Bits of Wood Fiction | Novel | Adult | Published in 1960 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Do",
+    excerpts: [],
+    insights: "[God's Bits of Wood Summary & Study Guide - BookRags.com] God's Bits of Wood Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[God's Bits Of Wood Summary and Study Guide | SuperSummary] God's Bits of Wood (1960) by Ousmane Sembène is a novel based on actual events surrounding the Senegalese railway workers strike of 1947.\n\n[God's Bits of Wood (docx) - CliffsNotes] God's Bits of Wood by Ousmane Sembene is about the 1947-48 strike where workers walked off the job on the railroad from Dakar in Senegal to Bamako on the Niger",
   },
 
   "children-of-gebelawi": {
