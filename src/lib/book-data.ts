@@ -372,28 +372,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "poems-li-bai": {
     id: "poems-li-bai",
-    plotSummary: "李白，中国唐代浪漫主义诗人，字太白，号青莲居士，又号“谪仙”，有“诗仙”、“诗侠”之称，出生地有蜀郡绵州昌隆县（今四川省绵阳市江油市青莲镇）、河南洛阳、西域碎叶等说，祖籍陇西成纪（今甘肃天水秦安县），另有洛阳人、山东人等说，凉武昭王李暠九世孙。五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动。20岁时，开始游历蜀中。725年离开蜀地。726年，从洞庭湖到扬州，当年冬天离开扬州北游今河南汝州，然后到安陆。727年，与已故宰相许圉师孙女结婚，定居安陆。开元十八年（730年）来到长安。天宝元年（742年）应召入京担任的翰林供奉。天宝三载（744年），被唐玄宗“赐金放还”。唐至德二年（757年）正月，在永王军中，写了东巡组诗；二月，永王兵败丹阳，而李白在永王行军丹阳途中，便仓惶逃走。晚年漂泊东南一带，762年，在当涂去世，享年62岁。葬于当涂龙山东麓。",
-    plotNodes: [
-      { label: "第 1 部分", description: "李白，中国唐代浪漫主义诗人，字太白，号青莲居士，又号“谪仙”，有“诗仙”、“诗侠”之称，出生地有蜀郡绵州昌隆县（今四川省绵阳市江油市青莲镇）、河南洛阳、西域碎叶等说，祖籍陇西成纪（今甘肃天水秦安县），另有洛阳人、山东人等说，凉武昭王李暠九世孙。五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动。20岁时，开始游历蜀中。725年离开蜀地。726年，从洞庭湖到" },
-      { label: "第 2 部分", description: "五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动 [159]。20岁时，开始游历蜀中 [153]。725年离开蜀地 [158]。726年，从洞庭湖到扬州，当年冬天离开扬州北游今河南汝州，然后到安陆。727年，与已故宰相许圉师孙女结婚，定居安陆 [158]。开元十八年（730年）来到长安 [157]。" }
+    characters: [
+      { name: "Spring Dawns", role: "角色", description: "Li Bai 中的主要角色。" },
+      { name: "Quiet Night Thoughts", role: "角色", description: "Li Bai 中的主要角色。" },
+      { name: "Delaine Rogers", role: "角色", description: "Li Bai 中的主要角色。" },
+      { name: "Medium", role: "角色", description: "Li Bai 中的主要角色。" },
+      { name: "Li Bai", role: "角色", description: "Li Bai 中的主要角色。" }
     ],
-    themeAnalysis: "李白，中国唐代浪漫主义诗人，字太白，号青莲居士，又号“谪仙”，有“诗仙”、“诗侠”之称，出生地有蜀郡绵州昌隆县（今四川省绵阳市江油市青莲镇）、河南洛阳、西域碎叶等说，祖籍陇西成纪（今甘肃天水秦安县），另有洛阳人、山东人等说，凉武昭王李暠九世孙。五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动。20岁时，开始游历蜀中。725年离开蜀地。726年，从洞庭湖到扬州，当年冬天离开扬州北游今河南汝州，然后到安陆。727年，与已故宰相许圉师孙女结婚，定居安陆。开元十八年（730年）来到长安。天宝元年（742年）应召入京担任的翰林供奉。天宝三载（744年），被唐玄宗“赐金放还”。唐至德二年（757年）正月，在永王军中，写了东巡组诗；二月，永王兵败丹阳，而李白在永王行军丹阳途中，便仓惶逃走。晚年漂泊东南一带，762年，在当涂去世，享年62岁。葬于当涂龙山东麓。",
-    techniques: "李白，中国唐代浪漫主义诗人，字太白，号青莲居士，又号“谪仙”，有“诗仙”、“诗侠”之称，出生地有蜀郡绵州昌隆县（今四川省绵阳市江油市青莲镇）、河南洛阳、西域碎叶等说，祖籍陇西成纪（今甘肃天水秦安县），另有洛阳人、山东人等说，凉武昭王李暠九世孙。五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动。20岁时，开始游历蜀中。725年离开蜀地。726年，从洞庭湖到扬州，当年冬天离开扬州北游今河南汝州，然后到安陆。727年，与已故宰相许圉师孙女结婚，定居安陆。开元十八年（730年）来到长安。天宝元年（742年）应召入京担任的翰林供奉。天宝三载（744年），被唐玄宗“赐金放还”。唐至德二年（757年）正月，在永王军中，写了东巡组诗；二月，永王兵败丹阳，而李白在永王行军丹阳途中，便仓惶逃走。晚年漂泊东南一带，762年，在当涂去世，享年62岁。葬于当涂龙山东麓。",
-    excerpts: [],
-    insights: "李白，中国唐代浪漫主义诗人，字太白，号青莲居士，又号“谪仙”，有“诗仙”、“诗侠”之称，出生地有蜀郡绵州昌隆县（今四川省绵阳市江油市青莲镇）、河南洛阳、西域碎叶等说，祖籍陇西成纪（今甘肃天水秦安县），另有洛阳人、山东人等说，凉武昭王李暠九世孙。五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动。20岁时，开始游历蜀中。725年离开蜀地。726年，从洞庭湖到扬州，当年冬天离开扬州北游今河南汝州，然后到安陆。727年，与已故宰相许圉师孙女结婚，定居安陆。开元十八年（730年）来到长安。天宝元年（742年）应召入京担任的翰林供奉。天宝三载（744年），被唐玄宗“赐金放还”。唐至德二年（757年）正月，在永王军中，写了东巡组诗；二月，永王兵败丹阳，而李白在永王行军丹阳途中，便仓惶逃走。晚年漂泊东南一带，762年，在当涂去世，享年62岁。葬于当涂龙山东麓。",
+    plotSummary: "[Introduction & Overview of Drinking Alone Beneath the Moon] Plot Summary · Themes · Style · Historical Context ... This detailed literature summary also contains Bibliography on Drinking Alone Beneath the Moon by Li Bai.\n\n[Listening to the verses: unveiling phonetic contrasts in Li Bai and Du ...] The enduring comparison between Li Bai (李白, 701–762) and Du Fu (杜甫, 712–770), two towering poets in Chinese literary history, ...\n\n[Spring Dawns and Quiet Night Thoughts | by Delaine Rogers | Medium] Li Bai is remembered by history as “a hero among poets.” The educated who read his works praised him as a scholar, and the illiterates, who ...\n\n[A Poem of Changgan by Li Bai - Poem Analysis] 'A Poem of Changgan' by Li Bai is about a girl's longing for her husband who has undertaken a journey. This poem centers on a love story.",
+    plotNodes: [
+      { label: "Part 1", description: "[Introduction & Overview of Drinking Alone Beneath the Moon] Plot Summary · Themes · Style · Historical Context ..." },
+      { label: "Part 2", description: "[Listening to the verses: unveiling phonetic contrasts in Li Bai and Du ...] The enduring comparison between Li Bai (李白, 701–762) and Du Fu (杜甫, 712–770), two towering poets in Chinese literary histor" },
+      { label: "Part 3", description: "[Spring Dawns and Quiet Night Thoughts | by Delaine Rogers | Medium] Li Bai is remembered by history as “a hero among poets.” The educated who read his works praised him as a scholar, and the illitera" },
+      { label: "Part 4", description: "[A Poem of Changgan by Li Bai - Poem Analysis] 'A Poem of Changgan' by Li Bai is about a girl's longing for her husband who has undertaken a journey." }
+    ],
+    themeAnalysis: "[Introduction & Overview of Drinking Alone Beneath the Moon] Plot Summary · Themes · Style · Historical Context ... This detailed literature summary also contains Bibliography on Drinking Alone Beneath the Moon by Li Bai.\n\n[Who was Li Bai, and what is his importance in Chinese literature?] Li Bai (701-762 AD) was the greatest poet in ancient China. His nickname was \"Shi Xian,\" meaning he was the god of poetry. Li Bai and the poet ...\n\n[A Poem of Changgan by Li Bai - Poem Analysis] 'A Poem of Changgan' by Li Bai is about a girl's longing for her husband who has undertaken a journey. This poem centers on a love story.\n\n李白，中国唐代浪漫主义诗人，字太白，号青莲居士，又号“谪仙”，有“诗仙”、“诗侠”之称，出生地有蜀郡绵州昌隆县（今四川省绵阳市江油市青莲镇）、河南洛阳、西域碎叶等说，祖籍陇西成纪（今甘肃天水秦安县），另有洛阳人、山东人等说，凉武昭王李暠九世孙。五岁时 ，李白发蒙读书，十五岁已有诗赋多首，并得到社会名流的推崇与奖掖，开始从事社会干谒活动。20岁时，开",
+    techniques: "[Introduction & Overview of Drinking Alone Beneath the Moon] Plot Summary · Themes · Style · Historical Context ... This detailed literature summary also contains Bibliography on Drinking Alone Beneath the Moon by Li Bai.\n\n[Listening to the verses: unveiling phonetic contrasts in Li Bai and Du ...] The enduring comparison between Li Bai (李白, 701–762) and Du Fu (杜甫, 712–770), two towering poets in Chinese literary history, ...",
+    excerpts: [
+      { quote: "The Banished Immortal: A Life of Li Bai", context: "From Li Bai" }
+    ],
+    insights: "[Li Bai - Wikipedia] Li Bai's poems became models for celebrating the pleasures of friendship, the depth of nature, solitude, and the joys of drinking. Among the most famous are \" ...\n\n[Introduction & Overview of Drinking Alone Beneath the Moon] Plot Summary · Themes · Style · Historical Context ... This detailed literature summary also contains Bibliography on Drinking Alone Beneath the Moon by Li Bai.\n\n[\"The Banished Immortal: A Life of Li Bai\" by Ha Jin] Li Bai was a physically-impressive man of supreme intelligence, passion and sheer love of life, whose poems were known in China to high an",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD", tier: "reference", fetchedAt: "2026-05-21T04:18:08.021Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/26258", tier: "original_text", fetchedAt: "2026-05-21T04:18:49.818Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD", tier: "reference", fetchedAt: "2026-05-21T05:13:09.025Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Li%20Bai%20Li%20Bai" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Li%20Bai%20Li%20Bai" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Li%20Bai" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Li%20Bai" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -833,7 +836,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Love Everywhere? A Short Talk about “Chunhyang on Page, Stage ...] Kwon Sunkeung, “Translations of Chunhyangjeon into Foreign Languages and Their Cultural Significance”, The International Journal of Chinese ...\n\n[Exploring Korean Classical Literature: Chunhyangjeon by Minseo ...] Plot Summary of Chunhyangjeon. An In-depth Analysis of Themes, Characters, and Cultural Significance. Main Storyline. Key Themes and Motifs. Chunhyangjeon ...\n\n[Chunhyangjeon - Grokipedia] Chunhyangjeon is classified as a chunhyang-type folktale within Korean oral traditions, characterized by themes of romantic love",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%98%A5%E9%A6%99%E4%BC%A0", tier: "reference", fetchedAt: "2026-05-21T04:59:24.656Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%98%A5%E9%A6%99%E4%BC%A0", tier: "reference", fetchedAt: "2026-05-21T05:13:14.084Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
