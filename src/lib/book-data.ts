@@ -935,20 +935,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "oedipus": {
     id: "oedipus",
-    plotSummary: "《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志与宿命的冲突，其叙事结构被亚里士多德视为古希腊悲剧的典范。\n《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志与宿命的冲突，其叙事结构被亚里士多德视为古希腊悲剧的典范。\n\n克林多斯的一名牧羊人将一个遭人遗弃的婴儿救下后，将他献给了没有子女的国王，时光荏苒，婴儿长大成人，被唤名俄狄浦斯（佛朗哥·齐蒂）。某天，女巫将阿波罗神话讲给俄狄浦斯听，说他将来会亲手杀死生父并和生母结婚，听后，俄狄浦斯决定外出流浪。 途中，他与一群人发生殴斗，失手将一名老者打死，其人正是他的生父。接着，他继续流浪到了提北国，将那里的人面兽身怪物打死后，与王妃依娃卡丝蒂（西尔瓦娜·曼诺迦）成亲成为该国新国王，而该王妃正是他的生母，阿波罗神话灵验。遂即，提北国开始蔓延一种疾病，为了消灭这种病，该国人民四处寻找杀死老国王的凶手，俄狄浦斯终于知晓所有真相。《俄狄浦斯王》剧照\n\n电影版从特拜国王拉伊奥斯得到神谕后丢弃儿子开始，相较于戏剧，观众过早知晓主人公身世，悬念被削弱。电影平铺直叙，但准确还原了古希腊英雄时代的环境状貌，并最大程度尊重了原剧本台词。演员的表演代替了原剧中进场歌、合唱歌的形式来表现心理活动。\n\n本片是布景师首次独立负责布景工作的影片。主要室内场景（俄狄浦斯与母亲发生关系的婚房）在罗马的摄影棚搭建，导演帕索里尼要求布景风格反映其变化，追求不加装饰、斯巴达式的效果。部分场景在摩洛哥的瓦尔扎扎特拍摄。 [10]\n\n帕索里尼的改编是对古希腊悲剧的现代电影改编，对",
-    plotNodes: [
-      { label: "Part 1", description: "《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志" },
-      { label: "Part 2", description: "克林多斯的一名牧羊人将一个遭人遗弃的婴儿救下后，将他献给了没有子女的国王，时光荏苒，婴儿长大成人，被唤名俄狄浦斯（佛朗哥·齐蒂）。某天，女巫将阿波罗神话讲给俄狄浦斯听，说他将来会亲手杀死生父并和生母结婚，听后，俄狄浦斯决定外出流浪。" },
-      { label: "Part 3", description: "电影版从特拜国王拉伊奥斯得到神谕后丢弃儿子开始，相较于戏剧，观众过早知晓主人公身世，悬念被削弱。电影平铺直叙，但准确还原了古希腊英雄时代的环境状貌，并最大程度尊重了原剧本台词。演员的表演代替了原剧中进场歌、合唱歌的形式来表现心理活动。" },
-      { label: "Part 4", description: "本片是布景师首次独立负责布景工作的影片。主要室内场景（俄狄浦斯与母亲发生关系的婚房）在罗马的摄影棚搭建，导演帕索里尼要求布景风格反映其变化，追求不加装饰、斯巴达式的效果。部分场景在摩洛哥的瓦尔扎扎特拍摄。" }
+    characters: [
+      { name: "Oedipus Rex", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "Sophocles", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "Plot Summary", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "Comments", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "The Story", role: "角色", description: "Oedipus Rex 中的主要角色。" },
+      { name: "Oedipus", role: "角色", description: "Oedipus Rex 中的主要角色。" }
     ],
-    themeAnalysis: "《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志与宿命的冲突，其叙事结构被亚里士多德视为古希腊悲剧的典范。\n《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志与宿命的冲突，其叙事结构被亚里士多德视为古希腊悲剧的典范。\n\n克林多斯的一名牧羊人将一个遭人遗弃的婴儿救下后，将他献给了没有子女的国王，时光荏苒，婴儿长大成人，被唤名俄狄浦斯（佛朗哥·齐蒂）。某天，女巫将阿波罗神话讲给俄狄浦斯听，说他将来会亲手杀死生父并和生母结婚，听后，俄狄浦斯决定外出流浪。 途中，他与一群人发生殴斗，失手将一名老者打死，其人正是他的生父。接着，他继续流浪到了提北国，将那里的人面兽身怪物打死后，与王妃依娃卡丝蒂（西尔瓦娜·曼诺迦）成亲成为该国新国王，而该王妃正是他的生母，阿波罗神话灵验。遂即，提北国开始蔓延一种疾病，为了消灭这种病，该国人民四处寻找杀死老国王的凶手，俄狄浦斯终于知晓所有真相。《俄狄浦斯王》剧照\n\n电影版从特拜国王拉伊奥斯得到神谕后丢弃儿子开始，相较于戏剧，观众过早知晓主人公身世，悬念被削弱。电影平",
-    techniques: "",
+    plotSummary: "[Oedipus Rex by Sophocles | Plot Summary - YouTube] Comments ; Oedipus Rex by Sophocles | Characters. Course Hero · 59K views ; The Story of Oedipus (Complete) - Greek Mythology. See U in History / ...\n\n[Oedipus Rex by Sophocles | Summary, Themes & Characters - Lesson] The plot of Oedipus Rex is a straightforward interpretation of a Greek myth. When the king and queen of Thebes give birth to a son, Oedipus, an oracle tells ...\n\n[Oedipus Rex: Character Analysis - Quizlet] Oedipus, the protagonist of Sophocles' Oedipus Rex, is a complex character whose journey from ignorance to self-awareness drives the play's tragic narrative.\n\n[Oedipus Rex Themes - LitCharts] Oedipus Rex Themes · Fate vs. Free Will · Guilt and Shame · Sight vs. Blindness · Finding Out the Truth · Action vs. Reflection.\n\n[The Oedipus Plays: Character List | SparkNotes] Themes, Motifs & Symbols. Deeper Study. Essays; Sophocles and The ... The Oedipus Plays: Antigone, Oedipus Rex, Oedipus at Colonus SparkNotes Literature",
+    plotNodes: [
+      { label: "Part 1", description: "[Oedipus Rex by Sophocles | Plot Summary - YouTube] Comments ; Oedipus Rex by Sophocles | Characters." },
+      { label: "Part 2", description: "[Oedipus Rex by Sophocles | Summary, Themes & Characters - Lesson] The plot of Oedipus Rex is a straightforward interpretation of a Greek myth." },
+      { label: "Part 3", description: "[Oedipus Rex: Character Analysis - Quizlet] Oedipus, the protagonist of Sophocles' Oedipus Rex, is a complex character whose journey from ignorance to self-awareness drives the play's tragic narrative" },
+      { label: "Part 4", description: "[Oedipus Rex Themes - LitCharts] Oedipus Rex Themes · Fate vs." },
+      { label: "Part 5", description: "[The Oedipus Plays: Character List | SparkNotes] Themes, Motifs & Symbols." }
+    ],
+    themeAnalysis: "[The Oedipus Plays: Character List | SparkNotes] Themes, Motifs & Symbols. Deeper Study. Essays; Sophocles and The ... The Oedipus Plays: Antigone, Oedipus Rex, Oedipus at Colonus SparkNotes Literature Guide.\n\n[Oedipus Rex by Sophocles | Summary, Themes & Characters - Lesson] The plot of Oedipus Rex is a straightforward interpretation of a Greek myth. When the king and queen of Thebes give birth to a son, Oedipus, an oracle tells ...\n\n[Oedipus Rex: Themes and Character Analysis | PDF - Scribd] The document provides comprehensive notes on 'Oedipus Rex' by Sophocles, covering its background, characters, themes, and critical analysis.\n\n[Oedipus Rex Themes - LitCharts] Oedipus Rex Themes · Fate vs. Free Will · Guilt and Shame · Sight vs. Blindness · Finding Out the Truth · Action vs. Reflectio",
+    techniques: "[Oedipus Rex: Character Analysis - Quizlet] Oedipus, the protagonist of Sophocles' Oedipus Rex, is a complex character whose journey from ignorance to self-awareness drives the play's tragic narrative.",
     excerpts: [],
-    insights: "《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志与宿命的冲突，其叙事结构被亚里士多德视为古希腊悲剧的典范。\n《俄狄浦斯王》是由皮埃尔·保罗·帕索里尼执导并编剧，肖瓦娜·曼加诺、阿莉达·瓦莉等主演的意大利剧情片，于1967年9月3日在意大利上映。影片改编自古希腊剧作家索福克勒斯的同名戏剧，以古希腊悲剧为范本创作。该片讲述俄狄浦斯为逃避弑父娶母的神谕外出流浪，却在争斗中误杀生父，后因破解谜题成为提北国国王并与生母成婚。当王国爆发瘟疫追查凶手时，俄狄浦斯发现自己正是预言实践者。影片通过这一命运悖论展现人类意志与宿命的冲突，其叙事结构被亚里士多德视为古希腊悲剧的典范。\n\n克林多斯的一名牧羊人将一个遭人遗弃的婴儿救下后，将他献给了没有子女的国王，时光荏苒，婴儿长大成人，被唤名俄狄浦斯（佛朗哥·齐蒂）。某天，女巫将阿波罗神话讲给俄狄浦斯听，说他将来会亲手杀死生父并和生母结婚，听后，俄狄浦斯决定外出流浪。 途中，他与一群人发生殴斗，失手将一名老者打死",
+    insights: "[Oedipus Rex Themes - LitCharts] Oedipus Rex Themes · Fate vs. Free Will · Guilt and Shame · Sight vs. Blindness · Finding Out the Truth · Action vs. Reflection.\n\n[The Oedipus Plays: Character List | SparkNotes] Themes, Motifs & Symbols. Deeper Study. Essays; Sophocles and The ... The Oedipus Plays: Antigone, Oedipus Rex, Oedipus at Colonus SparkNotes Literature Guide.\n\n[Oedipus Rex - Wikipedia] Prior to the start of Oedipus Rex, Oedipus has become the king of Thebes while unwittingly fulfilling a prophecy that he would kill his father, Laius (the ...\n\n[Oedipus Rex by Sophocles | Summary, Them",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T04:28:54.337Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:25:46.210Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
