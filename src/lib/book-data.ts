@@ -2536,14 +2536,37 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "the-tree-of-man": {
     id: "the-tree-of-man",
-    plotSummary: "The Tree of Man is the fourth published novel by the Australian novelist and 1973 Nobel Prize-winner, Patrick White.",
-    themeAnalysis: "The Tree of Man is the fourth published novel by the Australian novelist and 1973 Nobel Prize-winner, Patrick White.",
-    techniques: "The Tree of Man is the fourth published novel by the Australian novelist and 1973 Nobel Prize-winner, Patrick White.",
+    characters: [
+      { name: "Subjects", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Bakers", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Fiction", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Barbers", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Cannibalism", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Fleet Street", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "London", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "England", role: "角色", description: "\"The Tree of Man\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Subjects: Bakers -- Fiction; Barbers -- Fiction; Cannibalism -- Fiction; Fleet Street (London, England) -- Fiction; Historical fiction; Horror tales; London (England) -- Social life and customs -- 18th century -- Fiction; Missing persons -- Fiction; Murder -- Fiction; Mystery fiction; Revenge -- Fiction; Suspense fiction; Todd, Sweeney (Legendary character) -- Fiction; Young women -- Fiction",
+    plotNodes: [
+      { label: "第 1 部分", description: "Subjects: Bakers -- Fiction; Barbers -- Fiction; Cannibalism -- Fiction; Fleet Street (London, England) -- Fiction; Historical fiction; Horror tales; London (England) -- Social life and customs -- 18t" }
+    ],
+    themeAnalysis: "Subjects: Bakers -- Fiction; Barbers -- Fiction; Cannibalism -- Fiction; Fleet Street (London, England) -- Fiction; Historical fiction; Horror tales; London (England) -- Social life and customs -- 18th century -- Fiction; Missing persons -- Fiction; Murder -- Fiction; Mystery fiction; Revenge -- Fiction; Suspense fiction; Todd, Sweeney (Legendary character) -- Fiction; Young women -- Fiction",
+    techniques: "Subjects: Bakers -- Fiction; Barbers -- Fiction; Cannibalism -- Fiction; Fleet Street (London, England) -- Fiction; Historical fiction; Horror tales; London (England) -- Social life and customs -- 18th century -- Fiction; Missing persons -- Fiction; Murder -- Fiction; Mystery fiction; Revenge -- Fiction; Suspense fiction; Todd, Sweeney (Legendary character) -- Fiction; Young women -- Fiction",
     excerpts: [],
-    insights: "The Tree of Man is the fourth published novel by the Australian novelist and 1973 Nobel Prize-winner, Patrick White.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Tree%20of%20Man"
-    // }
+    insights: "Subjects: Bakers -- Fiction; Barbers -- Fiction; Cannibalism -- Fiction; Fleet Street (London, England) -- Fiction; Historical fiction; Horror tales; London (England) -- Social life and customs -- 18th century -- Fiction; Missing persons -- Fiction; Murder -- Fiction; Mystery fiction; Revenge -- Fiction; Suspense fiction; Todd, Sweeney (Legendary character) -- Fiction; Young women -- Fiction",
+    sourceAttribution: {
+      sources: [
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/59828", tier: "original_text", fetchedAt: "2026-05-21T04:53:05.177Z", contributedFields: ["insights"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Tree%20of%20Man%20Patrick%20White" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Tree%20of%20Man%20Patrick%20White" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Tree%20of%20Man" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Tree%20of%20Man" },
+      ],
+    },
   },
 
   "once-were-warriors": {
