@@ -178,5 +178,14 @@
     "continent": "oceania",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:51:15.459Z"
+  },
+  {
+    "bookId": "true-history-kelly-gang",
+    "title": "凯利帮的真实历史",
+    "author": "彼得·凯里",
+    "source": "award",
+    "continent": "oceania",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T04:52:13.373Z"
   }
 ]

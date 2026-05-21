@@ -2202,36 +2202,33 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "leaves-of-grass": {
     id: "leaves-of-grass",
-    plotSummary: "《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。\n《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。\n\n《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。 [1]\n\n《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。",
+    characters: [
+      { name: "Leaves", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Grass Themes", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Grass", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Grass Study Guide", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Walt Whitman", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Leaves of Grass 中的主要角色。" },
+      { name: "Study Guide Leaves", role: "角色", description: "Leaves of Grass 中的主要角色。" }
+    ],
+    plotSummary: "[Summary & Study Guide Leaves of Grass by Walt ... - Amazon.com] 38 pages of chapter summaries, quotes, character analysis, themes, and more – everything you need to sharpen your knowledge of Leaves of Grass by Walt Whitman.\n\n[Leaves of Grass Themes | SuperSummary] Get ready to explore Leaves of Grass and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[Leaves of Grass Summary - GradeSaver] Leaves of Grass is a collection of poetry written over Walt Whitman's entire lifetime organized thematically into sections.\n\n[Leaves of Grass Study Guide - Course Hero] This study guide and infographic for Walt Whitman's Leaves of Grass offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Song of Myself by Walt Whitman | Summary, Themes - Scribd] 'I celebrate myself,' declares Walt Whitman's sprawling poem 'Song of Myself.' First published in 1855 in Whitman's collection Leaves of Grass, 'So",
     plotNodes: [
-      { label: "第 1 部分", description: "《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。 《草叶集》是美国诗人沃尔特·惠特曼创作" },
-      { label: "第 2 部分", description: "《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。 [1]" },
-      { label: "第 3 部分", description: "《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。 [2]" },
-      { label: "第 4 部分", description: "《草叶集》选材广泛，内容丰富，里面既有对美国民主自由的歌颂、对农奴制度的抨击，也有对美国壮丽河山和普通民众的热情赞美。总体来看，《草叶集》体现了惠特曼时代的“美国精神”，是惠特曼用诗歌记录的美国史。 [1]" },
-      { label: "第 5 部分", description: "惠特曼的诗集《草叶集》于1855年初次出版，当时只收了十二首诗。其后不断补充，到他病逝前的最后一版，已经收有近四百首诗歌了。他之所以把他的诗集取名为“草叶”，是因为草叶代表着生活在底层的、最普通的美国民众。 [5]" },
-      { label: "第 6 部分", description: "人类平等也是《草叶集》关心的内容。在《从巴门诺克开始》中，诗人热情地写道：“啊．这样的主题平等！这神圣的平儿名词！”诗人认为，在这个世界上，国不论大小，人不分种族，都应该是平等的。”我是许多民族组成的一个民族中的一员，这里面最大的和最小的全没有区别。" }
+      { label: "Part 1", description: "[Summary & Study Guide Leaves of Grass by Walt ..." },
+      { label: "Part 2", description: "[Leaves of Grass Themes | SuperSummary] Get ready to explore Leaves of Grass and its meaning." },
+      { label: "Part 3", description: "[Leaves of Grass Summary - GradeSaver] Leaves of Grass is a collection of poetry written over Walt Whitman's entire lifetime organized thematically into sections." },
+      { label: "Part 4", description: "[Leaves of Grass Study Guide - Course Hero] This study guide and infographic for Walt Whitman's Leaves of Grass offer summary and analysis on themes, symbols, and other literary devices found in the t" },
+      { label: "Part 5", description: "[Song of Myself by Walt Whitman | Summary, Themes - Scribd] 'I celebrate myself,' declares Walt Whitman's sprawling poem 'Song of Myself.' First published in 1855 in Whitman's collection Leaves of Gra" }
     ],
-    themeAnalysis: "《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。\n《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。\n\n《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。 [1]\n\n《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。 [2]\n\n《草叶集》选材广泛，内容丰富，里面既有对美国民主自由的歌颂、对农奴制度的抨击，也有对美国壮丽河山和普通民众的热情赞美。总体来看，《草叶集》体现了惠特曼时代的“美国精神”，是惠特曼用诗歌记录的美国史。",
-    techniques: "《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。\n《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。\n\n《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。 [1]\n\n《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。",
-    excerpts: [
-      { quote: "一切出生的男人皆是我的兄弟，一切女人都是我的姐妹，我的爱人。", context: "来源：Leaves of Grass" },
-      { quote: "我听到不同的飞弹的响声，步枪弹头短促的突突声，我看到炮弹爆炸，产生白云团团，我听到大炮弹掠过，尖声刺耳。", context: "来源：Leaves of Grass" },
-      { quote: "不拿牛鞭，他会无所畏惧地到小犍牛上蹿下跳发怒的场子里，瞪着两眼，怒气冲天，焦躁的犍牛把头高高地甩摆扬起。", context: "来源：Leaves of Grass" }
-    ],
-    insights: "《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。\n《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。\n\n《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。 [1]\n\n《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛产生过很大的影响。",
+    themeAnalysis: "[Leaves of Grass Themes | SuperSummary] Get ready to explore Leaves of Grass and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[Leaves of Grass Study Guide - Course Hero] This study guide and infographic for Walt Whitman's Leaves of Grass offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Summary & Study Guide Leaves of Grass by Walt ... - Amazon.com] 38 pages of chapter summaries, quotes, character analysis, themes, and more – everything you need to sharpen your knowledge of Leaves of Grass by Walt Whitman.\n\n《草叶集》是美国诗人沃尔特·惠特曼创作的诗集，首次出版于1855年。《草叶集》是浪漫主义诗集，共收有诗歌300余首。诗歌奔腾壮阔，大气飞扬，汪洋恣肆，豪放不羁；使用朴实粗犷的语言，创造出独具一格的自由体，近于口语，节奏鲜明。《草叶集》是美国诗人惠特曼的代表作，是美国文学史上第一部具有美国民族气派和民族风格的诗集。它开创了一代诗风，对美国诗坛",
+    techniques: "[Leaves of Grass - Wikipedia] Leaves of Grass is a poetry collection by American poet Walt Whitman. After self-publishing it in 1855, he spent most of his professional life writing, ...\n\n[Leaves of Grass Study Guide - Course Hero] This study guide and infographic for Walt Whitman's Leaves of Grass offer summary and analysis on themes, symbols, and other literary devices found in the text.",
+    excerpts: [],
+    insights: "[Leaves of Grass - Wikipedia] Leaves of Grass is a poetry collection by American poet Walt Whitman. After self-publishing it in 1855, he spent most of his professional life writing, ...\n\n[Whitman's Poetry: Symbols | SparkNotes] The title Leaves of Grass highlights another of Whitman's themes: the beauty of the individual. Each leaf or blade of grass possesses its own distinct ...\n\n[from Preface to Leaves of Grass, first edition | The Poetry Foundation] In Leaves of Grass (1855, 1891-2), he celebrated democracy, nature, love, and friendship. This monumental work chanted praises to the body as .",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%8D%89%E5%8F%B6%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T04:08:35.159Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/1322", tier: "original_text", fetchedAt: "2026-05-21T04:08:49.273Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%8D%89%E5%8F%B6%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T04:52:36.473Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Leaves%20of%20Grass%20Walt%20Whitman" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Leaves%20of%20Grass%20Walt%20Whitman" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Leaves%20of%20Grass" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Leaves%20of%20Grass" },
-      ],
+      reliability: "medium",
     },
   },
 
