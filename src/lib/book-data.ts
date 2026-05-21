@@ -3638,4 +3638,34 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
       ],
     },
   },
+
+  "blindness": {
+    id: "blindness",
+    characters: [
+      { name: "Blindness", role: "角色", description: "\"blindness\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Blindness是英语名词，发音为英[ˈblaɪndnəs]/美[ˈblaɪndnəs]，核心释义包括失明、无知和盲区。词源可追溯至古英语blindnysse，由形容词&#39;blind&#39;加抽象名词后缀&#39;-ness&#39;构成，原始日耳曼语词根为*blindaz。心理学层面指不自觉，不愿承认/接受现实的盲目性，社会认知领域拓展为文化无知。医学上，糖尿病并发症是致盲常见因素，维生素A缺乏与夜盲症相关。复旦大学魏刚团队研发滴眼给药基因疗法，可防治老年黄斑变性和糖尿病视网膜病变。研究者利用多能干细胞分化为视网膜色素上皮细胞修复视觉功能，胚胎干细胞移植在小鼠实验中恢复光感受功能。CRISPR基因编辑疗法已在遗传性失明患者中实现视力显著恢复。",
+    plotNodes: [
+      { label: "第 1 部分", description: "Blindness是英语名词，发音为英[ˈblaɪndnəs]/美[ˈblaɪndnəs]，核心释义包括失明、无知和盲区。词源可追溯至古英语blindnysse，由形容词&#39;blind&#39;加抽象名词后缀&#39;-ness&#39;构成，原始日耳曼语词根为*blindaz。心理学层面指不自觉，不愿承认/接受现实的盲目性，社会认知领域拓展为文化无知。医学上，糖尿病并发症是致盲常见因素，维" },
+      { label: "第 2 部分", description: "医学上，糖尿病并发症是致盲常见因素，维生素A缺乏与夜盲症相关 [1] [6]。复旦大学魏刚团队研发滴眼给药基因疗法，可防治老年黄斑变性和糖尿病视网膜病变 [7]。研究者利用多能干细胞分化为视网膜色素上皮细胞修复视觉功能，胚胎干细胞移植在小鼠实验中恢复光感受功能 [9-10]。CRISPR基因编辑疗法已在遗传性失明患者中实现视力显著恢复 [8]。" }
+    ],
+    themeAnalysis: "Blindness是英语名词，发音为英[ˈblaɪndnəs]/美[ˈblaɪndnəs]，核心释义包括失明、无知和盲区。词源可追溯至古英语blindnysse，由形容词&#39;blind&#39;加抽象名词后缀&#39;-ness&#39;构成，原始日耳曼语词根为*blindaz。心理学层面指不自觉，不愿承认/接受现实的盲目性，社会认知领域拓展为文化无知。医学上，糖尿病并发症是致盲常见因素，维生素A缺乏与夜盲症相关。复旦大学魏刚团队研发滴眼给药基因疗法，可防治老年黄斑变性和糖尿病视网膜病变。研究者利用多能干细胞分化为视网膜色素上皮细胞修复视觉功能，胚胎干细胞移植在小鼠实验中恢复光感受功能。CRISPR基因编辑疗法已在遗传性失明患者中实现视力显著恢复。\nBlindness是英语名词，发音为英[ˈblaɪndnəs]/美[ˈblaɪndnəs]，核心释义包括失明、无知和盲区 [1] [5-6]。词源可追溯至古英语blindnysse，由形容词&#x27;blind&#x27;加抽象名词后缀&#x27;-ness&#x27;构成，原始日耳曼语词根为*blindaz [3-4]。",
+    techniques: "Blindness是英语名词，发音为英[ˈblaɪndnəs]/美[ˈblaɪndnəs]，核心释义包括失明、无知和盲区。词源可追溯至古英语blindnysse，由形容词&#39;blind&#39;加抽象名词后缀&#39;-ness&#39;构成，原始日耳曼语词根为*blindaz。心理学层面指不自觉，不愿承认/接受现实的盲目性，社会认知领域拓展为文化无知。医学上，糖尿病并发症是致盲常见因素，维生素A缺乏与夜盲症相关。复旦大学魏刚团队研发滴眼给药基因疗法，可防治老年黄斑变性和糖尿病视网膜病变。研究者利用多能干细胞分化为视网膜色素上皮细胞修复视觉功能，胚胎干细胞移植在小鼠实验中恢复光感受功能。CRISPR基因编辑疗法已在遗传性失明患者中实现视力显著恢复。",
+    excerpts: [],
+    insights: "Blindness是英语名词，发音为英[ˈblaɪndnəs]/美[ˈblaɪndnəs]，核心释义包括失明、无知和盲区。词源可追溯至古英语blindnysse，由形容词&#39;blind&#39;加抽象名词后缀&#39;-ness&#39;构成，原始日耳曼语词根为*blindaz。心理学层面指不自觉，不愿承认/接受现实的盲目性，社会认知领域拓展为文化无知。医学上，糖尿病并发症是致盲常见因素，维生素A缺乏与夜盲症相关。复旦大学魏刚团队研发滴眼给药基因疗法，可防治老年黄斑变性和糖尿病视网膜病变。研究者利用多能干细胞分化为视网膜色素上皮细胞修复视觉功能，胚胎干细胞移植在小鼠实验中恢复光感受功能。CRISPR基因编辑疗法已在遗传性失明患者中实现视力显著恢复。",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/blindness", tier: "reference", fetchedAt: "2026-05-21T13:09:06.287Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/22170", tier: "original_text", fetchedAt: "2026-05-21T13:09:20.259Z", contributedFields: ["insights"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=blindness" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=blindness" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=blindness" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=blindness" },
+      ],
+    },
+  },
 };
