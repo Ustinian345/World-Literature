@@ -1456,15 +1456,24 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "magic-mountain": {
     id: "magic-mountain",
-    plotSummary: "The Magic Mountain (German: Der Zauberberg, pronounced [deːɐ̯ ˈtsaʊbɐˌbɛʁk] ) is a German novel written by Thomas Mann, published in November 1924 about a young and aspiring engineer Hans Castorp. While staying in the secluded world of a high-altitude sanatorium in the years leading up to 1914, Hans encounters otherworldly figures who confront him with politics, philosophy, but also romance, illness, and death.",
-    themeAnalysis: "The Magic Mountain (German: Der Zauberberg, pronounced [deːɐ̯ ˈtsaʊbɐˌbɛʁk] ) is a German novel written by Thomas Mann, published in November 1924 about a young and aspiring engineer Hans Castorp. While staying in the secluded world of a high-altitude sanatorium in the years leading up to 1914, Hans encounters otherworldly figures who confront him with politics, philosophy, but also romance, illne...",
-    techniques: "The Magic Mountain (German: Der Zauberberg, pronounced [deːɐ̯ ˈtsaʊbɐˌbɛʁk] ) is a German novel written by Thomas Mann, published in November 1924 about a young and aspiring engineer Hans Castorp. While staying in the secluded world of a high-altitude sanatorium in the years leading up to 1914, Hans encounters otherworldly figures who confront him with politics, philosophy, but also romance, illne...",
+    plotSummary: "《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成。小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山。作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联。\n《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成 [3] [9]。\n\n小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境 [2] [7]。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山 [3-5]。\n\n作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联 [1] [7-8]。\n\n大学生汉斯来到高山肺病疗养院探望表兄约阿希姆，不料自己也染上了肺病，只好留下治疗。疗养院里的人来自四面八方，性格迥然，思想各异。汉斯是个有理想的青年，可是同这些人交往后，思想变得混乱，精神变得消沉了；俄国女子克拉芙吉亚更使他神魂颠倒。他忘记了事业和重任，高山成了一座“魔山”，他深陷其中不能自拔。转眼七年过去了，表兄病死，克拉芙吉亚离去，那些交往甚密的朋友也各奔东西，生活把他的幻想一个个击得粉碎，使他感到痛苦和孤独。世界大战的炮火把他震醒，回首往事，汉斯觉得自己是在“魔山“上昏睡了七年，于是他毅然决然地踏上了奔赴前线的征途。 [2]\n\n1912年5月至6月期间，托马斯·曼的妻子卡塔林娜因肺部染疾，在瑞士达沃斯肺病疗养院住了三星期左右，他也陪同前往。在此期间，作家对疗养院的各种生活和各色人物作了精心观察，《魔山》的素材即由此而得。他从1912年开始执笔写这部巨著，1914年由于第",
+    plotNodes: [
+      { label: "Part 1", description: "《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成。小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里" },
+      { label: "Part 2", description: "小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境 [2] [7]。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山 [3-5]。" },
+      { label: "Part 3", description: "作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联 [1] [7-8]。" },
+      { label: "Part 4", description: "大学生汉斯来到高山肺病疗养院探望表兄约阿希姆，不料自己也染上了肺病，只好留下治疗。疗养院里的人来自四面八方，性格迥然，思想各异。汉斯是个有理想的青年，可是同这些人交往后，思想变得混乱，精神变得消沉了；俄国女子克拉芙吉亚更使他神魂颠倒。他忘记了事业和重任，高山成了一座“魔山”，他深陷其中不能自拔。转眼七年过去了，表兄病死，克拉芙吉亚离去，那些交往甚密的朋友也各奔东西，生活把他的幻想一个个击得粉碎，使" },
+      { label: "Part 5", description: "1912年5月至6月期间，托马斯·曼的妻子卡塔林娜因肺部染疾，在瑞士达沃斯肺病疗养院住了三星期左右，他也陪同前往。在此期间，作家对疗养院的各种生活和各色人物作了精心观察，《魔山》的素材即由此而得。他从1912年开始执笔写这部巨著，1914年由于第" }
+    ],
+    themeAnalysis: "《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成。小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山。作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联。\n《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成 [3] [9]。\n\n小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境 [2] [7]。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山 [3-5]。\n\n作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联 [1] [7-8]。\n\n大学生汉斯来到高山肺病疗养院探望表兄约阿希姆，不料自己也染上了肺病，只好留下治疗。疗养院里的人来自四面八方，性格迥然，思想各异。汉斯是个有理想的青年，可是同这些人交往后，思想变得混乱，精神变得消沉了；俄国女子克拉芙吉亚更使他神魂颠倒。他忘记了事业和重任，高山成了一座“魔山”，他深陷其中不能自拔。转眼七年过去了，表兄病死，克拉芙吉亚离去，那些交往甚密的朋友也各奔东西，生活把他的幻想一个",
+    techniques: "",
     excerpts: [],
-    insights: "The Magic Mountain (German: Der Zauberberg, pronounced [deːɐ̯ ˈtsaʊbɐˌbɛʁk] ) is a German novel written by Thomas Mann, published in November 1924 about a young and aspiring engineer Hans Castorp. While staying in the secluded world of a high-altitude sanatorium in the years leading up to 1914, Hans encounters otherworldly figures who confront him with politics, philosophy, but also romance, illne...",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Magic%20Mountain"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E9%AD%94%E5%B1%B1"
-    // }
+    insights: "《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成。小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山。作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联。\n《魔山》是诺贝尔文学奖获得者、德国作家托马斯·曼创作的长篇小说，创作始于1912年，1924年出版。灵感源于作者妻子在瑞士达沃斯疗养院的经历，后因一战中断写作，最终历时十二年完成 [3] [9]。\n\n小说以大学生汉斯·卡斯托尔普在疗养院七年的经历为主线，通过他与普鲁士军官、荷兰殖民者等各色人物的交往，展现欧洲封建贵族与资产阶级的精神困境 [2] [7]。疗养院内充斥着弗洛伊德学说、招魂术等时代思潮，主人公在意大利人文主义者塞塔姆布里尼与耶稣会士纳夫塔的思想交锋中经历精神探索，最终在一战爆发后觉醒下山 [3-5]。\n\n作品通过梦境描写与心理分析构建象征资本主义文明衰落的封闭空间，深刻揭示颓废主义与法西斯主义的关联 [1] [",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%AD%94%E5%B1%B1", tier: "reference", fetchedAt: "2026-05-21T04:48:59.551Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "the-trial": {
@@ -1645,14 +1654,18 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "grain-of-wheat": {
     id: "grain-of-wheat",
-    plotSummary: "A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers Series. It was written while he was studying at Leeds University and first published in 1967 by Heinemann. The title is taken from the Gospel of John, 12:24. The novel weaves together several stories set during the state of emergency in Kenya's struggle for independence (1952–59), focusing on the quiet Mugo, whose life is ruled by a dark secret.",
-    themeAnalysis: "A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers Series. It was written while he was studying at Leeds University and first published in 1967 by Heinemann. The title is taken from the Gospel of John, 12:24.",
-    techniques: "A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers Series. It was written while he was studying at Leeds University and first published in 1967 by Heinemann. The title is taken from the Gospel of John, 12:24.",
+    plotSummary: "[Summary of \"A Grain of Wheat\" | PDF - Scribd] A Grain of Wheat is a complex novel by Ngugi wa Thiong'o that explores the Mau Mau struggle for independence in Kenya through multiple intertwining ...\n\n[(PDF) Stylistic/Textual Analysis of Narrative Techniques in Ngugi Wa ...] In A Grain of Wheat, Ngugi Wa Thiong'o demonstrates his mastery of language for both narration and description. In the plot, while telling ...\n\n[A Grain of Wheat - Wikipedia] A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers ...\n\n[Summary and analysis of A Grain of Wheat by Ngũgĩ wa Thiong'o] Summary and analysis of A Grain of Wheat by Ngũgĩ wa Thiong'o. 3.6K views · 11 months ago ...more. English literature. 16.4K. Subscribe.\n\n[(DOC) Analysis of A grain of wheat - Academia.edu] The analysis of Ngugi wa Thiong'o's novel A Grain of Wheat offers an in-depth exploration of its themes of betrayal, personal and societa",
+    plotNodes: [
+      { label: "Part 1", description: "[Summary of \"A Grain of Wheat\" | PDF - Scribd] A Grain of Wheat is a complex novel by Ngugi wa Thiong'o that explores the Mau Mau struggle for independence in Kenya through multiple intertwining ..." },
+      { label: "Part 2", description: "[(PDF) Stylistic/Textual Analysis of Narrative Techniques in Ngugi Wa ...] In A Grain of Wheat, Ngugi Wa Thiong'o demonstrates his mastery of language for both narration and description." },
+      { label: "Part 3", description: "[A Grain of Wheat - Wikipedia] A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers ..." },
+      { label: "Part 4", description: "[Summary and analysis of A Grain of Wheat by Ngũgĩ wa Thiong'o] Summary and analysis of A Grain of Wheat by Ngũgĩ wa Thiong'o." },
+      { label: "Part 5", description: "[(DOC) Analysis of A grain of wheat - Academia.edu] The analysis of Ngugi wa Thiong'o's novel A Grain of Wheat offers an in-depth exploration of its themes of betrayal, personal and societa" }
+    ],
+    themeAnalysis: "[(DOC) Analysis of A grain of wheat - Academia.edu] The analysis of Ngugi wa Thiong'o's novel A Grain of Wheat offers an in-depth exploration of its themes of betrayal, personal and societal responsibilities.\n\n[Themes in A Grain of Wheat | A Novel by Ngũgĩ wa Thiong'o] Uncover the powerful themes and symbolism in Ngũgĩ wa Thiong'o's novel, A Grain of Wheat. Discover the themes of colonialism, betrayal, ...\n\n[A Grain of Wheat Themes | GradeSaver] A Grain of Wheat Themes · Colonialism and its Legacies · Individuals and the Community · Betrayal, Guilt, and Redemption · Forgiveness · Power of ...\n\n[Summary and analysis of A Grain of Wheat by Ngũgĩ wa Thiong'o] Summary and analysis of A Grain of Wheat by Ngũgĩ wa Thiong'o. 3.6K views · 11 months ago ...more. English literature. 16.4K. Subscribe",
+    techniques: "[(PDF) Stylistic/Textual Analysis of Narrative Techniques in Ngugi Wa ...] In A Grain of Wheat, Ngugi Wa Thiong'o demonstrates his mastery of language for both narration and description. In the plot, while telling ...",
     excerpts: [],
-    insights: "A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers Series. It was written while he was studying at Leeds University and first published in 1967 by Heinemann. The title is taken from the Gospel of John, 12:24.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/A%20Grain%20of%20Wheat"
-    // }
+    insights: "[A Grain of Wheat Study Guide | Literature Guide - LitCharts] A Grain of Wheat is set in the four days preceding Kenyan Independence in December 1963, but the author recalls events as far back as British settlement in ...\n\n[A Grain of Wheat Themes | GradeSaver] A Grain of Wheat Themes · Colonialism and its Legacies · Individuals and the Community · Betrayal, Guilt, and Redemption · Forgiveness · Power of ...\n\n[A Grain of Wheat - Wikipedia] A Grain of Wheat is a historical novel written by Kenyan novelist Ngũgĩ wa Thiong'o, first published as part of the influential Heinemann African Writers ..",
   },
 
   "disgrace": {

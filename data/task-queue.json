@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T04:48:39.355Z",
+    "generatedAt": "2026-05-21T04:49:28.431Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -431,11 +431,9 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T04:06:13.471Z",
-      "batchSources": [
-        "wikipedia_en"
-      ],
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T04:49:28.431Z",
+      "batchSources": [],
       "batchError": "insufficient data from APIs"
     },
     {
