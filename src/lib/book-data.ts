@@ -1675,7 +1675,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Metamorphosis - Wikipedia] The Metamorphosis tells the story of salesman Gregor Samsa, who wakes to find himself inexplicably transformed into a huge insect.\n\n[The Metamorphosis: Themes | SparkNotes] The Metamorphosis deals with an absurd, or wildly irrational, event, which in itself suggests that the story operates in a random, chaotic universe.\n\n[The Metamorphosis Character List - GradeSaver] The Metamorphosis study guide contains a biography of Franz Kafka, literature essays, quiz questions, major themes, characters, ...\n\n[Analysis of Franz Kafka's The Metamorphosis] The Metamorphosis,",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:39:23.074Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:44:54.999Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1837,7 +1837,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Disgrace: Character List - SparkNotes] A list of all the characters in Disgrace. Disgrace characters include: David Lurie, Lucy, Melanie Isaacs, Petrus, Bev Shaw.\n\n[Disgrace — Study Guide - CliffsNotes] Disgrace tells the story of middle-aged Cape Town professor David Lurie's fall from grace following his forced resignation from the university.\n\n[Disgrace Character Analysis - SuperSummary] Disgrace begins with David Lurie soliciting a sex worker named Soraya. This transactional, detached human interaction sets the tone for his relationships ...\n\n[[PDF] CHARACTERS AND THEME ANALYSIS IN J.M. CO",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%80%BB", tier: "reference", fetchedAt: "2026-05-21T05:40:03.947Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%80%BB", tier: "reference", fetchedAt: "2026-05-21T05:45:34.450Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2153,19 +2153,22 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "love-in-cholera": {
     id: "love-in-cholera",
-    plotSummary: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。 [23]该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。 [11]\n\n该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。 [10]该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。 [1]在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城市及世俗风貌的描写，对热带丛林及河流沿岸景象的描绘，以及人物的处世和心理，又都是典型的拉美风格。 [13]\n\n1985年，该小说出版，立即在拉美文坛上引起反响，第一版即出书120万册，销售一空；围绕小说的评论更是连篇累牍，世界各国纷纷翻译出版。 [5]2007年，由该小说改编的同名电影上映，该片由迈克·内威尔执导。 [6]\n\n《瘟疫年纪事》（A Jour",
+    plotSummary: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the complexities of love through its richly developed characters.\n\n[[Discussion] Love In The Time of Cholera by Gabriel Garcia Marquez] Plot summary of Love In The Time of Cholera. Key themes in Love In The Time of Cholera. Most underrated books of the last decade. Best book ...\n\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距",
     plotNodes: [
-      { label: "Part 1", description: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她" },
-      { label: "Part 2", description: "该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。" },
-      { label: "Part 3", description: "1985年，该小说出版，立即在拉美文坛上引起反响，第一版即出书120万册，销售一空；围绕小说的评论更是连篇累牍，世界各国纷纷翻译出版。" }
+      { label: "Part 1", description: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes." },
+      { label: "Part 2", description: "[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the complexities of love through its richly develop" },
+      { label: "Part 3", description: "[[Discussion] Love In The Time of Cholera by Gabriel Garcia Marquez] Plot summary of Love In The Time of Cholera." },
+      { label: "Part 4", description: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她" }
     ],
-    themeAnalysis: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。 [23]该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。 [11]\n\n该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。 [10]该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。 [1]在艺术手法上，该小说采用的是法国",
-    techniques: "",
-    excerpts: [],
-    insights: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。 [23]该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。 [11]\n\n该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要",
+    themeAnalysis: "[Love in the Time of Cholera Study Guide | Course Hero] This study guide and infographic for Gabriel García Márquez's Love in the Time of Cholera offer summary and analysis on themes, symbols, and other literary ...\n\n[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the complexities of love through its richly developed characters.\n\n[[Discussion] Love In The Time of Cholera by Gabriel Garcia Marquez] Plot summary of Love In The Time of Cholera. Key themes in Love In The Time of Cholera",
+    techniques: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera by Gabriel García Márquez | Goodreads] Love in the Time of Cholera is often quite bleak due to this veering towards stark Realism, to this occasional historical invasion of the narrative. Much of ...\n\n[Love in the Time of Cholera Study Guide | Course Hero] This study guide and infographic for Gabriel García Márquez's Love in the Time of Cholera offer summar",
+    excerpts: [
+      { quote: "Love in the Time of Cholera", context: "From Love in the Time of Cholera" }
+    ],
+    insights: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera by Gabriel García Márquez | Goodreads] Love in the Time of Cholera is often quite bleak due to this veering towards stark Realism, to this occasional historical invasion of the narrative. Much of ...\n\n[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the compl",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85", tier: "reference", fetchedAt: "2026-05-21T04:44:13.699Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85", tier: "reference", fetchedAt: "2026-05-21T05:44:16.199Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2252,14 +2255,27 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "canto-general": {
     id: "canto-general",
-    plotSummary: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines. This work attempts to be a history or encyclopedia of the entire American Western Hemisphere, or New World, from a Hispanic American perspective.",
-    themeAnalysis: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines.",
-    techniques: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines.",
+    characters: [
+      { name: "If You Forget", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Me Summary", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Download", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Neruda", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Canto General", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Pablo Neruda", role: "角色", description: "Canto General 中的主要角色。" },
+      { name: "Selected Poems", role: "角色", description: "Canto General 中的主要角色。" }
+    ],
+    plotSummary: "[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ... Plot Summary, Characters,. Themes, Style, Historical Context, Critical ... In Canto General, the 12-part poem entitled The Heights of. Macchu Picchu was ...\n\n[If You Forget Me Summary and Study Guide - SuperSummary] ... summaries and analysis of major themes, characters, and more. Download PDF ... This time period was when Neruda worked on his Canto General. It was ...\n\nCanto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride, Neruda depicts Latin American history as a grand, continuous struggle against oppression. Comprising more than 300 poems, Canto general is arranged\n\nCanto general Introduction References & Edit History Related Topics Quizzes A Study of Poetry Famous Poets and Poetic Form Poetry: First Lines Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepan",
+    plotNodes: [
+      { label: "Part 1", description: "[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ..." },
+      { label: "Part 2", description: "[If You Forget Me Summary and Study Guide - SuperSummary] ..." },
+      { label: "Part 3", description: "Canto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950." },
+      { label: "Part 4", description: "Canto general Introduction References & Edit History Related Topics Quizzes A Study of Poetry Famous Poets and Poetic Form Poetry: First Lines Contents CITE verified Cite While every effort has been m" }
+    ],
+    themeAnalysis: "[If You Forget Me Summary and Study Guide - SuperSummary] ... summaries and analysis of major themes, characters, and more. Download PDF ... This time period was when Neruda worked on his Canto General. It was ...\n\n[Canto general | Author, Summary & Themes - Britannica] Canto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride.\n\n[Pablo Neruda - Wikipedia] He further explored this theme in Canto General (1950). In Alturas, Neruda celebrated the achievement of Macchu Picchu but also condemned the slavery that had ...\n\n[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ... Plot Summary, Characters,. Themes, Style, Historical Context, Critical ... In Canto General, the 12-part poem entitled The",
+    techniques: "[The Poetry of Pablo Neruda - Literary Theory and Criticism] By 1950, when the epic Canto General was published, Neruda had become a poet of worldwide fame, a political exile, and an enthusiastic Stalinist ...\n\n[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ... Plot Summary, Characters,. Themes, Style, Historical Context, Critical ... In Canto General, the 12-part poem entitled The Heights of. Macchu Picchu was ...\n\nCanto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride, Neruda depicts L",
     excerpts: [],
-    insights: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Canto%20General"
-    // }
+    insights: "[Canto general | Author, Summary & Themes - Britannica] Canto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride.\n\n[Pablo Neruda: Poems Study Guide - GradeSaver] \" His 1950 collection Canto General is an ambitious attempt to mythologize and celebrate Latin America as a whole through a communist lens ...\n\n[Pablo Neruda - Wikipedia] He further explored this theme in Canto General (1950). In Alturas, Neruda celebrated the achievement of Macchu Picchu but also condemned the slavery that had ...\n\n[If You Forg",
   },
 
   "hopscotch": {
@@ -2610,19 +2626,29 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "to-kill-mockingbird": {
     id: "to-kill-mockingbird",
+    characters: [
+      { name: "To Kill", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Mockingbird Analysis", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Character Insights", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Symbols", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Delve", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Mockingbird", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Harper Lee", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" }
+    ],
     plotSummary: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲\n《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。 [11] [34]\n\n该小说的部分情节是基于作者父亲年轻时的一次真实经历。 [14]该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。 [14]小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲阿蒂克斯在小说中是正直律师的典范。 [12]同时受美国南方哥特文学传统的影响，哈珀·李在小说中融入了大量哥特风格的细节，丰富了故事背景和情节。 [16]\n\n《杀死一只知更鸟》是哈珀·李的代表作品，1961年获普利策奖。该小说被美国《时代周刊》杂志评为中学生必读的十大经典书目之一，被翻译成40多种文字。该小说于1962年改编为同名电影，主人公阿蒂克斯在好",
     plotNodes: [
       { label: "Part 1", description: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产" },
       { label: "Part 2", description: "该小说的部分情节是基于作者父亲年轻时的一次真实经历。" },
       { label: "Part 3", description: "《杀死一只知更鸟》是哈珀·李的代表作品，1961年获普利策奖。该小说被美国《时代周刊》杂志评为中学生必读的十大经典书目之一，被翻译成40多种文字。该小说于1962年改编为同名电影，主人公阿蒂克斯在好" }
     ],
-    themeAnalysis: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲\n《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。 [11] [34]\n\n该小说的部分情节是基于作者父亲年轻时的一次真实经历。 [14]该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。 [14]小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法",
+    themeAnalysis: "[To Kill a Mockingbird Analysis: Character Insights and Symbols] Delve into a comprehensive To Kill a Mockingbird themes analysis, exploring themes, characters, and symbolism to enhance your understanding.\n\n[To Kill a Mockingbird Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of To Kill a Mockingbird. Visual theme-tracking, too.\n\n[To Kill a Mockingbird by Harper Lee | Themes - YouTube] Comments · To Kill a Mockingbird by Harper Lee | Full Analysis | Plot · Themes in Purple Hibiscus | Literature Analysis for Exam Preparation.\n\n[In-Depth Analysis of 'To Kill a Mockingbird' - Themes, Characters ...] Through Scout's eyes, the novel explores profound themes of racial injustice, moral growth, and the loss of innocence. “To Kill a Mockingbird” ...\n\n[To",
     techniques: "",
     excerpts: [],
-    insights: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲\n《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。 [11] [34]\n\n该小说的部分情节是基于作者父亲年轻时的一次真实经历。 [14]该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白",
+    insights: "[To Kill a Mockingbird - Wikipedia] To Kill a Mockingbird is a 1960 Southern Gothic novel by American author Harper Lee. It became instantly successful after its release; in the United States, ...\n\n[To Kill a Mockingbird Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of To Kill a Mockingbird. Visual theme-tracking, too.\n\n[To Kill a Mockingbird: Full Book Analysis - SparkNotes] To Kill a Mockingbird tells the story of the young narrator's passage from innocence to experience when her father confronts the racist justice system.\n\n[To Kill a Mockingbird",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F", tier: "reference", fetchedAt: "2026-05-21T04:45:31.977Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F", tier: "reference", fetchedAt: "2026-05-21T05:45:56.181Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2657,22 +2683,29 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "labyrinth-of-solitude": {
     id: "labyrinth-of-solitude",
-    plotSummary: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" and \"The Dialectic of Solitude\".",
+    characters: [
+      { name: "The Labyrinth", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Solitude", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Life", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Thought", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Mexico Summary", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Solitude Background", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
+      { name: "Octavio Paz", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" }
+    ],
+    plotSummary: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...\n\n[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions ...\n\n[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full summary and ...\n\n[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensive summaries and analysis of the book. This study guide includes a detailed Plot Summary, ...",
     plotNodes: [
-      { label: "Part 1", description: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz." },
-      { label: "Part 2", description: "Solitude is the profoundest fact of the human condition." }
+      { label: "Part 1", description: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles" },
+      { label: "Part 2", description: "[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, ch" },
+      { label: "Part 3", description: "[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full s" },
+      { label: "Part 4", description: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensive summaries and analysis of the book." }
     ],
-    themeAnalysis: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" ...",
-    techniques: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" ...",
+    themeAnalysis: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...\n\n[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions ...\n\n[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full summary and ...\n\n[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensiv",
+    techniques: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...",
     excerpts: [
-      { quote: "The Pachuco and other extremes", context: "From The Labyrinth of Solitude" },
-      { quote: "From Independence to the Revolution", context: "From The Labyrinth of Solitude" },
-      { quote: ". After 1975 some editions included the three-part essay ", context: "From The Labyrinth of Solitude" }
+      { quote: "The Labyrinth of ...] Hello Mexico, Indian here. Just finished a book ", context: "From The Labyrinth of Solitude" }
     ],
-    insights: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" ...",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Labyrinth%20of%20Solitude"
-    // }
+    insights: "[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions ...\n\n[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full summary and ...\n\n[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensive summaries and analysis of th",
   },
 
   "the-devils-to-pay": {
@@ -2838,7 +2871,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Carpentaria Themes | GradeSaver] Carpentaria Themes · Racism · The environment · Home and family · Traditional ecological knowledge · Myth and reality · Colonialism and neocolonialism · Fate.\n\n[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria.\n\n[On writing Carpentaria | Alexis Wright | HEAT Series 2 Number 13] Carpentaria imagines the cultural mind as sovereign and in control, while freely navigating through the known country of colonialism to explore the",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/Carpentaria", tier: "reference", fetchedAt: "2026-05-21T05:37:42.294Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/Carpentaria", tier: "reference", fetchedAt: "2026-05-21T05:43:16.399Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

@@ -655,5 +655,50 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:42:15.628Z"
+  },
+  {
+    "bookId": "tb-xds-1",
+    "title": "落花生",
+    "author": "许地山",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:43:00.921Z"
+  },
+  {
+    "bookId": "tb-ls-2",
+    "title": "猫",
+    "author": "老舍",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:43:47.395Z"
+  },
+  {
+    "bookId": "tb-ls-3",
+    "title": "母鸡",
+    "author": "老舍",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:44:34.687Z"
+  },
+  {
+    "bookId": "tb-lsq-1",
+    "title": "鸟",
+    "author": "梁实秋",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:45:20.464Z"
+  },
+  {
+    "bookId": "tb-ba-1",
+    "title": "鸟的天堂",
+    "author": "巴金",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:46:06.518Z"
   }
 ]
