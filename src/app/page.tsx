@@ -80,6 +80,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== 今日文学焦点 ===== */}
+      <Suspense fallback={<div className="py-10 text-center text-stone-400">加载中...</div>}>
+        <TrendingTopics />
+      </Suspense>
+
       {/* ===== 探索六大洲 ===== */}
       <section id="continents" className="bg-cream py-20 sm:py-28">
         <div className="mx-auto max-w-6xl px-5">
@@ -306,12 +311,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== 今日文学焦点 ===== */}
-      <Suspense fallback={<div className="py-20 text-center text-stone-400">加载中...</div>}>
-        <TrendingTopics />
-      </Suspense>
-
-      {/* ===== 底部 CTA ===== */}
       <section className="bg-umber py-20 text-center">
         <div className="mx-auto max-w-2xl px-5">
           <h2 className="font-heading-cn text-3xl font-bold text-cream sm:text-4xl">

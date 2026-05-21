@@ -3474,4 +3474,87 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     excerpts: [],
     insights: "[Louise Glück – Nobel Lecture - NobelPrize.org] Nobel Prize lecture. Navigate to: Summary, -- Facts · -- Biographical, -- Nobel ... 2020/gluck/lecture/>. Go to the top of the page. Nobel Prizes and laureates ...\n\nThe Nobel Prize in Literature 2020 was awarded to Louise Glück &quot;for her unmistakable poetic voice that with austere beauty makes individual existence universal&quot;\n\nNavigate to: Summary -- Facts -- Biographical -- Nobel Prize lecture -- Prize presentation -- Interview -- Poetry -- Nobel diploma -- Photo gallery -- Other resources Prize announcement Press release Bio-bibliograph",
   },
+
+  "the-grapes-of-wrath": {
+    id: "the-grapes-of-wrath",
+    characters: [
+      { name: "The Grapes", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "Wrath Study Guide", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "Wrath", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "Wrath Character Analysis", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "Need", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "John Steinbeck", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" },
+      { name: "Check", role: "角色", description: "the-grapes-of-wrath 中的主要角色。" }
+    ],
+    plotSummary: "[The Grapes of Wrath Character List - CliffsNotes] Get free homework help on John Steinbeck's The Grapes of Wrath: book summary, chapter summary and analysis, quotes, essays, and character analysis courtesy ...\n\n[The Grapes of Wrath by John Steinbeck | Summary & Analysis] ... characters, symbols, and themes of John Steinbeck's novel The Grapes of Wrath. ... (Book Summary) - Minute Book Report. Minute Book Reports ...\n\n[The Grapes of Wrath Character Analysis - LitCharts] Need help on characters in John Steinbeck's The Grapes of Wrath? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[The Grapes of Wrath: Themes | SparkNotes] The Saving Power of Family and Fellowship. The Grapes of Wrath chronicles the story of two “families”: the Joads and the collective body of migrant workers.\n\n[The Grapes of Wrath - Wikipedia] The Grapes of Wrath is an American realist novel written by John Steinbeck and published in 1939. The book won the National Book Award and Pulit",
+    plotNodes: [
+      { label: "Part 1", description: "[The Grapes of Wrath Character List - CliffsNotes] Get free homework help on John Steinbeck's The Grapes of Wrath: book summary, chapter summary and analysis, quotes, essays, and character analysis co" },
+      { label: "Part 2", description: "[The Grapes of Wrath by John Steinbeck | Summary & Analysis] ..." },
+      { label: "Part 3", description: "[The Grapes of Wrath Character Analysis - LitCharts] Need help on characters in John Steinbeck's The Grapes of Wrath?" },
+      { label: "Part 4", description: "[The Grapes of Wrath: Themes | SparkNotes] The Saving Power of Family and Fellowship." },
+      { label: "Part 5", description: "[The Grapes of Wrath - Wikipedia] The Grapes of Wrath is an American realist novel written by John Steinbeck and published in 1939." }
+    ],
+    themeAnalysis: "[The Grapes of Wrath by John Steinbeck | Summary & Analysis] ... characters, symbols, and themes of John Steinbeck's novel The Grapes of Wrath. ... (Book Summary) - Minute Book Report. Minute Book Reports ...\n\n[The Grapes of Wrath Character Analysis - LitCharts] Need help on characters in John Steinbeck's The Grapes of Wrath? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[The Grapes of Wrath: Themes | SparkNotes] The Saving Power of Family and Fellowship. The Grapes of Wrath chronicles the story of two “families”: the Joads and the collective body of migrant workers.\n\n[The Grapes of Wrath Character List - CliffsNotes] Get free homework help on John Steinbeck's The Grapes of Wrath: book summary, chapter summary and analysis, quotes, essays, and character a",
+    techniques: "[Very brief, chaotic thoughts on “The Grapes Of Wrath” by John ...] The Grapes of Wrath to me is about hopelessness and despair. The real value to this writing is what we can learn from it. With the looming ...",
+    excerpts: [],
+    insights: "[The Grapes of Wrath Character Analysis - LitCharts] Need help on characters in John Steinbeck's The Grapes of Wrath? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[The Grapes of Wrath: Themes | SparkNotes] The Saving Power of Family and Fellowship. The Grapes of Wrath chronicles the story of two “families”: the Joads and the collective body of migrant workers.\n\n[The Grapes of Wrath - Wikipedia] The Grapes of Wrath is an American realist novel written by John Steinbeck and published in 1939. The book won the National Book Award and Pulitzer Prize ...\n\n[The Gr",
+  },
+
+  "hugo-1963-dick": {
+    id: "hugo-1963-dick",
+    characters: [
+      { name: "Basic Science Fiction", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Library", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Ad Astra Institute", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Hugo", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Dick", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Stranger", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Strange Land", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Amazon", role: "角色", description: "\"hugo-1963-dick\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "[A Basic Science Fiction Library - Ad Astra Institute] Hugo, 1963. Dick, who died in 1982, was a prolific author whose books, all ... themes (Stranger in a Strange Land [Amazon|Powell's] Hugo, 1962), as ...",
+    plotNodes: [
+      { label: "第 1 部分", description: "[A Basic Science Fiction Library - Ad Astra Institute] Hugo, 1963. Dick, who died in 1982, was a prolific author whose books, all ..." }
+    ],
+    themeAnalysis: "[A Basic Science Fiction Library - Ad Astra Institute] Hugo, 1963. Dick, who died in 1982, was a prolific author whose books, all ... themes (Stranger in a Strange Land [Amazon|Powell's] Hugo, 1962), as ...",
+    techniques: "[A Basic Science Fiction Library - Ad Astra Institute] Hugo, 1963. Dick, who died in 1982, was a prolific author whose books, all ... themes (Stranger in a Strange Land [Amazon|Powell's] Hugo, 1962), as ...",
+    excerpts: [],
+    insights: "[A Basic Science Fiction Library - Ad Astra Institute] Hugo, 1963. Dick, who died in 1982, was a prolific author whose books, all ... themes (Stranger in a Strange Land [Amazon|Powell's] Hugo, 1962), as ...",
+  },
+
+  "red-sorghum": {
+    id: "red-sorghum",
+    characters: [
+      { name: "Other", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Red Sorghum", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Zhang Yimou", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Hong", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Golden Bear", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Berlin", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Gong Li", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Gong", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
+    plotNodes: [
+      { label: "第 1 部分", description: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong L" }
+    ],
+    themeAnalysis: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
+    techniques: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
+    excerpts: [],
+    insights: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/red-sorghum", tier: "reference", fetchedAt: "2026-05-21T08:55:36.881Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=red-sorghum" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=red-sorghum" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=red-sorghum" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=red-sorghum" },
+      ],
+    },
+  },
 };
