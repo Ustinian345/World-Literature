@@ -2,25 +2,33 @@ import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import Credentials from "next-auth/providers/credentials";
 
-const _users: Array<{
+export interface AuthUser {
   email: string;
   password: string;
   name: string;
+  avatar?: string; // base64 data URL
   createdAt: string;
-}> = [];
+}
 
-// 暴露到 globalThis 供 API 路由访问
-(globalThis as Record<string, unknown>)._authUsers = _users;
+const _users: AuthUser[] = [];
 
-function findUser(email: string) {
+export function findUser(email: string): AuthUser | null {
   return _users.find((u) => u.email.toLowerCase() === email.toLowerCase()) || null;
+}
+
+export function updateUser(email: string, data: Partial<Pick<AuthUser, "name" | "password" | "avatar">>): AuthUser | null {
+  const user = findUser(email);
+  if (!user) return null;
+  if (data.name !== undefined) user.name = data.name;
+  if (data.password !== undefined) user.password = data.password;
+  if (data.avatar !== undefined) user.avatar = data.avatar;
+  return user;
 }
 
 function createUser(email: string, password: string, name: string) {
   if (findUser(email)) return null;
-  const user = { email: email.toLowerCase(), password, name, createdAt: new Date().toISOString() };
+  const user: AuthUser = { email: email.toLowerCase(), password, name, createdAt: new Date().toISOString() };
   _users.push(user);
-  // userNumber = _users.length（push 之后的长度，动态递增）
   return { email: user.email, name: user.name, isNew: true, userNumber: _users.length };
 }
 
@@ -42,26 +50,19 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         const email = (credentials.email as string).toLowerCase().trim();
         const password = credentials.password as string;
         const name = (credentials.name as string) || email.split("@")[0];
-
-        // 密码长度不足则拒绝
         if (password.length < 6) return null;
 
-        const user = findUser(email);
-        if (user) {
-          // 已有用户 → 校验密码
-          if (user.password !== password) return null;
-          return { id: email, email: user.email, name: user.name };
+        const existing = findUser(email);
+        if (existing) {
+          if (existing.password !== password) return null;
+          return { id: email, email: existing.email, name: existing.name, image: existing.avatar || null };
         }
 
-        // 新用户 → 自动注册
         const newUser = createUser(email, password, name);
         if (!newUser) return null;
         return {
-          id: email,
-          email: newUser.email,
-          name: newUser.name,
-          isNewUser: true,
-          userNumber: newUser.userNumber,
+          id: email, email: newUser.email, name: newUser.name,
+          isNewUser: true, userNumber: newUser.userNumber,
         };
       },
     }),
@@ -71,7 +72,7 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
       if (user) {
         token.id = user.id || user.email || "";
         token.name = user.name || "";
-        // 仅新注册用户设置 isNewUser（登录用户不设置）
+        token.picture = user.image || null;
         const u = user as Record<string, unknown>;
         token.isNewUser = u.isNewUser === true;
         token.userNumber = (u.userNumber as number) || 0;
@@ -85,6 +86,7 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         u.id = token.id;
         u.isNewUser = token.isNewUser || false;
         u.userNumber = token.userNumber || 0;
+        if (token.picture) session.user.image = token.picture as string;
       }
       return session;
     },
