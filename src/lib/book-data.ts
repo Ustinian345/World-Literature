@@ -3547,4 +3547,24 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     ],
     insights: "[Red Sorghum Summary - SuperSummary] Get ready to explore Red Sorghum and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[Red Sorghum (Novel) Background - GradeSaver] Red Sorghum (Novel) study guide contains a biography of Mo Yan, literature essays, quiz questions, major themes, characters, and a full summary and analysis.\n\n[Red Sorghum: Analysis of Major Characters | Literature and Writing] \"Red Sorghum: Analysis of Major Characters\" explores the intricate relationships and dynamic personalities within a family impacted by h",
   },
+
+  "r2-in-02": {
+    id: "r2-in-02",
+    characters: [
+      { name: "Solving", role: "角色", description: "\"r2-in-02\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Class", role: "角色", description: "\"r2-in-02\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Spatial Reasoning Problems", role: "角色", description: "\"r2-in-02\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Snell", role: "角色", description: "\"r2-in-02\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "See Figure", role: "角色", description: "\"r2-in-02\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Section", role: "角色", description: "\"r2-in-02\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "[[PDF] Solving a Class of Spatial Reasoning Problems - DTIC] r1 in(61) = r2 in(02) must hold at each bend point. (Snell's law is illustrated several times in this thesis. See Figure 55 in Section IV.C for an example ...",
+    plotNodes: [
+      { label: "第 1 部分", description: "[[PDF] Solving a Class of Spatial Reasoning Problems - DTIC] r1 in(61) = r2 in(02) must hold at each bend point. (Snell's law is illustrated several times in this thesis." }
+    ],
+    themeAnalysis: "[[PDF] Solving a Class of Spatial Reasoning Problems - DTIC] r1 in(61) = r2 in(02) must hold at each bend point. (Snell's law is illustrated several times in this thesis. See Figure 55 in Section IV.C for an example ...",
+    techniques: "[[PDF] Solving a Class of Spatial Reasoning Problems - DTIC] r1 in(61) = r2 in(02) must hold at each bend point. (Snell's law is illustrated several times in this thesis. See Figure 55 in Section IV.C for an example ...",
+    excerpts: [],
+    insights: "[[PDF] Solving a Class of Spatial Reasoning Problems - DTIC] r1 in(61) = r2 in(02) must hold at each bend point. (Snell's law is illustrated several times in this thesis. See Figure 55 in Section IV.C for an example ...",
+  },
 };
