@@ -205,5 +205,14 @@
     "continent": "americas",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:54:35.146Z"
+  },
+  {
+    "bookId": "tb-tom-sawyer",
+    "title": "汤姆·索亚历险记",
+    "author": "马克·吐温",
+    "source": "textbook",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T04:55:20.804Z"
   }
 ]
