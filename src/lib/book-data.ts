@@ -2109,14 +2109,34 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "hopscotch": {
     id: "hopscotch",
-    plotSummary: "Hopscotch (Spanish: Rayuela) is a novel by Argentine writer Julio Cortázar. Written in Paris, it was published in Spanish in 1963 and in English in 1966. For the first U.S. edition, translator Gregory Rabassa split the inaugural National Book Award in the translation category. Widely regarded as one of the greatest, most innovative and influential Latin American novels, Hopscotch is a stream-of-consciousness novel which is advised to be read according to two (or three) different sequences of chapters; the third being read with chapters in any order.",
-    themeAnalysis: "Hopscotch (Spanish: Rayuela) is a novel by Argentine writer Julio Cortázar. Written in Paris, it was published in Spanish in 1963 and in English in 1966. For the first U.S. edition, translator Gregory Rabassa split the inaugural National Book Award in the translation category.",
-    techniques: "Hopscotch (Spanish: Rayuela) is a novel by Argentine writer Julio Cortázar. Written in Paris, it was published in Spanish in 1963 and in English in 1966. For the first U.S. edition, translator Gregory Rabassa split the inaugural National Book Award in the translation category.",
+    characters: [
+      { name: "Hopscotch", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Major Characters", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Literature", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Writing", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Julio Cort", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Horacio Oliveira", role: "角色", description: "Hopscotch 中的主要角色。" },
+      { name: "Literary Theory", role: "角色", description: "Hopscotch 中的主要角色。" }
+    ],
+    plotSummary: "[Hopscotch Summary & Study Guide - BookRags.com] Hopscotch is a portrait of a creative soul stymied by an inability to act. The story opens with Horacio searching the bridges of Paris for his mistress La Maga, ...\n\n[Hopscotch: Analysis of Major Characters | Literature and Writing] \"Hopscotch\" is a complex novel by Julio Cortázar that weaves together the lives of its major characters, primarily focusing on Horacio Oliveira, ...\n\n[Hopscotch, Discussion 1, Chapters 73-15 : r/TrueLit - Reddit] Discussion about Hopscotch by Julio Cortázar. Best insights on Hopscotch novel. Understanding themes in Hopscotch. Tips for reading Rayuela by ...\n\n[Delve Seminar Summary: Julio Cortazar: Hopscotch & Blow-Up] Hopscotch is for those that feel it is time to go beyond what we pretend or chase. Perhaps some of us can accept this better when not faced with ...\n\n[Julio Cortázar: 'Hopscotch' — Paola Caronni] Like in the hopscotch game, Horacio moves from one square to another, alone, in search for the unatt",
+    plotNodes: [
+      { label: "Part 1", description: "[Hopscotch Summary & Study Guide - BookRags.com] Hopscotch is a portrait of a creative soul stymied by an inability to act." },
+      { label: "Part 2", description: "[Hopscotch: Analysis of Major Characters | Literature and Writing] \"Hopscotch\" is a complex novel by Julio Cortázar that weaves together the lives of its major characters, primarily focusing on Horaci" },
+      { label: "Part 3", description: "[Hopscotch, Discussion 1, Chapters 73-15 : r/TrueLit - Reddit] Discussion about Hopscotch by Julio Cortázar." },
+      { label: "Part 4", description: "[Delve Seminar Summary: Julio Cortazar: Hopscotch & Blow-Up] Hopscotch is for those that feel it is time to go beyond what we pretend or chase." },
+      { label: "Part 5", description: "[Julio Cortázar: 'Hopscotch' — Paola Caronni] Like in the hopscotch game, Horacio moves from one square to another, alone, in search for the unatt" }
+    ],
+    themeAnalysis: "[Hopscotch: Analysis of Major Characters | Literature and Writing] \"Hopscotch\" is a complex novel by Julio Cortázar that weaves together the lives of its major characters, primarily focusing on Horacio Oliveira, ...\n\n[Analysis of Julio Cortázar's Hopscotch - Literary Theory and Criticism] The protagonist of Hopscotch is the bohemian Horacio Oliveira, a writer and Argentinean expatriate living in Paris, heartsick over the dissolution of his ...\n\n[Julio Cortázar's Hopscotch (1963) | Book Review, Analysis, and ...] A reflection on Julio Cortázar's Hopscotch (Rayuela), which was published 60 years ago today. This video tries to adopt a structure similar ...\n\n[Hopscotch, Discussion 1, Chapters 73-15 : r/TrueLit - Reddit] Discussion about Hopscotch by Julio Cortázar. Best insights on Hopscotch n",
+    techniques: "[Hopscotch: Analysis of Major Characters | Literature and Writing] \"Hopscotch\" is a complex novel by Julio Cortázar that weaves together the lives of its major characters, primarily focusing on Horacio Oliveira, ...\n\n[Analysis of Julio Cortázar's Hopscotch - Literary Theory and Criticism] The protagonist of Hopscotch is the bohemian Horacio Oliveira, a writer and Argentinean expatriate living in Paris, heartsick over the dissolution of his ...\n\n[Julio Cortázar's Hopscotch (1963) | Book Review, Analysis, and ...] A reflection on Julio Cortázar's Hopscotch (Rayuela), which was published 60 years",
     excerpts: [],
-    insights: "Hopscotch (Spanish: Rayuela) is a novel by Argentine writer Julio Cortázar. Written in Paris, it was published in Spanish in 1963 and in English in 1966. For the first U.S. edition, translator Gregory Rabassa split the inaugural National Book Award in the translation category.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Hopscotch%20(Cort%C3%A1zar%20novel)"
-    // }
+    insights: "[Hopscotch Summary & Study Guide - BookRags.com] Hopscotch is a portrait of a creative soul stymied by an inability to act. The story opens with Horacio searching the bridges of Paris for his mistress La Maga, ...\n\n[Delve Seminar Summary: Julio Cortazar: Hopscotch & Blow-Up] Hopscotch is for those that feel it is time to go beyond what we pretend or chase. Perhaps some of us can accept this better when not faced with ...\n\n[Hopscotch: Analysis of Major Characters | Literature and Writing] \"Hopscotch\" is a complex novel by Julio Cortázar that weaves together the lives of its major characters, pr",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/Hopscotch", tier: "reference", fetchedAt: "2026-05-21T04:58:00.721Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "time-of-hero": {
@@ -2260,7 +2280,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Adventures of Huckleberry Finn - Wikipedia] Adventures of Huckleberry Finn is an often scathing satire on entrenched attitudes, particularly racism.\n\n[Adventures of Huckleberry Finn Study Guide - LitCharts] In-depth summary and analysis of every chapter of Adventures of Huckleberry Finn. Visual theme-tracking, too.\n\n[The Adventures of Huckleberry Finn: Character List | SparkNotes] A list of all the characters in The Adventures of Huckleberry Finn. The Adventures of Huckleberry Finn characters include: Huckleberry “Huck” Finn, ...\n\n[The Adventures of Huckleberry Finn: Themes and Analysis - Vid",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%93%88%E5%85%8B%E8%B4%9D%E5%88%A9%C2%B7%E8%B4%B9%E6%81%A9%E5%8E%86%E9%99%A9%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:54:26.000Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%93%88%E5%85%8B%E8%B4%9D%E5%88%A9%C2%B7%E8%B4%B9%E6%81%A9%E5%8E%86%E9%99%A9%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:58:37.740Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

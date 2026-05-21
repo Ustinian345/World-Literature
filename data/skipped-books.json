@@ -241,5 +241,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:57:38.131Z"
+  },
+  {
+    "bookId": "tb-aishi-poetry",
+    "title": "艾青诗选",
+    "author": "艾青",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T04:58:23.098Z"
   }
 ]
