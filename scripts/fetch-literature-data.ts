@@ -1870,16 +1870,6 @@ async function runBatch(options: {
           const sourcesStr = detail.sourceAttribution?.sources.map((s) => s.label).join(",") || "no-source";
           console.log(`✓ 写入成功 [${detail.sourceAttribution?.reliability || "?"}] [${sourcesStr}]`);
 
-          // 自动 commit + push
-          if (_batchAutoCommit) {
-            const gitStatus = await gitCommitAndPush(
-              bookId,
-              detail.sourceAttribution?.sources.map((s) => s.label) || []
-            );
-            if (gitStatus !== "⊘ no changes") {
-              console.log(`  📤 ${gitStatus}`);
-            }
-          }
         } else {
           // 写入失败也算失败
           queueData.queue[originalIndex].batchStatus = "failed";
@@ -2021,6 +2011,19 @@ async function runBatch(options: {
   console.log("");
   console.log("继续运行: npm run lit:fetch -- --batch --resume");
   console.log("全量重新处理: npm run lit:fetch -- --batch-all");
+
+  // 自动 commit + push（全部完成后一次性提交）
+  if (_batchAutoCommit && progress.succeeded > 0) {
+    console.log("");
+    console.log("═".repeat(55));
+    console.log("  📤 统一提交所有变更...");
+    const gitStatus = await gitCommitAndPush(
+      `batch-${progress.succeeded}-books`,
+      [`${progress.succeeded} books`, `${progress.skipped} skipped`]
+    );
+    console.log(`  ${gitStatus}`);
+    console.log("═".repeat(55));
+  }
 }
 
 // ================================================================
@@ -2168,7 +2171,7 @@ function printHelp() {
   --only-continent <c> 仅处理指定大洲（asia,europe,africa,americas,oceania）
   --start <n>         从队列第 N 本开始（默认 0）
   --full-search       启用全网搜索（Serper.dev/DuckDuckGo）
-  --auto-commit       每处理完一本自动 git commit + push
+  --auto-commit       全部完成后统一 git commit + push
 
 环境变量：
   HTTP_PROXY / HTTPS_PROXY       代理服务器地址
