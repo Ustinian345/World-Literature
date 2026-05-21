@@ -16,6 +16,18 @@ export function findUser(email: string): AuthUser | null {
   return _users.find((u) => u.email.toLowerCase() === email.toLowerCase()) || null;
 }
 
+export function ensureUser(email: string, defaults?: Partial<Pick<AuthUser, "name" | "avatar">>): AuthUser {
+  let user = findUser(email);
+  if (!user) {
+    user = { email: email.toLowerCase(), password: "", name: defaults?.name || email.split("@")[0], avatar: defaults?.avatar, createdAt: new Date().toISOString() };
+    _users.push(user);
+  } else {
+    if (defaults?.name && !user.name) user.name = defaults.name;
+    if (defaults?.avatar && !user.avatar) user.avatar = defaults.avatar;
+  }
+  return user;
+}
+
 export function updateUser(email: string, data: Partial<Pick<AuthUser, "name" | "password" | "avatar">>): AuthUser | null {
   const user = findUser(email);
   if (!user) return null;

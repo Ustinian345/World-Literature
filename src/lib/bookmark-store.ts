@@ -1,37 +1,47 @@
-// 内存书签存储（生产环境替换为数据库）
-const _bookmarks: Map<string, Set<string>> = new Map();
+// 文件书签存储（兼容 Vercel serverless 无状态环境）
+import * as fs from "fs";
+import * as path from "path";
 
-function userKey(userId: string): string {
-  return userId.toLowerCase().trim();
+const BOOKMARK_FILE = path.join(process.cwd(), "data", "bookmarks.json");
+
+function loadBookmarks(): Record<string, string[]> {
+  try {
+    if (fs.existsSync(BOOKMARK_FILE)) {
+      const raw = fs.readFileSync(BOOKMARK_FILE, "utf-8");
+      return JSON.parse(raw);
+    }
+  } catch { /* ignore */ }
+  return {};
+}
+
+function saveBookmarks(data: Record<string, string[]>): void {
+  const dir = path.dirname(BOOKMARK_FILE);
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(BOOKMARK_FILE, JSON.stringify(data, null, 2), "utf-8");
 }
 
 export function getBookmarks(userId: string): string[] {
-  const ids = _bookmarks.get(userKey(userId));
-  return ids ? [...ids] : [];
+  const data = loadBookmarks();
+  return data[userId.toLowerCase().trim()] || [];
 }
 
 export function addBookmark(userId: string, workId: string): boolean {
-  const key = userKey(userId);
-  if (!_bookmarks.has(key)) _bookmarks.set(key, new Set());
-  const set = _bookmarks.get(key)!;
-  if (set.has(workId)) return false;
-  set.add(workId);
+  const data = loadBookmarks();
+  const key = userId.toLowerCase().trim();
+  if (!data[key]) data[key] = [];
+  if (data[key].includes(workId)) return false;
+  data[key].push(workId);
+  saveBookmarks(data);
   return true;
 }
 
 export function removeBookmark(userId: string, workId: string): boolean {
-  const set = _bookmarks.get(userKey(userId));
-  if (!set || !set.has(workId)) return false;
-  set.delete(workId);
+  const data = loadBookmarks();
+  const key = userId.toLowerCase().trim();
+  if (!data[key]) return false;
+  const idx = data[key].indexOf(workId);
+  if (idx === -1) return false;
+  data[key].splice(idx, 1);
+  saveBookmarks(data);
   return true;
-}
-
-export function isBookmarked(userId: string, workId: string): boolean {
-  const set = _bookmarks.get(userKey(userId));
-  return set ? set.has(workId) : false;
-}
-
-export function getBookmarkCount(userId: string): number {
-  const set = _bookmarks.get(userKey(userId));
-  return set ? set.size : 0;
 }
