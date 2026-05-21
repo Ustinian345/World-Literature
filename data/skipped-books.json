@@ -13741,5 +13741,743 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T12:38:43.044Z"
+  },
+  {
+    "bookId": "lux-tr-2-cao",
+    "title": "浮士德（中译本）",
+    "author": "曹乃云（译）",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:38:54.984Z"
+  },
+  {
+    "bookId": "lux-7-m-xiao-bai",
+    "title": "封锁",
+    "author": "小白",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:38:57.238Z"
+  },
+  {
+    "bookId": "nobel-1910-heyse",
+    "title": "倔强的姑娘",
+    "author": "保罗·海泽",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:39:01.879Z"
+  },
+  {
+    "bookId": "maodun-2019-liang",
+    "title": "人世间",
+    "author": "梁晓声",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:39:39.456Z"
+  },
+  {
+    "bookId": "intl-booker-2024-erpenbeck",
+    "title": "凯洛斯",
+    "author": "燕妮·埃彭贝克",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:39:53.422Z"
+  },
+  {
+    "bookId": "booker-2022-karunatilaka",
+    "title": "马利·阿尔梅达的七个月亮",
+    "author": "谢汉·卡鲁纳蒂拉卡",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:40:05.610Z"
+  },
+  {
+    "bookId": "lux-7-s-huang",
+    "title": "父亲的后视镜",
+    "author": "黄咏梅",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:40:16.723Z"
+  },
+  {
+    "bookId": "maodun-1982-gu",
+    "title": "芙蓉镇",
+    "author": "古华",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:40:19.720Z"
+  },
+  {
+    "bookId": "nobel-2005-pinter",
+    "title": "看管人",
+    "author": "哈罗德·品特",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:40:39.823Z"
+  },
+  {
+    "bookId": "luxun-6-2-xu",
+    "title": "如果大雪封门",
+    "author": "徐则臣",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:41:02.275Z"
+  },
+  {
+    "bookId": "booker-2009-mantel",
+    "title": "狼厅",
+    "author": "希拉里·曼特尔",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:41:25.212Z"
+  },
+  {
+    "bookId": "lux-6-m-wang-yue",
+    "title": "漫水",
+    "author": "王跃文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:41:28.460Z"
+  },
+  {
+    "bookId": "lux-6-d-he-jie",
+    "title": "父亲的雪山 母亲的草地",
+    "author": "贺捷生",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:41:40.736Z"
+  },
+  {
+    "bookId": "lux-tr-2-cao",
+    "title": "浮士德（中译本）",
+    "author": "曹乃云（译）",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:41:43.192Z"
+  },
+  {
+    "bookId": "booker-1986-amis",
+    "title": "老恶魔们",
+    "author": "金斯利·艾米斯",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:42:16.059Z"
+  },
+  {
+    "bookId": "akutagawa-2012-kawakami",
+    "title": "乳与卵",
+    "author": "川上未映子",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:42:27.287Z"
+  },
+  {
+    "bookId": "lux-6-r-xiao",
+    "title": "毛乌素绿色传奇",
+    "author": "肖亦农",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:42:54.050Z"
+  },
+  {
+    "bookId": "luxun-1-1-deng",
+    "title": "父亲是个兵",
+    "author": "邓一光",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:43:09.037Z"
+  },
+  {
+    "bookId": "lux-7-s-huang",
+    "title": "父亲的后视镜",
+    "author": "黄咏梅",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:43:13.691Z"
+  },
+  {
+    "bookId": "booker-1979-fitzgerald",
+    "title": "离岸",
+    "author": "佩内洛普·菲茨杰拉德",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:44:07.626Z"
+  },
+  {
+    "bookId": "x3-ch-008",
+    "title": "三体",
+    "author": "刘慈欣",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:44:14.721Z"
+  },
+  {
+    "bookId": "luxun-1-3-dongxi",
+    "title": "没有语言的生活",
+    "author": "东西",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:44:32.419Z"
+  },
+  {
+    "bookId": "lux-6-d-he-jie",
+    "title": "父亲的雪山 母亲的草地",
+    "author": "贺捷生",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:44:41.957Z"
+  },
+  {
+    "bookId": "lux-1-d-ji",
+    "title": "赋得永久的悔",
+    "author": "季羡林",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:44:42.939Z"
+  },
+  {
+    "bookId": "nobel-1979-elytis",
+    "title": "理所当然",
+    "author": "奥德修斯·埃利蒂斯",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:44:53.867Z"
+  },
+  {
+    "bookId": "maodun-1997-liu-yu",
+    "title": "骚动之秋",
+    "author": "刘玉民",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:45:37.448Z"
+  },
+  {
+    "bookId": "nobel-1922-benavente",
+    "title": "利害关系",
+    "author": "哈辛托·贝纳文特",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:45:40.179Z"
+  },
+  {
+    "bookId": "lux-1-r-jiang",
+    "title": "没有掌声的征途",
+    "author": "江宛柳",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:45:55.587Z"
+  },
+  {
+    "bookId": "lux-5-r-guan",
+    "title": "感天动地——从唐山到汶川",
+    "author": "关仁山",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:46:04.894Z"
+  },
+  {
+    "bookId": "luxun-1-1-deng",
+    "title": "父亲是个兵",
+    "author": "邓一光",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:46:12.146Z"
+  },
+  {
+    "bookId": "nobel-2000-gao",
+    "title": "灵山",
+    "author": "高行健",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:46:25.282Z"
+  },
+  {
+    "bookId": "lux-7-p-hu",
+    "title": "沙漏",
+    "author": "胡弦",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:47:00.513Z"
+  },
+  {
+    "bookId": "nobel-1902-mommsen",
+    "title": "罗马史",
+    "author": "特奥多尔·蒙森",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:47:10.138Z"
+  },
+  {
+    "bookId": "lux-6-m-teng",
+    "title": "美丽的日子",
+    "author": "滕肖澜",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:47:18.072Z"
+  },
+  {
+    "bookId": "lux-7-p-zhang",
+    "title": "高原上的野花",
+    "author": "张执浩",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:47:27.795Z"
+  },
+  {
+    "bookId": "lux-1-d-ji",
+    "title": "赋得永久的悔",
+    "author": "季羡林",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:47:34.829Z"
+  },
+  {
+    "bookId": "hugo-2002-gaiman",
+    "title": "美国众神",
+    "author": "尼尔·盖曼",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:47:55.606Z"
+  },
+  {
+    "bookId": "intl-booker-2022-shree",
+    "title": "沙墓",
+    "author": "吉丹贾莉·什里",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:48:22.031Z"
+  },
+  {
+    "bookId": "booker-2004-hollinghurst",
+    "title": "美丽线条",
+    "author": "艾伦·霍灵赫斯特",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:48:41.092Z"
+  },
+  {
+    "bookId": "luxun-2-1-ye",
+    "title": "梦也何曾到谢桥",
+    "author": "叶广芩",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:48:43.480Z"
+  },
+  {
+    "bookId": "lux-3-r-zhao",
+    "title": "革命百里洲",
+    "author": "赵瑜、胡世全",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:48:50.955Z"
+  },
+  {
+    "bookId": "lux-5-r-guan",
+    "title": "感天动地——从唐山到汶川",
+    "author": "关仁山",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:48:57.331Z"
+  },
+  {
+    "bookId": "nobel-1981-canetti",
+    "title": "迷惘",
+    "author": "埃利亚斯·卡内蒂",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:49:26.927Z"
+  },
+  {
+    "bookId": "lux-tr-4-yu",
+    "title": "莎士比亚全集（中译本）",
+    "author": "余中先等（译）",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:49:43.997Z"
+  },
+  {
+    "bookId": "maodun-1991-huo",
+    "title": "穆斯林的葬礼",
+    "author": "霍达",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:50:05.943Z"
+  },
+  {
+    "bookId": "nobel-1904-mistral",
+    "title": "米瑞伊",
+    "author": "弗雷德里克·米斯特拉尔",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:50:11.821Z"
+  },
+  {
+    "bookId": "lux-6-p-da",
+    "title": "个人史",
+    "author": "大解",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:50:12.482Z"
+  },
+  {
+    "bookId": "lux-7-p-zhang",
+    "title": "高原上的野花",
+    "author": "张执浩",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:50:19.604Z"
+  },
+  {
+    "bookId": "gon-1954-beauvoir",
+    "title": "名士风流",
+    "author": "西蒙娜·德·波伏瓦",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:50:56.256Z"
+  },
+  {
+    "bookId": "lux-8-p-chen-ren",
+    "title": "山海间",
+    "author": "陈人杰",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:51:06.024Z"
+  },
+  {
+    "bookId": "lux-3-p-na",
+    "title": "娜夜诗选",
+    "author": "娜夜",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:51:28.968Z"
+  },
+  {
+    "bookId": "lux-1-r-he-jian",
+    "title": "共和国告急",
+    "author": "何建明",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:51:34.540Z"
+  },
+  {
+    "bookId": "nobel-1917-gjellerup",
+    "title": "明娜",
+    "author": "卡尔·吉勒鲁普",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:51:41.884Z"
+  },
+  {
+    "bookId": "lux-3-r-zhao",
+    "title": "革命百里洲",
+    "author": "赵瑜、胡世全",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:51:41.903Z"
+  },
+  {
+    "bookId": "nobel-1926-deledda",
+    "title": "母亲",
+    "author": "格拉齐亚·黛莱达",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:52:27.517Z"
+  },
+  {
+    "bookId": "lux-7-d-li-xiu",
+    "title": "山河袈裟",
+    "author": "李修文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:52:28.427Z"
+  },
+  {
+    "bookId": "maodun-2011-zhang",
+    "title": "你在高原",
+    "author": "张炜",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:53:00.988Z"
+  },
+  {
+    "bookId": "nobel-1909-lagerlof",
+    "title": "尼尔斯骑鹅旅行记",
+    "author": "塞尔玛·拉格洛夫",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:53:17.501Z"
+  },
+  {
+    "bookId": "lux-6-p-da",
+    "title": "个人史",
+    "author": "大解",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:53:21.142Z"
+  },
+  {
+    "bookId": "quovadis",
+    "title": "你往何处去",
+    "author": "亨利克·显克维支",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:54:11.129Z"
+  },
+  {
+    "bookId": "lux-2-d-yu",
+    "title": "山居笔记",
+    "author": "余秋雨",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:54:20.414Z"
+  },
+  {
+    "bookId": "lux-5-m-wang",
+    "title": "国家订单",
+    "author": "王十月",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:54:30.703Z"
+  },
+  {
+    "bookId": "lux-1-m-he",
+    "title": "年前年后",
+    "author": "何申",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:54:44.750Z"
+  },
+  {
+    "bookId": "nobel-1924-reymont",
+    "title": "农民",
+    "author": "瓦迪斯瓦夫·莱蒙特",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:54:56.391Z"
+  },
+  {
+    "bookId": "lux-1-r-he-jian",
+    "title": "共和国告急",
+    "author": "何建明",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:55:02.906Z"
+  },
+  {
+    "bookId": "booker-2019-evaristo",
+    "title": "女孩，女人，其他",
+    "author": "伯纳丁·埃瓦里斯托",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:55:41.288Z"
+  },
+  {
+    "bookId": "lux-4-d-han",
+    "title": "山南水北",
+    "author": "韩少功",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:55:42.865Z"
+  },
+  {
+    "bookId": "lux-8-r-jiang-wei",
+    "title": "国家温度",
+    "author": "蒋巍",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:55:53.361Z"
+  },
+  {
+    "bookId": "luxun-2-3-yan",
+    "title": "年月日",
+    "author": "阎连科",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:56:06.193Z"
+  },
+  {
+    "bookId": "lux-5-m-wang",
+    "title": "国家订单",
+    "author": "王十月",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:56:25.223Z"
+  },
+  {
+    "bookId": "nobel-1972-boll",
+    "title": "女士及众生相",
+    "author": "海因里希·伯尔",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:56:26.056Z"
+  },
+  {
+    "bookId": "lux-8-s-zhang",
+    "title": "山前该有一棵树",
+    "author": "张者",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:57:07.763Z"
+  },
+  {
+    "bookId": "nobel-2023-fosse",
+    "title": "七部曲",
+    "author": "约恩·福瑟",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:57:11.564Z"
+  },
+  {
+    "bookId": "luxun-8-1-ai",
+    "title": "过往",
+    "author": "艾伟",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:57:14.305Z"
+  },
+  {
+    "bookId": "lux-1-p-zhang-x",
+    "title": "鸟落民间",
+    "author": "张新泉",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:57:30.109Z"
+  },
+  {
+    "bookId": "lux-8-r-jiang-wei",
+    "title": "国家温度",
+    "author": "蒋巍",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:57:47.218Z"
+  },
+  {
+    "bookId": "gon-1970-tournier",
+    "title": "桤木王",
+    "author": "米歇尔·图尼埃",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:57:56.723Z"
+  },
+  {
+    "bookId": "lux-3-s-wang",
+    "title": "上边",
+    "author": "王祥夫",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:58:30.353Z"
+  },
+  {
+    "bookId": "kafka-2006-murakami",
+    "title": "海边的卡夫卡",
+    "author": "村上春树",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:58:37.754Z"
+  },
+  {
+    "bookId": "booker-1980-golding",
+    "title": "启蒙之旅",
+    "author": "威廉·戈尔丁",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:58:41.781Z"
+  },
+  {
+    "bookId": "lux-1-m-li-guo",
+    "title": "涅槃",
+    "author": "李国文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:58:50.905Z"
+  },
+  {
+    "bookId": "luxun-8-1-ai",
+    "title": "过往",
+    "author": "艾伟",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:59:09.481Z"
   }
 ]
