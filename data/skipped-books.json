@@ -475,5 +475,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:26:52.711Z"
+  },
+  {
+    "bookId": "tb-ba-2",
+    "title": "海上日出",
+    "author": "巴金",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:27:37.802Z"
   }
 ]
