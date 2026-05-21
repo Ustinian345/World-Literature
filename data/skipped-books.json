@@ -376,5 +376,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:18:32.304Z"
+  },
+  {
+    "bookId": "tb-zzq-4",
+    "title": "匆匆",
+    "author": "朱自清",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:19:19.084Z"
   }
 ]

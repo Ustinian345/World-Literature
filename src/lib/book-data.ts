@@ -649,20 +649,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "shakuntala": {
     id: "shakuntala",
-    plotSummary: "沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先。出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题。沙恭达罗的形象融合神性血脉与人性特质，既是自然之女，亦是印度古典文学中追求爱情的女性典范。\n沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先 [1] [4]。\n\n出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人 [1]。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多 [3]。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。\n\n故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题 [3]。沙恭达罗的形象融合神性血脉与人性特质，既是自然之女，亦是印度古典文学中追求爱情的女性典范。\n\n弥那迦把刚生下的女儿丢弃在森林中，由名为沙恭达罗的群鸟保护才免受猛兽的侵害。沙恭达罗即由此得名。以后被隐修仙人干婆发现并收到静修寺抚养。国王豆扇陀在静修林打猎时与沙恭达罗相遇， 互相爱慕，按乾闼婆的方式 (即没有举行婚礼) 结为夫妻。豆扇陀回宫时留下他的戒指作为信物。沙恭达罗由于思念豆扇陀而怠慢了敝衣仙人。后者生气，诅咒沙恭达罗将被 心爱的人忘掉。只有丈夫看到那只戒指时才 能再想起。豆扇陀久去无信，而沙恭达罗又 已怀孕，因此师父干婆让她去找豆扇陀。 沙恭达罗在恒河行洗礼时，不慎把戒指丢失 在河里。豆扇陀完全记不起沙恭达罗，不予 承认。于是她的母亲弥那迦把她带到阿布沙 罗斯的湖上生下了儿子，即后来的国王婆罗多。再说沙恭达罗的戒指丢失在恒河里被一 条鱼吞掉。这条鱼被渔人打上来正好卖给了 王宫。",
-    plotNodes: [
-      { label: "Part 1", description: "沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先。出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天" },
-      { label: "Part 2", description: "出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人 [1]。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多 [3]。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。" },
-      { label: "Part 3", description: "故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题 [3]。沙恭达罗的形象融合神性血脉与人性特质，既是自然之女，亦是印度古典文学中追求爱情的女性典范。" },
-      { label: "Part 4", description: "弥那迦把刚生下的女儿丢弃在森林中，由名为沙恭达罗的群鸟保护才免受猛兽的侵害。沙恭达罗即由此得名。以后被隐修仙人干婆发现并收到静修寺抚养。国王豆扇陀在静修林打猎时与沙恭达罗相遇， 互相爱慕，按乾闼婆的方式 (即没有举行婚礼) 结为夫妻。豆扇陀回宫时留下他的戒指作为信物。沙恭达罗由于思念豆扇陀而怠慢了敝衣仙人。后者生气，诅咒沙恭达罗将被 心爱的人忘掉。只有丈夫看到那只戒指时才 能再想起。豆扇陀久去无信" }
+    characters: [
+      { name: "Shakuntala", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "Character Sketch", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "Adaptations", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "Britannica", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "From", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "Scribd", role: "角色", description: "Shakuntala 中的主要角色。" },
+      { name: "Kalidasa", role: "角色", description: "Shakuntala 中的主要角色。" }
     ],
-    themeAnalysis: "沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先。出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题。沙恭达罗的形象融合神性血脉与人性特质，既是自然之女，亦是印度古典文学中追求爱情的女性典范。\n沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先 [1] [4]。\n\n出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人 [1]。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多 [3]。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。\n\n故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题 [3]。沙恭达罗的形象融合神性血脉与人性特质，既是自然之女，亦是印度古典文学中追求爱情的女性典范。\n\n弥那迦把刚生下的女儿丢弃在森林中，由名为沙恭达罗的群鸟保护才免受猛兽的侵害。沙恭达罗即由此得名。以后被隐修仙人干婆发现并收到静修寺抚养。国王豆扇陀在静修林打猎时与沙恭达罗相遇， 互相爱慕，按乾闼婆的方式 (即没有举行婚礼) 结为夫妻。豆扇陀回宫时留下他的戒指作为信物。沙恭达罗由于思念豆扇陀而怠慢了",
+    plotSummary: "[Shakuntala Study Guide | Literature Guide - LitCharts] Shakuntala: Detailed Summary & Analysis. In-depth summary and analysis of every act of Shakuntala. Visual theme-tracking, too.\n\n[Shakuntala (play) - Wikipedia] ... Kalidasa, dramatizing the story of Shakuntala told in the epic Mahabharata and regarded as the best of Kalidasa's works. Its exact date is uncertain ...\n\n[Shakuntala by Kalidasa Plot Summary - LitCharts] He quickly dispels the demons, then overhears Shakuntala, who's desperately lovesick, confiding her feelings for him to her friends. When ...\n\n[Shakuntala | Character Sketch & Adaptations - Britannica] Shakuntala's story is one of love, virtue, and resilience. From her celestial origin and idyllic upbringing to her trials of rejection and ...\n\n[Plot Summary Of Shakuntala By Kalidasa. - YouTube] ... summary| begc101| ignou & sol | begc 101. shakuntala by kalidasa summary in tamil | ushakathiresan |. abhijnana shakuntala by kalidasa summary & ...\n\n[Abhijnana Shakuntala An",
+    plotNodes: [
+      { label: "Part 1", description: "[Shakuntala Study Guide | Literature Guide - LitCharts] Shakuntala: Detailed Summary & Analysis." },
+      { label: "Part 2", description: "[Shakuntala (play) - Wikipedia] ..." },
+      { label: "Part 3", description: "[Shakuntala by Kalidasa Plot Summary - LitCharts] He quickly dispels the demons, then overhears Shakuntala, who's desperately lovesick, confiding her feelings for him to her friends." },
+      { label: "Part 4", description: "[Shakuntala | Character Sketch & Adaptations - Britannica] Shakuntala's story is one of love, virtue, and resilience." },
+      { label: "Part 5", description: "[Plot Summary Of Shakuntala By Kalidasa." }
+    ],
+    themeAnalysis: "[Shakuntala Study Guide | Literature Guide - LitCharts] Shakuntala: Detailed Summary & Analysis. In-depth summary and analysis of every act of Shakuntala. Visual theme-tracking, too.\n\n[Abhijnana Shakuntala Analysis: Themes, Characters, and Plot ...] In the court when Shakuntala and Dushyanta engage in an argument about their marriage, it creates an environment of horror and fear among the people present ...\n\n[Character Analysis of Shakuntala | PDF - Scribd] The document provides a detailed character sketch and analysis of Shakuntala from the play by Kalidasa. It examines her beauty, strength of mind, virtues like ...\n\n沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先。出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙",
     techniques: "",
     excerpts: [],
-    insights: "沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先。出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题。沙恭达罗的形象融合神性血脉与人性特质，既是自然之女，亦是印度古典文学中追求爱情的女性典范。\n沙恭达罗是印度教神话中的经典人物，最早见于史诗《摩诃婆罗多》及《莲花往世书》，后因迦梨陀娑的梵剧《沙恭达罗》广为流传。其父为众友仙人，母亲为天女弥那迦，丈夫是国王豆扇陀，儿子婆罗多成为印度传说中婆罗多族祖先 [1] [4]。\n\n出生后被遗弃于森林，得群鸟庇护得名“沙恭达罗”，由隐修仙人干婆抚养成人 [1]。在净修林与豆扇陀以乾闼婆方式（自主婚姻）结合，以戒指为信物。因怠慢仙人遭诅咒遗忘，寻夫途中丢失戒指未被承认，后随母栖居天界诞下婆罗多 [3]。数年后戒指经鱼腹重现，豆扇陀恢复记忆，最终与其在天界团聚。\n\n故事通过戒指信物与诅咒机制构建叙事核心，展现爱情与命运的主题",
+    insights: "[Shakuntala Study Guide | Literature Guide - LitCharts] Shakuntala: Detailed Summary & Analysis. In-depth summary and analysis of every act of Shakuntala. Visual theme-tracking, too.\n\n[Shakuntala (play) - Wikipedia] ... Kalidasa, dramatizing the story of Shakuntala told in the epic Mahabharata and regarded as the best of Kalidasa's works. Its exact date is uncertain ...\n\n[Shakuntala by Kalidasa Plot Summary - LitCharts] He quickly dispels the demons, then overhears Shakuntala, who's desperately lovesick, confiding her feelings for him to her friends. When ...\n\n[Shakuntala | Character Sketch &",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B2%99%E6%81%AD%E8%BE%BE%E7%BD%97", tier: "reference", fetchedAt: "2026-05-21T04:23:50.796Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B2%99%E6%81%AD%E8%BE%BE%E7%BD%97", tier: "reference", fetchedAt: "2026-05-21T05:19:33.134Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -759,7 +770,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Shahnameh - Wikipedia] The Shahnameh, also romanized Shahnama ( lit. 'Book of Kings'), is a long epic poem written by the Persian poet Ferdowsi between c. 977 and 1010 CE and is ...\n\n[Structure and Themes: Myth, Legend and History | The Shahnameh] The various roles of women in the Shahnameh are indicative of Ferdowsi's views on social order. A good example is the story of Bahram Gur who cruelly ...\n\n[Shahnameh: History & Analysis - Video - Study.com] Ferdowsi wrote the Persian epic Shahnameh, which translates as ''Book of Kings,'' during the Ghaznavid Dynasty. It tells the stories of ...\n\n[Th",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%88%97%E7%8E%8B%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T05:14:55.552Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%88%97%E7%8E%8B%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T05:19:34.044Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
