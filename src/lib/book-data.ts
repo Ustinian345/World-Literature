@@ -959,7 +959,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Oedipus Rex Themes - LitCharts] Oedipus Rex Themes · Fate vs. Free Will · Guilt and Shame · Sight vs. Blindness · Finding Out the Truth · Action vs. Reflection.\n\n[The Oedipus Plays: Character List | SparkNotes] Themes, Motifs & Symbols. Deeper Study. Essays; Sophocles and The ... The Oedipus Plays: Antigone, Oedipus Rex, Oedipus at Colonus SparkNotes Literature Guide.\n\n[Oedipus Rex - Wikipedia] Prior to the start of Oedipus Rex, Oedipus has become the king of Thebes while unwittingly fulfilling a prophecy that he would kill his father, Laius (the ...\n\n[Oedipus Rex by Sophocles | Summary, Them",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:25:46.210Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:30:50.127Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1596,34 +1596,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "the-trial": {
     id: "the-trial",
     characters: [
-      { name: "Hermes", role: "角色", description: "\"The Trial\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Psychopomp", role: "角色", description: "\"The Trial\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "Character List", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "The Trial", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "The Trial Character", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "List", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "Joseph", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "Chief Clerk", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "Fraulein Burstner", role: "角色", description: "The Trial 中的主要角色。" },
+      { name: "Study Guide The", role: "角色", description: "The Trial 中的主要角色。" }
     ],
-    plotSummary: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。",
+    plotSummary: "Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-7 Chapters 8-10 Fragments Character List NEW Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Summary and Study Guide Overview Book Details The Trial , an unfinished novel by Franz Kafka, was written in the 1910s an",
     plotNodes: [
-      { label: "第 1 部分", description: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人" },
-      { label: "第 2 部分", description: "Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。" },
-      { label: "第 3 部分", description: "“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。" },
-      { label: "第 4 部分", description: "塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。" },
-      { label: "第 5 部分", description: "从牌面中可以看到，天使已经吹响了号角，在传播着上天的福音。而在声声催人振奋的号角中，沉睡已久的灵魂一个个走出了自己内心的坟墓，或者说那是来自内心的困惑。他们站立在天使的翅膀下，满怀着一颗感恩的心，细心地聆听着上天的福音。" }
+      { label: "Part 1", description: "Get ready to explore The Trial and its meaning." },
+      { label: "Part 2", description: "Study Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, Sup" }
     ],
-    themeAnalysis: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。\n\n“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。",
-    techniques: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。",
-    excerpts: [],
-    insights: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。",
+    themeAnalysis: "Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-7 Chapters 8-10 Fragments Character List NEW Character Analysis Themes Symbols & Motif",
+    techniques: "Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study G",
+    excerpts: [
+      { quote: ". It discusses the plot, which follows Josef K. as he is arrested and tries to navigate a confusing ...\n[The Trial: Analysis of Major Characters | Literature and Writing] ", context: "From The Trial" }
+    ],
+    insights: "[The Trial Study Guide | Literature Guide - LitCharts] The Trial's important quotes, sortable by theme, character, or chapter. The Trial: Characters. Description, analysis, and timelines for The Trial's characters.\n\n[Character List - The Trial - SparkNotes] The Trial Character List · Joseph K. The hero and protagonist of the novel, K. is the Chief Clerk of a bank. · Fraulein Burstner. A boarder in the same house as ...\n\n[The Trial Summary - SuperSummary] Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and qu",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A1%E5%88%A4", tier: "reference", fetchedAt: "2026-05-21T04:32:29.250Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/7849", tier: "original_text", fetchedAt: "2026-05-21T04:32:47.325Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A1%E5%88%A4", tier: "reference", fetchedAt: "2026-05-21T05:30:18.150Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Trial%20Franz%20Kafka" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Trial%20Franz%20Kafka" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Trial" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Trial" },
-      ],
+      reliability: "medium",
     },
   },
 
