@@ -9,6 +9,9 @@ const _users: Array<{
   createdAt: string;
 }> = [];
 
+// 暴露到 globalThis 供 API 路由访问
+(globalThis as Record<string, unknown>)._authUsers = _users;
+
 let _userCount = _users.length;
 
 function findUser(email: string) {

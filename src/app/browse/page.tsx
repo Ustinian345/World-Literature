@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { allWorks as works, allGenres, allThemes, allEras, continents } from "@/lib/data";
+import { BookmarkStar } from "@/components/BookmarkButton";
 import type { Genre, Theme, Era, Continent } from "@/lib/data";
 
 export default function BrowsePage() {
@@ -185,6 +186,7 @@ export default function BrowsePage() {
                 >
                   {/* 封面渐变色块 */}
                   <div className={`relative flex h-32 items-center justify-center bg-gradient-to-br ${work.gradient}`}>
+                    <BookmarkStar workId={work.id} className="absolute left-3 top-3 text-lg" />
                     <span className="font-heading-cn text-xl font-bold text-white/85">
                       {work.title}
                     </span>

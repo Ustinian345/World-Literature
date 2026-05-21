@@ -18,7 +18,7 @@ import ContentSources from "@/components/ContentSources";
 import { CulturalPattern } from "@/components/CulturalPattern";
 import { SceneIllustration } from "@/components/SceneIllustration";
 import { QuoteCopy } from "@/components/QuoteCopy";
-import { BookmarkButton } from "@/components/BookmarkButton";
+import { BookmarkButton, BookmarkStar } from "@/components/BookmarkButton";
 import { ShareButton } from "@/components/ShareButton";
 import { getAwardsByWork, getAward } from "@/lib/award-data";
 
@@ -145,7 +145,7 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
 
               {work.titleEn && (
                 <p className="mt-2 font-heading-en text-xl italic text-white/50">
-                  {work.titleEn}
+                  {work.titleEn} <BookmarkStar workId={id} className="text-2xl" />
                 </p>
               )}
 

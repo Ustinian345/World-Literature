@@ -4579,5 +4579,365 @@
     "continent": "europe",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T08:05:53.908Z"
+  },
+  {
+    "bookId": "pul-2003-eugenides",
+    "title": "中性",
+    "author": "杰弗里·尤金尼德斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:06:21.025Z"
+  },
+  {
+    "bookId": "laoshe-2000-liu",
+    "title": "尘埃落定",
+    "author": "阿来",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:06:24.922Z"
+  },
+  {
+    "bookId": "maodun-1985-zhang",
+    "title": "沉重的翅膀",
+    "author": "张洁",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:07:11.553Z"
+  },
+  {
+    "bookId": "tb-sell-matches",
+    "title": "卖火柴的小女孩",
+    "author": "安徒生",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:07:18.578Z"
+  },
+  {
+    "bookId": "tb-mopassant-uncle",
+    "title": "我的叔叔于勒",
+    "author": "莫泊桑",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:07:23.013Z"
+  },
+  {
+    "bookId": "lux-4-s-fan",
+    "title": "城乡简史",
+    "author": "范小青",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:07:56.903Z"
+  },
+  {
+    "bookId": "pul-2019-powers",
+    "title": "上层林冠",
+    "author": "理查德·鲍尔斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:08:00.389Z"
+  },
+  {
+    "bookId": "pul-1984-kennedy",
+    "title": "紫菀草",
+    "author": "威廉·肯尼迪",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:08:28.263Z"
+  },
+  {
+    "bookId": "lux-7-s-yi",
+    "title": "出警",
+    "author": "弋舟",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:08:42.434Z"
+  },
+  {
+    "bookId": "tb-dolls-house",
+    "title": "玩偶之家",
+    "author": "亨利克·易卜生",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:08:45.958Z"
+  },
+  {
+    "bookId": "tb-man-in-case",
+    "title": "装在套子里的人",
+    "author": "契诃夫",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:08:49.523Z"
+  },
+  {
+    "bookId": "pul-2018-greer",
+    "title": "少",
+    "author": "安德鲁·肖恩·格里尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:09:26.278Z"
+  },
+  {
+    "bookId": "lux-2-s-xu",
+    "title": "厨房",
+    "author": "徐坤",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:09:27.934Z"
+  },
+  {
+    "bookId": "tb-shakespeare-venice",
+    "title": "威尼斯商人",
+    "author": "莎士比亚",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:10:13.471Z"
+  },
+  {
+    "bookId": "lux-2-m-yi",
+    "title": "吹满风的山谷",
+    "author": "衣向东",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:10:13.539Z"
+  },
+  {
+    "bookId": "tb-last-class",
+    "title": "最后一课",
+    "author": "阿尔丰斯·都德",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:10:14.221Z"
+  },
+  {
+    "bookId": "hugo-1996-stephenson",
+    "title": "钻石时代",
+    "author": "尼尔·斯蒂芬森",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:10:40.773Z"
+  },
+  {
+    "bookId": "booker-2002-martel",
+    "title": "少年Pi的奇幻漂流",
+    "author": "扬·马特尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:10:51.228Z"
+  },
+  {
+    "bookId": "lux-2-s-hong",
+    "title": "吹牛",
+    "author": "红柯",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:10:58.810Z"
+  },
+  {
+    "bookId": "tb-mopassant-uncle",
+    "title": "我的叔叔于勒",
+    "author": "莫泊桑",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:11:38.990Z"
+  },
+  {
+    "bookId": "lux-1-d-wang",
+    "title": "春宽梦窄",
+    "author": "王充闾",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:11:45.163Z"
+  },
+  {
+    "bookId": "cerv-1987-fuentes",
+    "title": "最明净的地区",
+    "author": "卡洛斯·富恩特斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:12:06.744Z"
+  },
+  {
+    "bookId": "booker-2021-galgut",
+    "title": "承诺",
+    "author": "达蒙·加尔古特",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:12:16.275Z"
+  },
+  {
+    "bookId": "hugo-1973-asimov",
+    "title": "神们自己",
+    "author": "艾萨克·阿西莫夫",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:12:17.675Z"
+  },
+  {
+    "bookId": "lux-2-p-cao",
+    "title": "纯粹阳光",
+    "author": "曹宇翔",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:12:32.702Z"
+  },
+  {
+    "bookId": "tb-man-in-case",
+    "title": "装在套子里的人",
+    "author": "契诃夫",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:13:06.273Z"
+  },
+  {
+    "bookId": "lux-5-s-su",
+    "title": "茨菰",
+    "author": "苏童",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:13:19.379Z"
+  },
+  {
+    "bookId": "bk-in-006",
+    "title": " 午夜的孩子",
+    "author": "萨尔曼·拉什迪",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:13:31.901Z"
+  },
+  {
+    "bookId": "bk-af-001",
+    "title": "饥饿之路",
+    "author": "本·奥克里",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:13:44.903Z"
+  },
+  {
+    "bookId": "pul-1928-wilder",
+    "title": "圣路易斯雷大桥",
+    "author": "桑顿·怀尔德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:13:44.982Z"
+  },
+  {
+    "bookId": "lux-1-d-zhao",
+    "title": "从这里到永恒",
+    "author": "赵玫",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:14:04.667Z"
+  },
+  {
+    "bookId": "lux-6-m-hu",
+    "title": "从正午开始的黄昏",
+    "author": "胡学文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:14:49.831Z"
+  },
+  {
+    "bookId": "lux-7-s-ma",
+    "title": "1987年的浆水和酸菜",
+    "author": "马金莲",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:14:58.088Z"
+  },
+  {
+    "bookId": "cerv-1999-edwards",
+    "title": "石头客栈",
+    "author": "豪尔赫·爱德华兹",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:15:13.652Z"
+  },
+  {
+    "bookId": "lux-8-d-li-fang",
+    "title": "大春秋",
+    "author": "李舫",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:15:59.800Z"
+  },
+  {
+    "bookId": "booker-2021-galgut",
+    "title": "承诺",
+    "author": "达蒙·加尔古特",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:16:17.943Z"
+  },
+  {
+    "bookId": "booker-1983-coetzee",
+    "title": "迈克尔·K的生活与时代",
+    "author": "J.M. 库切",
+    "source": "award",
+    "continent": "africa",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:16:20.002Z"
+  },
+  {
+    "bookId": "maodun-2008-mai",
+    "title": "暗算",
+    "author": "麦家",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:16:42.182Z"
+  },
+  {
+    "bookId": "pul-1999-cunningham",
+    "title": "时时刻刻",
+    "author": "迈克尔·坎宁安",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:16:53.019Z"
+  },
+  {
+    "bookId": "lux-4-p-lin",
+    "title": "大地葵花",
+    "author": "林雪",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:16:58.753Z"
   }
 ]

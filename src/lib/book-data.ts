@@ -3188,35 +3188,29 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "the-color-purple": {
     id: "the-color-purple",
     characters: [
-      { name: "The Color Purple", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Alice Walker", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Pulitzer Prize", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Walker", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "African American", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Pulitzer", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Black English Vernacular", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "The Color Purple", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "Need", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "Alice Walker", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "Check", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "From", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "Scribd", role: "角色", description: "the-color-purple 中的主要角色。" },
+      { name: "Celie", role: "角色", description: "the-color-purple 中的主要角色。" }
     ],
-    plotSummary: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
+    plotSummary: "[The Color Purple by Alice Walker| Summary, Analysis, Plot, Themes ...] Hear Celie's Story Bloom: Unpacking \"The Color Purple\" in Audio Journey through hardship and hope with Celie in this audiobook deep dive of ...\n\n[Color Purple: Storyboard That's Theme & Symbol Analysis] The Color Purple explores key themes like identity, overcoming adversity, true loyalty, defining happiness, and spiritual connection. The novel follows Celie ...\n\n[The Color Purple: Themes | SparkNotes] The Color Purple Themes · The Power of Narrative and Voice · The Power of Strong Female Relationships · The Cyclical Nature of Racism and Sexism · The Disruption of ...\n\n[The Color Purple Character Analysis - LitCharts] Need help on characters in Alice Walker's The Color Purple? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[The Color Purple: Summary, Themes & Review] 2.2 Sisterhood and Solidarity. With a few exceptions, the men in The Color Purple are abusive, violent and rather sa",
     plotNodes: [
-      { label: "第 1 部分", description: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction." }
+      { label: "Part 1", description: "[The Color Purple by Alice Walker| Summary, Analysis, Plot, Themes ...] Hear Celie's Story Bloom: Unpacking \"The Color Purple\" in Audio Journey through hardship and hope with Celie in this audiobook d" },
+      { label: "Part 2", description: "[Color Purple: Storyboard That's Theme & Symbol Analysis] The Color Purple explores key themes like identity, overcoming adversity, true loyalty, defining happiness, and spiritual connection." },
+      { label: "Part 3", description: "[The Color Purple: Themes | SparkNotes] The Color Purple Themes · The Power of Narrative and Voice · The Power of Strong Female Relationships · The Cyclical Nature of Racism and Sexism · The Disruptio" },
+      { label: "Part 4", description: "[The Color Purple Character Analysis - LitCharts] Need help on characters in Alice Walker's The Color Purple?" },
+      { label: "Part 5", description: "[The Color Purple: Summary, Themes & Review] 2.2 Sisterhood and Solidarity." }
     ],
-    themeAnalysis: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
-    techniques: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
-    excerpts: [],
-    insights: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
-    sourceAttribution: {
-      sources: [
-        { label: "Britannica", url: "https://www.britannica.com/topic/the-color-purple", tier: "reference", fetchedAt: "2026-05-21T07:42:20.620Z", contributedFields: ["plotSummary", "themeAnalysis"] },
-      ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=the-color-purple" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=the-color-purple" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=the-color-purple" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=the-color-purple" },
-      ],
-    },
+    themeAnalysis: "[The Color Purple by Alice Walker| Summary, Analysis, Plot, Themes ...] Hear Celie's Story Bloom: Unpacking \"The Color Purple\" in Audio Journey through hardship and hope with Celie in this audiobook deep dive of ...\n\n[Character Analysis in The Color Purple | PDF - Scribd] In 'The Color Purple', how does the relationship between Celie and Albert evolve, and what does it signify about the themes of change and forgiveness? Initially ...\n\n[Color Purple: Storyboard That's Theme & Symbol Analysis] The Color Purple explores key themes like identity, overcoming adversity, true loyalty, defining happiness, and spiritual connection. The novel follows Celie ...\n\n[The Color Purple: Themes | SparkNotes] The Color Purple Themes · The Power of Narrative and Voice · The Power of Strong Female Relationship",
+    techniques: "[The Color Purple: Themes | SparkNotes] The Color Purple Themes · The Power of Narrative and Voice · The Power of Strong Female Relationships · The Cyclical Nature of Racism and Sexism · The Disruption of ...\n\n[The Color Purple: Analysis of Setting | Literature and Writing - EBSCO] \"The Color Purple: Analysis of Setting\" examines the significance of various locations in Alice Walker's novel, emphasizing how these settings shape the ...",
+    excerpts: [
+      { quote: "The Color Purple: Analysis of Setting", context: "From the-color-purple" }
+    ],
+    insights: "[The Color Purple: Themes | SparkNotes] The Color Purple Themes · The Power of Narrative and Voice · The Power of Strong Female Relationships · The Cyclical Nature of Racism and Sexism · The Disruption of ...\n\n[The Color Purple Character Analysis - LitCharts] Need help on characters in Alice Walker's The Color Purple? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[The Color Purple by Alice Walker| Summary, Analysis, Plot, Themes ...] Hear Celie's Story Bloom: Unpacking \"The Color Purple\" in Audio Journey through hardship and hope with Celie in this audiobook",
   },
 
   "as-i-lay-dying": {
@@ -3277,5 +3271,119 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     techniques: "[Computaional Chemistry Research Papers - Academia.edu] 2021, International Journal of Current Research and Review. Background: Drug-Resistant Tuberculosis (TB) resurrection over the globe broadens the research ...\n\n[Full text of \"Notes and queries\" - Internet Archive] ... T. B. RESURRECTION MEN. — The Messrs. Chambers, in their Book of Days, give an account of this class of men.",
     excerpts: [],
     insights: "[Computaional Chemistry Research Papers - Academia.edu] 2021, International Journal of Current Research and Review. Background: Drug-Resistant Tuberculosis (TB) resurrection over the globe broadens the research ...\n\n[Full text of \"Notes and queries\" - Internet Archive] ... T. B. RESURRECTION MEN. — The Messrs. Chambers, in their Book of Days, give an account of this class of men.",
+  },
+
+  "nobel-1978-singer": {
+    id: "nobel-1978-singer",
+    characters: [
+      { name: "Nobel Lecture", role: "角色", description: "\"nobel-1978-singer\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "December", role: "角色", description: "\"nobel-1978-singer\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Les Prix Nobel", role: "角色", description: "\"nobel-1978-singer\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Singer", role: "角色", description: "\"nobel-1978-singer\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Universe", role: "角色", description: "\"nobel-1978-singer\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "[50 nobel laureates and other great scientists who believe in god] In his Nobel Lecture (8 December 1978, Les Prix Nobel 1978) Singer said: “I can never accept the idea that the Universe is a physical or ...",
+    plotNodes: [
+      { label: "第 1 部分", description: "[50 nobel laureates and other great scientists who believe in god] In his Nobel Lecture (8 December 1978, Les Prix Nobel 1978) Singer said: “I can never accept the idea that the Universe is a physical" }
+    ],
+    themeAnalysis: "[50 nobel laureates and other great scientists who believe in god] In his Nobel Lecture (8 December 1978, Les Prix Nobel 1978) Singer said: “I can never accept the idea that the Universe is a physical or ...",
+    techniques: "[50 nobel laureates and other great scientists who believe in god] In his Nobel Lecture (8 December 1978, Les Prix Nobel 1978) Singer said: “I can never accept the idea that the Universe is a physical or ...",
+    excerpts: [],
+    insights: "[50 nobel laureates and other great scientists who believe in god] In his Nobel Lecture (8 December 1978, Les Prix Nobel 1978) Singer said: “I can never accept the idea that the Universe is a physical or ...",
+  },
+
+  "el-senor-presidente": {
+    id: "el-senor-presidente",
+    characters: [
+      { name: "El Se", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "Presidente", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "Liverpool University Press", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "El Senor Presidente", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "With", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "Cara", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "Angel", role: "角色", description: "el-senor-presidente 中的主要角色。" },
+      { name: "Presidente Characters", role: "角色", description: "el-senor-presidente 中的主要角色。" }
+    ],
+    plotSummary: "[El Señor Presidente Summary - eNotes.com] El Señor Presidente by Miguel Ángel Asturias is the story of people living under a corrupt dictator. The novel focuses on the President's advisor, ...\n\n[El Señor Presidente: A Literary Analysis | PDF | General Fiction] The document provides an in-depth summary and analysis of Miguel Ángel Asturias' novel \"El Señor Presidente\". It discusses how the novel was influential in ...\n\n[\"El SeÃ±or Presidente\" and how to read it - Liverpool University Press] the characters in El Senor Presidente ever really reflects for the sake of reflection. With the partial exception of Cara de Angel, their thoughts and ...\n\n[Babylonian Mythology in \"El Señor Presidente\" - jstor] \"EL SENOR PRESIDENTE\". RICHARD J. CALLAN. Saint Louis University. AS ONE of the most distinguished and widely read novels of Miguel Angel. Asturias, El Seiior ...\n\n[El Señor Presidente Themes - eNotes.com] Discussion of themes and motifs in Miguel Ángel Asturias's El Señor Presidente ... Loy",
+    plotNodes: [
+      { label: "Part 1", description: "[El Señor Presidente Summary - eNotes.com] El Señor Presidente by Miguel Ángel Asturias is the story of people living under a corrupt dictator." },
+      { label: "Part 2", description: "[El Señor Presidente: A Literary Analysis | PDF | General Fiction] The document provides an in-depth summary and analysis of Miguel Ángel Asturias' novel \"El Señor Presidente\"." },
+      { label: "Part 3", description: "[\"El SeÃ±or Presidente\" and how to read it - Liverpool University Press] the characters in El Senor Presidente ever really reflects for the sake of reflection." },
+      { label: "Part 4", description: "[Babylonian Mythology in \"El Señor Presidente\" - jstor] \"EL SENOR PRESIDENTE\"." },
+      { label: "Part 5", description: "[El Señor Presidente Themes - eNotes.com] Discussion of themes and motifs in Miguel Ángel Asturias's El Señor Presidente ..." }
+    ],
+    themeAnalysis: "[El Señor Presidente Themes - eNotes.com] Discussion of themes and motifs in Miguel Ángel Asturias's El Señor Presidente ... Loyalty is a major theme in the novel. Miguel Angel Face is the ...\n\n[El Señor Presidente: A Literary Analysis | PDF | General Fiction] The document provides an in-depth summary and analysis of Miguel Ángel Asturias' novel \"El Señor Presidente\". It discusses how the novel was influential in ...\n\n[El Señor Presidente Characters - eNotes.com] Analysis and discussion of characters in Miguel Ángel Asturias's El Señor Presidente.",
+    techniques: "[El Señor Presidente: A Literary Analysis | PDF | General Fiction] The document provides an in-depth summary and analysis of Miguel Ángel Asturias' novel \"El Señor Presidente\". It discusses how the novel was influential in ...",
+    excerpts: [
+      { quote: "El SeÃ±or Presidente", context: "From el-senor-presidente" }
+    ],
+    insights: "[El Señor Presidente - Wikipedia] A landmark text in Latin American literature, El Señor Presidente explores the nature of political dictatorship and its effects on society.\n\n[El Señor Presidente Summary - eNotes.com] El Señor Presidente by Miguel Ángel Asturias is the story of people living under a corrupt dictator. The novel focuses on the President's advisor, ...\n\n[\"El SeÃ±or Presidente\" and how to read it - Liverpool University Press] the characters in El Senor Presidente ever really reflects for the sake of reflection. With the partial exception of Cara de Angel, their thoughts and ...\n\n[",
+  },
+
+  "the-interpreters": {
+    id: "the-interpreters",
+    characters: [
+      { name: "Introduces", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "Egbo", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "Bandele", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "Sagoe", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "Sekoni", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "The Interpreters", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "Nigerian", role: "角色", description: "the-interpreters 中的主要角色。" },
+      { name: "Biafra War", role: "角色", description: "the-interpreters 中的主要角色。" }
+    ],
+    plotSummary: "[[PDF] STRUCTURE IN WOLE SOYINKA'S THE INTERPRETERS] ABSTRACT: This paper examines the plot structure of Wole Soyinka's The Interpreters. The novel has been adjudged difficult in terms of language especially ...\n\n[Analysis of Wole Soyinka's The Interpreters] A thoughtful and often heavily satirical novel, The Interpreters does not have a traditional, linear plot, but moves around in time, often ...\n\n[Introduces the five main characters: Egbo, Bandele, Sagoe, Sekoni ...] The Interpreters (1965) - a novel that examines the experiences of Nigerian intellectuals during the Biafra War. ○The Lion and the Jewel (1963) ...\n\n[The Interpreters | novel by Soyinka - Britannica] Though he considers himself primarily a playwright, Soyinka also published the novels The Interpreters (1965), Season of Anomy (1973), and Chronicles from the ...\n\n[The Interpreters Analysis | Literature PADI] Summary: The major themes in The Interpreters include the conflict between tradition and modernity, the moral decay",
+    plotNodes: [
+      { label: "Part 1", description: "[[PDF] STRUCTURE IN WOLE SOYINKA'S THE INTERPRETERS] ABSTRACT: This paper examines the plot structure of Wole Soyinka's The Interpreters." },
+      { label: "Part 2", description: "[Analysis of Wole Soyinka's The Interpreters] A thoughtful and often heavily satirical novel, The Interpreters does not have a traditional, linear plot, but moves around in time, often ..." },
+      { label: "Part 3", description: "[Introduces the five main characters: Egbo, Bandele, Sagoe, Sekoni ...] The Interpreters (1965) - a novel that examines the experiences of Nigerian intellectuals during the Biafra War." },
+      { label: "Part 4", description: "[The Interpreters | novel by Soyinka - Britannica] Though he considers himself primarily a playwright, Soyinka also published the novels The Interpreters (1965), Season of Anomy (1973), and Chronicles" },
+      { label: "Part 5", description: "[The Interpreters Analysis | Literature PADI] Summary: The major themes in The Interpreters include the conflict between tradition and modernity, the moral decay" }
+    ],
+    themeAnalysis: "[The Interpreters Analysis | Literature PADI] Summary: The major themes in The Interpreters include the conflict between tradition and modernity, the moral decay of post-independence Nigeria ...\n\n[Analysis of Wole Soyinka's The Interpreters] A thoughtful and often heavily satirical novel, The Interpreters does not have a traditional, linear plot, but moves around in time, often ...\n\n[Understanding Wole Soyinka's The Interpreters - Academia.edu] The analysis of Wole Soyinka's novel \"The Interpreters\" reveals its portrayal of the post-Independence Nigerian society through the perspectives of its five ...\n\n[A SOCIOLINGUISTIC ANALYSIS OF WOLE SOYINKA'S ... - ProQuest] Chapter 7 concludes that the language of The Interpreters has considerable aesthetic value. It parodies the linguistic arroganc",
+    techniques: "[[PDF] STRUCTURE IN WOLE SOYINKA'S THE INTERPRETERS] ABSTRACT: This paper examines the plot structure of Wole Soyinka's The Interpreters. The novel has been adjudged difficult in terms of language especially ...",
+    excerpts: [],
+    insights: "[The Interpreters | novel by Soyinka - Britannica] Though he considers himself primarily a playwright, Soyinka also published the novels The Interpreters (1965), Season of Anomy (1973), and Chronicles from the ...\n\n[Analysis of Wole Soyinka's The Interpreters] A thoughtful and often heavily satirical novel, The Interpreters does not have a traditional, linear plot, but moves around in time, often ...\n\n[The Interpreters Analysis | Literature PADI] Summary: The major themes in The Interpreters include the conflict between tradition and modernity, the moral decay of post-independence Nigeria ...",
+  },
+
+  "tb-last-class": {
+    id: "tb-last-class",
+    characters: [
+      { name: "Indiana State Sentinel", role: "角色", description: "\"tb-last-class\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "January", role: "角色", description: "\"tb-last-class\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Hoosier State", role: "角色", description: "\"tb-last-class\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Legislature", role: "角色", description: "\"tb-last-class\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "[Page 4 — Indiana State Sentinel 12 January 1875 — Hoosier State ...] It is integard to tbe disposition to be tnade of tb last class, whkh may be described as the chrcnic insane., that the overror appeals to th Legislature ...",
+    plotNodes: [
+      { label: "第 1 部分", description: "[Page 4 — Indiana State Sentinel 12 January 1875 — Hoosier State ...] It is integard to tbe disposition to be tnade of tb last class, whkh may be described as the chrcnic insane., that the overror app" }
+    ],
+    themeAnalysis: "[Page 4 — Indiana State Sentinel 12 January 1875 — Hoosier State ...] It is integard to tbe disposition to be tnade of tb last class, whkh may be described as the chrcnic insane., that the overror appeals to th Legislature ...",
+    techniques: "[Page 4 — Indiana State Sentinel 12 January 1875 — Hoosier State ...] It is integard to tbe disposition to be tnade of tb last class, whkh may be described as the chrcnic insane., that the overror appeals to th Legislature ...",
+    excerpts: [],
+    insights: "[Page 4 — Indiana State Sentinel 12 January 1875 — Hoosier State ...] It is integard to tbe disposition to be tnade of tb last class, whkh may be described as the chrcnic insane., that the overror appeals to th Legislature ...",
+  },
+
+  "cairo-trilogy": {
+    id: "cairo-trilogy",
+    characters: [
+      { name: "Palace Walk Background", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "Cairo Trilogy", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "The Cinematic Cairene", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "House", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "Cairo Trilogy Films", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "Indeed", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "Gamaliyya", role: "角色", description: "cairo-trilogy 中的主要角色。" },
+      { name: "Thus", role: "角色", description: "cairo-trilogy 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore Palace Walk and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Palace Walk Naguib Mahfouz Palace Walk Naguib Mahfouz 54 pages • 1-hour read Naguib Mahfouz Palace Walk Fiction | Novel | Adult | Published in 1956 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-14 Chapters 15-28 Chapters 29-42 Chapters 43-56 Chapters 57-71 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Background Authorial Context: Naguib Mahfouz and the Cairo Trilogy Naguib Mahfouz was born on Decem",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore Palace Walk and its meaning." },
+      { label: "Part 2", description: "Study Guide Palace Walk Naguib Mahfouz Palace Walk Naguib Mahfouz 54 pages • 1-hour read Naguib Mahfouz Palace Walk Fiction | Novel | Adult | Published in 1956 A modern alternative to SparkNotes and C" }
+    ],
+    themeAnalysis: "Get ready to explore Palace Walk and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Palace Walk Naguib Mahfouz Palace Walk Naguib Mahfouz 54 pages • 1-hour read Naguib Mahfouz Palace Walk Fiction | Novel | Adult | Published in 1956 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-14 Chapters 15-28 Chapters 29-42 Chapters 43-56 Chapters 57-71 Character Analysis",
+    techniques: "Get ready to explore Palace Walk and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Palace Walk Naguib Mahfouz Palace Walk Naguib Mahfouz 54 pages • 1-hour read Naguib Mahfouz Palace Walk Fiction | Novel | Adult | Published in 1956 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF P",
+    excerpts: [],
+    insights: "[Palace Walk Background | SuperSummary] The characters in the Cairo Trilogy often embody broader societal archetypes, and as such, their individual journeys serve as metaphors for the collective ...\n\n[Cairo Trilogy - Wikipedia] The Cairo Trilogy is a trilogy of novels written by the Egyptian novelist and Nobel Prize in Literature winner Naguib Mahfouz, and one of the major works of ...\n\n[Analysis of Naguib Mahfouz's The Cairo Trilogy] The Cairo Trilogy tells the story of patriarch al-Sayyid Ahmad Abd al-Jawad and his family over the course of more than 30 years, from World War I to eight ...",
   },
 };
