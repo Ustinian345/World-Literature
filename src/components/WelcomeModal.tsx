@@ -10,22 +10,36 @@ const GREETINGS = [
 ];
 
 export default function WelcomeModal() {
-  const { data: session, update } = useSession();
+  const { data: session } = useSession();
   const [visible, setVisible] = useState(false);
   const [userNumber, setUserNumber] = useState(0);
   const [greeting, setGreeting] = useState("");
 
   useEffect(() => {
     const u = session?.user as unknown as Record<string, unknown> | undefined;
-    if (u?.isNewUser) {
-      const num = (u.userNumber as number) || 0;
-      setUserNumber(num);
-      setGreeting(GREETINGS[num % GREETINGS.length]);
+    const email = session?.user?.email || "";
+
+    // 三个条件同时满足才弹窗：
+    // 1. 是新注册用户（isNewUser = true）
+    // 2. 用户编号有效
+    // 3. 该邮箱从未弹过窗（localStorage）
+    if (u?.isNewUser && u?.userNumber && email) {
+      const key = `wl-welcome-shown-${email}`;
+      if (localStorage.getItem(key)) return;
+
+      setUserNumber(u.userNumber as number);
+      setGreeting(GREETINGS[(u.userNumber as number) % GREETINGS.length]);
       setVisible(true);
-      // 清除 isNewUser 标记（弹窗不再显示）
-      update();
     }
-  }, [session, update]);
+  }, [session]);
+
+  function handleDismiss() {
+    const email = session?.user?.email || "";
+    if (email) {
+      localStorage.setItem(`wl-welcome-shown-${email}`, "1");
+    }
+    setVisible(false);
+  }
 
   if (!visible) return null;
 
@@ -61,7 +75,7 @@ export default function WelcomeModal() {
           </div>
 
           <button
-            onClick={() => setVisible(false)}
+            onClick={handleDismiss}
             className="rounded-xl bg-umber px-8 py-3 font-heading-cn text-sm font-medium text-cream shadow-lg transition-all hover:bg-umber/90 hover:shadow-xl active:scale-95"
           >
             开始探索

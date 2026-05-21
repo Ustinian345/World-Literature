@@ -12,18 +12,16 @@ const _users: Array<{
 // 暴露到 globalThis 供 API 路由访问
 (globalThis as Record<string, unknown>)._authUsers = _users;
 
-let _userCount = _users.length;
-
 function findUser(email: string) {
   return _users.find((u) => u.email.toLowerCase() === email.toLowerCase()) || null;
 }
 
 function createUser(email: string, password: string, name: string) {
   if (findUser(email)) return null;
-  _userCount++;
   const user = { email: email.toLowerCase(), password, name, createdAt: new Date().toISOString() };
   _users.push(user);
-  return { email: user.email, name: user.name, isNew: true, userNumber: _userCount };
+  // userNumber = _users.length（push 之后的长度，动态递增）
+  return { email: user.email, name: user.name, isNew: true, userNumber: _users.length };
 }
 
 export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = NextAuth({
@@ -69,16 +67,14 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
     }),
   ],
   callbacks: {
-    async jwt({ token, user, account, trigger }) {
+    async jwt({ token, user, account }) {
       if (user) {
         token.id = user.id || user.email || "";
         token.name = user.name || "";
-        token.isNewUser = (user as Record<string, unknown>).isNewUser === true;
-        token.userNumber = ((user as Record<string, unknown>).userNumber as number) || 0;
-      }
-      // 首次读取 session 时清除 new user 标记（弹窗只显示一次）
-      if (trigger === "update" && token.isNewUser) {
-        token.isNewUser = false;
+        // 仅新注册用户设置 isNewUser（登录用户不设置）
+        const u = user as Record<string, unknown>;
+        token.isNewUser = u.isNewUser === true;
+        token.userNumber = (u.userNumber as number) || 0;
       }
       if (account?.provider === "google") token.provider = "google";
       return token;
