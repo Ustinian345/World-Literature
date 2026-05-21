@@ -2234,19 +2234,32 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "huckleberry-finn": {
     id: "huckleberry-finn",
-    plotSummary: "《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权利的进步主张。小说用第一人称叙述，大量运用\n《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。 [32]\n\n小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。 [12]小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权利的进步主张。 [10]小说用第一人称叙述，大量运用了美国南方方言，文字清新，风趣幽默。 [25]\n\n该小说在美国出版后虽不断遭到查禁，但仍得到批评家高度评价，受到读者欢迎。 [25]鲜明的主题思想和独特的艺术风格使它成了马克·吐温的代表作，也成为19世纪美国批判现实主义文学的巅峰之作。 [20]该小说是美国文学史上被人讨论最多的作品之一，也是被改编成电影次数最多的美国小说。 [9]\n\n在1850年前后的美国——",
-    plotNodes: [
-      { label: "Part 1", description: "《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准" },
-      { label: "Part 2", description: "小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终" },
-      { label: "Part 3", description: "该小说在美国出版后虽不断遭到查禁，但仍得到批评家高度评价，受到读者欢迎。" }
+    characters: [
+      { name: "The Adventures", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Huckleberry Finn", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Huckleberry", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Huck", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Finn", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "Adventures of Huckleberry Finn 中的主要角色。" }
     ],
-    themeAnalysis: "《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权利的进步主张。小说用第一人称叙述，大量运用\n《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。 [32]\n\n小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。 [12]小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权利的进步主张。",
+    plotSummary: "[A Summary and Analysis on Characters, Themes and Mark Twain] Today's lesson gives you a first hand look at Mark Twain and The Adventures of Huckleberry Finn! How do you read a novel or non-fiction work ...\n\n《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权利的进步主张。小说用第一人称叙述，大量运用\n《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。 [32]\n\n小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。 [12]小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权",
+    plotNodes: [
+      { label: "Part 1", description: "[A Summary and Analysis on Characters, Themes and Mark Twain] Today's lesson gives you a first hand look at Mark Twain and The Adventures of Huckleberry Finn!" },
+      { label: "Part 2", description: "《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准" },
+      { label: "Part 3", description: "小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终" }
+    ],
+    themeAnalysis: "[Adventures of Huckleberry Finn Study Guide - LitCharts] In-depth summary and analysis of every chapter of Adventures of Huckleberry Finn. Visual theme-tracking, too.\n\n[The Adventures of Huckleberry Finn: Themes and Analysis - Video] This video explores the lasting impact and themes of Mark Twain's \"The Adventures of Huckleberry Finn.\" The novel's messages of friendship, independence, and ...\n\n[A Summary and Analysis on Characters, Themes and Mark Twain] Today's lesson gives you a first hand look at Mark Twain and The Adventures of Huckleberry Finn! How do you read a novel or non-fiction work ...\n\n[Adventures of Huckleberry Finn: Analysis of Major Characters] \"Adventures of Huckleberry Finn,\" written by Mark Twain, features a rich tapestry of characters that illuminate themes of race, mora",
     techniques: "",
-    excerpts: [],
-    insights: "《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密西西比河而下，准备逃到不买卖黑奴的自由州去。一路上他们经常上岸，遇见过各种各样的人。最后他们也没能达到目的地，但吉姆的主人临终前给了他自由，他再也不需要逃亡了。小说通过白人小孩哈克跟逃亡黑奴吉姆结伴在密西西比河流浪的故事，不仅批判封建家庭结仇械斗的野蛮，揭露私刑的毫无人性，而且讽刺宗教的虚伪愚昧，谴责蓄奴制度的罪恶，并歌颂了黑奴的优秀品质，宣传不分种族地位人人都享有自由权利的进步主张。小说用第一人称叙述，大量运用\n《哈克贝利·费恩历险记》是美国作家马克·吐温创作的长篇小说，为《汤姆·索亚历险记》的续集，1884年首次出版。 [32]\n\n小说描写哈克被道格拉斯寡妇收养后，对资产阶级家庭刻板单调的生活极不习惯，对学校的死板教育也感到厌烦，一心向往自由的生活。此时，他的酒鬼父亲突然归来，强行把他带到森林，过起了渔猎生活。但父亲常常发酒疯毒打他。哈克设计逃走，在一个小岛上遇到逃亡黑奴吉姆。二人结伴同行，乘木筏顺密",
+    excerpts: [
+      { quote: "The Adventures of Huckleberry Finn.", context: "From Adventures of Huckleberry Finn" },
+      { quote: "Adventures of Huckleberry Finn,", context: "From Adventures of Huckleberry Finn" }
+    ],
+    insights: "[Adventures of Huckleberry Finn - Wikipedia] Adventures of Huckleberry Finn is an often scathing satire on entrenched attitudes, particularly racism.\n\n[Adventures of Huckleberry Finn Study Guide - LitCharts] In-depth summary and analysis of every chapter of Adventures of Huckleberry Finn. Visual theme-tracking, too.\n\n[The Adventures of Huckleberry Finn: Character List | SparkNotes] A list of all the characters in The Adventures of Huckleberry Finn. The Adventures of Huckleberry Finn characters include: Huckleberry “Huck” Finn, ...\n\n[The Adventures of Huckleberry Finn: Themes and Analysis - Vid",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%93%88%E5%85%8B%E8%B4%9D%E5%88%A9%C2%B7%E8%B4%B9%E6%81%A9%E5%8E%86%E9%99%A9%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:10:07.538Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%93%88%E5%85%8B%E8%B4%9D%E5%88%A9%C2%B7%E8%B4%B9%E6%81%A9%E5%8E%86%E9%99%A9%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:54:26.000Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

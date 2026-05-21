@@ -196,5 +196,14 @@
     "continent": "oceania",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:53:50.243Z"
+  },
+  {
+    "bookId": "tb-hongxing",
+    "title": "红星照耀中国",
+    "author": "埃德加·斯诺",
+    "source": "textbook",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T04:54:35.146Z"
   }
 ]
