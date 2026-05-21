@@ -457,5 +457,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:25:21.802Z"
+  },
+  {
+    "bookId": "tb-luxun-5",
+    "title": "故乡",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:26:07.095Z"
   }
 ]
