@@ -583,5 +583,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:36:01.814Z"
+  },
+  {
+    "bookId": "tb-wzq-1",
+    "title": "昆明的雨",
+    "author": "汪曾祺",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:36:47.491Z"
   }
 ]
