@@ -1952,16 +1952,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "the-palm-wine-drinkard": {
     id: "the-palm-wine-drinkard",
-    plotSummary: "The Palm-Wine Drinkard (subtitled \"and His Dead Palm-Wine Tapster in the Dead's Town\") is a novel published in 1952 by the Nigerian author Amos Tutuola. The first African novel published in English outside of Africa, this quest tale based on Yoruba folktales is written in a modified English or Pidgin English. In it, a man follows his brewer into the land of the dead, encountering many spirits and adventures.",
-    themeAnalysis: "The Palm-Wine Drinkard (subtitled \"and His Dead Palm-Wine Tapster in the Dead's Town\") is a novel published in 1952 by the Nigerian author Amos Tutuola. The first African novel published in English outside of Africa, this quest tale based on Yoruba folktales is written in a modified English or Pidgin English.",
-    techniques: "The Palm-Wine Drinkard (subtitled \"and His Dead Palm-Wine Tapster in the Dead's Town\") is a novel published in 1952 by the Nigerian author Amos Tutuola. The first African novel published in English outside of Africa, this quest tale based on Yoruba folktales is written in a modified English or Pidgin English.",
-    excerpts: [
-      { quote: "and His Dead Palm-Wine Tapster in the Dead's Town", context: "From The Palm-Wine Drinkard" }
+    characters: [
+      { name: "The Palm", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Wine Drinkard Characters", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Wine Drinkard", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Amos Tutuola", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Plot Summary", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" },
+      { name: "Chapter Summaries", role: "角色", description: "The Palm-Wine Drinkard 中的主要角色。" }
     ],
-    insights: "The Palm-Wine Drinkard (subtitled \"and His Dead Palm-Wine Tapster in the Dead's Town\") is a novel published in 1952 by the Nigerian author Amos Tutuola. The first African novel published in English outside of Africa, this quest tale based on Yoruba folktales is written in a modified English or Pidgin English.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Palm-Wine%20Drinkard"
-    // }
+    plotSummary: "[The Palm-Wine Drinkard by Amos Tutuola l Summary & Study Guide] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...\n\n[[Solved] Plot dramatic elements thematic preoccupation ... - Studocu] \"The Palm-Wine Drinkard\" is a novel written by Amos Tutuola, a Nigerian author. It tells the story of a young man, the drinkard, who embarks on a journey to ...\n\n[The Palm-Wine Drinkard Characters - eNotes.com] The main characters in The Palm-Wine Drinkard are the narrator, the palm-wine tapster, and the narrator's wife. The narrator is the novel's protagonist, ...\n\n[CHARACTERS AND JOURNEY IN AMOS TUTUOLA'S THE PALM ...] This project work deals with a critical analysis of characters and their journey using the novels of Amos Tutuola's The Palm- wine Drinkard and Gabriel A.\n\n[The Palm-Wine Drinkard: Analysis of Setting | Literature and Writing] The narrative follows the journey of the palm-w",
+    plotNodes: [
+      { label: "Part 1", description: "[The Palm-Wine Drinkard by Amos Tutuola l Summary & Study Guide] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles" },
+      { label: "Part 2", description: "[[Solved] Plot dramatic elements thematic preoccupation ..." },
+      { label: "Part 3", description: "[The Palm-Wine Drinkard Characters - eNotes.com] The main characters in The Palm-Wine Drinkard are the narrator, the palm-wine tapster, and the narrator's wife." },
+      { label: "Part 4", description: "[CHARACTERS AND JOURNEY IN AMOS TUTUOLA'S THE PALM ...] This project work deals with a critical analysis of characters and their journey using the novels of Amos Tutuola's The Palm- wine Drinkard and " },
+      { label: "Part 5", description: "[The Palm-Wine Drinkard: Analysis of Setting | Literature and Writing] The narrative follows the journey of the palm-w" }
+    ],
+    themeAnalysis: "[The Palm-Wine Drinkard by Amos Tutuola l Summary & Study Guide] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...\n\n[The Palm-Wine Drinkard: Analysis of Setting | Literature and Writing] The narrative follows the journey of the palm-wine drinkard and his wife as they traverse a wild and uncharted bush that evokes both the natural beauty and ...\n\n[Summary and analysis of The Palm Wine Drinkard by Amos Tutuola] This content isn't available. Summary and analysis of The Palm Wine Drinkard by Amos Tutuola. 2.8K views · 11 months ago ...more. English ...\n\n[CHARACTERS AND JOURNEY IN AMOS TUTUOLA'S THE PALM ...] This project work deals with a critical analysis of characters and their j",
+    techniques: "[The Palm-Wine Drinkard: Analysis of Setting | Literature and Writing] The narrative follows the journey of the palm-wine drinkard and his wife as they traverse a wild and uncharted bush that evokes both the natural beauty and ...\n\n[The Palm-Wine Drinkard by Amos Tutuola l Summary & Study Guide] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...",
+    excerpts: [
+      { quote: "The Palm-Wine Drinkard", context: "From The Palm-Wine Drinkard" }
+    ],
+    insights: "[The Palm-wine Drinkard and His Dead Palm-wine Tapster in the Dead] When the palm-wine drinkard hears that the dead do not go straight to heaven but live in other towns, he decides to go find his dead tapster. The drinkard is ...\n\n[The Palm-Wine Drinkard: Analysis of Setting | Literature and Writing] The narrative follows the journey of the palm-wine drinkard and his wife as they traverse a wild and uncharted bush that evokes both the natural beauty and ...\n\n[The Palm-Wine Drinkard Characters - eNotes.com] The main characters in The Palm-Wine Drinkard are the narrator, the palm-wine tapster, a",
   },
 
   "mine-boy": {
@@ -2488,14 +2502,28 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "oscar-and-lucinda": {
     id: "oscar-and-lucinda",
-    plotSummary: "Oscar and Lucinda is a novel by Australian author Peter Carey. It won the 1988 Booker Prize the year it was released, and the 1989 Miles Franklin Award. It was shortlisted in 2008 for The Best of the Booker, in celebration of the prize's 40th anniversary.",
-    themeAnalysis: "Oscar and Lucinda is a novel by Australian author Peter Carey. It won the 1988 Booker Prize the year it was released, and the 1989 Miles Franklin Award. It was shortlisted in 2008 for The Best of the Booker, in celebration of the prize's 40th anniversary.",
-    techniques: "Oscar and Lucinda is a novel by Australian author Peter Carey. It won the 1988 Booker Prize the year it was released, and the 1989 Miles Franklin Award. It was shortlisted in 2008 for The Best of the Booker, in celebration of the prize's 40th anniversary.",
+    plotSummary: "彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。\n彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。 [1]\n\n他凭借《奥斯卡与露辛达》(1988)和《凯利帮真史》(2001)两次获得布克奖，是仅有的两位两度荣获布克奖殊荣的作家之一(另一位则是诺贝尔文学奖得主库切)。凯里的作品怪诞、幽默，具有寓言式小说和科幻小说的特征。 [1]",
+    plotNodes: [
+      { label: "第 1 部分", description: "彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。 彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。" },
+      { label: "第 2 部分", description: "他凭借《奥斯卡与露辛达》(1988)和《凯利帮真史》(2001)两次获得布克奖，是仅有的两位两度荣获布克奖殊荣的作家之一(另一位则是诺贝尔文学奖得主库切)。凯里的作品怪诞、幽默，具有寓言式小说和科幻小说的特征。 [1]" }
+    ],
+    themeAnalysis: "彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。\n彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。 [1]\n\n他凭借《奥斯卡与露辛达》(1988)和《凯利帮真史》(2001)两次获得布克奖，是仅有的两位两度荣获布克奖殊荣的作家之一(另一位则是诺贝尔文学奖得主库切)。凯里的作品怪诞、幽默，具有寓言式小说和科幻小说的特征。 [1]",
+    techniques: "彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。\n彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。 [1]\n\n他凭借《奥斯卡与露辛达》(1988)和《凯利帮真史》(2001)两次获得布克奖，是仅有的两位两度荣获布克奖殊荣的作家之一(另一位则是诺贝尔文学奖得主库切)。凯里的作品怪诞、幽默，具有寓言式小说和科幻小说的特征。 [1]",
     excerpts: [],
-    insights: "Oscar and Lucinda is a novel by Australian author Peter Carey. It won the 1988 Booker Prize the year it was released, and the 1989 Miles Franklin Award. It was shortlisted in 2008 for The Best of the Booker, in celebration of the prize's 40th anniversary.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Oscar%20and%20Lucinda"
-    // }
+    insights: "彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。\n彼得·凯里是当代澳大利亚文学的领军人物，被誉为“澳大利亚最有才华和最令人激动的作家之一”。 [1]\n\n他凭借《奥斯卡与露辛达》(1988)和《凯利帮真史》(2001)两次获得布克奖，是仅有的两位两度荣获布克奖殊荣的作家之一(另一位则是诺贝尔文学奖得主库切)。凯里的作品怪诞、幽默，具有寓言式小说和科幻小说的特征。 [1]",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/Oscar%20and%20Lucinda", tier: "reference", fetchedAt: "2026-05-21T04:50:16.882Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Oscar%20and%20Lucinda%20Peter%20Carey" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Oscar%20and%20Lucinda%20Peter%20Carey" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Oscar%20and%20Lucinda" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Oscar%20and%20Lucinda" },
+      ],
+    },
   },
 
   "the-tree-of-man": {
