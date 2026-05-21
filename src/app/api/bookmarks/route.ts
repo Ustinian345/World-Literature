@@ -5,8 +5,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   const session = await auth();
   if (!session?.user?.email) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-
-  const bookmarks = getBookmarks(session.user.email);
+  const bookmarks = await getBookmarks(session.user.email);
   return NextResponse.json({ bookmarks });
 }
 
@@ -18,11 +17,11 @@ export async function POST(req: Request) {
   if (!workId) return NextResponse.json({ error: "Missing workId" }, { status: 400 });
 
   if (action === "add") {
-    addBookmark(session.user.email, workId);
+    await addBookmark(session.user.email, workId);
   } else {
-    removeBookmark(session.user.email, workId);
+    await removeBookmark(session.user.email, workId);
   }
 
-  const bookmarks = getBookmarks(session.user.email);
+  const bookmarks = await getBookmarks(session.user.email);
   return NextResponse.json({ bookmarks });
 }

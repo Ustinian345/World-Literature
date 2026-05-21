@@ -65,7 +65,9 @@
       "Bash(git rm *)",
       "Bash(openssl rand *)",
       "Bash(rm src/app/api/profile/update/route.ts)",
-      "Bash(rm -rf src/app/api/profile)"
+      "Bash(rm -rf src/app/api/profile)",
+      "Bash(npx prisma *)",
+      "Bash(DATABASE_URL=\"file:./prisma/dev.db\" npx prisma migrate dev --name add-bookmarks)"
     ]
   }
 }

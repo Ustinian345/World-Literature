@@ -5,9 +5,9 @@ import { userStore, type StoredUser } from "@/lib/user-store";
 
 export type { StoredUser as AuthUser };
 
-export function findUser(email: string) { return userStore.findByEmail(email); }
-export function ensureUser(email: string, name?: string, avatar?: string) { return userStore.ensure(email, name, avatar); }
-export function updateUser(email: string, data: Partial<Pick<StoredUser, "name" | "avatar">>) { return userStore.update(email, data); }
+export async function findUser(email: string) { return userStore.findByEmail(email); }
+export async function ensureUser(email: string, name?: string, avatar?: string) { return userStore.ensure(email, name, avatar); }
+export async function updateUser(email: string, data: Partial<Pick<StoredUser, "name" | "avatar">>) { return userStore.update(email, data); }
 
 export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = NextAuth({
   providers: [
@@ -28,21 +28,22 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         const password = credentials.password as string;
         if (password.length < 6) return null;
 
-        const existing = userStore.verifyPassword(email, password);
+        const existing = await userStore.verifyPassword(email, password);
         if (existing) {
           return { id: email, email: existing.email, name: existing.name, image: existing.avatar || null };
         }
 
-        // 检查是否已存在（Google 用户尝试用密码登录）
-        const googleUser = userStore.findByEmail(email);
+        // 检查是否已被 Google 注册
+        const googleUser = await userStore.findByEmail(email);
         if (googleUser && googleUser.provider === "google") return null;
 
-        // 新用户 → 自动注册
+        // 新用户自动注册
         const name = (credentials.name as string) || email.split("@")[0];
-        const newUser = userStore.create(email, password, name, "credentials");
+        const newUser = await userStore.create(email, password, name, "credentials");
+        const count = await userStore.getUserCount();
         return {
           id: email, email: newUser.email, name: newUser.name,
-          isNewUser: true, userNumber: userStore.getUserCount(),
+          isNewUser: true, userNumber: count,
         };
       },
     }),
@@ -57,9 +58,8 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         token.isNewUser = u.isNewUser === true;
         token.userNumber = (u.userNumber as number) || 0;
       }
-      // update 触发时：从持久存储重新读取 nickname/avatar
       if (trigger === "update" && token.email) {
-        const stored = userStore.findByEmail(token.email as string);
+        const stored = await userStore.findByEmail(token.email as string);
         if (stored) {
           token.name = stored.name;
           token.picture = stored.avatar || null;
@@ -67,9 +67,8 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
       }
       if (account?.provider === "google") {
         token.provider = "google";
-        // Google 用户首次登录 → 写入持久存储
         if (token.email) {
-          userStore.ensure(token.email as string, token.name as string, undefined, "google");
+          await userStore.ensure(token.email as string, token.name as string, undefined, "google");
         }
       }
       return token;

@@ -7,8 +7,7 @@ export async function POST(req: Request) {
   if (!session?.user?.email) return NextResponse.json({ error: "请先登录" }, { status: 401 });
 
   const { name, avatar } = (await req.json()) as { name?: string; avatar?: string };
-
-  const updated = userStore.update(session.user.email, { name, avatar });
+  const updated = await userStore.update(session.user.email, { name, avatar });
   if (!updated) return NextResponse.json({ error: "用户不存在" }, { status: 404 });
 
   return NextResponse.json({ success: true, name: updated.name, avatar: updated.avatar });

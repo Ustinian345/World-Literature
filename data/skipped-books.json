@@ -9484,5 +9484,437 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T10:23:06.464Z"
+  },
+  {
+    "bookId": "hugo-1984-brin",
+    "title": "星潮汹涌",
+    "author": "大卫·布林",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:23:34.544Z"
+  },
+  {
+    "bookId": "lux-5-r-li-jie",
+    "title": "胡风案中人与事",
+    "author": "李洁非",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:23:36.125Z"
+  },
+  {
+    "bookId": "luxun-7-2-feng",
+    "title": "俗世奇人",
+    "author": "冯骥才",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:23:51.313Z"
+  },
+  {
+    "bookId": "luxun-3-2-wang",
+    "title": "发廊情话",
+    "author": "王安忆",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:24:32.265Z"
+  },
+  {
+    "bookId": "bk-kr-003",
+    "title": "素食者",
+    "author": "韩江",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:24:36.449Z"
+  },
+  {
+    "bookId": "pulitzer-1967-malamud",
+    "title": "修配工",
+    "author": "伯纳德·马拉默德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:24:59.165Z"
+  },
+  {
+    "bookId": "nobel-1987-brodsky",
+    "title": "小于一",
+    "author": "约瑟夫·布罗茨基",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:24:59.699Z"
+  },
+  {
+    "bookId": "maodun-2008-zhou",
+    "title": "湖光山色",
+    "author": "周大新",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:25:00.916Z"
+  },
+  {
+    "bookId": "lux-8-p-liu-xiao",
+    "title": "岁月青铜",
+    "author": "刘笑伟",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:25:21.556Z"
+  },
+  {
+    "bookId": "x3-ch-007",
+    "title": "繁花",
+    "author": "金宇澄",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:25:58.381Z"
+  },
+  {
+    "bookId": "lux-tr-3-lin",
+    "title": "堂吉诃德（中译本）",
+    "author": "林一安（译）",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:26:06.708Z"
+  },
+  {
+    "bookId": "hugo-1984-brin",
+    "title": "星潮汹涌",
+    "author": "大卫·布林",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:26:24.571Z"
+  },
+  {
+    "bookId": "lux-1-r-chen",
+    "title": "淮河的警告",
+    "author": "陈桂棣",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:26:27.009Z"
+  },
+  {
+    "bookId": "lux-8-p-lu",
+    "title": "天空下",
+    "author": "路也",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:26:51.611Z"
+  },
+  {
+    "bookId": "lux-5-s-ci",
+    "title": "放生羊",
+    "author": "次仁罗布",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:27:26.503Z"
+  },
+  {
+    "bookId": "pul-1992-smiley",
+    "title": "一千英亩",
+    "author": "简·斯迈利",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:27:35.246Z"
+  },
+  {
+    "bookId": "lux-1-m-li-guan",
+    "title": "天缺一角",
+    "author": "李贯通",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:27:37.070Z"
+  },
+  {
+    "bookId": "pulitzer-1967-malamud",
+    "title": "修配工",
+    "author": "伯纳德·马拉默德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:27:50.667Z"
+  },
+  {
+    "bookId": "lux-3-p-ma",
+    "title": "幻河",
+    "author": "马新朝",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:27:51.998Z"
+  },
+  {
+    "bookId": "lux-4-r-zhu",
+    "title": "天使在作战",
+    "author": "朱晓军",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:28:22.518Z"
+  },
+  {
+    "bookId": "luxun-8-2-ge",
+    "title": "飞发",
+    "author": "葛亮",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:28:52.890Z"
+  },
+  {
+    "bookId": "hugo-1975-le-guin-2",
+    "title": "一无所有",
+    "author": "厄休拉·勒古恩",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:29:00.620Z"
+  },
+  {
+    "bookId": "maodun-2011-liu",
+    "title": "天行者",
+    "author": "刘醒龙",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:29:09.360Z"
+  },
+  {
+    "bookId": "lux-8-m-wang-kai",
+    "title": "荒野步枪手",
+    "author": "王凯",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:29:18.491Z"
+  },
+  {
+    "bookId": "lux-1-m-liu",
+    "title": "天知地知",
+    "author": "刘恒",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:29:54.510Z"
+  },
+  {
+    "bookId": "lux-5-d-zheng",
+    "title": "风行水上",
+    "author": "郑彦英",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:30:17.809Z"
+  },
+  {
+    "bookId": "pul-1992-smiley",
+    "title": "一千英亩",
+    "author": "简·斯迈利",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:30:19.626Z"
+  },
+  {
+    "bookId": "hugo-1962-heinlein",
+    "title": "异乡异客",
+    "author": "罗伯特·海因莱因",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:30:27.093Z"
+  },
+  {
+    "bookId": "luxun-1-2-liu",
+    "title": "挑担茶叶上北京",
+    "author": "刘醒龙",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:30:39.679Z"
+  },
+  {
+    "bookId": "lux-8-m-suo",
+    "title": "荒原上",
+    "author": "索南才让",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:30:45.133Z"
+  },
+  {
+    "bookId": "lux-1-r-jin",
+    "title": "恸问苍冥",
+    "author": "金辉",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:31:25.552Z"
+  },
+  {
+    "bookId": "lux-7-m-xiao-bai",
+    "title": "封锁",
+    "author": "小白",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:31:43.965Z"
+  },
+  {
+    "bookId": "hugo-1975-le-guin-2",
+    "title": "一无所有",
+    "author": "厄休拉·勒古恩",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:31:45.789Z"
+  },
+  {
+    "bookId": "hugo-1965-simak",
+    "title": "驿站",
+    "author": "克利福德·西马克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:31:52.431Z"
+  },
+  {
+    "bookId": "maodun-2011-bi",
+    "title": "推拿",
+    "author": "毕飞宇",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:32:11.671Z"
+  },
+  {
+    "bookId": "lux-1-d-zhou",
+    "title": "皇天后土",
+    "author": "周同宾",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:32:12.542Z"
+  },
+  {
+    "bookId": "lux-3-s-wen",
+    "title": "驮水的日子",
+    "author": "温亚军",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:32:58.003Z"
+  },
+  {
+    "bookId": "maodun-1982-gu",
+    "title": "芙蓉镇",
+    "author": "古华",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:33:09.891Z"
+  },
+  {
+    "bookId": "hugo-1962-heinlein",
+    "title": "异乡异客",
+    "author": "罗伯特·海因莱因",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:33:11.052Z"
+  },
+  {
+    "bookId": "booker-1992-ondaatje",
+    "title": "英国病人",
+    "author": "迈克尔·翁达杰",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:33:19.931Z"
+  },
+  {
+    "bookId": "lux-1-r-leng",
+    "title": "黄河大移民",
+    "author": "冷梦",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:33:39.286Z"
+  },
+  {
+    "bookId": "re-ch-09",
+    "title": "蛙",
+    "author": "莫言",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:33:43.552Z"
+  },
+  {
+    "bookId": "lux-5-p-wang-gan",
+    "title": "王干随笔选",
+    "author": "王干",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:34:29.342Z"
+  },
+  {
+    "bookId": "hugo-1965-simak",
+    "title": "驿站",
+    "author": "克利福德·西马克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:34:35.386Z"
+  },
+  {
+    "bookId": "lux-tr-2-cao",
+    "title": "浮士德（中译本）",
+    "author": "曹乃云（译）",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:34:37.370Z"
+  },
+  {
+    "bookId": "hugo-1956-asimov",
+    "title": "永恒的终结",
+    "author": "艾萨克·阿西莫夫",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:34:45.720Z"
+  },
+  {
+    "bookId": "maodun-1985-li",
+    "title": "黄河东流去",
+    "author": "李准",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:35:07.819Z"
+  },
+  {
+    "bookId": "bk-in-007",
+    "title": "微物之神",
+    "author": "阿兰达蒂·洛伊",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T10:35:22.245Z"
   }
 ]
