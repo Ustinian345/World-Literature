@@ -6,7 +6,7 @@ export async function getBookmarks(userId: string): Promise<string[]> {
     select: { workId: true },
     orderBy: { createdAt: "desc" },
   });
-  return rows.map((r) => r.workId);
+  return rows.map((r: { workId: string }) => r.workId);
 }
 
 export async function addBookmark(userId: string, workId: string): Promise<boolean> {
