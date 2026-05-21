@@ -549,7 +549,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Kokoro Study Guide | Literature Guide - LitCharts] Kokoro is set in the final years of the Meiji Era, which ran from 1868 to 1912. Characterized by rapid industrialization and modernization.\n\n[Kokoro Summary and Study Guide - SuperSummary] Get ready to explore Kokoro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to ...\n\n[Kokoro Summary & Study Guide - BookRags.com] Kokoro is a story of one young man searching to fill a void in his life. It is the story of many individuals who long to appease loneliness, and the sto",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%BF%83", tier: "reference", fetchedAt: "2026-05-21T05:21:04.518Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%BF%83", tier: "reference", fetchedAt: "2026-05-21T05:25:56.563Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
