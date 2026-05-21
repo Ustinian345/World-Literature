@@ -31,14 +31,28 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
       credentials: {
         email: { label: "邮箱", type: "email" },
         password: { label: "密码", type: "password" },
+        name: { label: "昵称", type: "text" },
       },
       async authorize(credentials) {
         if (!credentials?.email || !credentials?.password) return null;
         const email = (credentials.email as string).toLowerCase().trim();
         const password = credentials.password as string;
+        const name = (credentials.name as string) || email.split("@")[0];
+
+        // 密码长度不足则拒绝
+        if (password.length < 6) return null;
+
         const user = findUser(email);
-        if (!user || user.password !== password) return null;
-        return { id: email, email: user.email, name: user.name };
+        if (user) {
+          // 已有用户 → 校验密码
+          if (user.password !== password) return null;
+          return { id: email, email: user.email, name: user.name };
+        }
+
+        // 新用户 → 自动注册
+        const newUser = createUser(email, password, name);
+        if (!newUser) return null;
+        return { id: email, email: newUser.email, name: newUser.name };
       },
     }),
   ],

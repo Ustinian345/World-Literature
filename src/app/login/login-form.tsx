@@ -17,19 +17,16 @@ export function LoginForm() {
     setLoading(true);
 
     try {
-      if (mode === "login") {
-        const result = await signIn("credentials", {
-          email,
-          password,
-          redirect: false,
-        });
-        if (result?.error) {
-          setError("邮箱或密码错误");
-        } else if (result?.ok) {
-          window.location.href = "/";
-        }
-      } else {
-        setError("新用户注册请使用下方的 Google 登录");
+      const result = await signIn("credentials", {
+        email,
+        password,
+        name: mode === "register" ? (name || email.split("@")[0]) : undefined,
+        redirect: false,
+      });
+      if (result?.error) {
+        setError(mode === "login" ? "邮箱或密码错误" : "注册失败，请检查密码至少 6 位");
+      } else if (result?.ok) {
+        window.location.href = "/";
       }
     } catch {
       setError("网络错误，请重试");
