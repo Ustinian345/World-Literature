@@ -1,0 +1,107 @@
+{
+  "detail": {
+    "id": "efuru",
+    "characters": [
+      {
+        "name": "Efuru",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "Flora Nwapa",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "Igbo Nigerian",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "Igbo",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "An Analysis",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "Women",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "Culture",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      },
+      {
+        "name": "Fiction",
+        "role": "角色",
+        "description": "Efuru 中的主要角色。"
+      }
+    ],
+    "plotSummary": "[Efuru: A Feminist Igbo Narrative | PDF - Scribd] Throughout the story, Efuru wishes to be a mother but struggles with infertility in her marriages. The novel provides insights into Igbo culture, including ...\n\n[Flora Nwapa's Efuru and toxic masculinity in Igbo Nigerian society] This work focuses on the concept of toxic masculinity in Igbo society, in relation to the two major male characters in Flora Nwapa's 1966 novel, Efuru.\n\n[[PDF] An Analysis of Women and Culture in Flora Nwapa's Fiction] As Florence Stratton points out, Palmer charges Nwapa's Efuru with a whole litany of deficiencies: theme, character, plot, setting, and language ...\n\nOther articles where Efuru is discussed: African literature: English: Flora Nwapa wrote the novel Efuru (1966), the story of a talented, brilliant, and beautiful woman who, living in a small community, is confined by tradition. A woman’s fundamental role, childbearing, is prescribed for her, and if she does not fulfill that role she suffers the nega",
+    "plotNodes": [
+      {
+        "label": "Part 1",
+        "description": "[Efuru: A Feminist Igbo Narrative | PDF - Scribd] Throughout the story, Efuru wishes to be a mother but struggles with infertility in her marriages."
+      },
+      {
+        "label": "Part 2",
+        "description": "[Flora Nwapa's Efuru and toxic masculinity in Igbo Nigerian society] This work focuses on the concept of toxic masculinity in Igbo society, in relation to the two major male characters in Flora Nwapa'"
+      },
+      {
+        "label": "Part 3",
+        "description": "[[PDF] An Analysis of Women and Culture in Flora Nwapa's Fiction] As Florence Stratton points out, Palmer charges Nwapa's Efuru with a whole litany of deficiencies: theme, character, plot, setting, an"
+      },
+      {
+        "label": "Part 4",
+        "description": "Other articles where Efuru is discussed: African literature: English: Flora Nwapa wrote the novel Efuru (1966), the story of a talented, brilliant, and beautiful woman who, living in a small community"
+      }
+    ],
+    "themeAnalysis": "[[PDF] An Analysis of Women and Culture in Flora Nwapa's Fiction] As Florence Stratton points out, Palmer charges Nwapa's Efuru with a whole litany of deficiencies: theme, character, plot, setting, and language ...\n\n[Summary and analysis of Efuru by Flora Nwapa - YouTube] Sign in. This content isn't available. Summary and analysis of Efuru by Flora Nwapa. 864 views · 11 months ago ...more. English literature. 16.4 ...\n\n[The Works of Flora Nwapa, Mother of Modern African Literature] Traditional values, independence, and life from the Igbo woman's perspective are important themes that made Efuru a notable work, as well a ...",
+    "techniques": "[Efuru: A Feminist Igbo Narrative | PDF - Scribd] Throughout the story, Efuru wishes to be a mother but struggles with infertility in her marriages. The novel provides insights into Igbo culture, including ...",
+    "excerpts": [],
+    "insights": "[Efuru - Wikipedia] The book is about Efuru, an Igbo woman who lives in a small village in colonial West Africa. Throughout the story, Efuru wishes to be a mother.\n\n[Summary and analysis of Efuru by Flora Nwapa - YouTube] Sign in. This content isn't available. Summary and analysis of Efuru by Flora Nwapa. 864 views · 11 months ago ...more. English literature. 16.4 ...\n\n[Efuru: A Feminist Igbo Narrative | PDF - Scribd] Throughout the story, Efuru wishes to be a mother but struggles with infertility in her marriages. The novel provides insights into Igbo culture, including ...\n\n[Flora Nwapa's Ef",
+    "sourceAttribution": {
+      "sources": [
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/Efuru",
+          "tier": "reference",
+          "fetchedAt": "2026-05-21T04:38:54.643Z",
+          "contributedFields": [
+            "plotSummary",
+            "themeAnalysis"
+          ]
+        }
+      ],
+      "reliability": "medium"
+    }
+  },
+  "summary": {
+    "tiersAttempted": [
+      1,
+      2,
+      2.5,
+      3,
+      4,
+      5
+    ],
+    "tiersSucceeded": [
+      2.5,
+      5
+    ],
+    "totalSources": 1,
+    "reliability": "medium",
+    "score": 9
+  },
+  "searchConfig": {
+    "titleEn": "Efuru",
+    "authorEn": "Flora Nwapa",
+    "wikipediaEn": "Efuru"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "detail": {
+    "id": "the-death-of-artemio-cruz",
+    "characters": [],
+    "plotSummary": "The Death of Artemio Cruz, novel by Carlos Fuentes, published in Spanish as La muerte de Artemio Cruz in 1962. An imaginative portrait of an unscrupulous individual, the story also serves as commentary on Mexican society, most notably on the abuse of power—a theme that runs throughout Fuentes’s",
+    "plotNodes": [
+      {
+        "label": "Part 1",
+        "description": "The Death of Artemio Cruz, novel by Carlos Fuentes, published in Spanish as La muerte de Artemio Cruz in 1962."
+      }
+    ],
+    "themeAnalysis": "The Death of Artemio Cruz, novel by Carlos Fuentes, published in Spanish as La muerte de Artemio Cruz in 1962. An imaginative portrait of an unscrupulous individual, the story also serves as commentary on Mexican society, most notably on the abuse of power—a theme that runs throughout Fuentes’s",
+    "techniques": "",
+    "excerpts": [],
+    "insights": "The Death of Artemio Cruz, novel by Carlos Fuentes, published in Spanish as La muerte de Artemio Cruz in 1962. An imaginative portrait of an unscrupulous individual, the story also serves as commentary on Mexican society, most notably on the abuse of power—a theme that runs throughout Fuentes’s",
+    "sourceAttribution": {
+      "sources": [
+        {
+          "label": "Britannica",
+          "url": "https://www.britannica.com/topic/the-death-of-artemio-cruz",
+          "tier": "reference",
+          "fetchedAt": "2026-05-21T03:03:35.525Z",
+          "contributedFields": [
+            "plotSummary",
+            "themeAnalysis"
+          ]
+        }
+      ],
+      "reliability": "medium"
+    }
+  },
+  "summary": {
+    "tiersAttempted": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tiersSucceeded": [
+      5
+    ],
+    "totalSources": 1,
+    "reliability": "medium",
+    "score": 5
+  },
+  "searchConfig": {
+    "titleEn": "the-death-of-artemio-cruz",
+    "authorEn": "",
+    "wikipediaEn": "the-death-of-artemio-cruz"
+  }
+}

@@ -14,6 +14,7 @@ import { SectionReveal } from "@/components/SectionReveal";
 import { BackToTop } from "@/components/BackToTop";
 import { ReadingControls } from "@/components/ReadingControls";
 import { RelatedWorks } from "@/components/RelatedWorks";
+import ContentSources from "@/components/ContentSources";
 import { CulturalPattern } from "@/components/CulturalPattern";
 import { SceneIllustration } from "@/components/SceneIllustration";
 import { QuoteCopy } from "@/components/QuoteCopy";
@@ -498,6 +499,30 @@ async function WorkContent({ params }: { params: Promise<{ id: string }> }) {
             </div>
           </div>
         </div>
+        </SectionReveal>
+      </section>
+
+      {/* ===== 内容来源 — 透明度与可验证性 ===== */}
+      <section className="bg-warm-white/35 py-14 sm:py-20">
+        <SectionReveal>
+          <div className="mx-auto max-w-5xl px-5">
+            <div className="mb-10 flex items-center gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-umber/80 text-white shadow-lg">
+                <span className="text-xl">📖</span>
+              </div>
+              <div>
+                <h2 className="font-heading-cn text-3xl font-bold text-umber">内容来源</h2>
+                <p className="mt-1 text-sm text-stone-500">数据溯源 · 可靠性评估 · 可验证性</p>
+                <div className="mt-1 h-0.5 w-16 bg-gradient-to-r from-umber/60 to-transparent" />
+              </div>
+            </div>
+            <ContentSources
+              attribution={detail.sourceAttribution}
+              workTitle={work.title}
+              workTitleEn={work.titleEn}
+              workAuthor={work.author}
+            />
+          </div>
         </SectionReveal>
       </section>
 

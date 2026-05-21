@@ -8,12 +8,17 @@
     "start": "next start",
     "lint": "eslint",
     "bg:batch": "npx tsx scripts/batch-fetch-bg.ts",
-    "bg:batch-all": "npx tsx scripts/batch-fetch-bg.ts --all"
+    "bg:batch-all": "npx tsx scripts/batch-fetch-bg.ts --all",
+    "lit:fetch": "npx tsx scripts/fetch-literature-data.ts",
+    "lit:scan": "npx tsx scripts/scan-completeness.ts",
+    "lit:batch": "npx tsx scripts/fetch-literature-data.ts --batch",
+    "lit:batch-all": "npx tsx scripts/fetch-literature-data.ts --batch-all"
   },
   "dependencies": {
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "undici": "^8.3.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
