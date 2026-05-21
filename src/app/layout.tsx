@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Playfair_Display, Noto_Serif_SC, EB_Garamond } from "next/font/google";
+import SessionProvider from "@/components/SessionProvider";
+import UserMenu from "@/components/UserMenu";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -53,6 +55,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${notoSerif.variable} ${ebGaramond.variable} scroll-smooth`}
     >
       <body className="flex min-h-full flex-col bg-cream text-umber antialiased">
+        <SessionProvider>
         {/* 跳过导航 */}
         <a href="#main-content" className="skip-link">
           跳到主要内容 / Skip to Content
@@ -116,6 +119,8 @@ export default function RootLayout({
 
             {/* 右侧操作区 */}
             <div className="flex items-center gap-2">
+              <UserMenu />
+
               {/* 搜索按钮 */}
               <button
                 className="flex h-9 w-9 items-center justify-center rounded-md font-[system-ui] text-umber-light transition-colors hover:bg-sand/50"

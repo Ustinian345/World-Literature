@@ -430,27 +430,22 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "shiji": {
     id: "shiji",
-    plotSummary: "《史记》，二十四史之一，最初称为《太史公书》或《太史公记》《太史记》，是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，下至汉武帝太初四年间共三千多年的历史。太初元年（前104年），司马迁开始了该书创作，前后经历了十四年，才得以完成。《史记》全书包括十二本纪（记历代帝王政绩）、三十世家（记诸侯国和汉代诸侯、勋贵兴亡）、七十列传（记重要人物的言行事迹，主要叙人臣，其中最后一篇为自序）、十表（大事年表）、八书（记各种典章制度记礼、乐、音律、历法、天文、封禅、水利、财用）。《史记》共一百三十篇，五十二万六千五百余字，比《淮南子》多三十九万五千余字，比《吕氏春秋》多二十八万八千余字。《史记》规模巨大，体系完备，而且对此后的纪传体史书影响很深，历朝正史皆采用这种体裁撰写。",
+    plotSummary: "Astronomer, calendar expert, and the first great Chinese historian\n\nSima Qian Introduction Life Structure and content of Shiji Influence References & Edit History Quick Facts & Related Topics Images Quizzes History Buff Quiz Astronomy and Space Quiz Faces of Science All About Astronomy print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X URL https://www.britannica.com/biography/Sima-Qian Feedback External Websites Feedback Corrections? Updates? Omissions? Let us know if you have suggestions to improve this article (requires login). Feedback Type Select a type (Required) Factual Correction Spelling/Grammar Correction Link Correction Additional",
     plotNodes: [
-      { label: "第 1 部分", description: "《史记》，二十四史之一，最初称为《太史公书》或《太史公记》《太史记》，是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，下至汉武帝太初四年间共三千多年的历史。太初元年（前104年），司马迁开始了该书创作，前后经历了十四年，才得以完成。《史记》全书包括十二本纪（记历代帝王政绩）、三十世家（记诸侯国和汉代诸侯、勋贵兴亡）、七十列传（记重要人物的言行事迹，" },
-      { label: "第 2 部分", description: "《史记》全书包括十二本纪（记历代帝王政绩）、三十世家（记诸侯国和汉代诸侯、勋贵兴亡）、七十列传（记重要人物的言行事迹，主要叙人臣，其中最后一篇为自序）、十表（大事年表）、八书（记各种典章制度记礼、乐、音律、历法、天文、封禅、水利、财用）。《史记》共一百三十篇，五十二万六千五百余字，比《淮南子》多三十九万五千余字，比《吕氏春秋》多二十八万八千余字。《史记》规模巨大，体系完备，而且对此后的纪传体史书影" }
+      { label: "Part 1", description: "Astronomer, calendar expert, and the first great Chinese historian" },
+      { label: "Part 2", description: "Sima Qian Introduction Life Structure and content of Shiji Influence References & Edit History Quick Facts & Related Topics Images Quizzes History Buff Quiz Astronomy and Space Quiz Faces of Science A" }
     ],
-    themeAnalysis: "《史记》，二十四史之一，最初称为《太史公书》或《太史公记》《太史记》，是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，下至汉武帝太初四年间共三千多年的历史。太初元年（前104年），司马迁开始了该书创作，前后经历了十四年，才得以完成。《史记》全书包括十二本纪（记历代帝王政绩）、三十世家（记诸侯国和汉代诸侯、勋贵兴亡）、七十列传（记重要人物的言行事迹，主要叙人臣，其中最后一篇为自序）、十表（大事年表）、八书（记各种典章制度记礼、乐、音律、历法、天文、封禅、水利、财用）。《史记》共一百三十篇，五十二万六千五百余字，比《淮南子》多三十九万五千余字，比《吕氏春秋》多二十八万八千余字。《史记》规模巨大，体系完备，而且对此后的纪传体史书影响很深，历朝正史皆采用这种体裁撰写。",
-    techniques: "《史记》，二十四史之一，最初称为《太史公书》或《太史公记》《太史记》，是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，下至汉武帝太初四年间共三千多年的历史。太初元年（前104年），司马迁开始了该书创作，前后经历了十四年，才得以完成。《史记》全书包括十二本纪（记历代帝王政绩）、三十世家（记诸侯国和汉代诸侯、勋贵兴亡）、七十列传（记重要人物的言行事迹，主要叙人臣，其中最后一篇为自序）、十表（大事年表）、八书（记各种典章制度记礼、乐、音律、历法、天文、封禅、水利、财用）。《史记》共一百三十篇，五十二万六千五百余字，比《淮南子》多三十九万五千余字，比《吕氏春秋》多二十八万八千余字。《史记》规模巨大，体系完备，而且对此后的纪传体史书影响很深，历朝正史皆采用这种体裁撰写。",
-    excerpts: [],
-    insights: "《史记》，二十四史之一，最初称为《太史公书》或《太史公记》《太史记》，是西汉史学家司马迁撰写的纪传体史书，是中国历史上第一部纪传体通史，记载了上至上古传说中的黄帝时代，下至汉武帝太初四年间共三千多年的历史。太初元年（前104年），司马迁开始了该书创作，前后经历了十四年，才得以完成。《史记》全书包括十二本纪（记历代帝王政绩）、三十世家（记诸侯国和汉代诸侯、勋贵兴亡）、七十列传（记重要人物的言行事迹，主要叙人臣，其中最后一篇为自序）、十表（大事年表）、八书（记各种典章制度记礼、乐、音律、历法、天文、封禅、水利、财用）。《史记》共一百三十篇，五十二万六千五百余字，比《淮南子》多三十九万五千余字，比《吕氏春秋》多二十八万八千余字。《史记》规模巨大，体系完备，而且对此后的纪传体史书影响很深，历朝正史皆采用这种体裁撰写。",
+    themeAnalysis: "",
+    techniques: "Astronomer, calendar expert, and the first great Chinese historian\n\nSima Qian Introduction Life Structure and content of Shiji Influence References & Edit History Quick Facts & Related Topics Images Quizzes History Buff Quiz Astronomy and Space Quiz Faces of Science All About Astronomy print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style M",
+    excerpts: [
+      { quote: "Records of the Grand Historian,", context: "From Records of the Grand Historian" }
+    ],
+    insights: "[Sima Qian - Wikipedia] He is considered the father of Chinese historiography for the Shiji (sometimes translated into English as Records of the Grand Historian), a general history ...\n\n[Sima Qian | Chinese Historian, Scientist & Father of ... - Britannica] What is Sima Qian best known for? What is the 'Records of the Grand Historian' (Shiji)?. Why was the Shiji an important book in Chinese history?\n\n[[PDF] Sima Qian Records Of The Grand Historian - sciphilconf.berkeley.edu] The Records of the Grand Historian (史記, Shiji) is an extensive historical chronicle spanning over 130 chapters. It cover",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:24:22.950Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:20:23.801Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Records%20of%20the%20Grand%20Historian%20Sima%20Qian" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Records%20of%20the%20Grand%20Historian%20Sima%20Qian" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Records%20of%20the%20Grand%20Historian" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Records%20of%20the%20Grand%20Historian" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -742,7 +737,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[\"The Rubaiyat of Omar Khayyam\" Summary and Study Guide] Get ready to explore \"The Rubaiyat of Omar Khayyam\" and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis ...\n\n[Rubaiyat of Omar Khayyam - Wikipedia] The Rubáiyát of Omar Khayyám is an 1859 translation from Persian to English by Edward FitzGerald of a selection of quatrains (rubāʿiyāt ) attributed to Omar ...\n\n[The Rubaiyat of Omar Khayyam of Naishapur Summary - GradeSaver] The The Rubaiyat of Omar Khayyam of Naishapur Community Note includes chapter-by-chapter summary and analysis, chara",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%B2%81%E6%8B%9C%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T05:15:45.377Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%B2%81%E6%8B%9C%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T05:20:26.707Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

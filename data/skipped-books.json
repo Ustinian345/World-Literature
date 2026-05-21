@@ -385,5 +385,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:19:19.084Z"
+  },
+  {
+    "bookId": "tb-luxun-2",
+    "title": "从百草园到三味书屋",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:20:04.705Z"
   }
 ]
