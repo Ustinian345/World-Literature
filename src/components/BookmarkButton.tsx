@@ -37,7 +37,7 @@ export function BookmarkButton({ workId }: { workId: string }) {
   return (
     <button
       onClick={toggle}
-      className={`fixed bottom-20 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 ${
+      className={`fixed bottom-36 right-6 z-40 flex h-11 w-11 items-center justify-center rounded-full border shadow-lg backdrop-blur-sm transition-all duration-300 hover:scale-110 ${
         bookmarked
           ? "border-terracotta/30 bg-terracotta/10 text-terracotta shadow-terracotta/10"
           : "border-sand/40 bg-warm-white/90 text-umber-light/40 hover:text-terracotta"

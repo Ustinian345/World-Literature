@@ -68,7 +68,7 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
     }),
   ],
   callbacks: {
-    async jwt({ token, user, account }) {
+    async jwt({ token, user, account, trigger }) {
       if (user) {
         token.id = user.id || user.email || "";
         token.name = user.name || "";
@@ -76,6 +76,14 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         const u = user as Record<string, unknown>;
         token.isNewUser = u.isNewUser === true;
         token.userNumber = (u.userNumber as number) || 0;
+      }
+      // update 触发时：重新读取 nickname/avatar
+      if (trigger === "update" && token.email) {
+        const stored = findUser(token.email as string);
+        if (stored) {
+          token.name = stored.name;
+          token.picture = stored.avatar || null;
+        }
       }
       if (account?.provider === "google") token.provider = "google";
       return token;
@@ -86,7 +94,8 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         u.id = token.id;
         u.isNewUser = token.isNewUser || false;
         u.userNumber = token.userNumber || 0;
-        if (token.picture) session.user.image = token.picture as string;
+        session.user.name = token.name as string;
+        session.user.image = (token.picture as string) || null;
       }
       return session;
     },
