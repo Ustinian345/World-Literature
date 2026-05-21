@@ -3567,4 +3567,37 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     excerpts: [],
     insights: "[[PDF] Solving a Class of Spatial Reasoning Problems - DTIC] r1 in(61) = r2 in(02) must hold at each bend point. (Snell's law is illustrated several times in this thesis. See Figure 55 in Section IV.C for an example ...",
   },
+
+  "the-glass-bead-game": {
+    id: "the-glass-bead-game",
+    characters: [
+      { name: "The Glass Bead", role: "角色", description: "\"the-glass-bead-game\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Game", role: "角色", description: "\"the-glass-bead-game\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Hermann Hesse", role: "角色", description: "\"the-glass-bead-game\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "German", role: "角色", description: "\"the-glass-bead-game\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Das Glasperlenspiel", role: "角色", description: "\"the-glass-bead-game\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Magister Ludi", role: "角色", description: "\"the-glass-bead-game\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "The Glass Bead Game, final novel by Hermann Hesse, published in two volumes in 1943 in German as Das Glasperlenspiel and sometimes translated as Magister Ludi. The book is an intricate bildungsroman about humanity’s eternal quest for enlightenment and for synthesis of the intellectual and the",
+    plotNodes: [
+      { label: "第 1 部分", description: "The Glass Bead Game, final novel by Hermann Hesse, published in two volumes in 1943 in German as Das Glasperlenspiel and sometimes translated as Magister Ludi. The book is an intricate bildungsroman a" }
+    ],
+    themeAnalysis: "The Glass Bead Game, final novel by Hermann Hesse, published in two volumes in 1943 in German as Das Glasperlenspiel and sometimes translated as Magister Ludi. The book is an intricate bildungsroman about humanity’s eternal quest for enlightenment and for synthesis of the intellectual and the",
+    techniques: "The Glass Bead Game, final novel by Hermann Hesse, published in two volumes in 1943 in German as Das Glasperlenspiel and sometimes translated as Magister Ludi. The book is an intricate bildungsroman about humanity’s eternal quest for enlightenment and for synthesis of the intellectual and the",
+    excerpts: [],
+    insights: "The Glass Bead Game, final novel by Hermann Hesse, published in two volumes in 1943 in German as Das Glasperlenspiel and sometimes translated as Magister Ludi. The book is an intricate bildungsroman about humanity’s eternal quest for enlightenment and for synthesis of the intellectual and the",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/the-glass-bead-game", tier: "reference", fetchedAt: "2026-05-21T12:10:23.375Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=the-glass-bead-game" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=the-glass-bead-game" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=the-glass-bead-game" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=the-glass-bead-game" },
+      ],
+    },
+  },
 };
