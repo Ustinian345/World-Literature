@@ -687,29 +687,34 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "rubaiyat": {
     id: "rubaiyat",
-    plotSummary: "《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。该作品长期未被广泛传播，直至1859年英国学者爱德华·菲茨杰拉德将其意译为英文后成为文学经典，其第四版含101首诗作。2009年吉林出版集团出版了郭沫若中译本，收录杜拉克插图及英汉对照注释，属“名著图文馆”丛书。诗集以饮酒、自然等意象探讨人生短暂与命运无常，融合数学家的理性视角与诗人的感性表达，呈现对宗教宿命论的质疑与及时行乐的豁达，形成“淡漠的悲哀”美学风格。菲茨杰拉德英译本经多次修订奠定其文学地位，胡适、郭沫若等二十余位译者先后转译为中文，衍生出白话文、七言绝句等多种形式，其中郭沫若译本最早系统引入中国并多次再版。\n《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。",
-    plotNodes: [
-      { label: "第 1 部分", description: "《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。该作品长期未被广泛传播，直至1859年英国学者爱德华·菲茨杰拉德将其意译为英文后成为文学经典，其第四版含101首诗作。2009年吉林出版集团出版了郭沫若中译本，收录杜拉克插图及英汉对照注释，属“名著图文馆”丛书。诗集以饮酒、自然等意象探讨人生短暂与命运无常，融合数学家的理性视角与诗人的" },
-      { label: "第 2 部分", description: "诗集以饮酒、自然等意象探讨人生短暂与命运无常，融合数学家的理性视角与诗人的感性表达，呈现对宗教宿命论的质疑与及时行乐的豁达，形成“淡漠的悲哀”美学风格。菲茨杰拉德英译本经多次修订奠定其文学地位，胡适、郭沫若等二十余位译者先后转译为中文，衍生出白话文、七言绝句等多种形式，其中郭沫若译本最早系统引入中国并多次再版。" },
-      { label: "第 3 部分", description: "几个世纪之中，奥玛·海亚姆默默无闻，几乎被人们遗忘了。直到1859年英国学者兼诗人爱德华·菲茨杰拉德（Edward Fitzgerald）不署名地整理发表了《奥玛·海亚姆之柔巴依集》，共一百零一首，四百零四行。把这本诗集译介到英语世界，他的翻译属于意译，因为保持了原诗的韵律形式，所以成为英国文学的经典。" }
+    characters: [
+      { name: "The Rubaiyat", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "Omar Khayyam", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "Naishapur Summary", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "The The Rubaiyat", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "Naishapur Community Note", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" },
+      { name: "Themes", role: "角色", description: "Rubaiyat of Omar Khayyam 中的主要角色。" }
     ],
-    themeAnalysis: "《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。该作品长期未被广泛传播，直至1859年英国学者爱德华·菲茨杰拉德将其意译为英文后成为文学经典，其第四版含101首诗作。2009年吉林出版集团出版了郭沫若中译本，收录杜拉克插图及英汉对照注释，属“名著图文馆”丛书。诗集以饮酒、自然等意象探讨人生短暂与命运无常，融合数学家的理性视角与诗人的感性表达，呈现对宗教宿命论的质疑与及时行乐的豁达，形成“淡漠的悲哀”美学风格。菲茨杰拉德英译本经多次修订奠定其文学地位，胡适、郭沫若等二十余位译者先后转译为中文，衍生出白话文、七言绝句等多种形式，其中郭沫若译本最早系统引入中国并多次再版。\n《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。该作品长期未被广泛传播，直至1859年英国学者爱德华·菲茨杰拉德将其意译为英文后成为文学经典，其第四版含101首诗作。2009年吉林出版集团出版了郭沫若中译本，收录杜拉克插图及英汉对照注释，属“名著图文馆”丛书。",
-    techniques: "《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。该作品长期未被广泛传播，直至1859年英国学者爱德华·菲茨杰拉德将其意译为英文后成为文学经典，其第四版含101首诗作。2009年吉林出版集团出版了郭沫若中译本，收录杜拉克插图及英汉对照注释，属“名著图文馆”丛书。诗集以饮酒、自然等意象探讨人生短暂与命运无常，融合数学家的理性视角与诗人的感性表达，呈现对宗教宿命论的质疑与及时行乐的豁达，形成“淡漠的悲哀”美学风格。菲茨杰拉德英译本经多次修订奠定其文学地位，胡适、郭沫若等二十余位译者先后转译为中文，衍生出白话文、七言绝句等多种形式，其中郭沫若译本最早系统引入中国并多次再版。\n《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。",
-    excerpts: [],
-    insights: "《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。该作品长期未被广泛传播，直至1859年英国学者爱德华·菲茨杰拉德将其意译为英文后成为文学经典，其第四版含101首诗作。2009年吉林出版集团出版了郭沫若中译本，收录杜拉克插图及英汉对照注释，属“名著图文馆”丛书。诗集以饮酒、自然等意象探讨人生短暂与命运无常，融合数学家的理性视角与诗人的感性表达，呈现对宗教宿命论的质疑与及时行乐的豁达，形成“淡漠的悲哀”美学风格。菲茨杰拉德英译本经多次修订奠定其文学地位，胡适、郭沫若等二十余位译者先后转译为中文，衍生出白话文、七言绝句等多种形式，其中郭沫若译本最早系统引入中国并多次再版。\n《鲁拜集》是11世纪波斯诗人、天文学家欧玛尔·海亚姆创作的四行诗集，采用波斯传统诗体“鲁拜”，结构与中国绝句相似。",
+    plotSummary: "Get ready to explore &quot;The Rubaiyat of Omar Khayyam&quot; and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide \"The Rubaiyat of Omar Khayyam\" Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Omar Khayyam 40 pages • 1-hour read Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Fiction | Poem | Adult | Published in 1100 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Summaries & Analyses Plot Summary Background Poem Analysis Themes Symbols & Motifs Literary Devices Further Reading & Resources Quizzes NEW Reading Tools Discussion Questions Summary and Study Guide Overview “The Rubáiyát of Omar Khayyám” is a long lyric poem in quatrains (four-line stanzas) of iambic pentamet",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore &quot;The Rubaiyat of Omar Khayyam&quot; and its meaning." },
+      { label: "Part 2", description: "Study Guide \"The Rubaiyat of Omar Khayyam\" Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Omar Khayyam 40 pages • 1-hour read Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Fiction | Poem | Adult | Publishe" }
+    ],
+    themeAnalysis: "Get ready to explore &quot;The Rubaiyat of Omar Khayyam&quot; and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide \"The Rubaiyat of Omar Khayyam\" Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Omar Khayyam 40 pages • 1-hour read Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Fiction | Poem | Adult | Published in 1100 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Summaries & Analyses Plot Summary Background Poem Analysis Themes Symbols & Motifs Literary Devices Further Rea",
+    techniques: "Get ready to explore &quot;The Rubaiyat of Omar Khayyam&quot; and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide \"The Rubaiyat of Omar Khayyam\" Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Omar Khayyam 40 pages • 1-hour read Omar Khayyam \"The Rubaiyat of Omar Khayyam\" Fiction | Poem | Adult | Published in 1100 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysi",
+    excerpts: [
+      { quote: "The Rubaiyat of Omar Khayyam", context: "From Rubaiyat of Omar Khayyam" },
+      { quote: "The Rubaiyat of Omar Khayyam", context: "From Rubaiyat of Omar Khayyam" },
+      { quote: "The Rubaiyat of Omar Khayyam", context: "From Rubaiyat of Omar Khayyam" }
+    ],
+    insights: "[\"The Rubaiyat of Omar Khayyam\" Summary and Study Guide] Get ready to explore \"The Rubaiyat of Omar Khayyam\" and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis ...\n\n[Rubaiyat of Omar Khayyam - Wikipedia] The Rubáiyát of Omar Khayyám is an 1859 translation from Persian to English by Edward FitzGerald of a selection of quatrains (rubāʿiyāt ) attributed to Omar ...\n\n[The Rubaiyat of Omar Khayyam of Naishapur Summary - GradeSaver] The The Rubaiyat of Omar Khayyam of Naishapur Community Note includes chapter-by-chapter summary and analysis, chara",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%B2%81%E6%8B%9C%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T04:20:27.975Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/246", tier: "original_text", fetchedAt: "2026-05-21T04:20:41.902Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%B2%81%E6%8B%9C%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T05:15:45.377Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Rubaiyat%20of%20Omar%20Khayyam%20Omar%20Khayyam" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Rubaiyat%20of%20Omar%20Khayyam%20Omar%20Khayyam" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Rubaiyat%20of%20Omar%20Khayyam" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Rubaiyat%20of%20Omar%20Khayyam" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -818,13 +823,11 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     ],
     themeAnalysis: "[The Epic of Gilgamesh: Themes | SparkNotes] A summary of Themes in Literature's The Epic of Gilgamesh ... Plot Overview · Character List · Analysis of Major Characters · Themes, Motifs, and Symbols.\n\n[Video: Epic of Gilgamesh | Summary, Characters & Analysis] Themes and Symbolism in the Epic of Gilgamesh ... The Epic of Gilgamesh tells us the importance of dreams. It was shown through the prophetic dreams guiding ...\n\n[The Epic of Gilgamesh Character Analysis - LitCharts] The Epic of Gilgamesh · All Themes · Civilization and the Fall from Innocence Theme Icon. Civilization and the Fall from Innocence · Heroism in Nature vs. Comfort ...\n\n[The Epic of Gilgamesh Summary & Study Guide - BookRags.com] The Epic of Gilgamesh Summary & Study Guide includes detailed chapter summaries and analysis,",
     techniques: "[Epic of Gilgamesh - Wikipedia] The Epic of Gilgamesh is an epic from ancient Mesopotamia. The literary history of Gilgamesh begins with five Sumerian poems about Gilgamesh (the variant ...",
-    excerpts: [
-      { quote: "My students can't get enough of your charts and their results have gone through the roof.", context: "From Epic of Gilgamesh" }
-    ],
+    excerpts: [],
     insights: "[The Epic of Gilgamesh: Themes | SparkNotes] A summary of Themes in Literature's The Epic of Gilgamesh ... Plot Overview · Character List · Analysis of Major Characters · Themes, Motifs, and Symbols.\n\n[Epic of Gilgamesh - Wikipedia] The Epic of Gilgamesh is an epic from ancient Mesopotamia. The literary history of Gilgamesh begins with five Sumerian poems about Gilgamesh (the variant ...\n\n[The Epic of Gilgamesh Character Analysis - LitCharts] The Epic of Gilgamesh · All Themes · Civilization and the Fall from Innocence Theme Icon. Civilization and the Fall from Innocence · Heroism in Nature vs",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80%E5%8F%B2%E8%AF%97", tier: "reference", fetchedAt: "2026-05-21T05:11:30.121Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80%E5%8F%B2%E8%AF%97", tier: "reference", fetchedAt: "2026-05-21T05:16:00.044Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
