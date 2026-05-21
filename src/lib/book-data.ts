@@ -2451,19 +2451,29 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "dom-casmurro": {
     id: "dom-casmurro",
-    plotSummary: "Dom Casmurro is an 1899 novel written by Brazilian author Joaquim Maria Machado de Assis. Like The Posthumous Memoirs of Brás Cubas and Quincas Borba, both by Machado de Assis, it is widely regarded as a masterpiece of realist literature. It is written as a fictional memoir by a distrusting, jealous husband. The narrator, however, is not a reliable conveyor of the story as it is a dark comedy.",
-    themeAnalysis: "Dom Casmurro is an 1899 novel written by Brazilian author Joaquim Maria Machado de Assis. Like The Posthumous Memoirs of Brás Cubas and Quincas Borba, both by Machado de Assis, it is widely regarded as a masterpiece of realist literature. It is written as a fictional memoir by a distrusting, jealous husband. The narrator, however, is not a reliable conveyor of the story as it is a dark comedy.",
-    techniques: "Dom Casmurro is an 1899 novel written by Brazilian author Joaquim Maria Machado de Assis. Like The Posthumous Memoirs of Brás Cubas and Quincas Borba, both by Machado de Assis, it is widely regarded as a masterpiece of realist literature. It is written as a fictional memoir by a distrusting, jealous husband. The narrator, however, is not a reliable conveyor of the story as it is a dark comedy.",
-    excerpts: [
-      { quote: "a true Brazilian masterpiece, and perhaps Brazil's greatest representative piece of writing", context: "From Dom Casmurro" },
-      { quote: "one of the best books ever written in the Portuguese language, if not the best one to date.", context: "From Dom Casmurro" },
-      { quote: "tie together the two ends of life", context: "From Dom Casmurro" }
+    characters: [
+      { name: "Comparative Perspectives", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Rise", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Brazilian Novel", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Dom Casmurro", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Machado", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Assis", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Study Guide Dom", role: "角色", description: "Dom Casmurro 中的主要角色。" },
+      { name: "Casmurro Joaquim Maria", role: "角色", description: "Dom Casmurro 中的主要角色。" }
     ],
-    insights: "Dom Casmurro is an 1899 novel written by Brazilian author Joaquim Maria Machado de Assis. Like The Posthumous Memoirs of Brás Cubas and Quincas Borba, both by Machado de Assis, it is widely regarded as a masterpiece of realist literature. It is written as a fictional memoir by a distrusting, jealous husband. The narrator, however, is not a reliable conveyor of the story as it is a dark comedy.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Dom%20Casmurro"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E5%A0%82%E5%8D%A1%E6%96%AF%E7%A9%86%E7%BD%97"
-    // }
+    plotSummary: "Get ready to explore Dom Casmurro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Dom Casmurro Joaquim Maria Machado de Assis Dom Casmurro Joaquim Maria Machado de Assis 74 pages • 2-hour read Joaquim Maria Machado de Assis Dom Casmurro Fiction | Novel | Adult | Published in 1899 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-30 Chapters 31-60 Chapters 61-90 Chapters 91-120 Chapters 121-148 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Summary and Study Guide Overview Dom Casmurr",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore Dom Casmurro and its meaning." },
+      { label: "Part 2", description: "Study Guide Dom Casmurro Joaquim Maria Machado de Assis Dom Casmurro Joaquim Maria Machado de Assis 74 pages • 2-hour read Joaquim Maria Machado de Assis Dom Casmurro Fiction | Novel | Adult | Publish" }
+    ],
+    themeAnalysis: "Get ready to explore Dom Casmurro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Dom Casmurro Joaquim Maria Machado de Assis Dom Casmurro Joaquim Maria Machado de Assis 74 pages • 2-hour read Joaquim Maria Machado de Assis Dom Casmurro Fiction | Novel | Adult | Published in 1899 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-30 Chapters 31-60 Chapters 61-",
+    techniques: "[Dom Casmurro: A Deep Dive Review | PDF - Scribd] The document is a book review of 'Dom Casmurro' by Machado de Assis, focusing on the narrative perspective of the character Bentinho and his complex ...\n\n[Dom Casmurro Themes - eNotes.com] The main themes in Dom Casmurro are love and jealousy, religious vocation, and status and dependency. Love and jealousy: The narrative reveals the deep ...",
+    excerpts: [
+      { quote: ", hence the title of the ...\n[", context: "From Dom Casmurro" },
+      { quote: " is a novel written by Brazilian author Joaquim ...] ", context: "From Dom Casmurro" },
+      { quote: " is not only a compelling story about love and betrayal but also a profound exploration of the human psyche, making it a ...\n[Summary of Dom Casmurro - Machado de Assis - YouTube] ", context: "From Dom Casmurro" }
+    ],
+    insights: "[Dom Casmurro Summary and Study Guide - SuperSummary] Get ready to explore Dom Casmurro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[Dom Casmurro - Wikipedia] Set in Rio de Janeiro during the Second Reign, the novel begins with a recent episode in which the narrator is nicknamed \"Dom Casmurro\", hence the title of the ...\n\n[\"Dom Casmurro\" is a novel written by Brazilian author Joaquim ...] \"Dom Casmurro\" is not only a compelling story about love and betrayal but also a profound exploration of the human psyche, making it",
   },
 
   "labyrinth-of-solitude": {

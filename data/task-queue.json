@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T04:56:34.442Z",
+    "generatedAt": "2026-05-21T04:57:38.133Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -182,8 +182,7 @@
     "nibelungenlied",
     "atonement",
     "lives",
-    "cloudstreet",
-    "gods-bits-of-wood"
+    "cloudstreet"
   ],
   "queue": [
     {
@@ -206,8 +205,10 @@
       "priority": 1,
       "batchStatus": "done",
       "batchError": "fetch failed",
-      "batchProcessedAt": "2026-05-21T04:42:17.529Z",
-      "batchSources": []
+      "batchProcessedAt": "2026-05-21T03:58:54.781Z",
+      "batchSources": [
+        "Britannica"
+      ]
     },
     {
       "bookId": "season-of-migration",
@@ -226,10 +227,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
+      "batchStatus": "skipped",
       "batchError": "insufficient data from APIs",
-      "batchProcessedAt": "2026-05-21T04:42:57.865Z",
-      "batchSources": []
+      "batchProcessedAt": "2026-05-21T03:59:32.405Z",
+      "batchSources": [
+        "wikipedia_en"
+      ]
     },
     {
       "bookId": "nervous-conditions",
@@ -248,10 +251,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
+      "batchStatus": "skipped",
       "batchError": "insufficient data from APIs",
-      "batchProcessedAt": "2026-05-21T04:43:37.513Z",
-      "batchSources": []
+      "batchProcessedAt": "2026-05-21T04:00:10.599Z",
+      "batchSources": [
+        "wikipedia_en"
+      ]
     },
     {
       "bookId": "weep-not-child",
@@ -271,9 +276,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:44:17.092Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:00:56.954Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -295,9 +302,10 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:44:57.664Z",
+      "batchProcessedAt": "2026-05-21T04:01:42.901Z",
       "batchSources": [
-        "百度百科"
+        "百度百科",
+        "Britannica"
       ]
     },
     {
@@ -318,9 +326,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:45:37.151Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:02:29.318Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -341,9 +351,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:46:26.993Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:03:15.048Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -363,10 +375,9 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:47:07.633Z",
-      "batchError": "insufficient data from APIs",
-      "batchSources": []
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:04:00.935Z",
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "arrow-of-god",
@@ -386,7 +397,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:47:57.854Z",
+      "batchProcessedAt": "2026-05-21T04:04:33.645Z",
       "batchSources": [
         "百度百科"
       ]
@@ -409,9 +420,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:48:39.347Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:05:25.661Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -431,9 +444,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:49:28.431Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:06:13.471Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -454,9 +469,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:50:18.826Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:06:53.907Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -477,9 +494,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:50:55.067Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:07:32.715Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -500,9 +519,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:51:46.356Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:08:11.177Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -524,9 +545,10 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:52:36.485Z",
+      "batchProcessedAt": "2026-05-21T04:08:49.282Z",
       "batchSources": [
-        "百度百科"
+        "百度百科",
+        "Project Gutenberg"
       ]
     },
     {
@@ -547,9 +569,11 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:53:36.529Z",
-      "batchSources": [],
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:09:34.892Z",
+      "batchSources": [
+        "wikipedia_en"
+      ],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -570,7 +594,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:54:26.012Z",
+      "batchProcessedAt": "2026-05-21T04:10:07.550Z",
       "batchSources": [
         "百度百科"
       ]
@@ -594,7 +618,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:55:04.658Z",
+      "batchProcessedAt": "2026-05-21T04:10:40.229Z",
       "batchSources": [
         "百度百科"
       ]
@@ -617,7 +641,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:55:54.009Z",
+      "batchProcessedAt": "2026-05-21T04:11:12.474Z",
       "batchSources": [
         "百度百科"
       ]
@@ -640,7 +664,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:56:34.435Z",
+      "batchProcessedAt": "2026-05-21T04:11:45.141Z",
       "batchSources": [
         "百度百科"
       ]
@@ -1705,9 +1729,10 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:46:56.679Z",
+      "batchProcessedAt": "2026-05-21T04:42:22.787Z",
       "batchSources": [
-        "wikipedia_en"
+        "百度百科",
+        "Project Gutenberg"
       ]
     },
     {
@@ -1728,10 +1753,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:05.753Z",
+      "batchProcessedAt": "2026-05-21T04:42:55.193Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1752,11 +1776,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:13.305Z",
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:43:41.312Z",
       "batchSources": [
         "wikipedia_en"
-      ]
+      ],
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "love-in-cholera",
@@ -1776,10 +1801,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:22.325Z",
+      "batchProcessedAt": "2026-05-21T04:44:13.710Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1800,11 +1824,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:29.897Z",
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:44:59.510Z",
       "batchSources": [
         "wikipedia_en"
-      ]
+      ],
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "to-kill-mockingbird",
@@ -1824,10 +1849,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:38.976Z",
+      "batchProcessedAt": "2026-05-21T04:45:31.988Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1849,10 +1873,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:49.001Z",
+      "batchProcessedAt": "2026-05-21T04:46:04.186Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1873,10 +1896,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:58.033Z",
+      "batchProcessedAt": "2026-05-21T04:46:36.356Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1898,10 +1920,11 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:07.303Z",
+      "batchProcessedAt": "2026-05-21T04:47:22.638Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科",
+        "Project Gutenberg",
+        "Britannica"
       ]
     },
     {
@@ -1922,10 +1945,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:14.612Z",
+      "batchProcessedAt": "2026-05-21T04:47:54.992Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1946,10 +1968,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:23.665Z",
+      "batchProcessedAt": "2026-05-21T04:48:27.216Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1970,10 +1991,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:32.723Z",
+      "batchProcessedAt": "2026-05-21T04:48:59.562Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1994,10 +2014,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:40.273Z",
+      "batchProcessedAt": "2026-05-21T04:49:44.499Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -2018,9 +2037,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:47.813Z",
+      "batchProcessedAt": "2026-05-21T04:50:30.235Z",
       "batchSources": [
-        "wikipedia_en"
+        "百度百科"
       ]
     },
     {
@@ -2040,11 +2059,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:55.370Z",
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:51:15.459Z",
       "batchSources": [
         "wikipedia_en"
-      ]
+      ],
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "true-history-kelly-gang",
@@ -2064,11 +2084,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:02.915Z",
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:52:13.373Z",
       "batchSources": [
         "wikipedia_en"
-      ]
+      ],
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "the-tree-of-man",
@@ -2088,9 +2109,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:10.475Z",
+      "batchProcessedAt": "2026-05-21T04:53:05.189Z",
       "batchSources": [
-        "wikipedia_en"
+        "Project Gutenberg"
       ]
     },
     {
@@ -2110,11 +2131,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:18.043Z",
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:53:50.243Z",
       "batchSources": [
         "wikipedia_en"
-      ]
+      ],
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "tb-hongxing",
@@ -2129,7 +2151,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:51:48.887Z",
+      "batchProcessedAt": "2026-05-21T04:54:35.146Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2145,7 +2167,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:51:53.388Z",
+      "batchProcessedAt": "2026-05-21T04:55:20.804Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2161,7 +2183,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:51:57.917Z",
+      "batchProcessedAt": "2026-05-21T04:56:06.253Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2177,7 +2199,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:02.441Z",
+      "batchProcessedAt": "2026-05-21T04:56:52.536Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2193,7 +2215,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:06.964Z",
+      "batchProcessedAt": "2026-05-21T04:57:38.131Z",
       "batchError": "insufficient data from APIs"
     },
     {
