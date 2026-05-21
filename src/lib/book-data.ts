@@ -968,37 +968,32 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "medea": {
     id: "medea",
     characters: [
-      { name: "Fate", role: "角色", description: "\"Medea\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Caster", role: "角色", description: "\"Medea\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Servant", role: "角色", description: "\"Medea\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "Medea", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Tragic Heroine", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Complexity", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Hero", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Euripides", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Scribd", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Jason", role: "角色", description: "Medea 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Medea 中的主要角色。" }
     ],
-    plotSummary: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。",
+    plotSummary: "[Medea by Euripides | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Euripides's play Medea. Download the free study guide and infographic for Medea here: https://www ...\n\n[Medea by Euripides | Overview, Summary & Characters - Lesson] Learn about Medea, the figure from Greek mythology. Then read a summary of the tragic play written by Euripides that takes place years after Jason...\n\nMedea Medea is the daughter of king Aeetes of the island of Clochis and granddaughter of Helios, the sun god. When Jason arrived at Clochis on his ship the Argo in search of the Golden Fleece… read analysis of Medea Jason Jason is the son of Aeson. As a child he is given to the centaur, Chiron, to be raised, educated, and protected from his greedy half-uncle, Pelias, king of Iolocus. In an effort to get… read analysis of Jason Creon Creon, son of Lycaethus, is the king of Corinth, the city-state where the events of Medea take place. He is a discerning judge of character, and accu",
     plotNodes: [
-      { label: "第 1 部分", description: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格" },
-      { label: "第 2 部分", description: "美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。" },
-      { label: "第 3 部分", description: "葛木宗一郎的Servant（从者）。职阶是以魔术为专长的“Caster”。Caster在许多从者都具备对魔力能力的圣杯战争里被称作最弱，她为了弥补这点而从城镇的人们身上吸取生命力，当成魔力。 [1]人设原画" },
-      { label: "第 4 部分", description: "她的真身是希腊神话的背叛魔女美狄亚（Medea）。拥有现代的魔术师不能相比的实力，即使是大魔术也能用一工程来发动。她发挥出这项本领，实践了以从者（Servant）之身作为御主（Master）召唤出Assassin此等绝技。" },
-      { label: "第 5 部分", description: "宝具是把时间持续的所有魔术，回归到被施行之前的状态的解咒短刀“万符必应破戒(Rule Breaker)”。某意义上，可以说是把她的人生具现了出来的宝具。" }
+      { label: "Part 1", description: "[Medea by Euripides | Summary & Analysis - YouTube] ..." },
+      { label: "Part 2", description: "[Medea by Euripides | Overview, Summary & Characters - Lesson] Learn about Medea, the figure from Greek mythology." },
+      { label: "Part 3", description: "Medea Medea is the daughter of king Aeetes of the island of Clochis and granddaughter of Helios, the sun god." }
     ],
-    themeAnalysis: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。",
-    techniques: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。",
+    themeAnalysis: "[Medea by Euripides | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Euripides's play Medea. Download the free study guide and infographic for Medea here: https://www ...\n\n[Analysis of Euripides' Medea - Literary Theory and Criticism] The Nurse's sympathetic reaction to Medea's misery sounds the play's dominant theme of the danger of passion overwhelming reason, judgment, and ...\n\n[Medea Character Analysis - LitCharts] The Nurse is one of Medea's servants. She is greatly grieved by Medea's misfortunes and, at the same time, fears for the children's lives because of Medea's all ...\n\n[Medea: Analysis of Major Characters | Literature and Writing - EBSCO] The play unfolds in Corinth, where Medea grapples with her feelings after Jason's betrayal, showcasing her compl",
+    techniques: "[Analysis of Euripides' Medea - Literary Theory and Criticism] The Nurse's sympathetic reaction to Medea's misery sounds the play's dominant theme of the danger of passion overwhelming reason, judgment, and ...\n\n[Medea: Analysis of Major Characters | Literature and Writing - EBSCO] The play unfolds in Corinth, where Medea grapples with her feelings after Jason's betrayal, showcasing her complexities as both a mother and a vengeful spirit.",
     excerpts: [
-      { quote: "万符必应破戒(Rule Breaker)", context: "来源：Medea" }
+      { quote: "My students can't get enough of your charts and their results have gone through the roof.", context: "From Medea" }
     ],
-    insights: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。",
+    insights: "[Medea: Character List - SparkNotes] The play charts Medea's emotional transformation, a progression from suicidal despair to sadistic fury. She eventually avenges Jason's betrayal with a series of ...\n\n[Medea Character Analysis - LitCharts] The Nurse is one of Medea's servants. She is greatly grieved by Medea's misfortunes and, at the same time, fears for the children's lives because of Medea's all ...\n\n[Medea by Euripides | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Euripides's play Medea. Download the free study guide and infographic for Medea here: https://w",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BE%8E%E7%8B%84%E4%BA%9A", tier: "reference", fetchedAt: "2026-05-21T04:31:04.598Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/35451", tier: "original_text", fetchedAt: "2026-05-21T04:31:24.566Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BE%8E%E7%8B%84%E4%BA%9A", tier: "reference", fetchedAt: "2026-05-21T05:28:46.817Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Medea%20Euripides" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Medea%20Euripides" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Medea" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Medea" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -1189,7 +1184,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Pride and Prejudice - Wikipedia] Pride and Prejudice is the second published novel by English author Jane Austen, written when she was aged 20–21, and later published in 1813.\n\n[Pride and Prejudice: Character List - SparkNotes] A list of all the characters in Pride and Prejudice. Pride and Prejudice characters include: Elizabeth Bennet, Fitzwilliam Darcy, Jane Bennet, ...\n\n[Pride and Prejudice Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of Pride and Prejudice. Visual theme-tracking, too.\n\n[Great character analysis for Jane Austen's Pride and Prej",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81", tier: "reference", fetchedAt: "2026-05-21T05:24:15.906Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81", tier: "reference", fetchedAt: "2026-05-21T05:29:15.151Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

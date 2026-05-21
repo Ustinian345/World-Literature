@@ -484,5 +484,23 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:27:37.802Z"
+  },
+  {
+    "bookId": "tb-lin-qingxuan",
+    "title": "和时间赛跑",
+    "author": "林清玄",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:28:24.094Z"
+  },
+  {
+    "bookId": "tb-ys-1",
+    "title": "荷花",
+    "author": "叶圣陶",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:29:09.440Z"
   }
 ]
