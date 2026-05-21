@@ -1,8 +1,8 @@
+import bcrypt from "bcryptjs";
 import { prisma } from "@/lib/prisma";
-import * as crypto from "crypto";
 
-function hashPassword(password: string): string {
-  return crypto.createHash("sha256").update(password).digest("hex");
+async function hashPassword(password: string): Promise<string> {
+  return bcrypt.hash(password, 12);
 }
 
 export type StoredUser = {
@@ -25,10 +25,9 @@ export const userStore = {
     if (existing) return existing;
     return prisma.user.create({
       data: {
-        id: crypto.randomUUID(),
         email: email.toLowerCase(),
         name: name || email.split("@")[0],
-        passwordHash: password ? hashPassword(password) : "",
+        passwordHash: password ? await hashPassword(password) : "",
         provider,
       },
     });
@@ -45,11 +44,12 @@ export const userStore = {
     const user = await prisma.user.findUnique({ where: { email: email.toLowerCase() } });
     if (!user) return { success: false, error: "用户不存在" };
     if (user.provider !== "credentials") return { success: false, error: "第三方登录用户无密码" };
-    if (user.passwordHash !== hashPassword(currentPassword)) return { success: false, error: "当前密码错误" };
+    const valid = await bcrypt.compare(currentPassword, user.passwordHash);
+    if (!valid) return { success: false, error: "当前密码错误" };
     if (newPassword.length < 6) return { success: false, error: "新密码至少 6 位" };
     await prisma.user.update({
       where: { email: email.toLowerCase() },
-      data: { passwordHash: hashPassword(newPassword) },
+      data: { passwordHash: await hashPassword(newPassword) },
     });
     return { success: true };
   },
@@ -57,7 +57,8 @@ export const userStore = {
   async verifyPassword(email: string, password: string): Promise<StoredUser | null> {
     const user = await prisma.user.findUnique({ where: { email: email.toLowerCase() } });
     if (!user || user.provider !== "credentials") return null;
-    if (user.passwordHash !== hashPassword(password)) return null;
+    const valid = await bcrypt.compare(password, user.passwordHash);
+    if (!valid) return null;
     return user;
   },
 
@@ -70,7 +71,6 @@ export const userStore = {
     if (existing) return existing;
     return prisma.user.create({
       data: {
-        id: crypto.randomUUID(),
         email: email.toLowerCase(),
         name: name || email.split("@")[0],
         passwordHash: "",

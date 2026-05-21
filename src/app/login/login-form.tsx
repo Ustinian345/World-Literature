@@ -17,14 +17,42 @@ export function LoginForm() {
     setLoading(true);
 
     try {
+      if (mode === "register") {
+        // 第一步：调用注册 API
+        const res = await fetch("/api/auth/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email,
+            password,
+            name: name || email.split("@")[0],
+          }),
+        });
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          setError(data.error || `注册失败 (HTTP ${res.status})`);
+          setLoading(false);
+          return;
+        }
+
+        console.log("[register] API 返回成功:", data);
+      }
+
+      // 第二步：登录（注册后自动登录，或纯登录）
       const result = await signIn("credentials", {
         email,
         password,
-        name: mode === "register" ? (name || email.split("@")[0]) : undefined,
         redirect: false,
       });
+
       if (result?.error) {
-        setError(mode === "login" ? "邮箱或密码错误" : "注册失败，请检查密码至少 6 位");
+        setError(
+          result.error === "CredentialsSignin"
+            ? "邮箱或密码错误"
+            : `登录失败: ${result.error}`
+        );
       } else if (result?.ok) {
         window.location.href = "/";
       }

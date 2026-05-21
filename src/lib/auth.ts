@@ -26,24 +26,15 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         if (!credentials?.email || !credentials?.password) return null;
         const email = (credentials.email as string).toLowerCase().trim();
         const password = credentials.password as string;
-        if (password.length < 6) return null;
 
-        const existing = await userStore.verifyPassword(email, password);
-        if (existing) {
-          return { id: email, email: existing.email, name: existing.name, image: existing.avatar || null };
-        }
+        const user = await userStore.verifyPassword(email, password);
+        if (!user) return null;
 
-        // 检查是否已被 Google 注册
-        const googleUser = await userStore.findByEmail(email);
-        if (googleUser && googleUser.provider === "google") return null;
-
-        // 新用户自动注册
-        const name = (credentials.name as string) || email.split("@")[0];
-        const newUser = await userStore.create(email, password, name, "credentials");
-        const count = await userStore.getUserCount();
         return {
-          id: email, email: newUser.email, name: newUser.name,
-          isNewUser: true, userNumber: count,
+          id: user.id,
+          email: user.email,
+          name: user.name,
+          image: user.avatar || null,
         };
       },
     }),
