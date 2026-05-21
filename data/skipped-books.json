@@ -169,5 +169,14 @@
     "continent": "americas",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:44:59.510Z"
+  },
+  {
+    "bookId": "the-bone-people",
+    "title": "骨头人",
+    "author": "凯丽·休姆",
+    "source": "award",
+    "continent": "oceania",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T04:51:15.459Z"
   }
 ]

@@ -1660,7 +1660,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Arrow of God Summary - GradeSaver] In Arrow of God, we see the calendar, religion, social mores, customary dress, and other facets of Igbo culture imperiled by the religious, ...\n\n[Arrow of God Summary and Study Guide - SuperSummary] Chinua Achebe's 1964 novel Arrow of God portrays an Ibo leader as he confronts the British administrators and missionaries in his town.\n\n[Arrow of God - Wikipedia] Arrow of God, published in 1964, is the third novel by Chinua Achebe. Along with Things Fall Apart and No Longer at Ease, it is considered part of The ...\n\n[Chinua Achebe Writing Styles in Arrow of God",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%A5%9E%E7%AE%AD", tier: "reference", fetchedAt: "2026-05-21T04:47:57.843Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%A5%9E%E7%AE%AD", tier: "reference", fetchedAt: "2026-05-21T04:51:58.700Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2153,14 +2153,25 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "death-of-artemio-cruz": {
     id: "death-of-artemio-cruz",
-    plotSummary: "The Death of Artemio Cruz (original Spanish title: La muerte de Artemio Cruz, pronounced [aɾˈtemjo ˈkɾus]) is an historical fiction novel published in 1962 by Mexican writer Carlos Fuentes. An English translation by Sam Hileman was published in 1964, and a new translation by Alfred MacAdam in 1991. It is considered to be a milestone in the Latin American Boom.",
-    themeAnalysis: "The Death of Artemio Cruz (original Spanish title: La muerte de Artemio Cruz, pronounced [aɾˈtemjo ˈkɾus]) is an historical fiction novel published in 1962 by Mexican writer Carlos Fuentes. An English translation by Sam Hileman was published in 1964, and a new translation by Alfred MacAdam in 1991. It is considered to be a milestone in the Latin American Boom.",
-    techniques: "The Death of Artemio Cruz (original Spanish title: La muerte de Artemio Cruz, pronounced [aɾˈtemjo ˈkɾus]) is an historical fiction novel published in 1962 by Mexican writer Carlos Fuentes. An English translation by Sam Hileman was published in 1964, and a new translation by Alfred MacAdam in 1991. It is considered to be a milestone in the Latin American Boom.",
+    characters: [
+      { name: "The Death Of", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "Artemio Cruz Summary", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "The Death", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "Artemio Cruz", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "Plot Summary", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "Chapter Summaries", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" },
+      { name: "Analyses", role: "角色", description: "The Death of Artemio Cruz 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore The Death Of Artemio Cruz and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Death of Artemio Cruz Carlos Fuentes, Transl. Alfred J. MacAdam The Death of Artemio Cruz Carlos Fuentes, Transl. Alfred J. MacAdam 42 pages • 1-hour read Carlos Fuentes, Transl. Alfred J. MacAdam The Death of Artemio Cruz Fiction | Novel | Adult | Published in 1962 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Introduction-Chapter 2 Chapters 3-4 Chapters 5-6 Chapters 7-9 Chapters 10-12 Character List NEW Character Analysis Themes Symbols & Motifs Important Quotes Essay Topic",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore The Death Of Artemio Cruz and its meaning." },
+      { label: "Part 2", description: "Study Guide The Death of Artemio Cruz Carlos Fuentes, Transl." }
+    ],
+    themeAnalysis: "Get ready to explore The Death Of Artemio Cruz and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Death of Artemio Cruz Carlos Fuentes, Transl. Alfred J. MacAdam The Death of Artemio Cruz Carlos Fuentes, Transl. Alfred J. MacAdam 42 pages • 1-hour read Carlos Fuentes, Transl. Alfred J. MacAdam The Death of Artemio Cruz Fiction | Novel | Adult | Published in 1962 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summ",
+    techniques: "[The Death of Artemio Cruz by Carlos Fuentes | Literature and Writing] A twelve-page discussion of The Death of Artemio Cruz treats the novel's tone, structure, point of view, and treatment of time, followed by more detailed ...\n\nGet ready to explore The Death Of Artemio Cruz and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Death of Artemio Cruz Carlos Fuentes, Transl. Alfred J. MacAdam The Death of Artemio Cruz Carlos Fuentes, Transl. Alfred",
     excerpts: [],
-    insights: "The Death of Artemio Cruz (original Spanish title: La muerte de Artemio Cruz, pronounced [aɾˈtemjo ˈkɾus]) is an historical fiction novel published in 1962 by Mexican writer Carlos Fuentes. An English translation by Sam Hileman was published in 1964, and a new translation by Alfred MacAdam in 1991. It is considered to be a milestone in the Latin American Boom.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Death%20of%20Artemio%20Cruz"
-    // }
+    insights: "[The Death Of Artemio Cruz Summary and Study Guide] The Death of Artemio Cruz · Plot Summary · Chapter Summaries & Analyses · Character Analysis · Themes · Symbols & Motifs · Important Quotes · Essay Topics.\n\n[The Death of Artemio Cruz Summary & Study Guide - BookRags.com] The Death of Artemio Cruz Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[The Death of Artemio Cruz - Wikipedia] The Death of Artemio Cruz is an historical fiction novel published in 1962 by Mexican writer Carlos Fuentes. An English translation by Sa",
   },
 
   "moby-dick": {
