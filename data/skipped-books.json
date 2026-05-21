@@ -439,5 +439,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:23:51.032Z"
+  },
+  {
+    "bookId": "tb-cwx-1",
+    "title": "孤独之旅",
+    "author": "曹文轩",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:24:36.541Z"
   }
 ]

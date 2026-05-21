@@ -56,7 +56,8 @@
       "Bash(npm install *)",
       "Bash(echo \"EXIT: $?\")",
       "Bash(export SERPER_API_KEY=\"4ceeb69911c26618fa8dc447573b65fd77e3bffb\")",
-      "Bash(git status *)"
+      "Bash(git status *)",
+      "Bash(git check-ignore *)"
     ]
   }
 }

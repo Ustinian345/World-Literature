@@ -443,7 +443,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Sima Qian - Wikipedia] He is considered the father of Chinese historiography for the Shiji (sometimes translated into English as Records of the Grand Historian), a general history ...\n\n[Sima Qian | Chinese Historian, Scientist & Father of ... - Britannica] What is Sima Qian best known for? What is the 'Records of the Grand Historian' (Shiji)?. Why was the Shiji an important book in Chinese history?\n\n[[PDF] Sima Qian Records Of The Grand Historian - sciphilconf.berkeley.edu] The Records of the Grand Historian (史記, Shiji) is an extensive historical chronicle spanning over 130 chapters. It cover",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:20:23.801Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%B2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:25:14.511Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1024,20 +1024,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "metamorphoses": {
     id: "metamorphoses",
-    plotSummary: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思考。 [23]小说以主人公变为甲虫这一荒诞故事反映了世人唯利是图、对金钱顶礼膜拜、对真情人性不屑一顾，最终被社会挤压变形的现实，反映了资本主义制度下真实的社会生活。 [2]\n\n卡夫卡生活于第一次世界大战前后动荡不安、物质主义盛行的年代， [5]他一生中绝大部分时间生活在捷克共和国的首都布拉格，而当时的布拉格正处在激烈的民族冲突与动荡中，“社会主义、犹太主义、德国民族主义、玩世不恭",
-    plotNodes: [
-      { label: "Part 1", description: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之" },
-      { label: "Part 2", description: "《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最" },
-      { label: "Part 3", description: "卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思考。" },
-      { label: "Part 4", description: "卡夫卡生活于第一次世界大战前后动荡不安、物质主义盛行的年代， [5]他一生中绝大部分时间生活在捷克共和国的首都布拉格，而当时的布拉格正处在激烈的民族冲突与动荡中，“社会主义、犹太主义、德国民族主义、玩世不恭" }
+    characters: [
+      { name: "Metamorphoses Notes", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Plot Summary", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Places", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Objects", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Chapter Notes", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "Metamorphoses 中的主要角色。" },
+      { name: "Quotes", role: "角色", description: "Metamorphoses 中的主要角色。" }
     ],
-    themeAnalysis: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”",
-    techniques: "",
+    plotSummary: "[Metamorphoses Notes - BookRags.com] Plot Summary · Characters · Places & Objects · Chapter Notes & Analysis. These free notes also contain Quotes and Themes & Topics on Metamorphoses by Ovid.\n\n[Metamorphoses by Ovid | summary and themes of ... - YouTube] \"Metamorphoses\" by Ovid is an epic narrative poem that spans 15 books and over 250 myths. Here's a concise and detailed summary: **Book 1 ...\n\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时",
+    plotNodes: [
+      { label: "Part 1", description: "[Metamorphoses Notes - BookRags.com] Plot Summary · Characters · Places & Objects · Chapter Notes & Analysis." },
+      { label: "Part 2", description: "[Metamorphoses by Ovid | summary and themes of ..." },
+      { label: "Part 3", description: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之" },
+      { label: "Part 4", description: "《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时" }
+    ],
+    themeAnalysis: "[Metamorphoses Notes - BookRags.com] Plot Summary · Characters · Places & Objects · Chapter Notes & Analysis. These free notes also contain Quotes and Themes & Topics on Metamorphoses by Ovid.\n\n[Metamorphoses Book 1 Summary - Course Hero] This study guide and infographic for Ovid's Metamorphoses offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Metamorphoses Book 1 Summary & Analysis - SparkNotes] Ovid begins the Metamorphoses by invoking the gods. He asks them to inspire his work, which opens with the creation of the world and continues on to the present ...\n\n[Metamorphoses by Ovid | summary and themes of ... - YouTube] \"Metamorphoses\" by Ovid is an epic narrative poem that spans 15 books and over 250 myths. Here's a concise and detailed summar",
+    techniques: "[Metamorphoses Book 1 Summary - Course Hero] This study guide and infographic for Ovid's Metamorphoses offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Metamorphoses by Ovid | summary and themes of ... - YouTube] \"Metamorphoses\" by Ovid is an epic narrative poem that spans 15 books and over 250 myths. Here's a concise and detailed summary: **Book 1 ...",
     excerpts: [],
-    insights: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献",
+    insights: "[Metamorphoses Book 1 Summary & Analysis - SparkNotes] Ovid begins the Metamorphoses by invoking the gods. He asks them to inspire his work, which opens with the creation of the world and continues on to the present ...\n\n[Metamorphoses Study Guide - Ovid - LitCharts] From a mythological and divine perspective, the Metamorphoses outlines Julius Caesar's rise to power in Rome in 49 B.C.E. The Metamorphoses also ...\n\n[Metamorphoses Notes - BookRags.com] Plot Summary · Characters · Places & Objects · Chapter Notes & Analysis. These free notes also contain Quotes and Themes & Topics on Metamorphose",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:28:21.526Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:24:56.381Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
