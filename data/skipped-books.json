@@ -268,5 +268,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:59:53.274Z"
+  },
+  {
+    "bookId": "tb-md-1",
+    "title": "白杨礼赞",
+    "author": "茅盾",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:00:44.105Z"
   }
 ]

@@ -344,31 +344,29 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "tao-te-ching": {
     id: "tao-te-ching",
-    plotSummary: "《道德经》，春秋时期老子所著的哲学作品，又称《德道经》《道德真经》《老子》《五千言》《老子五千文》，是中国古代先秦诸子分家前的一部著作，是道家哲学思想的重要来源。道德经分上下两篇，原文上篇《德经》、下篇《道经》，不分章，后改为《道经》37章在前，第38章之后为《德经》，并分为81章。《道德经》文本以哲学意义之“道德”为纲宗，论述修身、治国、用兵、养生之道，而多以政治为旨归，乃所谓“内圣外王”之学，文意深奥，包涵广博，被誉为万经之王。《道德经》是中国历史上最伟大的名著之一，对传统哲学、科学、政治、宗教等产生了深刻影响。据联合国教科文组织统计，《道德经》是除了《圣经》以外被译成外国文字发布量最多的文化名著。被誉为“中华文化之源”“万经之王”。",
+    characters: [
+      { name: "Tao Te Ching", role: "角色", description: "Tao Te Ching 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Tao Te Ching 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "Tao Te Ching 中的主要角色。" },
+      { name: "Background", role: "角色", description: "Tao Te Ching 中的主要角色。" },
+      { name: "Ching", role: "角色", description: "Tao Te Ching 中的主要角色。" },
+      { name: "Lao Tzu", role: "角色", description: "Tao Te Ching 中的主要角色。" },
+      { name: "About", role: "角色", description: "Tao Te Ching 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore Tao Te Ching and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Tao Te Ching Lao Tzu Tao Te Ching Lao Tzu 34 pages • 1-hour read Lao Tzu Tao Te Ching Nonfiction | Book | Adult A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Books 1-10 Books 11-37 Books 38-59 Books 60-81 Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Themes The Namelessness and Ineffability of the Way The book starts with the observation that the way, or tao, is nameless. The way has existed forever and has created everything on earth, bu",
     plotNodes: [
-      { label: "第 1 部分", description: "《道德经》，春秋时期老子所著的哲学作品，又称《德道经》《道德真经》《老子》《五千言》《老子五千文》，是中国古代先秦诸子分家前的一部著作，是道家哲学思想的重要来源。道德经分上下两篇，原文上篇《德经》、下篇《道经》，不分章，后改为《道经》37章在前，第38章之后为《德经》，并分为81章。《道德经》文本以哲学意义之“道德”为纲宗，论述修身、治国、用兵、养生之道，而多以政治为旨归，乃所谓“内圣外王”之学，" },
-      { label: "第 2 部分", description: "《道德经》文本以哲学意义之“道德”为纲宗，论述修身、治国、用兵、养生之道，而多以政治为旨归，乃所谓“内圣外王”之学，文意深奥，包涵广博，被誉为万经之王。 [1]" },
-      { label: "第 3 部分", description: "《道德经》是中国历史上最伟大的名著之一，对传统哲学、科学、政治、宗教等产生了深刻影响。据联合国教科文组织统计，《道德经》是除了《圣经》以外被译成外国文字发布量最多的文化名著。被誉为“中华文化之源”“万经之王”。" }
+      { label: "Part 1", description: "Get ready to explore Tao Te Ching and its meaning." },
+      { label: "Part 2", description: "Study Guide Tao Te Ching Lao Tzu Tao Te Ching Lao Tzu 34 pages • 1-hour read Lao Tzu Tao Te Ching Nonfiction | Book | Adult A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high" }
     ],
-    themeAnalysis: "《道德经》，春秋时期老子所著的哲学作品，又称《德道经》《道德真经》《老子》《五千言》《老子五千文》，是中国古代先秦诸子分家前的一部著作，是道家哲学思想的重要来源。道德经分上下两篇，原文上篇《德经》、下篇《道经》，不分章，后改为《道经》37章在前，第38章之后为《德经》，并分为81章。《道德经》文本以哲学意义之“道德”为纲宗，论述修身、治国、用兵、养生之道，而多以政治为旨归，乃所谓“内圣外王”之学，文意深奥，包涵广博，被誉为万经之王。《道德经》是中国历史上最伟大的名著之一，对传统哲学、科学、政治、宗教等产生了深刻影响。据联合国教科文组织统计，《道德经》是除了《圣经》以外被译成外国文字发布量最多的文化名著。被誉为“中华文化之源”“万经之王”。\n《道德经》，春秋时期老子所著的哲学作品，又称《德道经》 [59]《道德真经》《老子》《五千言》《老子五千文》，是中国古代先秦诸子分家前的一部著作，是道家哲学思想的重要来源。道德经分上下两篇，原文上篇《德经》、下篇《道经》，不分章，后改为《道经》37章在前，第38章之后为《德经》，并分为81章。",
-    techniques: "《道德经》，春秋时期老子所著的哲学作品，又称《德道经》《道德真经》《老子》《五千言》《老子五千文》，是中国古代先秦诸子分家前的一部著作，是道家哲学思想的重要来源。道德经分上下两篇，原文上篇《德经》、下篇《道经》，不分章，后改为《道经》37章在前，第38章之后为《德经》，并分为81章。《道德经》文本以哲学意义之“道德”为纲宗，论述修身、治国、用兵、养生之道，而多以政治为旨归，乃所谓“内圣外王”之学，文意深奥，包涵广博，被誉为万经之王。《道德经》是中国历史上最伟大的名著之一，对传统哲学、科学、政治、宗教等产生了深刻影响。据联合国教科文组织统计，《道德经》是除了《圣经》以外被译成外国文字发布量最多的文化名著。被誉为“中华文化之源”“万经之王”。",
-    excerpts: [
-      { quote: "居周久之，见周之衰，乃遂去。至关，关（令）尹喜曰：子将隐矣，强为我著书，于是老子言道德五千言而去，莫知始终", context: "来源：Tao Te Ching" },
-      { quote: "道，可道，非常道。名，可名，非常名。无，名天地之始；有，名万物之母。故常无，欲以观其妙；常有，欲以观其徼。此两者同出而异名，同谓之玄。玄之又玄，众妙之门。", context: "来源：Tao Te Ching" }
-    ],
-    insights: "《道德经》，春秋时期老子所著的哲学作品，又称《德道经》《道德真经》《老子》《五千言》《老子五千文》，是中国古代先秦诸子分家前的一部著作，是道家哲学思想的重要来源。道德经分上下两篇，原文上篇《德经》、下篇《道经》，不分章，后改为《道经》37章在前，第38章之后为《德经》，并分为81章。《道德经》文本以哲学意义之“道德”为纲宗，论述修身、治国、用兵、养生之道，而多以政治为旨归，乃所谓“内圣外王”之学，文意深奥，包涵广博，被誉为万经之王。《道德经》是中国历史上最伟大的名著之一，对传统哲学、科学、政治、宗教等产生了深刻影响。据联合国教科文组织统计，《道德经》是除了《圣经》以外被译成外国文字发布量最多的文化名著。被誉为“中华文化之源”“万经之王”。",
+    themeAnalysis: "Get ready to explore Tao Te Ching and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Tao Te Ching Lao Tzu Tao Te Ching Lao Tzu 34 pages • 1-hour read Lao Tzu Tao Te Ching Nonfiction | Book | Adult A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Books 1-10 Books 11-37 Books 38-59 Books 60-81 Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Q",
+    techniques: "",
+    excerpts: [],
+    insights: "[Tao Te Ching - Wikipedia] The Tao Te Ching or Dào Dé Jīng, [note 1] or Laozi in Chinese and scholarship, is an ancient Chinese classic text, becoming a foundational work of Taoism.\n\n[Tao Te Ching Themes | SuperSummary] Lao Tzu believes that the best way to survive is to keep a low profile and to do little more than just endure. The Tao Te Ching advises people not to try too ...\n\n[Tao Te Ching Summary & Study Guide - BookRags.com] Tao Te Ching Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Tao Te Ching Background | Gr",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%81%93%E5%BE%B7%E7%BB%8F", tier: "reference", fetchedAt: "2026-05-21T04:14:56.235Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%81%93%E5%BE%B7%E7%BB%8F", tier: "reference", fetchedAt: "2026-05-21T05:00:14.739Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Tao%20Te%20Ching%20Laozi" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Tao%20Te%20Ching%20Laozi" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Tao%20Te%20Ching" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Tao%20Te%20Ching" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -2070,7 +2068,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Pedro Paramo Summary & Study Guide - BookRags.com] Pedro Paramo Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Pedro Páramo Character Analysis - LitCharts] Pedro Páramo is one of the three protagonists of the novel along with Juan Preciado (Pedro's son) and Susana San Juan (Pedro's childhood sweetheart).\n\n[Pedro Paramo Summary - SuperSummary] In the past narrative, Pedro Paramo is a young farmer. He runs errands while thinking about the girl of his dreams, Susana. In the present, Eduviges tells Juan ...\n\n[Pedro Param",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BD%A9%E5%BE%B7%E7%BD%97%C2%B7%E5%B7%B4%E6%8B%89%E8%8E%AB", tier: "reference", fetchedAt: "2026-05-21T04:56:34.423Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BD%A9%E5%BE%B7%E7%BD%97%C2%B7%E5%B7%B4%E6%8B%89%E8%8E%AB", tier: "reference", fetchedAt: "2026-05-21T05:00:53.225Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
