@@ -3184,4 +3184,98 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     ],
     insights: "[Full text of \"Congressional record\" - Internet Archive] to otd« to formulate tb. ba.1. for a i raotlcal long, range work progrua to thl. irea. We have therefore allocated a nomtoil amount of money to the ...\n\n[(PDF) ORIENTALIA LOVANIENSIA ANALECTA - Academia.edu] ... tb-ba — 1 1 ka-gur, — 1 ka-gur, 1 — 1 — 1 ses-tab-ba 1 ses-tab-ba — — 1 1 1 ... brief synopsis i s : in each of the four transactions. In all cases ...\n\n[Full text of \"198411 Rainbow\" - Internet Archive] If your line ends short of 32 characters then press ENTER to store the line. ... TB: BA= 1 56672— BU 1810 IF X1=0 GOTO 1860 182",
   },
+
+  "the-color-purple": {
+    id: "the-color-purple",
+    characters: [
+      { name: "The Color Purple", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Alice Walker", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Pulitzer Prize", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Walker", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "African American", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Pulitzer", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Black English Vernacular", role: "角色", description: "\"the-color-purple\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
+    plotNodes: [
+      { label: "第 1 部分", description: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction." }
+    ],
+    themeAnalysis: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
+    techniques: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
+    excerpts: [],
+    insights: "The Color Purple, novel by Alice Walker, published in 1982. It won a Pulitzer Prize in 1983, making Walker the first African American woman to win a Pulitzer for fiction. A feminist work about an abused and uneducated African American woman’s struggle for empowerment, The Color Purple was praised for the depth of its female characters and for its eloquent use of Black English Vernacular.",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/the-color-purple", tier: "reference", fetchedAt: "2026-05-21T07:42:20.620Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=the-color-purple" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=the-color-purple" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=the-color-purple" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=the-color-purple" },
+      ],
+    },
+  },
+
+  "as-i-lay-dying": {
+    id: "as-i-lay-dying",
+    characters: [
+      { name: "Lay Dying", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Addie Bundren", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Anse Bundren", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Darl Bundren", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Jewel Bundren", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Cash Bundren", role: "角色", description: "as-i-lay-dying 中的主要角色。" },
+      { name: "Video", role: "角色", description: "as-i-lay-dying 中的主要角色。" }
+    ],
+    plotSummary: "[As I Lay Dying by William Faulkner : r/classicliterature - Reddit] Themes in As I Lay Dying. Summary of As I Lay Dying by chapter ... plot or \"likeable characters\". ClingTurtle. • 2y ago.\n\n[Video: As I Lay Dying by Faulkner | Summary, Characters & Analysis] As I Lay Dying Summary ... As the story begins, Adie is dying and Her son Cash is the one building her coffin. It is Addie's wish to be buried in the town of ...\n\n[Analysis of William Faulkner's Novel As I Lay Dying - Facebook] As I Lay Dying is a 1930 Southern Gothic novel by American author William Faulkner. The story follows the Bundren family as they embark on a ...\n\n[As I Lay Dying: Character List - SparkNotes] A list of all the characters in As I Lay Dying. As I Lay Dying characters include: Addie Bundren , Anse Bundren, Darl Bundren , Jewel Bundren , Cash Bundren ...\n\n[As I Lay Dying Themes - LitCharts] At the most basic level, As I Lay Dying is a novel about the Bundrens and their family quest to fulfill the wish of their d",
+    plotNodes: [
+      { label: "Part 1", description: "[As I Lay Dying by William Faulkner : r/classicliterature - Reddit] Themes in As I Lay Dying." },
+      { label: "Part 2", description: "[Video: As I Lay Dying by Faulkner | Summary, Characters & Analysis] As I Lay Dying Summary ..." },
+      { label: "Part 3", description: "[Analysis of William Faulkner's Novel As I Lay Dying - Facebook] As I Lay Dying is a 1930 Southern Gothic novel by American author William Faulkner." },
+      { label: "Part 4", description: "[As I Lay Dying: Character List - SparkNotes] A list of all the characters in As I Lay Dying." },
+      { label: "Part 5", description: "[As I Lay Dying Themes - LitCharts] At the most basic level, As I Lay Dying is a novel about the Bundrens and their family quest to fulfill the wish of their d" }
+    ],
+    themeAnalysis: "[As I Lay Dying Themes - LitCharts] At the most basic level, As I Lay Dying is a novel about the Bundrens and their family quest to fulfill the wish of their deceased wife and mother Addie ...\n\n[Video: As I Lay Dying by Faulkner | Summary, Characters & Analysis] As I Lay Dying Summary ... As the story begins, Adie is dying and Her son Cash is the one building her coffin. It is Addie's wish to be buried in the town of ...\n\n[Analysis of William Faulkner's As I Lay Dying] Like The Sound and the Fury and other novels in the Yoknapatawpha cycle, As I Lay Dying explores the dynamic of a particular family. But unlike ...\n\n[Story Skeleton—As I Lay Dying - The Darling Axe] An analysis of the story structure in William Faulkner's \"As I Lay Dying\". We explore the use of unreliable narration, multiple",
+    techniques: "[Story Skeleton—As I Lay Dying - The Darling Axe] An analysis of the story structure in William Faulkner's \"As I Lay Dying\". We explore the use of unreliable narration, multiple perspectives ...",
+    excerpts: [],
+    insights: "[As I Lay Dying: Character List - SparkNotes] A list of all the characters in As I Lay Dying. As I Lay Dying characters include: Addie Bundren , Anse Bundren, Darl Bundren , Jewel Bundren , Cash Bundren ...\n\n[As I Lay Dying Themes - LitCharts] At the most basic level, As I Lay Dying is a novel about the Bundrens and their family quest to fulfill the wish of their deceased wife and mother Addie ...\n\n[As I Lay Dying - Wikipedia] As I Lay Dying is a 1930 Southern Gothic novel by American author William Faulkner. Faulkner's fifth novel, it is consistently ranked among the best novels ...\n\n[Video:",
+  },
+
+  "re-ca-01": {
+    id: "re-ca-01",
+    plotSummary: "[Federal Register Criteria For Classification Of Solid Waste Disposal ...] ... re ca 01 Z X U EH ca i? to in Q si tn 3 a. to 83 O -< ftSJ fa U O U EH >H tO ... SUMMARY A summary of all State administrative costs to conduct the ...",
+    plotNodes: [
+      { label: "Part 1", description: "[Federal Register Criteria For Classification Of Solid Waste Disposal ...] ..." }
+    ],
+    themeAnalysis: "[2000Q2PG.txt - EPA] Temple, Barker and Sloane, Inc., Review and Financial Analysis of Best ... re ca 01 Z X U EH ca i? to in Q si tn 3 a. to 83 O -< ftSJ fa U O U EH >H tO ...",
+    techniques: "",
+    excerpts: [],
+    insights: "[Federal Register Criteria For Classification Of Solid Waste Disposal ...] ... re ca 01 Z X U EH ca i? to in Q si tn 3 a. to 83 O -< ftSJ fa U O U EH >H tO ... SUMMARY A summary of all State administrative costs to conduct the ...\n\n[2000Q2PG.txt - EPA] Temple, Barker and Sloane, Inc., Review and Financial Analysis of Best ... re ca 01 Z X U EH ca i? to in Q si tn 3 a. to 83 O -< ftSJ fa U O U EH >H tO ...",
+  },
+
+  "tb-resurrection": {
+    id: "tb-resurrection",
+    characters: [
+      { name: "Computaional Chemistry Research", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Papers", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Academia", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "International Journal", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Current Research", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Review", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Background", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Drug", role: "角色", description: "\"tb-resurrection\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "[[PDF] Music-Week-1993-07-31.pdf - World Radio History] Poetry in the Book Trust's annual list of recommended reading for the Queen. ... I SO TOUGH TB RESURRECTION. PAINKILLERS l JURASSIC SHIFT. A ...",
+    plotNodes: [
+      { label: "第 1 部分", description: "[[PDF] Music-Week-1993-07-31.pdf - World Radio History] Poetry in the Book Trust's annual list of recommended reading for the Queen. ..." }
+    ],
+    themeAnalysis: "[Computaional Chemistry Research Papers - Academia.edu] 2021, International Journal of Current Research and Review. Background: Drug-Resistant Tuberculosis (TB) resurrection over the globe broadens the research ...\n\n[Full text of \"Notes and queries\" - Internet Archive] ... T. B. RESURRECTION MEN. — The Messrs. Chambers, in their Book of Days, give an account of this class of men. In turning over a scrap-book, I find the ...\n\n[[PDF] Music-Week-1993-07-31.",
+    techniques: "[Computaional Chemistry Research Papers - Academia.edu] 2021, International Journal of Current Research and Review. Background: Drug-Resistant Tuberculosis (TB) resurrection over the globe broadens the research ...\n\n[Full text of \"Notes and queries\" - Internet Archive] ... T. B. RESURRECTION MEN. — The Messrs. Chambers, in their Book of Days, give an account of this class of men.",
+    excerpts: [],
+    insights: "[Computaional Chemistry Research Papers - Academia.edu] 2021, International Journal of Current Research and Review. Background: Drug-Resistant Tuberculosis (TB) resurrection over the globe broadens the research ...\n\n[Full text of \"Notes and queries\" - Internet Archive] ... T. B. RESURRECTION MEN. — The Messrs. Chambers, in their Book of Days, give an account of this class of men.",
+  },
 };

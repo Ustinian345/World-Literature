@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Playfair_Display, Noto_Serif_SC, EB_Garamond } from "next/font/google";
 import SessionProvider from "@/components/SessionProvider";
 import UserMenu from "@/components/UserMenu";
+import WelcomeModal from "@/components/WelcomeModal";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -233,6 +234,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <WelcomeModal />
         </SessionProvider>
       </body>
     </html>

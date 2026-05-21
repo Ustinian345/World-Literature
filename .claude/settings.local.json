@@ -62,7 +62,8 @@
       "Bash(git ls-tree *)",
       "Bash(node -e \"process.kill\\(parseInt\\(require\\('fs'\\).readFileSync\\('C:/Users/lenovo/world-literature/.next/dev.pid','utf8'\\).trim\\(\\)\\)\\)\")",
       "Bash(rm -rf .next/dev.pid)",
-      "Bash(git rm *)"
+      "Bash(git rm *)",
+      "Bash(openssl rand *)"
     ]
   }
 }

@@ -9,15 +9,18 @@ const _users: Array<{
   createdAt: string;
 }> = [];
 
+let _userCount = _users.length;
+
 function findUser(email: string) {
   return _users.find((u) => u.email.toLowerCase() === email.toLowerCase()) || null;
 }
 
 function createUser(email: string, password: string, name: string) {
   if (findUser(email)) return null;
+  _userCount++;
   const user = { email: email.toLowerCase(), password, name, createdAt: new Date().toISOString() };
   _users.push(user);
-  return { email: user.email, name: user.name };
+  return { email: user.email, name: user.name, isNew: true, userNumber: _userCount };
 }
 
 export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = NextAuth({
@@ -52,22 +55,37 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         // 新用户 → 自动注册
         const newUser = createUser(email, password, name);
         if (!newUser) return null;
-        return { id: email, email: newUser.email, name: newUser.name };
+        return {
+          id: email,
+          email: newUser.email,
+          name: newUser.name,
+          isNewUser: true,
+          userNumber: newUser.userNumber,
+        };
       },
     }),
   ],
   callbacks: {
-    async jwt({ token, user, account }) {
+    async jwt({ token, user, account, trigger }) {
       if (user) {
         token.id = user.id || user.email || "";
         token.name = user.name || "";
+        token.isNewUser = (user as Record<string, unknown>).isNewUser === true;
+        token.userNumber = ((user as Record<string, unknown>).userNumber as number) || 0;
+      }
+      // 首次读取 session 时清除 new user 标记（弹窗只显示一次）
+      if (trigger === "update" && token.isNewUser) {
+        token.isNewUser = false;
       }
       if (account?.provider === "google") token.provider = "google";
       return token;
     },
     async session({ session, token }) {
       if (session.user) {
-        (session.user as unknown as Record<string, unknown>).id = token.id;
+        const u = session.user as unknown as Record<string, unknown>;
+        u.id = token.id;
+        u.isNewUser = token.isNewUser || false;
+        u.userNumber = token.userNumber || 0;
       }
       return session;
     },

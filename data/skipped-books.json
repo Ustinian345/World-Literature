@@ -2842,5 +2842,1742 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T07:15:02.010Z"
+  },
+  {
+    "bookId": "hugo-1966-herbert",
+    "title": "沙丘",
+    "author": "弗兰克·赫伯特",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:15:27.794Z"
+  },
+  {
+    "bookId": "nobel-1978-singer",
+    "title": "傻瓜吉姆佩尔",
+    "author": "艾萨克·巴什维斯·辛格",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:16:13.326Z"
+  },
+  {
+    "bookId": "hugo-2013-scalzi",
+    "title": "红衫",
+    "author": "约翰·斯卡尔齐",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:16:25.531Z"
+  },
+  {
+    "bookId": "tb-rulinwaishi",
+    "title": "儒林外史",
+    "author": "吴敬梓",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:16:27.532Z"
+  },
+  {
+    "bookId": "tb-ys-2",
+    "title": "爬山虎的脚",
+    "author": "叶圣陶",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:16:32.895Z"
+  },
+  {
+    "bookId": "pul-2019-powers",
+    "title": "上层林冠",
+    "author": "理查德·鲍尔斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:16:58.822Z"
+  },
+  {
+    "bookId": "pul-2018-greer",
+    "title": "少",
+    "author": "安德鲁·肖恩·格里尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:17:45.024Z"
+  },
+  {
+    "bookId": "pul-1976-bellow",
+    "title": "洪堡的礼物",
+    "author": "索尔·贝娄",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:17:51.447Z"
+  },
+  {
+    "bookId": "tb-luxun-1",
+    "title": "少年闰土",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:17:54.295Z"
+  },
+  {
+    "bookId": "tb-lhy-1",
+    "title": "窃读记",
+    "author": "林海音",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:17:57.617Z"
+  },
+  {
+    "bookId": "booker-2002-martel",
+    "title": "少年Pi的奇幻漂流",
+    "author": "扬·马特尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:18:31.740Z"
+  },
+  {
+    "bookId": "hugo-1973-asimov",
+    "title": "神们自己",
+    "author": "艾萨克·阿西莫夫",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:19:16.889Z"
+  },
+  {
+    "bookId": "pul-1989-tyler",
+    "title": "呼吸课程",
+    "author": "安妮·泰勒",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:19:18.584Z"
+  },
+  {
+    "bookId": "tb-luxun-6",
+    "title": "社戏",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:19:21.575Z"
+  },
+  {
+    "bookId": "tb-sts-1",
+    "title": "秋天的怀念",
+    "author": "史铁生",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:19:24.664Z"
+  },
+  {
+    "bookId": "pul-1928-wilder",
+    "title": "圣路易斯雷大桥",
+    "author": "桑顿·怀尔德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:20:02.391Z"
+  },
+  {
+    "bookId": "hugo-1971-niven",
+    "title": "环形世界",
+    "author": "拉里·尼文",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:20:43.755Z"
+  },
+  {
+    "bookId": "tb-taohuayuan",
+    "title": "桃花源记",
+    "author": "陶渊明",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:20:48.211Z"
+  },
+  {
+    "bookId": "tb-rulinwaishi",
+    "title": "儒林外史",
+    "author": "吴敬梓",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:20:50.552Z"
+  },
+  {
+    "bookId": "cerv-1999-edwards",
+    "title": "石头客栈",
+    "author": "豪尔赫·爱德华兹",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:20:50.957Z"
+  },
+  {
+    "bookId": "pul-1999-cunningham",
+    "title": "时时刻刻",
+    "author": "迈克尔·坎宁安",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:21:37.403Z"
+  },
+  {
+    "bookId": "pulitzer-2004-robinson",
+    "title": "基列家书",
+    "author": "玛丽莲·罗宾逊",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:22:09.742Z"
+  },
+  {
+    "bookId": "tb-luxun-4",
+    "title": "藤野先生",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:22:13.451Z"
+  },
+  {
+    "bookId": "tb-luxun-1",
+    "title": "少年闰土",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:22:15.831Z"
+  },
+  {
+    "bookId": "kafka-2017-atwood",
+    "title": "使女的故事",
+    "author": "玛格丽特·阿特伍德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:22:22.660Z"
+  },
+  {
+    "bookId": "pul-2021-erdrich",
+    "title": "守夜人",
+    "author": "路易丝·厄德里奇",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:23:12.693Z"
+  },
+  {
+    "bookId": "pul-2000-lahiri",
+    "title": "疾病解说者",
+    "author": "裘帕·拉希莉",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:23:34.915Z"
+  },
+  {
+    "bookId": "tb-gmr-2",
+    "title": "天上的街市",
+    "author": "郭沫若",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:23:40.906Z"
+  },
+  {
+    "bookId": "tb-luxun-6",
+    "title": "社戏",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:23:43.279Z"
+  },
+  {
+    "bookId": "pulitzer-1995-shields",
+    "title": "斯通日记",
+    "author": "卡罗尔·希尔兹",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:23:58.755Z"
+  },
+  {
+    "bookId": "hugo-1973-asimov",
+    "title": "神们自己",
+    "author": "艾萨克·阿西莫夫",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:24:11.935Z"
+  },
+  {
+    "bookId": "pul-2015-doerr",
+    "title": "所有我们看不见的光",
+    "author": "安东尼·多尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:24:43.987Z"
+  },
+  {
+    "bookId": "pulitzer-2014-tartt",
+    "title": "金翅雀",
+    "author": "唐娜·塔特",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:25:00.512Z"
+  },
+  {
+    "bookId": "tb-fjc-2",
+    "title": "挑山工",
+    "author": "冯骥才",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:25:09.491Z"
+  },
+  {
+    "bookId": "tb-taohuayuan",
+    "title": "桃花源记",
+    "author": "陶渊明",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:25:09.509Z"
+  },
+  {
+    "bookId": "pul-1918-poole",
+    "title": "他的家庭",
+    "author": "欧内斯特·普尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:25:29.181Z"
+  },
+  {
+    "bookId": "pul-1928-wilder",
+    "title": "圣路易斯雷大桥",
+    "author": "桑顿·怀尔德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:25:37.424Z"
+  },
+  {
+    "bookId": "nobel-2013-munro",
+    "title": "逃离",
+    "author": "艾丽丝·门罗",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:26:15.457Z"
+  },
+  {
+    "bookId": "pulitzer-2003-eggers",
+    "title": "惊人天才的伤心之作",
+    "author": "戴夫·艾格斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:26:27.482Z"
+  },
+  {
+    "bookId": "tb-aiqing-land",
+    "title": "我爱这土地",
+    "author": "艾青",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:26:34.758Z"
+  },
+  {
+    "bookId": "tb-luxun-4",
+    "title": "藤野先生",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:26:36.421Z"
+  },
+  {
+    "bookId": "pul-2016-nguyen",
+    "title": "同情者",
+    "author": "阮清越",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:27:00.587Z"
+  },
+  {
+    "bookId": "cerv-1999-edwards",
+    "title": "石头客栈",
+    "author": "豪尔赫·爱德华兹",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:27:04.175Z"
+  },
+  {
+    "bookId": "pul-1982-updike",
+    "title": "兔子富了",
+    "author": "约翰·厄普代克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:27:45.748Z"
+  },
+  {
+    "bookId": "hugo-2018-jemisin-2",
+    "title": "巨石苍穹",
+    "author": "N.K. 杰米辛",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:27:53.358Z"
+  },
+  {
+    "bookId": "tb-gmr-2",
+    "title": "天上的街市",
+    "author": "郭沫若",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:28:01.565Z"
+  },
+  {
+    "bookId": "tb-sts-2",
+    "title": "我与地坛",
+    "author": "史铁生",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:28:03.705Z"
+  },
+  {
+    "bookId": "pul-1999-cunningham",
+    "title": "时时刻刻",
+    "author": "迈克尔·坎宁安",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:28:31.405Z"
+  },
+  {
+    "bookId": "pul-1919-tarkington",
+    "title": "伟大的安伯逊家族",
+    "author": "布斯·塔金顿",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:28:33.006Z"
+  },
+  {
+    "bookId": "pul-1923-cather",
+    "title": "我们中的一员",
+    "author": "维拉·凯瑟",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:29:18.334Z"
+  },
+  {
+    "bookId": "nobel-1945-mistral",
+    "title": "绝望",
+    "author": "加夫列拉·米斯特拉尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:29:19.292Z"
+  },
+  {
+    "bookId": "tb-fjc-2",
+    "title": "挑山工",
+    "author": "冯骥才",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:29:27.238Z"
+  },
+  {
+    "bookId": "tb-yuguangzhong",
+    "title": "乡愁",
+    "author": "余光中",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:29:28.763Z"
+  },
+  {
+    "bookId": "kafka-2017-atwood",
+    "title": "使女的故事",
+    "author": "玛格丽特·阿特伍德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:29:56.731Z"
+  },
+  {
+    "bookId": "as-i-lay-dying",
+    "title": "我弥留之际",
+    "author": "威廉·福克纳",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:83 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:30:05.431Z"
+  },
+  {
+    "bookId": "pul-2001-chabon",
+    "title": "卡瓦利尔与克雷的奇妙冒险",
+    "author": "迈克尔·夏邦",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:30:45.460Z"
+  },
+  {
+    "bookId": "nobel-1987-brodsky",
+    "title": "小于一",
+    "author": "约瑟夫·布罗茨基",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:30:51.180Z"
+  },
+  {
+    "bookId": "tb-aiqing-land",
+    "title": "我爱这土地",
+    "author": "艾青",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:30:53.877Z"
+  },
+  {
+    "bookId": "tb-xiangtu",
+    "title": "乡土中国",
+    "author": "费孝通",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:30:56.260Z"
+  },
+  {
+    "bookId": "pul-2021-erdrich",
+    "title": "守夜人",
+    "author": "路易丝·厄德里奇",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:31:22.068Z"
+  },
+  {
+    "bookId": "hugo-1984-brin",
+    "title": "星潮汹涌",
+    "author": "大卫·布林",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:31:37.632Z"
+  },
+  {
+    "bookId": "pul-1952-wouk",
+    "title": "凯恩号哗变",
+    "author": "赫尔曼·沃克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:32:12.827Z"
+  },
+  {
+    "bookId": "tb-ztd-1",
+    "title": "燕子",
+    "author": "郑振铎",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:32:22.588Z"
+  },
+  {
+    "bookId": "pulitzer-1967-malamud",
+    "title": "修配工",
+    "author": "伯纳德·马拉默德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:32:23.289Z"
+  },
+  {
+    "bookId": "tb-sts-2",
+    "title": "我与地坛",
+    "author": "史铁生",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:32:30.136Z"
+  },
+  {
+    "bookId": "pulitzer-1995-shields",
+    "title": "斯通日记",
+    "author": "卡罗尔·希尔兹",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:32:48.428Z"
+  },
+  {
+    "bookId": "nobel-2020-gluck",
+    "title": "野鸢尾",
+    "author": "露易丝·格丽克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:33:09.408Z"
+  },
+  {
+    "bookId": "hugo-1961-miller",
+    "title": "莱博维茨的赞歌",
+    "author": "小沃尔特·米勒",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:33:40.253Z"
+  },
+  {
+    "bookId": "tb-bx-1",
+    "title": "忆读书",
+    "author": "冰心",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:33:50.971Z"
+  },
+  {
+    "bookId": "tb-yuguangzhong",
+    "title": "乡愁",
+    "author": "余光中",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:33:54.230Z"
+  },
+  {
+    "bookId": "pul-1992-smiley",
+    "title": "一千英亩",
+    "author": "简·斯迈利",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:33:54.593Z"
+  },
+  {
+    "bookId": "pul-2015-doerr",
+    "title": "所有我们看不见的光",
+    "author": "安东尼·多尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:34:14.187Z"
+  },
+  {
+    "bookId": "hugo-1975-le-guin-2",
+    "title": "一无所有",
+    "author": "厄休拉·勒古恩",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:34:41.547Z"
+  },
+  {
+    "bookId": "pul-1973-welty",
+    "title": "乐观者的女儿",
+    "author": "尤多拉·韦尔蒂",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:35:06.203Z"
+  },
+  {
+    "bookId": "tb-jpw-1",
+    "title": "月迹",
+    "author": "贾平凹",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:35:17.839Z"
+  },
+  {
+    "bookId": "tb-xiangtu",
+    "title": "乡土中国",
+    "author": "费孝通",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:35:21.263Z"
+  },
+  {
+    "bookId": "hugo-1962-heinlein",
+    "title": "异乡异客",
+    "author": "罗伯特·海因莱因",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:35:26.699Z"
+  },
+  {
+    "bookId": "pul-1918-poole",
+    "title": "他的家庭",
+    "author": "欧内斯特·普尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:35:39.758Z"
+  },
+  {
+    "bookId": "hugo-1965-simak",
+    "title": "驿站",
+    "author": "克利福德·西马克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:36:12.517Z"
+  },
+  {
+    "bookId": "pul-1969-momaday",
+    "title": "黎明之屋",
+    "author": "N. 斯科特·莫马迪",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:36:31.750Z"
+  },
+  {
+    "bookId": "tb-yueyanglou",
+    "title": "岳阳楼记",
+    "author": "范仲淹",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:36:43.992Z"
+  },
+  {
+    "bookId": "tb-ztd-1",
+    "title": "燕子",
+    "author": "郑振铎",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:36:47.281Z"
+  },
+  {
+    "bookId": "booker-1992-ondaatje",
+    "title": "英国病人",
+    "author": "迈克尔·翁达杰",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:36:57.704Z"
+  },
+  {
+    "bookId": "nobel-2013-munro",
+    "title": "逃离",
+    "author": "艾丽丝·门罗",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:37:05.170Z"
+  },
+  {
+    "bookId": "hugo-1956-asimov",
+    "title": "永恒的终结",
+    "author": "艾萨克·阿西莫夫",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:37:42.990Z"
+  },
+  {
+    "bookId": "hugo-1959-blish",
+    "title": "良心案件",
+    "author": "詹姆斯·布利什",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:37:57.329Z"
+  },
+  {
+    "bookId": "tb-zmb-biekangqiao",
+    "title": "再别康桥",
+    "author": "徐志摩",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:38:10.125Z"
+  },
+  {
+    "bookId": "tb-bx-1",
+    "title": "忆读书",
+    "author": "冰心",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:38:13.154Z"
+  },
+  {
+    "bookId": "hugo-1977-haldeman",
+    "title": "永世之战",
+    "author": "乔·霍尔德曼",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:38:28.165Z"
+  },
+  {
+    "bookId": "pul-2016-nguyen",
+    "title": "同情者",
+    "author": "阮清越",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:38:32.690Z"
+  },
+  {
+    "bookId": "cerv-1985-onetti",
+    "title": "造船厂",
+    "author": "胡安·卡洛斯·奥内蒂",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:39:15.016Z"
+  },
+  {
+    "bookId": "booker-2017-saunders",
+    "title": "林肯在中阴界",
+    "author": "乔治·桑德斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:39:23.721Z"
+  },
+  {
+    "bookId": "tb-fjc-1",
+    "title": "珍珠鸟",
+    "author": "冯骥才",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:39:34.888Z"
+  },
+  {
+    "bookId": "tb-jpw-1",
+    "title": "月迹",
+    "author": "贾平凹",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:39:37.834Z"
+  },
+  {
+    "bookId": "pul-1982-updike",
+    "title": "兔子富了",
+    "author": "约翰·厄普代克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:39:57.075Z"
+  },
+  {
+    "bookId": "hugo-1988-bujold",
+    "title": "战争学徒",
+    "author": "洛伊斯·比约德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:40:00.152Z"
+  },
+  {
+    "bookId": "re-nb-06",
+    "title": "长路将尽",
+    "author": "尤金·奥尼尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:40:45.615Z"
+  },
+  {
+    "bookId": "pul-1939-rawlings",
+    "title": "鹿苑长春",
+    "author": "玛乔丽·劳林斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:40:49.649Z"
+  },
+  {
+    "bookId": "tb-luxun-8",
+    "title": "祝福",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:41:00.767Z"
+  },
+  {
+    "bookId": "tb-yueyanglou",
+    "title": "岳阳楼记",
+    "author": "范仲淹",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:41:02.608Z"
+  },
+  {
+    "bookId": "pul-1919-tarkington",
+    "title": "伟大的安伯逊家族",
+    "author": "布斯·塔金顿",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:41:23.294Z"
+  },
+  {
+    "bookId": "pul-2003-eugenides",
+    "title": "中性",
+    "author": "杰弗里·尤金尼德斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:41:32.080Z"
+  },
+  {
+    "bookId": "pul-2007-mccarthy",
+    "title": "路",
+    "author": "科马克·麦卡锡",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:42:22.217Z"
+  },
+  {
+    "bookId": "tb-zp-1",
+    "title": "紫藤萝瀑布",
+    "author": "宗璞",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:42:27.666Z"
+  },
+  {
+    "bookId": "tb-zmb-biekangqiao",
+    "title": "再别康桥",
+    "author": "徐志摩",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:42:30.694Z"
+  },
+  {
+    "bookId": "pul-1923-cather",
+    "title": "我们中的一员",
+    "author": "维拉·凯瑟",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:42:51.958Z"
+  },
+  {
+    "bookId": "pul-1984-kennedy",
+    "title": "紫菀草",
+    "author": "威廉·肯尼迪",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:43:12.847Z"
+  },
+  {
+    "bookId": "pulitzer-1959-taylor",
+    "title": "旅程",
+    "author": "罗伯特·刘易斯·泰勒",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:43:50.432Z"
+  },
+  {
+    "bookId": "tb-xh-2",
+    "title": "祖父的园子",
+    "author": "萧红",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:43:53.975Z"
+  },
+  {
+    "bookId": "tb-fjc-1",
+    "title": "珍珠鸟",
+    "author": "冯骥才",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:43:55.537Z"
+  },
+  {
+    "bookId": "el-senor-presidente",
+    "title": "总统先生",
+    "author": "米格尔·安赫尔·阿斯图里亚斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:43:59.014Z"
+  },
+  {
+    "bookId": "hugo-1996-stephenson",
+    "title": "钻石时代",
+    "author": "尼尔·斯蒂芬森",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:44:45.444Z"
+  },
+  {
+    "bookId": "nobel-1987-brodsky",
+    "title": "小于一",
+    "author": "约瑟夫·布罗茨基",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:45:08.162Z"
+  },
+  {
+    "bookId": "pul-1990-hijuelos",
+    "title": "曼波之王的情歌",
+    "author": "奥斯卡·希胡埃洛斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:45:16.532Z"
+  },
+  {
+    "bookId": "tb-luxun-8",
+    "title": "祝福",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:45:20.798Z"
+  },
+  {
+    "bookId": "tb-shuting-motherland",
+    "title": "祖国啊，我亲爱的祖国",
+    "author": "舒婷",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:45:20.932Z"
+  },
+  {
+    "bookId": "cerv-1987-fuentes",
+    "title": "最明净的地区",
+    "author": "卡洛斯·富恩特斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:45:32.284Z"
+  },
+  {
+    "bookId": "bk-in-006",
+    "title": " 午夜的孩子",
+    "author": "萨尔曼·拉什迪",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:46:18.342Z"
+  },
+  {
+    "bookId": "hugo-1984-brin",
+    "title": "星潮汹涌",
+    "author": "大卫·布林",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:46:34.044Z"
+  },
+  {
+    "bookId": "tb-zuiwengting",
+    "title": "醉翁亭记",
+    "author": "欧阳修",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:46:47.930Z"
+  },
+  {
+    "bookId": "tb-zp-1",
+    "title": "紫藤萝瀑布",
+    "author": "宗璞",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:46:48.033Z"
+  },
+  {
+    "bookId": "lux-7-s-ma",
+    "title": "1987年的浆水和酸菜",
+    "author": "马金莲",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:47:04.288Z"
+  },
+  {
+    "bookId": "pulitzer-1997-roth",
+    "title": "美国牧歌",
+    "author": "菲利普·罗斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:47:16.845Z"
+  },
+  {
+    "bookId": "maodun-2008-mai",
+    "title": "暗算",
+    "author": "麦家",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:47:49.694Z"
+  },
+  {
+    "bookId": "pulitzer-1967-malamud",
+    "title": "修配工",
+    "author": "伯纳德·马拉默德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:48:02.831Z"
+  },
+  {
+    "bookId": "tb-xh-2",
+    "title": "祖父的园子",
+    "author": "萧红",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:48:12.795Z"
+  },
+  {
+    "bookId": "tb-chekhov-chameleon",
+    "title": "变色龙",
+    "author": "契诃夫",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:48:13.859Z"
+  },
+  {
+    "bookId": "re-in-06",
+    "title": "白虎",
+    "author": "阿拉文德·阿迪加",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:48:35.460Z"
+  },
+  {
+    "bookId": "hugo-1979-mcintyre",
+    "title": "梦蛇",
+    "author": "温达·麦金泰尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:48:43.651Z"
+  },
+  {
+    "bookId": "booker-2008-adiga",
+    "title": "白虎",
+    "author": "阿拉文德·阿迪加",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:49:20.908Z"
+  },
+  {
+    "bookId": "nobel-2020-gluck",
+    "title": "野鸢尾",
+    "author": "露易丝·格丽克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:49:28.436Z"
+  },
+  {
+    "bookId": "tb-shuting-motherland",
+    "title": "祖国啊，我亲爱的祖国",
+    "author": "舒婷",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:49:39.347Z"
+  },
+  {
+    "bookId": "tb-david-copperfield",
+    "title": "大卫·科波菲尔",
+    "author": "查尔斯·狄更斯",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:49:40.407Z"
+  },
+  {
+    "bookId": "exp-ch-013",
+    "title": "白鹿原",
+    "author": "陈忠实",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:50:06.292Z"
+  },
+  {
+    "bookId": "cerv-1990-bioy",
+    "title": "莫雷尔的发明",
+    "author": "阿道夫·比奥伊·卡萨雷斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:50:08.583Z"
+  },
+  {
+    "bookId": "pul-1992-smiley",
+    "title": "一千英亩",
+    "author": "简·斯迈利",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:50:53.269Z"
+  },
+  {
+    "bookId": "maodun-1997-liu-si",
+    "title": "白门柳",
+    "author": "刘斯奋",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:50:55.254Z"
+  },
+  {
+    "bookId": "tb-zuiwengting",
+    "title": "醉翁亭记",
+    "author": "欧阳修",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:51:04.960Z"
+  },
+  {
+    "bookId": "pul-1968-styron",
+    "title": "纳特·特纳的自白",
+    "author": "威廉·斯泰伦",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:51:34.602Z"
+  },
+  {
+    "bookId": "lux-4-s-pan",
+    "title": "白水青菜",
+    "author": "潘向黎",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:51:41.615Z"
+  },
+  {
+    "bookId": "tb-gangtie",
+    "title": "钢铁是怎样炼成的",
+    "author": "奥斯特洛夫斯基",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:51:52.745Z"
+  },
+  {
+    "bookId": "hugo-1975-le-guin-2",
+    "title": "一无所有",
+    "author": "厄休拉·勒古恩",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:52:19.596Z"
+  },
+  {
+    "bookId": "lux-6-m-lv",
+    "title": "白杨木的春天",
+    "author": "吕新",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:52:26.926Z"
+  },
+  {
+    "bookId": "tb-chekhov-chameleon",
+    "title": "变色龙",
+    "author": "契诃夫",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:52:30.118Z"
+  },
+  {
+    "bookId": "pul-1948-michener",
+    "title": "南太平洋故事集",
+    "author": "詹姆斯·米切纳",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:53:02.233Z"
+  },
+  {
+    "bookId": "lux-5-s-lu",
+    "title": "伴宴",
+    "author": "鲁敏",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:53:13.570Z"
+  },
+  {
+    "bookId": "tb-haidiliangwanli",
+    "title": "海底两万里",
+    "author": "儒勒·凡尔纳",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:53:19.272Z"
+  },
+  {
+    "bookId": "hugo-1962-heinlein",
+    "title": "异乡异客",
+    "author": "罗伯特·海因莱因",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:53:46.529Z"
+  },
+  {
+    "bookId": "tb-david-copperfield",
+    "title": "大卫·科波菲尔",
+    "author": "查尔斯·狄更斯",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:53:57.828Z"
+  },
+  {
+    "bookId": "lux-3-r-wang",
+    "title": "宝山",
+    "author": "李春雷",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:54:03.048Z"
+  },
+  {
+    "bookId": "pulitzer-2020-whitehead",
+    "title": "镍币男孩",
+    "author": "科尔森·怀特黑德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:54:27.411Z"
+  },
+  {
+    "bookId": "tb-gorky-petrel",
+    "title": "海燕",
+    "author": "高尔基",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:54:45.427Z"
+  },
+  {
+    "bookId": "lux-3-r-li-chun",
+    "title": "宝山",
+    "author": "李春雷",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:54:48.366Z"
+  },
+  {
+    "bookId": "hugo-1965-simak",
+    "title": "驿站",
+    "author": "克利福德·西马克",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:55:12.063Z"
+  },
+  {
+    "bookId": "maodun-2023-yang",
+    "title": "宝水",
+    "author": "乔叶",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:55:34.232Z"
+  },
+  {
+    "bookId": "pul-1937-mitchell",
+    "title": "飘",
+    "author": "玛格丽特·米切尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:55:52.436Z"
+  },
+  {
+    "bookId": "tb-gangtie",
+    "title": "钢铁是怎样炼成的",
+    "author": "奥斯特洛夫斯基",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:56:08.130Z"
+  },
+  {
+    "bookId": "tb-jane-eyre",
+    "title": "简·爱",
+    "author": "夏洛蒂·勃朗特",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:56:11.701Z"
+  },
+  {
+    "bookId": "lux-7-d-ning",
+    "title": "北京：城与年",
+    "author": "宁肯",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:56:19.371Z"
+  },
+  {
+    "bookId": "booker-1992-ondaatje",
+    "title": "英国病人",
+    "author": "迈克尔·翁达杰",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:56:39.008Z"
+  },
+  {
+    "bookId": "maodun-2019-xu-ze",
+    "title": "北上",
+    "author": "徐则臣",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:57:06.081Z"
+  },
+  {
+    "bookId": "booker-2015-james",
+    "title": "七次谋杀简史",
+    "author": "马龙·詹姆斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:57:18.431Z"
+  },
+  {
+    "bookId": "tb-haidiliangwanli",
+    "title": "海底两万里",
+    "author": "儒勒·凡尔纳",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:57:34.863Z"
+  },
+  {
+    "bookId": "tb-wilde-giant",
+    "title": "巨人的花园",
+    "author": "奥斯卡·王尔德",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:57:37.800Z"
+  },
+  {
+    "bookId": "lux-2-m-gui",
+    "title": "被雨淋湿的河",
+    "author": "鬼子",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:57:52.514Z"
+  },
+  {
+    "bookId": "hugo-1956-asimov",
+    "title": "永恒的终结",
+    "author": "艾萨克·阿西莫夫",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:58:05.651Z"
+  },
+  {
+    "bookId": "maodun-2023-liu-2",
+    "title": "本巴",
+    "author": "刘亮程",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:58:37.849Z"
+  },
+  {
+    "bookId": "pul-1960-drury",
+    "title": "劝告与同意",
+    "author": "艾伦·德鲁里",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:58:44.806Z"
+  },
+  {
+    "bookId": "tb-gorky-petrel",
+    "title": "海燕",
+    "author": "高尔基",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:59:02.495Z"
+  },
+  {
+    "bookId": "tb-kunchongji",
+    "title": "昆虫记",
+    "author": "法布尔",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:59:04.595Z"
+  },
+  {
+    "bookId": "lux-5-d-lu-chun",
+    "title": "病了的字母",
+    "author": "陆春祥",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:59:22.992Z"
+  },
+  {
+    "bookId": "hugo-1977-haldeman",
+    "title": "永世之战",
+    "author": "乔·霍尔德曼",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T07:59:32.028Z"
+  },
+  {
+    "bookId": "lux-3-d-shi",
+    "title": "病隙碎笔",
+    "author": "史铁生",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:00:09.828Z"
+  },
+  {
+    "bookId": "cerv-1982-roa",
+    "title": "人子",
+    "author": "奥古斯托·罗亚·巴斯托斯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:00:11.898Z"
+  },
+  {
+    "bookId": "tb-jane-eyre",
+    "title": "简·爱",
+    "author": "夏洛蒂·勃朗特",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:00:28.261Z"
+  },
+  {
+    "bookId": "tb-crusoe",
+    "title": "鲁滨孙漂流记",
+    "author": "丹尼尔·笛福",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:00:30.150Z"
+  },
+  {
+    "bookId": "lux-1-s-bi",
+    "title": "哺乳期的女人",
+    "author": "毕飞宇",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:00:58.870Z"
+  },
+  {
+    "bookId": "cerv-1985-onetti",
+    "title": "造船厂",
+    "author": "胡安·卡洛斯·奥内蒂",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:01:00.259Z"
+  },
+  {
+    "bookId": "pulitzer-1925-ferber",
+    "title": "如此辽阔",
+    "author": "埃德娜·费伯",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:02:06.074Z"
+  },
+  {
+    "bookId": "lux-4-r-he-jian2",
+    "title": "部长与国家",
+    "author": "何建明",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:02:13.299Z"
+  },
+  {
+    "bookId": "tb-wilde-giant",
+    "title": "巨人的花园",
+    "author": "奥斯卡·王尔德",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:02:28.361Z"
+  },
+  {
+    "bookId": "tb-sell-matches",
+    "title": "卖火柴的小女孩",
+    "author": "安徒生",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:02:30.065Z"
+  },
+  {
+    "bookId": "hugo-1988-bujold",
+    "title": "战争学徒",
+    "author": "洛伊斯·比约德",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:03:11.437Z"
+  },
+  {
+    "bookId": "lux-5-d-wang-zong",
+    "title": "藏地兵书",
+    "author": "王宗仁",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:03:48.845Z"
+  },
+  {
+    "bookId": "pul-1975-shaara",
+    "title": "杀手天使",
+    "author": "迈克尔·沙拉",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:04:16.506Z"
+  },
+  {
+    "bookId": "tb-kunchongji",
+    "title": "昆虫记",
+    "author": "法布尔",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:04:26.228Z"
+  },
+  {
+    "bookId": "tb-dolls-house",
+    "title": "玩偶之家",
+    "author": "亨利克·易卜生",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:04:27.463Z"
+  },
+  {
+    "bookId": "maodun-2000-wang",
+    "title": "茶人三部曲",
+    "author": "王旭烽",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:04:53.082Z"
+  },
+  {
+    "bookId": "re-nb-06",
+    "title": "长路将尽",
+    "author": "尤金·奥尼尔",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:04:54.037Z"
+  },
+  {
+    "bookId": "re-ch-08",
+    "title": "尘埃落定",
+    "author": "阿来",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:05:38.340Z"
+  },
+  {
+    "bookId": "hugo-1966-herbert",
+    "title": "沙丘",
+    "author": "弗兰克·赫伯特",
+    "source": "award",
+    "continent": "americas",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:05:43.624Z"
+  },
+  {
+    "bookId": "tb-crusoe",
+    "title": "鲁滨孙漂流记",
+    "author": "丹尼尔·笛福",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:05:51.866Z"
+  },
+  {
+    "bookId": "tb-shakespeare-venice",
+    "title": "威尼斯商人",
+    "author": "莎士比亚",
+    "source": "textbook",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T08:05:53.908Z"
   }
 ]
