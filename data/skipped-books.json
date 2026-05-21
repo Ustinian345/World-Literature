@@ -12895,5 +12895,194 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T12:12:58.591Z"
+  },
+  {
+    "bookId": "maodun-2005-zong",
+    "title": "东藏记",
+    "author": "宗璞",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:13:17.130Z"
+  },
+  {
+    "bookId": "lux-1-d-tie",
+    "title": "女人的白夜",
+    "author": "铁凝",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:13:18.047Z"
+  },
+  {
+    "bookId": "nobel-1927-bergson",
+    "title": "创造进化论",
+    "author": "亨利·柏格森",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:13:39.504Z"
+  },
+  {
+    "bookId": "lux-5-p-liu",
+    "title": "烤蓝",
+    "author": "刘立云",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:14:11.292Z"
+  },
+  {
+    "bookId": "nobel-1907-kipling",
+    "title": "丛林之书",
+    "author": "鲁德亚德·吉卜林",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:14:29.347Z"
+  },
+  {
+    "bookId": "lux-7-r-xu-chen",
+    "title": "第四极",
+    "author": "许晨",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:14:35.092Z"
+  },
+  {
+    "bookId": "maodun-1982-wei",
+    "title": "东方",
+    "author": "魏巍",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:14:47.859Z"
+  },
+  {
+    "bookId": "lux-7-m-xiao-jiang",
+    "title": "傩面",
+    "author": "肖江虹",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:15:03.237Z"
+  },
+  {
+    "bookId": "booker-1970-murdoch",
+    "title": "大海，大海",
+    "author": "艾丽丝·默多克",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:15:29.902Z"
+  },
+  {
+    "bookId": "lux-1-p-wang-jiu",
+    "title": "狂雪",
+    "author": "王久辛",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:15:41.751Z"
+  },
+  {
+    "bookId": "maodun-2005-zong",
+    "title": "东藏记",
+    "author": "宗璞",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:16:09.879Z"
+  },
+  {
+    "bookId": "lux-1-r-guo-xiao",
+    "title": "东方大审判",
+    "author": "郭晓晔",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:16:25.447Z"
+  },
+  {
+    "bookId": "nobel-1908-eucken",
+    "title": "大思想家的人生观",
+    "author": "鲁道夫·奥伊肯",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:16:32.669Z"
+  },
+  {
+    "bookId": "lux-7-r-li-chun2",
+    "title": "朋友：习近平与贾大山交往纪事",
+    "author": "李春雷",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:16:41.104Z"
+  },
+  {
+    "bookId": "lux-5-s-sheng",
+    "title": "老弟的盛宴",
+    "author": "盛琼",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:17:06.359Z"
+  },
+  {
+    "bookId": "gon-2010-houellebecq",
+    "title": "地图与疆域",
+    "author": "米歇尔·韦勒贝克",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:17:23.610Z"
+  },
+  {
+    "bookId": "maodun-1982-wei",
+    "title": "东方",
+    "author": "魏巍",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:17:34.675Z"
+  },
+  {
+    "bookId": "maodun-1982-li-guo",
+    "title": "冬天里的春天",
+    "author": "李国文",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:17:48.937Z"
+  },
+  {
+    "bookId": "bk-ch-013",
+    "title": "平凡的世界",
+    "author": "路遥",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:18:05.190Z"
+  },
+  {
+    "bookId": "nobel-1953-churchill",
+    "title": "第二次世界大战回忆录",
+    "author": "温斯顿·丘吉尔",
+    "source": "award",
+    "continent": "europe",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:18:12.475Z"
+  },
+  {
+    "bookId": "lux-1-s-shi",
+    "title": "老屋小记",
+    "author": "史铁生",
+    "source": "award",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T12:18:39.282Z"
   }
 ]
