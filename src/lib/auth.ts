@@ -1,48 +1,13 @@
 import NextAuth from "next-auth";
 import Google from "next-auth/providers/google";
 import Credentials from "next-auth/providers/credentials";
+import { userStore, type StoredUser } from "@/lib/user-store";
 
-export interface AuthUser {
-  email: string;
-  password: string;
-  name: string;
-  avatar?: string; // base64 data URL
-  createdAt: string;
-}
+export type { StoredUser as AuthUser };
 
-const _users: AuthUser[] = [];
-
-export function findUser(email: string): AuthUser | null {
-  return _users.find((u) => u.email.toLowerCase() === email.toLowerCase()) || null;
-}
-
-export function ensureUser(email: string, defaults?: Partial<Pick<AuthUser, "name" | "avatar">>): AuthUser {
-  let user = findUser(email);
-  if (!user) {
-    user = { email: email.toLowerCase(), password: "", name: defaults?.name || email.split("@")[0], avatar: defaults?.avatar, createdAt: new Date().toISOString() };
-    _users.push(user);
-  } else {
-    if (defaults?.name && !user.name) user.name = defaults.name;
-    if (defaults?.avatar && !user.avatar) user.avatar = defaults.avatar;
-  }
-  return user;
-}
-
-export function updateUser(email: string, data: Partial<Pick<AuthUser, "name" | "password" | "avatar">>): AuthUser | null {
-  const user = findUser(email);
-  if (!user) return null;
-  if (data.name !== undefined) user.name = data.name;
-  if (data.password !== undefined) user.password = data.password;
-  if (data.avatar !== undefined) user.avatar = data.avatar;
-  return user;
-}
-
-function createUser(email: string, password: string, name: string) {
-  if (findUser(email)) return null;
-  const user: AuthUser = { email: email.toLowerCase(), password, name, createdAt: new Date().toISOString() };
-  _users.push(user);
-  return { email: user.email, name: user.name, isNew: true, userNumber: _users.length };
-}
+export function findUser(email: string) { return userStore.findByEmail(email); }
+export function ensureUser(email: string, name?: string, avatar?: string) { return userStore.ensure(email, name, avatar); }
+export function updateUser(email: string, data: Partial<Pick<StoredUser, "name" | "avatar">>) { return userStore.update(email, data); }
 
 export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = NextAuth({
   providers: [
@@ -61,20 +26,23 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         if (!credentials?.email || !credentials?.password) return null;
         const email = (credentials.email as string).toLowerCase().trim();
         const password = credentials.password as string;
-        const name = (credentials.name as string) || email.split("@")[0];
         if (password.length < 6) return null;
 
-        const existing = findUser(email);
+        const existing = userStore.verifyPassword(email, password);
         if (existing) {
-          if (existing.password !== password) return null;
           return { id: email, email: existing.email, name: existing.name, image: existing.avatar || null };
         }
 
-        const newUser = createUser(email, password, name);
-        if (!newUser) return null;
+        // 检查是否已存在（Google 用户尝试用密码登录）
+        const googleUser = userStore.findByEmail(email);
+        if (googleUser && googleUser.provider === "google") return null;
+
+        // 新用户 → 自动注册
+        const name = (credentials.name as string) || email.split("@")[0];
+        const newUser = userStore.create(email, password, name, "credentials");
         return {
           id: email, email: newUser.email, name: newUser.name,
-          isNewUser: true, userNumber: newUser.userNumber,
+          isNewUser: true, userNumber: userStore.getUserCount(),
         };
       },
     }),
@@ -89,25 +57,31 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         token.isNewUser = u.isNewUser === true;
         token.userNumber = (u.userNumber as number) || 0;
       }
-      // update 触发时：重新读取 nickname/avatar
+      // update 触发时：从持久存储重新读取 nickname/avatar
       if (trigger === "update" && token.email) {
-        const stored = findUser(token.email as string);
+        const stored = userStore.findByEmail(token.email as string);
         if (stored) {
           token.name = stored.name;
           token.picture = stored.avatar || null;
         }
       }
-      if (account?.provider === "google") token.provider = "google";
+      if (account?.provider === "google") {
+        token.provider = "google";
+        // Google 用户首次登录 → 写入持久存储
+        if (token.email) {
+          userStore.ensure(token.email as string, token.name as string, undefined, "google");
+        }
+      }
       return token;
     },
     async session({ session, token }) {
       if (session.user) {
+        session.user.name = token.name as string;
+        session.user.image = (token.picture as string) || null;
         const u = session.user as unknown as Record<string, unknown>;
         u.id = token.id;
         u.isNewUser = token.isNewUser || false;
         u.userNumber = token.userNumber || 0;
-        session.user.name = token.name as string;
-        session.user.image = (token.picture as string) || null;
       }
       return session;
     },

@@ -3526,35 +3526,25 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "red-sorghum": {
     id: "red-sorghum",
     characters: [
-      { name: "Other", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Red Sorghum", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Zhang Yimou", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Hong", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Golden Bear", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Berlin", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Gong Li", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Gong", role: "角色", description: "\"red-sorghum\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "Red Sorghum", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Study Guide Red", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Sorghum Mo Yan", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Red Sorghum Mo", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Mo Yan Red", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Sorghum Fiction", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Novel", role: "角色", description: "red-sorghum 中的主要角色。" },
+      { name: "Adult", role: "角色", description: "red-sorghum 中的主要角色。" }
     ],
-    plotSummary: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
+    plotSummary: "Get ready to explore Red Sorghum and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Red Sorghum Mo Yan Red Sorghum Mo Yan 66 pages • 2-hour read Mo Yan Red Sorghum Fiction | Novel | Adult | Published in 1986 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Part 1 Part 2 Part 3 Part 4 Part 5 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Book Club Questions Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Summary and Study Guide Overview Mo Yan’s Red Sorghum (1987) is a historical family saga and a landm",
     plotNodes: [
-      { label: "第 1 部分", description: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong L" }
+      { label: "Part 1", description: "Get ready to explore Red Sorghum and its meaning." },
+      { label: "Part 2", description: "Study Guide Red Sorghum Mo Yan Red Sorghum Mo Yan 66 pages • 2-hour read Mo Yan Red Sorghum Fiction | Novel | Adult | Published in 1986 A modern alternative to SparkNotes and CliffsNotes, SuperSummary" }
     ],
-    themeAnalysis: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
-    techniques: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
-    excerpts: [],
-    insights: "Other articles where Red Sorghum is discussed: Zhang Yimou: …first film, Hong gaoliang (Red Sorghum). The critically acclaimed epic—which won the Golden Bear at the Berlin film festival—starred Gong Li as a woman sold into marriage. Gong subsequently appeared in a number of Zhang’s films, including Ju Dou (1990), a drama about a woman in a loveless marriage…",
-    sourceAttribution: {
-      sources: [
-        { label: "Britannica", url: "https://www.britannica.com/topic/red-sorghum", tier: "reference", fetchedAt: "2026-05-21T08:55:36.881Z", contributedFields: ["plotSummary", "themeAnalysis"] },
-      ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=red-sorghum" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=red-sorghum" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=red-sorghum" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=red-sorghum" },
-      ],
-    },
+    themeAnalysis: "Get ready to explore Red Sorghum and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Red Sorghum Mo Yan Red Sorghum Mo Yan 66 pages • 2-hour read Mo Yan Red Sorghum Fiction | Novel | Adult | Published in 1986 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Part 1 Part 2 Part 3 Part 4 Part 5 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Book Club",
+    techniques: "Get ready to explore Red Sorghum and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Red Sorghum Mo Yan Red Sorghum Mo Yan 66 pages • 2-hour read Mo Yan Red Sorghum Fiction | Novel | Adult | Published in 1986 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Bo",
+    excerpts: [
+      { quote: "Red Sorghum: Analysis of Major Characters", context: "From red-sorghum" }
+    ],
+    insights: "[Red Sorghum Summary - SuperSummary] Get ready to explore Red Sorghum and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[Red Sorghum (Novel) Background - GradeSaver] Red Sorghum (Novel) study guide contains a biography of Mo Yan, literature essays, quiz questions, major themes, characters, and a full summary and analysis.\n\n[Red Sorghum: Analysis of Major Characters | Literature and Writing] \"Red Sorghum: Analysis of Major Characters\" explores the intricate relationships and dynamic personalities within a family impacted by h",
   },
 };

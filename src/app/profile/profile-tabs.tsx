@@ -9,7 +9,7 @@ import { allWorks } from "@/lib/data";
 type Tab = "bookshelf" | "settings";
 
 export function ProfileTabs({ user: initialUser }: { user: { name?: string | null; email?: string | null; image?: string | null } }) {
-  const { data: session, update } = useSession();
+  const { data: session, update: updateSession } = useSession();
   const user = session?.user || initialUser;
   const [tab, setTab] = useState<Tab>("bookshelf");
   const router = useRouter();
@@ -52,7 +52,7 @@ export function ProfileTabs({ user: initialUser }: { user: { name?: string | nul
       {/* Tab 内容 */}
       <div className="mx-auto max-w-2xl px-5 py-10">
         {tab === "bookshelf" && <BookshelfTab />}
-        {tab === "settings" && <SettingsTab user={user} onSaved={() => { update(); router.refresh(); }} />}
+        {tab === "settings" && <SettingsTab user={user} updateSession={updateSession} />}
       </div>
     </div>
   );
@@ -115,7 +115,7 @@ function BookshelfTab() {
   );
 }
 
-function SettingsTab({ user, onSaved }: { user: { name?: string | null; email?: string | null; image?: string | null }; onSaved: () => void }) {
+function SettingsTab({ user, updateSession }: { user: { name?: string | null; email?: string | null; image?: string | null }; updateSession: () => Promise<unknown> }) {
   const [name, setName] = useState((user.name as string) || "");
   const [avatar, setAvatar] = useState<string>(user.image || "");
   const [currentPassword, setCurrentPassword] = useState("");
@@ -146,25 +146,31 @@ function SettingsTab({ user, onSaved }: { user: { name?: string | null; email?: 
     setSaving(true);
 
     try {
-      const res = await fetch("/api/profile/update", {
+      // 1. 更新昵称/头像
+      const res1 = await fetch("/api/user/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: name.trim(),
-          currentPassword: currentPassword || undefined,
-          newPassword: newPassword || undefined,
-          avatar: avatar || undefined,
-        }),
+        body: JSON.stringify({ name: name.trim(), avatar: avatar || undefined }),
       });
-      const data = await res.json();
-      if (!res.ok) {
-        setMessage({ type: "error", text: data.error || "保存失败" });
-      } else {
-        setMessage({ type: "success", text: "保存成功" });
+      const d1 = await res1.json();
+      if (!res1.ok) { setMessage({ type: "error", text: d1.error || "保存失败" }); setSaving(false); return; }
+
+      // 2. 修改密码（如填写）
+      if (currentPassword && newPassword) {
+        const res2 = await fetch("/api/user/change-password", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ currentPassword, newPassword }),
+        });
+        const d2 = await res2.json();
+        if (!res2.ok) { setMessage({ type: "error", text: d2.error || "密码修改失败" }); setSaving(false); return; }
         setCurrentPassword("");
         setNewPassword("");
-        onSaved();
       }
+
+      // 3. 刷新 NextAuth session
+      await updateSession();
+      setMessage({ type: "success", text: "保存成功" });
     } catch {
       setMessage({ type: "error", text: "网络错误" });
     }

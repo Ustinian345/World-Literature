@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T10:01:32.857Z",
+    "generatedAt": "2026-05-21T10:23:06.471Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -6229,7 +6229,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:28.822Z",
+      "batchProcessedAt": "2026-05-21T10:02:58.691Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6245,7 +6245,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:33.345Z",
+      "batchProcessedAt": "2026-05-21T10:04:25.366Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6261,7 +6261,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:37.923Z",
+      "batchProcessedAt": "2026-05-21T10:05:50.541Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6277,7 +6277,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:42.371Z",
+      "batchProcessedAt": "2026-05-21T10:07:16.226Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6293,7 +6293,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:46.887Z",
+      "batchProcessedAt": "2026-05-21T10:08:43.602Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6309,7 +6309,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:51.417Z",
+      "batchProcessedAt": "2026-05-21T10:10:09.152Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6325,7 +6325,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:12:55.936Z",
+      "batchProcessedAt": "2026-05-21T10:11:40.764Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6341,7 +6341,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:00.468Z",
+      "batchProcessedAt": "2026-05-21T10:13:08.620Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6357,7 +6357,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:04.975Z",
+      "batchProcessedAt": "2026-05-21T10:14:34.145Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6373,7 +6373,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:09.491Z",
+      "batchProcessedAt": "2026-05-21T10:15:59.478Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6389,7 +6389,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:14.015Z",
+      "batchProcessedAt": "2026-05-21T10:17:25.096Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6405,7 +6405,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:18.567Z",
+      "batchProcessedAt": "2026-05-21T10:18:50.922Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6421,7 +6421,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:23.086Z",
+      "batchProcessedAt": "2026-05-21T10:20:17.050Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6437,7 +6437,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:27.553Z",
+      "batchProcessedAt": "2026-05-21T10:21:41.528Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -6453,7 +6453,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T02:13:32.135Z",
+      "batchProcessedAt": "2026-05-21T10:23:06.464Z",
       "batchError": "insufficient data from APIs"
     },
     {

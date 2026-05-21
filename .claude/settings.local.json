@@ -63,7 +63,9 @@
       "Bash(node -e \"process.kill\\(parseInt\\(require\\('fs'\\).readFileSync\\('C:/Users/lenovo/world-literature/.next/dev.pid','utf8'\\).trim\\(\\)\\)\\)\")",
       "Bash(rm -rf .next/dev.pid)",
       "Bash(git rm *)",
-      "Bash(openssl rand *)"
+      "Bash(openssl rand *)",
+      "Bash(rm src/app/api/profile/update/route.ts)",
+      "Bash(rm -rf src/app/api/profile)"
     ]
   }
 }
