@@ -1,6 +1,6 @@
 "use client";
 
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 import { useState, useRef, useEffect } from "react";
 
 export default function UserMenu() {
@@ -26,12 +26,12 @@ export default function UserMenu() {
 
   if (!session) {
     return (
-      <button
-        onClick={() => signIn(undefined, { callbackUrl: "/" })}
+      <a
+        href="/login"
         className="rounded-md px-3 py-2 font-heading-cn text-sm font-medium text-umber-light transition-colors hover:bg-sand/50 hover:text-umber"
       >
         登录
-      </button>
+      </a>
     );
   }
 
