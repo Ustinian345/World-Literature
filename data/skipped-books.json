@@ -574,5 +574,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:35:15.298Z"
+  },
+  {
+    "bookId": "tb-luxun-7",
+    "title": "孔乙己",
+    "author": "鲁迅",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:36:01.814Z"
   }
 ]

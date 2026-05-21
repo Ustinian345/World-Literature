@@ -1169,7 +1169,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Book 1 Summary & Analysis - Paradise Lost - LitCharts] Milton inverts tradition by beginning with the antagonist, Satan, instead of a protagonist. One of the great debates about Paradise Lost has been just how much ...\n\n[Paradise Lost - Wikipedia] At the heart of Paradise Lost are the themes of free will and the moral consequences of disobedience. Milton seeks to \"justify the ways of God to men\" (1.20), ...\n\n[Paradise Lost: Full Poem Summary - SparkNotes] Milton's speaker begins Paradise Lost by stating that his subject will be Adam and Eve's disobedience and fall from grace. He invokes a hea",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%A4%B1%E4%B9%90%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:31:08.721Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%A4%B1%E4%B9%90%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:36:26.992Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1240,30 +1240,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "great-expectations": {
     id: "great-expectations",
-    plotSummary: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。",
-    plotNodes: [
-      { label: "第 1 部分", description: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇" },
-      { label: "第 2 部分", description: "该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。 [32]" },
-      { label: "第 3 部分", description: "该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出， [33]不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿 [39]。该剧荣获2018中美电视节十大金天使奖电视剧， [34]入围第25届上海电视节白玉兰最佳美术奖。 [35]" },
-      { label: "第 4 部分", description: "洪三元（陈思诚饰）携母亲和好友齐林（袁弘饰）到上海投奔严华（富大龙饰），卷入两大公司权利斗争。严华此时是一名码头工人，他不畏强权被推举为工人领袖。洪三元则凭借机智多次在凶险的上海滩化险为夷。洪三元与忠义之士沈达结拜为兄，与来上海报父仇的林依依（佟丽娅饰）在斗智斗勇中成为莫逆，女扮男装的林依依爱上洪三元。" }
+    characters: [
+      { name: "Great Expectations", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "Wikipedia", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "Facts", role: "角色", description: "Great Expectations 中的主要角色。" },
+      { name: "During", role: "角色", description: "Great Expectations 中的主要角色。" }
     ],
-    themeAnalysis: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。 [32]\n\n该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。",
-    techniques: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。",
+    plotSummary: "Great Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861. The classic novel was one of its author’s greatest critical and popular successes. It chronicles the coming of age of the orphan Pip while also addressing such issues as social class and human worth.\n\nGreat Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Fa",
+    plotNodes: [
+      { label: "Part 1", description: "Great Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861." },
+      { label: "Part 2", description: "Great Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Cha" }
+    ],
+    themeAnalysis: "[Great Expectations Character Analysis | PDF - Scribd] The relationship between Pip and Joe evolves significantly throughout 'Great Expectations,' highlighting themes of loyalty and unconditional love. Initially, ...\n\nGreat Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861. The classic novel was one of its author’s greatest critical and popular successes. It chronicles the coming of age of the orphan Pip while also addressing such issues as social class and human worth.\n\nGreat Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (",
+    techniques: "Great Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861. The classic novel was one of its author’s greatest critical and popular successes. It chronicles the coming of age of the orphan Pip while also addressing such issues as social class and human worth.\n\nGreat Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Con",
     excerpts: [],
-    insights: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。",
+    insights: "[Great Expectations - Wikipedia] Great Expectations is full of extreme imagery—poverty, prison ships, chains, and fights to the death—and features a colourful cast of characters who have ...\n\n[Great Expectations | Summary, Characters, Analysis, & Facts] During the course of the novel, Pip comes to realize that his “great expectations”—social standing and wealth—are less important than loyalty ...\n\n[Great Expectations: Character List - SparkNotes] The protagonist and narrator of Great Expectations, Pip begins the story as a young orphan boy being raised by his sister and brother-in-law in the m",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%9C%E5%A4%A7%E5%89%8D%E7%A8%8B", tier: "reference", fetchedAt: "2026-05-21T04:37:02.174Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/1400", tier: "original_text", fetchedAt: "2026-05-21T04:37:20.730Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%9C%E5%A4%A7%E5%89%8D%E7%A8%8B", tier: "reference", fetchedAt: "2026-05-21T05:36:05.765Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Great%20Expectations%20Charles%20Dickens" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Great%20Expectations%20Charles%20Dickens" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Great%20Expectations" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Great%20Expectations" },
-      ],
+      reliability: "medium",
     },
   },
 
