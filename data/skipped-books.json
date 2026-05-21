@@ -520,5 +520,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:30:40.643Z"
+  },
+  {
+    "bookId": "tb-lh-1",
+    "title": "壶口瀑布",
+    "author": "梁衡",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:31:26.335Z"
   }
 ]

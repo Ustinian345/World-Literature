@@ -1139,6 +1139,16 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "paradise-lost": {
     id: "paradise-lost",
+    characters: [
+      { name: "Poem", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "Paradise Lost", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "John Milton", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "Character Analysis Satan", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "Overall", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "Satan", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "Century Poetry Paradise", role: "角色", description: "Paradise Lost 中的主要角色。" },
+      { name: "Lost John Milton", role: "角色", description: "Paradise Lost 中的主要角色。" }
+    ],
     plotSummary: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。\n《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。 [32]\n\n《失乐园》取材于《圣经·旧约·创世纪》 [33]，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。 [28]该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。 [25]\n\n《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。 [17]\n\n弥尔顿生活的年代，正是欧洲文艺复兴的高峰期，文艺复兴提倡的人文精神已经得到广泛的传播和接受。反对神性，提倡人性，对教会乃至旧的封建制度的批判，也深深地影响了弥尔顿。同时，17世纪，新兴科学的兴起使人们看见了改造大自然的更大的可能性，人的自信心、进取心也前所未有的高扬起来。但英国统治阶级依然停留恪守于旧的封建统治模式，严重滞后于人民的要求。",
     plotNodes: [
       { label: "Part 1", description: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗" },
@@ -1146,13 +1156,16 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
       { label: "Part 3", description: "《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。" },
       { label: "Part 4", description: "弥尔顿生活的年代，正是欧洲文艺复兴的高峰期，文艺复兴提倡的人文精神已经得到广泛的传播和接受。反对神性，提倡人性，对教会乃至旧的封建制度的批判，也深深地影响了弥尔顿。同时，17世纪，新兴科学的兴起使人们看见了改造大自然的更大的可能性，人的自信心、进取心也前所未有的高扬起来。但英国统治阶级依然停留恪守于旧的封建统治模式，严重滞后于人民的要求。" }
     ],
-    themeAnalysis: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。\n《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。 [32]\n\n《失乐园》取材于《圣经·旧约·创世纪》 [33]，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。 [28]该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。 [25]\n\n《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融",
-    techniques: "",
-    excerpts: [],
-    insights: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。\n《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。 [32]\n\n《失乐园》取材于《圣经·旧约·创世纪》 [33]，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。 [28]该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊",
+    themeAnalysis: "[Poem:Paradise Lost by John Milton. Character Analysis Satan] Overall, Satan is a complex and compelling character in \"Paradise Lost,\" embodying themes of rebellion, ambition, pride, and tragic heroism. He ...\n\n[16th and 17th Century Poetry Paradise Lost John Milton Summary ...] ... John Milton's \"Paradise Lost\": Literary Analysis and Themes 1. Who is depicted as a heroic character in Book One of \"Paradise Lost\"? - a ...\n\n[Paradise Lost Study Guide | Course Hero] This study guide and infographic for John Milton's Paradise Lost offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Paradise Lost by John Milton - Themes and Character Analysis] This video focuses on the analysis of themes and characters in the novel, Paradise Lost by John Milton.\n\n[Book",
+    techniques: "[16th and 17th Century Poetry Paradise Lost John Milton Summary ...] ... John Milton's \"Paradise Lost\": Literary Analysis and Themes 1. Who is depicted as a heroic character in Book One of \"Paradise Lost\"? - a ...\n\n[Paradise Lost Study Guide | Course Hero] This study guide and infographic for John Milton's Paradise Lost offer summary and analysis on themes, symbols, and other literary devices found in the text.",
+    excerpts: [
+      { quote: "justify the ways of God to men", context: "From Paradise Lost" },
+      { quote: ": Literary Analysis and Themes 1. Who is depicted as a heroic character in Book One of ", context: "From Paradise Lost" }
+    ],
+    insights: "[Book 1 Summary & Analysis - Paradise Lost - LitCharts] Milton inverts tradition by beginning with the antagonist, Satan, instead of a protagonist. One of the great debates about Paradise Lost has been just how much ...\n\n[Paradise Lost - Wikipedia] At the heart of Paradise Lost are the themes of free will and the moral consequences of disobedience. Milton seeks to \"justify the ways of God to men\" (1.20), ...\n\n[Paradise Lost: Full Poem Summary - SparkNotes] Milton's speaker begins Paradise Lost by stating that his subject will be Adam and Eve's disobedience and fall from grace. He invokes a hea",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%A4%B1%E4%B9%90%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T04:33:19.947Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%A4%B1%E4%B9%90%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:31:08.721Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1565,7 +1578,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Faust Study Guide | Literature Guide - LitCharts] The best study guide to Faust on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[Faust Summary & Study Guide - BookRags.com] Faust Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Goethe's Faust - Wikipedia] Faust is a tragic play in two parts by Johann Wolfgang von Goethe, usually known in English as Faust, Part One and Faust, Part Two. Nearly all of Part One ...\n\n[Faust - CliffsNotes] Faust is a learned German scholar w",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B5%AE%E5%A3%AB%E5%BE%B7", tier: "reference", fetchedAt: "2026-05-21T05:26:36.505Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B5%AE%E5%A3%AB%E5%BE%B7", tier: "reference", fetchedAt: "2026-05-21T05:31:42.219Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
