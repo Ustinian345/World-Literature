@@ -1307,21 +1307,28 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "ulysses": {
     id: "ulysses",
-    plotSummary: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。《尤利西斯》作为意识流小说的代表作，被誉为20世纪\n《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。\n\n该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。\n\n乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。 [1]\n\n《尤利西斯》作为意识流小说的代表作，被誉为20世纪百大英文小说之首，并被奉为20世纪最伟大的小说。\n\n1904年6月16日清晨，斯蒂芬上完了一节历史课后，从校长那儿得到了三英镑二先令的报酬，来到海边漫步，面对翻滚的海浪，他思绪万千，人世的沧桑、大自然的奥妙、时空的永恒、艺术的魅力在他的意识中开始了漫无边际的涌动。他因对母亲有过情欲的爱恋而觉得对不起父亲。他抱着负罪的感觉渴望在精神上重新得到一位父亲。同一日的早上八点钟，在埃克",
+    characters: [
+      { name: "Casual Reader", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "Guide", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "Ulysses", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "University Musical Society", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "Leopold Bloom", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "Jewish", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "Irish", role: "角色", description: "Ulysses 中的主要角色。" },
+      { name: "James Joyce", role: "角色", description: "Ulysses 中的主要角色。" }
+    ],
+    plotSummary: "Ulysses is a novel by Irish writer James Joyce, first published in book form in 1922. The stylistically dense and exhilarating novel is regarded as a masterpiece and is constructed as a parallel to Homer’s Odyssey. All the action takes place in and around Dublin on a single day (June 16, 1904).\n\nUlysses Introduction Summary Legacy References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X URL https://www.britannica.com/topic/Ulys",
     plotNodes: [
-      { label: "Part 1", description: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允" },
-      { label: "Part 2", description: "该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后" },
-      { label: "Part 3", description: "乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。" },
-      { label: "Part 4", description: "《尤利西斯》作为意识流小说的代表作，被誉为20世纪百大英文小说之首，并被奉为20世纪最伟大的小说。" },
-      { label: "Part 5", description: "1904年6月16日清晨，斯蒂芬上完了一节历史课后，从校长那儿得到了三英镑二先令的报酬，来到海边漫步，面对翻滚的海浪，他思绪万千，人世的沧桑、大自然的奥妙、时空的永恒、艺术的魅力在他的意识中开始了漫无边际的涌动。他因对母亲有过情欲的爱恋而觉得对不起父亲。他抱着负罪的感觉渴望在精神上重新得到一位父亲。同一日的早上八点钟，在埃克" }
+      { label: "Part 1", description: "Ulysses is a novel by Irish writer James Joyce, first published in book form in 1922." },
+      { label: "Part 2", description: "Ulysses Introduction Summary Legacy References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Boo" }
     ],
     themeAnalysis: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。《尤利西斯》作为意识流小说的代表作，被誉为20世纪\n《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。\n\n该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。\n\n乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。 [1]\n\n《尤利西斯》作为意识流小说的",
-    techniques: "",
+    techniques: "Ulysses is a novel by Irish writer James Joyce, first published in book form in 1922. The stylistically dense and exhilarating novel is regarded as a masterpiece and is constructed as a parallel to Homer’s Odyssey. All the action takes place in and around Dublin on a single day (June 16, 1904).\n\nUlysses Introduction Summary Legacy References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) print Print Please select which sections you",
     excerpts: [],
-    insights: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。《尤利西斯》作为意识流小说的代表作，被誉为20世纪\n《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。\n\n该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲",
+    insights: "[Ulysses (novel) - Wikipedia] Ulysses chronicles the experiences of three Dubliners over the course of a single day, 16 June 1904 (which its fans now celebrate annually as Bloomsday).\n\n[Ulysses | Book, Summary, Analysis, Characters, & Facts - Britannica] The characters in Ulysses serve as modern parallels to those in Homer's Odyssey. Many of them were also based on other figures from Greek ...\n\n[Ulysses: Themes | SparkNotes] Ulysses is a book about Stephen's search for a symbolic father and Bloom's search for a son. In this respect, the plot of Ulysses parallels Telemachus's search ...\n\n[Ulyss",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B0%A4%E5%88%A9%E8%A5%BF%E6%96%AF", tier: "reference", fetchedAt: "2026-05-21T04:36:29.887Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B0%A4%E5%88%A9%E8%A5%BF%E6%96%AF", tier: "reference", fetchedAt: "2026-05-21T05:35:14.201Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1635,7 +1642,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Trial Study Guide | Literature Guide - LitCharts] The Trial's important quotes, sortable by theme, character, or chapter. The Trial: Characters. Description, analysis, and timelines for The Trial's characters.\n\n[Character List - The Trial - SparkNotes] The Trial Character List · Joseph K. The hero and protagonist of the novel, K. is the Chief Clerk of a bank. · Fraulein Burstner. A boarder in the same house as ...\n\n[The Trial Summary - SuperSummary] Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and qu",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A1%E5%88%A4", tier: "reference", fetchedAt: "2026-05-21T05:30:18.150Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A1%E5%88%A4", tier: "reference", fetchedAt: "2026-05-21T05:35:34.574Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

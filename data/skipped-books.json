@@ -565,5 +565,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:34:28.975Z"
+  },
+  {
+    "bookId": "tb-zhuge-liang",
+    "title": "诫子书",
+    "author": "诸葛亮",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:35:15.298Z"
   }
 ]
