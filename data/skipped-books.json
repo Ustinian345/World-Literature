@@ -601,5 +601,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:37:33.519Z"
+  },
+  {
+    "bookId": "tb-lantingxu",
+    "title": "兰亭集序",
+    "author": "王羲之",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:38:18.849Z"
   }
 ]

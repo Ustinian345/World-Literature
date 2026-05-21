@@ -1299,7 +1299,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Nineteen Eighty-four | Summary, Characters, Analysis, & Facts] Analysis. Orwell wrote Nineteen Eighty-four as a warning after years of brooding on the twin menaces of Nazism and Stalinism.\n\n[Nineteen Eighty-Four - Wikipedia] Thematically, it centres on totalitarianism, mass surveillance and repressive regimentation of people and behaviours. Nineteen Eighty-Four has been often ...\n\n[1984 Study Guide | Literature Guide - LitCharts] Nineteen Eighty-Four is a dystopian novel. The primary literary model for Nineteen Eighty-Four is considered to be H.G. Wells's anti-Utopian satire When the ...\n\n[19",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E4%B9%9D%E5%85%AB%E5%9B%9B", tier: "reference", fetchedAt: "2026-05-21T05:33:32.491Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E4%B9%9D%E5%85%AB%E5%9B%9B", tier: "reference", fetchedAt: "2026-05-21T05:38:54.985Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2765,14 +2765,25 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "once-were-warriors": {
     id: "once-were-warriors",
-    plotSummary: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S. premiere at the Hawaii International Film Festival. The novel was followed by two sequels, What Becomes of the Broken Hearted? (1996) and Jake's Long Shadow (2002).",
-    themeAnalysis: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S.",
-    techniques: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S.",
+    characters: [
+      { name: "Once Were Warriors", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Beth Heke", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Jake Heke", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Study Guide Once", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Were Warriors Alan", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Duff Once Were", role: "角色", description: "Once Were Warriors 中的主要角色。" },
+      { name: "Warriors Alan Duff", role: "角色", description: "Once Were Warriors 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore Once Were Warriors and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Once Were Warriors Alan Duff Once Were Warriors Alan Duff 56 pages • 1-hour read Alan Duff Once Were Warriors Fiction | Novel | Adult | Published in 1990 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-6 Chapters 7-9 Chapters 10-13 Chapters 14-19 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW Summary and Study Guide Overview Once Were Warriors by Alan Duff is",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore Once Were Warriors and its meaning." },
+      { label: "Part 2", description: "Study Guide Once Were Warriors Alan Duff Once Were Warriors Alan Duff 56 pages • 1-hour read Alan Duff Once Were Warriors Fiction | Novel | Adult | Published in 1990 A modern alternative to SparkNotes" }
+    ],
+    themeAnalysis: "Get ready to explore Once Were Warriors and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Once Were Warriors Alan Duff Once Were Warriors Alan Duff 56 pages • 1-hour read Alan Duff Once Were Warriors Fiction | Novel | Adult | Published in 1990 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-6 Chapters 7-9 Chapters 10-13 Chapters 14-19 Character A",
+    techniques: "",
     excerpts: [],
-    insights: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Once%20Were%20Warriors"
-    // }
+    insights: "[Once Were Warriors Summary | SuperSummary] Get ready to explore Once Were Warriors and its meaning. Our full analysis ... summaries and analysis of major themes, characters, and more. Download PDF\n\n[Once Were Warriors - Goodreads] Once Were Warriors is a critically important, confronting story of the colonial legacy of disenfranchisement, victimisation, cultural dislocation, poverty and ...\n\n[Once Were Warriors Character Analysis - SuperSummary] Beth Heke is the protagonist of Once Were Warriors. She is the mother of six children, as well as Jake Heke's wife of 16 years.\n\n[Plot summary, “Once",
   },
 
   "true-history-kelly-gang": {
