@@ -610,5 +610,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:38:18.849Z"
+  },
+  {
+    "bookId": "tb-yj-1",
+    "title": "老王",
+    "author": "杨绛",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:39:04.567Z"
   }
 ]

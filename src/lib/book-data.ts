@@ -1565,7 +1565,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobile ...\n\n[The Cherry Orchard: Character List | SparkNotes] Mrs. Ranevksy is a middle-aged Russian woman, the owner of the estate and the cherry orchard around which the story revolves. She has faced tragedy many times ...\n\n[The Cherry Orchard - Wikipedia] Unresponsive to offers to save the estate, she allows its sale to the son of a former serf, and the family departs to the sound of the cherry orc",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%A8%B1%E6%A1%83%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:34:22.909Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%A8%B1%E6%A1%83%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:39:46.949Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1652,20 +1652,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "metamorphosis": {
     id: "metamorphosis",
-    plotSummary: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思考。 [23]小说以主人公变为甲虫这一荒诞故事反映了世人唯利是图、对金钱顶礼膜拜、对真情人性不屑一顾，最终被社会挤压变形的现实，反映了资本主义制度下真实的社会生活。 [2]\n\n卡夫卡生活于第一次世界大战前后动荡不安、物质主义盛行的年代， [5]他一生中绝大部分时间生活在捷克共和国的首都布拉格，而当时的布拉格正处在激烈的民族冲突与动荡中，“社会主义、犹太主义、德国民族主义、玩世不恭",
-    plotNodes: [
-      { label: "Part 1", description: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之" },
-      { label: "Part 2", description: "《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最" },
-      { label: "Part 3", description: "卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思考。" },
-      { label: "Part 4", description: "卡夫卡生活于第一次世界大战前后动荡不安、物质主义盛行的年代， [5]他一生中绝大部分时间生活在捷克共和国的首都布拉格，而当时的布拉格正处在激烈的民族冲突与动荡中，“社会主义、犹太主义、德国民族主义、玩世不恭" }
+    characters: [
+      { name: "The Metamorphosis", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "Quizlet", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "Gregor Samsa", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "The Metamorphosis Character", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "List", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "Franz Kafka", role: "角色", description: "The Metamorphosis 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "The Metamorphosis 中的主要角色。" }
     ],
-    themeAnalysis: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”",
-    techniques: "",
+    plotSummary: "[The Metamorphosis by Franz Kafka | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Franz Kafka's novella The Metamorphosis. Download the free study guide and infographic for The ...\n\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承",
+    plotNodes: [
+      { label: "Part 1", description: "[The Metamorphosis by Franz Kafka | Summary & Analysis - YouTube] ..." },
+      { label: "Part 2", description: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之" },
+      { label: "Part 3", description: "《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最" },
+      { label: "Part 4", description: "卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承" }
+    ],
+    themeAnalysis: "[The Metamorphosis by Franz Kafka | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Franz Kafka's novella The Metamorphosis. Download the free study guide and infographic for The ...\n\n[The Metamorphosis Study Guide | Course Hero] This study guide and infographic for Franz Kafka's The Metamorphosis offer summary and analysis on themes, symbols, and other literary devices found in the text ...\n\n[Kafka's The Metamorphosis Analysis Free Essay | SpeedyPaper.com] THEMES. Life's Absurdity. The metamorphosis talks about ridiculous, surprising, unimaginable and unreasonable events. The events presented in ...\n\n[The Metamorphosis: Themes | SparkNotes] The Metamorphosis deals with an absurd, or wildly irrational, event, which in itself suggests that the story operates in a",
+    techniques: "[The Metamorphosis Study Guide | Course Hero] This study guide and infographic for Franz Kafka's The Metamorphosis offer summary and analysis on themes, symbols, and other literary devices found in the text ...",
     excerpts: [],
-    insights: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献",
+    insights: "[The Metamorphosis - Wikipedia] The Metamorphosis tells the story of salesman Gregor Samsa, who wakes to find himself inexplicably transformed into a huge insect.\n\n[The Metamorphosis: Themes | SparkNotes] The Metamorphosis deals with an absurd, or wildly irrational, event, which in itself suggests that the story operates in a random, chaotic universe.\n\n[The Metamorphosis Character List - GradeSaver] The Metamorphosis study guide contains a biography of Franz Kafka, literature essays, quiz questions, major themes, characters, ...\n\n[Analysis of Franz Kafka's The Metamorphosis] The Metamorphosis,",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:39:58.669Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:39:23.074Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
