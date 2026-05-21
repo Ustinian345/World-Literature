@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T05:15:45.392Z",
+    "generatedAt": "2026-05-21T05:16:25.996Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -945,10 +945,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:21:27.255Z",
+      "batchProcessedAt": "2026-05-21T05:16:25.996Z",
       "batchSources": [
-        "百度百科",
-        "Project Gutenberg"
+        "百度百科"
       ]
     },
     {

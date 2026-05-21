@@ -312,33 +312,35 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "the-analects": {
     id: "the-analects",
-    plotSummary: "《论语》，春秋时期思想家、教育家孔子的弟子及再传弟子记录孔子及其弟子言行而编成的语录体文集，成书于战国前期，1973年河北定县八角廊汉墓与2016年江西南昌海昏侯墓先后出土竹简本《论语》，其中海昏侯墓竹简包含失传的《齐论》版本。全书共20篇492章，以语录体为主，叙事体为辅，集中体现孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则，内容涉及政治、教育、文学、哲学及立身处世之道。其语言简练浅近而用意深远，通过对话和行动展示人物形象，形成雍容和顺、纡徐含蓄的风格。孔子教育注重因材施教，如《颜渊》篇针对不同弟子问仁作出差异答复。《论语》自宋代被列为&#34;四书&#34;之一，成为官定教科书和科举必读书。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献。北京大学数字人文研究中心联合研发的&#34;识典古籍&#34;平台提供1200余部古籍在线阅读，包含《论语》等经典。",
+    characters: [
+      { name: "The Analects", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "Confucius Book", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "Confucius", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "The Analects Summary", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "Analects 中的主要角色。" },
+      { name: "Analects", role: "角色", description: "Analects 中的主要角色。" }
+    ],
+    plotSummary: "[The Analects Summary & Study Guide - BookRags.com] The Analects Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[The Analects of Confucius Book I Summary and Analysis - GradeSaver] The Analects of Confucius study guide contains a biography of Confucius, literature essays, quiz questions, major themes, characters, ...\n\n[Analects of Confucius Books 16-20 Summary & Analysis] Get ready to explore Analects of Confucius and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and ...\n\n[The Analects of Confucius Summary | Books of All Time Podcast] Throughout the Analects, Confucius exhorts his disciples to faithfully practice “the rites,” that is, the rituals surrounding ancestor worship.\n\n[Video: The Analects of Confucius | Summary, Analysis & Quotes] What are the Analects? They are a collection of short sayings and teachings. The common way of writing them at that time",
     plotNodes: [
-      { label: "第 1 部分", description: "《论语》，春秋时期思想家、教育家孔子的弟子及再传弟子记录孔子及其弟子言行而编成的语录体文集，成书于战国前期，1973年河北定县八角廊汉墓与2016年江西南昌海昏侯墓先后出土竹简本《论语》，其中海昏侯墓竹简包含失传的《齐论》版本。全书共20篇492章，以语录体为主，叙事体为辅，集中体现孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则，内容涉及政治、教育、文学、哲学及立身处世之道。其语言简练浅近" },
-      { label: "第 2 部分", description: "全书共20篇492章，以语录体为主，叙事体为辅，集中体现孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则，内容涉及政治、教育、文学、哲学及立身处世之道 [1] [4]。其语言简练浅近而用意深远，通过对话和行动展示人物形象，形成雍容和顺、纡徐含蓄的风格 [1] [10]。孔子教育注重因材施教，如《颜渊》篇针对不同弟子问仁作出差异答复 [3] [11]。" },
-      { label: "第 3 部分", description: "《论语》自宋代被列为\"四书\"之一，成为官定教科书和科举必读书 [10]。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献 [18]。" }
+      { label: "Part 1", description: "[The Analects Summary & Study Guide - BookRags.com] The Analects Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more." },
+      { label: "Part 2", description: "[The Analects of Confucius Book I Summary and Analysis - GradeSaver] The Analects of Confucius study guide contains a biography of Confucius, literature essays, quiz questions, major themes, character" },
+      { label: "Part 3", description: "[Analects of Confucius Books 16-20 Summary & Analysis] Get ready to explore Analects of Confucius and its meaning." },
+      { label: "Part 4", description: "[The Analects of Confucius Summary | Books of All Time Podcast] Throughout the Analects, Confucius exhorts his disciples to faithfully practice “the rites,” that is, the rituals surrounding ancestor w" },
+      { label: "Part 5", description: "[Video: The Analects of Confucius | Summary, Analysis & Quotes] What are the Analects?" }
     ],
-    themeAnalysis: "《论语》，春秋时期思想家、教育家孔子的弟子及再传弟子记录孔子及其弟子言行而编成的语录体文集，成书于战国前期，1973年河北定县八角廊汉墓与2016年江西南昌海昏侯墓先后出土竹简本《论语》，其中海昏侯墓竹简包含失传的《齐论》版本。全书共20篇492章，以语录体为主，叙事体为辅，集中体现孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则，内容涉及政治、教育、文学、哲学及立身处世之道。其语言简练浅近而用意深远，通过对话和行动展示人物形象，形成雍容和顺、纡徐含蓄的风格。孔子教育注重因材施教，如《颜渊》篇针对不同弟子问仁作出差异答复。《论语》自宋代被列为&#34;四书&#34;之一，成为官定教科书和科举必读书。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献。北京大学数字人文研究中心联合研发的&#34;识典古籍&#34;平台提供1200余部古籍在线阅读，包含《论语》等经典。",
-    techniques: "《论语》，春秋时期思想家、教育家孔子的弟子及再传弟子记录孔子及其弟子言行而编成的语录体文集，成书于战国前期，1973年河北定县八角廊汉墓与2016年江西南昌海昏侯墓先后出土竹简本《论语》，其中海昏侯墓竹简包含失传的《齐论》版本。全书共20篇492章，以语录体为主，叙事体为辅，集中体现孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则，内容涉及政治、教育、文学、哲学及立身处世之道。其语言简练浅近而用意深远，通过对话和行动展示人物形象，形成雍容和顺、纡徐含蓄的风格。孔子教育注重因材施教，如《颜渊》篇针对不同弟子问仁作出差异答复。《论语》自宋代被列为&#34;四书&#34;之一，成为官定教科书和科举必读书。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献。北京大学数字人文研究中心联合研发的&#34;识典古籍&#34;平台提供1200余部古籍在线阅读，包含《论语》等经典。",
+    themeAnalysis: "[The Analects of Confucius Book I Summary and Analysis - GradeSaver] The Analects of Confucius study guide contains a biography of Confucius, literature essays, quiz questions, major themes, characters, ...\n\n[The Analects Summary & Study Guide - BookRags.com] The Analects Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Analects of Confucius Books 16-20 Summary & Analysis] Get ready to explore Analects of Confucius and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and ...\n\n[The Analects Study Guide | Literature Guide - LitCharts] The best study guide to The Analects on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.",
+    techniques: "[Video: The Analects of Confucius | Summary, Analysis & Quotes] What are the Analects? They are a collection of short sayings and teachings. The common way of writing them at that time was 20-25 characters in brush and ink ...",
     excerpts: [
-      { quote: "之一，成为官定教科书和科举必读书 [10]。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献 [18]。北京大学数字人文研究中心联合研发的", context: "来源：Analects" },
-      { quote: "前十篇皆有子、曾子门人所记，去圣未远，礼制方明；后十篇则后人所续记，其时卿位益尊，卿权益重，盖有习于当世所称而未尝详考其体例者，故不能无异同也", context: "来源：Analects" },
-      { quote: "《语丛·三》简引述《论语》，更确证该书之早", context: "来源：Analects" }
+      { quote: "之一，成为官定教科书和科举必读书 [10]。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献 [18]。北京大学数字人文研究中心联合研发的", context: "From Analects" }
     ],
-    insights: "《论语》，春秋时期思想家、教育家孔子的弟子及再传弟子记录孔子及其弟子言行而编成的语录体文集，成书于战国前期，1973年河北定县八角廊汉墓与2016年江西南昌海昏侯墓先后出土竹简本《论语》，其中海昏侯墓竹简包含失传的《齐论》版本。全书共20篇492章，以语录体为主，叙事体为辅，集中体现孔子及儒家学派的政治主张、伦理思想、道德观念、教育原则，内容涉及政治、教育、文学、哲学及立身处世之道。其语言简练浅近而用意深远，通过对话和行动展示人物形象，形成雍容和顺、纡徐含蓄的风格。孔子教育注重因材施教，如《颜渊》篇针对不同弟子问仁作出差异答复。《论语》自宋代被列为&#34;四书&#34;之一，成为官定教科书和科举必读书。2021年《论语文献集成》明代编影印出版，系统整理历代《论语》文献。北京大学数字人文研究中心联合研发的&#34;识典古籍&#34;平台提供1200余部古籍在线阅读，包含《论语》等经典。",
+    insights: "[The Analects Study Guide | Literature Guide - LitCharts] The best study guide to The Analects on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Analects of Confucius Book I Summary and Analysis - GradeSaver] The Analects of Confucius study guide contains a biography of Confucius, literature essays, quiz questions, major themes, characters, ...\n\n[The Analects Summary & Study Guide - BookRags.com] The Analects Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Analects",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%AE%BA%E8%AF%AD", tier: "reference", fetchedAt: "2026-05-21T04:21:14.523Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/3330", tier: "original_text", fetchedAt: "2026-05-21T04:21:27.247Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%AE%BA%E8%AF%AD", tier: "reference", fetchedAt: "2026-05-21T05:16:25.983Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Analects%20Confucius" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Analects%20Confucius" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Analects" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Analects" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -492,7 +494,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Diary of a Madman (Lu Xun) - Wikipedia] Diary of a Madman\", also translated as \"A Madman's Diary is a short story by the Chinese writer Lu Xun, published in 1918. It was the first and one of the ...\n\n[A Madman's Diary] The exposure of the essence of \"cannibalism\" in A Madman's Diary stems from Lu Xun's observations and concerns about the spiritual state of the populace in old ...\n\n[A Madman's Diary Character Analysis - Course Hero] This study guide for Lu Xun's A Madman's Diary offers summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Diary of a Madman by",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:12:19.126Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:16:50.725Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

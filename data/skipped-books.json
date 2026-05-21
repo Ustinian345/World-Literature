@@ -340,5 +340,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:15:30.268Z"
+  },
+  {
+    "bookId": "tb-chenqingshi",
+    "title": "陈情表",
+    "author": "李密",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:16:15.850Z"
   }
 ]
