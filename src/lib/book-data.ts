@@ -2051,23 +2051,24 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "pedro-paramo": {
     id: "pedro-paramo",
     characters: [
+      { name: "Pedro", role: "角色", description: "Pedro Paramo 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "Pedro Paramo 中的主要角色。" },
+      { name: "Juan Preciado", role: "角色", description: "Pedro Paramo 中的主要角色。" },
+      { name: "Susana San Juan", role: "角色", description: "Pedro Paramo 中的主要角色。" },
       { name: "Pedro Paramo", role: "角色", description: "Pedro Paramo 中的主要角色。" }
     ],
-    plotSummary: "《佩德罗·巴拉莫》（Pedro Paramo），是墨西哥作家胡安·鲁尔福创作的中篇小说，1955年首次出版。《佩德罗·巴拉莫》以虚构的科马拉地方为背景，描绘了一个沉默寡言的地方政治要人的坠落。科马拉实为一个人间地狱，那里居住的死人不断为他们生前的罪恶所折磨。该作通过荒诞离奇的故事情节，深入各色人物的内心世界，作者以奇特的表现手法，并结合印第安民族独有的生死观等传统意识，分别从打破时间的界限、空间的错综交叠、以及生死无明显界限的三个的角度重释了魔幻现实主义的奠基之作。\n《佩德罗·巴拉莫》（Pedro Paramo），是墨西哥作家胡安·鲁尔福创作的中篇小说，1955年首次出版。 [3] [6]\n\n《佩德罗·巴拉莫》以虚构的科马拉地方为背景，描绘了一个沉默寡言的地方政治要人的坠落。科马拉实为一个人间地狱，那里居住的死人不断为他们生前的罪恶所折磨。该作通过荒诞离奇的故事情节，深入各色人物的内心世界，作者以奇特的表现手法，并结合印第安民族独有的生死观等传统意识，分别从打破时间的界限、空间的错综交叠、以及生死无明显界限的三个的角度重释了魔幻现实主义的奠基之作。 [7] [14]\n\n胡安·鲁尔福说：“当我回到童年时代的村庄时，我看到的是一个被遗弃的村子，一个鬼魂的村子。在墨西哥，有许多被遗弃的村庄，于是我头脑里便产生了创作《佩德罗·巴拉莫》的念头。是一个这样的村庄给了我描写死人的想法，那里住着可以说是即将死去的生灵。” [11]\n\n一种新的小说世界观在这一瞬间冒出来了，他要写一个村庄的故事，“在那里说话的，生活的，活动的人物，都是死人”。 [11]\n\n佩德罗为了侵吞女债主多罗莱斯的财产，娶她为妻。胡安·普雷西亚多的母亲。 [13]\n\n该作描述胡安·佩德罗试图完成母亲的遗愿，寻找他的生父佩德罗·巴拉莫，于是读者跟随着他进入虚构而叫人心酸的科马拉荒原。科马拉从前一派生机，而在胡安眼中却是一片荒凉，环境的恶劣和人物的悲惨命运都是卡西克主义导致的直接结果，也体现出佩德罗仇恨与膨胀的物欲。卡西克主义在墨西哥的广大乡村横向霸道，科马拉作为一个缩影，所有人物的命运都以悲剧结尾。鲁尔福不断地变换人称视角，将每一个人物的形象塑造的具体生动，通过时空交错和闪回等方式，勾勒出一座人间地狱。通过“我”的所看所听，向读者交代绝对主人公佩德罗·巴拉莫的故事。佩德罗位于罪恶的中心，法律由他制定，他垄断科马拉的",
+    plotSummary: "Get ready to explore Pedro Paramo and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Pedro Paramo Juan Rulfo Pedro Paramo Juan Rulfo 58 pages • 1-hour read Juan Rulfo Pedro Paramo Fiction | Novel | Adult | Published in 1955 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Pages 1-29 Pages 29-58 Pages 58-83 Pages 83-111 Pages 111-140 Character List NEW Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Summary and Study Guide Overview Pedro Paramo is a 1955 no",
     plotNodes: [
-      { label: "Part 1", description: "《佩德罗·巴拉莫》（Pedro Paramo），是墨西哥作家胡安·鲁尔福创作的中篇小说，1955年首次出版。《佩德罗·巴拉莫》以虚构的科马拉地方为背景，描绘了一个沉默寡言的地方政治要人的坠落。科马拉实为一个人间地狱，那里居住的死人不断为他们生前的罪恶所折磨。该作通过荒诞离奇的故事情节，深入各色人物的内心世界，作者以奇特的表现手法，并结合印第安民族独有的生死观等传统意识，分别从打破时间的界限、空间的" },
-      { label: "Part 2", description: "《佩德罗·巴拉莫》以虚构的科马拉地方为背景，描绘了一个沉默寡言的地方政治要人的坠落。科马拉实为一个人间地狱，那里居住的死人不断为他们生前的罪恶所折磨。该作通过荒诞离奇的故事情节，深入各色人物的内心世界，作者以奇特的表现手法，并结合印第安民族独有的生死观等传统意识，分别从打破时间的界限、空间的错综交叠、以及生死无明显界限的三个的角度重释了魔幻现实主义的奠基之作。" },
-      { label: "Part 3", description: "胡安·鲁尔福说：“当我回到童年时代的村庄时，我看到的是一个被遗弃的村子，一个鬼魂的村子。在墨西哥，有许多被遗弃的村庄，于是我头脑里便产生了创作《佩德罗·巴拉莫》的念头。是一个这样的村庄给了我描写死人的想法，那里住着可以说是即将死去的生灵。” [11]" },
-      { label: "Part 4", description: "一种新的小说世界观在这一瞬间冒出来了，他要写一个村庄的故事，“在那里说话的，生活的，活动的人物，都是死人”。" },
-      { label: "Part 5", description: "该作描述胡安·佩德罗试图完成母亲的遗愿，寻找他的生父佩德罗·巴拉莫，于是读者跟随着他进入虚构而叫人心酸的科马拉荒原。科马拉从前一派生机，而在胡安眼中却是一片荒凉，环境的恶劣和人物的悲惨命运都是卡西克主义导致的直接结果，也体现出佩德罗仇恨与膨胀的物欲。卡西克主义在墨西哥的广大乡村横向霸道，科马拉作为一个缩影，所有人物的命运都以悲剧结尾。鲁尔福不断地变换人称视角，将每一个人物的形象塑造的具体生动，通过" }
+      { label: "Part 1", description: "Get ready to explore Pedro Paramo and its meaning." },
+      { label: "Part 2", description: "Study Guide Pedro Paramo Juan Rulfo Pedro Paramo Juan Rulfo 58 pages • 1-hour read Juan Rulfo Pedro Paramo Fiction | Novel | Adult | Published in 1955 A modern alternative to SparkNotes and CliffsNote" }
     ],
-    themeAnalysis: "",
-    techniques: "",
+    themeAnalysis: "Get ready to explore Pedro Paramo and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Pedro Paramo Juan Rulfo Pedro Paramo Juan Rulfo 58 pages • 1-hour read Juan Rulfo Pedro Paramo Fiction | Novel | Adult | Published in 1955 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Pages 1-29 Pages 29-58 Pages 58-83 Pages 83-111 Pages 111-140 Character List NEW Character Analysis T",
+    techniques: "[Pedro Paramo Summary - SuperSummary] In the past narrative, Pedro Paramo is a young farmer. He runs errands while thinking about the girl of his dreams, Susana. In the present, Eduviges tells Juan ...\n\n[[PDF] Pedro Paramo Sparknotes - ftp.arcchurches.com] This article provides a comprehensive, expert analysis of Pedro Páramo through the lens of SparkNotes—exploring its plot, themes, characters, literary devices, ...\n\n[Pedro Páramo: Analysis of Major Characters | Literature and Writing] His quest leads him to confront the legacy of his father, Pedro Páramo, a tyrannical and emotionally barren",
     excerpts: [],
-    insights: "《佩德罗·巴拉莫》（Pedro Paramo），是墨西哥作家胡安·鲁尔福创作的中篇小说，1955年首次出版。《佩德罗·巴拉莫》以虚构的科马拉地方为背景，描绘了一个沉默寡言的地方政治要人的坠落。科马拉实为一个人间地狱，那里居住的死人不断为他们生前的罪恶所折磨。该作通过荒诞离奇的故事情节，深入各色人物的内心世界，作者以奇特的表现手法，并结合印第安民族独有的生死观等传统意识，分别从打破时间的界限、空间的错综交叠、以及生死无明显界限的三个的角度重释了魔幻现实主义的奠基之作。\n《佩德罗·巴拉莫》（Pedro Paramo），是墨西哥作家胡安·鲁尔福创作的中篇小说，1955年首次出版。 [3] [6]\n\n《佩德罗·巴拉莫》以虚构的科马拉地方为背景，描绘了一个沉默寡言的地方政治要人的坠落。科马拉实为一个人间地狱，那里居住的死人不断为他们生前的罪恶所折磨。该作通过荒诞离奇的故事情节，深入各色人物的内心世界，作者以奇特的表现手法，并结合印第安民族独有的生死观等传统意识，分别从打破时间的界限、空间的错综交叠、以及生死无明显界限的三个的角度重释了魔幻现实主义的奠基之作。 [7] [14]\n\n胡安·鲁尔福说：“当我回到童年时代的村庄时，我看到的是一个被遗弃的村子，一个鬼魂的村子。在墨西哥，有许多被遗弃的村庄，于是我头脑里便产生了创作《佩德罗·巴拉莫》的念头。是一个这样的村庄给了我描写死人的想法，那里住着可",
+    insights: "[Pedro Paramo Summary & Study Guide - BookRags.com] Pedro Paramo Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Pedro Páramo Character Analysis - LitCharts] Pedro Páramo is one of the three protagonists of the novel along with Juan Preciado (Pedro's son) and Susana San Juan (Pedro's childhood sweetheart).\n\n[Pedro Paramo Summary - SuperSummary] In the past narrative, Pedro Paramo is a young farmer. He runs errands while thinking about the girl of his dreams, Susana. In the present, Eduviges tells Juan ...\n\n[Pedro Param",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BD%A9%E5%BE%B7%E7%BD%97%C2%B7%E5%B7%B4%E6%8B%89%E8%8E%AB", tier: "reference", fetchedAt: "2026-05-21T04:11:45.133Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BD%A9%E5%BE%B7%E7%BD%97%C2%B7%E5%B7%B4%E6%8B%89%E8%8E%AB", tier: "reference", fetchedAt: "2026-05-21T04:56:34.423Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2226,7 +2227,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Leaves of Grass - Wikipedia] Leaves of Grass is a poetry collection by American poet Walt Whitman. After self-publishing it in 1855, he spent most of his professional life writing, ...\n\n[Whitman's Poetry: Symbols | SparkNotes] The title Leaves of Grass highlights another of Whitman's themes: the beauty of the individual. Each leaf or blade of grass possesses its own distinct ...\n\n[from Preface to Leaves of Grass, first edition | The Poetry Foundation] In Leaves of Grass (1855, 1891-2), he celebrated democracy, nature, love, and friendship. This monumental work chanted praises to the body as .",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%8D%89%E5%8F%B6%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T04:52:36.473Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%8D%89%E5%8F%B6%E9%9B%86", tier: "reference", fetchedAt: "2026-05-21T04:56:44.397Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2389,13 +2390,16 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
       { label: "Part 2", description: "该小说的主人公亨伯特是一位来自欧洲的绅士、学者，13岁时与同龄的安娜贝尔恋爱，但安娜贝尔不幸夭折，亨伯特成年后仍沉浸在对性感少女的欲望中。来到美国后他遇到了房东家12岁的洛丽塔，陷入痴迷，假意亲近她的寡居母亲并与之结婚，以图伺机占有洛丽塔。事情暴露后愤怒的妻子尚未发出揭露信件便遭遇车祸死亡。为避免有人发现真相，亨伯特开车带着洛丽塔在美国四处游走，使得洛丽塔陷入不正常的生活之中。亨伯特的欲望没有穷尽" },
       { label: "Part 3", description: "《洛丽塔》是俄裔作家纳博科夫的成名作，被誉为20世纪世界最具争议和影响力的小说之一。" }
     ],
-    themeAnalysis: "《洛丽塔》（又译为《洛莉塔》《洛丽泰》《罗莉泰》）是俄裔美国作家弗拉基米尔·纳博科夫创作的长篇小说，完稿于1954年初，1955年在法国首次出版，1958年在美国问世。该小说的主人公亨伯特是一位来自欧洲的绅士、学者，13岁时与同龄的安娜贝尔恋爱，但安娜贝尔不幸夭折，亨伯特成年后仍沉浸在对性感少女的欲望中。来到美国后他遇到了房东家12岁的洛丽塔，陷入痴迷，假意亲近她的寡居母亲并与之结婚，以图伺机占有洛丽塔。事情暴露后愤怒的妻子尚未发出揭露信件便遭遇车祸死亡。为避免有人发现真相，亨伯特开车带着洛丽塔在美国四处游走，使得洛丽塔陷入不正常的生活之中。亨伯特的欲望没有穷尽，对洛丽塔的掌控也越来越严厉，最终洛丽塔借机逃走，陷入有性怪癖的戏剧家奎尔第之手，得知真相后的亨伯特枪杀了奎尔第，在监狱中写下了这本忏悔录式的《洛丽塔》。小说的结构精巧复杂，叙事暗藏玄机，小说中对主观化叙事策略的巧妙运用，让读者稍不\n《洛丽塔》（又译为《洛莉塔》《洛丽泰》《罗莉泰》）是俄裔美国作家弗拉基米尔·纳博科夫创作的长篇小说，完稿于1954年初 [9]，1955年在法国首次出版，1958年在美国问世。 [10]\n\n该小说的主人公亨伯特是一位来自欧洲的绅士、学者，13岁时与同龄的安娜贝尔恋爱，但安娜贝尔不幸夭折，亨伯特成年后仍沉浸在对性感少女的欲望中。来到美国后他遇到了房东家12岁的洛丽塔，陷入痴迷，假意亲近她的寡居母亲并与之结婚，以图伺机占有洛丽塔。事情暴露后愤怒的妻子尚未发出揭露信件便遭遇车祸死亡。为避免有人发现真相，亨伯特开车带着洛丽塔在美国四处游走，使得洛丽塔陷入不正常的生活之中。亨伯特的欲望没有穷尽，对洛丽塔的掌控也越来越严厉，最终洛丽塔借机逃走，陷入有性怪癖的戏剧家奎尔第之手，得知真相后的亨伯特枪杀了奎尔第，在监狱中写下了这本忏悔录式的《洛丽塔》。 [11]小说的结构精巧复杂，叙事暗藏玄机，小说中对主",
-    techniques: "",
-    excerpts: [],
-    insights: "《洛丽塔》（又译为《洛莉塔》《洛丽泰》《罗莉泰》）是俄裔美国作家弗拉基米尔·纳博科夫创作的长篇小说，完稿于1954年初，1955年在法国首次出版，1958年在美国问世。该小说的主人公亨伯特是一位来自欧洲的绅士、学者，13岁时与同龄的安娜贝尔恋爱，但安娜贝尔不幸夭折，亨伯特成年后仍沉浸在对性感少女的欲望中。来到美国后他遇到了房东家12岁的洛丽塔，陷入痴迷，假意亲近她的寡居母亲并与之结婚，以图伺机占有洛丽塔。事情暴露后愤怒的妻子尚未发出揭露信件便遭遇车祸死亡。为避免有人发现真相，亨伯特开车带着洛丽塔在美国四处游走，使得洛丽塔陷入不正常的生活之中。亨伯特的欲望没有穷尽，对洛丽塔的掌控也越来越严厉，最终洛丽塔借机逃走，陷入有性怪癖的戏剧家奎尔第之手，得知真相后的亨伯特枪杀了奎尔第，在监狱中写下了这本忏悔录式的《洛丽塔》。小说的结构精巧复杂，叙事暗藏玄机，小说中对主观化叙事策略的巧妙运用，让读者稍不\n《洛丽塔》（又译为《洛莉塔》《洛丽泰》《罗莉泰》）是俄裔美国作家弗拉基米尔·纳博科夫创作的长篇小说，完稿于1954年初 [9]，1955年在法国首次出版，1958年在美国问世。 [10]\n\n该小说的主人公亨伯特是一位来自欧洲的绅士、学者，13岁时与同龄的安娜贝尔恋爱，但安娜贝尔不幸夭折，亨伯特成年后仍沉浸在对性感少女的欲望中。来到美国后他遇到了房东家12岁的洛丽塔，陷入痴迷，假意亲近她的寡居母亲",
+    themeAnalysis: "[Lolita by Vladimir Nabokov (Book Analysis): Detailed Summary ...] A detailed analysis of \"Lolita\", examining the controversial relationship between a middle-aged man and his young stepdaughter, exploring key themes and ...\n\n[Analysis of Vladimir Nabokov's Novel Lolita and its Themes] \"Lolita\" by Vladimir Nabokov is a controversial novel that tells the story of Humbert Humbert, a middle-aged literature professor who ...\n\n《洛丽塔》（又译为《洛莉塔》《洛丽泰》《罗莉泰》）是俄裔美国作家弗拉基米尔·纳博科夫创作的长篇小说，完稿于1954年初，1955年在法国首次出版，1958年在美国问世。该小说的主人公亨伯特是一位来自欧洲的绅士、学者，13岁时与同龄的安娜贝尔恋爱，但安娜贝尔不幸夭折，亨伯特成年后仍沉浸在对性感少女的欲望中。来到美国后他遇到了房东家12岁的洛丽塔，陷入痴迷，假意亲近她的寡居母亲并与之结婚，以图伺机占有洛丽塔。事情暴露后愤怒的妻子尚未发出揭露信件便遭遇车祸死亡。为避免有人发现真相，亨伯特开车带着洛丽塔在美国四处游走，使得洛丽塔陷入不正常的生活之中。亨伯特的欲望没有穷尽，对洛丽塔的掌控也越来越严厉，最终洛丽塔借机逃走，陷入有性怪癖的戏剧家奎尔第之手，得知真相后的亨伯特枪杀了奎尔第，在监狱中写下了这本忏悔录式的《洛丽塔》。小说的结构精巧复杂，叙事暗藏",
+    techniques: "[Analysis of Vladimir Nabokov's Lolita - Literary Theory and Criticism] When Humbert meets and seduces Lolita as a middle-aged man many years later, he attempts to relive an experience of childhood happiness. The ...\n\n[Lolita: Analysis of Setting | Literature and Writing | Research Starters] \"Lolita: Analysis of Setting\" explores the varied and contrasting locations within Vladimir Nabokov's controversial novel \"Lolita,\" as narrated by the character",
+    excerpts: [
+      { quote: "Lolita: Analysis of Setting", context: "From Lolita" },
+      { quote: " as narrated by the character\n[Analysis of Vladimir Nabokov's Novel Lolita and its Themes] ", context: "From Lolita" }
+    ],
+    insights: "[Lolita - Wikipedia] In Vladimir Nabokov's 1955 novel, Lolita, the character Lolita is a child who is sexually victimized by the book's narrator. The word Lolita has, however ...\n\n[Lolita: Themes | SparkNotes] The Power of Language. Nabokov revered words and believed that the proper language could elevate any material to the level of art. In Lolita, language ...\n\n[Lolita Character Analysis - LitCharts] The narrator of Lolita. Humbert is a highly educated, mentally unstable, literarily gifted European man with an uncontrollable desire for young girls, ...\n\n[Lolita by Vladimir Nabokov (Book Anal",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B4%9B%E4%B8%BD%E5%A1%94", tier: "reference", fetchedAt: "2026-05-21T04:11:12.462Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B4%9B%E4%B8%BD%E5%A1%94", tier: "reference", fetchedAt: "2026-05-21T04:55:53.998Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
