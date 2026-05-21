@@ -2076,20 +2076,33 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "house-of-spirits": {
     id: "house-of-spirits",
-    plotSummary: "《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。\n《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。 [1]\n\n作者继承了拉美文学“贴近现实”的优良传统，同“文学爆炸”中杰出的作家保持着同一创作方向，表现出强烈的社会责任感。尤其可贵的是，作者一方面对描写的事件、人物保持着清晰的认识，爱憎分明；另一方面又没有囿于个人好恶，使对事件的评价流于简单化，对人物的刻画流于脸谱化。该书出版后，受到了广大读者的欢迎，并引起文学界的重视，原因之一是作者不拘一格地综合运用了传统的和时兴的写作技巧和创作方法，收到了雅俗共赏的效果。塑造典型环境中的典型性格，是伊莎贝尔·阿连德刻意追求的目标。\n\n这部小说具有很强的故事性。伊莎贝尔·阿连德是个讲故事的能手，在书中引人入胜的故事一个接着一个，或离奇，或荒诞，或惊心动魄，或缠绵悱恻。拉丁美洲文学评论家把《幽灵之家》归入魔幻现实主义文学流派。把它誉为继《百年孤独》之后魔幻现实主义的又一部力作。\n\n1942年，伊莎贝尔·阿连德生于秘鲁，但她真正作为作家横空出世是在40年后的1982年，那一年，她出版了小说《幽灵之家》。《幽灵之家》的出版几乎可以说是轰动性的。当时由于加西亚·马尔克斯的获奖，拉美文学大爆炸的冲击波达到了顶峰，魔幻现实主义的光环耀眼得无以复加。阿连德作为这一阵营中少有的女性，被某些出版商冠以“穿裙子的加西亚·马尔克斯”，从此迅速走红。 [4]",
-    plotNodes: [
-      { label: "Part 1", description: "《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。" },
-      { label: "Part 2", description: "作者继承了拉美文学“贴近现实”的优良传统，同“文学爆炸”中杰出的作家保持着同一创作方向，表现出强烈的社会责任感。尤其可贵的是，作者一方面对描写的事件、人物保持着清晰的认识，爱憎分明；另一方面又没有囿于个人好恶，使对事件的评价流于简单化，对人物的刻画流于脸谱化。该书出版后，受到了广大读者的欢迎，并引起文学界的重视，原因之一是作者不拘一格地综合运用了传统的和时兴的写作技巧和创作方法，收到了雅俗共赏的效" },
-      { label: "Part 3", description: "这部小说具有很强的故事性。伊莎贝尔·阿连德是个讲故事的能手，在书中引人入胜的故事一个接着一个，或离奇，或荒诞，或惊心动魄，或缠绵悱恻。拉丁美洲文学评论家把《幽灵之家》归入魔幻现实主义文学流派。把它誉为继《百年孤独》之后魔幻现实主义的又一部力作。" },
-      { label: "Part 4", description: "1942年，伊莎贝尔·阿连德生于秘鲁，但她真正作为作家横空出世是在40年后的1982年，那一年，她出版了小说《幽灵之家》。《幽灵之家》的出版几乎可以说是轰动性的。当时由于加西亚·马尔克斯的获奖，拉美文学大爆炸的冲击波达到了顶峰，魔幻现实主义的光环耀眼得无以复加。阿连德作为这一阵营中少有的女性，被某些出版商冠以“穿裙子的加西亚·马尔克斯”，从此迅速走红。" }
+    characters: [
+      { name: "The House", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Spirits", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Themes", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Wikipedia", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Contents", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Plot", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Main", role: "角色", description: "The House of the Spirits 中的主要角色。" },
+      { name: "Publication", role: "角色", description: "The House of the Spirits 中的主要角色。" }
     ],
-    themeAnalysis: "",
+    plotSummary: "[The House of the Spirits - Wikipedia] The House of the Spirits · Contents · Plot summary · Main characters · Publication history · School curricula · Traditions · Film, theatrical and television ...\n\n[The House of the Spirits by Isabel Allende | Audible.com] Our summary of Isabel Allende's \"The House of the Spirits\" covers the plot, characters, themes, and impact of this magical realist masterpiece of Latin ...\n\n[[Discussion] The House of the Spirits by Isabel Allende -Chapters 11 ...] [Discussion] The House of the Spirits by Isabel Allende -Chapters 11-end ... The novel is constructed around the interactions of the various ...\n\n[The House of the Spirits Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of The House of the Spirits. Visual theme-tracking, too.\n\n《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。\n《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉",
+    plotNodes: [
+      { label: "Part 1", description: "[The House of the Spirits - Wikipedia] The House of the Spirits · Contents · Plot summary · Main characters · Publication history · School curricula · Traditions · Film, theatrical and television ..." },
+      { label: "Part 2", description: "[The House of the Spirits by Isabel Allende | Audible.com] Our summary of Isabel Allende's \"The House of the Spirits\" covers the plot, characters, themes, and impact of this magical realist masterpiec" },
+      { label: "Part 3", description: "[[Discussion] The House of the Spirits by Isabel Allende -Chapters 11 ...] [Discussion] The House of the Spirits by Isabel Allende -Chapters 11-end ..." },
+      { label: "Part 4", description: "[The House of the Spirits Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of The House of the Spirits." },
+      { label: "Part 5", description: "《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。" }
+    ],
+    themeAnalysis: "[The House of the Spirits Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of The House of the Spirits. Visual theme-tracking, too.\n\n[The House of the Spirits: Analysis of Major Characters - EBSCO] The House of the Spirits features a rich tapestry of characters whose lives intertwine across generations, exploring themes of love, power, and social change.\n\n[The House of the Spirits: Themes | SparkNotes] The major characters in The House of the Spirits come from two opposing classes: the landed aristocracy and the peasants.\n\n[Analysis of Isabel Allende's The House of the Spirits] The House of the Spirits revolves around memories more than spirits. Even so, the book contains sufficient supernatural elements—including the ...\n\n[The House of the Spirits",
     techniques: "",
-    excerpts: [],
-    insights: "《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。\n《幽灵之家》是2007年译林出版社出版的图书，作者是伊莎贝尔·阿连德。本书是一部气度恢宏的全景式小说，以两个家族四代人之间扣人心弦的恩怨纠葛为主线，展现了一个拉丁美洲国家从本世纪初到1973年为止风云变幻的历史。 [1]\n\n作者继承了拉美文学“贴近现实”的优良传统，同“文学爆炸”中杰出的作家保持着同一创作方向，表现出强烈的社会责任感。尤其可贵的是，作者一方面对描写的事件、人物保持着清晰的认识，爱憎分明；另一方面又没有囿于个人好恶，使对事件的评价流于简单化，对人物的刻画流于脸谱化。该书出版后，受到了广大读者的欢迎，并引起文学界的重视，原因之一是作者不拘一格地综合运用了传统的和时兴的写作技巧和创作方法，收到了雅俗共赏的效果。塑造典型环境中的典型性格，是伊莎贝尔·阿连德刻意追求的目标。\n\n这部小说具有很强的故事性。伊莎贝尔·阿连德是个讲故事的能手，在书中引人入胜的故事一个接着一个，或离奇，或荒诞，或惊心动魄，或缠绵悱恻。拉丁美洲文学评论家把《幽灵之家》归入魔幻现实主义文学流派。把它誉为继《百年孤独》之后魔幻现实主义的又一部力作。\n\n1942年，伊莎贝尔·阿连德生于秘鲁，但她真正",
+    excerpts: [
+      { quote: "The House of the Spirits", context: "From The House of the Spirits" }
+    ],
+    insights: "[The House of the Spirits: Themes | SparkNotes] The major characters in The House of the Spirits come from two opposing classes: the landed aristocracy and the peasants.\n\n[The House of the Spirits Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of The House of the Spirits. Visual theme-tracking, too.\n\n[The House of the Spirits - Wikipedia] The House of the Spirits · Contents · Plot summary · Main characters · Publication history · School curricula · Traditions · Film, theatrical and television ...\n\n[Analysis of Isabel Allende's The House of the Spirit",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B9%BD%E7%81%B5%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T04:13:51.230Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B9%BD%E7%81%B5%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T04:58:51.342Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2396,7 +2409,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Invisible Man Prologue Summary & Analysis - LitCharts] An unnamed narrator introduces himself as an “invisible man.” He says that he is a real man of flesh and bone, and that he possesses a mind.\n\n[Invisible Man: Full Book Summary | SparkNotes] The narrator begins telling his story with the claim that he is an “invisible man.” His invisibility, he says, is not a physical condition—he is not literally ...\n\n[Invisible Man by Ralph Ellison | Summary, Plot & Analysis - Study.com] The plot of Invisible Man is the story of a man who lives underground and reflects on his college years and the time h",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E4%BA%BA", tier: "reference", fetchedAt: "2026-05-21T04:55:04.646Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E4%BA%BA", tier: "reference", fetchedAt: "2026-05-21T04:59:19.544Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

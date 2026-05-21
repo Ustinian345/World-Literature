@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T04:58:23.100Z",
+    "generatedAt": "2026-05-21T04:59:08.172Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -2247,7 +2247,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:16.056Z",
+      "batchProcessedAt": "2026-05-21T04:59:08.170Z",
       "batchError": "insufficient data from APIs"
     },
     {
