@@ -556,15 +556,22 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "snow-country": {
     id: "snow-country",
-    plotSummary: "Snow Country (雪国, Yukiguni; IPA: [jɯkiꜜɡɯɲi]) is a novel by the Japanese author Yasunari Kawabata. The novel is considered a classic work of Japanese literature and was among the three novels the Nobel Committee cited in 1968, when Kawabata was awarded the Nobel Prize in Literature.",
-    themeAnalysis: "Snow Country (雪国, Yukiguni; IPA: [jɯkiꜜɡɯɲi]) is a novel by the Japanese author Yasunari Kawabata. The novel is considered a classic work of Japanese literature and was among the three novels the Nobel Committee cited in 1968, when Kawabata was awarded the Nobel Prize in Literature.",
-    techniques: "Snow Country (雪国, Yukiguni; IPA: [jɯkiꜜɡɯɲi]) is a novel by the Japanese author Yasunari Kawabata. The novel is considered a classic work of Japanese literature and was among the three novels the Nobel Committee cited in 1968, when Kawabata was awarded the Nobel Prize in Literature.",
+    plotSummary: "《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻的印象。此后岛村第二次前往雪国，在车上又被邻座的叶子所吸引，岛村对叶子产生了倾慕之情。车子到站后，岛村发现叶子和自己在同一个车站下车。岛村来到旅馆又找到了驹子，旧情重温。当岛村察觉到驹子对自己的感情之后，知道这场爱是徒劳的，所以决定分手。第二年的秋天，岛村第三次来到雪国，他一边迷恋驹子身体的美丽，一边又陶醉于叶子超脱凡尘的美，正当岛村下定决心要离开雪国的前夕，村里发生了一场大火，叶子在火中丧生。作\n《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。 [6]\n\n该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻的印象。此后岛村第二次前往雪国，在车上又被邻座的叶子所吸引，岛村对叶子产生了倾慕之情。车子到站后，岛村发现叶子和自己在同一个车站下车。岛村来到旅馆又找到了驹子，旧情重温。当岛村察觉到驹子对自己的感情之后，知道这场爱是徒劳的，所以决定分手。第二年的秋天，岛村第三次来到雪国，他一边迷恋驹子身体的美丽，一边又陶醉于叶子超脱凡尘的美，正当岛村下定决心要离开雪国的前夕，村里发生了一场大火，叶子在火中丧生。 [3]作者通过对驹子、叶子、岛村的“三角恋爱”故事的描写，反映出“雪国”内外无论是贫贱的人，还是阔绰的人，都处于不幸的生活境地。 [13]《雪国》将日本文学的传统美与西方现代派手法相结合，鲜明地体现了“新感觉派”所主张的以纯粹的个人官能感觉作为出发点，依靠直觉来把握事物的特点。 [16]\n\n《雪国》作为日本近代文学的经典之作，被译成多国文字。 [6]该小说和《千只鹤》《古都》作为川端",
+    plotNodes: [
+      { label: "Part 1", description: "《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻" },
+      { label: "Part 2", description: "该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻的印象。此后岛村第二次前往雪国，在车上又被邻座的叶子所吸引，岛村对叶子产生了倾慕之情。车子到站后，岛村发现叶子和自己在同一个车站下车。岛村来到旅馆又找到了驹子，旧情重温。当岛村察觉到驹子对自己的感情之后，知道这场爱是徒劳的，所以决定分手。第二年的秋天，岛村第三次来到雪国，" },
+      { label: "Part 3", description: "《雪国》作为日本近代文学的经典之作，被译成多国文字。" }
+    ],
+    themeAnalysis: "《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻的印象。此后岛村第二次前往雪国，在车上又被邻座的叶子所吸引，岛村对叶子产生了倾慕之情。车子到站后，岛村发现叶子和自己在同一个车站下车。岛村来到旅馆又找到了驹子，旧情重温。当岛村察觉到驹子对自己的感情之后，知道这场爱是徒劳的，所以决定分手。第二年的秋天，岛村第三次来到雪国，他一边迷恋驹子身体的美丽，一边又陶醉于叶子超脱凡尘的美，正当岛村下定决心要离开雪国的前夕，村里发生了一场大火，叶子在火中丧生。作\n《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。 [6]\n\n该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻的印象。此后岛村第二次前往雪国，在车上又被邻座的叶子所吸引，岛村对叶子产生了倾慕之情。车子到站后，岛村发现叶子和自己在同一个车站下车。岛村来到旅馆又找到了驹子，旧情重温。当岛村察觉到驹子对自己的感情之后，知道这场爱是徒劳的，所以决定分手。第二年的秋天，岛村第三次来到雪国，他一边迷恋驹子身体的美丽，一边又陶醉于叶子超脱凡尘的美，正当岛村下定决心要离开雪国的前夕，村里发生了一场大火，叶子",
+    techniques: "",
     excerpts: [],
-    insights: "Snow Country (雪国, Yukiguni; IPA: [jɯkiꜜɡɯɲi]) is a novel by the Japanese author Yasunari Kawabata. The novel is considered a classic work of Japanese literature and was among the three novels the Nobel Committee cited in 1968, when Kawabata was awarded the Nobel Prize in Literature.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Snow%20Country"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E9%9B%AA%E5%9B%BD"
-    // }
+    insights: "《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给岛村留下了深刻的印象。此后岛村第二次前往雪国，在车上又被邻座的叶子所吸引，岛村对叶子产生了倾慕之情。车子到站后，岛村发现叶子和自己在同一个车站下车。岛村来到旅馆又找到了驹子，旧情重温。当岛村察觉到驹子对自己的感情之后，知道这场爱是徒劳的，所以决定分手。第二年的秋天，岛村第三次来到雪国，他一边迷恋驹子身体的美丽，一边又陶醉于叶子超脱凡尘的美，正当岛村下定决心要离开雪国的前夕，村里发生了一场大火，叶子在火中丧生。作\n《雪国》（ゆきぐに）是日本作家川端康成创作的第一部中篇小说，从1935年起以短篇的形式，分别以《暮景的镜》《白昼的镜》等题名，断断续续地发表在《文艺春秋》《改造》等杂志上，相互之间并没有紧密相连的情节，直至全部完成并经认真修改后，才冠以《雪国》于1948年汇集出版单行本。 [6]\n\n该小说讲述男主人公岛村是东京的一个舞蹈艺术研究家，因为无聊，告别了妻小来到雪国游玩，邂逅了当地一名艺伎驹子。驹子给",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%9B%AA%E5%9B%BD", tier: "reference", fetchedAt: "2026-05-21T04:47:54.980Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "rashomon": {
@@ -1601,21 +1608,28 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "arrow-of-god": {
     id: "arrow-of-god",
-    plotSummary: "《箭在弦上》是由浙江横店影视制作有限公司等出品，余明生执导，九年编剧，靳东、蒋欣、陈龙、潘之琳领衔主演，何明翰、任帅主演的战争剧。该剧讲述了在日寇灭门血洗中余生的的徐氏三姐弟利用祖传神箭技艺展开复仇计划，最终走上为民族而战的抗日之路传奇故事。该于2012年9月13日在河北经济生活频道播出。截至2025年9月10日，该剧在爱奇艺的热度为1445。\n《箭在弦上》是由浙江横店影视制作有限公司等出品，余明生执导，九年编剧，靳东、蒋欣、陈龙、潘之琳领衔主演，何明翰、任帅主演的战争剧 [10]。\n\n该剧讲述了在日寇灭门血洗中余生的的徐氏三姐弟利用祖传神箭技艺展开复仇计划，最终走上为民族而战的抗日之路传奇故事 [15]。\n\n该于2012年9月13日在河北经济生活频道播出 [14]。截至2025年9月10日，该剧在爱奇艺的热度为1445 [10]。\n\n九一八事变之后，日寇部署了全面进攻热河的计划。徐一航（蒋欣 饰）大婚这一天，荣石（靳东 饰）识破日寇欲趁徐家举行婚礼之机血洗徐家的阴谋，不料他的消息被徐家内奸拦下，日寇得逞。徐家被灭门，只有徐一航和妹妹徐二航（潘之琳 饰）依靠祖传的神箭突出了重围。二弟徐锦川（何明翰 饰）急忙回国。姐弟三人从为家族复仇，走上了为民族而战的之路。一味莽撞、执着的复仇让徐一航屡次陷入困境，幸运的是她总是能得到称霸承德一方的荣家大少爷——荣石明里暗里的帮助。荣石屡次帮助一航，两人逐渐相知，待二人终于放下一切表白时，一航的未婚夫赵华（经超 饰）死而复生。在一次行动中，徐氏兄妹遭伏击，徐锦川和徐一航被捕，幸而被中国共产党员卧底所救，姐弟三人参加了抗日同盟军，以神箭对抗日军，完成了一次次别人无法完成的任务。中国国民政府消极抗日，派中央军前来围剿抗日同盟军，抗日同盟军被迫宣告解散。姐弟三人短暂失去了斗争的方向，但是不久之后，他们又杀回了承德，继续以他们的方式，不屈不挠地和日寇周旋，绎出了一系列爱恨情仇，国仇家恨交织的故事 [4]。\n\n赵华很爱一航，并答应徐铁军的苛刻要求，做上门女婿。大婚之日，一航身着红妆，宛如娇艳的鲜花，两人憧憬着以后美好的生活。就在徐家紧锣密鼓地准备婚礼的时候，日军一个旅团和伪满一个支队已经兵临城下，埋伏在距离贺岭城数里的辽河源山林里。日军计划派小队长小野和伪军营长吕良彪率领一个五十多人的日伪军小队化装成平民，以给徐家庆贺的名义混进贺岭城。荣石识",
-    plotNodes: [
-      { label: "Part 1", description: "《箭在弦上》是由浙江横店影视制作有限公司等出品，余明生执导，九年编剧，靳东、蒋欣、陈龙、潘之琳领衔主演，何明翰、任帅主演的战争剧。该剧讲述了在日寇灭门血洗中余生的的徐氏三姐弟利用祖传神箭技艺展开复仇计划，最终走上为民族而战的抗日之路传奇故事。该于2012年9月13日在河北经济生活频道播出。截至2025年9月10日，该剧在爱奇艺的热度为1445。" },
-      { label: "Part 2", description: "该剧讲述了在日寇灭门血洗中余生的的徐氏三姐弟利用祖传神箭技艺展开复仇计划，最终走上为民族而战的抗日之路传奇故事 [15]。" },
-      { label: "Part 3", description: "该于2012年9月13日在河北经济生活频道播出 [14]。截至2025年9月10日，该剧在爱奇艺的热度为1445 [10]。" },
-      { label: "Part 4", description: "九一八事变之后，日寇部署了全面进攻热河的计划。徐一航（蒋欣 饰）大婚这一天，荣石（靳东 饰）识破日寇欲趁徐家举行婚礼之机血洗徐家的阴谋，不料他的消息被徐家内奸拦下，日寇得逞。徐家被灭门，只有徐一航和妹妹徐二航（潘之琳 饰）依靠祖传的神箭突出了重围。二弟徐锦川（何明翰 饰）急忙回国。姐弟三人从为家族复仇，走上了为民族而战的之路。一味莽撞、执着的复仇让徐一航屡次陷入困境，幸运的是她总是能得到称霸承德一" },
-      { label: "Part 5", description: "赵华很爱一航，并答应徐铁军的苛刻要求，做上门女婿。大婚之日，一航身着红妆，宛如娇艳的鲜花，两人憧憬着以后美好的生活。就在徐家紧锣密鼓地准备婚礼的时候，日军一个旅团和伪满一个支队已经兵临城下，埋伏在距离贺岭城数里的辽河源山林里。日军计划派小队长小野和伪军营长吕良彪率领一个五十多人的日伪军小队化装成平民，以给徐家庆贺的名义混进贺岭城。荣石识" }
+    characters: [
+      { name: "Arrow", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "Chinua Achebe", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "Characterization", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "Themes", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "Novel", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "English", role: "角色", description: "Arrow of God 中的主要角色。" },
+      { name: "Chinua Achebe Plot", role: "角色", description: "Arrow of God 中的主要角色。" }
     ],
-    themeAnalysis: "",
-    techniques: "",
+    plotSummary: "Get ready to explore Arrow of God and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Arrow of God Chinua Achebe Arrow of God Chinua Achebe 53 pages • 1-hour read Chinua Achebe Arrow of God Fiction | Novel | Adult | Published in 1964 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters 1-3 Chapters 4-6 Chapters 7-9 Chapters 10-12 Chapters 13-15 Chapters 16-19 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Summary and Study Guide Overview Chinua Achebe’s 1964 nov",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore Arrow of God and its meaning." },
+      { label: "Part 2", description: "Study Guide Arrow of God Chinua Achebe Arrow of God Chinua Achebe 53 pages • 1-hour read Chinua Achebe Arrow of God Fiction | Novel | Adult | Published in 1964 A modern alternative to SparkNotes and C" }
+    ],
+    themeAnalysis: "Get ready to explore Arrow of God and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Arrow of God Chinua Achebe Arrow of God Chinua Achebe 53 pages • 1-hour read Chinua Achebe Arrow of God Fiction | Novel | Adult | Published in 1964 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters 1-3 Chapters 4-6 Chapters 7-9 Chapters 10-12 Chapters 13-15 Chapters 16-19 Character Analysis",
+    techniques: "[Chinua Achebe Writing Styles in Arrow of God - BookRags.com] A detailed discussion of the writing styles used running throughout Arrow of God including including point of view, structure, language, and meaning.\n\n[Arrow of God by Chinua Achebe | Literature and Writing - EBSCO] \"Arrow of God\" is a novel by Chinua Achebe set in the 1920s during a pivotal ... novel poignantly explores themes of power, identity, and cultural conflict.\n\nGet ready to explore Arrow of God and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to he",
     excerpts: [],
-    insights: "《箭在弦上》是由浙江横店影视制作有限公司等出品，余明生执导，九年编剧，靳东、蒋欣、陈龙、潘之琳领衔主演，何明翰、任帅主演的战争剧。该剧讲述了在日寇灭门血洗中余生的的徐氏三姐弟利用祖传神箭技艺展开复仇计划，最终走上为民族而战的抗日之路传奇故事。该于2012年9月13日在河北经济生活频道播出。截至2025年9月10日，该剧在爱奇艺的热度为1445。\n《箭在弦上》是由浙江横店影视制作有限公司等出品，余明生执导，九年编剧，靳东、蒋欣、陈龙、潘之琳领衔主演，何明翰、任帅主演的战争剧 [10]。\n\n该剧讲述了在日寇灭门血洗中余生的的徐氏三姐弟利用祖传神箭技艺展开复仇计划，最终走上为民族而战的抗日之路传奇故事 [15]。\n\n该于2012年9月13日在河北经济生活频道播出 [14]。截至2025年9月10日，该剧在爱奇艺的热度为1445 [10]。\n\n九一八事变之后，日寇部署了全面进攻热河的计划。徐一航（蒋欣 饰）大婚这一天，荣石（靳东 饰）识破日寇欲趁徐家举行婚礼之机血洗徐家的阴谋，不料他的消息被徐家内奸拦下，日寇得逞。徐家被灭门，只有徐一航和妹妹徐二航（潘之琳 饰）依靠祖传的神箭突出了重围。二弟徐锦川（何明翰 饰）急忙回国。姐弟三人从为家族复仇，走上了为民族而战的之路。一味莽撞、执着的复仇让徐一航屡次陷入困境，幸运的是她总是能得到称霸承德一方的荣家大少爷——荣石明里暗里的帮助。荣石屡次帮助一航",
+    insights: "[Arrow of God Summary - GradeSaver] In Arrow of God, we see the calendar, religion, social mores, customary dress, and other facets of Igbo culture imperiled by the religious, ...\n\n[Arrow of God Summary and Study Guide - SuperSummary] Chinua Achebe's 1964 novel Arrow of God portrays an Ibo leader as he confronts the British administrators and missionaries in his town.\n\n[Arrow of God - Wikipedia] Arrow of God, published in 1964, is the third novel by Chinua Achebe. Along with Things Fall Apart and No Longer at Ease, it is considered part of The ...\n\n[Chinua Achebe Writing Styles in Arrow of God",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%A5%9E%E7%AE%AD", tier: "reference", fetchedAt: "2026-05-21T04:04:33.635Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%A5%9E%E7%AE%AD", tier: "reference", fetchedAt: "2026-05-21T04:47:57.843Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
