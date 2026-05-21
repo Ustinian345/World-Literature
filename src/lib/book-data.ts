@@ -2840,18 +2840,25 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "hunger": {
     id: "hunger",
-    plotSummary: "In politics, humanitarian aid, and the social sciences, hunger is defined as a condition in which an individual does not have the physical or financial capability to consume sufficient food to meet basic nutritional needs for a sustained period. In the field of hunger relief, the term hunger is used in a sense that surpasses the typical desire for food that all humans experience, also referred to as an appetite.",
+    plotSummary: "hunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如&#34;die of hunger&#34;）及抽象层面的强烈渴望（如&#34;hunger for knowledge&#34;）；动词义项涵盖主动挨饿与迫切渴求（如&#34;hungering for raw materials&#34;）。其词源可追溯至古英语&#34;hyngran&#34;，在语义演变中逐渐拓展至精神需求领域。该词发音为英[ˈhʌŋɡə(r)]/美[ˈhʌŋɡər]，名词不可数，动词可接宾语或介词短语（如&#34;hunger for/after&#34;）。现代英语中衍生出&#34;hunger strike&#34;（绝食抗议）、&#34;hunger marketing&#34;（饥饿营销）等复合词组，应用于社会运动及商业领域。词形变化包含动词过去式&#34;hungered&#34;及形容词&#34;hungry&#34;（由词尾替换规则派生）。语义辨析中，hunger侧重个体生理需求，与表大规模饥荒的&#34;fa\nhunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如\"die of hunger\"）及抽象层面的强烈渴望（如\"hunger for knowledge\"）；动词义项涵盖主动挨饿与迫切渴求（如\"hungering for raw materials\"）。其词源可追溯至古英语\"hyngran\"，在语义演变中逐渐拓展至精神需求领域 [2-3]。该词发音为英[ˈhʌŋɡə(r)]/美[ˈhʌŋɡər]，名词不可数，动词可接宾语或介词短语（如\"hunger for/after\"） [2] [5]。\n\n现代英语中衍生出\"hunger strike\"（绝食抗议）、\"hunger marketing\"（饥饿营销）等复合词组，应用于社会运动及商业领域 [2]。词形变化包含动词过去式\"hungered\"及形容词\"hungry\"（由词尾替换规则派生）。语义辨析中，hunger侧重个体生理需求，与表大规模饥荒的\"famine\"及强调人为灾难的\"starvation\"形成差异 [4]。该词被纳入中学至大学英语教学体系，列为四级考试核心词汇 [6]。\n\nhunger是一个英语单词，主要用作名词和动词 [7] [10]。作为",
     plotNodes: [
-      { label: "Part 1", description: "In politics, humanitarian aid, and the social sciences, hunger is defined as a condition in which an individual does not have the physical or financial capability to consume sufficient food to meet ba" },
-      { label: "Part 2", description: "Throughout history, portions of the world's population have often suffered sustained periods of hunger." }
+      { label: "Part 1", description: "hunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如&#34;die of hunger&#34;）及抽象层面的强烈渴望（如&#34;hunger for knowledge&#34;）；动词义项涵盖主动挨饿与迫切渴求（如&#34;hungering for raw materials&#34;）。其词源可追溯至古英语&#34;hyngran&#34;，在语义演" },
+      { label: "Part 2", description: "现代英语中衍生出\"hunger strike\"（绝食抗议）、\"hunger marketing\"（饥饿营销）等复合词组，应用于社会运动及商业领域 [2]。词形变化包含动词过去式\"hungered\"及形容词\"hungry\"（由词尾替换规则派生）。语义辨析中，hunger侧重个体生理需求，与表大规模饥荒的\"famine\"及强调人为灾难的\"starvation\"形成差异 [4]。该词被纳入中学至大学英语" }
     ],
-    themeAnalysis: "In politics, humanitarian aid, and the social sciences, hunger is defined as a condition in which an individual does not have the physical or financial capability to consume sufficient food to meet basic nutritional needs for a sustained period.",
-    techniques: "In politics, humanitarian aid, and the social sciences, hunger is defined as a condition in which an individual does not have the physical or financial capability to consume sufficient food to meet basic nutritional needs for a sustained period.",
-    excerpts: [],
-    insights: "In politics, humanitarian aid, and the social sciences, hunger is defined as a condition in which an individual does not have the physical or financial capability to consume sufficient food to meet basic nutritional needs for a sustained period.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Hunger"
-    // }
+    themeAnalysis: "hunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如&#34;die of hunger&#34;）及抽象层面的强烈渴望（如&#34;hunger for knowledge&#34;）；动词义项涵盖主动挨饿与迫切渴求（如&#34;hungering for raw materials&#34;）。其词源可追溯至古英语&#34;hyngran&#34;，在语义演变中逐渐拓展至精神需求领域。该词发音为英[ˈhʌŋɡə(r)]/美[ˈhʌŋɡər]，名词不可数，动词可接宾语或介词短语（如&#34;hunger for/after&#34;）。现代英语中衍生出&#34;hunger strike&#34;（绝食抗议）、&#34;hunger marketing&#34;（饥饿营销）等复合词组，应用于社会运动及商业领域。词形变化包含动词过去式&#34;hungered&#34;及形容词&#34;hungry&#34;（由词尾替换规则派生）。语义辨析中，hunger侧重个体生理需求，与表大规模饥荒的&#34;fa\nhunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如\"die of hunger\"）及抽象层面的强烈渴望（如\"hunger for knowledge\"）；动词义项涵盖主动挨饿与迫切渴求（如\"hungering for raw materials\"）。其词源可追溯至古英语\"hyngran\"，在语义演变中逐渐拓展至精神需求领域 [2-3]。该词发音为英[ˈhʌŋɡə(r)]/美[ˈhʌŋɡər]，名词不可数，动词可接宾语或介词短语（如\"hunger for/after\"） [2] [5]。\n\n现代英语中衍生出\"hunger strike\"（绝食抗议）、\"hunger marketing\"（饥饿营销）等复合",
+    techniques: "",
+    excerpts: [
+      { quote: "hunger for knowledge", context: "From hunger" },
+      { quote: "hungering for raw materials", context: "From hunger" },
+      { quote: "，在语义演变中逐渐拓展至精神需求领域 [2-3]。该词发音为英[ˈhʌŋɡə(r)]/美[ˈhʌŋɡər]，名词不可数，动词可接宾语或介词短语（如", context: "From hunger" }
+    ],
+    insights: "hunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如&#34;die of hunger&#34;）及抽象层面的强烈渴望（如&#34;hunger for knowledge&#34;）；动词义项涵盖主动挨饿与迫切渴求（如&#34;hungering for raw materials&#34;）。其词源可追溯至古英语&#34;hyngran&#34;，在语义演变中逐渐拓展至精神需求领域。该词发音为英[ˈhʌŋɡə(r)]/美[ˈhʌŋɡər]，名词不可数，动词可接宾语或介词短语（如&#34;hunger for/after&#34;）。现代英语中衍生出&#34;hunger strike&#34;（绝食抗议）、&#34;hunger marketing&#34;（饥饿营销）等复合词组，应用于社会运动及商业领域。词形变化包含动词过去式&#34;hungered&#34;及形容词&#34;hungry&#34;（由词尾替换规则派生）。语义辨析中，hunger侧重个体生理需求，与表大规模饥荒的&#34;fa\nhunger是英语中的基础词汇，具有名词和动词双重词性。名词含义包括生理层面的饥饿感（如\"die of hunger\"）及抽象层面的强烈渴望（如\"hunger for knowledge\"）；动词义项涵盖主动挨饿与迫切渴求（如\"hungering",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/hunger", tier: "reference", fetchedAt: "2026-05-21T12:37:31.993Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "2666": {
@@ -3597,6 +3604,37 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
         { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=the-glass-bead-game" },
         { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=the-glass-bead-game" },
         { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=the-glass-bead-game" },
+      ],
+    },
+  },
+
+  "steppenwolf": {
+    id: "steppenwolf",
+    characters: [
+      { name: "Steppenwolf", role: "角色", description: "\"steppenwolf\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "New God", role: "角色", description: "\"steppenwolf\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Steppenwolf, novel by Hermann Hesse, published as Der Steppenwolf in 1927. The title refers to a style adopted by Harry Haller, Hesse’s protagonist. Haller is a writer, a loner and an outsider who thinks of himself as a wolf of the steppes. Distrusting Western values and despising middle-class",
+    plotNodes: [
+      { label: "第 1 部分", description: "Steppenwolf, novel by Hermann Hesse, published as Der Steppenwolf in 1927. The title refers to a style adopted by Harry Haller, Hesse’s protagonist." }
+    ],
+    themeAnalysis: "荒原狼（Steppenwolf），是美国DC漫画旗下超级反派，初次登场于《新神族》（New God）第7期（1972年3月），由杰克·科比创造。来自宇宙中第四世界的活地狱天启星，是新神族的一员，前天启星统治者由迦可汗之妻赫格拉的弟弟，天启星军事指挥官，黑暗君主达克赛德手下黑暗精英的一员，在漫长的时间里他帮助达克赛德征服了无数的星球和平行宇宙。\n荒原狼（Steppenwolf），是美国DC漫画旗下超级反派，初次登场于《新神族》（New God）第7期（1972年3月），由杰克·科比创造。来自宇宙中第四世界的活地狱天启星，是新神族的一员，前天启星统治者由迦可汗之妻赫格拉的弟弟，天启星军事指挥官，黑暗君主达克赛德手下黑暗精英的一员，在漫长的时间里他帮助达克赛德征服了无数的星球和平行宇宙。 [1]\n\n此外，荒原狼亦曾化身成人类潜伏于地球，最终危机中亦同达克赛德一同以灵魂的方式来到地球，打造属于他们的第五世界。\n\n新52后常常以一把巨斧为武器，凭借新神族天生的强大力量他甚至可以去挑战神奇女侠或是超人。",
+    techniques: "荒原狼（Steppenwolf），是美国DC漫画旗下超级反派，初次登场于《新神族》（New God）第7期（1972年3月），由杰克·科比创造。来自宇宙中第四世界的活地狱天启星，是新神族的一员，前天启星统治者由迦可汗之妻赫格拉的弟弟，天启星军事指挥官，黑暗君主达克赛德手下黑暗精英的一员，在漫长的时间里他帮助达克赛德征服了无数的星球和平行宇宙。\n荒原狼（Steppenwolf），是美国DC漫画旗下超级反派，初次登场于《新神族》（New God）第7期（1972年3月），由杰克·科比创造。来自宇宙中第四世界的活地狱天启星，是新神族的一员，前天启星统治者由迦可汗之妻赫格拉的弟弟，天启星军事指挥官，黑暗君主达克赛德手下黑暗精英的一员，在漫长的时间里他帮助达克赛德征服了无数的星球和平行宇宙。",
+    excerpts: [],
+    insights: "荒原狼（Steppenwolf），是美国DC漫画旗下超级反派，初次登场于《新神族》（New God）第7期（1972年3月），由杰克·科比创造。来自宇宙中第四世界的活地狱天启星，是新神族的一员，前天启星统治者由迦可汗之妻赫格拉的弟弟，天启星军事指挥官，黑暗君主达克赛德手下黑暗精英的一员，在漫长的时间里他帮助达克赛德征服了无数的星球和平行宇宙。\n荒原狼（Steppenwolf），是美国DC漫画旗下超级反派，初次登场于《新神族》（New God）第7期（1972年3月），由杰克·科比创造。来自宇宙中第四世界的活地狱天启星，是新神族的一员，前天启星统治者由迦可汗之妻赫格拉的弟弟，天启星军事指挥官，黑暗君主达克赛德手下黑暗精英的一员，在漫长的时间里他帮助达克赛德征服了无数的星球和平行宇宙。",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/steppenwolf", tier: "reference", fetchedAt: "2026-05-21T12:35:05.830Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/75802", tier: "original_text", fetchedAt: "2026-05-21T12:35:23.634Z", contributedFields: ["insights"] },
+        { label: "Britannica", url: "https://www.britannica.com/topic/steppenwolf", tier: "reference", fetchedAt: "2026-05-21T12:35:23.634Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=steppenwolf" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=steppenwolf" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=steppenwolf" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=steppenwolf" },
       ],
     },
   },
