@@ -69,10 +69,14 @@ export async function POST(req: Request) {
       );
     }
 
-    console.log("[register] 注册成功:", verified.id, verified.email);
+    // 查询总注册人数作为用户编号
+    const userNumber = await prisma.user.count();
+
+    console.log("[register] 注册成功:", verified.id, verified.email, "第", userNumber, "位用户");
     return NextResponse.json({
       success: true,
       user: { id: verified.id, email: verified.email, name: verified.name },
+      userNumber,
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);

@@ -3,41 +3,36 @@
 import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 
-const GREETINGS = [
-  "世界文学的星空因你的加入而更加璀璨。从荷马史诗到马尔克斯的魔幻，从李白的诗篇到阿契贝的非洲故事——愿你在跨越时空的文字中找到属于自己的共鸣。",
-  "书页翻动的声音是跨越千年的回响。欢迎来到世界文学总站，这里收藏着人类最深刻的思想与最动人的故事，而今天，你也成为了这段旅程的一部分。",
-  "每一位读者都是一本书的开篇。从今天起，你可以在这座文学殿堂中记录你的阅读足迹，收藏你心仪的作品，与世界各地的读者一同探索。",
-];
-
 export default function WelcomeModal() {
   const { data: session } = useSession();
   const [visible, setVisible] = useState(false);
   const [userNumber, setUserNumber] = useState(0);
-  const [greeting, setGreeting] = useState("");
 
   useEffect(() => {
-    const u = session?.user as unknown as Record<string, unknown> | undefined;
     const email = session?.user?.email || "";
+    if (!email) return;
 
-    // 三个条件同时满足才弹窗：
-    // 1. 是新注册用户（isNewUser = true）
-    // 2. 用户编号有效
-    // 3. 该邮箱从未弹过窗（localStorage）
-    if (u?.isNewUser && u?.userNumber && email) {
-      const key = `wl-welcome-shown-${email}`;
-      if (localStorage.getItem(key)) return;
+    // 检查该邮箱是否已经弹过窗
+    const dismissedKey = `wl-welcome-dismissed-${email}`;
+    if (localStorage.getItem(dismissedKey)) return;
 
-      setUserNumber(u.userNumber as number);
-      setGreeting(GREETINGS[(u.userNumber as number) % GREETINGS.length]);
-      setVisible(true);
-    }
+    // 从 sessionStorage 读取注册时写入的用户编号
+    const stored = sessionStorage.getItem("wl-welcome-number");
+    if (!stored) return;
+
+    const num = parseInt(stored, 10);
+    if (!num || num <= 0) return;
+
+    setUserNumber(num);
+    setVisible(true);
   }, [session]);
 
   function handleDismiss() {
     const email = session?.user?.email || "";
     if (email) {
-      localStorage.setItem(`wl-welcome-shown-${email}`, "1");
+      localStorage.setItem(`wl-welcome-dismissed-${email}`, "1");
     }
+    sessionStorage.removeItem("wl-welcome-number");
     setVisible(false);
   }
 
@@ -64,7 +59,7 @@ export default function WelcomeModal() {
             欢迎加入世界文学总站
           </h2>
           <p className="mb-6 font-heading-cn text-sm leading-relaxed text-stone-500 italic">
-            &ldquo;{greeting}&rdquo;
+            &ldquo;世界文学的星空因你的加入而更加璀璨。从荷马史诗到马尔克斯的魔幻，从李白的诗篇到阿契贝的非洲故事——愿你在跨越时空的文字中找到属于自己的共鸣。&rdquo;
           </p>
 
           {/* 装饰分隔线 */}
@@ -78,7 +73,7 @@ export default function WelcomeModal() {
             onClick={handleDismiss}
             className="rounded-xl bg-umber px-8 py-3 font-heading-cn text-sm font-medium text-cream shadow-lg transition-all hover:bg-umber/90 hover:shadow-xl active:scale-95"
           >
-            开始探索
+            继续探索
           </button>
         </div>
       </div>

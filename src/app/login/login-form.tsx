@@ -37,6 +37,11 @@ export function LoginForm() {
           return;
         }
 
+        // 将用户编号存入 sessionStorage，WelcomeModal 会读取
+        if (data.userNumber) {
+          sessionStorage.setItem("wl-welcome-number", String(data.userNumber));
+        }
+
         console.log("[register] API 返回成功:", data);
       }
 
