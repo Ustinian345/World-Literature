@@ -782,20 +782,33 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "epic-of-gilgamesh": {
     id: "epic-of-gilgamesh",
-    plotSummary: "《吉尔伽美什史诗》是已知世界最古老的英雄史诗，早在千年前就已在苏美尔人中口耳流传，在古巴比伦王国时期改编成巴比伦版本流传下来。但这些泥板上的记载的故事发生时间无疑要古老得多，这部史诗是由许多原本独立的情节组成的，这些情节在创作的时候并不存在，但它们被编撰成一个整体之前已经存在很久了，古代近东地区发现了许多不同版本的史诗，较为完整的版本来自公元前7世纪尼尼微的亚述巴尼拔图书馆的藏品。这个故事后来在公元前6世纪被载入史册，这是一部关于统治着古代美索不达米亚地区乌鲁克城邦领主吉尔伽美什的赞歌，虽然这是一部残缺了近1/3的作品，但从余下的2000多行诗中我们还是能够感受到苏美尔人对他们伟大英雄的崇拜赞美之情，比已知最早文学作品都古老，直到19世纪现代考古学家在伊拉克附近发掘出土，此后学者们将这部有4000年历史的史诗誉为世界文学的奠基文本。\n《吉尔伽美什史诗》 [1]是已知世界最古老的英雄史诗， [1]早在千年前就已在苏美尔人中口耳流传，在古巴比伦王国时期改编成巴比伦版本流传下来。\n\n但这些泥板上的记载的故事发生时间无疑要古老得多，这部史诗是由许多原本独立的情节组成的，这些情节在创作的时候并不存在，但它们被编撰成一个整体之前已经存在很久了，古代近东地区发现了许多不同版本的史诗，较为完整的版本来自公元前7世纪尼尼微的亚述巴尼拔图书馆的藏品。这个故事后来在公元前6世纪被载入史册，这是一部关于统治着古代美索不达米亚地区乌鲁克城邦领主吉尔伽美什的赞歌，虽然这是一部残缺了近1/3的作品，但从余下的2000多行诗中我们还是能够感受到苏美尔人对他们伟大英雄的崇拜赞美之情，比已知最早文学作品都古老，直到19世纪现代考古学家在伊拉克附近发掘出土，此后学者们将这部有4000年历史的史诗誉为世界文学的奠基文本。\n\n《吉尔伽美什史诗》围绕乌鲁克(Uruk)国王吉尔伽美什（Gilgamesh）和他的朋友恩奇都（Enkidu）的之间的友谊故事展开。大致可分为四个部分。 [3]在讲述故事前，史诗开篇赞颂了吉尔伽美什作为王者立下的功绩前无古人后无来者，深受百姓爱戴。 [3]\n\n第一部分讲述了半人半神的吉尔伽美什是乌鲁克的君主，但暴虐无度。 [3]他凭借权势抢男霸女，强迫城中居民为他构筑城垣，修建神庙，害得民不聊生，因而激起了贵族的居民们的愤怒。 [3]他的人民只能求助于诸神。创造女神阿鲁鲁（Aruru）便",
-    plotNodes: [
-      { label: "Part 1", description: "《吉尔伽美什史诗》是已知世界最古老的英雄史诗，早在千年前就已在苏美尔人中口耳流传，在古巴比伦王国时期改编成巴比伦版本流传下来。但这些泥板上的记载的故事发生时间无疑要古老得多，这部史诗是由许多原本独立的情节组成的，这些情节在创作的时候并不存在，但它们被编撰成一个整体之前已经存在很久了，古代近东地区发现了许多不同版本的史诗，较为完整的版本来自公元前7世纪尼尼微的亚述巴尼拔图书馆的藏品。这个故事后来在公" },
-      { label: "Part 2", description: "但这些泥板上的记载的故事发生时间无疑要古老得多，这部史诗是由许多原本独立的情节组成的，这些情节在创作的时候并不存在，但它们被编撰成一个整体之前已经存在很久了，古代近东地区发现了许多不同版本的史诗，较为完整的版本来自公元前7世纪尼尼微的亚述巴尼拔图书馆的藏品。这个故事后来在公元前6世纪被载入史册，这是一部关于统治着古代美索不达米亚地区乌鲁克城邦领主吉尔伽美什的赞歌，虽然这是一部残缺了近1/3的作品，" },
-      { label: "Part 3", description: "《吉尔伽美什史诗》围绕乌鲁克(Uruk)国王吉尔伽美什（Gilgamesh）和他的朋友恩奇都（Enkidu）的之间的友谊故事展开。大致可分为四个部分。" },
-      { label: "Part 4", description: "第一部分讲述了半人半神的吉尔伽美什是乌鲁克的君主，但暴虐无度。" }
+    characters: [
+      { name: "The Epic", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "Gilgamesh Character Analysis", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "Gilgamesh", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "All Themes", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "Civilization", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "Fall", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "Innocence Theme Icon", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" },
+      { name: "Innocence", role: "角色", description: "Epic of Gilgamesh 中的主要角色。" }
     ],
-    themeAnalysis: "",
-    techniques: "",
-    excerpts: [],
-    insights: "《吉尔伽美什史诗》是已知世界最古老的英雄史诗，早在千年前就已在苏美尔人中口耳流传，在古巴比伦王国时期改编成巴比伦版本流传下来。但这些泥板上的记载的故事发生时间无疑要古老得多，这部史诗是由许多原本独立的情节组成的，这些情节在创作的时候并不存在，但它们被编撰成一个整体之前已经存在很久了，古代近东地区发现了许多不同版本的史诗，较为完整的版本来自公元前7世纪尼尼微的亚述巴尼拔图书馆的藏品。这个故事后来在公元前6世纪被载入史册，这是一部关于统治着古代美索不达米亚地区乌鲁克城邦领主吉尔伽美什的赞歌，虽然这是一部残缺了近1/3的作品，但从余下的2000多行诗中我们还是能够感受到苏美尔人对他们伟大英雄的崇拜赞美之情，比已知最早文学作品都古老，直到19世纪现代考古学家在伊拉克附近发掘出土，此后学者们将这部有4000年历史的史诗誉为世界文学的奠基文本。\n《吉尔伽美什史诗》 [1]是已知世界最古老的英雄史诗， [1]早在千年前就已在苏美尔人中口耳流传，在古巴比伦王国时期改编成巴比伦版本流传下来。\n\n但这些泥板上的记载的故事发生时间无疑要古老得多，这部史诗是由许多原本独立的情节组成的，这些情节在创作的时候并不存在，但它们被编撰成一个整体之前已经存在很久了，古代近东地区发现了许多不同版本的史诗，较为完整的版本来自公元前7世纪尼尼微的亚述巴尼拔图书馆的藏品。这个故事后来在公元前6世纪被载入史册，这是一部关于统",
+    plotSummary: "[The Epic of Gilgamesh: Themes | SparkNotes] A summary of Themes in Literature's The Epic of Gilgamesh ... Plot Overview · Character List · Analysis of Major Characters · Themes, Motifs, and Symbols.\n\n[The Epic of Gilgamesh Summary & Study Guide - BookRags.com] The Epic of Gilgamesh Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[The Epic of Gilgamesh: Full Poem Summary - SparkNotes] A short summary of Literature's The Epic of Gilgamesh. This free synopsis covers all the crucial plot points of The Epic of Gilgamesh.\n\n[Video: Epic of Gilgamesh | Summary, Characters & Analysis] Themes and Symbolism in the Epic of Gilgamesh ... The Epic of Gilgamesh tells us the importance of dreams. It was shown through the prophetic dreams guiding ...\n\n[Epic of Gilgamesh | Summary, Characters & Analysis - Study.com] The Epic of Gilgamesh explores themes of friendship, the quest for immortality, the human condition, and the relat",
+    plotNodes: [
+      { label: "Part 1", description: "[The Epic of Gilgamesh: Themes | SparkNotes] A summary of Themes in Literature's The Epic of Gilgamesh ..." },
+      { label: "Part 2", description: "[The Epic of Gilgamesh Summary & Study Guide - BookRags.com] The Epic of Gilgamesh Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and m" },
+      { label: "Part 3", description: "[The Epic of Gilgamesh: Full Poem Summary - SparkNotes] A short summary of Literature's The Epic of Gilgamesh." },
+      { label: "Part 4", description: "[Video: Epic of Gilgamesh | Summary, Characters & Analysis] Themes and Symbolism in the Epic of Gilgamesh ..." },
+      { label: "Part 5", description: "[Epic of Gilgamesh | Summary, Characters & Analysis - Study.com] The Epic of Gilgamesh explores themes of friendship, the quest for immortality, the human condition, and the relat" }
+    ],
+    themeAnalysis: "[The Epic of Gilgamesh: Themes | SparkNotes] A summary of Themes in Literature's The Epic of Gilgamesh ... Plot Overview · Character List · Analysis of Major Characters · Themes, Motifs, and Symbols.\n\n[Video: Epic of Gilgamesh | Summary, Characters & Analysis] Themes and Symbolism in the Epic of Gilgamesh ... The Epic of Gilgamesh tells us the importance of dreams. It was shown through the prophetic dreams guiding ...\n\n[The Epic of Gilgamesh Character Analysis - LitCharts] The Epic of Gilgamesh · All Themes · Civilization and the Fall from Innocence Theme Icon. Civilization and the Fall from Innocence · Heroism in Nature vs. Comfort ...\n\n[The Epic of Gilgamesh Summary & Study Guide - BookRags.com] The Epic of Gilgamesh Summary & Study Guide includes detailed chapter summaries and analysis,",
+    techniques: "[Epic of Gilgamesh - Wikipedia] The Epic of Gilgamesh is an epic from ancient Mesopotamia. The literary history of Gilgamesh begins with five Sumerian poems about Gilgamesh (the variant ...",
+    excerpts: [
+      { quote: "My students can't get enough of your charts and their results have gone through the roof.", context: "From Epic of Gilgamesh" }
+    ],
+    insights: "[The Epic of Gilgamesh: Themes | SparkNotes] A summary of Themes in Literature's The Epic of Gilgamesh ... Plot Overview · Character List · Analysis of Major Characters · Themes, Motifs, and Symbols.\n\n[Epic of Gilgamesh - Wikipedia] The Epic of Gilgamesh is an epic from ancient Mesopotamia. The literary history of Gilgamesh begins with five Sumerian poems about Gilgamesh (the variant ...\n\n[The Epic of Gilgamesh Character Analysis - LitCharts] The Epic of Gilgamesh · All Themes · Civilization and the Fall from Innocence Theme Icon. Civilization and the Fall from Innocence · Heroism in Nature vs",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80%E5%8F%B2%E8%AF%97", tier: "reference", fetchedAt: "2026-05-21T04:17:02.491Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%90%89%E5%B0%94%E4%BC%BD%E7%BE%8E%E4%BB%80%E5%8F%B2%E8%AF%97", tier: "reference", fetchedAt: "2026-05-21T05:11:30.121Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2145,7 +2158,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Hopscotch Summary & Study Guide - BookRags.com] Hopscotch is a portrait of a creative soul stymied by an inability to act. The story opens with Horacio searching the bridges of Paris for his mistress La Maga, ...\n\n[Delve Seminar Summary: Julio Cortazar: Hopscotch & Blow-Up] Hopscotch is for those that feel it is time to go beyond what we pretend or chase. Perhaps some of us can accept this better when not faced with ...\n\n[Hopscotch: Analysis of Major Characters | Literature and Writing] \"Hopscotch\" is a complex novel by Julio Cortázar that weaves together the lives of its major characters, pr",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/Hopscotch", tier: "reference", fetchedAt: "2026-05-21T04:58:00.721Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/Hopscotch", tier: "reference", fetchedAt: "2026-05-21T05:11:46.424Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
