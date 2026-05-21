@@ -259,5 +259,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T04:59:08.170Z"
+  },
+  {
+    "bookId": "tb-gmr-1",
+    "title": "白鹭",
+    "author": "郭沫若",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T04:59:53.274Z"
   }
 ]
