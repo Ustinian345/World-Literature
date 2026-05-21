@@ -1088,24 +1088,28 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "decameron": {
     id: "decameron",
-    plotSummary: "《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。《十日谈》是欧洲文学史上第一部现实主义巨著，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。 [1]\n\n该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。\n\n《十日谈》是欧洲文学史上第一部现实主义巨著 [1]，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n\n故事第一 恰泼莱托在临终时编造了一篇忏悔，把神父骗得深信不疑，虽然他生前无恶不作，死后却被人当做圣徒，被尊为“圣恰泼莱托”。\n\n故事第二 一个叫做亚伯拉罕的犹太人，听了好友杨诺的话，来到罗马，目睹教会的腐败生活，他回到巴黎之后，却改奉了天主教。\n\n故事第三 犹太人麦启士德讲了一个三只戒指的故事，因而凭着机智，逃出了苏丹想要陷害他的圈套。\n\n故事第四 一个小修士犯了戒律，理应受到重罚，他却使用巧计，证明院长也犯了这个过失，因此逃过了责罚。\n\n故事第五 蒙费拉特侯爵夫人用母鸡做酒菜，再配上几句俏皮话，打消了法兰西国王对她所起的邪念。\n\n故事第六 一个正直的人用一句尖刻得体的话，把修士的虚伪嘲笑得体无完肤。\n\n故事第七 贝加密诺讲述一个“泼里马索和克伦尼院长”的故事，借题讽刺了一个贵族近来的吝啬作风。\n\n故事第八 行吟诗人波西厄尔用一句锋利的话，讥刺了一个守财奴的性格，促使他悔悟过来。\n\n故事第九 塞浦路斯岛的国王昏庸无能，受了一位太太的讽刺，从此变得英明有为。\n\n故事第十 亚尔培多大爷单恋着一个俏丽的寡妇，寡妇想取笑他，结果反而被他",
-    plotNodes: [
-      { label: "Part 1", description: "《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。《十日谈》是欧洲文学史上第一部" },
-      { label: "Part 2", description: "该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。" },
-      { label: "Part 3", description: "《十日谈》是欧洲文学史上第一部现实主义巨著 [1]，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。" },
-      { label: "Part 4", description: "故事第一 恰泼莱托在临终时编造了一篇忏悔，把神父骗得深信不疑，虽然他生前无恶不作，死后却被人当做圣徒，被尊为“圣恰泼莱托”。" },
-      { label: "Part 5", description: "故事第二 一个叫做亚伯拉罕的犹太人，听了好友杨诺的话，来到罗马，目睹教会的腐败生活，他回到巴黎之后，却改奉了天主教。" },
-      { label: "Part 6", description: "故事第三 犹太人麦启士德讲了一个三只戒指的故事，因而凭着机智，逃出了苏丹想要陷害他的圈套。" },
-      { label: "Part 7", description: "故事第四 一个小修士犯了戒律，理应受到重罚，他却使用巧计，证明院长也犯了这个过失，因此逃过了责罚。" },
-      { label: "Part 8", description: "故事第五 蒙费拉特侯爵夫人用母鸡做酒菜，再配上几句俏皮话，打消了法兰西国王对她所起的邪念。" }
+    characters: [
+      { name: "The Decameron Character", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "The Decameron", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "Study Guide The", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "Decameron Giovanni Boccaccio", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "The Decameron Giovanni", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "Boccaccio", role: "角色", description: "The Decameron 中的主要角色。" },
+      { name: "Giovanni Boccaccio The", role: "角色", description: "The Decameron 中的主要角色。" }
     ],
-    themeAnalysis: "",
-    techniques: "",
+    plotSummary: "Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses First Day Second Day Third Day Fourth Day Fifth Day Sixth Day Seventh Day Eighth Day Ninth Day Tenth Day Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Character Analysi",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore The Decameron and its meaning." },
+      { label: "Part 2", description: "Study Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative t" }
+    ],
+    themeAnalysis: "Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses First Day Second Day Third Day Fourth Day Fifth Day Sixth Day Seventh Day Eighth Day",
+    techniques: "Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play",
     excerpts: [],
-    insights: "《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。《十日谈》是欧洲文学史上第一部现实主义巨著，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。 [1]\n\n该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。\n\n《十日谈》是欧洲文学史上第一部现实主义巨著 [1]，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n\n故事第一 恰泼莱托在临终时编造了一篇忏悔，把神父骗得深信不疑，虽然他生前无恶不作，死后却被人当做圣徒，被尊为“圣恰泼莱托”。\n\n故事第二 一个",
+    insights: "[The Decameron: Full Book Analysis | SparkNotes] The three major themes of The Decameron involve love, fortune, and intelligence, with the overriding theme being the power of love. In the Preface, Boccaccio ...\n\n[The Decameron Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of The Decameron. Visual theme-tracking, too. The Decameron: Themes Explanations, analysis, and visualizations ...\n\n[The Decameron Character Analysis | SuperSummary] Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive w",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8D%81%E6%97%A5%E8%B0%88", tier: "reference", fetchedAt: "2026-05-21T04:33:52.374Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8D%81%E6%97%A5%E8%B0%88", tier: "reference", fetchedAt: "2026-05-21T05:31:50.172Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1228,7 +1232,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Wuthering Heights - Wikipedia] Heathcliff: An ethnically uncertain foundling from Liverpool, who is taken by Earnshaw to Wuthering Heights, where he is reluctantly cared for by the family and ...\n\n[Wuthering Heights Character Analysis - LitCharts] Though lovely looking, Linton is sickly, whiny, effeminate, and weak. Joseph. Long-time servant at Wuthering Heights. He is very religious and judgmental.\n\n[Wuthering Heights: Character List | SparkNotes] An orphan brought to live at Wuthering Heights by Mr. Earnshaw, Heathcliff falls into an intense, unbreakable love with Mr. Earnshaw's daughter Ca",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%91%BC%E5%95%B8%E5%B1%B1%E5%BA%84", tier: "reference", fetchedAt: "2026-05-21T05:27:26.945Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%91%BC%E5%95%B8%E5%B1%B1%E5%BA%84", tier: "reference", fetchedAt: "2026-05-21T05:32:34.396Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
