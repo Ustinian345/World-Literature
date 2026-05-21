@@ -1524,18 +1524,26 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "waiting-for-godot": {
     id: "waiting-for-godot",
-    plotSummary: "Waiting for Godot is a play by Irish author Samuel Beckett. It was written (1948–1949), first published (1952), and first performed (1953) in French as En attendant Godot. Waiting for Godot is Beckett's own English-language adaptation. Subtitled \"tragicomedy in two acts\", it was published in 1954 and first performed in 1955 (UK) and 1956 (U.S.A.). It is Beckett's best-known literary work and is regarded by critics as \"one of the most enigmatic plays of modern literature\".",
-    themeAnalysis: "Waiting for Godot is a play by Irish author Samuel Beckett. It was written (1948–1949), first published (1952), and first performed (1953) in French as En attendant Godot. Waiting for Godot is Beckett's own English-language adaptation. Subtitled \"tragicomedy in two acts\", it was published in 1954 and first performed in 1955 (UK) and 1956 (U.S.A.).",
-    techniques: "Waiting for Godot is a play by Irish author Samuel Beckett. It was written (1948–1949), first published (1952), and first performed (1953) in French as En attendant Godot. Waiting for Godot is Beckett's own English-language adaptation. Subtitled \"tragicomedy in two acts\", it was published in 1954 and first performed in 1955 (UK) and 1956 (U.S.A.).",
-    excerpts: [
-      { quote: ", it was published in 1954 and first performed in 1955 (UK) and 1956 (U.S.A.). It is Beckett's best-known literary work and is regarded by critics as ", context: "From Waiting for Godot" },
-      { quote: ". In a poll conducted by London's Royal National Theatre in the year 1998, Waiting for Godot was voted as ", context: "From Waiting for Godot" }
+    characters: [
+      { name: "Godot", role: "角色", description: "Waiting for Godot 中的主要角色。" }
     ],
-    insights: "Waiting for Godot is a play by Irish author Samuel Beckett. It was written (1948–1949), first published (1952), and first performed (1953) in French as En attendant Godot. Waiting for Godot is Beckett's own English-language adaptation. Subtitled \"tragicomedy in two acts\", it was published in 1954 and first performed in 1955 (UK) and 1956 (U.S.A.).",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Waiting%20for%20Godot"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E7%AD%89%E5%BE%85%E6%88%88%E5%A4%9A"
-    // }
+    plotSummary: "《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。\n《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。\n\n《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。 [1]《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。\n\n第一幕，乡间一条路。一棵树；黄昏。老流浪汉爱斯特拉冈（昵称戈戈）坐在一个土墩上脱靴子，累得筋疲力尽也没能脱下来。另一个老流浪汉弗拉季米尔（昵称狄狄）走上来，两个老朋友交谈几句。狄狄更爱说话，老讲些似乎暗藏哲理的话：“希望迟迟不来，苦死了等的人。你就是这样一个人，脚出了毛病，反倒责怪靴子。”因为无事可做，戈戈提议说：咱们走吧。狄狄回答：咱们不能。戈戈：干吗不能？狄狄：咱们在等待戈多。原来这就是他们来到此地的唯一目的，至于戈多是谁，为什么要等他，连他们自己也搞不清楚。在等待中，他们没事找事，没话找话，吵架，上吊，啃胡萝卜。突然传来一阵响声，一个人手拿鞭子，驱赶着另一个被绳子拴住脖子的人，出现在他们面前。两人一阵惊喜，却马上发现来人并非戈多，而叫做波卓。波卓手里牵的那个人，叫幸运儿。戈戈和狄狄眼看着波卓残酷虐待幸运儿，又聆听幸运儿一番胡言乱语地“有声思想”。之后，波卓赶着幸运儿离去，一个孩子上来报告说，戈多今晚不来了，明天晚上准来。这时夜幕降临，戈戈再次提议离开，狄狄表示同意，但他们仍然坐着不动。幕落。 [2]\n\n剧作中，爱斯特拉冈和弗拉季米尔时而说戈多“可以说是个老相识”，时而又说：“哪儿说得上，我们简直不认识他”，“就是见了他的面也不认得他”。两个流浪汉似乎见过他，但又认不准、说不清。但他们认定只要戈多一来，他们便可“得救”。这样看来，戈多起码是能给他们带来希望的救星。如果说两个流浪汉",
+    plotNodes: [
+      { label: "Part 1", description: "《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。" },
+      { label: "Part 2", description: "《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。" },
+      { label: "Part 3", description: "第一幕，乡间一条路。一棵树；黄昏。老流浪汉爱斯特拉冈（昵称戈戈）坐在一个土墩上脱靴子，累得筋疲力尽也没能脱下来。另一个老流浪汉弗拉季米尔（昵称狄狄）走上来，两个老朋友交谈几句。狄狄更爱说话，老讲些似乎暗藏哲理的话：“希望迟迟不来，苦死了等的人。你就是这样一个人，脚出了毛病，反倒责怪靴子。”因为无事可做，戈戈提议说：咱们走吧。狄狄回答：咱们不能。戈戈：干吗不能？狄狄：咱们在等待戈多。原来这就是他们来" },
+      { label: "Part 4", description: "剧作中，爱斯特拉冈和弗拉季米尔时而说戈多“可以说是个老相识”，时而又说：“哪儿说得上，我们简直不认识他”，“就是见了他的面也不认得他”。两个流浪汉似乎见过他，但又认不准、说不清。但他们认定只要戈多一来，他们便可“得救”。这样看来，戈多起码是能给他们带来希望的救星。如果说两个流浪汉" }
+    ],
+    themeAnalysis: "《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。\n《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。\n\n《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。 [1]《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。\n\n第一幕，乡间一条路。一棵树；黄昏。老流浪汉爱斯特拉冈（昵称戈戈）坐在一个土墩上脱靴子，累得筋疲力尽也没能脱下来。另一个老流浪汉弗拉季米尔（昵称狄狄）走上来，两个老朋友交谈几句。狄狄更爱说话，老讲些似乎暗藏哲理的话：“希望迟迟不来，苦死了等的人。你就是这样一个人，脚出了毛病，反倒责怪靴子。”因为无事可做，戈戈提议说：咱们走吧。狄狄回答：咱们不能。戈戈：干吗不能？狄狄：咱们在等待戈多。原来这就是他们来到此地的唯一目的，至于戈多是谁，为什么要等他，连他们自己也搞不清楚。在等待中，他们没事找事，没话找话，吵架，上吊，啃胡萝卜。突然传来一阵响声，一个人手拿鞭子，驱赶着另一个被绳子拴住脖子的人，出现在他们面前。两人一阵惊喜，却马上发现来人并非戈多，而叫做波卓。波卓手里牵的那个人，叫幸运儿。戈戈和狄狄眼看着波卓残酷虐待幸运儿，又聆听幸运儿一番胡言乱语地“有声思想”。之后，波卓赶着幸运儿离去，一个孩子上来报",
+    techniques: "",
+    excerpts: [],
+    insights: "《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。\n《等待戈多》（En attendant Godot），又译作《等待果陀》，是爱尔兰现代主义剧作家塞缪尔·贝克特的两幕悲喜剧，1953年首演。\n\n《等待戈多》表现的是一个“什么也没有发生，谁也没有来，谁也没有去’’的悲剧。作品着重表现人的心态、心理活动过程以及人的心理活动障碍。作品中的人物没有鲜明的性格，作品没有连贯的故事情节。 [1]《等待戈多》是戏剧史上真正的革新，也是第一部演出成功的荒诞派戏剧。\n\n第一幕，乡间一条路。一棵树；黄昏。老流浪汉爱斯特拉冈（昵称戈戈）坐在一个土墩上脱靴子，累得筋疲力尽也没能脱下来。另一个老流浪汉弗拉季米尔（昵称狄狄）走上来，两个老朋友交谈几句。狄狄更爱说话，老讲些似乎暗藏哲理的话：“希望迟迟不来，苦死了等的人。你就是这样一个人，脚出了毛病，反倒责怪靴子。”因为无事可做，戈戈提议说：咱们走吧。狄狄回答：咱们不能。戈戈：干吗不能？狄狄：咱们在等待戈多。原来这就是他们来到",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%AD%89%E5%BE%85%E6%88%88%E5%A4%9A", tier: "reference", fetchedAt: "2026-05-21T04:48:27.204Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "dolls-house": {
@@ -1751,17 +1759,23 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "joys-of-motherhood": {
     id: "joys-of-motherhood",
-    plotSummary: "The Joys of Motherhood is a novel written by Buchi Emecheta. It was first published in London, UK, by Allison & Busby in 1979 and was first published in Heinemann's African Writers Series in 1980 and reprinted in 1982, 2004, 2008. The basis of the novel is the \"necessity for a woman to be fertile, and above all to give birth to sons\". It tells the tragic story of Nnu-Ego, daughter of Nwokocha Agbadi and Ona, who had a bad fate with childbearing. This novel explores the life of a Nigerian woman, Nnu Ego.",
-    themeAnalysis: "The Joys of Motherhood is a novel written by Buchi Emecheta. It was first published in London, UK, by Allison & Busby in 1979 and was first published in Heinemann's African Writers Series in 1980 and reprinted in 1982, 2004, 2008. The basis of the novel is the \"necessity for a woman to be fertile, and above all to give birth to sons\".",
-    techniques: "The Joys of Motherhood is a novel written by Buchi Emecheta. It was first published in London, UK, by Allison & Busby in 1979 and was first published in Heinemann's African Writers Series in 1980 and reprinted in 1982, 2004, 2008. The basis of the novel is the \"necessity for a woman to be fertile, and above all to give birth to sons\".",
-    excerpts: [
-      { quote: "necessity for a woman to be fertile, and above all to give birth to sons", context: "From The Joys of Motherhood" },
-      { quote: " also include anxiety, obligation, and pain.\nIn the words of critic Marie Umeh, Emecheta ", context: "From The Joys of Motherhood" }
+    characters: [
+      { name: "The Joys", role: "角色", description: "The Joys of Motherhood 中的主要角色。" },
+      { name: "Motherhood Summary", role: "角色", description: "The Joys of Motherhood 中的主要角色。" },
+      { name: "Motherhood", role: "角色", description: "The Joys of Motherhood 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "The Joys of Motherhood 中的主要角色。" }
     ],
-    insights: "The Joys of Motherhood is a novel written by Buchi Emecheta. It was first published in London, UK, by Allison & Busby in 1979 and was first published in Heinemann's African Writers Series in 1980 and reprinted in 1982, 2004, 2008. The basis of the novel is the \"necessity for a woman to be fertile, and above all to give birth to sons\".",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Joys%20of%20Motherhood"
-    // }
+    plotSummary: "Get ready to explore The Joys of Motherhood and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Joys of Motherhood Buchi Emecheta The Joys of Motherhood Buchi Emecheta 49 pages • 1-hour read Buchi Emecheta The Joys of Motherhood Fiction | Novel | Adult | Published in 1979 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-9 Chapters 10-12 Chapters 13-15 Chapters 16-18 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Summary and Study Guide Overview The Joys of Motherhood (1",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore The Joys of Motherhood and its meaning." },
+      { label: "Part 2", description: "Study Guide The Joys of Motherhood Buchi Emecheta The Joys of Motherhood Buchi Emecheta 49 pages • 1-hour read Buchi Emecheta The Joys of Motherhood Fiction | Novel | Adult | Published in 1979 A moder" }
+    ],
+    themeAnalysis: "Get ready to explore The Joys of Motherhood and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Joys of Motherhood Buchi Emecheta The Joys of Motherhood Buchi Emecheta 49 pages • 1-hour read Buchi Emecheta The Joys of Motherhood Fiction | Novel | Adult | Published in 1979 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-9 Chapters 10-12 Chapters",
+    techniques: "",
+    excerpts: [
+      { quote: "The Joys of Motherhood", context: "From The Joys of Motherhood" }
+    ],
+    insights: "[The Joys of Motherhood: Full Book Summary | SparkNotes] A short summary of Buchi Emecheta's The Joys of Motherhood. This free synopsis covers all the crucial plot points of The Joys of Motherhood.\n\n[The Joys of Motherhood Summary | SuperSummary] Get ready to explore The Joys of Motherhood and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and ...\n\n[The Joys of Motherhood Summary & Study Guide - BookRags.com] The Joys of Motherhood Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes,",
   },
 
   "weep-not-child": {
@@ -1892,7 +1906,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Houseboy Summary and Study Guide - SuperSummary] He is beaten badly, so much so that he dies after fleeing to Spanish Guinea. Houseboy addresses themes of sexuality, Christianity, the abuse of power, and the ...\n\n[Houseboy Character Analysis | SuperSummary] Get ready to explore Houseboy and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained ...\n\n[Analysis of Ferdinand Oyono's Houseboy | PDF | Racism - Scribd] \"Houseboy\" explores racial prejudice through the personal relationships between Africans and Europeans. Characters l",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/Houseboy", tier: "reference", fetchedAt: "2026-05-21T04:44:57.652Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/Houseboy", tier: "reference", fetchedAt: "2026-05-21T04:48:52.740Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
