@@ -420,7 +420,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Du Fu - Wikipedia] Du Fu was a Chinese poet and politician during the Tang dynasty. Together with his elder contemporary and friend Li Bai, Du is often considered one of the ...\n\n[In the Footsteps of Du Fu by Michael Wood review – the great poet's ...] In the Footsteps of Du Fu by Michael Wood review – the great poet's progress. A superb evocation of the Chinese master and his travels.\n\n[Poetry Corner: July 15- \"The River Village\" by Du Fu aka Tu Fu] It strikes me that Du Fu's life was shaped by displacement, and now, in this poem, his characters “come and go as they please” and his narrator",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB", tier: "reference", fetchedAt: "2026-05-21T05:10:38.102Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB", tier: "reference", fetchedAt: "2026-05-21T05:15:08.167Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -454,19 +454,22 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "strange-stories": {
     id: "strange-stories",
-    plotSummary: "《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应的宿命论思想。《聊斋志异》一问世，就风行天下，翻刻本竞相出现，相继出现了注释本、评点本，成为小说中的畅销书。文言小\n《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。\n\n全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。 [1]《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应的宿命论思想。 [20]\n\n《聊斋志异》一问世，就风行天下，翻刻本竞相出现，相继出现了注释本、评点本，成为小说中的畅销书。文言小说也因此出现了再度蔚兴的局面。 [6]《聊斋志异》在海外也久负盛名，很早便传入日本，随后被翻译成英、法、德、意、俄、西、荷、比、捷、罗、匈、波、保、越、朝、蒙等十余种文字在海外出版传播，影响十分广泛。后世的戏曲、影视等领域，对《聊斋志异》的改编也层出不穷，为文艺创作提供了丰富多样的素材。 [22]\n\n康熙十八年（1679）春，40岁的蒲松龄初次将手稿集结成书，名为《聊斋",
+    plotSummary: "[(PDF) Strange Tales from a Chinese Studio: Book review] This paper is a book review for \"The Strange Tales from a Chinese Studio\". The authors reviewed the plot the themes and the characters in the 104 stories ...\n\n[Strange Tales from a Chinese Studio - Wikipedia] ... Strange Tales from a Chinese Studio by Pu Songling A depiction of the story \"Luo Zu\", from an illustrated edition located in the National Museum of China. Pu ...\n\n[“The Painted Skin” Critical Analysis – Spirited Ink - Pressbooks] Pu Songling uses the supernatural elements of the story to highlight the ... (Strange Tales from a Chinese Studio). Translated by John Minford. Penguin ...\n\n《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应",
     plotNodes: [
-      { label: "Part 1", description: "《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。" },
-      { label: "Part 2", description: "全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。" },
-      { label: "Part 3", description: "《聊斋志异》一问世，就风行天下，翻刻本竞相出现，相继出现了注释本、评点本，成为小说中的畅销书。文言小说也因此出现了再度蔚兴的局面。" }
+      { label: "Part 1", description: "[(PDF) Strange Tales from a Chinese Studio: Book review] This paper is a book review for \"The Strange Tales from a Chinese Studio\"." },
+      { label: "Part 2", description: "[Strange Tales from a Chinese Studio - Wikipedia] ..." },
+      { label: "Part 3", description: "[“The Painted Skin” Critical Analysis – Spirited Ink - Pressbooks] Pu Songling uses the supernatural elements of the story to highlight the ..." },
+      { label: "Part 4", description: "《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。" }
     ],
-    themeAnalysis: "《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应的宿命论思想。《聊斋志异》一问世，就风行天下，翻刻本竞相出现，相继出现了注释本、评点本，成为小说中的畅销书。文言小\n《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。\n\n全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。 [1]《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应的宿命论思想。 [20]\n\n《聊斋志异》一问世，就风行天下，翻刻本竞相出现，相继出现了注释本、评点本",
-    techniques: "",
-    excerpts: [],
-    insights: "《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应的宿命论思想。《聊斋志异》一问世，就风行天下，翻刻本竞相出现，相继出现了注释本、评点本，成为小说中的畅销书。文言小\n《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。\n\n全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的",
+    themeAnalysis: "[(PDF) Strange Tales from a Chinese Studio: Book review] This paper is a book review for \"The Strange Tales from a Chinese Studio\". The authors reviewed the plot the themes and the characters in the 104 stories ...\n\n[“The Painted Skin” Critical Analysis – Spirited Ink - Pressbooks] Pu Songling uses the supernatural elements of the story to highlight the ... (Strange Tales from a Chinese Studio). Translated by John Minford. Penguin ...\n\n《聊斋志异》（简称《聊斋》，俗名《鬼狐传》）是中国清朝小说家蒲松龄创作的文言短篇小说集，最早的抄本在清代康熙年间已有流传。全书共有短篇小说491篇（张友鹤《聊斋志异会校会注会评本》），一说494篇（朱其铠《全本新注聊斋志异》）。它们或者揭露封建统治的黑暗，或者抨击科举制度的腐朽，或者反抗封建礼教的束缚，具有丰富深刻的思想内容。描写爱情主题的作品，在全书中数量最多，它们表现了强烈的反封建礼教的精神。其中一些作品，通过花妖狐魅和人的恋爱，表现了作者理想的爱情。《聊斋志异》多谈狐、仙、鬼、妖，以此来概括当时的社会关系，反映了17世纪中国的社会面貌，对当时社会的腐败、黑暗进行了有力的批判，在一定程度上揭露了社会的矛盾，表达了人民的愿望，但其中也不可避免地夹杂着一些封建伦理观念和因果报应的宿命论思想。《聊斋志异》一问世，",
+    techniques: "[What are the similarities and differences in the styles of Pu ... - 知乎] Firstly, from the overall style of the work, Strange Tales from a Chinese Studio (The Scholars' Ghost Stories) is renowned for its fantastical and magnificent ...",
+    excerpts: [
+      { quote: "The Strange Tales from a Chinese Studio", context: "From Strange Tales from a Chinese Studio" }
+    ],
+    insights: "[Strange Tales from a Chinese Studio by Pu Songling | Goodreads] Part of the interest of Strange Tales from a Chinese Studio inheres in the way the tales provide insight into the 17th-century Chinese culture of the Qing ...\n\n[Strange Tales from a Chinese Studio - Wikipedia] ... Strange Tales from a Chinese Studio by Pu Songling A depiction of the story \"Luo Zu\", from an illustrated edition located in the National Museum of China. Pu ...\n\n[Book Review: Strange Tales from a Chinese Studio by Pu Songling ...] Strange Tales from a Chinese Studio collects 164 tales by Pu Songling. I don't really th",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%81%8A%E6%96%8B%E5%BF%97%E5%BC%82", tier: "reference", fetchedAt: "2026-05-21T04:19:22.501Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%81%8A%E6%96%8B%E5%BF%97%E5%BC%82", tier: "reference", fetchedAt: "2026-05-21T05:14:09.020Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -712,6 +715,13 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "shahnameh": {
     id: "shahnameh",
+    characters: [
+      { name: "The Shahnameh", role: "角色", description: "Shahnameh 中的主要角色。" },
+      { name: "The Persian", role: "角色", description: "Shahnameh 中的主要角色。" },
+      { name: "Kings", role: "角色", description: "Shahnameh 中的主要角色。" },
+      { name: "Abolqasem Ferdowsi", role: "角色", description: "Shahnameh 中的主要角色。" },
+      { name: "Persian", role: "角色", description: "Shahnameh 中的主要角色。" }
+    ],
     plotSummary: "《列王纪》是波斯诗人菲尔多西历时43年创作的史诗，完成于11世纪初，2017年商务印书馆出版张鸿年、宋丕方译全本。全书约12万行，记载波斯从创世至萨珊王朝灭亡的4600年历史，分为神话传说、勇士故事和历史纪事三部分，其中鲁斯塔姆与苏赫拉布等英雄篇章为核心内容。作品采用达里波斯语书写，阿拉伯语借词仅占8.8%，收录波斯神话与历史故事，塑造反抗异族统治的英雄形象。菲尔多西融合琐罗亚斯德教元素，通过“灵光”传承、善恶二元论等维系波斯文化认同。该书中文译本包含1964年《鲁斯塔姆与苏赫拉布》选译本。与哈菲兹抒情诗集、萨迪全集等并称波斯文学四大支柱。\n《列王纪》是波斯诗人菲尔多西历时43年创作的史诗，完成于11世纪初，2017年商务印书馆出版张鸿年、宋丕方译全本。全书约12万行，记载波斯从创世至萨珊王朝灭亡的4600年历史，分为神话传说、勇士故事和历史纪事三部分，其中鲁斯塔姆与苏赫拉布等英雄篇章为核心内容。 [5-6] [8]\n\n作品采用达里波斯语书写，阿拉伯语借词仅占8.8%，收录波斯神话与历史故事，塑造反抗异族统治的英雄形象。菲尔多西融合琐罗亚斯德教元素，通过“灵光”传承、善恶二元论等维系波斯文化认同。该书中文译本包含1964年《鲁斯塔姆与苏赫拉布》选译本。与哈菲兹抒情诗集、萨迪全集等并称波斯文学四大支柱。 [2] [4] [7-8]\n\n《列王纪》是波斯人的爱国热情和新兴的达里波斯文学语言相结合的产物。出于反对阿拉伯人的思想需要，波斯地方政权的统治者曾大力提倡写王书。在菲尔多西创作之前，已有 5 部王书问世，其中3部为散文体，2部为诗体。萨曼王朝的宫廷诗人塔吉基曾受王命写王书，因被仆人杀害 ，只完成了1000行 。菲尔多西将这 1000 行诗全部收录在《列王纪》中，以资纪念。\n\n《列王纪》长达 60000 双行，叙述内容的时间跨度在4000年以上，从开天辟地写到 651 年波斯帝国灭亡时止。简要叙述了波斯历史上50个帝王公侯的生平事迹，并汇集了数千年来流传在民间的神话传说和历史故事。大致可以分为 3 部分：①神话传说。其中最精彩的诗章是描写铁匠卡维领导人民起义、反抗暴君蛇王祖哈克的传说故事，塑造了众多英勇起义者的形象。②勇士故事。约占全书一半篇幅，是全书的精华。突出表现了民族英雄鲁斯坦姆光辉的一生，同时谴责了暴君的统治。③历史故事。描写了阿拉伯人入侵前萨珊王朝时期的历史事",
     plotNodes: [
       { label: "Part 1", description: "《列王纪》是波斯诗人菲尔多西历时43年创作的史诗，完成于11世纪初，2017年商务印书馆出版张鸿年、宋丕方译全本。全书约12万行，记载波斯从创世至萨珊王朝灭亡的4600年历史，分为神话传说、勇士故事和历史纪事三部分，其中鲁斯塔姆与苏赫拉布等英雄篇章为核心内容。作品采用达里波斯语书写，阿拉伯语借词仅占8.8%，收录波斯神话与历史故事，塑造反抗异族统治的英雄形象。菲尔多西融合琐罗亚斯德教元素，通过“灵" },
@@ -719,13 +729,13 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
       { label: "Part 3", description: "《列王纪》是波斯人的爱国热情和新兴的达里波斯文学语言相结合的产物。出于反对阿拉伯人的思想需要，波斯地方政权的统治者曾大力提倡写王书。在菲尔多西创作之前，已有 5 部王书问世，其中3部为散文体，2部为诗体。萨曼王朝的宫廷诗人塔吉基曾受王命写王书，因被仆人杀害 ，只完成了1000行 。菲尔多西将这 1000 行诗全部收录在《列王纪》中，以资纪念。" },
       { label: "Part 4", description: "《列王纪》长达 60000 双行，叙述内容的时间跨度在4000年以上，从开天辟地写到 651 年波斯帝国灭亡时止。简要叙述了波斯历史上50个帝王公侯的生平事迹，并汇集了数千年来流传在民间的神话传说和历史故事。大致可以分为 3 部分：①神话传说。其中最精彩的诗章是描写铁匠卡维领导人民起义、反抗暴君蛇王祖哈克的传说故事，塑造了众多英勇起义者的形象。②勇士故事。约占全书一半篇幅，是全书的精华。突出表现了" }
     ],
-    themeAnalysis: "",
-    techniques: "",
+    themeAnalysis: "[Structure and Themes: Myth, Legend and History | The Shahnameh] The various roles of women in the Shahnameh are indicative of Ferdowsi's views on social order. A good example is the story of Bahram Gur who cruelly ...\n\n[Shahnameh: History & Analysis - Video - Study.com] Ferdowsi wrote the Persian epic Shahnameh, which translates as ''Book of Kings,'' during the Ghaznavid Dynasty. It tells the stories of ...\n\n[[PDF] the footprints of shahnameh in world literature: a review of the two ...] By utilizing the themes and characters of. Ferdowsi's Shahnameh, Tawfik has been able to create a supernatural and fantasy work with a ...",
+    techniques: "[Structure and Themes: Myth, Legend and History | The Shahnameh] The various roles of women in the Shahnameh are indicative of Ferdowsi's views on social order. A good example is the story of Bahram Gur who cruelly ...",
     excerpts: [],
-    insights: "《列王纪》是波斯诗人菲尔多西历时43年创作的史诗，完成于11世纪初，2017年商务印书馆出版张鸿年、宋丕方译全本。全书约12万行，记载波斯从创世至萨珊王朝灭亡的4600年历史，分为神话传说、勇士故事和历史纪事三部分，其中鲁斯塔姆与苏赫拉布等英雄篇章为核心内容。作品采用达里波斯语书写，阿拉伯语借词仅占8.8%，收录波斯神话与历史故事，塑造反抗异族统治的英雄形象。菲尔多西融合琐罗亚斯德教元素，通过“灵光”传承、善恶二元论等维系波斯文化认同。该书中文译本包含1964年《鲁斯塔姆与苏赫拉布》选译本。与哈菲兹抒情诗集、萨迪全集等并称波斯文学四大支柱。\n《列王纪》是波斯诗人菲尔多西历时43年创作的史诗，完成于11世纪初，2017年商务印书馆出版张鸿年、宋丕方译全本。全书约12万行，记载波斯从创世至萨珊王朝灭亡的4600年历史，分为神话传说、勇士故事和历史纪事三部分，其中鲁斯塔姆与苏赫拉布等英雄篇章为核心内容。 [5-6] [8]\n\n作品采用达里波斯语书写，阿拉伯语借词仅占8.8%，收录波斯神话与历史故事，塑造反抗异族统治的英雄形象。菲尔多西融合琐罗亚斯德教元素，通过“灵光”传承、善恶二元论等维系波斯文化认同。该书中文译本包含1964年《鲁斯塔姆与苏赫拉布》选译本。与哈菲兹抒情诗集、萨迪全集等并称波斯文学四大支柱。 [2] [4] [7-8]\n\n《列王纪》是波斯人的爱国热情和新兴的达里波斯文学语",
+    insights: "[Shahnameh - Wikipedia] The Shahnameh, also romanized Shahnama ( lit. 'Book of Kings'), is a long epic poem written by the Persian poet Ferdowsi between c. 977 and 1010 CE and is ...\n\n[Structure and Themes: Myth, Legend and History | The Shahnameh] The various roles of women in the Shahnameh are indicative of Ferdowsi's views on social order. A good example is the story of Bahram Gur who cruelly ...\n\n[Shahnameh: History & Analysis - Video - Study.com] Ferdowsi wrote the Persian epic Shahnameh, which translates as ''Book of Kings,'' during the Ghaznavid Dynasty. It tells the stories of ...\n\n[Th",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%88%97%E7%8E%8B%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T04:19:55.179Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%88%97%E7%8E%8B%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T05:14:55.552Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
