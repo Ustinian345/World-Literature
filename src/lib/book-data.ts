@@ -396,7 +396,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Li Bai - Wikipedia] Li Bai's poems became models for celebrating the pleasures of friendship, the depth of nature, solitude, and the joys of drinking. Among the most famous are \" ...\n\n[Introduction & Overview of Drinking Alone Beneath the Moon] Plot Summary · Themes · Style · Historical Context ... This detailed literature summary also contains Bibliography on Drinking Alone Beneath the Moon by Li Bai.\n\n[\"The Banished Immortal: A Life of Li Bai\" by Ha Jin] Li Bai was a physically-impressive man of supreme intelligence, passion and sheer love of life, whose poems were known in China to high an",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD", tier: "reference", fetchedAt: "2026-05-21T05:13:09.025Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E7%99%BD", tier: "reference", fetchedAt: "2026-05-21T05:17:44.467Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -611,20 +611,28 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "ramayana": {
     id: "ramayana",
-    plotSummary: "《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃精妙，将三界融会贯通，情景相互辉映，描绘出生动的形象，并以实例阐释道义。内容主要讲述阿逾陀国王子罗摩和他的妻子悉多的故事。以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。文中穿插了不少神话传说和小故事，描绘自然景色、战斗场面等花费了较多笔墨，故而篇幅宏大。在印度，《罗摩衍那》的故事家喻户晓，印度的重要节日之一“十胜节”就来源于《罗摩衍那》中的故事，书中诠释的社会伦理也\n《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。 [2-3]\n\n《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃精妙，将三界融会贯通，情景相互辉映，描绘出生动的形象，并以实例阐释道义。内容主要讲述阿逾陀国王子罗摩和他的妻子悉多的故事。以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。文中穿插了不少神话传说和小故事，描绘自然景色、战斗场面等花费了较多笔墨，故而篇幅宏大。 [4]\n\n在印度，《罗摩衍那》的故事家喻户晓，印度的重要节日之一“十胜节”就来源于《罗摩衍那》中的故事，书中诠释的社会伦理也为印度人指明了道德准则。《罗摩衍那》是印度珍贵的文化遗产，也为印地语文学提供了丰富的创作题材。 [18]《罗摩衍那》在印度一直被奉为叙事诗的典范，其影响早已远超出印度，特别是在亚洲广泛流传，而被列入人类文化遗产。 [3]\n\n《罗摩衍那》以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。其间穿插了不少神话传说和小故事及描绘自然景色、战斗场面等",
-    plotNodes: [
-      { label: "Part 1", description: "《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃" },
-      { label: "Part 2", description: "《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃精妙，将三界融会贯通，情景相互辉映，描绘出生动的形象，并以实例阐释道义。内容主要讲述阿逾陀国王子罗摩和他的妻子悉多的故事。以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。文中穿插了不少神话传说和小故事，描绘自然景色、战斗场面等花费了较" },
-      { label: "Part 3", description: "在印度，《罗摩衍那》的故事家喻户晓，印度的重要节日之一“十胜节”就来源于《罗摩衍那》中的故事，书中诠释的社会伦理也为印度人指明了道德准则。《罗摩衍那》是印度珍贵的文化遗产，也为印地语文学提供了丰富的创作题材。" },
-      { label: "Part 4", description: "《罗摩衍那》以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。其间穿插了不少神话传说和小故事及描绘自然景色、战斗场面等" }
+    characters: [
+      { name: "The Ramayana", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "India", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "Mahabharata", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "Sanskrit", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "Valmiki", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "Ramayana Introduction Structure", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "Plot Characters Themes", role: "角色", description: "Ramayana 中的主要角色。" },
+      { name: "Literature", role: "角色", description: "Ramayana 中的主要角色。" }
     ],
-    themeAnalysis: "《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃精妙，将三界融会贯通，情景相互辉映，描绘出生动的形象，并以实例阐释道义。内容主要讲述阿逾陀国王子罗摩和他的妻子悉多的故事。以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。文中穿插了不少神话传说和小故事，描绘自然景色、战斗场面等花费了较多笔墨，故而篇幅宏大。在印度，《罗摩衍那》的故事家喻户晓，印度的重要节日之一“十胜节”就来源于《罗摩衍那》中的故事，书中诠释的社会伦理也\n《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。 [2-3]\n\n《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃精妙，将三界融会贯通，情景相互辉映，描绘出生动的形象，并以实例阐释道义。内容主要讲述阿逾陀国王子罗摩和他的妻子悉多的故事。以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。文中穿插了不少神话传说和小故事，描绘自然景色、战斗场面等花费了较多笔墨，故而篇幅宏大。 [4]\n\n在印度，《罗摩衍那》的故事家喻户晓，印度的重要节日之一“十胜节”就来源于《罗摩衍那》",
-    techniques: "",
+    plotSummary: "The Ramayana is the shorter of the two great epic poems of India, the other being the Mahabharata. The Ramayana was composed in Sanskrit, probably not before 300 BCE, by the poet Valmiki, and in its present form, it consists of some 24,000 couplets divided into seven books.\n\nRamayana Introduction Structure Plot Characters Themes Literature and art In popular culture References & Edit History Related Topics Images Quizzes Explore India Quiz Hindu Religion and Myth Quiz print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X URL https://www.britannica.com/topic/Ramayana-Indian-epic Feedback External Websites Feedback Corrections? Updates? Omission",
+    plotNodes: [
+      { label: "Part 1", description: "The Ramayana is the shorter of the two great epic poems of India, the other being the Mahabharata." },
+      { label: "Part 2", description: "Ramayana Introduction Structure Plot Characters Themes Literature and art In popular culture References & Edit History Related Topics Images Quizzes Explore India Quiz Hindu Religion and Myth Quiz pri" }
+    ],
+    themeAnalysis: "[The Ramayana Study Guide | Literature Guide - LitCharts] The Ramayana: Detailed Summary & Analysis. In-depth summary and analysis of every chapter of The Ramayana. Visual theme-tracking, too.\n\n[The Ramayana Book Three Summary and Analysis | GradeSaver] The Ramayana study guide contains literature essays, quiz questions, major themes, characters, and a full summary and analysis.\n\nThe Ramayana is the shorter of the two great epic poems of India, the other being the Mahabharata. The Ramayana was composed in Sanskrit, probably not before 300 BCE, by the poet Valmiki, and in its present form, it consists of some 24,000 couplets divided into seven books.\n\nRamayana Introduction Structure Plot Characters Themes Literature and art In popular culture References & Edit History Related Topics Images",
+    techniques: "The Ramayana is the shorter of the two great epic poems of India, the other being the Mahabharata. The Ramayana was composed in Sanskrit, probably not before 300 BCE, by the poet Valmiki, and in its present form, it consists of some 24,000 couplets divided into seven books.\n\nRamayana Introduction Structure Plot Characters Themes Literature and art In popular culture References & Edit History Related Topics Images Quizzes Explore India Quiz Hindu Religion and Myth Quiz print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has b",
     excerpts: [],
-    insights: "《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对句。恢宏博大，深邃精妙，将三界融会贯通，情景相互辉映，描绘出生动的形象，并以实例阐释道义。内容主要讲述阿逾陀国王子罗摩和他的妻子悉多的故事。以罗摩和妻子悉多的悲欢离合为故事主线，表现了印度古代宫廷内部和列国之间的斗争。文中穿插了不少神话传说和小故事，描绘自然景色、战斗场面等花费了较多笔墨，故而篇幅宏大。在印度，《罗摩衍那》的故事家喻户晓，印度的重要节日之一“十胜节”就来源于《罗摩衍那》中的故事，书中诠释的社会伦理也\n《罗摩衍那》（梵语，Rāmāyaṇa，其含义为“罗摩的历程”或“罗摩传奇”），也可译作《拉麻传》，印度古代史诗，被誉为“大诗”之作，亦是诗歌的源头“最初的诗”。原为民间口头创作，在长期流传中屡经增润，相传由印度诗人蚁垤编写定本，与《摩诃婆罗多》并列为印度两大史诗。 [2-3]\n\n《罗摩衍那》全书是诗体，用梵文写成，诗律几乎都是“输洛迦”，即每节2行，每行16个音节。全文共分为7章，24000对对",
+    insights: "[Ramayana | Summary, Characters, Themes, & Facts - Britannica] At its core, the Ramayana is a classic tale of the triumph of good over evil. The concepts of good and evil form two poles of a moral axis; each ...\n\n[The Ramayana Study Guide | Literature Guide - LitCharts] The Ramayana: Detailed Summary & Analysis. In-depth summary and analysis of every chapter of The Ramayana. Visual theme-tracking, too.\n\n[The Ramayana Book Three Summary and Analysis | GradeSaver] The Ramayana study guide contains literature essays, quiz questions, major themes, characters, and a full summary and analysis.\n\n[Ram",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3", tier: "reference", fetchedAt: "2026-05-21T04:21:59.992Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E6%91%A9%E8%A1%8D%E9%82%A3", tier: "reference", fetchedAt: "2026-05-21T05:17:05.567Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
