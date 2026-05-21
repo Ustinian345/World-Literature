@@ -277,5 +277,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:00:44.105Z"
+  },
+  {
+    "bookId": "tb-rzj-1",
+    "title": "百合花",
+    "author": "茹志鹃",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:10:52.636Z"
   }
 ]

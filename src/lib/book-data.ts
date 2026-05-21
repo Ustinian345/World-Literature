@@ -399,28 +399,27 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "poems-du-fu": {
     id: "poems-du-fu",
-    plotSummary: "杜甫（712年2月12日—770年），字子美，自号少陵野老，祖籍襄阳（今属湖北），生于巩县（今河南巩义）。唐代著名现实主义诗人。常被称为“老杜”，又与李白合称“李杜”“大李杜”。杜甫自幼好学，知识渊博，颇有政治抱负。唐玄宗开元后期，举进士不第，漫游各地。后寓居长安近十年，未能有所施展，生活贫困，逐渐对当时的社会状况有较深的认识。后靠献赋才得以“待制集贤院”，先拒任河西尉，不久被改授为右卫率府兵曹（一作胄曹）参军。安史之乱爆发、长安失陷后，他曾被困城中半年，后逃至凤翔，被唐肃宗拜为左拾遗，世称“杜拾遗”。长安收复后，随肃宗还京，又被外放为华州司功参军，从此离开朝廷。上元元年(760)春，杜甫于成都西郊浣花溪畔筑茅屋而居，即为著名的成都杜甫草堂。一度在剑南节度使严武幕中任参谋，被表授为检校工部员外郎，故世称“杜工部”。",
-    plotNodes: [
-      { label: "第 1 部分", description: "杜甫（712年2月12日—770年），字子美，自号少陵野老，祖籍襄阳（今属湖北），生于巩县（今河南巩义）。唐代著名现实主义诗人。常被称为“老杜”，又与李白合称“李杜”“大李杜”。杜甫自幼好学，知识渊博，颇有政治抱负。唐玄宗开元后期，举进士不第，漫游各地。后寓居长安近十年，未能有所施展，生活贫困，逐渐对当时的社会状况有较深的认识。后靠献赋才得以“待制集贤院”，先拒任河西尉，不久被改授为右卫率府兵曹（" },
-      { label: "第 2 部分", description: "杜甫自幼好学，知识渊博，颇有政治抱负。唐玄宗开元后期，举进士不第，漫游各地。后寓居长安近十年，未能有所施展，生活贫困，逐渐对当时的社会状况有较深的认识。后靠献赋才得以“待制集贤院”，先拒任河西尉，不久被改授为右卫率府兵曹（一作胄曹 [25]）参军。安史之乱爆发、长安失陷后，他曾被困城中半年，后逃至凤翔，被唐肃宗拜为左拾遗，世称“杜拾遗”。长安收复后，随肃宗还京，又被外放为华州司功参军，从此离开朝廷" }
+    characters: [
+      { name: "Poetry Corner", role: "角色", description: "Du Fu 中的主要角色。" },
+      { name: "July", role: "角色", description: "Du Fu 中的主要角色。" },
+      { name: "The River Village", role: "角色", description: "Du Fu 中的主要角色。" },
+      { name: "Du Fu", role: "角色", description: "Du Fu 中的主要角色。" },
+      { name: "Tu Fu", role: "角色", description: "Du Fu 中的主要角色。" }
     ],
-    themeAnalysis: "杜甫（712年2月12日—770年），字子美，自号少陵野老，祖籍襄阳（今属湖北），生于巩县（今河南巩义）。唐代著名现实主义诗人。常被称为“老杜”，又与李白合称“李杜”“大李杜”。杜甫自幼好学，知识渊博，颇有政治抱负。唐玄宗开元后期，举进士不第，漫游各地。后寓居长安近十年，未能有所施展，生活贫困，逐渐对当时的社会状况有较深的认识。后靠献赋才得以“待制集贤院”，先拒任河西尉，不久被改授为右卫率府兵曹（一作胄曹）参军。安史之乱爆发、长安失陷后，他曾被困城中半年，后逃至凤翔，被唐肃宗拜为左拾遗，世称“杜拾遗”。长安收复后，随肃宗还京，又被外放为华州司功参军，从此离开朝廷。上元元年(760)春，杜甫于成都西郊浣花溪畔筑茅屋而居，即为著名的成都杜甫草堂。一度在剑南节度使严武幕中任参谋，被表授为检校工部员外郎，故世称“杜工部”。晚年携家出蜀，于大历五年（770年）冬在辗转途中逝世，享年五十九岁，迁葬于洛\n杜甫（712年2月12日 [1]—770年），字子美，自号少陵野老，祖籍襄阳（今属湖北），生于巩县（今河南巩义）。唐代著名现实主义诗人。常被称为“老杜”，又与李白合称“李杜”“大李杜”。",
-    techniques: "杜甫（712年2月12日—770年），字子美，自号少陵野老，祖籍襄阳（今属湖北），生于巩县（今河南巩义）。唐代著名现实主义诗人。常被称为“老杜”，又与李白合称“李杜”“大李杜”。杜甫自幼好学，知识渊博，颇有政治抱负。唐玄宗开元后期，举进士不第，漫游各地。后寓居长安近十年，未能有所施展，生活贫困，逐渐对当时的社会状况有较深的认识。后靠献赋才得以“待制集贤院”，先拒任河西尉，不久被改授为右卫率府兵曹（一作胄曹）参军。安史之乱爆发、长安失陷后，他曾被困城中半年，后逃至凤翔，被唐肃宗拜为左拾遗，世称“杜拾遗”。长安收复后，随肃宗还京，又被外放为华州司功参军，从此离开朝廷。上元元年(760)春，杜甫于成都西郊浣花溪畔筑茅屋而居，即为著名的成都杜甫草堂。一度在剑南节度使严武幕中任参谋，被表授为检校工部员外郎，故世称“杜工部”。",
+    plotSummary: "[Poetry Corner: July 15- \"The River Village\" by Du Fu aka Tu Fu] It strikes me that Du Fu's life was shaped by displacement, and now, in this poem, his characters “come and go as they please” and his narrator ...\n\n[In the Footsteps of Du Fu - 3 Quarks Daily] Du Fu's poems accept the evanescence of a person's time on earth, exploring the pathos of a life without enduring impact. And yet, one can never ...",
+    plotNodes: [
+      { label: "Part 1", description: "[Poetry Corner: July 15- \"The River Village\" by Du Fu aka Tu Fu] It strikes me that Du Fu's life was shaped by displacement, and now, in this poem, his characters “come and go as they please” and his " },
+      { label: "Part 2", description: "[In the Footsteps of Du Fu - 3 Quarks Daily] Du Fu's poems accept the evanescence of a person's time on earth, exploring the pathos of a life without enduring impact." }
+    ],
+    themeAnalysis: "[(PDF) A Study of Du Fu's Poetry in the West in Modern Times] This study objectively reflects the development, theme and hotspots of modern western Du Fu poetry research.\n\n[[PDF] A Study of Du Fu's Poetry in the West in Modern Times] In a word, this study objectively reflects the development, theme and hotspots of modern western Du Fu poetry research, which has certain significance for fully ...",
+    techniques: "",
     excerpts: [],
-    insights: "杜甫（712年2月12日—770年），字子美，自号少陵野老，祖籍襄阳（今属湖北），生于巩县（今河南巩义）。唐代著名现实主义诗人。常被称为“老杜”，又与李白合称“李杜”“大李杜”。杜甫自幼好学，知识渊博，颇有政治抱负。唐玄宗开元后期，举进士不第，漫游各地。后寓居长安近十年，未能有所施展，生活贫困，逐渐对当时的社会状况有较深的认识。后靠献赋才得以“待制集贤院”，先拒任河西尉，不久被改授为右卫率府兵曹（一作胄曹）参军。安史之乱爆发、长安失陷后，他曾被困城中半年，后逃至凤翔，被唐肃宗拜为左拾遗，世称“杜拾遗”。长安收复后，随肃宗还京，又被外放为华州司功参军，从此离开朝廷。上元元年(760)春，杜甫于成都西郊浣花溪畔筑茅屋而居，即为著名的成都杜甫草堂。一度在剑南节度使严武幕中任参谋，被表授为检校工部员外郎，故世称“杜工部”。",
+    insights: "[Du Fu - Wikipedia] Du Fu was a Chinese poet and politician during the Tang dynasty. Together with his elder contemporary and friend Li Bai, Du is often considered one of the ...\n\n[In the Footsteps of Du Fu by Michael Wood review – the great poet's ...] In the Footsteps of Du Fu by Michael Wood review – the great poet's progress. A superb evocation of the Chinese master and his travels.\n\n[Poetry Corner: July 15- \"The River Village\" by Du Fu aka Tu Fu] It strikes me that Du Fu's life was shaped by displacement, and now, in this poem, his characters “come and go as they please” and his narrator",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB", tier: "reference", fetchedAt: "2026-05-21T04:15:44.434Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/33283", tier: "original_text", fetchedAt: "2026-05-21T04:16:29.678Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%9C%E7%94%AB", tier: "reference", fetchedAt: "2026-05-21T05:10:38.102Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Du%20Fu%20Du%20Fu" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Du%20Fu%20Du%20Fu" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Du%20Fu" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Du%20Fu" },
-      ],
+      reliability: "medium",
     },
   },
 
