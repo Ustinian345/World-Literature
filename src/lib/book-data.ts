@@ -364,7 +364,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Tao Te Ching - Wikipedia] The Tao Te Ching or Dào Dé Jīng, [note 1] or Laozi in Chinese and scholarship, is an ancient Chinese classic text, becoming a foundational work of Taoism.\n\n[Tao Te Ching Themes | SuperSummary] Lao Tzu believes that the best way to survive is to keep a low profile and to do little more than just endure. The Tao Te Ching advises people not to try too ...\n\n[Tao Te Ching Summary & Study Guide - BookRags.com] Tao Te Ching Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Tao Te Ching Background | Gr",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%81%93%E5%BE%B7%E7%BB%8F", tier: "reference", fetchedAt: "2026-05-21T05:00:14.739Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%81%93%E5%BE%B7%E7%BB%8F", tier: "reference", fetchedAt: "2026-05-21T05:14:06.781Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

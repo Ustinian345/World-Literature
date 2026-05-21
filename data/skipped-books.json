@@ -313,5 +313,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:13:11.501Z"
+  },
+  {
+    "bookId": "tb-ls-4",
+    "title": "草原",
+    "author": "老舍",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:13:58.522Z"
   }
 ]
