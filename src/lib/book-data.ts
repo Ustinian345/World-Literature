@@ -1261,7 +1261,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Great Expectations - Wikipedia] Great Expectations is full of extreme imagery—poverty, prison ships, chains, and fights to the death—and features a colourful cast of characters who have ...\n\n[Great Expectations | Summary, Characters, Analysis, & Facts] During the course of the novel, Pip comes to realize that his “great expectations”—social standing and wealth—are less important than loyalty ...\n\n[Great Expectations: Character List - SparkNotes] The protagonist and narrator of Great Expectations, Pip begins the story as a young orphan boy being raised by his sister and brother-in-law in the m",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%9C%E5%A4%A7%E5%89%8D%E7%A8%8B", tier: "reference", fetchedAt: "2026-05-21T05:36:05.765Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%9C%E5%A4%A7%E5%89%8D%E7%A8%8B", tier: "reference", fetchedAt: "2026-05-21T05:41:34.462Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1891,14 +1891,27 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "children-of-gebelawi": {
     id: "children-of-gebelawi",
-    plotSummary: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
-    themeAnalysis: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
-    techniques: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
-    excerpts: [],
-    insights: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/Children%20of%20Gebelawi"
-    // }
+    characters: [
+      { name: "Children", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Gebelawi Summary", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Thanks", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Plot Summary", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Gebelawi", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Naguib Mahfouz", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
+      { name: "Background Information", role: "角色", description: "Children of Gebelawi 中的主要角色。" }
+    ],
+    plotSummary: "Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz. A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more.\n\nPlot Summary Children of Gebelawi Naguib Mahfouz Children of Gebelawi Naguib Mahfouz Fiction | Novel | Adult | Published in 1959 Plot Summary Book Brief Plot Summary Children of Gebelawi (also known in English as Children of the Alley ) is a 1959 novel by Nobel Prize-winner Naguib Mahfouz. The novel is a heavily allegorical tale of the people and events intersecting in a specific alley in Cairo, depicting the rise and clash of the three major monotheistic religions of the world. Mahfouz was condemned in the Arabic world for the work and subject to violence and abuse due to its publication. In a brief preface, Mahfouz declares that while he will attempt to tell the stories of the alley accurately, he has only pe",
+    plotNodes: [
+      { label: "Part 1", description: "Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz." },
+      { label: "Part 2", description: "Plot Summary Children of Gebelawi Naguib Mahfouz Children of Gebelawi Naguib Mahfouz Fiction | Novel | Adult | Published in 1959 Plot Summary Book Brief Plot Summary Children of Gebelawi (also known i" }
+    ],
+    themeAnalysis: "[Children of Gebelawi Summary - SuperSummary] Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz ... summaries and analysis of major themes, characters, and more.\n\nThanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz. A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more.\n\nPlot Summary Children of Gebelawi Naguib Mahfouz Children of Gebelawi Naguib Mahfouz Fiction | Novel | Adult | Published in 1959 Plot Summary Book Brief Plot Summary Children of Gebelawi (also known in English as Children of the Alley ) is a 1959 novel by Nobel Prize-winner Naguib Mahfouz. The novel is a heavi",
+    techniques: "The Nobel Prize in Literature 1988 was awarded to Naguib Mahfouz &quot;who, through works rich in nuance - now clear-sightedly realistic, now evocatively ambiguous - has formed an Arabian narrative art that applies to all mankind&quot;\n\nNavigate to: Summary -- Facts -- Biographical -- Nobel Prize lecture -- Bibliography -- Interview -- Documentary -- Prose -- Photo gallery -- Article -- Other resources Press release Award ceremony speech Naguib Mahfouz – The Son of Two Civilizations by Anders Hallengren * This article was published on 16 October 2003. I am the son of two civilizations that at",
+    excerpts: [
+      { quote: "Children of Gebelawi", context: "From Children of Gebelawi" }
+    ],
+    insights: "[Children of Gebelawi - Wikipedia] Children of Gebelawi is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna.\n\n[Children of Gebelawi Summary - SuperSummary] Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz ... summaries and analysis of major themes, characters, and more.\n\n[Naguib Mahfouz – The Son of Two Civilizations - NobelPrize.org] In actual fact, a similar theme runs through Awlad haratina (“Children of our quarter”, 1959; translated as Children of Gebelawi), which create",
   },
 
   "efuru": {
