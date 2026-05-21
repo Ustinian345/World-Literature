@@ -1135,7 +1135,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[King Lear Study Guide | Literature Guide - LitCharts] Shakespeare drew the main plot of King Lear—that is, the story of a ruler who divides his kingdom among his children and is consequently ruined—from several ...\n\n[King Lear: Character List | SparkNotes] King Lear. The aging king of Britain and the protagonist of the play. Lear is used to enjoying absolute power and to being flattered, and he does not ...\n\n[King Lear by William Shakespeare | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of William Shakespeare's play King Lear. Download the free study guide and info",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%B0%94%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:28:06.378Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%B0%94%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:33:16.014Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1689,36 +1689,32 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "dolls-house": {
     id: "dolls-house",
     characters: [
-      { name: "Subjects", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Drama", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Marriage", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Norwegian", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Translations", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "English", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Wives", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "Doll", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "House Character Analysis", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "Need", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "Henrik Ibsen", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "House", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "Check", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "From", role: "角色", description: "A Doll's House 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "A Doll's House 中的主要角色。" }
     ],
-    plotSummary: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。",
+    plotSummary: "[A Dolls House by Henrik Ibsen | Summary & Analysis - YouTube] in-depth analysis of the plot, characters, symbols, and themes of Henrik ... characters, symbols, and themes of Henrik Ibsen's play A Doll's House ...\n\n[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Doll's House by Henrik Ibsen | Summary, Characters & Analysis] What are the themes of the play ''A Doll's House''?. The themes include marriage, deceit, social standing, and gender roles. It also advocates for the need for ...\n\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百",
     plotNodes: [
-      { label: "第 1 部分", description: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。 《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设" },
-      { label: "第 2 部分", description: "「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。（6）青春泉。（7）翻译绝唱。（8）倾城之恋。（9）玩偶之家。（10）归。" }
+      { label: "Part 1", description: "[A Dolls House by Henrik Ibsen | Summary & Analysis - YouTube] in-depth analysis of the plot, characters, symbols, and themes of Henrik ..." },
+      { label: "Part 2", description: "[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols." },
+      { label: "Part 3", description: "[A Doll's House by Henrik Ibsen | Summary, Characters & Analysis] What are the themes of the play ''A Doll's House''?." },
+      { label: "Part 4", description: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。" },
+      { label: "Part 5", description: "「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百" }
     ],
-    themeAnalysis: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。（6）青春泉。（7）翻译绝唱。（8）倾城之恋。（9）玩偶之家。（10）归。",
-    techniques: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。",
+    themeAnalysis: "[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Dolls House by Henrik Ibsen | Summary & Analysis - YouTube] in-depth analysis of the plot, characters, symbols, and themes of Henrik ... characters, symbols, and themes of Henrik Ibsen's play A Doll's House ...\n\n[A Doll's House by Henrik Ibsen | Summary, Characters & Analysis] What are the themes of the play ''A Doll's House''?. The themes include marriage, deceit, social standing, and gender roles. It also advocates for the need for ...\n\n[A Doll's House Study Guide | Course Hero] This study guide and infographic for Henrik Ibsen's A Doll's House offer summary and analysis on themes",
+    techniques: "[A Doll's House Study Guide | Course Hero] This study guide and infographic for Henrik Ibsen's A Doll's House offer summary and analysis on themes, symbols, and other literary devices found in the text.",
     excerpts: [],
-    insights: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。",
+    insights: "[A Doll's House Character Analysis - LitCharts] Need help on characters in Henrik Ibsen's A Doll's House? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Doll's House - Wikipedia] A Doll's House ; Norwegian, Danish · The awakening of a middle-class wife and mother · Naturalistic/realistic problem play. Modern tragedy · The home of the Helmer ...\n\n[A Doll",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8E%A9%E5%81%B6%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T04:34:25.053Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/2542", tier: "original_text", fetchedAt: "2026-05-21T04:34:39.265Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8E%A9%E5%81%B6%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T05:32:41.161Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=A%20Doll's%20House%20Henrik%20Ibsen" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=A%20Doll's%20House%20Henrik%20Ibsen" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=A%20Doll's%20House" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=A%20Doll's%20House" },
-      ],
+      reliability: "medium",
     },
   },
 
