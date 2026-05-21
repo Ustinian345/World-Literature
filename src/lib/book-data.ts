@@ -471,7 +471,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Strange Tales from a Chinese Studio by Pu Songling | Goodreads] Part of the interest of Strange Tales from a Chinese Studio inheres in the way the tales provide insight into the 17th-century Chinese culture of the Qing ...\n\n[Strange Tales from a Chinese Studio - Wikipedia] ... Strange Tales from a Chinese Studio by Pu Songling A depiction of the story \"Luo Zu\", from an illustrated edition located in the National Museum of China. Pu ...\n\n[Book Review: Strange Tales from a Chinese Studio by Pu Songling ...] Strange Tales from a Chinese Studio collects 164 tales by Pu Songling. I don't really th",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%81%8A%E6%96%8B%E5%BF%97%E5%BC%82", tier: "reference", fetchedAt: "2026-05-21T05:14:09.020Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%81%8A%E6%96%8B%E5%BF%97%E5%BC%82", tier: "reference", fetchedAt: "2026-05-21T05:18:45.595Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -585,23 +585,32 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "rashomon": {
     id: "rashomon",
     characters: [
-      { name: "Daiei Motion Picture", role: "角色", description: "Rashomon 中的主要角色。" }
+      { name: "Rashomon", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Seventeen Other Stories", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Rashomon Study Guide", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "Rashomon 中的主要角色。" },
+      { name: "Akutagawa", role: "角色", description: "Rashomon 中的主要角色。" }
     ],
-    plotSummary: "《罗生门》是由Daiei Motion Picture Co. Ltd.出品，黑泽明执导，芥川龙之介、黑泽明、桥本忍编剧，三船敏郎、京町子、森雅之、志村乔主演的犯罪电影，该片于1950年8月26日在日本上映。该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事。1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖；1952年，获得第24届奥斯卡金像奖荣誉外语片奖。\n《罗生门》是由Daiei Motion Picture Co. Ltd.出品 [15]，黑泽明执导，芥川龙之介、黑泽明、桥本忍编剧，三船敏郎、京町子、森雅之、志村乔主演的犯罪电影，该片于1950年8月26日在日本上映 [16]。\n\n该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事 [1]。\n\n1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖 [5]；1952年，获得第24届奥斯卡金像奖荣誉外语片奖 [7]。\n\n古老的罗生门是平安京（即京都）大城圈的正南门。在一个大雨滂沱的日子里，人们正在争相议论着山上一个武士被杀的案件。三天后过堂时，凶手、死者的妻子、借死者的魂来做证的女巫都曾被招到纠察使署，但他们都怀着利己的目的，竭力维护自己，提供了美化自己、使得事实真相各不相同的证词。杀人者是大盗多襄丸，他讲他本意并不想杀死武士弘，因为他已经很容易的就把武士弘的妻子真砂骗奸了。可是真砂让他们两个人决斗，他才把他砍倒的。而真砂的陈述是，他被多囊丸蹂躏之后，受到了丈夫的蔑视，于是悲愤之中，她就晃晃悠悠地扑向了武弘……可等她醒过来一看，那把短刀已插在丈夫的胸口上，他已经死了。而武士弘的灵魂则说，是妻子真砂唆使多襄丸杀他，他羞愤之下自杀的。雨停了，卖柴人抱着一个弃婴而去 [19]。\n\n他是京都臭名远扬的盗贼。极好女色，他被武士金泽武弘的妻子真砂的美貌所吸引，之后他玷污了真砂的贞洁，并杀害了金泽武弘。在纠察使署接受审判时，他在回忆案发过的过程时，他大方承认了自己杀害金泽武弘的事实，但也在叙述中掺杂了谎言。\n\n武士金泽武弘的妻子。她和丈夫在深山中行走时，她美艳的姿色吸引了强盗多襄丸。在丈夫",
+    plotSummary: "[Rashomon and Other Stories Story Analysis - SuperSummary] Get ready to explore Rashomon and Other Stories and its meaning. Our full analysis ... Rashōmon” focuses on the servant's inner journey rather than the plot.\n\n《罗生门》是由Daiei Motion Picture Co. Ltd.出品，黑泽明执导，芥川龙之介、黑泽明、桥本忍编剧，三船敏郎、京町子、森雅之、志村乔主演的犯罪电影，该片于1950年8月26日在日本上映。该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事。1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖；1952年，获得第24届奥斯卡金像奖荣誉外语片奖。\n《罗生门》是由Daiei Motion Picture Co. Ltd.出品 [15]，黑泽明执导，芥川龙之介、黑泽明、桥本忍编剧，三船敏郎、京町子、森雅之、志村乔主演的犯罪电影，该片于1950年8月26日在日本上映 [16]。\n\n该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事 [1]。\n\n1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖 [5]；1952年，获得第24届奥斯卡金像奖荣誉外语片奖 [7]。\n\n古老的罗生门是平安京（即京都）大城圈的正南门。在一个大雨滂沱的日子里，人们正在争相议论着山上一个武士被杀的案件。三天后过堂时，凶手、死者的妻子、借死者的魂来做证的女巫都曾被招到纠察使署，但他们都怀着利己的目的，竭力维护自己，提供了美化自己、使得事实真相各不相同的证词。杀人者是大盗多襄丸，他讲他本意并不想杀死武士弘，因为他已经很容易的就把武士弘的妻子真砂骗奸了。可是真砂让他们两个人决斗，他才把他砍倒的。而真砂的陈述是，他被多囊丸蹂躏之后，受到了丈夫的蔑视，于是悲愤之中，她就晃晃悠悠地扑向了武弘……可等她醒过来一看，那把短刀已插在丈夫的",
     plotNodes: [
-      { label: "Part 1", description: "《罗生门》是由Daiei Motion Picture Co." },
-      { label: "Part 2", description: "该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事 [1]。" },
-      { label: "Part 3", description: "1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖 [5]；1952年，获得第24届奥斯卡金像奖荣誉外语片奖 [7]。" },
-      { label: "Part 4", description: "古老的罗生门是平安京（即京都）大城圈的正南门。在一个大雨滂沱的日子里，人们正在争相议论着山上一个武士被杀的案件。三天后过堂时，凶手、死者的妻子、借死者的魂来做证的女巫都曾被招到纠察使署，但他们都怀着利己的目的，竭力维护自己，提供了美化自己、使得事实真相各不相同的证词。杀人者是大盗多襄丸，他讲他本意并不想杀死武士弘，因为他已经很容易的就把武士弘的妻子真砂骗奸了。可是真砂让他们两个人决斗，他才把他砍倒" },
-      { label: "Part 5", description: "他是京都臭名远扬的盗贼。极好女色，他被武士金泽武弘的妻子真砂的美貌所吸引，之后他玷污了真砂的贞洁，并杀害了金泽武弘。在纠察使署接受审判时，他在回忆案发过的过程时，他大方承认了自己杀害金泽武弘的事实，但也在叙述中掺杂了谎言。" }
+      { label: "Part 1", description: "[Rashomon and Other Stories Story Analysis - SuperSummary] Get ready to explore Rashomon and Other Stories and its meaning." },
+      { label: "Part 2", description: "《罗生门》是由Daiei Motion Picture Co." },
+      { label: "Part 3", description: "该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事 [1]。" },
+      { label: "Part 4", description: "1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖 [5]；1952年，获得第24届奥斯卡金像奖荣誉外语片奖 [7]。" },
+      { label: "Part 5", description: "古老的罗生门是平安京（即京都）大城圈的正南门。在一个大雨滂沱的日子里，人们正在争相议论着山上一个武士被杀的案件。三天后过堂时，凶手、死者的妻子、借死者的魂来做证的女巫都曾被招到纠察使署，但他们都怀着利己的目的，竭力维护自己，提供了美化自己、使得事实真相各不相同的证词。杀人者是大盗多襄丸，他讲他本意并不想杀死武士弘，因为他已经很容易的就把武士弘的妻子真砂骗奸了。可是真砂让他们两个人决斗，他才把他砍倒" }
     ],
-    themeAnalysis: "",
-    techniques: "",
-    excerpts: [],
-    insights: "《罗生门》是由Daiei Motion Picture Co. Ltd.出品，黑泽明执导，芥川龙之介、黑泽明、桥本忍编剧，三船敏郎、京町子、森雅之、志村乔主演的犯罪电影，该片于1950年8月26日在日本上映。该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事。1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖；1952年，获得第24届奥斯卡金像奖荣誉外语片奖。\n《罗生门》是由Daiei Motion Picture Co. Ltd.出品 [15]，黑泽明执导，芥川龙之介、黑泽明、桥本忍编剧，三船敏郎、京町子、森雅之、志村乔主演的犯罪电影，该片于1950年8月26日在日本上映 [16]。\n\n该片讲述了武士被杀后，盗贼、武士的妻子以及武士的亡魂为了减轻自己的罪恶、掩饰自己的过失，三位当事人向审判长讲述了三个不同版本的案发经过的故事 [1]。\n\n1951年，该片获得第12届威尼斯国际电影节圣马克金狮奖-最佳影片、意大利影评人奖 [5]；1952年，获得第24届奥斯卡金像奖荣誉外语片奖 [7]。\n\n古老的罗生门是平安京（即京都）大城圈的正南门。在一个大雨滂沱的日子里，人们正在争相议论着山上一个武士被杀的案件。三天后过堂时，凶手、死者的妻子、借死者的魂来做证的女巫都曾被招",
+    themeAnalysis: "[Rashomon and Other Stories Story Analysis - SuperSummary] Get ready to explore Rashomon and Other Stories and its meaning. Our full analysis ... Rashōmon” focuses on the servant's inner journey rather than the plot.\n\n[Rashomon Study Guide | Course Hero] This study guide for Ryūnosuke Akutagawa's Rashomon offers summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Rashomon Summary and Analysis of \"Rashōmon\" - GradeSaver] Rashomon Summary and Analysis of \"Rashōmon\" ... After a series of recent calamities hits the city of Kyōto, a servant seeks shelter from the rain ...\n\n[Rashomon and Seventeen Other Stories Characters - BookRags.com] Rashomon and Seventeen Other Stories Summary & Study Guide includes comprehensive information and analysis to help you unde",
+    techniques: "[Rashomon Study Guide | Course Hero] This study guide for Ryūnosuke Akutagawa's Rashomon offers summary and analysis on themes, symbols, and other literary devices found in the text.",
+    excerpts: [
+      { quote: " - GradeSaver] Rashomon Summary and Analysis of ", context: "From Rashomon" }
+    ],
+    insights: "[Rashomon Summary and Analysis of \"Rashōmon\" - GradeSaver] Rashomon Summary and Analysis of \"Rashōmon\" ... After a series of recent calamities hits the city of Kyōto, a servant seeks shelter from the rain ...\n\n[Rashomon and Seventeen Other Stories Characters - BookRags.com] Rashomon and Seventeen Other Stories Summary & Study Guide includes comprehensive information and analysis to help you understand the book.\n\n[Rashōmon and Seventeen Other Stories by Ryūnosuke Akutagawa] 'Rashōmon' and 'In a Bamboo Grove' inspired Kurosawa's magnificent film and depict a past in which morality is turned upsi",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E7%94%9F%E9%97%A8", tier: "reference", fetchedAt: "2026-05-21T04:22:32.595Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E7%94%9F%E9%97%A8", tier: "reference", fetchedAt: "2026-05-21T05:17:56.545Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -759,30 +768,26 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "masnavi": {
     id: "masnavi",
     characters: [
-      { name: "Persian", role: "角色", description: "\"Masnavi\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Middle Persian", role: "角色", description: "\"Masnavi\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "Children", role: "角色", description: "Masnavi 中的主要角色。" },
+      { name: "Rumi", role: "角色", description: "Masnavi 中的主要角色。" },
+      { name: "Masnavi", role: "角色", description: "Masnavi 中的主要角色。" },
+      { name: "Journal", role: "角色", description: "Masnavi 中的主要角色。" },
+      { name: "Human Sciences", role: "角色", description: "Masnavi 中的主要角色。" },
+      { name: "Abstract", role: "角色", description: "Masnavi 中的主要角色。" },
+      { name: "Children Characters", role: "角色", description: "Masnavi 中的主要角色。" }
     ],
-    plotSummary: "Mas̄navī, a series of distichs (couplets) in rhymed pairs (aa, bb, cc, and so on) that makes up a characteristic type of Persian verse, used chiefly for heroic, historical, and romantic epic poetry and didactic poetry. The form originated in the Middle Persian period (roughly from the 3rd century",
+    plotSummary: "[Masnavi - Wikipedia] The Masnavi is an extensive Persian masnavi (a poetic form) written by Rumi, and one of the most influential works in the history of Sufism.\n\n[[PDF] Children characters in Rumi's Masnavi - Journal of Human Sciences] Abstract. In this paper we focus on the stories of Masnavi in which the children have the main role. The aim is to consider children's attitudes as the ...\n\n[The Masnavi of Rumi | WorldCat.org] Summary: Jalaloddin Rumi's 'Masnavi-ye Ma'navi', or 'Spiritual Couplets', composed in the 13th century, is a monumental work of poetry in the Sufi tradition ...\n\n[About 'The Masnavi of Rumi, Book One' by Mawlana Jalaluddin ...] About 'The Masnavi of Rumi, Book One' by Mawlana Jalaluddin Rumi ... His main work, the didactic epic Masnavī-ye Maʿnavī (“Spiritual ...\n\n[(PDF) Children Characters in Rumi's Masnavi - ResearchGate] The characters in Masnavi can be divided in two groups as human (men, women, and children) and non-human (God, angels, fairies, animals and e",
     plotNodes: [
-      { label: "第 1 部分", description: "Mas̄navī, a series of distichs (couplets) in rhymed pairs (aa, bb, cc, and so on) that makes up a characteristic type of Persian verse, used chiefly for heroic, historical, and romantic epic poetry an" }
+      { label: "Part 1", description: "[Masnavi - Wikipedia] The Masnavi is an extensive Persian masnavi (a poetic form) written by Rumi, and one of the most influential works in the history of Sufism." },
+      { label: "Part 2", description: "[[PDF] Children characters in Rumi's Masnavi - Journal of Human Sciences] Abstract." },
+      { label: "Part 3", description: "[The Masnavi of Rumi | WorldCat.org] Summary: Jalaloddin Rumi's 'Masnavi-ye Ma'navi', or 'Spiritual Couplets', composed in the 13th century, is a monumental work of poetry in the Sufi tradition ..." },
+      { label: "Part 4", description: "[About 'The Masnavi of Rumi, Book One' by Mawlana Jalaluddin ...] About 'The Masnavi of Rumi, Book One' by Mawlana Jalaluddin Rumi ..." },
+      { label: "Part 5", description: "[(PDF) Children Characters in Rumi's Masnavi - ResearchGate] The characters in Masnavi can be divided in two groups as human (men, women, and children) and non-human (God, angels, fairies, animals and" }
     ],
-    themeAnalysis: "Mas̄navī, a series of distichs (couplets) in rhymed pairs (aa, bb, cc, and so on) that makes up a characteristic type of Persian verse, used chiefly for heroic, historical, and romantic epic poetry and didactic poetry. The form originated in the Middle Persian period (roughly from the 3rd century",
-    techniques: "Mas̄navī, a series of distichs (couplets) in rhymed pairs (aa, bb, cc, and so on) that makes up a characteristic type of Persian verse, used chiefly for heroic, historical, and romantic epic poetry and didactic poetry. The form originated in the Middle Persian period (roughly from the 3rd century",
+    themeAnalysis: "[Masnavi - SikhiWiki, free Sikh encyclopedia.] Themes in the Masnavi · The Authorial Voice – Each passage reflects the authority of the majestic Sufi teacher narrating the story. · The Story- ...\n\n[View of Investigating the common themes of the story \"Pir Rabab ...] His lyric poems are the result of passion, inflammation, ecstasy and passion, and Masnavi is the product of his thinking and contemplation in the world of human ...\n\n[Rumi: Operation of Divine Love | Beshara Magazine] And you could say that there is a very strong Christian theme in the Masnavi that God is Love, that Love is God. However, Rumi is very anti- ...",
+    techniques: "",
     excerpts: [],
-    insights: "Mas̄navī, a series of distichs (couplets) in rhymed pairs (aa, bb, cc, and so on) that makes up a characteristic type of Persian verse, used chiefly for heroic, historical, and romantic epic poetry and didactic poetry. The form originated in the Middle Persian period (roughly from the 3rd century",
-    sourceAttribution: {
-      sources: [
-        { label: "Britannica", url: "https://www.britannica.com/topic/Masnavi", tier: "reference", fetchedAt: "2026-05-21T04:23:18.110Z", contributedFields: ["plotSummary", "themeAnalysis"] },
-      ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Masnavi%20Rumi" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Masnavi%20Rumi" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Masnavi" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Masnavi" },
-      ],
-    },
+    insights: "[Masnavi - Wikipedia] The Masnavi is an extensive Persian masnavi (a poetic form) written by Rumi, and one of the most influential works in the history of Sufism.\n\n[[PDF] Children characters in Rumi's Masnavi - Journal of Human Sciences] Abstract. In this paper we focus on the stories of Masnavi in which the children have the main role. The aim is to consider children's attitudes as the ...\n\n[The Masnavi of Rumi | WorldCat.org] Summary: Jalaloddin Rumi's 'Masnavi-ye Ma'navi', or 'Spiritual Couplets', composed in the 13th century, is a monumental work of poetry in the Sufi tradition ...\n\n[About",
   },
 
   "thousand-nights": {

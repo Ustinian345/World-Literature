@@ -358,5 +358,23 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:17:01.358Z"
+  },
+  {
+    "bookId": "tb-chushibiao",
+    "title": "出师表",
+    "author": "诸葛亮",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:17:46.636Z"
+  },
+  {
+    "bookId": "tb-zzq-1",
+    "title": "春",
+    "author": "朱自清",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:18:32.304Z"
   }
 ]
