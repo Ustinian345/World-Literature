@@ -1721,7 +1721,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[A Doll's House Character Analysis - LitCharts] Need help on characters in Henrik Ibsen's A Doll's House? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Doll's House - Wikipedia] A Doll's House ; Norwegian, Danish · The awakening of a middle-class wife and mother · Naturalistic/realistic problem play. Modern tragedy · The home of the Helmer ...\n\n[A Doll",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8E%A9%E5%81%B6%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T05:32:41.161Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8E%A9%E5%81%B6%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T05:38:01.961Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2789,33 +2789,20 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "carpentaria": {
     id: "carpentaria",
-    characters: [
-      { name: "Carpentaria", role: "角色", description: "\"Carpentaria\" 中出现的角色。更多信息请通过搜索链接核实。" }
-    ],
-    plotSummary: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。",
+    plotSummary: "[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria.\n\n[AHR - Australian Humanities Review] In his chapter, Jensen contends that Carpentaria offers readers a formula for how to counter the neoliberal order through Wright's powerful ...",
     plotNodes: [
-      { label: "第 1 部分", description: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种" },
-      { label: "第 2 部分", description: "作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。" },
-      { label: "第 3 部分", description: "该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。 [1] [4]" },
-      { label: "第 4 部分", description: "Gulf of Carpentaria 卡奔塔利亚湾 ; 即卡奔塔利亚湾 ; 卡奔塔利亚海湾 ; 亚湾" },
-      { label: "第 5 部分", description: "An intermittent river of northeast Australia flowing about 837 km (520 mi) northwest to the Gulf of Carpentaria." }
+      { label: "Part 1", description: "[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria." },
+      { label: "Part 2", description: "[AHR - Australian Humanities Review] In his chapter, Jensen contends that Carpentaria offers readers a formula for how to counter the neoliberal order through Wright's powerful ..." }
     ],
-    themeAnalysis: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。 [1-2] [5]\n\n作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。",
-    techniques: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。",
+    themeAnalysis: "[Carpentaria Themes | GradeSaver] Carpentaria Themes · Racism · The environment · Home and family · Traditional ecological knowledge · Myth and reality · Colonialism and neocolonialism · Fate.",
+    techniques: "[On writing Carpentaria | Alexis Wright | HEAT Series 2 Number 13] Carpentaria imagines the cultural mind as sovereign and in control, while freely navigating through the known country of colonialism to explore the ...\n\n[[PDF] Epic and Epistemology in Alexis Wright's Carpentaria] This essay addresses how Carpentaria, by writing across Indigenous and European genres and epistemologies, makes a call for the deconstruction of colonial ...",
     excerpts: [],
-    insights: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。",
+    insights: "[Carpentaria Themes | GradeSaver] Carpentaria Themes · Racism · The environment · Home and family · Traditional ecological knowledge · Myth and reality · Colonialism and neocolonialism · Fate.\n\n[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria.\n\n[On writing Carpentaria | Alexis Wright | HEAT Series 2 Number 13] Carpentaria imagines the cultural mind as sovereign and in control, while freely navigating through the known country of colonialism to explore the",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/Carpentaria", tier: "reference", fetchedAt: "2026-05-21T04:38:25.411Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/Carpentaria", tier: "reference", fetchedAt: "2026-05-21T05:37:42.294Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Carpentaria%20Alexis%20Wright" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Carpentaria%20Alexis%20Wright" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Carpentaria" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Carpentaria" },
-      ],
+      reliability: "medium",
     },
   },
 

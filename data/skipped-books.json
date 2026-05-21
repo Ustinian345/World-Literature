@@ -592,5 +592,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:36:47.491Z"
+  },
+  {
+    "bookId": "tb-scw-1",
+    "title": "腊八粥",
+    "author": "沈从文",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:37:33.519Z"
   }
 ]
