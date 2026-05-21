@@ -556,5 +556,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:33:42.533Z"
+  },
+  {
+    "bookId": "tb-ls-1",
+    "title": "济南的冬天",
+    "author": "老舍",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:34:28.975Z"
   }
 ]

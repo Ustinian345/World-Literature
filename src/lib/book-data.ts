@@ -1280,7 +1280,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Middlemarch | Summary, Characters, Analysis, & Facts - Britannica] He is a progressive young doctor who is passionate about medicine, especially his research. Soon after arriving in Middlemarch, he becomes ...\n\n[Middlemarch - Wikipedia] Leavened with comic elements, Middlemarch approaches significant historical events in a realist mode: the Reform Act 1832, early railways, and the accession of ...\n\n[Middlemarch: Full Book Summary | SparkNotes] Two major life choices govern the narrative of Middlemarch. One is marriage and the other is vocation. Eliot takes both choices very seriously.\n\n[Middl",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%B1%B3%E5%BE%B7%E5%B0%94%E9%A9%AC%E5%A5%91", tier: "reference", fetchedAt: "2026-05-21T05:29:37.916Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%B1%B3%E5%BE%B7%E5%B0%94%E9%A9%AC%E5%A5%91", tier: "reference", fetchedAt: "2026-05-21T05:34:51.391Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1533,31 +1533,32 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "cherry-orchard": {
     id: "cherry-orchard",
-    plotSummary: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。",
+    characters: [
+      { name: "The Cherry Orchard", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
+      { name: "Character Analysis", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
+      { name: "Anton Chekhov", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
+      { name: "Ranevksy", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
+      { name: "Russian", role: "角色", description: "The Cherry Orchard 中的主要角色。" }
+    ],
+    plotSummary: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobile ...\n\n[The Cherry Orchard: Character List | SparkNotes] Mrs. Ranevksy is a middle-aged Russian woman, the owner of the estate and the cherry orchard around which the story revolves. She has faced tragedy many times ...\n\n[The Cherry Orchard Character Analysis - SuperSummary] Get ready to explore The Cherry Orchard and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[The Cherry Orchard by Anton Chekhov | Summary, Analysis & Themes] This video explores Anton Chekhov's final play, \"The Cherry Orchard,\" examining its complex characters and themes. The play revolves around Madame ...\n\n[The Cherry Orchard by Anton Chekhov | In-Depth Summary & Analysis] /lit/The-Cherry-Orchard/infographic/ Set in early 1900s Russia, The Cherry O",
     plotNodes: [
-      { label: "第 1 部分", description: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松" },
-      { label: "第 2 部分", description: "泰山樱桃园的名称源于清朝咸丰、同治年间，山麓王庄人鲁泮藻在此拓建鲁氏山庄，并广泛种植樱桃树，形成樱桃林，此地因而得名“樱桃园” [3] [8-9]。鲁泮藻自题山庄为“樱桃精舍”，故又俗称鲁氏别墅 [9]。鲁泮藻受李颙实学思想启发，在此开渠引水、开垦荒地、栽种果树苗木、修建亭馆，其子鲁序孟和鲁序曾继承并拓展山庄建设 [5]。清代光绪年间，赵尔萃在《樱桃园记》中描述此地“竹木茂密，流水潺湲，土壤膏腴，" }
+      { label: "Part 1", description: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobi" },
+      { label: "Part 2", description: "[The Cherry Orchard: Character List | SparkNotes] Mrs." },
+      { label: "Part 3", description: "[The Cherry Orchard Character Analysis - SuperSummary] Get ready to explore The Cherry Orchard and its meaning." },
+      { label: "Part 4", description: "[The Cherry Orchard by Anton Chekhov | Summary, Analysis & Themes] This video explores Anton Chekhov's final play, \"The Cherry Orchard,\" examining its complex characters and themes." },
+      { label: "Part 5", description: "[The Cherry Orchard by Anton Chekhov | In-Depth Summary & Analysis] /lit/The-Cherry-Orchard/infographic/ Set in early 1900s Russia, The Cherry O" }
     ],
-    themeAnalysis: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式 [11] [22-23]。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责 [1] [15] [17]。",
-    techniques: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。",
-    excerpts: [
-      { quote: "竹木茂密，流水潺湲，土壤膏腴，鸡犬鸣吠，俨然避秦之好桃源", context: "来源：The Cherry Orchard" },
-      { quote: "竹木茂密，流水潺湲，土壤膏肥，鸡犬鸣吠，俨然避秦之好桃源", context: "来源：The Cherry Orchard" },
-      { quote: "今则田禾茂密，果实缤纷，树可合围，竹可拱把，而池、 而鱼、而藕、而芰，鸣禽上下，水木明瑟。来游者莫不欣然艳羡，谓天下以此佳境。", context: "来源：The Cherry Orchard" }
-    ],
-    insights: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。",
+    themeAnalysis: "[The Cherry Orchard Character Analysis - SuperSummary] Get ready to explore The Cherry Orchard and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[The Cherry Orchard by Anton Chekhov | Summary, Analysis & Themes] This video explores Anton Chekhov's final play, \"The Cherry Orchard,\" examining its complex characters and themes. The play revolves around Madame ...\n\n[The Cherry Orchard Character Analysis - Course Hero] This study guide and infographic for Anton Chekhov's The Cherry Orchard offer summary and analysis on themes, symbols, and other literary ...\n\n[The Cherry Orchard by Anton Chekhov | In-Depth Summary & Analysis] /lit/The-Cherry-Orchard/infographic/ Set in early 1900s Russia, The Cherry Orchard tells the story ..",
+    techniques: "[The Cherry Orchard Character Analysis - Course Hero] This study guide and infographic for Anton Chekhov's The Cherry Orchard offer summary and analysis on themes, symbols, and other literary ...",
+    excerpts: [],
+    insights: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobile ...\n\n[The Cherry Orchard: Character List | SparkNotes] Mrs. Ranevksy is a middle-aged Russian woman, the owner of the estate and the cherry orchard around which the story revolves. She has faced tragedy many times ...\n\n[The Cherry Orchard - Wikipedia] Unresponsive to offers to save the estate, she allows its sale to the son of a former serf, and the family departs to the sound of the cherry orc",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%A8%B1%E6%A1%83%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T04:35:44.689Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%A8%B1%E6%A1%83%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:34:22.909Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Cherry%20Orchard%20Anton%20Chekhov" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Cherry%20Orchard%20Anton%20Chekhov" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Cherry%20Orchard" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Cherry%20Orchard" },
-      ],
+      reliability: "medium",
     },
   },
 
