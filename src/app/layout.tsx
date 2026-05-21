@@ -233,6 +233,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        </SessionProvider>
       </body>
     </html>
   );

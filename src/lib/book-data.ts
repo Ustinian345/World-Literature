@@ -338,7 +338,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Analects Study Guide | Literature Guide - LitCharts] The best study guide to The Analects on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Analects of Confucius Book I Summary and Analysis - GradeSaver] The Analects of Confucius study guide contains a biography of Confucius, literature essays, quiz questions, major themes, characters, ...\n\n[The Analects Summary & Study Guide - BookRags.com] The Analects Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Analects",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%AE%BA%E8%AF%AD", tier: "reference", fetchedAt: "2026-05-21T05:16:25.983Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%AE%BA%E8%AF%AD", tier: "reference", fetchedAt: "2026-05-21T05:21:08.428Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -529,31 +529,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "kokoro": {
     id: "kokoro",
-    plotSummary: "Other articles where Kokoro is discussed: Japanese literature: The novel between 1905 and 1941: His best-known novel, Kokoro (1914; “The Heart”; Eng. trans. Kokoro), revolves around another familiar situation in his novels, two men in love with the same woman. His last novel, Meian (1916; Light and Darkness), though unfinished, has been acclaimed by some as his masterpiece.",
+    characters: [
+      { name: "Kokoro Study Guide", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Literature Guide", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Kokoro", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Meiji Era", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Characterized", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Kokoro Summary", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Study Guide", role: "角色", description: "Kokoro 中的主要角色。" },
+      { name: "Natsume Soseki", role: "角色", description: "Kokoro 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore Kokoro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Kokoro Natsume Sōseki Kokoro Natsume Sōseki 47 pages • 1-hour read Natsume Sōseki Kokoro Fiction | Novel | Adult | Published in 1914 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Part 1 Part 2 Part 3, Chapters 55-72 Part 3, Chapters 73-90 Part 3, Chapters 91-110 Character List NEW Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Summary and Study Guide Overview Kokoro is a 191",
     plotNodes: [
-      { label: "第 1 部分", description: "Other articles where Kokoro is discussed: Japanese literature: The novel between 1905 and 1941: His best-known novel, Kokoro (1914; “The Heart”; Eng. trans." }
+      { label: "Part 1", description: "Get ready to explore Kokoro and its meaning." },
+      { label: "Part 2", description: "Study Guide Kokoro Natsume Sōseki Kokoro Natsume Sōseki 47 pages • 1-hour read Natsume Sōseki Kokoro Fiction | Novel | Adult | Published in 1914 A modern alternative to SparkNotes and CliffsNotes, Sup" }
     ],
-    themeAnalysis: "心（拼音：xīn）为汉语一级通用规范汉字（常用字）。此字始见于商代甲骨文。“心”古字形像人或鸟兽的心脏，本义即心脏。古人认为心是思维的器官，因此把思想、感情都说做“心”。又由思维器官引申为心思、思想、意念、感情、性情等，又引申为思虑、谋划。心脏在人体的中央位置，故“心”又有中央、中心、中间部位等义。“心”是汉字部首之一，序号：98。“心”在字的左半边写作“忄”，如恨、忧、怀。在字的下半部有的写作“心”，如：思、想。有的写作“⺗”，如：恭、慕、忝。以“心”为意符的字大多与思想、感情有关。\n心（拼音：xīn）为汉语一级通用规范汉字（常用字） [1]。此字始见于商代甲骨文。“心”古字形像人或鸟兽的心脏，本义即心脏。古人认为心是思维的器官，因此把思想、感情都说做“心”。又由思维器官引申为心思、思想、意念、感情、性情等，又引申为思虑、谋划。心脏在人体的中央位置，故“心”又有中央、中心、中间部位等义。\n\n“心”是汉字部首之一，序号：98。“心”在字的左半边写作“忄”，如恨、忧、怀。在字的下半部有的写作“心”，如：思、想。有的写作“⺗”，如：恭、慕、忝。以“心”为意符的字大多与思想、感情有关。",
-    techniques: "心（拼音：xīn）为汉语一级通用规范汉字（常用字）。此字始见于商代甲骨文。“心”古字形像人或鸟兽的心脏，本义即心脏。古人认为心是思维的器官，因此把思想、感情都说做“心”。又由思维器官引申为心思、思想、意念、感情、性情等，又引申为思虑、谋划。心脏在人体的中央位置，故“心”又有中央、中心、中间部位等义。“心”是汉字部首之一，序号：98。“心”在字的左半边写作“忄”，如恨、忧、怀。在字的下半部有的写作“心”，如：思、想。有的写作“⺗”，如：恭、慕、忝。以“心”为意符的字大多与思想、感情有关。\n心（拼音：xīn）为汉语一级通用规范汉字（常用字） [1]。此字始见于商代甲骨文。“心”古字形像人或鸟兽的心脏，本义即心脏。古人认为心是思维的器官，因此把思想、感情都说做“心”。又由思维器官引申为心思、思想、意念、感情、性情等，又引申为思虑、谋划。心脏在人体的中央位置，故“心”又有中央、中心、中间部位等义。",
-    excerpts: [
-      { quote: "何谓人情？喜、怒、哀、惧、爱、恶、欲七者，不学而能。", context: "来源：Kokoro" },
-      { quote: "古（文）《尚书》说：脾，木也；肺，火也；心，土也；肝，金也；肾，水也。", context: "来源：Kokoro" },
-      { quote: "古《尚书》说为土藏者，五行土位于中，举五藏之部位言也。", context: "来源：Kokoro" }
-    ],
-    insights: "心（拼音：xīn）为汉语一级通用规范汉字（常用字）。此字始见于商代甲骨文。“心”古字形像人或鸟兽的心脏，本义即心脏。古人认为心是思维的器官，因此把思想、感情都说做“心”。又由思维器官引申为心思、思想、意念、感情、性情等，又引申为思虑、谋划。心脏在人体的中央位置，故“心”又有中央、中心、中间部位等义。“心”是汉字部首之一，序号：98。“心”在字的左半边写作“忄”，如恨、忧、怀。在字的下半部有的写作“心”，如：思、想。有的写作“⺗”，如：恭、慕、忝。以“心”为意符的字大多与思想、感情有关。\n心（拼音：xīn）为汉语一级通用规范汉字（常用字） [1]。此字始见于商代甲骨文。“心”古字形像人或鸟兽的心脏，本义即心脏。古人认为心是思维的器官，因此把思想、感情都说做“心”。又由思维器官引申为心思、思想、意念、感情、性情等，又引申为思虑、谋划。心脏在人体的中央位置，故“心”又有中央、中心、中间部位等义。",
+    themeAnalysis: "Get ready to explore Kokoro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Kokoro Natsume Sōseki Kokoro Natsume Sōseki 47 pages • 1-hour read Natsume Sōseki Kokoro Fiction | Novel | Adult | Published in 1914 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Part 1 Part 2 Part 3, Chapters 55-72 Part 3, Chapters 73-90 Part 3, Chapters 91-110 Character List NEW Character",
+    techniques: "[Analysis of Natsume Sōseki's Kokoro - Literary Theory and Criticism] A meditation on love, friendship, and the mysteries of the human heart, Kokoro brings together with great simplicity and drama many of the recurrent themes of ...",
+    excerpts: [],
+    insights: "[Kokoro Study Guide | Literature Guide - LitCharts] Kokoro is set in the final years of the Meiji Era, which ran from 1868 to 1912. Characterized by rapid industrialization and modernization.\n\n[Kokoro Summary and Study Guide - SuperSummary] Get ready to explore Kokoro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to ...\n\n[Kokoro Summary & Study Guide - BookRags.com] Kokoro is a story of one young man searching to fill a void in his life. It is the story of many individuals who long to appease loneliness, and the sto",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%BF%83", tier: "reference", fetchedAt: "2026-05-21T04:25:10.619Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Britannica", url: "https://www.britannica.com/topic/Kokoro", tier: "reference", fetchedAt: "2026-05-21T04:25:25.726Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%BF%83", tier: "reference", fetchedAt: "2026-05-21T05:21:04.518Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Kokoro%20Natsume%20Soseki" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Kokoro%20Natsume%20Soseki" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Kokoro" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Kokoro" },
-      ],
+      reliability: "medium",
     },
   },
 
