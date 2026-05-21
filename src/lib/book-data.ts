@@ -2472,14 +2472,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "the-devils-to-pay": {
     id: "the-devils-to-pay",
-    plotSummary: "The Devil to Pay in the Backlands (Portuguese: Grande Sertão: Veredas, \"Great Backlands: Paths\"; also translated as The Great Backlands and Their Paths) is a novel published in 1956 by the Brazilian writer João Guimarães Rosa. The original title refers to the veredas, which are small paths through wetlands usually located at higher altitudes characterized by the presence of grasses and buritizais, groups of the buriti palm-tree (Mauritia flexuosa), that criss-cross the Sertão region in northern Minas Gerais as a labyrinthine net where an outsider can easily get lost, and where there is no sing...",
-    themeAnalysis: "The Devil to Pay in the Backlands (Portuguese: Grande Sertão: Veredas, \"Great Backlands: Paths\"; also translated as The Great Backlands and Their Paths) is a novel published in 1956 by the Brazilian writer João Guimarães Rosa. The original title refers to the veredas, which are small paths through wetlands usually located at higher altitudes characterized by the presence of grasses and buritizais,...",
-    techniques: "The Devil to Pay in the Backlands (Portuguese: Grande Sertão: Veredas, \"Great Backlands: Paths\"; also translated as The Great Backlands and Their Paths) is a novel published in 1956 by the Brazilian writer João Guimarães Rosa. The original title refers to the veredas, which are small paths through wetlands usually located at higher altitudes characterized by the presence of grasses and buritizais,...",
-    excerpts: [],
-    insights: "The Devil to Pay in the Backlands (Portuguese: Grande Sertão: Veredas, \"Great Backlands: Paths\"; also translated as The Great Backlands and Their Paths) is a novel published in 1956 by the Brazilian writer João Guimarães Rosa. The original title refers to the veredas, which are small paths through wetlands usually located at higher altitudes characterized by the presence of grasses and buritizais,...",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Devil%20to%20Pay%20in%20the%20Backlands"
-    // }
+    characters: [
+      { name: "The Devil", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "Backlands", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "Rosa Showing", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "The Devil To", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "Pay In The", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "Guimar", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "Rosa", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "The Devil to Pay in the Backlands 中的主要角色。" }
+    ],
+    plotSummary: "[Summary of The Devil to Pay in the Backlands - Guimarães Rosa] \"The Devil to Pay in the Backlands\" by João Guimarães Rosa is a complex and richly woven narrative set in the harsh Brazilian sertão.\n\nOther articles where The Devil to Pay in the Backlands is discussed: Brazilian literature: The novel: The Devil to Pay in the Backlands), his 600-page epic masterpiece on honour, courage, love, and treachery that takes the form of a first-person monologue by a backlands outlaw who makes a pact with the Devil to gain revenge.\n\nThe Devil to Pay in the Backlands References The Devil to Pay in the Backlands work by Guimarães Rosa Ask Anything Homework Help Also known as: “Grande sertão: veredas” Written by The Information Architects of Encyclopaedia Britannica The Information Architects maintain a master list of the topics included in the corpus of Encyclopædia Britannica , and create and manage the relationships between them. The Information Architects of Encyclopaedia Britannica Britannica AI",
+    plotNodes: [
+      { label: "Part 1", description: "[Summary of The Devil to Pay in the Backlands - Guimarães Rosa] \"The Devil to Pay in the Backlands\" by João Guimarães Rosa is a complex and richly woven narrative set in the harsh Brazilian sertão." },
+      { label: "Part 2", description: "Other articles where The Devil to Pay in the Backlands is discussed: Brazilian literature: The novel: The Devil to Pay in the Backlands), his 600-page epic masterpiece on honour, courage, love, and tr" },
+      { label: "Part 3", description: "The Devil to Pay in the Backlands References The Devil to Pay in the Backlands work by Guimarães Rosa Ask Anything Homework Help Also known as: “Grande sertão: veredas” Written by The Information Arch" }
+    ],
+    themeAnalysis: "[The Devil to Pay in the Backlands: Analysis of Major Characters] \"The Devil to Pay in the Backlands\" explores the complexities of its major characters against a backdrop of conflict and personal transformation within ...\n\n[Guimarães Rosa: The Devil to Pay in the Backlands] João Guimarães Rosa: Grande sertão: veredas (The Devil to Pay in the Backlands) ... In short, this novel has two key themes. Firstly, it is about the quest ...",
+    techniques: "[Summary of The Devil to Pay in the Backlands - Guimarães Rosa] \"The Devil to Pay in the Backlands\" by João Guimarães Rosa is a complex and richly woven narrative set in the harsh Brazilian sertão.",
+    excerpts: [
+      { quote: "The Devil to Pay in the Backlands", context: "From The Devil to Pay in the Backlands" },
+      { quote: "The Devil to Pay in the Backlands", context: "From The Devil to Pay in the Backlands" },
+      { quote: "The Devil to Pay in the Backlands", context: "From The Devil to Pay in the Backlands" }
+    ],
+    insights: "[The Devil to Pay in the Backlands - Wikipedia] The Devil to Pay in the Backlands is a novel published in 1956 by the Brazilian writer João Guimarães Rosa. The Devil to Pay in the Backlands ...\n\n[The Devil to Pay in the Backlands | work by Guimarães Rosa] The Devil to Pay in the Backlands), his 600-page epic masterpiece on honour, courage, love, and treachery that takes the form of a first-person monologue by a ...\n\n[The Devil to Pay in the Backlands - JoaoGuimaraes Rosa Showing ...] The Devil To Pay In The Backlands by João Guimarães Rosa also known ... The main character is an interesting yo",
   },
 
   // ==================== 大洋洲 ====================

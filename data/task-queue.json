@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T04:53:05.189Z",
+    "generatedAt": "2026-05-21T04:53:50.245Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -2131,11 +2131,12 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:18.043Z",
+      "batchStatus": "skipped",
+      "batchProcessedAt": "2026-05-21T04:53:50.243Z",
       "batchSources": [
         "wikipedia_en"
-      ]
+      ],
+      "batchError": "insufficient data from APIs"
     },
     {
       "bookId": "tb-hongxing",
