@@ -1745,14 +1745,14 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "season-of-migration": {
     id: "season-of-migration",
     characters: [
+      { name: "Themes", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
+      { name: "Colors", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
       { name: "Season", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
       { name: "Migration", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
-      { name: "North Themes", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
-      { name: "In Tayeb Salih", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
       { name: "North", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
-      { name: "During", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
-      { name: "England", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
-      { name: "Sudanese", role: "角色", description: "Season of Migration to the North 中的主要角色。" }
+      { name: "Gender", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
+      { name: "Violence In Tayeb", role: "角色", description: "Season of Migration to the North 中的主要角色。" },
+      { name: "Salih", role: "角色", description: "Season of Migration to the North 中的主要角色。" }
     ],
     plotSummary: "Get ready to explore Season of Migration to the North and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nSTUDY + TEACHING GUIDE Season of Migration to the North Tayeb Salih Season of Migration to the North Tayeb Salih 81 pages • 2-hour read Tayeb Salih Season of Migration to the North Fiction | Novel | Adult | Published in 1966 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. For select classroom titles, we also provide Teaching Guides with discussion and quiz questions to prompt student engagement. Download PDF Play Audio Download PDF Play Audio Study Guide Teaching Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters 1-2 Chapters 3-4 Chapters 5-6 Chapters 7-8 Chapters 9-10 Character L",
     plotNodes: [
@@ -1761,20 +1761,36 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     ],
     themeAnalysis: "Get ready to explore Season of Migration to the North and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nSTUDY + TEACHING GUIDE Season of Migration to the North Tayeb Salih Season of Migration to the North Tayeb Salih 81 pages • 2-hour read Tayeb Salih Season of Migration to the North Fiction | Novel | Adult | Published in 1966 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. For select classroom titles, we also provide Teaching Guides with discussion and quiz questions to prompt student engagement. Download PDF Play Audio Do",
     techniques: "[Season of Migration to the North Study Guide - Course Hero] This study guide for Tayeb Salih's Season of Migration to the North offers summary and analysis on themes, symbols, and other literary devices found in the text ...\n\nGet ready to explore Season of Migration to the North and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nSTUDY + TEACHING GUIDE Season of Migration to the North Tayeb Salih Season of Migration to the North Tayeb Salih 81 pages • 2-hour r",
-    excerpts: [],
+    excerpts: [
+      { quote: "My students can't get enough of your charts and their results have gone through the roof.", context: "From Season of Migration to the North" }
+    ],
     insights: "[Season of Migration to the North Themes - LitCharts] In Tayeb Salih's Season of Migration to the North, relations between men and women are characterized by violence. During his time in England, the Sudanese ...\n\n[Season of Migration to the North Summary and Study Guide] Get ready to explore Season of Migration to the North and its meaning. Our full analysis and study guide provides an even deeper dive with character ...\n\n[Season of Migration to the North Summary - GradeSaver] Season of Migration to the North study guide contains a biography of Tayeb Salih, quiz questions, major themes, chara",
   },
 
   "the-beautyful-ones": {
     id: "the-beautyful-ones",
-    plotSummary: "The Beautyful Ones Are Not Yet Born is the debut novel by Ghanaian writer Ayi Kwei Armah. It was published in 1968 by Houghton Mifflin, and then republished in the influential Heinemann African Writers Series in 1969. The novel tells the story of an unnamed man who struggles to reconcile himself with the reality of post-independence Ghana.",
-    themeAnalysis: "The Beautyful Ones Are Not Yet Born is the debut novel by Ghanaian writer Ayi Kwei Armah. It was published in 1968 by Houghton Mifflin, and then republished in the influential Heinemann African Writers Series in 1969. The novel tells the story of an unnamed man who struggles to reconcile himself with the reality of post-independence Ghana.",
-    techniques: "The Beautyful Ones Are Not Yet Born is the debut novel by Ghanaian writer Ayi Kwei Armah. It was published in 1968 by Houghton Mifflin, and then republished in the influential Heinemann African Writers Series in 1969. The novel tells the story of an unnamed man who struggles to reconcile himself with the reality of post-independence Ghana.",
-    excerpts: [],
-    insights: "The Beautyful Ones Are Not Yet Born is the debut novel by Ghanaian writer Ayi Kwei Armah. It was published in 1968 by Houghton Mifflin, and then republished in the influential Heinemann African Writers Series in 1969. The novel tells the story of an unnamed man who struggles to reconcile himself with the reality of post-independence Ghana.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Beautyful%20Ones%20Are%20Not%20Yet%20Born"
-    // }
+    characters: [
+      { name: "The Beautyful Ones", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Are Not Yet", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Born Characters", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Born", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Koomson", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Teacher", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Study Guide The", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" },
+      { name: "Beautyful Ones Are", role: "角色", description: "The Beautyful Ones Are Not Yet Born 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore The Beautyful Ones Are Not Yet Born and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Beautyful Ones Are Not Yet Born Ayi Kwei Armah The Beautyful Ones Are Not Yet Born Ayi Kwei Armah 35 pages • 1-hour read Ayi Kwei Armah The Beautyful Ones Are Not Yet Born Fiction | Novel | Adult | Published in 1969 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters 1-3 Chapters 4-6 Chapters 7-9 Chapters 10-12 Chapters 13-15 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble",
+    plotNodes: [
+      { label: "Part 1", description: "Get ready to explore The Beautyful Ones Are Not Yet Born and its meaning." },
+      { label: "Part 2", description: "Study Guide The Beautyful Ones Are Not Yet Born Ayi Kwei Armah The Beautyful Ones Are Not Yet Born Ayi Kwei Armah 35 pages • 1-hour read Ayi Kwei Armah The Beautyful Ones Are Not Yet Born Fiction | No" }
+    ],
+    themeAnalysis: "Get ready to explore The Beautyful Ones Are Not Yet Born and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Beautyful Ones Are Not Yet Born Ayi Kwei Armah The Beautyful Ones Are Not Yet Born Ayi Kwei Armah 35 pages • 1-hour read Ayi Kwei Armah The Beautyful Ones Are Not Yet Born Fiction | Novel | Adult | Published in 1969 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses Chapters",
+    techniques: "",
+    excerpts: [
+      { quote: " | PDF | Ghana - Scribd] ", context: "From The Beautyful Ones Are Not Yet Born" },
+      { quote: "The Beautyful Ones Are Not Yet Born", context: "From The Beautyful Ones Are Not Yet Born" }
+    ],
+    insights: "[The Beautyful Ones Are Not Yet Born Summary and Study Guide] The Beautyful Ones Are Not Yet Born focuses on life in post-independence Ghana and takes place between Passion Week in 1965 and February 25, 1966 (the day after ...\n\n[Beautiful Ones Are Not Yet Born by Ayi Kwei Armah | Goodreads] The Beautyful Ones are Not Yet Born is a novel set during the last days of the Nkrumah government in Ghana. It's about a man resisting corruption, quixotically ...\n\n[The Beautyful Ones Are Not Yet Born: Analysis of Major Characters] The Beautyful Ones Are Not Yet Born is a novel set in post-independence Gha",
   },
 
   "nervous-conditions": {
@@ -2139,17 +2155,26 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "sound-and-fury": {
     id: "sound-and-fury",
-    plotSummary: "The Sound and the Fury is a novel by the American author William Faulkner, published in 1929. Faulkner's fourth novel, it is the second to be set in Yoknapatawpha County and the first featuring the Compson family, both of which would reappear in his later fiction. The novel's highly experimental style, including its use of stream of consciousness and multiple different unreliable narrators, are hallmarks of modernist literature. Its bleak and candid portrait of Southern life in the early 20th century is paradigmatic of the Southern Gothic genre.",
-    themeAnalysis: "The Sound and the Fury is a novel by the American author William Faulkner, published in 1929. Faulkner's fourth novel, it is the second to be set in Yoknapatawpha County and the first featuring the Compson family, both of which would reappear in his later fiction.",
-    techniques: "The Sound and the Fury is a novel by the American author William Faulkner, published in 1929. Faulkner's fourth novel, it is the second to be set in Yoknapatawpha County and the first featuring the Compson family, both of which would reappear in his later fiction.",
-    excerpts: [
-      { quote: "one of the most complex novels in America's literary history.", context: "From The Sound and the Fury" }
+    characters: [
+      { name: "The Sound", role: "角色", description: "The Sound and the Fury 中的主要角色。" },
+      { name: "Fury", role: "角色", description: "The Sound and the Fury 中的主要角色。" }
     ],
-    insights: "The Sound and the Fury is a novel by the American author William Faulkner, published in 1929. Faulkner's fourth novel, it is the second to be set in Yoknapatawpha County and the first featuring the Compson family, both of which would reappear in his later fiction.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Sound%20and%20the%20Fury"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E5%96%A7%E5%93%97%E4%B8%8E%E9%AA%9A%E5%8A%A8"
-    // }
+    plotSummary: "《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和迪尔西部分。该书以“意识流”的手法通过一个旧家庭的分崩离析和趋于死亡，真实地呈现了美国南方历史性变化的一个侧面。福克纳用扑朔迷离的叙述手法为他心爱的南方描绘了一幅色调惨淡而又凄凉无比的夕阳晚景，既体现了南方的必然崩溃，又表达了他本人对资本主义价值标准的批判。《喧哗与骚动》的艺术风格奇特、新颖：多角度的叙述、意识流、神话模式、象征、隐喻、对位等现代技巧令人眼花缭乱。书名更暗示了一代知识分子的幻灭感和\n《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。 [16]\n\n作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和迪尔西部分。 [9]该书以“意识流”的手法通过一个旧家庭的分崩离析和趋于死亡，真实地呈现了美国南方历史性变化的一个侧面。福克纳用扑朔迷离的叙述手法为他心爱的南方描绘了一幅色调惨淡而又凄凉无比的夕阳晚景，既体现了南方的必然崩溃，又表达了他本人对资本主义价值标准的批判。 [15]《喧哗与骚动》的艺术风格奇特、新颖：多角度的叙述、意识流、神话模式、象征、隐喻、对位等现代技巧令人眼花缭乱。书名更暗示了一代知识分子的幻灭感和精神危机。 [12]\n\n《喧哗与骚动》是福克纳重要的长篇小说代表作之一，是公认的20世纪美国文学经典，或许因为其片段式、非时间顺序的结构，这部作品当时出版后并未立即取得很大成功。不过，此书还是赢得了评论界的关注。 [6] [23]2015年，由该小说改编、詹姆斯·弗兰科执导的同名电影上映。 [22]\n\n关于《喧哗与骚动》，福克纳在1933年写的一篇文章里说：“在这",
+    plotNodes: [
+      { label: "Part 1", description: "《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和" },
+      { label: "Part 2", description: "作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和迪尔西部分。" },
+      { label: "Part 3", description: "《喧哗与骚动》是福克纳重要的长篇小说代表作之一，是公认的20世纪美国文学经典，或许因为其片段式、非时间顺序的结构，这部作品当时出版后并未立即取得很大成功。不过，此书还是赢得了评论界的关注。" }
+    ],
+    themeAnalysis: "《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和迪尔西部分。该书以“意识流”的手法通过一个旧家庭的分崩离析和趋于死亡，真实地呈现了美国南方历史性变化的一个侧面。福克纳用扑朔迷离的叙述手法为他心爱的南方描绘了一幅色调惨淡而又凄凉无比的夕阳晚景，既体现了南方的必然崩溃，又表达了他本人对资本主义价值标准的批判。《喧哗与骚动》的艺术风格奇特、新颖：多角度的叙述、意识流、神话模式、象征、隐喻、对位等现代技巧令人眼花缭乱。书名更暗示了一代知识分子的幻灭感和\n《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。 [16]\n\n作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和迪尔西部分。 [9]该书以“意识流”的手法通过一个旧家庭的分崩离析和趋于死亡，真实地呈现了美国南方历史性变化的一个侧面。福克纳用扑朔迷离的叙述手法为他心爱的南方描绘了一幅色调惨淡而又凄凉无比的夕阳晚景，既体现了南方的必然崩溃，又表达了他本人对资本主义价值标准的批判。 [15]《喧哗与骚动》的艺术风格奇特、新颖：多角度的叙述、意识流、神话模式、象征、隐喻、对位等现代技巧令人眼花缭乱。",
+    techniques: "",
+    excerpts: [],
+    insights: "《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁部分、杰生部分和迪尔西部分。该书以“意识流”的手法通过一个旧家庭的分崩离析和趋于死亡，真实地呈现了美国南方历史性变化的一个侧面。福克纳用扑朔迷离的叙述手法为他心爱的南方描绘了一幅色调惨淡而又凄凉无比的夕阳晚景，既体现了南方的必然崩溃，又表达了他本人对资本主义价值标准的批判。《喧哗与骚动》的艺术风格奇特、新颖：多角度的叙述、意识流、神话模式、象征、隐喻、对位等现代技巧令人眼花缭乱。书名更暗示了一代知识分子的幻灭感和\n《喧哗与骚动》（The Sound and the Fury）是美国作家威廉·福克纳创作的长篇小说，首次出版于1929年。 [16]\n\n作品以杰弗逊镇上的律师康普生一家三代生活经历为主线，描写了他们混乱的思想、沉沦的道德和必然没落的阶级命运，反映了南方庄园的没落与解体和社会的严重精神危机。小说中康普生夫妇生有三男一女：大儿子昆丁、二儿子杰生、小儿子班吉和女儿凯蒂。全书分为四个部分：班吉部分、昆丁",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%96%A7%E5%93%97%E4%B8%8E%E9%AA%9A%E5%8A%A8", tier: "reference", fetchedAt: "2026-05-21T04:46:36.344Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "old-man-and-sea": {
