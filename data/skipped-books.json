@@ -619,5 +619,23 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:39:04.567Z"
+  },
+  {
+    "bookId": "tb-leiyu",
+    "title": "雷雨",
+    "author": "曹禺",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:39:51.877Z"
+  },
+  {
+    "bookId": "tb-sl-1",
+    "title": "芦花荡",
+    "author": "孙犁",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:40:38.380Z"
   }
 ]

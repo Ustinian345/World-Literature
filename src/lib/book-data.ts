@@ -1328,7 +1328,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Ulysses (novel) - Wikipedia] Ulysses chronicles the experiences of three Dubliners over the course of a single day, 16 June 1904 (which its fans now celebrate annually as Bloomsday).\n\n[Ulysses | Book, Summary, Analysis, Characters, & Facts - Britannica] The characters in Ulysses serve as modern parallels to those in Homer's Odyssey. Many of them were also based on other figures from Greek ...\n\n[Ulysses: Themes | SparkNotes] Ulysses is a book about Stephen's search for a symbolic father and Bloom's search for a son. In this respect, the plot of Ulysses parallels Telemachus's search ...\n\n[Ulyss",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B0%A4%E5%88%A9%E8%A5%BF%E6%96%AF", tier: "reference", fetchedAt: "2026-05-21T05:35:14.201Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B0%A4%E5%88%A9%E8%A5%BF%E6%96%AF", tier: "reference", fetchedAt: "2026-05-21T05:40:40.351Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1816,30 +1816,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "disgrace": {
     id: "disgrace",
-    plotSummary: "Disgrace is a novel by J.M. Coetzee that was first published in 1999. It caused fierce debates in South Africa over its portrayal of the new social and political order.",
+    characters: [
+      { name: "Disgrace Character Analysis", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "Coetzee", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "Disgrace", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "David Lurie", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "Lucy", role: "角色", description: "Disgrace 中的主要角色。" },
+      { name: "Melanie Isaacs", role: "角色", description: "Disgrace 中的主要角色。" }
+    ],
+    plotSummary: "Get ready to explore Disgrace and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Disgrace J. M. Coetzee Disgrace J. M. Coetzee 55 pages • 1-hour read J. M. Coetzee Disgrace Fiction | Novel | Adult | Published in 1999 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-6 Chapters 7-12 Chapters 13-18 Chapters 19-24 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Character Analysis David Lurie Content Warning : The novel and this guide discuss sexism,",
     plotNodes: [
-      { label: "第 1 部分", description: "Disgrace is a novel by J.M. Coetzee that was first published in 1999." }
+      { label: "Part 1", description: "Get ready to explore Disgrace and its meaning." },
+      { label: "Part 2", description: "Study Guide Disgrace J." }
     ],
-    themeAnalysis: "耻（拼音：chǐ）是汉语一级通用规范汉字（常用字）。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。\n耻（拼音：chǐ）是汉语一级通用规范汉字（常用字） [2]。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。 [14]\n\n“耻”最初写作“恥”。图A是战国时期的郭店楚简上的文字，图1是小篆，字形稍有差异，结构基本相同。汉隶或作上下结构（图2），上为“耳”，下为“心”。“恥”由“心”和“耳”两部分组成。左部“耳”表示听；右部“心”表示与心理活动相关，“耻辱”是一种情感，故以“心”为形符。所以，“恥”字本义有听到批评后内心感到羞愧之意。“恥（耻）”字中的“耳”兼有表音作用，恥（耻）、耳上古音都在之部，中古音恥（耻）为日母上声止韵，耳为彻母上声止韵，两字读音接近。",
-    techniques: "耻（拼音：chǐ）是汉语一级通用规范汉字（常用字）。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。\n耻（拼音：chǐ）是汉语一级通用规范汉字（常用字） [2]。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。 [14]\n\n“耻”最初写作“恥”。图A是战国时期的郭店楚简上的文字，图1是小篆，字形稍有差异，结构基本相同。汉隶或作上下结构（图2），上为“耳”，下为“心”。“恥”由“心”和“耳”两部分组成。",
-    excerpts: [
-      { quote: "耻匹夫不可以无备，况耻国乎？是以圣王务行礼，不求耻人。", context: "来源：Disgrace" },
-      { quote: "耻匹夫不可以无备，况耻国乎？是以圣王务行礼，不求耻人。", context: "来源：Disgrace" }
-    ],
-    insights: "耻（拼音：chǐ）是汉语一级通用规范汉字（常用字）。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。\n耻（拼音：chǐ）是汉语一级通用规范汉字（常用字） [2]。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。 [14]\n\n“耻”最初写作“恥”。图A是战国时期的郭店楚简上的文字，图1是小篆，字形稍有差异，结构基本相同。汉隶或作上下结构（图2），上为“耳”，下为“心”。“恥”由“心”和“耳”两部分组成。",
+    themeAnalysis: "Get ready to explore Disgrace and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Disgrace J. M. Coetzee Disgrace J. M. Coetzee 55 pages • 1-hour read J. M. Coetzee Disgrace Fiction | Novel | Adult | Published in 1999 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-6 Chapters 7-12 Chapters 13-18 Chapters 19-24 Character Analysis Themes Symbols & Motifs Importan",
+    techniques: "[Disgrace Character Analysis - Course Hero] This study guide for J.M. Coetzee's Disgrace offers summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Analysis of J. M. Coetzee's Disgrace - Literary Theory and Criticism] Disgrace presents the elegiac story of a professional and personal disaster in the life of a scholar during his transition from middle age to old age.",
+    excerpts: [],
+    insights: "[Disgrace: Character List - SparkNotes] A list of all the characters in Disgrace. Disgrace characters include: David Lurie, Lucy, Melanie Isaacs, Petrus, Bev Shaw.\n\n[Disgrace — Study Guide - CliffsNotes] Disgrace tells the story of middle-aged Cape Town professor David Lurie's fall from grace following his forced resignation from the university.\n\n[Disgrace Character Analysis - SuperSummary] Disgrace begins with David Lurie soliciting a sex worker named Soraya. This transactional, detached human interaction sets the tone for his relationships ...\n\n[[PDF] CHARACTERS AND THEME ANALYSIS IN J.M. CO",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%80%BB", tier: "reference", fetchedAt: "2026-05-21T04:40:31.050Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Britannica", url: "https://www.britannica.com/topic/Disgrace", tier: "reference", fetchedAt: "2026-05-21T04:40:44.694Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%80%BB", tier: "reference", fetchedAt: "2026-05-21T05:40:03.947Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Disgrace%20J.%20M.%20Coetzee" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Disgrace%20J.%20M.%20Coetzee" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Disgrace" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Disgrace" },
-      ],
+      reliability: "medium",
     },
   },
 
