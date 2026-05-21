@@ -666,7 +666,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Shakuntala Study Guide | Literature Guide - LitCharts] Shakuntala: Detailed Summary & Analysis. In-depth summary and analysis of every act of Shakuntala. Visual theme-tracking, too.\n\n[Shakuntala (play) - Wikipedia] ... Kalidasa, dramatizing the story of Shakuntala told in the epic Mahabharata and regarded as the best of Kalidasa's works. Its exact date is uncertain ...\n\n[Shakuntala by Kalidasa Plot Summary - LitCharts] He quickly dispels the demons, then overhears Shakuntala, who's desperately lovesick, confiding her feelings for him to her friends. When ...\n\n[Shakuntala | Character Sketch &",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B2%99%E6%81%AD%E8%BE%BE%E7%BD%97", tier: "reference", fetchedAt: "2026-05-21T05:19:33.134Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B2%99%E6%81%AD%E8%BE%BE%E7%BD%97", tier: "reference", fetchedAt: "2026-05-21T05:24:23.086Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1143,19 +1143,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "pride-and-prejudice": {
     id: "pride-and-prejudice",
-    plotSummary: "《傲慢与偏见》（Pride &#38; Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。该片根据简·奥斯汀的同名小说改编，讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特五姐妹的爱情与择偶的故事。新来的邻居宾格来先生和他的朋友达西打破她们一家人单调的乡村生活。宾格来和伊丽莎白的姐姐简·班纳特互生情愫；达西对善良聪明的伊丽莎白产生了好感，而伊丽莎白却对达西不可一世的傲慢心存偏见，不接受他的感情。然而，宾格来和简·班纳特因误会关系陷入危机；达西的种种作为，展示性格中和伊丽莎白相同的善良一面，逐渐赢得伊丽莎白的好感。最后，一对曾因傲慢和偏见而延搁婚事的有情人终成眷属。该片于20\n《傲慢与偏见》（Pride & Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。 [8] [19] [33]\n\n该片根据简·奥斯汀的同名小说改编， [9]讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特五姐妹的爱情与择偶的故事。新来的邻居宾格来先生和他的朋友达西打破她们一家人单调的乡村生活。宾格来和伊丽莎白的姐姐简·班纳特互生情愫；达西对善良聪明的伊丽莎白产生了好感，而伊丽莎白却对达西不可一世的傲慢心存偏见，不接受他的感情。然而，宾格来和简·班纳特因误会关系陷入危机；达西的种种作为，展示性格中和伊丽莎白相同的善良一面，逐渐赢得伊丽莎白的好感。最后，一对曾因傲慢和偏见而延搁婚事的有情人终成眷属。 [1] [10]\n\n该片于2005年9月16日在英国上映。 [8] [19]2006年，该片获第63届美国电影电视金球奖“最佳影片”提名、 [25]获第19届欧洲电影奖“最佳影片”提名； [26]截至2025年12月，该片累计获得全球票房128581061美元。 [11] [32]\n\n小乡绅班纳特（唐纳德·萨瑟兰 饰）有五个待字闺中的千金，分别是伊丽莎白·",
-    plotNodes: [
-      { label: "Part 1", description: "《傲慢与偏见》（Pride &#38; Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。该片根据简·奥斯汀的同名小说改编，讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特" },
-      { label: "Part 2", description: "该片根据简·奥斯汀的同名小说改编， [9]讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特五姐妹的爱情与择偶的故事。新来的邻居宾格来先生和他的朋友达西打破她们一家人单调的乡村生活。宾格来和伊丽莎白的姐姐简·班纳特互生情愫；达西对善良聪明的伊丽莎白产生了好感，而伊丽莎白却对达西不可一世的傲慢心存偏见，不接受他的感情。然而，宾格来和简·班纳特因误会关系陷入危机；达西的种种作为，展示性格中和伊丽莎白相" },
-      { label: "Part 3", description: "该片于2005年9月16日在英国上映。" }
+    characters: [
+      { name: "Pride", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Prejudice", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Elizabeth Bennet", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Fitzwilliam Darcy", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Jane Bennet", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Great", role: "角色", description: "Pride and Prejudice 中的主要角色。" },
+      { name: "Jane Austen", role: "角色", description: "Pride and Prejudice 中的主要角色。" }
     ],
-    themeAnalysis: "《傲慢与偏见》（Pride &#38; Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。该片根据简·奥斯汀的同名小说改编，讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特五姐妹的爱情与择偶的故事。新来的邻居宾格来先生和他的朋友达西打破她们一家人单调的乡村生活。宾格来和伊丽莎白的姐姐简·班纳特互生情愫；达西对善良聪明的伊丽莎白产生了好感，而伊丽莎白却对达西不可一世的傲慢心存偏见，不接受他的感情。然而，宾格来和简·班纳特因误会关系陷入危机；达西的种种作为，展示性格中和伊丽莎白相同的善良一面，逐渐赢得伊丽莎白的好感。最后，一对曾因傲慢和偏见而延搁婚事的有情人终成眷属。该片于20\n《傲慢与偏见》（Pride & Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。 [8] [19] [33]\n\n该片根据简·奥斯汀的同名小说改编， [9]讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特五姐妹的爱情与择偶的故事。新来的邻居宾格来先生和他的朋友达西打破她们一家人单调的乡村生活。宾格来和伊丽莎白的姐姐简·班纳特互生情愫；达西对善良聪明的伊丽莎白产生了好感，而伊丽莎白却对达西不可一世的傲慢心存偏见，不接受他的感情。然而，宾格来和简·班纳特因误会关系陷入危机；达西的种种作为，展示性格中和伊丽莎白相同的善良一面，逐渐赢得伊丽莎白的好感。最后，一对曾",
+    plotSummary: "[Pride and Prejudice Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of Pride and Prejudice. Visual theme-tracking, too.\n\n[Pride and Prejudice | Themes, Characters, Essay Prompt Breakdown] What is the secret irony in Jane Austen's opening lines of Pride and Prejudice? | novel analysis. Dr Octavia Cox•88K views · 1:51:46. Go to ...\n\n[Pride and Prejudice - Wikipedia] Pride and Prejudice is the second published novel by English author Jane Austen, written when she was aged 20–21, and later published in 1813.\n\n[Pride and Prejudice: Character List - SparkNotes] A list of all the characters in Pride and Prejudice. Pride and Prejudice characters include: Elizabeth Bennet, Fitzwilliam Darcy, Jane Bennet, ...\n\n[Great character analysis for Jane Austen's Pride and Prejudice.] Here are some key elements of analysis: Themes 1. Pride and Prejudice: - The title itself highlights the main themes. Mr. Darcy's pride in his ...\n\n[Story Skeleton—Pride & Prejudic",
+    plotNodes: [
+      { label: "Part 1", description: "[Pride and Prejudice Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of Pride and Prejudice." },
+      { label: "Part 2", description: "[Pride and Prejudice | Themes, Characters, Essay Prompt Breakdown] What is the secret irony in Jane Austen's opening lines of Pride and Prejudice?" },
+      { label: "Part 3", description: "[Pride and Prejudice - Wikipedia] Pride and Prejudice is the second published novel by English author Jane Austen, written when she was aged 20–21, and later published in 1813." },
+      { label: "Part 4", description: "[Pride and Prejudice: Character List - SparkNotes] A list of all the characters in Pride and Prejudice." },
+      { label: "Part 5", description: "[Great character analysis for Jane Austen's Pride and Prejudice.] Here are some key elements of analysis: Themes 1." }
+    ],
+    themeAnalysis: "[Pride and Prejudice Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of Pride and Prejudice. Visual theme-tracking, too.\n\n[Great character analysis for Jane Austen's Pride and Prejudice.] Here are some key elements of analysis: Themes 1. Pride and Prejudice: - The title itself highlights the main themes. Mr. Darcy's pride in his ...\n\n[Pride and Prejudice | Themes, Characters, Essay Prompt Breakdown] What is the secret irony in Jane Austen's opening lines of Pride and Prejudice? | novel analysis. Dr Octavia Cox•88K views · 1:51:46. Go to ...\n\n[Themes in 'Pride and Prejudice' by Jane Austen - BBC Bitesize] The plot of Pride and Prejudice is centred around the potential relationships and marriages of the Bennet sisters.\n\n《傲慢与偏见》（Pride &#38; Prejudice",
     techniques: "",
     excerpts: [],
-    insights: "《傲慢与偏见》（Pride &#38; Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。该片根据简·奥斯汀的同名小说改编，讲述了、19世纪初期英国的乡绅之女伊丽莎白·贝内特五姐妹的爱情与择偶的故事。新来的邻居宾格来先生和他的朋友达西打破她们一家人单调的乡村生活。宾格来和伊丽莎白的姐姐简·班纳特互生情愫；达西对善良聪明的伊丽莎白产生了好感，而伊丽莎白却对达西不可一世的傲慢心存偏见，不接受他的感情。然而，宾格来和简·班纳特因误会关系陷入危机；达西的种种作为，展示性格中和伊丽莎白相同的善良一面，逐渐赢得伊丽莎白的好感。最后，一对曾因傲慢和偏见而延搁婚事的有情人终成眷属。该片于20\n《傲慢与偏见》（Pride & Prejudice）是由焦点电影公司、法国映欧嘉纳影业、Mars Films等公司联合发行，焦点电影公司、美国环球影业等共同制作，乔·怀特执导，简·奥斯汀、黛博拉·莫盖茨、艾玛·汤普森编剧，凯拉·奈特利、马修·麦克费登、唐纳德·萨瑟兰等主演，于法国、英国、美国制片的爱情电影。 [8] [19] [33]\n\n该片根据简·奥斯汀的同名小说改编， [9]讲述了、",
+    insights: "[Pride and Prejudice - Wikipedia] Pride and Prejudice is the second published novel by English author Jane Austen, written when she was aged 20–21, and later published in 1813.\n\n[Pride and Prejudice: Character List - SparkNotes] A list of all the characters in Pride and Prejudice. Pride and Prejudice characters include: Elizabeth Bennet, Fitzwilliam Darcy, Jane Bennet, ...\n\n[Pride and Prejudice Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of Pride and Prejudice. Visual theme-tracking, too.\n\n[Great character analysis for Jane Austen's Pride and Prej",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81", tier: "reference", fetchedAt: "2026-05-21T04:27:49.263Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81", tier: "reference", fetchedAt: "2026-05-21T05:24:15.906Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

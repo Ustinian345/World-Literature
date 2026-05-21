@@ -430,5 +430,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:23:05.684Z"
+  },
+  {
+    "bookId": "tb-bx-2",
+    "title": "肥皂泡",
+    "author": "冰心",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:23:51.032Z"
   }
 ]
