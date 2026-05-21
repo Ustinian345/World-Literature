@@ -499,31 +499,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "pillow-book": {
     id: "pillow-book",
-    plotSummary: "《枕草子》（まくらのそうし），是日本平安时期女作家清少纳言创作的随笔集，大约成书于1001年。作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。一是用平安时代最为流行的“物尽”手法，写成的文字，也就是运用列举的方式来描写事物的一种古旧文体，例如“树木的花”“可憎的事”“可爱的人”等等；二是“女人独居的地方”之类随笔；三是她开始入职宫廷的回忆录。正如她在书中最后一段所说：“这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给什么人去看……”作者清少纳言的这段话将作品的真实性、随意性等特定表达得淋漓尽致。《枕草子》最为核心的内容实际上就是表达作者的感受以及感悟，不仅能够将作者积极的生活态度呈现出来，同时不乏表现散文的特点。《枕草子》开日本随笔文学之先河。",
+    characters: [
+      { name: "The Pillow Book", role: "角色", description: "The Pillow Book 中的主要角色。" },
+      { name: "Sei Sh", role: "角色", description: "The Pillow Book 中的主要角色。" },
+      { name: "Translated", role: "角色", description: "The Pillow Book 中的主要角色。" },
+      { name: "Japanese", role: "角色", description: "The Pillow Book 中的主要角色。" },
+      { name: "Some", role: "角色", description: "The Pillow Book 中的主要角色。" }
+    ],
+    plotSummary: "[The Pillow Book of Sei Sh¯onagon, Translated [from the Japanese ...] There is no real plot in The Pillow Book, although there are recurring characters and themes. Some of her recurring themes include beauty, position, and nature.\n\n[The Pillow Book Summary and Study Guide - SuperSummary] The Pillow Book is a collection of reflections written by Japanese gentlewoman Sei Shonagon as a kind of journal during the 990s and early 1000s.\n\n[The Pillow Book Sections 248–259 Summary & Analysis - LitCharts] Aesthetic Beauty, Delight, and Cultural Tradition Theme Icon. The Pillow Book is filled with Sei Shōnagon's a... Early in Sei's court service ...",
     plotNodes: [
-      { label: "第 1 部分", description: "《枕草子》（まくらのそうし），是日本平安时期女作家清少纳言创作的随笔集，大约成书于1001年。作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。一是用平安时代最为流行的“物尽”手法，写成的文字，也就是运用列举的方式来描写事物的一种古旧文体，例如“树木的花”“可憎的事”“可爱的人”等等；二是“女人独居的地方”之类随笔；三是她开始入职宫廷的回忆录。正如她在书中最后一段所说" },
-      { label: "第 2 部分", description: "作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。一是用平安时代最为流行的“物尽”手法，写成的文字，也就是运用列举的方式来描写事物的一种古旧文体，例如“树木的花”“可憎的事”“可爱的人”等等；二是“女人独居的地方”之类随笔；三是她开始入职宫廷的回忆录。正如她在书中最后一段所说：“这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给" }
+      { label: "Part 1", description: "[The Pillow Book of Sei Sh¯onagon, Translated [from the Japanese ...] There is no real plot in The Pillow Book, although there are recurring characters and themes." },
+      { label: "Part 2", description: "[The Pillow Book Summary and Study Guide - SuperSummary] The Pillow Book is a collection of reflections written by Japanese gentlewoman Sei Shonagon as a kind of journal during the 990s and early 1000" },
+      { label: "Part 3", description: "[The Pillow Book Sections 248–259 Summary & Analysis - LitCharts] Aesthetic Beauty, Delight, and Cultural Tradition Theme Icon." }
     ],
-    themeAnalysis: "《枕草子》（まくらのそうし），是日本平安时期女作家清少纳言创作的随笔集，大约成书于1001年。作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。一是用平安时代最为流行的“物尽”手法，写成的文字，也就是运用列举的方式来描写事物的一种古旧文体，例如“树木的花”“可憎的事”“可爱的人”等等；二是“女人独居的地方”之类随笔；三是她开始入职宫廷的回忆录。正如她在书中最后一段所说：“这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给什么人去看……”作者清少纳言的这段话将作品的真实性、随意性等特定表达得淋漓尽致。《枕草子》最为核心的内容实际上就是表达作者的感受以及感悟，不仅能够将作者积极的生活态度呈现出来，同时不乏表现散文的特点。《枕草子》开日本随笔文学之先河。《枕草子》与同时代的另一部日本文学经典《源氏物语》，被喻为日本平安时代文学\n《枕草子》（まくらのそうし），是日本平安时期女作家清少纳言创作的随笔集，大约成书于1001年。\n\n作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。",
-    techniques: "《枕草子》（まくらのそうし），是日本平安时期女作家清少纳言创作的随笔集，大约成书于1001年。作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。一是用平安时代最为流行的“物尽”手法，写成的文字，也就是运用列举的方式来描写事物的一种古旧文体，例如“树木的花”“可憎的事”“可爱的人”等等；二是“女人独居的地方”之类随笔；三是她开始入职宫廷的回忆录。正如她在书中最后一段所说：“这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给什么人去看……”作者清少纳言的这段话将作品的真实性、随意性等特定表达得淋漓尽致。《枕草子》最为核心的内容实际上就是表达作者的感受以及感悟，不仅能够将作者积极的生活态度呈现出来，同时不乏表现散文的特点。《枕草子》开日本随笔文学之先河。",
+    themeAnalysis: "[The Pillow Book Sections 248–259 Summary & Analysis - LitCharts] Aesthetic Beauty, Delight, and Cultural Tradition Theme Icon. The Pillow Book is filled with Sei Shōnagon's a... Early in Sei's court service ...\n\n[The Pillow Book Study Guide | Literature Guide - LitCharts] The best study guide to The Pillow Book on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Pillow Book of Sei Sh¯onagon, Translated [from the Japanese ...] There is no real plot in The Pillow Book, although there are recurring characters and themes. Some of her recurring themes include beauty, position, and nature.\n\n[Exploring Heian Court Life Through \"The Pillow Book\" & \"Genji] Theme: The main themes in \"The Pillow Book\" include the transience of life (mono no aware),",
+    techniques: "",
     excerpts: [
-      { quote: "这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给什么人去看……", context: "来源：The Pillow Book" },
-      { quote: "这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给什么人去看……", context: "来源：The Pillow Book" }
+      { quote: "Genji] Theme: The main themes in ", context: "From The Pillow Book" }
     ],
-    insights: "《枕草子》（まくらのそうし），是日本平安时期女作家清少纳言创作的随笔集，大约成书于1001年。作者清少纳言在宫廷之中任职期间所见所闻甚多，她将其整理成三百篇，从几方面来记述。一是用平安时代最为流行的“物尽”手法，写成的文字，也就是运用列举的方式来描写事物的一种古旧文体，例如“树木的花”“可憎的事”“可爱的人”等等；二是“女人独居的地方”之类随笔；三是她开始入职宫廷的回忆录。正如她在书中最后一段所说：“这本随笔本来只是在家闲居无聊的时候，把自己眼里看到、心里想到的事情记录下来的，并没有打算给什么人去看……”作者清少纳言的这段话将作品的真实性、随意性等特定表达得淋漓尽致。《枕草子》最为核心的内容实际上就是表达作者的感受以及感悟，不仅能够将作者积极的生活态度呈现出来，同时不乏表现散文的特点。《枕草子》开日本随笔文学之先河。",
+    insights: "[The Pillow Book Study Guide | Literature Guide - LitCharts] The best study guide to The Pillow Book on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Pillow Book of Sei Sh¯onagon, Translated [from the Japanese ...] There is no real plot in The Pillow Book, although there are recurring characters and themes. Some of her recurring themes include beauty, position, and nature.\n\n[Exploring Heian Court Life Through \"The Pillow Book\" & \"Genji] Theme: The main themes in \"The Pillow Book\" include the transience of life (mono no aware), the apprecia",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9E%95%E8%8D%89%E5%AD%90", tier: "reference", fetchedAt: "2026-05-21T04:26:31.221Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/76016", tier: "original_text", fetchedAt: "2026-05-21T04:26:44.453Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9E%95%E8%8D%89%E5%AD%90", tier: "reference", fetchedAt: "2026-05-21T05:22:36.014Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Pillow%20Book%20Sei%20Shonagon" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Pillow%20Book%20Sei%20Shonagon" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Pillow%20Book" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Pillow%20Book" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -604,7 +603,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Rashomon Summary and Analysis of \"Rashōmon\" - GradeSaver] Rashomon Summary and Analysis of \"Rashōmon\" ... After a series of recent calamities hits the city of Kyōto, a servant seeks shelter from the rain ...\n\n[Rashomon and Seventeen Other Stories Characters - BookRags.com] Rashomon and Seventeen Other Stories Summary & Study Guide includes comprehensive information and analysis to help you understand the book.\n\n[Rashōmon and Seventeen Other Stories by Ryūnosuke Akutagawa] 'Rashōmon' and 'In a Bamboo Grove' inspired Kurosawa's magnificent film and depict a past in which morality is turned upsi",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E7%94%9F%E9%97%A8", tier: "reference", fetchedAt: "2026-05-21T05:17:56.545Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BD%97%E7%94%9F%E9%97%A8", tier: "reference", fetchedAt: "2026-05-21T05:22:42.766Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -798,24 +797,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "thousand-nights": {
     id: "thousand-nights",
     characters: [
-      { name: "Tales", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
-      { name: "The Arabian Nights", role: "角色", description: "One Thousand and One Nights 中的主要角色。" }
+      { name: "The Thousand", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "One Nights", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "Themes", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "Facts", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "Scheherazade", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "One Thousand", role: "角色", description: "One Thousand and One Nights 中的主要角色。" },
+      { name: "One Nights Summary", role: "角色", description: "One Thousand and One Nights 中的主要角色。" }
     ],
-    plotSummary: "《一千零一夜》（Tales from the thousand and one nights、The Arabian Nights）是阿拉伯民间故事集，又名《天方夜谭》。该作讲述古代阿拉伯地区有一位国王叫山鲁亚尔，他生性残暴嫉妒，因王后行为不端，将其杀死，此后每日娶一少女，翌日晨即杀掉，以示报复。宫相维齐尔的女儿山鲁佐德为拯救无辜的女子，自愿嫁给国王。山鲁佐德用讲述故事方法吸引国王，每夜讲到最精彩处，天刚好亮了，使国王因爱听故事而不忍杀她，允许她下一夜继续讲。她的故事一直讲了一千零一夜，国王终于被感动，与她白首偕老。因其内容丰富，规模宏大，故被高尔基誉为世界民间文学史上“最壮丽的一座纪念碑”。\n《一千零一夜》（Tales from the thousand and one nights、The Arabian Nights）是阿拉伯民间故事集，又名《天方夜谭》。\n\n该作讲述古代阿拉伯地区有一位国王叫山鲁亚尔，他生性残暴嫉妒，因王后行为不端，将其杀死，此后每日娶一少女，翌日晨即杀掉，以示报复。宫相维齐尔的女儿山鲁佐德为拯救无辜的女子，自愿嫁给国王。山鲁佐德用讲述故事方法吸引国王，每夜讲到最精彩处，天刚好亮了，使国王因爱听故事而不忍杀她，允许她下一夜继续讲。她的故事一直讲了一千零一夜，国王终于被感动，与她白首偕老。因其内容丰富，规模宏大，故被高尔基誉为世界民间文学史上“最壮丽的一座纪念碑”。\n\n相传古时候，在古阿拉伯的海岛上，有一个萨桑王国，国王名叫山努亚。有一天，山努亚和他的弟弟萨曼来到一片紧邻大海的草原，当他们正在一棵树下休息时，突然海中间冒起一个黑色的水柱，一个女郎来到了他们身边，并告诉他们天下所有的妇女都是不可信赖、不可信任的。 [1]\n\n国王山努亚和弟弟萨曼回到萨桑王国后，发现王后行为不端，他们便杀死王后。从此，山努亚深深地厌恶妇女便又杀死宫女，他存心报复，又开始每天娶一个女子来过一夜，次日便杀掉再娶，完全变成了一个暴君。这样年复一年，持续了三个年头，杀掉了一千多个女子。\n\n《一千零一夜》的形成发展过程经历了漫长的8个世纪。《一千零一夜》的名称出自这部故事集开头的第一个故事。相传在古代印度和中国之间的海上有一个岛国叫萨桑国。国王山鲁亚尔发现王后和妃子“不贞”，杀死她们后，国王每夜都要新娶一个少女，翌晨杀掉。“百姓受此威胁，十分恐怖，都带着女儿逃走。可是国王照例",
+    plotSummary: "Get ready to explore One Thousand and One Nights and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide One Thousand and One Nights Anonymous One Thousand and One Nights Anonymous 56 pages • 1-hour read Anonymous One Thousand and One Nights Fiction | Short Story Collection | Adult | Published in 2015 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Summaries & Analyses Plot Summary Story Summaries & Analyses Introduction Prologue-Story 1 Stories 2-5 Stories 6-7 Story 8-Epilogue Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Summary and Study Guide Overview Tales from the Thousand and One Nights",
     plotNodes: [
-      { label: "Part 1", description: "《一千零一夜》（Tales from the thousand and one nights、The Arabian Nights）是阿拉伯民间故事集，又名《天方夜谭》。该作讲述古代阿拉伯地区有一位国王叫山鲁亚尔，他生性残暴嫉妒，因王后行为不端，将其杀死，此后每日娶一少女，翌日晨即杀掉，以示报复。宫相维齐尔的女儿山鲁佐德为拯救无辜的女子，自愿嫁给国王。山鲁佐德用讲述故事方法吸引国王，每夜讲到最精彩" },
-      { label: "Part 2", description: "该作讲述古代阿拉伯地区有一位国王叫山鲁亚尔，他生性残暴嫉妒，因王后行为不端，将其杀死，此后每日娶一少女，翌日晨即杀掉，以示报复。宫相维齐尔的女儿山鲁佐德为拯救无辜的女子，自愿嫁给国王。山鲁佐德用讲述故事方法吸引国王，每夜讲到最精彩处，天刚好亮了，使国王因爱听故事而不忍杀她，允许她下一夜继续讲。她的故事一直讲了一千零一夜，国王终于被感动，与她白首偕老。因其内容丰富，规模宏大，故被高尔基誉为世界民间文" },
-      { label: "Part 3", description: "相传古时候，在古阿拉伯的海岛上，有一个萨桑王国，国王名叫山努亚。有一天，山努亚和他的弟弟萨曼来到一片紧邻大海的草原，当他们正在一棵树下休息时，突然海中间冒起一个黑色的水柱，一个女郎来到了他们身边，并告诉他们天下所有的妇女都是不可信赖、不可信任的。" },
-      { label: "Part 4", description: "国王山努亚和弟弟萨曼回到萨桑王国后，发现王后行为不端，他们便杀死王后。从此，山努亚深深地厌恶妇女便又杀死宫女，他存心报复，又开始每天娶一个女子来过一夜，次日便杀掉再娶，完全变成了一个暴君。这样年复一年，持续了三个年头，杀掉了一千多个女子。" },
-      { label: "Part 5", description: "《一千零一夜》的形成发展过程经历了漫长的8个世纪。《一千零一夜》的名称出自这部故事集开头的第一个故事。相传在古代印度和中国之间的海上有一个岛国叫萨桑国。国王山鲁亚尔发现王后和妃子“不贞”，杀死她们后，国王每夜都要新娶一个少女，翌晨杀掉。“百姓受此威胁，十分恐怖，都带着女儿逃走。可是国王照例" }
+      { label: "Part 1", description: "Get ready to explore One Thousand and One Nights and its meaning." },
+      { label: "Part 2", description: "Study Guide One Thousand and One Nights Anonymous One Thousand and One Nights Anonymous 56 pages • 1-hour read Anonymous One Thousand and One Nights Fiction | Short Story Collection | Adult | Publishe" }
     ],
-    themeAnalysis: "",
-    techniques: "",
-    excerpts: [],
-    insights: "《一千零一夜》（Tales from the thousand and one nights、The Arabian Nights）是阿拉伯民间故事集，又名《天方夜谭》。该作讲述古代阿拉伯地区有一位国王叫山鲁亚尔，他生性残暴嫉妒，因王后行为不端，将其杀死，此后每日娶一少女，翌日晨即杀掉，以示报复。宫相维齐尔的女儿山鲁佐德为拯救无辜的女子，自愿嫁给国王。山鲁佐德用讲述故事方法吸引国王，每夜讲到最精彩处，天刚好亮了，使国王因爱听故事而不忍杀她，允许她下一夜继续讲。她的故事一直讲了一千零一夜，国王终于被感动，与她白首偕老。因其内容丰富，规模宏大，故被高尔基誉为世界民间文学史上“最壮丽的一座纪念碑”。\n《一千零一夜》（Tales from the thousand and one nights、The Arabian Nights）是阿拉伯民间故事集，又名《天方夜谭》。\n\n该作讲述古代阿拉伯地区有一位国王叫山鲁亚尔，他生性残暴嫉妒，因王后行为不端，将其杀死，此后每日娶一少女，翌日晨即杀掉，以示报复。宫相维齐尔的女儿山鲁佐德为拯救无辜的女子，自愿嫁给国王。山鲁佐德用讲述故事方法吸引国王，每夜讲到最精彩处，天刚好亮了，使国王因爱听故事而不忍杀她，允许她下一夜继续讲。她的故事一直讲了一千零一夜，国王终于被感动，与她白首偕老。因其内容丰富，规模宏大，故被高尔基誉为世界民间文学史上“最壮丽的一座纪念",
+    themeAnalysis: "Get ready to explore One Thousand and One Nights and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide One Thousand and One Nights Anonymous One Thousand and One Nights Anonymous 56 pages • 1-hour read Anonymous One Thousand and One Nights Fiction | Short Story Collection | Adult | Published in 2015 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Summaries & Analyses Plot Summary Story Summaries & Analyses Introduction Prologue-Story 1 Stories 2-5 Stories 6-7 Story 8-E",
+    techniques: "The Thousand and One Nights is a collection of largely Middle Eastern and Indian stories. The date and authorship of its stories are uncertain. Its tales of Aladdin, Ali Baba, and Sindbad the Sailor have become part of Western folklore.\n\nThe Thousand and One Nights Introduction References & Edit History Related Topics Images & Videos At a Glance The Thousand and One Nights summary Quizzes The Literary World Related Questions How does the Iliad end? When does the Iliad take place? Why is the Iliad important? What is the Odyssey? Did the Odyssey actually happen? Contents CITE verified Cite While",
+    excerpts: [
+      { quote: "One Thousand ... - Facebook] ", context: "From One Thousand and One Nights" },
+      { quote: "One Thousand and One Nights,", context: "From One Thousand and One Nights" },
+      { quote: "The thousand and one nights", context: "From One Thousand and One Nights" }
+    ],
+    insights: "[One Thousand and One Nights - Wikipedia] One Thousand and One Nights is a collection of Middle Eastern folktales compiled in the Arabic language during the Islamic Golden Age.\n\n[The Thousand and One Nights | Summary, Themes, & Facts] Scheherazade derives its themes from the evocative stories of characters ... story One Thousand and One Nights as they evolve through history and ...\n\n[One Thousand and One Nights Summary and Study Guide] Get ready to explore One Thousand and One Nights and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and ...",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E5%A4%9C", tier: "reference", fetchedAt: "2026-05-21T04:25:58.551Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E5%A4%9C", tier: "reference", fetchedAt: "2026-05-21T05:21:55.943Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

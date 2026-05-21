@@ -412,5 +412,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:21:34.922Z"
+  },
+  {
+    "bookId": "tb-doueyuan",
+    "title": "窦娥冤",
+    "author": "关汉卿",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:22:19.993Z"
   }
 ]
