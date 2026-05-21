@@ -994,7 +994,14 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "aeneid": {
     id: "aeneid",
     characters: [
-      { name: "The Aeneid", role: "角色", description: "Aeneid 中的主要角色。" }
+      { name: "The Aeneid", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Troy", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Italy", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Read", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Aeneas", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Dido", role: "角色", description: "Aeneid 中的主要角色。" },
+      { name: "Carthage", role: "角色", description: "Aeneid 中的主要角色。" }
     ],
     plotSummary: "《埃涅阿斯纪》（The Aeneid）是古罗马作家普布留斯·维吉留斯·马罗（通称维吉尔）创作的一部史诗，创作于公元前30年—公元前19年，又译作《伊尼德》。《埃涅阿斯纪》取材于古罗马神话传说，是叙述埃涅阿斯建立拉维尼乌姆城的故事。全诗12卷，共9896行诗句。按故事说，可以分为前后两部分，各6卷，前半部分仿《奥德赛》，写埃涅阿斯的流浪；后半部分仿《伊利亚特》，写埃涅阿斯与图尔努斯的战争。也可以分成三部分，各4卷，第一部以特洛伊的陷落和狄多的悲剧为中心；第二部分是过渡，写埃涅阿斯到达意大利，结盟，准备战争；第三部分写战争。全诗在写作上完全模仿荷马的两部史诗，很多情节结构雷同，但独具一种严肃哀婉的风格，而且结构严谨，故事性强，人物刻画细腻并着重心理描写，语言规范，用六步诗行写成，大量采用比喻，语言形象生动，塑造了一个诗人理想的政治领袖的典型。《埃涅阿斯纪》是“文人史诗”的开端，它使古代史诗创作\n《埃涅阿斯纪》（The Aeneid）是古罗马作家普布留斯·维吉留斯·马罗（通称维吉尔）创作的一部史诗，创作于公元前30年—公元前19年，又译作《伊尼德》。 [1-2]\n\n《埃涅阿斯纪》取材于古罗马神话传说，是叙述埃涅阿斯建立拉维尼乌姆城的故事 [8]。全诗12卷，共9896行诗句。 [1]按故事说，可以分为前后两部分，各6卷，前半部分仿《奥德赛》，写埃涅阿斯的流浪；后半部分仿《伊利亚特》，写埃涅阿斯与图尔努斯的战争。也可以分成三部分，各4卷，第一部以特洛伊的陷落和狄多的悲剧为中心；第二部分是过渡，写埃涅阿斯到达意大利，结盟，准备战争；第三部分写战争。 [2]全诗在写作上完全模仿荷马的两部史诗，很多情节结构雷同，但独具一种严肃哀婉的风格，而且结构严谨，故事性强，人物刻画细腻并着重心理描写，语言规范，用六步诗行写成，大量采用比喻，语言形象生动，塑造了一个诗人理想的政治领袖的典型。 [1]\n\n《埃涅阿斯纪》是“文人史诗”的开端，它使古代史诗创作在结构、人物、诗歌格律等方面都进一步定型，对后世欧洲史诗体裁产生了很大影响，作家塔索、弥尔顿等都以其为范本。 [1]\n\n《埃涅阿斯纪》共12卷，故事按史诗的规格要求，从中间开始（in medias res），而不从开天辟地（ab ovo）说起。史诗一开始，特洛伊人已经过七年海上漂泊，正离开西西里往北向意大利进发。但尤诺同他们作对，命令风神刮起大",
     plotNodes: [
@@ -1003,13 +1010,13 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
       { label: "Part 3", description: "《埃涅阿斯纪》是“文人史诗”的开端，它使古代史诗创作在结构、人物、诗歌格律等方面都进一步定型，对后世欧洲史诗体裁产生了很大影响，作家塔索、弥尔顿等都以其为范本。" },
       { label: "Part 4", description: "《埃涅阿斯纪》共12卷，故事按史诗的规格要求，从中间开始（in medias res），而不从开天辟地（ab ovo）说起。史诗一开始，特洛伊人已经过七年海上漂泊，正离开西西里往北向意大利进发。但尤诺同他们作对，命令风神刮起大" }
     ],
-    themeAnalysis: "",
-    techniques: "",
+    themeAnalysis: "[The Aeneid by Virgil | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes in Virgil's epic poem The Aeneid. Download the free study guide and infographic for The Aeneid here: ...\n\n[The Aeneid Study Guide | Course Hero] This study guide and infographic for Virgil's The Aeneid offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[The Aeneid Study Guide | Literature Guide - LitCharts] The best study guide to The Aeneid on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Aeneid: Character List | SparkNotes] The Aeneid is about his journey from Troy to Italy, which enables him to fulfill his fate. Read an in-depth analysis of Aeneas. Dido. The queen of Carthage, a ...\n\n[Aeneid by V",
+    techniques: "[The Aeneid Study Guide | Course Hero] This study guide and infographic for Virgil's The Aeneid offer summary and analysis on themes, symbols, and other literary devices found in the text.",
     excerpts: [],
-    insights: "《埃涅阿斯纪》（The Aeneid）是古罗马作家普布留斯·维吉留斯·马罗（通称维吉尔）创作的一部史诗，创作于公元前30年—公元前19年，又译作《伊尼德》。《埃涅阿斯纪》取材于古罗马神话传说，是叙述埃涅阿斯建立拉维尼乌姆城的故事。全诗12卷，共9896行诗句。按故事说，可以分为前后两部分，各6卷，前半部分仿《奥德赛》，写埃涅阿斯的流浪；后半部分仿《伊利亚特》，写埃涅阿斯与图尔努斯的战争。也可以分成三部分，各4卷，第一部以特洛伊的陷落和狄多的悲剧为中心；第二部分是过渡，写埃涅阿斯到达意大利，结盟，准备战争；第三部分写战争。全诗在写作上完全模仿荷马的两部史诗，很多情节结构雷同，但独具一种严肃哀婉的风格，而且结构严谨，故事性强，人物刻画细腻并着重心理描写，语言规范，用六步诗行写成，大量采用比喻，语言形象生动，塑造了一个诗人理想的政治领袖的典型。《埃涅阿斯纪》是“文人史诗”的开端，它使古代史诗创作\n《埃涅阿斯纪》（The Aeneid）是古罗马作家普布留斯·维吉留斯·马罗（通称维吉尔）创作的一部史诗，创作于公元前30年—公元前19年，又译作《伊尼德》。 [1-2]\n\n《埃涅阿斯纪》取材于古罗马神话传说，是叙述埃涅阿斯建立拉维尼乌姆城的故事 [8]。全诗12卷，共9896行诗句。 [1]按故事说，可以分为前后两部分，各6卷，前半部分仿《奥德赛》，写埃涅阿斯的流浪；后半部分仿《伊利亚特》，写埃",
+    insights: "[The Aeneid Study Guide | Literature Guide - LitCharts] The best study guide to The Aeneid on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[Aeneid - Wikipedia] The Aeneid is a Latin epic poem that tells the legendary story of Aeneas, a Trojan who fled the fall of Troy and travelled to Italy, where he became the ...\n\n[The Aeneid: Character List | SparkNotes] The Aeneid is about his journey from Troy to Italy, which enables him to fulfill his fate. Read an in-depth analysis of Aeneas. Dido. The queen of Carthage, a ...\n\n[The Aeneid by Virgil | S",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%9F%83%E6%B6%85%E9%98%BF%E6%96%AF%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T04:27:17.142Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%9F%83%E6%B6%85%E9%98%BF%E6%96%AF%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T05:23:25.970Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
