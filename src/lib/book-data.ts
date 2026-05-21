@@ -520,7 +520,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Pillow Book Study Guide | Literature Guide - LitCharts] The best study guide to The Pillow Book on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Pillow Book of Sei Sh¯onagon, Translated [from the Japanese ...] There is no real plot in The Pillow Book, although there are recurring characters and themes. Some of her recurring themes include beauty, position, and nature.\n\n[Exploring Heian Court Life Through \"The Pillow Book\" & \"Genji] Theme: The main themes in \"The Pillow Book\" include the transience of life (mono no aware), the apprecia",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9E%95%E8%8D%89%E5%AD%90", tier: "reference", fetchedAt: "2026-05-21T05:22:36.014Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9E%95%E8%8D%89%E5%AD%90", tier: "reference", fetchedAt: "2026-05-21T05:27:30.887Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1196,19 +1196,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "wuthering-heights": {
     id: "wuthering-heights",
-    plotSummary: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社会——两个孤立的山庄和\n《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。 [6]\n\n小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。 [19]小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。 [12]作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社会——两个孤立的山庄和开放的大自然与荒原，书小人物身上体现出爱与恨两种极端，极度的爱中混杂着极度的恨，使小说在战栗中呈现出强烈的戏剧化色彩。 [17]\n\n《呼啸山庄》是作者唯一的一部长篇小说，该小说奠定了她在英国文学史乃至世界文学史上的地位。 [9]《呼啸山庄》被公认为世界名著，英国作家毛姆甚至把它奉为世界最杰出的十部小说之一，与《战争与和平》等并列 [7]。截至2026年，《呼啸山庄",
-    plotNodes: [
-      { label: "Part 1", description: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子" },
-      { label: "Part 2", description: "小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开" },
-      { label: "Part 3", description: "《呼啸山庄》是作者唯一的一部长篇小说，该小说奠定了她在英国文学史乃至世界文学史上的地位。" }
+    characters: [
+      { name: "Wuthering Heights Character", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Though", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Linton", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Joseph", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Long", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Wuthering Heights", role: "角色", description: "Wuthering Heights 中的主要角色。" },
+      { name: "Character List", role: "角色", description: "Wuthering Heights 中的主要角色。" }
     ],
-    themeAnalysis: "",
+    plotSummary: "[Wuthering Heights by Emily Brontë | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Emily Brontë's novel Wuthering Heights. Download the free study guide and infographic for Wuthering ...\n\n[Story Skeleton—Wuthering Heights - The Darling Axe] Dive into our \"Wuthering Heights\" summary, exploring key plot points and themes in Emily Brontë's Gothic novel.\n\n[Wuthering Heights by Emily Brontë | Plot, Characters & Analysis] Wuthering Heights is a gothic novel about a severely toxic relationship between Catherine and Heathcliff. Heathcliff came from unknown circumstances and was ...\n\n《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社",
+    plotNodes: [
+      { label: "Part 1", description: "[Wuthering Heights by Emily Brontë | Summary & Analysis - YouTube] ..." },
+      { label: "Part 2", description: "[Story Skeleton—Wuthering Heights - The Darling Axe] Dive into our \"Wuthering Heights\" summary, exploring key plot points and themes in Emily Brontë's Gothic novel." },
+      { label: "Part 3", description: "[Wuthering Heights by Emily Brontë | Plot, Characters & Analysis] Wuthering Heights is a gothic novel about a severely toxic relationship between Catherine and Heathcliff." },
+      { label: "Part 4", description: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子" }
+    ],
+    themeAnalysis: "[Wuthering Heights by Emily Brontë—Summary and Analysis] Wuthering Heights brings together themes of love and obsession, jealousy and revenge, social class conflicts, and the supernatural.\n\n[Wuthering Heights by Emily Brontë | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Emily Brontë's novel Wuthering Heights. Download the free study guide and infographic for Wuthering ...\n\n[Wuthering Heights Character Analysis - LitCharts] Though lovely looking, Linton is sickly, whiny, effeminate, and weak. Joseph. Long-time servant at Wuthering Heights. He is very religious and judgmental.\n\n[The meaning of Wuthering Heights *SPOILERS* : r/literature - Reddit] This means that, in the end, after a lot of string pulling, she manages to become the mistress of both Wuthering Hei",
     techniques: "",
     excerpts: [],
-    insights: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社会——两个孤立的山庄和\n《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。 [6]\n\n小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之",
+    insights: "[Wuthering Heights - Wikipedia] Heathcliff: An ethnically uncertain foundling from Liverpool, who is taken by Earnshaw to Wuthering Heights, where he is reluctantly cared for by the family and ...\n\n[Wuthering Heights Character Analysis - LitCharts] Though lovely looking, Linton is sickly, whiny, effeminate, and weak. Joseph. Long-time servant at Wuthering Heights. He is very religious and judgmental.\n\n[Wuthering Heights: Character List | SparkNotes] An orphan brought to live at Wuthering Heights by Mr. Earnshaw, Heathcliff falls into an intense, unbreakable love with Mr. Earnshaw's daughter Ca",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%91%BC%E5%95%B8%E5%B1%B1%E5%BA%84", tier: "reference", fetchedAt: "2026-05-21T04:29:59.755Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%91%BC%E5%95%B8%E5%B1%B1%E5%BA%84", tier: "reference", fetchedAt: "2026-05-21T05:27:26.945Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

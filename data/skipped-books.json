@@ -466,5 +466,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:26:07.095Z"
+  },
+  {
+    "bookId": "tb-guoguoqinlun",
+    "title": "过秦论",
+    "author": "贾谊",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:26:52.711Z"
   }
 ]
