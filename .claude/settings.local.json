@@ -57,7 +57,12 @@
       "Bash(echo \"EXIT: $?\")",
       "Bash(export SERPER_API_KEY=\"4ceeb69911c26618fa8dc447573b65fd77e3bffb\")",
       "Bash(git status *)",
-      "Bash(git check-ignore *)"
+      "Bash(git check-ignore *)",
+      "Bash(tasklist)",
+      "Bash(git ls-tree *)",
+      "Bash(node -e \"process.kill\\(parseInt\\(require\\('fs'\\).readFileSync\\('C:/Users/lenovo/world-literature/.next/dev.pid','utf8'\\).trim\\(\\)\\)\\)\")",
+      "Bash(rm -rf .next/dev.pid)",
+      "Bash(git rm *)"
     ]
   }
 }

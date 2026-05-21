@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T05:46:24.435Z",
+    "generatedAt": "2026-05-21T07:15:06.385Z",
     "summary": {
       "totalUniqueWorks": 1457,
       "coreWorks": 106,
@@ -183,7 +183,16 @@
     "atonement",
     "lives",
     "cloudstreet",
-    "gods-bits-of-wood"
+    "gods-bits-of-wood",
+    "tb-md-1",
+    "tb-ls-5",
+    "tb-ls-4",
+    "tb-ba-2",
+    "tb-ls-1",
+    "tb-sl-1",
+    "tb-xds-1",
+    "tb-ls-3",
+    "tb-ba-1"
   ],
   "queue": [
     {
@@ -1685,10 +1694,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:42:22.787Z",
+      "batchProcessedAt": "2026-05-21T05:47:13.470Z",
       "batchSources": [
-        "百度百科",
-        "Project Gutenberg"
+        "百度百科"
       ]
     },
     {
@@ -1709,7 +1717,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:42:55.193Z",
+      "batchProcessedAt": "2026-05-21T05:47:51.144Z",
       "batchSources": [
         "百度百科"
       ]
@@ -1732,11 +1740,9 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T04:43:41.312Z",
-      "batchSources": [
-        "wikipedia_en"
-      ],
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T05:48:39.084Z",
+      "batchSources": [],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -1757,7 +1763,7 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T04:44:13.710Z",
+      "batchProcessedAt": "2026-05-21T05:49:36.811Z",
       "batchSources": [
         "百度百科"
       ]
@@ -1780,11 +1786,9 @@
         "insights"
       ],
       "priority": 1,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T04:44:59.510Z",
-      "batchSources": [
-        "wikipedia_en"
-      ],
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T05:50:25.240Z",
+      "batchSources": [],
       "batchError": "insufficient data from APIs"
     },
     {
@@ -1805,10 +1809,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:38.976Z",
+      "batchProcessedAt": "2026-05-21T05:51:13.888Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1830,10 +1833,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:49.001Z",
+      "batchProcessedAt": "2026-05-21T05:52:02.408Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1854,10 +1856,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:47:58.033Z",
+      "batchProcessedAt": "2026-05-21T05:52:40.825Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1879,10 +1880,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:07.303Z",
+      "batchProcessedAt": "2026-05-21T05:53:28.616Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1903,10 +1903,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:14.612Z",
+      "batchProcessedAt": "2026-05-21T05:54:18.291Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1927,10 +1926,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:23.665Z",
+      "batchProcessedAt": "2026-05-21T05:55:08.406Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1951,10 +1949,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:32.723Z",
+      "batchProcessedAt": "2026-05-21T05:55:56.525Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1975,10 +1972,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:40.273Z",
+      "batchProcessedAt": "2026-05-21T05:56:35.283Z",
       "batchSources": [
-        "wikipedia_en",
-        "wikipedia_zh"
+        "百度百科"
       ]
     },
     {
@@ -1999,9 +1995,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:47.813Z",
+      "batchProcessedAt": "2026-05-21T05:57:34.488Z",
       "batchSources": [
-        "wikipedia_en"
+        "百度百科"
       ]
     },
     {
@@ -2022,10 +2018,8 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:48:55.370Z",
-      "batchSources": [
-        "wikipedia_en"
-      ]
+      "batchProcessedAt": "2026-05-21T05:58:33.860Z",
+      "batchSources": []
     },
     {
       "bookId": "true-history-kelly-gang",
@@ -2046,10 +2040,8 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:02.915Z",
-      "batchSources": [
-        "wikipedia_en"
-      ]
+      "batchProcessedAt": "2026-05-21T05:59:18.786Z",
+      "batchSources": []
     },
     {
       "bookId": "the-tree-of-man",
@@ -2069,10 +2061,8 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:10.475Z",
-      "batchSources": [
-        "wikipedia_en"
-      ]
+      "batchProcessedAt": "2026-05-21T06:00:03.987Z",
+      "batchSources": []
     },
     {
       "bookId": "voss",
@@ -2092,9 +2082,9 @@
       ],
       "priority": 1,
       "batchStatus": "done",
-      "batchProcessedAt": "2026-05-21T01:49:18.043Z",
+      "batchProcessedAt": "2026-05-21T06:01:01.648Z",
       "batchSources": [
-        "wikipedia_en"
+        "百度百科"
       ]
     },
     {
@@ -2110,7 +2100,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:51:48.887Z",
+      "batchProcessedAt": "2026-05-21T06:02:37.652Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2126,7 +2116,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:51:53.388Z",
+      "batchProcessedAt": "2026-05-21T06:04:05.105Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2142,7 +2132,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:51:57.917Z",
+      "batchProcessedAt": "2026-05-21T06:05:33.733Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2158,7 +2148,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:02.441Z",
+      "batchProcessedAt": "2026-05-21T06:07:02.966Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2174,7 +2164,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:06.964Z",
+      "batchProcessedAt": "2026-05-21T06:08:29.889Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2190,7 +2180,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:11.505Z",
+      "batchProcessedAt": "2026-05-21T06:09:57.087Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2206,7 +2196,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:16.056Z",
+      "batchProcessedAt": "2026-05-21T06:11:24.262Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2222,7 +2212,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:20.604Z",
+      "batchProcessedAt": "2026-05-21T06:12:49.825Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2237,9 +2227,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:26.676Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T06:13:35.994Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-rzj-1",
@@ -2254,7 +2245,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:31.147Z",
+      "batchProcessedAt": "2026-05-21T06:15:03.045Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2269,9 +2260,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:35.729Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T06:15:48.885Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-zzq-2",
@@ -2286,7 +2278,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:40.194Z",
+      "batchProcessedAt": "2026-05-21T06:17:16.344Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2302,7 +2294,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:44.709Z",
+      "batchProcessedAt": "2026-05-21T06:18:43.131Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2317,9 +2309,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:49.250Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T06:19:28.572Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-chaguan",
@@ -2334,7 +2327,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:53.736Z",
+      "batchProcessedAt": "2026-05-21T06:20:55.789Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2350,7 +2343,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:52:58.235Z",
+      "batchProcessedAt": "2026-05-21T06:22:22.472Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2366,7 +2359,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:02.795Z",
+      "batchProcessedAt": "2026-05-21T06:23:49.935Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2382,7 +2375,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:07.310Z",
+      "batchProcessedAt": "2026-05-21T06:25:17.651Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2398,7 +2391,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:11.833Z",
+      "batchProcessedAt": "2026-05-21T06:26:44.245Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2414,7 +2407,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:16.370Z",
+      "batchProcessedAt": "2026-05-21T06:28:11.629Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2430,7 +2423,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:20.870Z",
+      "batchProcessedAt": "2026-05-21T06:29:38.357Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2446,7 +2439,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:26.287Z",
+      "batchProcessedAt": "2026-05-21T06:31:08.404Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2462,7 +2455,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:30.832Z",
+      "batchProcessedAt": "2026-05-21T06:32:45.788Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2478,7 +2471,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:35.342Z",
+      "batchProcessedAt": "2026-05-21T06:34:16.371Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2494,7 +2487,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:39.859Z",
+      "batchProcessedAt": "2026-05-21T06:35:41.900Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2510,7 +2503,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:44.388Z",
+      "batchProcessedAt": "2026-05-21T06:37:08.745Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2526,7 +2519,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:48.908Z",
+      "batchProcessedAt": "2026-05-21T06:38:37.484Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2542,7 +2535,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:53.414Z",
+      "batchProcessedAt": "2026-05-21T06:40:09.339Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2558,7 +2551,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:53:57.961Z",
+      "batchProcessedAt": "2026-05-21T06:41:36.688Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2574,7 +2567,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:03.410Z",
+      "batchProcessedAt": "2026-05-21T06:43:05.319Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2590,7 +2583,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:07.921Z",
+      "batchProcessedAt": "2026-05-21T06:44:21.390Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2605,9 +2598,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:13.962Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T06:45:26.521Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-lin-qingxuan",
@@ -2622,7 +2616,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:18.511Z",
+      "batchProcessedAt": "2026-05-21T06:46:44.819Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2638,7 +2632,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:23.017Z",
+      "batchProcessedAt": "2026-05-21T06:48:10.363Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2654,7 +2648,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:27.539Z",
+      "batchProcessedAt": "2026-05-21T06:49:27.679Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2670,7 +2664,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:32.090Z",
+      "batchProcessedAt": "2026-05-21T06:50:50.828Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2686,7 +2680,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:36.604Z",
+      "batchProcessedAt": "2026-05-21T06:51:27.509Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2702,7 +2696,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:41.123Z",
+      "batchProcessedAt": "2026-05-21T06:52:46.552Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2718,7 +2712,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:45.635Z",
+      "batchProcessedAt": "2026-05-21T06:54:14.475Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2734,7 +2728,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:50.189Z",
+      "batchProcessedAt": "2026-05-21T06:55:42.572Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2749,9 +2743,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:54.684Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T06:56:14.971Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-zhuge-liang",
@@ -2766,7 +2761,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:54:59.194Z",
+      "batchProcessedAt": "2026-05-21T06:57:40.915Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2782,7 +2777,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:03.729Z",
+      "batchProcessedAt": "2026-05-21T06:59:06.349Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2798,7 +2793,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:08.273Z",
+      "batchProcessedAt": "2026-05-21T07:00:35.357Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2814,7 +2809,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:12.785Z",
+      "batchProcessedAt": "2026-05-21T07:02:05.084Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2830,7 +2825,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:17.332Z",
+      "batchProcessedAt": "2026-05-21T07:03:31.779Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2846,7 +2841,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:21.825Z",
+      "batchProcessedAt": "2026-05-21T07:04:59.201Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2862,7 +2857,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:26.372Z",
+      "batchProcessedAt": "2026-05-21T07:06:25.374Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2877,9 +2872,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:32.403Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T07:07:16.442Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-zzq-5",
@@ -2894,7 +2890,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:36.904Z",
+      "batchProcessedAt": "2026-05-21T07:08:41.311Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2910,7 +2906,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:41.458Z",
+      "batchProcessedAt": "2026-05-21T07:10:07.176Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2925,9 +2921,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:45.940Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T07:10:52.495Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-ls-2",
@@ -2942,7 +2939,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:50.487Z",
+      "batchProcessedAt": "2026-05-21T07:12:18.626Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2957,9 +2954,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:54.978Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T07:13:05.296Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-lsq-1",
@@ -2974,7 +2972,7 @@
       ],
       "priority": 3,
       "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:55:59.493Z",
+      "batchProcessedAt": "2026-05-21T07:14:34.009Z",
       "batchError": "insufficient data from APIs"
     },
     {
@@ -2989,9 +2987,10 @@
         "ALL"
       ],
       "priority": 3,
-      "batchStatus": "skipped",
-      "batchProcessedAt": "2026-05-21T01:56:05.557Z",
-      "batchError": "insufficient data from APIs"
+      "batchStatus": "done",
+      "batchProcessedAt": "2026-05-21T07:15:06.374Z",
+      "batchError": "insufficient data from APIs",
+      "batchSources": []
     },
     {
       "bookId": "tb-ys-2",

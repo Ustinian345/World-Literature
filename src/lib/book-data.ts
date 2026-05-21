@@ -520,7 +520,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Pillow Book Study Guide | Literature Guide - LitCharts] The best study guide to The Pillow Book on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[The Pillow Book of Sei Sh¯onagon, Translated [from the Japanese ...] There is no real plot in The Pillow Book, although there are recurring characters and themes. Some of her recurring themes include beauty, position, and nature.\n\n[Exploring Heian Court Life Through \"The Pillow Book\" & \"Genji] Theme: The main themes in \"The Pillow Book\" include the transience of life (mono no aware), the apprecia",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9E%95%E8%8D%89%E5%AD%90", tier: "reference", fetchedAt: "2026-05-21T05:27:30.887Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9E%95%E8%8D%89%E5%AD%90", tier: "reference", fetchedAt: "2026-05-21T05:22:36.014Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -549,7 +549,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Kokoro Study Guide | Literature Guide - LitCharts] Kokoro is set in the final years of the Meiji Era, which ran from 1868 to 1912. Characterized by rapid industrialization and modernization.\n\n[Kokoro Summary and Study Guide - SuperSummary] Get ready to explore Kokoro and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to ...\n\n[Kokoro Summary & Study Guide - BookRags.com] Kokoro is a story of one young man searching to fill a void in his life. It is the story of many individuals who long to appease loneliness, and the sto",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%BF%83", tier: "reference", fetchedAt: "2026-05-21T05:25:56.563Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%BF%83", tier: "reference", fetchedAt: "2026-05-21T05:21:04.518Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -821,7 +821,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[One Thousand and One Nights - Wikipedia] One Thousand and One Nights is a collection of Middle Eastern folktales compiled in the Arabic language during the Islamic Golden Age.\n\n[The Thousand and One Nights | Summary, Themes, & Facts] Scheherazade derives its themes from the evocative stories of characters ... story One Thousand and One Nights as they evolve through history and ...\n\n[One Thousand and One Nights Summary and Study Guide] Get ready to explore One Thousand and One Nights and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and ...",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E5%A4%9C", tier: "reference", fetchedAt: "2026-05-21T05:26:49.923Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E5%8D%83%E9%9B%B6%E4%B8%80%E5%A4%9C", tier: "reference", fetchedAt: "2026-05-21T05:21:55.943Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -959,7 +959,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Oedipus Rex Themes - LitCharts] Oedipus Rex Themes · Fate vs. Free Will · Guilt and Shame · Sight vs. Blindness · Finding Out the Truth · Action vs. Reflection.\n\n[The Oedipus Plays: Character List | SparkNotes] Themes, Motifs & Symbols. Deeper Study. Essays; Sophocles and The ... The Oedipus Plays: Antigone, Oedipus Rex, Oedipus at Colonus SparkNotes Literature Guide.\n\n[Oedipus Rex - Wikipedia] Prior to the start of Oedipus Rex, Oedipus has become the king of Thebes while unwittingly fulfilling a prophecy that he would kill his father, Laius (the ...\n\n[Oedipus Rex by Sophocles | Summary, Them",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:30:50.127Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%BF%84%E7%8B%84%E6%B5%A6%E6%96%AF%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:25:46.210Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -968,32 +968,37 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "medea": {
     id: "medea",
     characters: [
-      { name: "Medea", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Tragic Heroine", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Complexity", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Hero", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Euripides", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Scribd", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Jason", role: "角色", description: "Medea 中的主要角色。" },
-      { name: "Character List", role: "角色", description: "Medea 中的主要角色。" }
+      { name: "Fate", role: "角色", description: "\"Medea\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Caster", role: "角色", description: "\"Medea\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Servant", role: "角色", description: "\"Medea\" 中出现的角色。更多信息请通过搜索链接核实。" }
     ],
-    plotSummary: "[Medea by Euripides | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Euripides's play Medea. Download the free study guide and infographic for Medea here: https://www ...\n\n[Medea by Euripides | Overview, Summary & Characters - Lesson] Learn about Medea, the figure from Greek mythology. Then read a summary of the tragic play written by Euripides that takes place years after Jason...\n\nMedea Medea is the daughter of king Aeetes of the island of Clochis and granddaughter of Helios, the sun god. When Jason arrived at Clochis on his ship the Argo in search of the Golden Fleece… read analysis of Medea Jason Jason is the son of Aeson. As a child he is given to the centaur, Chiron, to be raised, educated, and protected from his greedy half-uncle, Pelias, king of Iolocus. In an effort to get… read analysis of Jason Creon Creon, son of Lycaethus, is the king of Corinth, the city-state where the events of Medea take place. He is a discerning judge of character, and accu",
+    plotSummary: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。",
     plotNodes: [
-      { label: "Part 1", description: "[Medea by Euripides | Summary & Analysis - YouTube] ..." },
-      { label: "Part 2", description: "[Medea by Euripides | Overview, Summary & Characters - Lesson] Learn about Medea, the figure from Greek mythology." },
-      { label: "Part 3", description: "Medea Medea is the daughter of king Aeetes of the island of Clochis and granddaughter of Helios, the sun god." }
+      { label: "第 1 部分", description: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格" },
+      { label: "第 2 部分", description: "美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。" },
+      { label: "第 3 部分", description: "葛木宗一郎的Servant（从者）。职阶是以魔术为专长的“Caster”。Caster在许多从者都具备对魔力能力的圣杯战争里被称作最弱，她为了弥补这点而从城镇的人们身上吸取生命力，当成魔力。 [1]人设原画" },
+      { label: "第 4 部分", description: "她的真身是希腊神话的背叛魔女美狄亚（Medea）。拥有现代的魔术师不能相比的实力，即使是大魔术也能用一工程来发动。她发挥出这项本领，实践了以从者（Servant）之身作为御主（Master）召唤出Assassin此等绝技。" },
+      { label: "第 5 部分", description: "宝具是把时间持续的所有魔术，回归到被施行之前的状态的解咒短刀“万符必应破戒(Rule Breaker)”。某意义上，可以说是把她的人生具现了出来的宝具。" }
     ],
-    themeAnalysis: "[Medea by Euripides | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Euripides's play Medea. Download the free study guide and infographic for Medea here: https://www ...\n\n[Analysis of Euripides' Medea - Literary Theory and Criticism] The Nurse's sympathetic reaction to Medea's misery sounds the play's dominant theme of the danger of passion overwhelming reason, judgment, and ...\n\n[Medea Character Analysis - LitCharts] The Nurse is one of Medea's servants. She is greatly grieved by Medea's misfortunes and, at the same time, fears for the children's lives because of Medea's all ...\n\n[Medea: Analysis of Major Characters | Literature and Writing - EBSCO] The play unfolds in Corinth, where Medea grapples with her feelings after Jason's betrayal, showcasing her compl",
-    techniques: "[Analysis of Euripides' Medea - Literary Theory and Criticism] The Nurse's sympathetic reaction to Medea's misery sounds the play's dominant theme of the danger of passion overwhelming reason, judgment, and ...\n\n[Medea: Analysis of Major Characters | Literature and Writing - EBSCO] The play unfolds in Corinth, where Medea grapples with her feelings after Jason's betrayal, showcasing her complexities as both a mother and a vengeful spirit.",
+    themeAnalysis: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。",
+    techniques: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。",
     excerpts: [
-      { quote: "My students can't get enough of your charts and their results have gone through the roof.", context: "From Medea" }
+      { quote: "万符必应破戒(Rule Breaker)", context: "来源：Medea" }
     ],
-    insights: "[Medea: Character List - SparkNotes] The play charts Medea's emotional transformation, a progression from suicidal despair to sadistic fury. She eventually avenges Jason's betrayal with a series of ...\n\n[Medea Character Analysis - LitCharts] The Nurse is one of Medea's servants. She is greatly grieved by Medea's misfortunes and, at the same time, fears for the children's lives because of Medea's all ...\n\n[Medea by Euripides | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Euripides's play Medea. Download the free study guide and infographic for Medea here: https://w",
+    insights: "美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。在《Fate》系列中，因弑杀原御主而濒临灵基消散时，被葛木宗一郎所救，并成为他的Servant。虽然性格扭曲，不过只要决定了，就会为那个男人贡献到底的她，正将感情灌注于宗一郎一个人身上。\n美狄亚是在游戏及改编动画作品《Fate》中登场的虚拟人物，是第五次圣杯战争中“Caster”职阶的Servant，优秀的神代魔术师。\n\n美狄亚真身是希腊神话中不幸的科尔基斯公主，英雄伊阿宋的原配妻子。在神话中，她被伊阿宋背叛抛弃，因愤怒而杀死了伊阿宋的新妻子和孩子，最终成为人们口中的 “背叛魔女”。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BE%8E%E7%8B%84%E4%BA%9A", tier: "reference", fetchedAt: "2026-05-21T05:33:58.552Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%BE%8E%E7%8B%84%E4%BA%9A", tier: "reference", fetchedAt: "2026-05-21T04:31:04.598Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/35451", tier: "original_text", fetchedAt: "2026-05-21T04:31:24.566Z", contributedFields: ["insights"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Medea%20Euripides" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Medea%20Euripides" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Medea" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Medea" },
+      ],
     },
   },
 
@@ -1022,7 +1027,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[The Aeneid Study Guide | Literature Guide - LitCharts] The best study guide to The Aeneid on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[Aeneid - Wikipedia] The Aeneid is a Latin epic poem that tells the legendary story of Aeneas, a Trojan who fled the fall of Troy and travelled to Italy, where he became the ...\n\n[The Aeneid: Character List | SparkNotes] The Aeneid is about his journey from Troy to Italy, which enables him to fulfill his fate. Read an in-depth analysis of Aeneas. Dido. The queen of Carthage, a ...\n\n[The Aeneid by Virgil | S",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%9F%83%E6%B6%85%E9%98%BF%E6%96%AF%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T05:28:23.040Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%9F%83%E6%B6%85%E9%98%BF%E6%96%AF%E7%BA%AA", tier: "reference", fetchedAt: "2026-05-21T05:23:25.970Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1053,7 +1058,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Metamorphoses Book 1 Summary & Analysis - SparkNotes] Ovid begins the Metamorphoses by invoking the gods. He asks them to inspire his work, which opens with the creation of the world and continues on to the present ...\n\n[Metamorphoses Study Guide - Ovid - LitCharts] From a mythological and divine perspective, the Metamorphoses outlines Julius Caesar's rise to power in Rome in 49 B.C.E. The Metamorphoses also ...\n\n[Metamorphoses Notes - BookRags.com] Plot Summary · Characters · Places & Objects · Chapter Notes & Analysis. These free notes also contain Quotes and Themes & Topics on Metamorphose",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:29:57.531Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:24:56.381Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1088,28 +1093,24 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "decameron": {
     id: "decameron",
-    characters: [
-      { name: "The Decameron Character", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "Analysis", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "The Decameron", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "Study Guide The", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "Decameron Giovanni Boccaccio", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "The Decameron Giovanni", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "Boccaccio", role: "角色", description: "The Decameron 中的主要角色。" },
-      { name: "Giovanni Boccaccio The", role: "角色", description: "The Decameron 中的主要角色。" }
-    ],
-    plotSummary: "Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses First Day Second Day Third Day Fourth Day Fifth Day Sixth Day Seventh Day Eighth Day Ninth Day Tenth Day Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Character Analysi",
+    plotSummary: "《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。《十日谈》是欧洲文学史上第一部现实主义巨著，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。 [1]\n\n该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。\n\n《十日谈》是欧洲文学史上第一部现实主义巨著 [1]，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n\n故事第一 恰泼莱托在临终时编造了一篇忏悔，把神父骗得深信不疑，虽然他生前无恶不作，死后却被人当做圣徒，被尊为“圣恰泼莱托”。\n\n故事第二 一个叫做亚伯拉罕的犹太人，听了好友杨诺的话，来到罗马，目睹教会的腐败生活，他回到巴黎之后，却改奉了天主教。\n\n故事第三 犹太人麦启士德讲了一个三只戒指的故事，因而凭着机智，逃出了苏丹想要陷害他的圈套。\n\n故事第四 一个小修士犯了戒律，理应受到重罚，他却使用巧计，证明院长也犯了这个过失，因此逃过了责罚。\n\n故事第五 蒙费拉特侯爵夫人用母鸡做酒菜，再配上几句俏皮话，打消了法兰西国王对她所起的邪念。\n\n故事第六 一个正直的人用一句尖刻得体的话，把修士的虚伪嘲笑得体无完肤。\n\n故事第七 贝加密诺讲述一个“泼里马索和克伦尼院长”的故事，借题讽刺了一个贵族近来的吝啬作风。\n\n故事第八 行吟诗人波西厄尔用一句锋利的话，讥刺了一个守财奴的性格，促使他悔悟过来。\n\n故事第九 塞浦路斯岛的国王昏庸无能，受了一位太太的讽刺，从此变得英明有为。\n\n故事第十 亚尔培多大爷单恋着一个俏丽的寡妇，寡妇想取笑他，结果反而被他",
     plotNodes: [
-      { label: "Part 1", description: "Get ready to explore The Decameron and its meaning." },
-      { label: "Part 2", description: "Study Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative t" }
+      { label: "Part 1", description: "《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。《十日谈》是欧洲文学史上第一部" },
+      { label: "Part 2", description: "该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。" },
+      { label: "Part 3", description: "《十日谈》是欧洲文学史上第一部现实主义巨著 [1]，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。" },
+      { label: "Part 4", description: "故事第一 恰泼莱托在临终时编造了一篇忏悔，把神父骗得深信不疑，虽然他生前无恶不作，死后却被人当做圣徒，被尊为“圣恰泼莱托”。" },
+      { label: "Part 5", description: "故事第二 一个叫做亚伯拉罕的犹太人，听了好友杨诺的话，来到罗马，目睹教会的腐败生活，他回到巴黎之后，却改奉了天主教。" },
+      { label: "Part 6", description: "故事第三 犹太人麦启士德讲了一个三只戒指的故事，因而凭着机智，逃出了苏丹想要陷害他的圈套。" },
+      { label: "Part 7", description: "故事第四 一个小修士犯了戒律，理应受到重罚，他却使用巧计，证明院长也犯了这个过失，因此逃过了责罚。" },
+      { label: "Part 8", description: "故事第五 蒙费拉特侯爵夫人用母鸡做酒菜，再配上几句俏皮话，打消了法兰西国王对她所起的邪念。" }
     ],
-    themeAnalysis: "Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Chapter Summaries & Analyses First Day Second Day Third Day Fourth Day Fifth Day Sixth Day Seventh Day Eighth Day",
-    techniques: "Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Decameron Giovanni Boccaccio The Decameron Giovanni Boccaccio 85 pages • 2-hour read Giovanni Boccaccio The Decameron Fiction | Novel | Adult | Published in 1353 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play",
+    themeAnalysis: "",
+    techniques: "",
     excerpts: [],
-    insights: "[The Decameron: Full Book Analysis | SparkNotes] The three major themes of The Decameron involve love, fortune, and intelligence, with the overriding theme being the power of love. In the Preface, Boccaccio ...\n\n[The Decameron Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of The Decameron. Visual theme-tracking, too. The Decameron: Themes Explanations, analysis, and visualizations ...\n\n[The Decameron Character Analysis | SuperSummary] Get ready to explore The Decameron and its meaning. Our full analysis and study guide provides an even deeper dive w",
+    insights: "《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。《十日谈》是欧洲文学史上第一部现实主义巨著，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n《十日谈》是意大利作家乔万尼·薄伽丘创作的短篇小说集，创作于1350—1353年。 [1]\n\n该作讲述1348年，意大利佛罗伦萨瘟疫流行，10名男女在乡村一所别墅里避难。他们终日游玩欢宴，每人每天讲一个故事，共住了10天讲了百个故事，这些故事批判天主教会，嘲笑教会传授黑暗和罪恶，赞美爱情是才华和高尚情操的源泉，谴责禁欲主义，无情暴露和鞭挞封建贵族的堕落和腐败，体现了人文主义思想。\n\n《十日谈》是欧洲文学史上第一部现实主义巨著 [1]，世界上第一部短篇小说集；意大利近代评论家桑克提斯曾把《十日谈》与但丁的《神曲》并列，称之为“人曲”。\n\n故事第一 恰泼莱托在临终时编造了一篇忏悔，把神父骗得深信不疑，虽然他生前无恶不作，死后却被人当做圣徒，被尊为“圣恰泼莱托”。\n\n故事第二 一个",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8D%81%E6%97%A5%E8%B0%88", tier: "reference", fetchedAt: "2026-05-21T05:37:09.358Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8D%81%E6%97%A5%E8%B0%88", tier: "reference", fetchedAt: "2026-05-21T04:33:52.374Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1122,20 +1123,19 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     characters: [
       { name: "King Lear", role: "角色", description: "King Lear 中的主要角色。" }
     ],
-    plotSummary: "[King Lear by William Shakespeare | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of William Shakespeare's play King Lear. Download the free study guide and infographic for King Lear here: ...\n\n[King Lear Study Guide | Literature Guide - LitCharts] Shakespeare drew the main plot of King Lear—that is, the story of a ruler who divides his kingdom among his children and is consequently ruined—from several ...\n\n[King Lear by William Shakespeare | Summary, Characters & Analysis] King Lear by William Shakespeare is a tragic play about how people are not always what they seem. But who is King Lear? King Lear is the elderly monarch of ...\n\n《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧，于1606年12月26日在英国王宫怀特大厅首演；剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱逐出城。李尔在暴风雨中流浪荒野，饱尝苦难，陷入疯狂。磨难中他开始反思过往，逐渐认清是非善恶。考狄利娅得知父亲遭遇后率军前来救助，父女重逢，但法军战败，考狄利娅被俘遇害，李尔最终守着小女儿的遗体悲痛而亡。1607年11月26日，《李尔王》印刷版在书业公所登记，1608年",
+    plotSummary: "《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧，于1606年12月26日在英国王宫怀特大厅首演；剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱逐出城。李尔在暴风雨中流浪荒野，饱尝苦难，陷入疯狂。磨难中他开始反思过往，逐渐认清是非善恶。考狄利娅得知父亲遭遇后率军前来救助，父女重逢，但法军战败，考狄利娅被俘遇害，李尔最终守着小女儿的遗体悲痛而亡。1607年11月26日，《李尔王》印刷版在书业公所登记，1608年首印于第一四开本出版，1623年收入第一对开本再版，17世纪该剧目的演出版本主要根据1608、1623年两个版本衍生。《李尔王》被誉\n《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧， [16]于1606年12月26日在英国王宫怀特大厅首演； [22-24]剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。 [3] [16] [21]\n\n该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱逐出城。李尔在暴风雨中流浪荒野，饱尝苦难，陷入疯狂。磨难中他开始反思过往，逐渐认清是非善恶。考狄利娅得知父亲遭遇后率军前来救助，父女重逢，但法军战败，考狄利娅被俘遇害，李尔最终守着小女儿的遗体悲痛而亡。 [1] [16]1607年11月26日，《李尔王》印刷版在书业公所登记，1608年首印于第一四开本出版，1623年收入第一对开本再版， [23-24] [25]17世纪该剧目的演出版本主要根据1608、1623年两个版本衍生。 [26]\n\n《李尔王》被誉为莎士比亚四大悲剧中最具艺术价值的作品，其通过描述王室家族的内乱和李尔王跌宕的命运，刻画权力、欲望下人性的撕裂与挣扎，在呈现出悲剧力量的同时饱含着对爱和恩典的呼唤与向往。2017年国家大剧院与北京李六乙戏剧工作室联合创排并首演该剧。 [17]2019年6月铃木忠志改编版的《李尔王》",
     plotNodes: [
-      { label: "Part 1", description: "[King Lear by William Shakespeare | Summary & Analysis - YouTube] ..." },
-      { label: "Part 2", description: "[King Lear Study Guide | Literature Guide - LitCharts] Shakespeare drew the main plot of King Lear—that is, the story of a ruler who divides his kingdom among his children and is consequently ruined—f" },
-      { label: "Part 3", description: "[King Lear by William Shakespeare | Summary, Characters & Analysis] King Lear by William Shakespeare is a tragic play about how people are not always what they seem." },
-      { label: "Part 4", description: "《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧，于1606年12月26日在英国王宫怀特大厅首演；剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱" }
+      { label: "Part 1", description: "《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧，于1606年12月26日在英国王宫怀特大厅首演；剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱" },
+      { label: "Part 2", description: "该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱逐出城。李尔在暴风雨中流浪荒野，饱尝苦难，陷入疯狂。磨难中他开始反思过往，逐渐认清是非善恶。考狄利娅得知父亲遭遇后率军前来救助，父女重逢，但法军战败，考狄利娅被俘遇害，李尔最终守着小女儿" },
+      { label: "Part 3", description: "《李尔王》被誉为莎士比亚四大悲剧中最具艺术价值的作品，其通过描述王室家族的内乱和李尔王跌宕的命运，刻画权力、欲望下人性的撕裂与挣扎，在呈现出悲剧力量的同时饱含着对爱和恩典的呼唤与向往。2017年国家大剧院与北京李六乙戏剧工作室联合创排并首演该剧。" }
     ],
-    themeAnalysis: "[King Lear by William Shakespeare | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of William Shakespeare's play King Lear. Download the free study guide and infographic for King Lear here: ...\n\n[King Lear Themes, Characters, & Analysis Essay - IvyPanda] This essay focuses on King Lear analysis: themes, characters, and main ideas. Justice, madness, suffering, and other major themes of King Lear are described ...\n\n[Themes and Plot of King Lear | PDF - Scribd] King Lear is a Shakespearean tragedy about an aging king of Britain who foolishly divides his kingdom between his two deceitful daughters, Goneril and Regan ...\n\n[King Lear by William Shakespeare | Summary, Characters & Analysis] King Lear by William Shakespeare is a tragic play about how people are not always",
-    techniques: "[[PDF] William Shakespeare's King Lear Study Guide - Orlando Shakes] One of the themes in King Lear is family. There are many different family structures within the play. Can you identify the different families in the play?",
+    themeAnalysis: "",
+    techniques: "",
     excerpts: [],
-    insights: "[King Lear Study Guide | Literature Guide - LitCharts] Shakespeare drew the main plot of King Lear—that is, the story of a ruler who divides his kingdom among his children and is consequently ruined—from several ...\n\n[King Lear: Character List | SparkNotes] King Lear. The aging king of Britain and the protagonist of the play. Lear is used to enjoying absolute power and to being flattered, and he does not ...\n\n[King Lear by William Shakespeare | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of William Shakespeare's play King Lear. Download the free study guide and info",
+    insights: "《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧，于1606年12月26日在英国王宫怀特大厅首演；剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承权并远嫁法国。得到国土的两个女儿很快显露出冷漠本性，将李尔驱逐出城。李尔在暴风雨中流浪荒野，饱尝苦难，陷入疯狂。磨难中他开始反思过往，逐渐认清是非善恶。考狄利娅得知父亲遭遇后率军前来救助，父女重逢，但法军战败，考狄利娅被俘遇害，李尔最终守着小女儿的遗体悲痛而亡。1607年11月26日，《李尔王》印刷版在书业公所登记，1608年首印于第一四开本出版，1623年收入第一对开本再版，17世纪该剧目的演出版本主要根据1608、1623年两个版本衍生。《李尔王》被誉\n《李尔王》（King Lear）是威廉·莎士比亚于1605-1606年创作的戏剧， [16]于1606年12月26日在英国王宫怀特大厅首演； [22-24]剧本取材于英国的古代传说，是莎士比亚创作的四大悲剧之一。 [3] [16] [21]\n\n该剧讲述年事已高的不列颠国王李尔王决定将国土分给三个女儿，长女高纳里尔与次女里根用阿谀之词赢得父亲的宠信并分到国土，而小女考狄利娅因拒绝过度奉承被剥夺继承",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%B0%94%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T05:33:16.014Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%8E%E5%B0%94%E7%8E%8B", tier: "reference", fetchedAt: "2026-05-21T04:30:32.441Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1143,16 +1143,6 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "paradise-lost": {
     id: "paradise-lost",
-    characters: [
-      { name: "Poem", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "Paradise Lost", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "John Milton", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "Character Analysis Satan", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "Overall", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "Satan", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "Century Poetry Paradise", role: "角色", description: "Paradise Lost 中的主要角色。" },
-      { name: "Lost John Milton", role: "角色", description: "Paradise Lost 中的主要角色。" }
-    ],
     plotSummary: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。\n《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。 [32]\n\n《失乐园》取材于《圣经·旧约·创世纪》 [33]，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。 [28]该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。 [25]\n\n《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。 [17]\n\n弥尔顿生活的年代，正是欧洲文艺复兴的高峰期，文艺复兴提倡的人文精神已经得到广泛的传播和接受。反对神性，提倡人性，对教会乃至旧的封建制度的批判，也深深地影响了弥尔顿。同时，17世纪，新兴科学的兴起使人们看见了改造大自然的更大的可能性，人的自信心、进取心也前所未有的高扬起来。但英国统治阶级依然停留恪守于旧的封建统治模式，严重滞后于人民的要求。",
     plotNodes: [
       { label: "Part 1", description: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗" },
@@ -1160,16 +1150,13 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
       { label: "Part 3", description: "《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。" },
       { label: "Part 4", description: "弥尔顿生活的年代，正是欧洲文艺复兴的高峰期，文艺复兴提倡的人文精神已经得到广泛的传播和接受。反对神性，提倡人性，对教会乃至旧的封建制度的批判，也深深地影响了弥尔顿。同时，17世纪，新兴科学的兴起使人们看见了改造大自然的更大的可能性，人的自信心、进取心也前所未有的高扬起来。但英国统治阶级依然停留恪守于旧的封建统治模式，严重滞后于人民的要求。" }
     ],
-    themeAnalysis: "[Poem:Paradise Lost by John Milton. Character Analysis Satan] Overall, Satan is a complex and compelling character in \"Paradise Lost,\" embodying themes of rebellion, ambition, pride, and tragic heroism. He ...\n\n[16th and 17th Century Poetry Paradise Lost John Milton Summary ...] ... John Milton's \"Paradise Lost\": Literary Analysis and Themes 1. Who is depicted as a heroic character in Book One of \"Paradise Lost\"? - a ...\n\n[Paradise Lost Study Guide | Course Hero] This study guide and infographic for John Milton's Paradise Lost offer summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Paradise Lost by John Milton - Themes and Character Analysis] This video focuses on the analysis of themes and characters in the novel, Paradise Lost by John Milton.\n\n[Book",
-    techniques: "[16th and 17th Century Poetry Paradise Lost John Milton Summary ...] ... John Milton's \"Paradise Lost\": Literary Analysis and Themes 1. Who is depicted as a heroic character in Book One of \"Paradise Lost\"? - a ...\n\n[Paradise Lost Study Guide | Course Hero] This study guide and infographic for John Milton's Paradise Lost offer summary and analysis on themes, symbols, and other literary devices found in the text.",
-    excerpts: [
-      { quote: "justify the ways of God to men", context: "From Paradise Lost" },
-      { quote: ": Literary Analysis and Themes 1. Who is depicted as a heroic character in Book One of ", context: "From Paradise Lost" }
-    ],
-    insights: "[Book 1 Summary & Analysis - Paradise Lost - LitCharts] Milton inverts tradition by beginning with the antagonist, Satan, instead of a protagonist. One of the great debates about Paradise Lost has been just how much ...\n\n[Paradise Lost - Wikipedia] At the heart of Paradise Lost are the themes of free will and the moral consequences of disobedience. Milton seeks to \"justify the ways of God to men\" (1.20), ...\n\n[Paradise Lost: Full Poem Summary - SparkNotes] Milton's speaker begins Paradise Lost by stating that his subject will be Adam and Eve's disobedience and fall from grace. He invokes a hea",
+    themeAnalysis: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。\n《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。 [32]\n\n《失乐园》取材于《圣经·旧约·创世纪》 [33]，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。 [28]该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。 [25]\n\n《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融",
+    techniques: "",
+    excerpts: [],
+    insights: "《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。《失乐园》取材于《圣经·旧约·创世纪》，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊甸园的故事，以及撒旦叛逆的形象，暗示了当时英国资产阶级革命失败的原因，表达了作者革命的清教思想。该作品用无韵诗体写成。在地狱、混沌、人间等壮阔的背景下，构思宏伟，语言雄辩而充满激情。《失乐园》与荷马的《荷马史诗》、阿利盖利·但丁的《神曲》并称为西方三大诗歌。《失乐园》第一次在文学创作领域内把反面人物撒旦作为主人公来塑造，这不仅颠覆了文学创作中描绘正面形象的传统风格，而且还旗帜鲜明地融入了自身的社会理想、反抗思想，引起了广泛共鸣。\n《失乐园》是英国政治家、学者约翰·弥尔顿创作的史诗，发表于1667年。 [32]\n\n《失乐园》取材于《圣经·旧约·创世纪》 [33]，该作品长约1万行，分为12卷，讲述撒旦原是个天使，因纠合别的天使反对上帝，被打入地狱受苦。撒旦无力反攻天堂，便用间接办法报复，企图毁灭上帝创造的人类。他来到乐园，引诱亚当、夏娃吃了禁果，使人类失掉了乐园。 [28]该作品通过亚当、夏娃经受不住魔鬼的引诱，从而被逐出伊",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%A4%B1%E4%B9%90%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:36:26.992Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%A4%B1%E4%B9%90%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T04:33:19.947Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1201,7 +1188,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[Pride and Prejudice - Wikipedia] Pride and Prejudice is the second published novel by English author Jane Austen, written when she was aged 20–21, and later published in 1813.\n\n[Pride and Prejudice: Character List - SparkNotes] A list of all the characters in Pride and Prejudice. Pride and Prejudice characters include: Elizabeth Bennet, Fitzwilliam Darcy, Jane Bennet, ...\n\n[Pride and Prejudice Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of Pride and Prejudice. Visual theme-tracking, too.\n\n[Great character analysis for Jane Austen's Pride and Prej",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81", tier: "reference", fetchedAt: "2026-05-21T05:29:15.151Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81", tier: "reference", fetchedAt: "2026-05-21T05:24:15.906Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1209,30 +1196,19 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "wuthering-heights": {
     id: "wuthering-heights",
-    characters: [
-      { name: "Wuthering Heights Character", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Analysis", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Though", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Linton", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Joseph", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Long", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Wuthering Heights", role: "角色", description: "Wuthering Heights 中的主要角色。" },
-      { name: "Character List", role: "角色", description: "Wuthering Heights 中的主要角色。" }
-    ],
-    plotSummary: "[Wuthering Heights by Emily Brontë | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Emily Brontë's novel Wuthering Heights. Download the free study guide and infographic for Wuthering ...\n\n[Story Skeleton—Wuthering Heights - The Darling Axe] Dive into our \"Wuthering Heights\" summary, exploring key plot points and themes in Emily Brontë's Gothic novel.\n\n[Wuthering Heights by Emily Brontë | Plot, Characters & Analysis] Wuthering Heights is a gothic novel about a severely toxic relationship between Catherine and Heathcliff. Heathcliff came from unknown circumstances and was ...\n\n《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社",
+    plotSummary: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社会——两个孤立的山庄和\n《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。 [6]\n\n小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。 [19]小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。 [12]作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社会——两个孤立的山庄和开放的大自然与荒原，书小人物身上体现出爱与恨两种极端，极度的爱中混杂着极度的恨，使小说在战栗中呈现出强烈的戏剧化色彩。 [17]\n\n《呼啸山庄》是作者唯一的一部长篇小说，该小说奠定了她在英国文学史乃至世界文学史上的地位。 [9]《呼啸山庄》被公认为世界名著，英国作家毛姆甚至把它奉为世界最杰出的十部小说之一，与《战争与和平》等并列 [7]。截至2026年，《呼啸山庄",
     plotNodes: [
-      { label: "Part 1", description: "[Wuthering Heights by Emily Brontë | Summary & Analysis - YouTube] ..." },
-      { label: "Part 2", description: "[Story Skeleton—Wuthering Heights - The Darling Axe] Dive into our \"Wuthering Heights\" summary, exploring key plot points and themes in Emily Brontë's Gothic novel." },
-      { label: "Part 3", description: "[Wuthering Heights by Emily Brontë | Plot, Characters & Analysis] Wuthering Heights is a gothic novel about a severely toxic relationship between Catherine and Heathcliff." },
-      { label: "Part 4", description: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子" }
+      { label: "Part 1", description: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子" },
+      { label: "Part 2", description: "小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开" },
+      { label: "Part 3", description: "《呼啸山庄》是作者唯一的一部长篇小说，该小说奠定了她在英国文学史乃至世界文学史上的地位。" }
     ],
-    themeAnalysis: "[Wuthering Heights by Emily Brontë—Summary and Analysis] Wuthering Heights brings together themes of love and obsession, jealousy and revenge, social class conflicts, and the supernatural.\n\n[Wuthering Heights by Emily Brontë | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Emily Brontë's novel Wuthering Heights. Download the free study guide and infographic for Wuthering ...\n\n[Wuthering Heights Character Analysis - LitCharts] Though lovely looking, Linton is sickly, whiny, effeminate, and weak. Joseph. Long-time servant at Wuthering Heights. He is very religious and judgmental.\n\n[The meaning of Wuthering Heights *SPOILERS* : r/literature - Reddit] This means that, in the end, after a lot of string pulling, she manages to become the mistress of both Wuthering Hei",
+    themeAnalysis: "",
     techniques: "",
     excerpts: [],
-    insights: "[Wuthering Heights - Wikipedia] Heathcliff: An ethnically uncertain foundling from Liverpool, who is taken by Earnshaw to Wuthering Heights, where he is reluctantly cared for by the family and ...\n\n[Wuthering Heights Character Analysis - LitCharts] Though lovely looking, Linton is sickly, whiny, effeminate, and weak. Joseph. Long-time servant at Wuthering Heights. He is very religious and judgmental.\n\n[Wuthering Heights: Character List | SparkNotes] An orphan brought to live at Wuthering Heights by Mr. Earnshaw, Heathcliff falls into an intense, unbreakable love with Mr. Earnshaw's daughter Ca",
+    insights: "《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之女与自己的儿子结婚，将两处山庄收归己有。复仇之后，终在对凯瑟琳痛苦、疯狂的追思中孤独地离开人世。小说反映出19世纪资本主义生产关系下，人们的爱情婚姻和家庭观念的扭曲和嬗变。小说中的爱情故事自始至终贯穿着强烈的反压迫、争自由、争幸福的斗争，和当时现实社会、近在咫尺的工业区的阶级斗争相呼应。作者采用了富有浪漫主义的抒情方法，点染白然环境，挖掘内心世界，充满诗情画意。整个小说场景是一个封闭的小社会——两个孤立的山庄和\n《呼啸山庄》是英国女作家艾米莉·勃朗特创作的长篇小说，首次出版于1847年。 [6]\n\n小说讲述吉普赛弃儿希斯克利夫与呼啸山庄主人的女儿凯瑟琳从小友爱，长大后产生爱情，但遭凯瑟琳之兄辛德雷百般折磨欺凌，凯瑟琳为了帮助希斯克利夫改善经济地位，另嫁地主少爷林顿。希斯克利夫愤而出走三年后发财归来，决心报复。他娶林顿之妹为妻，备加虐待。凯瑟琳去世后，他又引诱辛德雷赌博、挥霍，夺走其全部家产，并迫使林顿之",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%91%BC%E5%95%B8%E5%B1%B1%E5%BA%84", tier: "reference", fetchedAt: "2026-05-21T05:32:34.396Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%91%BC%E5%95%B8%E5%B1%B1%E5%BA%84", tier: "reference", fetchedAt: "2026-05-21T04:29:59.755Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1240,47 +1216,48 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "great-expectations": {
     id: "great-expectations",
-    characters: [
-      { name: "Great Expectations", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "Character List", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "Wikipedia", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "Summary", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "Characters", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "Analysis", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "Facts", role: "角色", description: "Great Expectations 中的主要角色。" },
-      { name: "During", role: "角色", description: "Great Expectations 中的主要角色。" }
-    ],
-    plotSummary: "Great Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861. The classic novel was one of its author’s greatest critical and popular successes. It chronicles the coming of age of the orphan Pip while also addressing such issues as social class and human worth.\n\nGreat Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Fa",
+    plotSummary: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。",
     plotNodes: [
-      { label: "Part 1", description: "Great Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861." },
-      { label: "Part 2", description: "Great Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Cha" }
+      { label: "第 1 部分", description: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇" },
+      { label: "第 2 部分", description: "该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。 [32]" },
+      { label: "第 3 部分", description: "该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出， [33]不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿 [39]。该剧荣获2018中美电视节十大金天使奖电视剧， [34]入围第25届上海电视节白玉兰最佳美术奖。 [35]" },
+      { label: "第 4 部分", description: "洪三元（陈思诚饰）携母亲和好友齐林（袁弘饰）到上海投奔严华（富大龙饰），卷入两大公司权利斗争。严华此时是一名码头工人，他不畏强权被推举为工人领袖。洪三元则凭借机智多次在凶险的上海滩化险为夷。洪三元与忠义之士沈达结拜为兄，与来上海报父仇的林依依（佟丽娅饰）在斗智斗勇中成为莫逆，女扮男装的林依依爱上洪三元。" }
     ],
-    themeAnalysis: "[Great Expectations Character Analysis | PDF - Scribd] The relationship between Pip and Joe evolves significantly throughout 'Great Expectations,' highlighting themes of loyalty and unconditional love. Initially, ...\n\nGreat Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861. The classic novel was one of its author’s greatest critical and popular successes. It chronicles the coming of age of the orphan Pip while also addressing such issues as social class and human worth.\n\nGreat Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (",
-    techniques: "Great Expectations, novel by Charles Dickens, first published serially in 1860–61 and issued in book form in 1861. The classic novel was one of its author’s greatest critical and popular successes. It chronicles the coming of age of the orphan Pip while also addressing such issues as social class and human worth.\n\nGreat Expectations Introduction Summary Analysis References & Edit History Related Topics Images & Videos Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Con",
+    themeAnalysis: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。 [32]\n\n该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。",
+    techniques: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。",
     excerpts: [],
-    insights: "[Great Expectations - Wikipedia] Great Expectations is full of extreme imagery—poverty, prison ships, chains, and fights to the death—and features a colourful cast of characters who have ...\n\n[Great Expectations | Summary, Characters, Analysis, & Facts] During the course of the novel, Pip comes to realize that his “great expectations”—social standing and wealth—are less important than loyalty ...\n\n[Great Expectations: Character List - SparkNotes] The protagonist and narrator of Great Expectations, Pip begins the story as a young orphan boy being raised by his sister and brother-in-law in the m",
+    insights: "《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。该剧讲述了在上世纪20年代波云诡谲的大上海，一个无名小卒成长为大人物，最后他意识到远大前程的真正意义，走上革命道路，选择了为人民服务的中国共产党。该剧于2018年4月1日在湖南卫视金鹰独播剧场首播，并在腾讯视频、优酷网、爱奇艺、乐视视频、芒果TV同步播出，不仅屡次登上收视率第一，网络单日播放量也多次领跑电视剧榜，累计总播放量突破27亿。该剧荣获2018中美电视节十大金天使奖电视剧，入围第25届上海电视节白玉兰最佳美术奖。\n《远大前程》是由芒果影视、象山悟空影视、骋亚影视联合出品，陈思诚担任监制和总编剧，谢泽、陈熙泰执导，陈思诚、佟丽娅、袁弘、郭采洁、赵立新、倪大红、刘奕君等主演的年代传奇电视剧。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%9C%E5%A4%A7%E5%89%8D%E7%A8%8B", tier: "reference", fetchedAt: "2026-05-21T05:41:34.462Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%9C%E5%A4%A7%E5%89%8D%E7%A8%8B", tier: "reference", fetchedAt: "2026-05-21T04:37:02.174Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/1400", tier: "original_text", fetchedAt: "2026-05-21T04:37:20.730Z", contributedFields: ["insights"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Great%20Expectations%20Charles%20Dickens" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Great%20Expectations%20Charles%20Dickens" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Great%20Expectations" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Great%20Expectations" },
+      ],
     },
   },
 
   "middlemarch": {
     id: "middlemarch",
-    plotSummary: "Middlemarch, novel by George Eliot, first published in eight parts in 1871–72. It is considered to be Eliot’s masterpiece. The realist work is a study of every class of society in the town of Middlemarch, but the focus is on the thwarted idealism of Dorothea Brooke and Tertius Lydgate, both of whom marry disastrously.\n\nMiddlemarch Introduction Summary Analysis References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X UR",
+    plotSummary: "《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。\n《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。\n\n该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。 [9]\n\n故事主要发生在一个虚构的小城，即洛姆郡东北角的米德尔马契。文中有一男一女两位主人公：青年医生利德盖特和奉行理想主义信条的少女多萝西娅。两人原来对未来都有美好的期盼，但个人性格和周围环境却一再扼杀了他们的理想。利德盖特是个孤儿，长辈中有人有贵族头衔，但他主要依靠自己的力量生活。他在医学研究上下了不少功夫，在银行家布尔斯特洛德开办的医院里工作。市长的女儿罗莎蒙德空有漂亮的外表，但却思想浅薄、自私自利。利德盖特和她结婚后，自然成为婚姻的牺牲品。罗莎蒙德对物质生活要求很高，利德盖特的收入完全无法满足妻子的过分要求，医生从此被债务压得喘不过气来。银行家布尔斯特洛德早年私吞他人遗产的丑闻暴露后，为他在用不义之财办起来的慈善医院工作的利德盖特也脸上无光。在债台高筑和社会舆论的双重压力下，利德盖特只好听任妻子摆布，迁居伦敦，给有钱人看病，居然发了财。虽然在经济上摆脱了困境，利德盖特还是郁郁寡欢，因为他原来在医学上有一番建树的理想在平庸的生活中化为泡影，不到五十岁就带着满腹遗憾离开了人世。女主人公多萝西娅的人生道路也充满理想破灭的失望。当她还是个涉世未深的妙龄少女时，多萝西娅就渴望为一个伟大目标做出牺牲。她遇到卡苏朋，一心想把自己的青春奉献给他，帮他著书立说，青史留名。不料这个迂腐的学问家并不需要工作上的助手，他缺少的只是一个耐心的听众。结婚以后，多萝西娅终于明白卡苏朋是永远不可能有所",
     plotNodes: [
-      { label: "Part 1", description: "Middlemarch, novel by George Eliot, first published in eight parts in 1871–72." },
-      { label: "Part 2", description: "Middlemarch Introduction Summary Analysis References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess t" }
+      { label: "Part 1", description: "《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。" },
+      { label: "Part 2", description: "该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。" },
+      { label: "Part 3", description: "故事主要发生在一个虚构的小城，即洛姆郡东北角的米德尔马契。文中有一男一女两位主人公：青年医生利德盖特和奉行理想主义信条的少女多萝西娅。两人原来对未来都有美好的期盼，但个人性格和周围环境却一再扼杀了他们的理想。利德盖特是个孤儿，长辈中有人有贵族头衔，但他主要依靠自己的力量生活。他在医学研究上下了不少功夫，在银行家布尔斯特洛德开办的医院里工作。市长的女儿罗莎蒙德空有漂亮的外表，但却思想浅薄、自私自利。" }
     ],
     themeAnalysis: "《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。\n《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。\n\n该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。 [9]\n\n故事主要发生在一个虚构的小城，即洛姆郡东北角的米德尔马契。文中有一男一女两位主人公：青年医生利德盖特和奉行理想主义信条的少女多萝西娅。两人原来对未来都有美好的期盼，但个人性格和周围环境却一再扼杀了他们的理想。利德盖特是个孤儿，长辈中有人有贵族头衔，但他主要依靠自己的力量生活。他在医学研究上下了不少功夫，在银行家布尔斯特洛德开办的医院里工作。市长的女儿罗莎蒙德空有漂亮的外表，但却思想浅薄、自私自利。利德盖特和她结婚后，自然成为婚姻的牺牲品。罗莎蒙德对物质生活要求很高，利德盖特的收入完全无法满足妻子的过分要求，医生从此被债务压得喘不过气来。银行家布尔斯特洛德早年私吞他人遗产的丑闻暴露后，为他在用不义之财办起来的慈善医院工作的利德盖特也脸上无光。在债台高筑和社会舆论的双重压力下，利德盖特只好听任妻子摆布，迁居伦敦，给有钱人看病，居然发了财。虽然在经济上摆脱了困境，利德盖特还是郁郁寡",
-    techniques: "Middlemarch, novel by George Eliot, first published in eight parts in 1871–72. It is considered to be Eliot’s masterpiece. The realist work is a study of every class of society in the town of Middlemarch, but the focus is on the thwarted idealism of Dorothea Brooke and Tertius Lydgate, both of whom marry disastrously.\n\nMiddlemarch Introduction Summary Analysis References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents print",
+    techniques: "",
     excerpts: [],
-    insights: "[Middlemarch | Summary, Characters, Analysis, & Facts - Britannica] He is a progressive young doctor who is passionate about medicine, especially his research. Soon after arriving in Middlemarch, he becomes ...\n\n[Middlemarch - Wikipedia] Leavened with comic elements, Middlemarch approaches significant historical events in a realist mode: the Reform Act 1832, early railways, and the accession of ...\n\n[Middlemarch: Full Book Summary | SparkNotes] Two major life choices govern the narrative of Middlemarch. One is marriage and the other is vocation. Eliot takes both choices very seriously.\n\n[Middl",
+    insights: "《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。\n《米德尔马契》是英国作家乔治·艾略特创作的长篇小说，首次出版于1872年。\n\n该书中有两条贯穿其中的主线：一为少女多萝西娅的婚姻悲剧与理想的破灭，一为青年医生利德盖特爱情与事业的双重挫折与失败。在这两大主线之中，作者运用了对比、平行以及重复等多种描写手法，从而将两条主线交织在一起，把书中的众多人物，如费瑟斯通、布尔斯特罗德、高思一家等男女主人公悲欢离合的人生写进小说，突出了“社会挫败人”这一大主题。 [9]\n\n故事主要发生在一个虚构的小城，即洛姆郡东北角的米德尔马契。文中有一男一女两位主人公：青年医生利德盖特和奉行理想主义信条的少女多萝西娅。两人原来对未来都有美好的期盼，但个人性格和周围环境却一再扼杀了他们的理想。利德盖特是个孤儿，长辈中有人有贵族头衔，但他主要依靠自己的力量生活。他在医学研究上下了不少功夫，在银行家布尔斯特洛德开办的医院里工作。市长的女儿罗莎蒙德空有漂亮的外表，但却思想浅",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%B1%B3%E5%BE%B7%E5%B0%94%E9%A9%AC%E5%A5%91", tier: "reference", fetchedAt: "2026-05-21T05:34:51.391Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%B1%B3%E5%BE%B7%E5%B0%94%E9%A9%AC%E5%A5%91", tier: "reference", fetchedAt: "2026-05-21T04:31:57.192Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1288,18 +1265,19 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "1984": {
     id: "1984",
-    plotSummary: "Nineteen Eighty-four is a novel by George Orwell published in 1949 as a warning against totalitarianism. Orwell’s chilling dystopia made a deep impression on readers, and his ideas entered mainstream culture in a way achieved by very few books. The novel invented concepts such as Big Brother and the Thought Police, which remain instantly recognizable in the 21st century.\n\nNineteen Eighty-four Introduction Summary Analysis References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Styl",
+    plotSummary: "《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在真理部，每天从事的工作却是篡改历史，他逐渐对政府产生了怀疑，加入兄弟会成为思想犯。最后事情败露，被友爱部洗脑成为“思想纯洁者”，后被杀害。该小说中，奥威尔意识到了物质基础方面的差异让人们有了阶级划分，而且在艰苦的物质条件下，极权主义下的精神控制和不自由才是束缚人性的枷锁。该小说刻画了人类在极权主义社会的生存状态，有一个永不褪色的警示标签，警醒世人提防这种预想中的黑暗成为现实。该小说与英国作家阿道司\n《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。 [7]\n\n该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在真理部，每天从事的工作却是篡改历史，他逐渐对政府产生了怀疑，加入兄弟会成为思想犯。最后事情败露，被友爱部洗脑成为“思想纯洁者”，后被杀害。该小说中，奥威尔意识到了物质基础方面的差异让人们有了阶级划分，而且在艰苦的物质条件下，极权主义下的精神控制和不自由才是束缚人性的枷锁。 [8]该小说刻画了人类在极权主义社会的生存状态，有一个永不褪色的警示标签，警醒世人提防这种预想中的黑暗成为现实。 [37]\n\n该小说与英国作家阿道司·赫胥黎创作的《美丽新世界》，以及俄国作家叶夫根尼·伊万诺维奇·扎米亚京创作的《我们》并称反乌托邦的三部代表作。 [10]该小说已经被翻译成60多种语言，总销量超过五千万册，曾被美国《时代周刊》杂志（2010年第1期）评为1923年至2010年最好的百本英文小说之一，位列兰登书屋20世纪百部最佳英语小说第13位。在英美等国，此书被列入中学生必读书书目。 [9]",
     plotNodes: [
-      { label: "Part 1", description: "Nineteen Eighty-four is a novel by George Orwell published in 1949 as a warning against totalitarianism." },
-      { label: "Part 2", description: "Nineteen Eighty-four Introduction Summary Analysis References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Qui" }
+      { label: "Part 1", description: "《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在" },
+      { label: "Part 2", description: "该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在真理部，每天从事的工作却是篡改历史，他逐渐对政府产生了怀疑，加入兄弟会成为思想犯。最" },
+      { label: "Part 3", description: "该小说与英国作家阿道司·赫胥黎创作的《美丽新世界》，以及俄国作家叶夫根尼·伊万诺维奇·扎米亚京创作的《我们》并称反乌托邦的三部代表作。" }
     ],
-    themeAnalysis: "[Nineteen Eighty-Four: Analysis of Major Characters - EBSCO] Through these characters, Orwell illustrates themes of loyalty, betrayal ... Nineteen Eighty-Four: Analysis of Major Characters. Author: George Orwell.\n\n[Analyzing Characters and Themes in 1984 | PDF - Scribd] George Orwell's Nineteen Eighty-Four Analysis. 10 pages. Understanding ... Plot Summary of George Orwell's 1984. 5 pages. Existential Analysis of Orwell's ...\n\n[Nineteen Eighty-four | Summary, Characters, Analysis, & Facts] Analysis. Orwell wrote Nineteen Eighty-four as a warning after years of brooding on the twin menaces of Nazism and Stalinism.\n\nNineteen Eighty-four is a novel by George Orwell published in 1949 as a warning against totalitarianism. Orwell’s chilling dystopia made a deep impression on readers, and his ide",
-    techniques: "Nineteen Eighty-four is a novel by George Orwell published in 1949 as a warning against totalitarianism. Orwell’s chilling dystopia made a deep impression on readers, and his ideas entered mainstream culture in a way achieved by very few books. The novel invented concepts such as Big Brother and the Thought Police, which remain instantly recognizable in the 21st century.\n\nNineteen Eighty-four Introduction Summary Analysis References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its C",
+    themeAnalysis: "《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在真理部，每天从事的工作却是篡改历史，他逐渐对政府产生了怀疑，加入兄弟会成为思想犯。最后事情败露，被友爱部洗脑成为“思想纯洁者”，后被杀害。该小说中，奥威尔意识到了物质基础方面的差异让人们有了阶级划分，而且在艰苦的物质条件下，极权主义下的精神控制和不自由才是束缚人性的枷锁。该小说刻画了人类在极权主义社会的生存状态，有一个永不褪色的警示标签，警醒世人提防这种预想中的黑暗成为现实。该小说与英国作家阿道司\n《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。 [7]\n\n该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在真理部，每天从事的工作却是篡改历史，他逐渐对政府产生了怀疑，加入兄弟会成为思想犯。最后事情败露，被友爱部洗脑成为“思想纯洁者”，后被杀害。该小说中，奥威尔意识到了物质基础方面的差异让人们有了阶级划分，而且在艰苦的物质条件下，极权主义下的精神控制和不自由才是束缚人性的枷锁。 [8]该小说刻画了人类在极权主义社会的生存状态，有一个永不褪色的警示标签，警醒世人提防这种预想中的黑暗成为现实。",
+    techniques: "",
     excerpts: [],
-    insights: "[Nineteen Eighty-four | Summary, Characters, Analysis, & Facts] Analysis. Orwell wrote Nineteen Eighty-four as a warning after years of brooding on the twin menaces of Nazism and Stalinism.\n\n[Nineteen Eighty-Four - Wikipedia] Thematically, it centres on totalitarianism, mass surveillance and repressive regimentation of people and behaviours. Nineteen Eighty-Four has been often ...\n\n[1984 Study Guide | Literature Guide - LitCharts] Nineteen Eighty-Four is a dystopian novel. The primary literary model for Nineteen Eighty-Four is considered to be H.G. Wells's anti-Utopian satire When the ...\n\n[19",
+    insights: "《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男主人公温斯顿在真理部，每天从事的工作却是篡改历史，他逐渐对政府产生了怀疑，加入兄弟会成为思想犯。最后事情败露，被友爱部洗脑成为“思想纯洁者”，后被杀害。该小说中，奥威尔意识到了物质基础方面的差异让人们有了阶级划分，而且在艰苦的物质条件下，极权主义下的精神控制和不自由才是束缚人性的枷锁。该小说刻画了人类在极权主义社会的生存状态，有一个永不褪色的警示标签，警醒世人提防这种预想中的黑暗成为现实。该小说与英国作家阿道司\n《一九八四》是英国左翼作家乔治·奥威尔创作的长篇政治小说，于1949年6月首次出版。 [7]\n\n该小说讲述世界被三个超级大国所瓜分——大洋国、欧亚国和东亚国。三个国家之间战争不断。主人公所处的大洋国实行高度的集权统治，在那里，人们一直处在政府的监听和监视下，不允许有自己的想法。政府机构则分为四个部门：真理部（负责文艺教育），和平部（负责战争），友爱部（维持法律和秩序），富裕部（负责经济事务）。男",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E4%B9%9D%E5%85%AB%E5%9B%9B", tier: "reference", fetchedAt: "2026-05-21T05:38:54.985Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E4%B8%80%E4%B9%9D%E5%85%AB%E5%9B%9B", tier: "reference", fetchedAt: "2026-05-21T04:35:12.015Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1307,28 +1285,21 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "ulysses": {
     id: "ulysses",
-    characters: [
-      { name: "Casual Reader", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "Guide", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "Ulysses", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "University Musical Society", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "Leopold Bloom", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "Jewish", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "Irish", role: "角色", description: "Ulysses 中的主要角色。" },
-      { name: "James Joyce", role: "角色", description: "Ulysses 中的主要角色。" }
-    ],
-    plotSummary: "Ulysses is a novel by Irish writer James Joyce, first published in book form in 1922. The stylistically dense and exhilarating novel is regarded as a masterpiece and is constructed as a parallel to Homer’s Odyssey. All the action takes place in and around Dublin on a single day (June 16, 1904).\n\nUlysses Introduction Summary Legacy References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X URL https://www.britannica.com/topic/Ulys",
+    plotSummary: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。《尤利西斯》作为意识流小说的代表作，被誉为20世纪\n《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。\n\n该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。\n\n乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。 [1]\n\n《尤利西斯》作为意识流小说的代表作，被誉为20世纪百大英文小说之首，并被奉为20世纪最伟大的小说。\n\n1904年6月16日清晨，斯蒂芬上完了一节历史课后，从校长那儿得到了三英镑二先令的报酬，来到海边漫步，面对翻滚的海浪，他思绪万千，人世的沧桑、大自然的奥妙、时空的永恒、艺术的魅力在他的意识中开始了漫无边际的涌动。他因对母亲有过情欲的爱恋而觉得对不起父亲。他抱着负罪的感觉渴望在精神上重新得到一位父亲。同一日的早上八点钟，在埃克",
     plotNodes: [
-      { label: "Part 1", description: "Ulysses is a novel by Irish writer James Joyce, first published in book form in 1922." },
-      { label: "Part 2", description: "Ulysses Introduction Summary Legacy References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Boo" }
+      { label: "Part 1", description: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允" },
+      { label: "Part 2", description: "该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后" },
+      { label: "Part 3", description: "乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。" },
+      { label: "Part 4", description: "《尤利西斯》作为意识流小说的代表作，被誉为20世纪百大英文小说之首，并被奉为20世纪最伟大的小说。" },
+      { label: "Part 5", description: "1904年6月16日清晨，斯蒂芬上完了一节历史课后，从校长那儿得到了三英镑二先令的报酬，来到海边漫步，面对翻滚的海浪，他思绪万千，人世的沧桑、大自然的奥妙、时空的永恒、艺术的魅力在他的意识中开始了漫无边际的涌动。他因对母亲有过情欲的爱恋而觉得对不起父亲。他抱着负罪的感觉渴望在精神上重新得到一位父亲。同一日的早上八点钟，在埃克" }
     ],
     themeAnalysis: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。《尤利西斯》作为意识流小说的代表作，被誉为20世纪\n《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。\n\n该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。\n\n乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。 [1]\n\n《尤利西斯》作为意识流小说的",
-    techniques: "Ulysses is a novel by Irish writer James Joyce, first published in book form in 1922. The stylistically dense and exhilarating novel is regarded as a masterpiece and is constructed as a parallel to Homer’s Odyssey. All the action takes place in and around Dublin on a single day (June 16, 1904).\n\nUlysses Introduction Summary Legacy References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) print Print Please select which sections you",
+    techniques: "",
     excerpts: [],
-    insights: "[Ulysses (novel) - Wikipedia] Ulysses chronicles the experiences of three Dubliners over the course of a single day, 16 June 1904 (which its fans now celebrate annually as Bloomsday).\n\n[Ulysses | Book, Summary, Analysis, Characters, & Facts - Britannica] The characters in Ulysses serve as modern parallels to those in Homer's Odyssey. Many of them were also based on other figures from Greek ...\n\n[Ulysses: Themes | SparkNotes] Ulysses is a book about Stephen's search for a symbolic father and Bloom's search for a son. In this respect, the plot of Ulysses parallels Telemachus's search ...\n\n[Ulyss",
+    insights: "《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲可以允许斯蒂芬自己也成为一名父亲。布卢姆寻找儿子从很大程度上讲则是因为他需要一个后代来巩固自己的身份和延续香火。由此可见，斯蒂芬和布卢姆两人都希望通过寻求为父之道来巩固他们各自的身份。乔伊斯通过描述一天内发生的单一事件向人们展示了一幅人类社会的缩影，通过对一个人一天日常生活和精神变化的细致刻画揭示了人类社会的悲与喜，英雄与懦夫的共存以及宏伟与沉闷的同现。《尤利西斯》作为意识流小说的代表作，被誉为20世纪\n《尤利西斯》是爱尔兰作家詹姆斯·乔伊斯创作的长篇小说，首次出版于1922年。\n\n该小说讲述的是青年诗人斯蒂芬寻找一个精神上象征性的父亲和布卢姆寻找一个儿子的故事。斯蒂芬已经有了一个生理上的父亲西蒙·迪达勒斯，但是斯蒂芬只把他当成肉体上的父亲，他认为自己有能力变得成熟，也可以成为一名父亲，然而，由于父亲西蒙·迪达勒斯的批评和缺乏理解并没有成功。因此斯蒂芬所寻找的父亲只能是一个象征性的父亲，这个父亲",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B0%A4%E5%88%A9%E8%A5%BF%E6%96%AF", tier: "reference", fetchedAt: "2026-05-21T05:40:40.351Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%B0%A4%E5%88%A9%E8%A5%BF%E6%96%AF", tier: "reference", fetchedAt: "2026-05-21T04:36:29.887Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1388,21 +1359,19 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "in-search-of-lost-time": {
     id: "in-search-of-lost-time",
-    plotSummary: "‘In Search of Lost Time’ is a novel in seven parts by French author Marcel Proust, published as ‘A la recherche du temps perdu’ from 1913 to 1927. The novel is the story of Proust’s own life, told as an allegorical search for truth. It is also known in English as ‘Remembrance of Things Past.’ \n\nIn Search of Lost Time Introduction Composition and publication history Summary References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents print Print Please select which sections you would like to print: Table Of Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media",
+    plotSummary: "《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。小说分为七卷，各卷在1913—1927年分别出版。《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实描写，又有对作者自我追求、自我认识的内心经历的记录。除叙事以外，小说还包含大量的感想和议论。整部作品没有中心人物，没有完整的故事，没有波澜起伏和贯穿始终的情节线索。它大体以叙述者的生活经历和内心活动为轴心，穿插描写了大量的人物事件，可以说是在一部主要小说上生出许多独立成篇的其他小说。作者通过故事套故事、故事与故事交叉重叠的方法，描写了众多的人物、事件，展示了一幅19世纪与20世纪之交法国上流社会的\n《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。 [5]小说分为七卷，各卷在1913—1927年分别出版。 [6]\n\n《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实描写，又有对作者自我追求、自我认识的内心经历的记录。除叙事以外，小说还包含大量的感想和议论。整部作品没有中心人物，没有完整的故事，没有波澜起伏和贯穿始终的情节线索。它大体以叙述者的生活经历和内心活动为轴心，穿插描写了大量的人物事件，可以说是在一部主要小说上生出许多独立成篇的其他小说。作者通过故事套故事、故事与故事交叉重叠的方法，描写了众多的人物、事件，展示了一幅19世纪与20世纪之交法国上流社会的生活图景。作品通过上千个人物的活动，冷静、真实、细致地再现了法国上流社会的生活习俗、人情世态。 [4]小说的故事没有连贯性，中间经常插入各种感想、议论、倒叙，语言具有独特风格。 [9]\n\n该小说革新了小说的题材和写作技巧，使潜意识成了真正的主人公。 [9]小说的第二卷获法国龚古尔文学奖。 [13]《追忆似水年华》是意识流小说的开山之作，在整个西方现代小说史上具有里程碑式的意义",
     plotNodes: [
-      { label: "Part 1", description: "‘In Search of Lost Time’ is a novel in seven parts by French author Marcel Proust, published as ‘A la recherche du temps perdu’ from 1913 to 1927." },
-      { label: "Part 2", description: "In Search of Lost Time Introduction Composition and publication history Summary References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz B" }
+      { label: "Part 1", description: "《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。小说分为七卷，各卷在1913—1927年分别出版。《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实" },
+      { label: "Part 2", description: "《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实描写，又有对作者自我追求、自我认识的内心经历的记录。除叙事以外，小说还包含大量的感想和议论。整部作品没有中心人物，没有完整的故事，没有波澜起伏和贯穿始终的情节线索。它大体以叙述者的生活经历和内心活动为轴心，穿插描写了大量的人物事件，可以说是在一部主要小说上生出许" },
+      { label: "Part 3", description: "该小说革新了小说的题材和写作技巧，使潜意识成了真正的主人公。" }
     ],
-    themeAnalysis: "[Analysis of Marcel Proust's In Search of Lost Time] In Search of Lost Time is a brilliant treatment of the universal human condition, of the quest of the individual for the meaning of life.\n\n[Uncovering the Themes of In Search of Lost Time by Marcel Proust] In addition, In Search of Lost Time also offers a glimpse of the social life and customs of the French society of the time, providing a detailed ...\n\n‘In Search of Lost Time’ is a novel in seven parts by French author Marcel Proust, published as ‘A la recherche du temps perdu’ from 1913 to 1927. The novel is the story of Proust’s own life, told as an allegorical search for truth. It is also known in English as ‘Remembrance of Things Past.’ \n\nIn Search of Lost Time Introduction Composition and publication history Summary References & Ed",
-    techniques: "‘In Search of Lost Time’ is a novel in seven parts by French author Marcel Proust, published as ‘A la recherche du temps perdu’ from 1913 to 1927. The novel is the story of Proust’s own life, told as an allegorical search for truth. It is also known in English as ‘Remembrance of Things Past.’ \n\nIn Search of Lost Time Introduction Composition and publication history Summary References & Edit History Related Topics Images Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) C",
-    excerpts: [
-      { quote: "In Search of Lost Time", context: "From In Search of Lost Time" },
-      { quote: "In Search of Lost Time", context: "From In Search of Lost Time" }
-    ],
-    insights: "[In Search of Lost Time - Wikipedia] In Search of Lost Time follows the narrator's recollections of childhood and experiences into adulthood in late 19th-century and early 20th-century high-society ...\n\n[In Search of Lost Time by Marcel Proust | Goodreads] \"In Search of Lost Time\" is a novel in seven volumes. The novel began to take shape in 1909. Proust continued to work on it until his final illness in the ...\n\n[In Search of Lost Time | Summary, Word Count, Length, & Proust] 'In Search of Lost Time' is a novel in seven parts by French author Marcel Proust, published as 'A la recherche du tem",
+    themeAnalysis: "《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。小说分为七卷，各卷在1913—1927年分别出版。《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实描写，又有对作者自我追求、自我认识的内心经历的记录。除叙事以外，小说还包含大量的感想和议论。整部作品没有中心人物，没有完整的故事，没有波澜起伏和贯穿始终的情节线索。它大体以叙述者的生活经历和内心活动为轴心，穿插描写了大量的人物事件，可以说是在一部主要小说上生出许多独立成篇的其他小说。作者通过故事套故事、故事与故事交叉重叠的方法，描写了众多的人物、事件，展示了一幅19世纪与20世纪之交法国上流社会的\n《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。 [5]小说分为七卷，各卷在1913—1927年分别出版。 [6]\n\n《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实描写，又有对作者自我追求、自我认识的内心经历的记录。除叙事以外，小说还包含大量的感想和议论。整部作品没有中心人物，没有完整的故事，没有波澜起伏和贯穿始终的情节线索。它大体以叙述者的生活经历和内心活动为轴心，穿插描写了大量的人物事件，可以说是在一部主要小说上生出许多独立成篇的其他小说。作者通过故事套故事、故事与故事交叉重叠的方法，描写了众多的人物、事件，展示了一幅19世纪与20",
+    techniques: "",
+    excerpts: [],
+    insights: "《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。小说分为七卷，各卷在1913—1927年分别出版。《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社会生活、人情世态的真实描写，又有对作者自我追求、自我认识的内心经历的记录。除叙事以外，小说还包含大量的感想和议论。整部作品没有中心人物，没有完整的故事，没有波澜起伏和贯穿始终的情节线索。它大体以叙述者的生活经历和内心活动为轴心，穿插描写了大量的人物事件，可以说是在一部主要小说上生出许多独立成篇的其他小说。作者通过故事套故事、故事与故事交叉重叠的方法，描写了众多的人物、事件，展示了一幅19世纪与20世纪之交法国上流社会的\n《追忆似水年华》（又译为《追寻逝去的时光》）是20世纪法国小说家马塞尔·普鲁斯特创作的长篇小说，先后出版于1913—1927年间。从1909年开始，作者动笔撰写该小说，一直到1922年因肺炎去世，历时13年完成。 [5]小说分为七卷，各卷在1913—1927年分别出版。 [6]\n\n《追忆似水年华》是一部与传统小说不同的长篇小说。全书以叙述者“我”为主体，将所见所闻、所思所感融为一体，其中既有对社",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%BD%E5%BF%86%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E", tier: "reference", fetchedAt: "2026-05-21T05:42:37.260Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%BD%E5%BF%86%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E", tier: "reference", fetchedAt: "2026-05-21T04:37:53.381Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1542,32 +1511,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "cherry-orchard": {
     id: "cherry-orchard",
-    characters: [
-      { name: "The Cherry Orchard", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
-      { name: "Character Analysis", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
-      { name: "Course Hero", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
-      { name: "Anton Chekhov", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
-      { name: "Character List", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
-      { name: "Ranevksy", role: "角色", description: "The Cherry Orchard 中的主要角色。" },
-      { name: "Russian", role: "角色", description: "The Cherry Orchard 中的主要角色。" }
-    ],
-    plotSummary: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobile ...\n\n[The Cherry Orchard: Character List | SparkNotes] Mrs. Ranevksy is a middle-aged Russian woman, the owner of the estate and the cherry orchard around which the story revolves. She has faced tragedy many times ...\n\n[The Cherry Orchard Character Analysis - SuperSummary] Get ready to explore The Cherry Orchard and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[The Cherry Orchard by Anton Chekhov | Summary, Analysis & Themes] This video explores Anton Chekhov's final play, \"The Cherry Orchard,\" examining its complex characters and themes. The play revolves around Madame ...\n\n[The Cherry Orchard by Anton Chekhov | In-Depth Summary & Analysis] /lit/The-Cherry-Orchard/infographic/ Set in early 1900s Russia, The Cherry O",
+    plotSummary: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。",
     plotNodes: [
-      { label: "Part 1", description: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobi" },
-      { label: "Part 2", description: "[The Cherry Orchard: Character List | SparkNotes] Mrs." },
-      { label: "Part 3", description: "[The Cherry Orchard Character Analysis - SuperSummary] Get ready to explore The Cherry Orchard and its meaning." },
-      { label: "Part 4", description: "[The Cherry Orchard by Anton Chekhov | Summary, Analysis & Themes] This video explores Anton Chekhov's final play, \"The Cherry Orchard,\" examining its complex characters and themes." },
-      { label: "Part 5", description: "[The Cherry Orchard by Anton Chekhov | In-Depth Summary & Analysis] /lit/The-Cherry-Orchard/infographic/ Set in early 1900s Russia, The Cherry O" }
+      { label: "第 1 部分", description: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松" },
+      { label: "第 2 部分", description: "泰山樱桃园的名称源于清朝咸丰、同治年间，山麓王庄人鲁泮藻在此拓建鲁氏山庄，并广泛种植樱桃树，形成樱桃林，此地因而得名“樱桃园” [3] [8-9]。鲁泮藻自题山庄为“樱桃精舍”，故又俗称鲁氏别墅 [9]。鲁泮藻受李颙实学思想启发，在此开渠引水、开垦荒地、栽种果树苗木、修建亭馆，其子鲁序孟和鲁序曾继承并拓展山庄建设 [5]。清代光绪年间，赵尔萃在《樱桃园记》中描述此地“竹木茂密，流水潺湲，土壤膏腴，" }
     ],
-    themeAnalysis: "[The Cherry Orchard Character Analysis - SuperSummary] Get ready to explore The Cherry Orchard and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes ...\n\n[The Cherry Orchard by Anton Chekhov | Summary, Analysis & Themes] This video explores Anton Chekhov's final play, \"The Cherry Orchard,\" examining its complex characters and themes. The play revolves around Madame ...\n\n[The Cherry Orchard Character Analysis - Course Hero] This study guide and infographic for Anton Chekhov's The Cherry Orchard offer summary and analysis on themes, symbols, and other literary ...\n\n[The Cherry Orchard by Anton Chekhov | In-Depth Summary & Analysis] /lit/The-Cherry-Orchard/infographic/ Set in early 1900s Russia, The Cherry Orchard tells the story ..",
-    techniques: "[The Cherry Orchard Character Analysis - Course Hero] This study guide and infographic for Anton Chekhov's The Cherry Orchard offer summary and analysis on themes, symbols, and other literary ...",
-    excerpts: [],
-    insights: "[The Cherry Orchard by Anton Chekhov Plot Summary - LitCharts] Lopakhin urges Ranevsky to chop down the cherry orchard, divide the land up into parcels, and rent them out acre by acre to upwardly mobile ...\n\n[The Cherry Orchard: Character List | SparkNotes] Mrs. Ranevksy is a middle-aged Russian woman, the owner of the estate and the cherry orchard around which the story revolves. She has faced tragedy many times ...\n\n[The Cherry Orchard - Wikipedia] Unresponsive to offers to save the estate, she allows its sale to the son of a former serf, and the family departs to the sound of the cherry orc",
+    themeAnalysis: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式 [11] [22-23]。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责 [1] [15] [17]。",
+    techniques: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。",
+    excerpts: [
+      { quote: "竹木茂密，流水潺湲，土壤膏腴，鸡犬鸣吠，俨然避秦之好桃源", context: "来源：The Cherry Orchard" },
+      { quote: "竹木茂密，流水潺湲，土壤膏肥，鸡犬鸣吠，俨然避秦之好桃源", context: "来源：The Cherry Orchard" },
+      { quote: "今则田禾茂密，果实缤纷，树可合围，竹可拱把，而池、 而鱼、而藕、而芰，鸣禽上下，水木明瑟。来游者莫不欣然艳羡，谓天下以此佳境。", context: "来源：The Cherry Orchard" }
+    ],
+    insights: "樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源。如今景区拥有三千余亩樱桃园，每年初春樱桃花海如雪，暮春樱桃成熟可供采摘，形成“赏花+采摘”的农旅融合模式。管理区同时承担着辖区森林防火、松材线虫病防控及古树名木保护等职责。\n樱桃园，又名泰山樱桃园，是山东省泰安市泰山风景名胜区下辖的一个管理区暨景区，位于泰山南麓，东起傲徕峰，西至桃花峪，南到横岭山，北接桃花源 [3-4] [8]。该地清同治年间由泰安人鲁泮藻父子始建山庄，广植樱桃，故得名“樱桃园”，其环境清幽，清代赵尔萃在《樱桃园记》中赞其如世外桃源 [5] [9] [14]。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%A8%B1%E6%A1%83%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T05:39:46.949Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%A8%B1%E6%A1%83%E5%9B%AD", tier: "reference", fetchedAt: "2026-05-21T04:35:44.689Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Cherry%20Orchard%20Anton%20Chekhov" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Cherry%20Orchard%20Anton%20Chekhov" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Cherry%20Orchard" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Cherry%20Orchard" },
+      ],
     },
   },
 
@@ -1578,20 +1546,20 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     characters: [
       { name: "Faust", role: "角色", description: "Faust 中的主要角色。" }
     ],
-    plotSummary: "[Faust Summary & Study Guide - BookRags.com] Faust Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Faust (Parts 1 and 2) by Johann Wolfgang von Goethe - YouTube] ... analysis of the plot, characters, symbols, and themes of Johann ... characters, symbols, and themes of Johann Wolfgang von Goethe's play Faust.\n\n[Plot Summary - Faust (Parts 1 and 2) - Course Hero] This study guide and infographic for Goethe's Faust (Parts 1 and 2) offer summary and analysis on themes, symbols, and other literary ...\n\n《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极高的艺术境界。\n《浮士德（Faust）》是德国作家约翰·沃",
+    plotSummary: "《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极高的艺术境界。\n《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。\n\n《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。 [1]\n\n《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极高的艺术境界。\n\n《浮士德》是用诗剧形式写成的，全书共有12111行，题材采自十六世纪的关于浮士德博士的民间传说。浮士德原是个真实人物，生活在十五世纪（1980年是他诞生五百周年，西德为他树立了纪念碑）。他博学多才，在传说中人们添枝加叶，说有魔鬼帮助，才使他创造出那么多奇迹。这些传说后来成为文学家们经常利用的创作素材。《浮士德》\n\n刚出场的浮士德满腹经纶，久负盛名，但是却对长期的生活状态感到迷茫和",
     plotNodes: [
-      { label: "Part 1", description: "[Faust Summary & Study Guide - BookRags.com] Faust Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more." },
-      { label: "Part 2", description: "[Faust (Parts 1 and 2) by Johann Wolfgang von Goethe - YouTube] ..." },
-      { label: "Part 3", description: "[Plot Summary - Faust (Parts 1 and 2) - Course Hero] This study guide and infographic for Goethe's Faust (Parts 1 and 2) offer summary and analysis on themes, symbols, and other literary ..." },
-      { label: "Part 4", description: "《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗" }
+      { label: "Part 1", description: "《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗" },
+      { label: "Part 2", description: "《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。" },
+      { label: "Part 3", description: "《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极高的艺术境界。" },
+      { label: "Part 4", description: "《浮士德》是用诗剧形式写成的，全书共有12111行，题材采自十六世纪的关于浮士德博士的民间传说。浮士德原是个真实人物，生活在十五世纪（1980年是他诞生五百周年，西德为他树立了纪念碑）。他博学多才，在传说中人们添枝加叶，说有魔鬼帮助，才使他创造出那么多奇迹。这些传说后来成为文学家们经常利用的创作素材。《浮士德》" }
     ],
-    themeAnalysis: "[Faust Summary & Study Guide - BookRags.com] Faust Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Faust (Parts 1 and 2) by Johann Wolfgang von Goethe - YouTube] ... analysis of the plot, characters, symbols, and themes of Johann ... characters, symbols, and themes of Johann Wolfgang von Goethe's play Faust.\n\n[Plot Summary - Faust (Parts 1 and 2) - Course Hero] This study guide and infographic for Goethe's Faust (Parts 1 and 2) offer summary and analysis on themes, symbols, and other literary ...\n\n《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。《浮士德》是歌德的代表作，是他毕生思想",
-    techniques: "[Plot Summary - Faust (Parts 1 and 2) - Course Hero] This study guide and infographic for Goethe's Faust (Parts 1 and 2) offer summary and analysis on themes, symbols, and other literary ...",
+    themeAnalysis: "《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极高的艺术境界。\n《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。\n\n《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。 [1]\n\n《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极",
+    techniques: "",
     excerpts: [],
-    insights: "[Faust Study Guide | Literature Guide - LitCharts] The best study guide to Faust on the planet, from the creators of SparkNotes. Get the summaries, analysis, and quotes you need.\n\n[Faust Summary & Study Guide - BookRags.com] Faust Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions, themes, and more.\n\n[Goethe's Faust - Wikipedia] Faust is a tragic play in two parts by Johann Wolfgang von Goethe, usually known in English as Faust, Part One and Faust, Part Two. Nearly all of Part One ...\n\n[Faust - CliffsNotes] Faust is a learned German scholar w",
+    insights: "《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗剧。《浮士德》是歌德的代表作，是他毕生思想和艺术探索的结晶。《浮士德》的构思和写作，贯串了歌德的一生，1768年开始创作，直到1832年——前后一共64年。《浮士德》构思宏伟，内容复杂，结构庞大，风格多变，融现实主义与浪漫主义于一炉，将真实的描写与奔放的想象、当代的生活与古代的神话传说杂糅一处，善于运用矛盾对比之法安排场面、配置人物、时庄时谐、有讽有颂、形式多样、色彩斑驳，达到了极高的艺术境界。\n《浮士德（Faust）》是德国作家约翰·沃尔夫冈·冯·歌德创作的一部长达12111行的诗剧，第一部出版于1808年，共二十五场，不分幕。第二部共二十七场，分五幕。全剧没有首尾连贯的情节，而是以浮士德思想的发展变化为线索，以德国民间传说为题材，以文艺复兴以来的德国和欧洲社会为背景，写一个新兴资产阶级先进知识分子不满现实，竭力探索人生意义和社会理想的生活道路。是一部现实主义和浪漫主义结合得十分完好的诗",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B5%AE%E5%A3%AB%E5%BE%B7", tier: "reference", fetchedAt: "2026-05-21T05:31:42.219Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%B5%AE%E5%A3%AB%E5%BE%B7", tier: "reference", fetchedAt: "2026-05-21T04:29:27.012Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1622,60 +1590,53 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "the-trial": {
     id: "the-trial",
     characters: [
-      { name: "Character List", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "The Trial", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "The Trial Character", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "List", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "Joseph", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "Chief Clerk", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "Fraulein Burstner", role: "角色", description: "The Trial 中的主要角色。" },
-      { name: "Study Guide The", role: "角色", description: "The Trial 中的主要角色。" }
+      { name: "Hermes", role: "角色", description: "\"The Trial\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Psychopomp", role: "角色", description: "\"The Trial\" 中出现的角色。更多信息请通过搜索链接核实。" }
     ],
-    plotSummary: "Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-7 Chapters 8-10 Fragments Character List NEW Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Summary and Study Guide Overview Book Details The Trial , an unfinished novel by Franz Kafka, was written in the 1910s an",
+    plotSummary: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。",
     plotNodes: [
-      { label: "Part 1", description: "Get ready to explore The Trial and its meaning." },
-      { label: "Part 2", description: "Study Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, Sup" }
+      { label: "第 1 部分", description: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人" },
+      { label: "第 2 部分", description: "Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。" },
+      { label: "第 3 部分", description: "“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。" },
+      { label: "第 4 部分", description: "塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。" },
+      { label: "第 5 部分", description: "从牌面中可以看到，天使已经吹响了号角，在传播着上天的福音。而在声声催人振奋的号角中，沉睡已久的灵魂一个个走出了自己内心的坟墓，或者说那是来自内心的困惑。他们站立在天使的翅膀下，满怀着一颗感恩的心，细心地聆听着上天的福音。" }
     ],
-    themeAnalysis: "Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-7 Chapters 8-10 Fragments Character List NEW Character Analysis Themes Symbols & Motif",
-    techniques: "Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide The Trial Franz Kafka The Trial Franz Kafka 44 pages • 1-hour read Franz Kafka The Trial Fiction | Novel | Adult | Published in 1925 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study G",
-    excerpts: [
-      { quote: ". It discusses the plot, which follows Josef K. as he is arrested and tries to navigate a confusing ...\n[The Trial: Analysis of Major Characters | Literature and Writing] ", context: "From The Trial" }
-    ],
-    insights: "[The Trial Study Guide | Literature Guide - LitCharts] The Trial's important quotes, sortable by theme, character, or chapter. The Trial: Characters. Description, analysis, and timelines for The Trial's characters.\n\n[Character List - The Trial - SparkNotes] The Trial Character List · Joseph K. The hero and protagonist of the novel, K. is the Chief Clerk of a bank. · Fraulein Burstner. A boarder in the same house as ...\n\n[The Trial Summary - SuperSummary] Get ready to explore The Trial and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and qu",
+    themeAnalysis: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。\n\n“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。",
+    techniques: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。",
+    excerpts: [],
+    insights: "审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。Hermes the Psychopomp，他也是亡灵的指引者。审判——诱惑由图像可以看到这就是圣经中审判日的意念，世界原有的程序完全毁灭，而天使响起他的号角，死者由地面重生，要明白审判这张牌是自我对原本的自己接受对错误的批判，才有新的生机再来。“审判”具有唤醒的能力，它能使人激发出不曾察觉过的潜能。但面对力量，每个人都需要“自我审判”，反省并总结自己的问题。塔罗牌由22张大阿卡那牌和56张小阿卡那牌组成。大阿卡那牌就如同它的名字一样，是用来解释命运的大致运势，每一张牌都反映着人生的不同际遇。\n审判是塔罗牌大阿卡那的第二十一张牌，也是倒数第二张牌，也是塔罗牌的【20】号牌。\n\nHermes the Psychopomp，他也是亡灵的指引者。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A1%E5%88%A4", tier: "reference", fetchedAt: "2026-05-21T05:35:34.574Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A1%E5%88%A4", tier: "reference", fetchedAt: "2026-05-21T04:32:29.250Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/7849", tier: "original_text", fetchedAt: "2026-05-21T04:32:47.325Z", contributedFields: ["insights"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Trial%20Franz%20Kafka" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Trial%20Franz%20Kafka" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Trial" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Trial" },
+      ],
     },
   },
 
   "metamorphosis": {
     id: "metamorphosis",
-    characters: [
-      { name: "The Metamorphosis", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "Character Analysis", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "Quizlet", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "Gregor Samsa", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "The Metamorphosis Character", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "List", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "Franz Kafka", role: "角色", description: "The Metamorphosis 中的主要角色。" },
-      { name: "Summary", role: "角色", description: "The Metamorphosis 中的主要角色。" }
-    ],
-    plotSummary: "[The Metamorphosis by Franz Kafka | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Franz Kafka's novella The Metamorphosis. Download the free study guide and infographic for The ...\n\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承",
+    plotSummary: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思考。 [23]小说以主人公变为甲虫这一荒诞故事反映了世人唯利是图、对金钱顶礼膜拜、对真情人性不屑一顾，最终被社会挤压变形的现实，反映了资本主义制度下真实的社会生活。 [2]\n\n卡夫卡生活于第一次世界大战前后动荡不安、物质主义盛行的年代， [5]他一生中绝大部分时间生活在捷克共和国的首都布拉格，而当时的布拉格正处在激烈的民族冲突与动荡中，“社会主义、犹太主义、德国民族主义、玩世不恭",
     plotNodes: [
-      { label: "Part 1", description: "[The Metamorphosis by Franz Kafka | Summary & Analysis - YouTube] ..." },
-      { label: "Part 2", description: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之" },
-      { label: "Part 3", description: "《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最" },
-      { label: "Part 4", description: "卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承" }
+      { label: "Part 1", description: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之" },
+      { label: "Part 2", description: "《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最" },
+      { label: "Part 3", description: "卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思考。" },
+      { label: "Part 4", description: "卡夫卡生活于第一次世界大战前后动荡不安、物质主义盛行的年代， [5]他一生中绝大部分时间生活在捷克共和国的首都布拉格，而当时的布拉格正处在激烈的民族冲突与动荡中，“社会主义、犹太主义、德国民族主义、玩世不恭" }
     ],
-    themeAnalysis: "[The Metamorphosis by Franz Kafka | Summary & Analysis - YouTube] ... plot, characters, symbols, and themes of Franz Kafka's novella The Metamorphosis. Download the free study guide and infographic for The ...\n\n[The Metamorphosis Study Guide | Course Hero] This study guide and infographic for Franz Kafka's The Metamorphosis offer summary and analysis on themes, symbols, and other literary devices found in the text ...\n\n[Kafka's The Metamorphosis Analysis Free Essay | SpeedyPaper.com] THEMES. Life's Absurdity. The metamorphosis talks about ridiculous, surprising, unimaginable and unreasonable events. The events presented in ...\n\n[The Metamorphosis: Themes | SparkNotes] The Metamorphosis deals with an absurd, or wildly irrational, event, which in itself suggests that the story operates in a",
-    techniques: "[The Metamorphosis Study Guide | Course Hero] This study guide and infographic for Franz Kafka's The Metamorphosis offer summary and analysis on themes, symbols, and other literary devices found in the text ...",
+    themeAnalysis: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。\n\n卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”",
+    techniques: "",
     excerpts: [],
-    insights: "[The Metamorphosis - Wikipedia] The Metamorphosis tells the story of salesman Gregor Samsa, who wakes to find himself inexplicably transformed into a huge insect.\n\n[The Metamorphosis: Themes | SparkNotes] The Metamorphosis deals with an absurd, or wildly irrational, event, which in itself suggests that the story operates in a random, chaotic universe.\n\n[The Metamorphosis Character List - GradeSaver] The Metamorphosis study guide contains a biography of Franz Kafka, literature essays, quiz questions, major themes, characters, ...\n\n[Analysis of Franz Kafka's The Metamorphosis] The Metamorphosis,",
+    insights: "《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献时，家人一反之前对他的尊敬态度，逐渐显现出冷漠、嫌弃、憎恶的面孔。父亲恶狠狠地用苹果打他，母亲吓得晕倒，妹妹厌弃他。渐渐地，萨姆沙远离了社会，最后孤独痛苦地在饥饿中默默地死去。卡夫卡以自己独特的艺术笔调，用象征、细节描写等手法对“人变成甲虫事件”进行艺术再造，使作品呈现出荒诞、不可思议的基调。《变形记》反映了20世纪初刚进入工业化时代的人们对生活和命运的焦虑与恐惧，其中承载着卡夫卡对于“孤独”与“异化”的深刻思\n《变形记》是奥地利作家弗兰兹·卡夫卡创作的中篇小说。《变形记》完成于1912年，1915年首次发表在月刊《白色书刊》10 月号上。 [1]\n\n《变形记》中主人公格里高尔·萨姆沙在一家公司任旅行推销员，长年奔波在外，辛苦支撑着整个家庭的花销。当萨姆沙还能以微薄的薪金供养他那薄情寡义的家人时，他是家中受到尊敬的长子，父母夸奖他，妹妹爱戴他。当有一天他变成了甲虫，丧失了劳动力，对这个家再也没有物质贡献",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T05:44:54.999Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%8F%98%E5%BD%A2%E8%AE%B0", tier: "reference", fetchedAt: "2026-05-21T04:39:58.669Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -1708,32 +1669,36 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "dolls-house": {
     id: "dolls-house",
     characters: [
-      { name: "Doll", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "House Character Analysis", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "Need", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "Henrik Ibsen", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "House", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "Check", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "From", role: "角色", description: "A Doll's House 中的主要角色。" },
-      { name: "Character List", role: "角色", description: "A Doll's House 中的主要角色。" }
+      { name: "Subjects", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Drama", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Marriage", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Norwegian", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Translations", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "English", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Wives", role: "角色", description: "\"A Doll's House\" 中出现的角色。更多信息请通过搜索链接核实。" }
     ],
-    plotSummary: "[A Dolls House by Henrik Ibsen | Summary & Analysis - YouTube] in-depth analysis of the plot, characters, symbols, and themes of Henrik ... characters, symbols, and themes of Henrik Ibsen's play A Doll's House ...\n\n[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Doll's House by Henrik Ibsen | Summary, Characters & Analysis] What are the themes of the play ''A Doll's House''?. The themes include marriage, deceit, social standing, and gender roles. It also advocates for the need for ...\n\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百",
+    plotSummary: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。",
     plotNodes: [
-      { label: "Part 1", description: "[A Dolls House by Henrik Ibsen | Summary & Analysis - YouTube] in-depth analysis of the plot, characters, symbols, and themes of Henrik ..." },
-      { label: "Part 2", description: "[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols." },
-      { label: "Part 3", description: "[A Doll's House by Henrik Ibsen | Summary, Characters & Analysis] What are the themes of the play ''A Doll's House''?." },
-      { label: "Part 4", description: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。" },
-      { label: "Part 5", description: "「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百" }
+      { label: "第 1 部分", description: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。 《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设" },
+      { label: "第 2 部分", description: "「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。（6）青春泉。（7）翻译绝唱。（8）倾城之恋。（9）玩偶之家。（10）归。" }
     ],
-    themeAnalysis: "[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Dolls House by Henrik Ibsen | Summary & Analysis - YouTube] in-depth analysis of the plot, characters, symbols, and themes of Henrik ... characters, symbols, and themes of Henrik Ibsen's play A Doll's House ...\n\n[A Doll's House by Henrik Ibsen | Summary, Characters & Analysis] What are the themes of the play ''A Doll's House''?. The themes include marriage, deceit, social standing, and gender roles. It also advocates for the need for ...\n\n[A Doll's House Study Guide | Course Hero] This study guide and infographic for Henrik Ibsen's A Doll's House offer summary and analysis on themes",
-    techniques: "[A Doll's House Study Guide | Course Hero] This study guide and infographic for Henrik Ibsen's A Doll's House offer summary and analysis on themes, symbols, and other literary devices found in the text.",
+    themeAnalysis: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。（6）青春泉。（7）翻译绝唱。（8）倾城之恋。（9）玩偶之家。（10）归。",
+    techniques: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。",
     excerpts: [],
-    insights: "[A Doll's House Character Analysis - LitCharts] Need help on characters in Henrik Ibsen's A Doll's House? Check out our detailed character descriptions. From the creators of SparkNotes.\n\n[A Doll's House: Character List | SparkNotes] Analysis of Major Characters · Character List · Context · Plot Overview · Themes, Motifs, and Symbols. Deeper Study. Essays; Henrik Ibsen and A Doll's House ...\n\n[A Doll's House - Wikipedia] A Doll's House ; Norwegian, Danish · The awakening of a middle-class wife and mother · Naturalistic/realistic problem play. Modern tragedy · The home of the Helmer ...\n\n[A Doll",
+    insights: "《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n《玩偶之家》是作家张系国创作的科幻小说，以人类文明崩溃后机器人主宰世界为背景。作品通过人机地位倒置的设定，探讨了技术发展中的人类主体性危机，并融入对中国传统文化元素的运用。该小说在科幻框架下坚守“文以载道”理念，既批判技术异化现象，又通过机器人遵循“保护人类”原则的情节暗示人机和谐共处的可能性。\n\n「玩偶之家」选自张系国的科幻小说「星云组曲」。「星云组曲」由十个故事构成，勾绘从二十世纪到二百世纪的未来世界，这十个故事是：（1）归。（2）望子成龙。（3）岂有此理。（4）翦梦奇缘。（5）铜像城。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8E%A9%E5%81%B6%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T05:38:01.961Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E7%8E%A9%E5%81%B6%E4%B9%8B%E5%AE%B6", tier: "reference", fetchedAt: "2026-05-21T04:34:25.053Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/2542", tier: "original_text", fetchedAt: "2026-05-21T04:34:39.265Z", contributedFields: ["insights"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=A%20Doll's%20House%20Henrik%20Ibsen" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=A%20Doll's%20House%20Henrik%20Ibsen" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=A%20Doll's%20House" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=A%20Doll's%20House" },
+      ],
     },
   },
 
@@ -1816,30 +1781,30 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "disgrace": {
     id: "disgrace",
-    characters: [
-      { name: "Disgrace Character Analysis", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "Course Hero", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "Coetzee", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "Disgrace", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "Character List", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "David Lurie", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "Lucy", role: "角色", description: "Disgrace 中的主要角色。" },
-      { name: "Melanie Isaacs", role: "角色", description: "Disgrace 中的主要角色。" }
-    ],
-    plotSummary: "Get ready to explore Disgrace and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Disgrace J. M. Coetzee Disgrace J. M. Coetzee 55 pages • 1-hour read J. M. Coetzee Disgrace Fiction | Novel | Adult | Published in 1999 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-6 Chapters 7-12 Chapters 13-18 Chapters 19-24 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW True or False NEW Character Analysis David Lurie Content Warning : The novel and this guide discuss sexism,",
+    plotSummary: "Disgrace is a novel by J.M. Coetzee that was first published in 1999. It caused fierce debates in South Africa over its portrayal of the new social and political order.",
     plotNodes: [
-      { label: "Part 1", description: "Get ready to explore Disgrace and its meaning." },
-      { label: "Part 2", description: "Study Guide Disgrace J." }
+      { label: "第 1 部分", description: "Disgrace is a novel by J.M. Coetzee that was first published in 1999." }
     ],
-    themeAnalysis: "Get ready to explore Disgrace and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Disgrace J. M. Coetzee Disgrace J. M. Coetzee 55 pages • 1-hour read J. M. Coetzee Disgrace Fiction | Novel | Adult | Published in 1999 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-6 Chapters 7-12 Chapters 13-18 Chapters 19-24 Character Analysis Themes Symbols & Motifs Importan",
-    techniques: "[Disgrace Character Analysis - Course Hero] This study guide for J.M. Coetzee's Disgrace offers summary and analysis on themes, symbols, and other literary devices found in the text.\n\n[Analysis of J. M. Coetzee's Disgrace - Literary Theory and Criticism] Disgrace presents the elegiac story of a professional and personal disaster in the life of a scholar during his transition from middle age to old age.",
-    excerpts: [],
-    insights: "[Disgrace: Character List - SparkNotes] A list of all the characters in Disgrace. Disgrace characters include: David Lurie, Lucy, Melanie Isaacs, Petrus, Bev Shaw.\n\n[Disgrace — Study Guide - CliffsNotes] Disgrace tells the story of middle-aged Cape Town professor David Lurie's fall from grace following his forced resignation from the university.\n\n[Disgrace Character Analysis - SuperSummary] Disgrace begins with David Lurie soliciting a sex worker named Soraya. This transactional, detached human interaction sets the tone for his relationships ...\n\n[[PDF] CHARACTERS AND THEME ANALYSIS IN J.M. CO",
+    themeAnalysis: "耻（拼音：chǐ）是汉语一级通用规范汉字（常用字）。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。\n耻（拼音：chǐ）是汉语一级通用规范汉字（常用字） [2]。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。 [14]\n\n“耻”最初写作“恥”。图A是战国时期的郭店楚简上的文字，图1是小篆，字形稍有差异，结构基本相同。汉隶或作上下结构（图2），上为“耳”，下为“心”。“恥”由“心”和“耳”两部分组成。左部“耳”表示听；右部“心”表示与心理活动相关，“耻辱”是一种情感，故以“心”为形符。所以，“恥”字本义有听到批评后内心感到羞愧之意。“恥（耻）”字中的“耳”兼有表音作用，恥（耻）、耳上古音都在之部，中古音恥（耻）为日母上声止韵，耳为彻母上声止韵，两字读音接近。",
+    techniques: "耻（拼音：chǐ）是汉语一级通用规范汉字（常用字）。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。\n耻（拼音：chǐ）是汉语一级通用规范汉字（常用字） [2]。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。 [14]\n\n“耻”最初写作“恥”。图A是战国时期的郭店楚简上的文字，图1是小篆，字形稍有差异，结构基本相同。汉隶或作上下结构（图2），上为“耳”，下为“心”。“恥”由“心”和“耳”两部分组成。",
+    excerpts: [
+      { quote: "耻匹夫不可以无备，况耻国乎？是以圣王务行礼，不求耻人。", context: "来源：Disgrace" },
+      { quote: "耻匹夫不可以无备，况耻国乎？是以圣王务行礼，不求耻人。", context: "来源：Disgrace" }
+    ],
+    insights: "耻（拼音：chǐ）是汉语一级通用规范汉字（常用字）。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。\n耻（拼音：chǐ）是汉语一级通用规范汉字（常用字） [2]。据已有古文字材料，此字最古形体为战国文字，也见于战国前的著作《诗经》。“耻”原作“恥”，从心耳声，耳兼表义。至汉代“恥”里的心变为止。“耻”本义指声誉上受到的损害，即耻辱，用作动词指羞辱、侮辱，引申为感到羞愧。 [14]\n\n“耻”最初写作“恥”。图A是战国时期的郭店楚简上的文字，图1是小篆，字形稍有差异，结构基本相同。汉隶或作上下结构（图2），上为“耳”，下为“心”。“恥”由“心”和“耳”两部分组成。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%80%BB", tier: "reference", fetchedAt: "2026-05-21T05:45:34.450Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%80%BB", tier: "reference", fetchedAt: "2026-05-21T04:40:31.050Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Britannica", url: "https://www.britannica.com/topic/Disgrace", tier: "reference", fetchedAt: "2026-05-21T04:40:44.694Z", contributedFields: ["plotSummary", "themeAnalysis"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Disgrace%20J.%20M.%20Coetzee" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Disgrace%20J.%20M.%20Coetzee" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Disgrace" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Disgrace" },
+      ],
     },
   },
 
@@ -1891,27 +1856,14 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "children-of-gebelawi": {
     id: "children-of-gebelawi",
-    characters: [
-      { name: "Children", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Gebelawi Summary", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Thanks", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Plot Summary", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Gebelawi", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Naguib Mahfouz", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Character Analysis", role: "角色", description: "Children of Gebelawi 中的主要角色。" },
-      { name: "Background Information", role: "角色", description: "Children of Gebelawi 中的主要角色。" }
-    ],
-    plotSummary: "Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz. A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more.\n\nPlot Summary Children of Gebelawi Naguib Mahfouz Children of Gebelawi Naguib Mahfouz Fiction | Novel | Adult | Published in 1959 Plot Summary Book Brief Plot Summary Children of Gebelawi (also known in English as Children of the Alley ) is a 1959 novel by Nobel Prize-winner Naguib Mahfouz. The novel is a heavily allegorical tale of the people and events intersecting in a specific alley in Cairo, depicting the rise and clash of the three major monotheistic religions of the world. Mahfouz was condemned in the Arabic world for the work and subject to violence and abuse due to its publication. In a brief preface, Mahfouz declares that while he will attempt to tell the stories of the alley accurately, he has only pe",
-    plotNodes: [
-      { label: "Part 1", description: "Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz." },
-      { label: "Part 2", description: "Plot Summary Children of Gebelawi Naguib Mahfouz Children of Gebelawi Naguib Mahfouz Fiction | Novel | Adult | Published in 1959 Plot Summary Book Brief Plot Summary Children of Gebelawi (also known i" }
-    ],
-    themeAnalysis: "[Children of Gebelawi Summary - SuperSummary] Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz ... summaries and analysis of major themes, characters, and more.\n\nThanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz. A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more.\n\nPlot Summary Children of Gebelawi Naguib Mahfouz Children of Gebelawi Naguib Mahfouz Fiction | Novel | Adult | Published in 1959 Plot Summary Book Brief Plot Summary Children of Gebelawi (also known in English as Children of the Alley ) is a 1959 novel by Nobel Prize-winner Naguib Mahfouz. The novel is a heavi",
-    techniques: "The Nobel Prize in Literature 1988 was awarded to Naguib Mahfouz &quot;who, through works rich in nuance - now clear-sightedly realistic, now evocatively ambiguous - has formed an Arabian narrative art that applies to all mankind&quot;\n\nNavigate to: Summary -- Facts -- Biographical -- Nobel Prize lecture -- Bibliography -- Interview -- Documentary -- Prose -- Photo gallery -- Article -- Other resources Press release Award ceremony speech Naguib Mahfouz – The Son of Two Civilizations by Anders Hallengren * This article was published on 16 October 2003. I am the son of two civilizations that at",
-    excerpts: [
-      { quote: "Children of Gebelawi", context: "From Children of Gebelawi" }
-    ],
-    insights: "[Children of Gebelawi - Wikipedia] Children of Gebelawi is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna.\n\n[Children of Gebelawi Summary - SuperSummary] Thanks for exploring this SuperSummary Plot Summary of “Children of Gebelawi” by Naguib Mahfouz ... summaries and analysis of major themes, characters, and more.\n\n[Naguib Mahfouz – The Son of Two Civilizations - NobelPrize.org] In actual fact, a similar theme runs through Awlad haratina (“Children of our quarter”, 1959; translated as Children of Gebelawi), which create",
+    plotSummary: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
+    themeAnalysis: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
+    techniques: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
+    excerpts: [],
+    insights: "Children of Gebelawi (Arabic: أولاد حارتنا, romanized: ʾawlād ḥāratnā) is a novel by the Egyptian writer and Nobel laureate Naguib Mahfouz. Its Egyptian dialectal transliteration is Awlad Haretna. An alternative English title is Children of the Alley.",
+    // _sources: {
+    //   wikipedia_en: "https://en.wikipedia.org/wiki/Children%20of%20Gebelawi"
+    // }
   },
 
   "efuru": {
@@ -2153,22 +2105,19 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "love-in-cholera": {
     id: "love-in-cholera",
-    plotSummary: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the complexities of love through its richly developed characters.\n\n[[Discussion] Love In The Time of Cholera by Gabriel Garcia Marquez] Plot summary of Love In The Time of Cholera. Key themes in Love In The Time of Cholera. Most underrated books of the last decade. Best book ...\n\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距",
+    plotSummary: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。 [23]该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。 [11]\n\n该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。 [10]该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。 [1]在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城市及世俗风貌的描写，对热带丛林及河流沿岸景象的描绘，以及人物的处世和心理，又都是典型的拉美风格。 [13]\n\n1985年，该小说出版，立即在拉美文坛上引起反响，第一版即出书120万册，销售一空；围绕小说的评论更是连篇累牍，世界各国纷纷翻译出版。 [5]2007年，由该小说改编的同名电影上映，该片由迈克·内威尔执导。 [6]\n\n《瘟疫年纪事》（A Jour",
     plotNodes: [
-      { label: "Part 1", description: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes." },
-      { label: "Part 2", description: "[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the complexities of love through its richly develop" },
-      { label: "Part 3", description: "[[Discussion] Love In The Time of Cholera by Gabriel Garcia Marquez] Plot summary of Love In The Time of Cholera." },
-      { label: "Part 4", description: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她" }
+      { label: "Part 1", description: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她" },
+      { label: "Part 2", description: "该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。" },
+      { label: "Part 3", description: "1985年，该小说出版，立即在拉美文坛上引起反响，第一版即出书120万册，销售一空；围绕小说的评论更是连篇累牍，世界各国纷纷翻译出版。" }
     ],
-    themeAnalysis: "[Love in the Time of Cholera Study Guide | Course Hero] This study guide and infographic for Gabriel García Márquez's Love in the Time of Cholera offer summary and analysis on themes, symbols, and other literary ...\n\n[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the complexities of love through its richly developed characters.\n\n[[Discussion] Love In The Time of Cholera by Gabriel Garcia Marquez] Plot summary of Love In The Time of Cholera. Key themes in Love In The Time of Cholera",
-    techniques: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera by Gabriel García Márquez | Goodreads] Love in the Time of Cholera is often quite bleak due to this veering towards stark Realism, to this occasional historical invasion of the narrative. Much of ...\n\n[Love in the Time of Cholera Study Guide | Course Hero] This study guide and infographic for Gabriel García Márquez's Love in the Time of Cholera offer summar",
-    excerpts: [
-      { quote: "Love in the Time of Cholera", context: "From Love in the Time of Cholera" }
-    ],
-    insights: "[Love in the Time of Cholera - Wikipedia] Love in the Time of Cholera · 1 Plot summary · 2 Characters · 3 Setting · 4 Major themes. 4.1 Narrative as seduction; 4.2 Relationship between love and passion; 4.3 ...\n\n[Love in the Time of Cholera by Gabriel García Márquez | Goodreads] Love in the Time of Cholera is often quite bleak due to this veering towards stark Realism, to this occasional historical invasion of the narrative. Much of ...\n\n[Love in the Time of Cholera: Analysis of Major Characters - EBSCO] \"Love in the Time of Cholera\" is a novel by Gabriel García Márquez that explores the compl",
+    themeAnalysis: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。 [23]该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。 [11]\n\n该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。 [10]该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。 [1]在艺术手法上，该小说采用的是法国",
+    techniques: "",
+    excerpts: [],
+    insights: "《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要还是费尔明娜自己的抉择，她与身份高贵的胡维纳尔·乌尔诺比医生结了婚。历经半个世纪，在乌尔比诺意外去世后，费尔明娜和阿里萨终于在古稀之年寻觅回迷失的爱情。该小说不仅表达了“经历爱情的折磨是一种尊严”，更重要的是展现了哥伦比亚的历史。战争和霍乱威胁着拉美人民的生命，而人为的破坏加剧了人与自然的对立，人的社会孤独感使人与人之间缺乏理解信任，心理距离加大。在艺术手法上，该小说采用的是法国后期浪漫主义爱情小说的笔法。小说对加勒比海城\n《霍乱时期的爱情》是哥伦比亚作家加西亚·马尔克斯创作的长篇小说，首次出版于1985年。 [23]该小说是作者结合自己父母的爱情故事，以及一些新闻素材创作而成。 [11]\n\n该小说讲述了费尔明娜、阿里萨、乌尔诺比三人长达半个世纪的三角恋情：年轻的电报员阿里萨在第一眼见到“花冠女神”费尔明娜时，便深深地爱上了她，在疯狂追求女神的同时却遭到女方父亲洛伦索·达萨的强烈反对。后来，虽然有其父的授意，但主要",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85", tier: "reference", fetchedAt: "2026-05-21T05:44:16.199Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%9C%8D%E4%B9%B1%E6%97%B6%E6%9C%9F%E7%9A%84%E7%88%B1%E6%83%85", tier: "reference", fetchedAt: "2026-05-21T04:44:13.699Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2255,27 +2204,14 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "canto-general": {
     id: "canto-general",
-    characters: [
-      { name: "If You Forget", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Me Summary", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Study Guide", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Download", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Neruda", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Canto General", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Pablo Neruda", role: "角色", description: "Canto General 中的主要角色。" },
-      { name: "Selected Poems", role: "角色", description: "Canto General 中的主要角色。" }
-    ],
-    plotSummary: "[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ... Plot Summary, Characters,. Themes, Style, Historical Context, Critical ... In Canto General, the 12-part poem entitled The Heights of. Macchu Picchu was ...\n\n[If You Forget Me Summary and Study Guide - SuperSummary] ... summaries and analysis of major themes, characters, and more. Download PDF ... This time period was when Neruda worked on his Canto General. It was ...\n\nCanto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride, Neruda depicts Latin American history as a grand, continuous struggle against oppression. Comprising more than 300 poems, Canto general is arranged\n\nCanto general Introduction References & Edit History Related Topics Quizzes A Study of Poetry Famous Poets and Poetic Form Poetry: First Lines Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepan",
-    plotNodes: [
-      { label: "Part 1", description: "[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ..." },
-      { label: "Part 2", description: "[If You Forget Me Summary and Study Guide - SuperSummary] ..." },
-      { label: "Part 3", description: "Canto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950." },
-      { label: "Part 4", description: "Canto general Introduction References & Edit History Related Topics Quizzes A Study of Poetry Famous Poets and Poetic Form Poetry: First Lines Contents CITE verified Cite While every effort has been m" }
-    ],
-    themeAnalysis: "[If You Forget Me Summary and Study Guide - SuperSummary] ... summaries and analysis of major themes, characters, and more. Download PDF ... This time period was when Neruda worked on his Canto General. It was ...\n\n[Canto general | Author, Summary & Themes - Britannica] Canto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride.\n\n[Pablo Neruda - Wikipedia] He further explored this theme in Canto General (1950). In Alturas, Neruda celebrated the achievement of Macchu Picchu but also condemned the slavery that had ...\n\n[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ... Plot Summary, Characters,. Themes, Style, Historical Context, Critical ... In Canto General, the 12-part poem entitled The",
-    techniques: "[The Poetry of Pablo Neruda - Literary Theory and Criticism] By 1950, when the epic Canto General was published, Neruda had become a poet of worldwide fame, a political exile, and an enthusiastic Stalinist ...\n\n[[PDF] Pablo Neruda: Selected Poems - English Treasure Trove] ... Plot Summary, Characters,. Themes, Style, Historical Context, Critical ... In Canto General, the 12-part poem entitled The Heights of. Macchu Picchu was ...\n\nCanto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride, Neruda depicts L",
+    plotSummary: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines. This work attempts to be a history or encyclopedia of the entire American Western Hemisphere, or New World, from a Hispanic American perspective.",
+    themeAnalysis: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines.",
+    techniques: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines.",
     excerpts: [],
-    insights: "[Canto general | Author, Summary & Themes - Britannica] Canto general, an epic poem of Latin America by Pablo Neruda, published in two volumes in 1950. Mixing his communist sympathies with national pride.\n\n[Pablo Neruda: Poems Study Guide - GradeSaver] \" His 1950 collection Canto General is an ambitious attempt to mythologize and celebrate Latin America as a whole through a communist lens ...\n\n[Pablo Neruda - Wikipedia] He further explored this theme in Canto General (1950). In Alturas, Neruda celebrated the achievement of Macchu Picchu but also condemned the slavery that had ...\n\n[If You Forg",
+    insights: "Canto General is Pablo Neruda's tenth book of poems. It was first published in Mexico in 1950, by Talleres Gráficos de la Nación. Neruda began to compose it in 1938. \"Canto General\" (\"General Song\") consists of 15 sections, 231 poems, and more than 15,000 lines.",
+    // _sources: {
+    //   wikipedia_en: "https://en.wikipedia.org/wiki/Canto%20General"
+    // }
   },
 
   "hopscotch": {
@@ -2313,31 +2249,33 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "time-of-hero": {
     id: "time-of-hero",
     characters: [
-      { name: "The Time", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "Hero", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "Summary", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "Characters", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "Setting", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "Britannica", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "Mario Vargas Llosa", role: "角色", description: "The Time of the Hero 中的主要角色。" },
-      { name: "The City", role: "角色", description: "The Time of the Hero 中的主要角色。" }
+      { name: "The Time", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Hero", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Faber", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Mario Vargas Llosa", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" }
     ],
-    plotSummary: "The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and the Dogs”). The novel describes adolescents in a Peruvian military school striving to survive in a hostile and violent environment. The corruption of the military school suggests a larger\n\nThe Time of the Hero Introduction References & Edit History Related Topics Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X URL https://www.britannica.com/topic/The-Time-of-the-Hero Feedback External Websites Feedback Corrections? Updates? Omissio",
+    plotSummary: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
     plotNodes: [
-      { label: "Part 1", description: "The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and the Dogs”)." },
-      { label: "Part 2", description: "The Time of the Hero Introduction References & Edit History Related Topics Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its " }
+      { label: "第 1 部分", description: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。 《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。" },
+      { label: "第 2 部分", description: "Subjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence" }
     ],
-    themeAnalysis: "[Analysis of Mario Vargas Llosa's Novels - Literary Theory and Criticism] Vargas Llosa returns to the themes of injustice, political corruption, and defeat of The Time of the Hero and Captain Pantoja and the Special ...\n\n[Introduction & Overview of The Time of the Hero - BookRags.com] The Time of the Hero Summary & Study Guide includes comprehensive information and analysis to help you understand the book. This study guide contains the ...\n\n[The Time of the Hero: Analysis of Major Characters - EBSCO] \"The Time of the Hero\" is a novel that explores the lives of cadets at the Leoncio Prado Military Academy in Lima, Peru, focusing on their personal ...\n\n[The Time of the Hero by Mario Vargas Llosa (Book ... - Amazon.com] This engaging summary presents an analysis of The Time of the Hero by Mar",
-    techniques: "The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and the Dogs”). The novel describes adolescents in a Peruvian military school striving to survive in a hostile and violent environment. The corruption of the military school suggests a larger\n\nThe Time of the Hero Introduction References & Edit History Related Topics Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents CITE verified Cite While every effort has",
-    excerpts: [
-      { quote: "The Time of the Hero", context: "From The Time of the Hero" }
-    ],
-    insights: "[The Time of the Hero - Wikipedia] The Time of the Hero is a 1963 novel by Peruvian writer and Nobel laureate Mario Vargas Llosa. It was Vargas Llosa's first novel and is set among the cadets ...\n\n[Introduction & Overview of The Time of the Hero - BookRags.com] The Time of the Hero Summary & Study Guide includes comprehensive information and analysis to help you understand the book. This study guide contains the ...\n\n[The Time of the Hero | Summary, Characters & Setting - Britannica] The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and t",
+    themeAnalysis: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
+    techniques: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
+    excerpts: [],
+    insights: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/The%20Time%20of%20the%20Hero", tier: "reference", fetchedAt: "2026-05-21T05:41:46.222Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/The%20Time%20of%20the%20Hero", tier: "reference", fetchedAt: "2026-05-21T04:42:02.798Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/37499", tier: "original_text", fetchedAt: "2026-05-21T04:42:22.776Z", contributedFields: ["insights"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Time%20of%20the%20Hero%20Mario%20Vargas%20Llosa" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Time%20of%20the%20Hero%20Mario%20Vargas%20Llosa" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Time%20of%20the%20Hero" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Time%20of%20the%20Hero" },
+      ],
     },
   },
 
@@ -2530,26 +2468,20 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "beloved": {
     id: "beloved",
-    characters: [
-      { name: "Beloved Character Analysis", role: "角色", description: "Beloved 中的主要角色。" },
-      { name: "Course Hero", role: "角色", description: "Beloved 中的主要角色。" },
-      { name: "Toni Morrison", role: "角色", description: "Beloved 中的主要角色。" },
-      { name: "Beloved", role: "角色", description: "Beloved 中的主要角色。" }
-    ],
-    plotSummary: "[Beloved by Toni Morrison | Summary, Analysis & Plot - Lesson] The Beloved plot takes place about ten years after emancipation, but the effects of slavery are still very much present in the minds of its various characters.\n\n[Beloved by Toni Morrison : r/books - Reddit] Themes and analysis of Beloved. Beloved book reviews and recommendations. Beloved plot summary and key points. Character analysis of Sethe in ...\n\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万",
+    plotSummary: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。 [2-3] [8]作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。 [5-6]莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。 [4] [8]\n\n1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。 [2] [10]\n\n《宠儿》讲述一个叫塞丝的黑奴为了获取自由，只身从“甜蜜之家”的肯塔基农庄逃亡到辛辛那提的农舍。一个月后，她被奴隶主追捕，为了让自己的孩子摆脱做奴隶的悲惨命运，她毅然将孩子的喉咙割断后下葬。这个惨死在亲生母亲手里的孩子，被取名为“宠儿”。她也因为亲手杀死了自己的孩子，在后来一直受到社区人们的仇视和排斥并忍受着良知的折磨和巨大的孤独。宠儿阴魂不散，于十八年后重返人间，她化作少女，搅得家里鸡犬不宁，不仅向母亲讨爱债，还不择手段地引诱和纠缠保罗，将母亲刚刚稳定和",
     plotNodes: [
-      { label: "Part 1", description: "[Beloved by Toni Morrison | Summary, Analysis & Plot - Lesson] The Beloved plot takes place about ten years after emancipation, but the effects of slavery are still very much present in the minds of i" },
-      { label: "Part 2", description: "[Beloved by Toni Morrison : r/books - Reddit] Themes and analysis of Beloved." },
-      { label: "Part 3", description: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形" },
-      { label: "Part 4", description: "该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万" }
+      { label: "Part 1", description: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形" },
+      { label: "Part 2", description: "该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。" },
+      { label: "Part 3", description: "1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。" },
+      { label: "Part 4", description: "《宠儿》讲述一个叫塞丝的黑奴为了获取自由，只身从“甜蜜之家”的肯塔基农庄逃亡到辛辛那提的农舍。一个月后，她被奴隶主追捕，为了让自己的孩子摆脱做奴隶的悲惨命运，她毅然将孩子的喉咙割断后下葬。这个惨死在亲生母亲手里的孩子，被取名为“宠儿”。她也因为亲手杀死了自己的孩子，在后来一直受到社区人们的仇视和排斥并忍受着良知的折磨和巨大的孤独。宠儿阴魂不散，于十八年后重返人间，她化作少女，搅得家里鸡犬不宁，不仅" }
     ],
     themeAnalysis: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。 [2-3] [8]作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。 [5-6]莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。 [4] [8]\n\n1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。 [2] [10]\n\n《宠儿》讲述一个叫塞丝的黑奴为了获取自由，只身从“甜蜜之家",
-    techniques: "[Beloved Character Analysis - Course Hero] This study guide and infographic for Toni Morrison's Beloved offer summary and analysis on themes, symbols, and other literary devices found in the text.",
+    techniques: "",
     excerpts: [],
-    insights: "[Beloved Character Analysis - LitCharts] Beloved · All Themes · Slavery Theme Icon. Slavery · Motherhood Theme Icon. Motherhood · Storytelling, Memory, and the Past Theme Icon. Storytelling, Memory, and ...\n\n[Beloved: Character List - SparkNotes] On an allegorical level, Beloved represents the inescapable, horrible past of slavery returned to haunt the present. Her presence, which grows increasingly ...\n\n[Beloved by Toni Morrison | Summary, Analysis & Plot - Lesson] The Beloved plot takes place about ten years after emancipation, but the effects of slavery are still very much present in the mi",
+    insights: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。 [2-",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A0%E5%84%BF", tier: "reference", fetchedAt: "2026-05-21T05:42:26.392Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A0%E5%84%BF", tier: "reference", fetchedAt: "2026-05-21T04:42:55.182Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2626,29 +2558,19 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "to-kill-mockingbird": {
     id: "to-kill-mockingbird",
-    characters: [
-      { name: "To Kill", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Mockingbird Analysis", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Character Insights", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Symbols", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Delve", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Mockingbird", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Harper Lee", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" },
-      { name: "Characters", role: "角色", description: "To Kill a Mockingbird 中的主要角色。" }
-    ],
     plotSummary: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲\n《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。 [11] [34]\n\n该小说的部分情节是基于作者父亲年轻时的一次真实经历。 [14]该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。 [14]小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲阿蒂克斯在小说中是正直律师的典范。 [12]同时受美国南方哥特文学传统的影响，哈珀·李在小说中融入了大量哥特风格的细节，丰富了故事背景和情节。 [16]\n\n《杀死一只知更鸟》是哈珀·李的代表作品，1961年获普利策奖。该小说被美国《时代周刊》杂志评为中学生必读的十大经典书目之一，被翻译成40多种文字。该小说于1962年改编为同名电影，主人公阿蒂克斯在好",
     plotNodes: [
       { label: "Part 1", description: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产" },
       { label: "Part 2", description: "该小说的部分情节是基于作者父亲年轻时的一次真实经历。" },
       { label: "Part 3", description: "《杀死一只知更鸟》是哈珀·李的代表作品，1961年获普利策奖。该小说被美国《时代周刊》杂志评为中学生必读的十大经典书目之一，被翻译成40多种文字。该小说于1962年改编为同名电影，主人公阿蒂克斯在好" }
     ],
-    themeAnalysis: "[To Kill a Mockingbird Analysis: Character Insights and Symbols] Delve into a comprehensive To Kill a Mockingbird themes analysis, exploring themes, characters, and symbolism to enhance your understanding.\n\n[To Kill a Mockingbird Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of To Kill a Mockingbird. Visual theme-tracking, too.\n\n[To Kill a Mockingbird by Harper Lee | Themes - YouTube] Comments · To Kill a Mockingbird by Harper Lee | Full Analysis | Plot · Themes in Purple Hibiscus | Literature Analysis for Exam Preparation.\n\n[In-Depth Analysis of 'To Kill a Mockingbird' - Themes, Characters ...] Through Scout's eyes, the novel explores profound themes of racial injustice, moral growth, and the loss of innocence. “To Kill a Mockingbird” ...\n\n[To",
+    themeAnalysis: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲\n《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。 [11] [34]\n\n该小说的部分情节是基于作者父亲年轻时的一次真实经历。 [14]该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。 [14]小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法",
     techniques: "",
     excerpts: [],
-    insights: "[To Kill a Mockingbird - Wikipedia] To Kill a Mockingbird is a 1960 Southern Gothic novel by American author Harper Lee. It became instantly successful after its release; in the United States, ...\n\n[To Kill a Mockingbird Study Guide | Literature Guide - LitCharts] In-depth summary and analysis of every chapter of To Kill a Mockingbird. Visual theme-tracking, too.\n\n[To Kill a Mockingbird: Full Book Analysis - SparkNotes] To Kill a Mockingbird tells the story of the young narrator's passage from innocence to experience when her father confronts the racist justice system.\n\n[To Kill a Mockingbird",
+    insights: "《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。该小说的部分情节是基于作者父亲年轻时的一次真实经历。该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白人之间因处理黑人与白人之间的矛盾而产生不满和冲突，即鲍伯·尤厄尔不满阿蒂克斯·芬奇在法庭上对自己的反驳，但又无力对其进行直接报复，因而将矛头指向阿蒂克斯家两个年幼脆弱的孩子，在危急时刻怪人阿瑟·拉德利挺身而出，保护了孩子们免遭严重伤害。最后，以恶人鲍伯·尤厄尔被杀结束。小说从儿童视角以第一人称叙述了斯库特六岁时对家人和邻居生活的观察，反映了经济大萧条时期美国的儿童教育问题、种族问题、司法公正问题等社会问题。斯库特成长于单亲家庭，父亲\n《杀死一只知更鸟》是美国女作家哈珀·李创作的半自传体长篇小说，首次发表于1960年。 [11] [34]\n\n该小说的部分情节是基于作者父亲年轻时的一次真实经历。 [14]该小说一开始围绕怪人阿瑟·拉德利开展叙事，芬奇兄妹与小伙伴迪尔控制不住自己的好奇心，与怪人阿瑟·拉德利之间发生了一系列带着疑问又温馨的故事。之后围绕黑人汤姆·鲁滨逊被诬告强奸白人马耶拉·尤厄尔，以汤姆被宣告有罪，最后无辜惨死。白",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F", tier: "reference", fetchedAt: "2026-05-21T05:45:56.181Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E6%9D%80%E6%AD%BB%E4%B8%80%E5%8F%AA%E7%9F%A5%E6%9B%B4%E9%B8%9F", tier: "reference", fetchedAt: "2026-05-21T04:45:31.977Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2683,29 +2605,22 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "labyrinth-of-solitude": {
     id: "labyrinth-of-solitude",
-    characters: [
-      { name: "The Labyrinth", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Solitude", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Life", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Thought", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Mexico Summary", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Study Guide", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Solitude Background", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" },
-      { name: "Octavio Paz", role: "角色", description: "The Labyrinth of Solitude 中的主要角色。" }
-    ],
-    plotSummary: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...\n\n[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions ...\n\n[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full summary and ...\n\n[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensive summaries and analysis of the book. This study guide includes a detailed Plot Summary, ...",
+    plotSummary: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" and \"The Dialectic of Solitude\".",
     plotNodes: [
-      { label: "Part 1", description: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles" },
-      { label: "Part 2", description: "[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, ch" },
-      { label: "Part 3", description: "[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full s" },
-      { label: "Part 4", description: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensive summaries and analysis of the book." }
+      { label: "Part 1", description: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz." },
+      { label: "Part 2", description: "Solitude is the profoundest fact of the human condition." }
     ],
-    themeAnalysis: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...\n\n[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions ...\n\n[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full summary and ...\n\n[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensiv",
-    techniques: "[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz] This study guide includes a detailed Plot Summary, Chapter Summaries & Analysis, Character Descriptions, Objects/Places, Themes, Styles, Quotes, and Topics for ...",
+    themeAnalysis: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" ...",
+    techniques: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" ...",
     excerpts: [
-      { quote: "The Labyrinth of ...] Hello Mexico, Indian here. Just finished a book ", context: "From The Labyrinth of Solitude" }
+      { quote: "The Pachuco and other extremes", context: "From The Labyrinth of Solitude" },
+      { quote: "From Independence to the Revolution", context: "From The Labyrinth of Solitude" },
+      { quote: ". After 1975 some editions included the three-part essay ", context: "From The Labyrinth of Solitude" }
     ],
-    insights: "[The Labyrinth of Solitude: Life and Thought in Mexico Summary] The Labyrinth of Solitude: Life and Thought in Mexico Summary & Study Guide includes detailed chapter summaries and analysis, quotes, character descriptions ...\n\n[The Labyrinth of Solitude Background - GradeSaver] The Labyrinth of Solitude study guide contains a biography of Octavio Paz, literature essays, quiz questions, major themes, characters, and a full summary and ...\n\n[Summary & Study Guide The Labyrinth of Solitude by Octavio Paz ...] The Labyrinth of Solitude Study Guide contains comprehensive summaries and analysis of th",
+    insights: "The Labyrinth of Solitude (Spanish: El laberinto de la soledad) is a 1950 book-length essay by the Mexican poet Octavio Paz. One of his most famous works, it consists of nine parts: \"The Pachuco and other extremes\", \"Mexican Masks\", \"The Day of the Dead\", \"The Sons of La Malinche\", \"The Conquest and Colonialism\", \"From Independence to the Revolution\", \"The Mexican Intelligence\", \"The Present Day\" ...",
+    // _sources: {
+    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Labyrinth%20of%20Solitude"
+    // }
   },
 
   "the-devils-to-pay": {
@@ -2825,25 +2740,14 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "once-were-warriors": {
     id: "once-were-warriors",
-    characters: [
-      { name: "Once Were Warriors", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Character Analysis", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Beth Heke", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Jake Heke", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Study Guide Once", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Were Warriors Alan", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Duff Once Were", role: "角色", description: "Once Were Warriors 中的主要角色。" },
-      { name: "Warriors Alan Duff", role: "角色", description: "Once Were Warriors 中的主要角色。" }
-    ],
-    plotSummary: "Get ready to explore Once Were Warriors and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Once Were Warriors Alan Duff Once Were Warriors Alan Duff 56 pages • 1-hour read Alan Duff Once Were Warriors Fiction | Novel | Adult | Published in 1990 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-6 Chapters 7-9 Chapters 10-13 Chapters 14-19 Character Analysis Themes Symbols & Motifs Important Quotes Essay Topics Quizzes NEW Reading Tools Discussion Questions Games Plot Scramble NEW Summary and Study Guide Overview Once Were Warriors by Alan Duff is",
-    plotNodes: [
-      { label: "Part 1", description: "Get ready to explore Once Were Warriors and its meaning." },
-      { label: "Part 2", description: "Study Guide Once Were Warriors Alan Duff Once Were Warriors Alan Duff 56 pages • 1-hour read Alan Duff Once Were Warriors Fiction | Novel | Adult | Published in 1990 A modern alternative to SparkNotes" }
-    ],
-    themeAnalysis: "Get ready to explore Once Were Warriors and its meaning. Our full analysis and study guide provides an even deeper dive with character analysis and quotes explained to help you discover the complexity and beauty of this book.\n\nStudy Guide Once Were Warriors Alan Duff Once Were Warriors Alan Duff 56 pages • 1-hour read Alan Duff Once Were Warriors Fiction | Novel | Adult | Published in 1990 A modern alternative to SparkNotes and CliffsNotes, SuperSummary offers high-quality Study Guides with detailed chapter summaries and analysis of major themes, characters, and more. Download PDF Play Audio Download PDF Play Audio Study Guide Book Brief Summaries & Analyses Plot Summary Background Chapter Summaries & Analyses Chapters 1-4 Chapters 5-6 Chapters 7-9 Chapters 10-13 Chapters 14-19 Character A",
-    techniques: "",
+    plotSummary: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S. premiere at the Hawaii International Film Festival. The novel was followed by two sequels, What Becomes of the Broken Hearted? (1996) and Jake's Long Shadow (2002).",
+    themeAnalysis: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S.",
+    techniques: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S.",
     excerpts: [],
-    insights: "[Once Were Warriors Summary | SuperSummary] Get ready to explore Once Were Warriors and its meaning. Our full analysis ... summaries and analysis of major themes, characters, and more. Download PDF\n\n[Once Were Warriors - Goodreads] Once Were Warriors is a critically important, confronting story of the colonial legacy of disenfranchisement, victimisation, cultural dislocation, poverty and ...\n\n[Once Were Warriors Character Analysis - SuperSummary] Beth Heke is the protagonist of Once Were Warriors. She is the mother of six children, as well as Jake Heke's wife of 16 years.\n\n[Plot summary, “Once",
+    insights: "Once Were Warriors is New Zealand author Alan Duff's bestselling first novel, published in 1990. It tells the story of an urban Māori family, the Hekes, and portrays the reality of domestic violence in New Zealand. It was the basis of a 1994 film of the same title, directed by Lee Tamahori and starring Rena Owen and Temuera Morrison, which made its U.S.",
+    // _sources: {
+    //   wikipedia_en: "https://en.wikipedia.org/wiki/Once%20Were%20Warriors"
+    // }
   },
 
   "true-history-kelly-gang": {
@@ -2860,20 +2764,33 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "carpentaria": {
     id: "carpentaria",
-    plotSummary: "[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria.\n\n[AHR - Australian Humanities Review] In his chapter, Jensen contends that Carpentaria offers readers a formula for how to counter the neoliberal order through Wright's powerful ...",
-    plotNodes: [
-      { label: "Part 1", description: "[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria." },
-      { label: "Part 2", description: "[AHR - Australian Humanities Review] In his chapter, Jensen contends that Carpentaria offers readers a formula for how to counter the neoliberal order through Wright's powerful ..." }
+    characters: [
+      { name: "Carpentaria", role: "角色", description: "\"Carpentaria\" 中出现的角色。更多信息请通过搜索链接核实。" }
     ],
-    themeAnalysis: "[Carpentaria Themes | GradeSaver] Carpentaria Themes · Racism · The environment · Home and family · Traditional ecological knowledge · Myth and reality · Colonialism and neocolonialism · Fate.",
-    techniques: "[On writing Carpentaria | Alexis Wright | HEAT Series 2 Number 13] Carpentaria imagines the cultural mind as sovereign and in control, while freely navigating through the known country of colonialism to explore the ...\n\n[[PDF] Epic and Epistemology in Alexis Wright's Carpentaria] This essay addresses how Carpentaria, by writing across Indigenous and European genres and epistemologies, makes a call for the deconstruction of colonial ...",
+    plotSummary: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。",
+    plotNodes: [
+      { label: "第 1 部分", description: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种" },
+      { label: "第 2 部分", description: "作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。" },
+      { label: "第 3 部分", description: "该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。 [1] [4]" },
+      { label: "第 4 部分", description: "Gulf of Carpentaria 卡奔塔利亚湾 ; 即卡奔塔利亚湾 ; 卡奔塔利亚海湾 ; 亚湾" },
+      { label: "第 5 部分", description: "An intermittent river of northeast Australia flowing about 837 km (520 mi) northwest to the Gulf of Carpentaria." }
+    ],
+    themeAnalysis: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。 [1-2] [5]\n\n作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。",
+    techniques: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。",
     excerpts: [],
-    insights: "[Carpentaria Themes | GradeSaver] Carpentaria Themes · Racism · The environment · Home and family · Traditional ecological knowledge · Myth and reality · Colonialism and neocolonialism · Fate.\n\n[Summary and Reviews of Carpentaria by Alexis Wright] Alexis Wright employs mysticism, stark reality, and pointed imagination to re-create the land and the Aboriginal people of Carpentaria.\n\n[On writing Carpentaria | Alexis Wright | HEAT Series 2 Number 13] Carpentaria imagines the cultural mind as sovereign and in control, while freely navigating through the known country of colonialism to explore the",
+    insights: "Carpentaria是英语名词，音标为[kɑ:pən&#39;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。作为地理术语，Carpentaria主要指代卡奔塔利亚湾这一宽阔浅海湾，属阿拉弗拉海的一部分；其衍生名称如Carpentaria acuminata（东澳棕）和N. carpentaria睡莲为该地区相关物种，卡奔塔利亚湾有牵牛花云现象。该名称最早见于17世纪荷兰东印度公司的航海记录，1606年荷兰船只“杜伊芬号”首次航行至该海湾并进行地理标注。\nCarpentaria是英语名词，音标为[kɑ:pən&#x27;teəriə]，专指澳大利亚东北部的卡奔塔利亚湾及其周边区域，用于描述澳大利亚北部与新几内亚南部之间的海域，并与阿拉弗拉海相邻。",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/Carpentaria", tier: "reference", fetchedAt: "2026-05-21T05:43:16.399Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/Carpentaria", tier: "reference", fetchedAt: "2026-05-21T04:38:25.411Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "medium",
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=Carpentaria%20Alexis%20Wright" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=Carpentaria%20Alexis%20Wright" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=Carpentaria" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=Carpentaria" },
+      ],
     },
   },
 
@@ -3240,5 +3157,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     // _sources: {
     //   wikipedia_en: "https://en.wikipedia.org/wiki/Cloudstreet"
     // }
+  },
+
+  "tb-ba-1": {
+    id: "tb-ba-1",
+    characters: [
+      { name: "Full", role: "角色", description: "tb-ba-1 中的主要角色。" },
+      { name: "Rainbow", role: "角色", description: "tb-ba-1 中的主要角色。" },
+      { name: "Internet Archive", role: "角色", description: "tb-ba-1 中的主要角色。" },
+      { name: "The Rainbow Magazine", role: "角色", description: "tb-ba-1 中的主要角色。" },
+      { name: "Radio Shack Color", role: "角色", description: "tb-ba-1 中的主要角色。" },
+      { name: "Computer", role: "角色", description: "tb-ba-1 中的主要角色。" }
+    ],
+    plotSummary: "[(PDF) ORIENTALIA LOVANIENSIA ANALECTA - Academia.edu] ... tb-ba — 1 1 ka-gur, — 1 ka-gur, 1 — 1 — 1 ses-tab-ba 1 ses-tab-ba — — 1 1 1 ... brief synopsis i s : in each of the four transactions. In all cases ...\n\n[Full text of \"198411 Rainbow\" - Internet Archive] If your line ends short of 32 characters then press ENTER to store the line. ... TB: BA= 1 56672— BU 1810 IF X1=0 GOTO 1860 1820 'PRINT DETAIL LINE 1830 PR I ...\n\n[Full text of \"The Rainbow Magazine (Radio Shack Color Computer ...] II your line ends short of 32 characters then press ENTER to store the line. ... TB : B A= 1 56672-BU 1810 IF X1=0 GOTO1860 1820 'PRINT DETAIL ...",
+    plotNodes: [
+      { label: "Part 1", description: "[(PDF) ORIENTALIA LOVANIENSIA ANALECTA - Academia.edu] ..." },
+      { label: "Part 2", description: "[Full text of \"198411 Rainbow\" - Internet Archive] If your line ends short of 32 characters then press ENTER to store the line." },
+      { label: "Part 3", description: "[Full text of \"The Rainbow Magazine (Radio Shack Color Computer ...] II your line ends short of 32 characters then press ENTER to store the line." }
+    ],
+    themeAnalysis: "[Full text of \"A manual of the Chaldee language : containing a ...] ... themes, but differs from it in details sufficiently to claim separate ... Tb'ba 1 *• T TO 'baa xaaa t — : — aribaa • : — fb'baa Dec. VI. Plural. TOTE ...",
+    techniques: "",
+    excerpts: [
+      { quote: "Congressional record", context: "From tb-ba-1" },
+      { quote: " - Internet Archive] If your line ends short of 32 characters then press ENTER to store the line. ... TB: BA= 1 56672— BU 1810 IF X1=0 GOTO 1860 1820 'PRINT DETAIL LINE 1830 PR I ...\n[Full text of ", context: "From tb-ba-1" },
+      { quote: "The Daily Colonist (1965-09-04)", context: "From tb-ba-1" }
+    ],
+    insights: "[Full text of \"Congressional record\" - Internet Archive] to otd« to formulate tb. ba.1. for a i raotlcal long, range work progrua to thl. irea. We have therefore allocated a nomtoil amount of money to the ...\n\n[(PDF) ORIENTALIA LOVANIENSIA ANALECTA - Academia.edu] ... tb-ba — 1 1 ka-gur, — 1 ka-gur, 1 — 1 — 1 ses-tab-ba 1 ses-tab-ba — — 1 1 1 ... brief synopsis i s : in each of the four transactions. In all cases ...\n\n[Full text of \"198411 Rainbow\" - Internet Archive] If your line ends short of 32 characters then press ENTER to store the line. ... TB: BA= 1 56672— BU 1810 IF X1=0 GOTO 1860 182",
   },
 };
