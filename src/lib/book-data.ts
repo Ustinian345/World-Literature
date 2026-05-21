@@ -1306,15 +1306,29 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "the-plague": {
     id: "the-plague",
-    plotSummary: "鼠疫（英語：plague）是一種存在於囓齒類與跳蚤的一種人畜共通傳染病，並藉蚤傳染給各種動物及人類，可引起人发热、严重毒血症状、淋巴結肿大、肺炎和出血倾向。 鼠疫的最初反應為跳蚤咬傷部位臨近的淋巴結發炎（急性淋巴结炎），即腺鼠疫（bubonic plague），經常發生於鼠蹊部，少發生於腋下或頸部，受感染的淋巴結發炎、紅腫、壓痛且可能流膿，通常會有發燒現象。部分患者得腺鼠疫后经血行蔓延至肺部造成肺炎，即肺鼠疫（pneumonic plague），而吸入此肺鼠疫病人的飞沫則可直接得到肺鼠疫。",
-    themeAnalysis: "鼠疫（英語：plague）是一種存在於囓齒類與跳蚤的一種人畜共通傳染病，並藉蚤傳染給各種動物及人類，可引起人发热、严重毒血症状、淋巴結肿大、肺炎和出血倾向。 鼠疫的最初反應為跳蚤咬傷部位臨近的淋巴結發炎（急性淋巴结炎），即腺鼠疫（bubonic plague），經常發生於鼠蹊部，少發生於腋下或頸部，受感染的淋巴結發炎、紅腫、壓痛且可能流膿，通常會有發燒現象。部分患者得腺鼠疫后经血行蔓延至肺部造成肺炎，即肺鼠疫（pneumonic plague），而吸入此肺鼠疫病人的飞沫則可直接得到肺鼠疫。",
-    techniques: "鼠疫（英語：plague）是一種存在於囓齒類與跳蚤的一種人畜共通傳染病，並藉蚤傳染給各種動物及人類，可引起人发热、严重毒血症状、淋巴結肿大、肺炎和出血倾向。 鼠疫的最初反應為跳蚤咬傷部位臨近的淋巴結發炎（急性淋巴结炎），即腺鼠疫（bubonic plague），經常發生於鼠蹊部，少發生於腋下或頸部，受感染的淋巴結發炎、紅腫、壓痛且可能流膿，通常會有發燒現象。部分患者得腺鼠疫后经血行蔓延至肺部造成肺炎，即肺鼠疫（pneumonic plague），而吸入此肺鼠疫病人的飞沫則可直接得到肺鼠疫。",
+    plotSummary: "鼠疫，由革兰染色阴性、两极浓染的短小杆菌鼠疫耶尔森菌引起的严重传染病。在自然环境下，鼠疫主要在野生啮齿动物间流行，人类在被带有鼠疫菌的跳蚤叮咬或吸入空气中的鼠疫菌后会感染。按照病变部位，鼠疫常见类型有腺鼠疫、肺鼠疫、败血症型鼠疫等，另有肠鼠疫、脑膜炎型鼠疫、眼鼠疫、皮肤鼠疫等少见类型。全人群对鼠疫的感染性均很高，若不及时治疗，其病死率可高达30%~60%。鼠疫的典型症状包括急剧发病、寒战、高热、剧烈头痛，血压下降、出血倾向等。腺鼠疫者淋巴结肿痛显著，肺鼠疫患者表现为胸痛、咳嗽、呼吸急促且困难，并有大量血性痰；败血症型鼠疫患者病情进展迅速，发生血压下降，意识不清，谵妄，皮肤广泛出血、瘀斑、发绀、坏死等。鼠疫的传染性强，人类与肺鼠疫患者密切接触，吸入一定数量的鼠疫菌后，可引发原发性肺鼠疫。鼠疫的治疗以链霉素为首选，链霉素的用量根据疾病类型、疫源地均有所不同，一般疗程为10-20天。",
+    plotNodes: [
+      { label: "第 1 部分", description: "鼠疫，由革兰染色阴性、两极浓染的短小杆菌鼠疫耶尔森菌引起的严重传染病。在自然环境下，鼠疫主要在野生啮齿动物间流行，人类在被带有鼠疫菌的跳蚤叮咬或吸入空气中的鼠疫菌后会感染。按照病变部位，鼠疫常见类型有腺鼠疫、肺鼠疫、败血症型鼠疫等，另有肠鼠疫、脑膜炎型鼠疫、眼鼠疫、皮肤鼠疫等少见类型。全人群对鼠疫的感染性均很高，若不及时治疗，其病死率可高达30%~60%。鼠疫的典型症状包括急剧发病、寒战、高热、剧" },
+      { label: "第 2 部分", description: "鼠疫的典型症状包括急剧发病、寒战、高热、剧烈头痛，血压下降、出血倾向等。腺鼠疫者淋巴结肿痛显著，肺鼠疫患者表现为胸痛、咳嗽、呼吸急促且困难，并有大量血性痰；败血症型鼠疫患者病情进展迅速，发生血压下降，意识不清，谵妄，皮肤广泛出血、瘀斑、发绀、坏死等。鼠疫的传染性强，人类与肺鼠疫患者密切接触，吸入一定数量的鼠疫菌后，可引发原发性肺鼠疫。" },
+      { label: "第 3 部分", description: "鼠疫的治疗以链霉素为首选，链霉素的用量根据疾病类型、疫源地均有所不同，一般疗程为10-20天。" }
+    ],
+    themeAnalysis: "鼠疫，由革兰染色阴性、两极浓染的短小杆菌鼠疫耶尔森菌引起的严重传染病。在自然环境下，鼠疫主要在野生啮齿动物间流行，人类在被带有鼠疫菌的跳蚤叮咬或吸入空气中的鼠疫菌后会感染。按照病变部位，鼠疫常见类型有腺鼠疫、肺鼠疫、败血症型鼠疫等，另有肠鼠疫、脑膜炎型鼠疫、眼鼠疫、皮肤鼠疫等少见类型。全人群对鼠疫的感染性均很高，若不及时治疗，其病死率可高达30%~60%。鼠疫的典型症状包括急剧发病、寒战、高热、剧烈头痛，血压下降、出血倾向等。腺鼠疫者淋巴结肿痛显著，肺鼠疫患者表现为胸痛、咳嗽、呼吸急促且困难，并有大量血性痰；败血症型鼠疫患者病情进展迅速，发生血压下降，意识不清，谵妄，皮肤广泛出血、瘀斑、发绀、坏死等。鼠疫的传染性强，人类与肺鼠疫患者密切接触，吸入一定数量的鼠疫菌后，可引发原发性肺鼠疫。鼠疫的治疗以链霉素为首选，链霉素的用量根据疾病类型、疫源地均有所不同，一般疗程为10-20天。病情严重需要\n鼠疫，由革兰染色阴性、两极浓染的短小杆菌鼠疫耶尔森菌引起的严重传染病。在自然环境下，鼠疫主要在野生啮齿动物间流行，人类在被带有鼠疫菌的跳蚤叮咬或吸入空气中的鼠疫菌后会感染。",
+    techniques: "鼠疫，由革兰染色阴性、两极浓染的短小杆菌鼠疫耶尔森菌引起的严重传染病。在自然环境下，鼠疫主要在野生啮齿动物间流行，人类在被带有鼠疫菌的跳蚤叮咬或吸入空气中的鼠疫菌后会感染。按照病变部位，鼠疫常见类型有腺鼠疫、肺鼠疫、败血症型鼠疫等，另有肠鼠疫、脑膜炎型鼠疫、眼鼠疫、皮肤鼠疫等少见类型。全人群对鼠疫的感染性均很高，若不及时治疗，其病死率可高达30%~60%。鼠疫的典型症状包括急剧发病、寒战、高热、剧烈头痛，血压下降、出血倾向等。腺鼠疫者淋巴结肿痛显著，肺鼠疫患者表现为胸痛、咳嗽、呼吸急促且困难，并有大量血性痰；败血症型鼠疫患者病情进展迅速，发生血压下降，意识不清，谵妄，皮肤广泛出血、瘀斑、发绀、坏死等。鼠疫的传染性强，人类与肺鼠疫患者密切接触，吸入一定数量的鼠疫菌后，可引发原发性肺鼠疫。鼠疫的治疗以链霉素为首选，链霉素的用量根据疾病类型、疫源地均有所不同，一般疗程为10-20天。",
     excerpts: [],
-    insights: "鼠疫（英語：plague）是一種存在於囓齒類與跳蚤的一種人畜共通傳染病，並藉蚤傳染給各種動物及人類，可引起人发热、严重毒血症状、淋巴結肿大、肺炎和出血倾向。 鼠疫的最初反應為跳蚤咬傷部位臨近的淋巴結發炎（急性淋巴结炎），即腺鼠疫（bubonic plague），經常發生於鼠蹊部，少發生於腋下或頸部，受感染的淋巴結發炎、紅腫、壓痛且可能流膿，通常會有發燒現象。部分患者得腺鼠疫后经血行蔓延至肺部造成肺炎，即肺鼠疫（pneumonic plague），而吸入此肺鼠疫病人的飞沫則可直接得到肺鼠疫。",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/The%20Plague"
-    //   wikipedia_zh: "https://zh.wikipedia.org/wiki/%E9%BC%A0%E7%96%AB"
-    // }
+    insights: "鼠疫，由革兰染色阴性、两极浓染的短小杆菌鼠疫耶尔森菌引起的严重传染病。在自然环境下，鼠疫主要在野生啮齿动物间流行，人类在被带有鼠疫菌的跳蚤叮咬或吸入空气中的鼠疫菌后会感染。按照病变部位，鼠疫常见类型有腺鼠疫、肺鼠疫、败血症型鼠疫等，另有肠鼠疫、脑膜炎型鼠疫、眼鼠疫、皮肤鼠疫等少见类型。全人群对鼠疫的感染性均很高，若不及时治疗，其病死率可高达30%~60%。鼠疫的典型症状包括急剧发病、寒战、高热、剧烈头痛，血压下降、出血倾向等。腺鼠疫者淋巴结肿痛显著，肺鼠疫患者表现为胸痛、咳嗽、呼吸急促且困难，并有大量血性痰；败血症型鼠疫患者病情进展迅速，发生血压下降，意识不清，谵妄，皮肤广泛出血、瘀斑、发绀、坏死等。鼠疫的传染性强，人类与肺鼠疫患者密切接触，吸入一定数量的鼠疫菌后，可引发原发性肺鼠疫。鼠疫的治疗以链霉素为首选，链霉素的用量根据疾病类型、疫源地均有所不同，一般疗程为10-20天。",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E9%BC%A0%E7%96%AB", tier: "reference", fetchedAt: "2026-05-21T04:49:31.647Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Plague%20Albert%20Camus" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Plague%20Albert%20Camus" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Plague" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Plague" },
+      ],
+    },
   },
 
   // ==================== 欧洲 — 俄国 ====================
@@ -1699,14 +1713,25 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "so-long-a-letter": {
     id: "so-long-a-letter",
-    plotSummary: "So Long a Letter (French: Une si longue lettre) is a semi-autobiographical epistolary novel originally written in French by the Senegalese writer Mariama Bâ. It was her first novel. Its theme is the condition of women in Western African society. As the novel begins, Ramatoulaye Fall is beginning a letter to her lifelong friend Aissatou Bâ. The occasion for writing is Ramatoulaye's recent widowhood. As she gives her friend the details of her husband's death, she recounts the major events in their lives.",
-    themeAnalysis: "So Long a Letter (French: Une si longue lettre) is a semi-autobiographical epistolary novel originally written in French by the Senegalese writer Mariama Bâ. It was her first novel. Its theme is the condition of women in Western African society. As the novel begins, Ramatoulaye Fall is beginning a letter to her lifelong friend Aissatou Bâ.",
-    techniques: "So Long a Letter (French: Une si longue lettre) is a semi-autobiographical epistolary novel originally written in French by the Senegalese writer Mariama Bâ. It was her first novel. Its theme is the condition of women in Western African society. As the novel begins, Ramatoulaye Fall is beginning a letter to her lifelong friend Aissatou Bâ.",
+    characters: [
+      { name: "So Long", role: "角色", description: "So Long a Letter 中的主要角色。" },
+      { name: "Letter Summary", role: "角色", description: "So Long a Letter 中的主要角色。" },
+      { name: "Analysis", role: "角色", description: "So Long a Letter 中的主要角色。" },
+      { name: "Letter", role: "角色", description: "So Long a Letter 中的主要角色。" },
+      { name: "Mariama", role: "角色", description: "So Long a Letter 中的主要角色。" }
+    ],
+    plotSummary: "[So Long a Letter Summary and Analysis of Chapter 1-5 - GradeSaver] So Long a Letter study guide contains a biography of Mariama Bâ, literature essays, quiz questions, major themes, characters, and a full ...\n\n[Summary And Analysis Of So Long A Letter By Mariama Ba] Firstly, the novels topic is the state of ladies in Western African culture. So Long a Letter, Mariama Bâ's first novel, is actually composed as ...\n\n[So Long a Letter by Mariama Bâ Plot Summary - LitCharts] So Long a Letter begins when Ramatoulaye, a Senegalese woman living in Dakar, the country's capital, decides to write a letter to her old friend Aissatou, who ...\n\n[So Long A Letter Summary and Study Guide | SuperSummary] So Long A Letter follows the story of two women from Senegal, Ramatoulaye and Aissatou. They are childhood friends whose paths diverge in adulthood.\n\n[Summary and analysis of So Long a Letter by Mariama Bâ - YouTube] Summary and analysis of So Long a Letter by Mariama Bâ. 3.2K views · 1 year ago ...mor",
+    plotNodes: [
+      { label: "Part 1", description: "[So Long a Letter Summary and Analysis of Chapter 1-5 - GradeSaver] So Long a Letter study guide contains a biography of Mariama Bâ, literature essays, quiz questions, major themes, characters, and a " },
+      { label: "Part 2", description: "[Summary And Analysis Of So Long A Letter By Mariama Ba] Firstly, the novels topic is the state of ladies in Western African culture." },
+      { label: "Part 3", description: "[So Long a Letter by Mariama Bâ Plot Summary - LitCharts] So Long a Letter begins when Ramatoulaye, a Senegalese woman living in Dakar, the country's capital, decides to write a letter to her old frie" },
+      { label: "Part 4", description: "[So Long A Letter Summary and Study Guide | SuperSummary] So Long A Letter follows the story of two women from Senegal, Ramatoulaye and Aissatou." },
+      { label: "Part 5", description: "[Summary and analysis of So Long a Letter by Mariama Bâ - YouTube] Summary and analysis of So Long a Letter by Mariama Bâ." }
+    ],
+    themeAnalysis: "[So Long a Letter Summary and Analysis of Chapter 1-5 - GradeSaver] So Long a Letter study guide contains a biography of Mariama Bâ, literature essays, quiz questions, major themes, characters, and a full ...\n\n[So Long a Letter - Wikipedia] Its theme is the condition of women in Western African society. So Long a Letter. Author, Mariama Bâ. Original title, Une si ...\n\n[Summary and analysis of So Long a Letter by Mariama Bâ - YouTube] Summary and analysis of So Long a Letter by Mariama Bâ. 3.2K views · 1 year ago ...more. English literature. 16.4K. Subscribe. 41. Share.\n\n[[PDF] Mariama Ba So Long A Letter - ftp.arcchurches.com] Key Themes in \"So Long a Letter\". Gender Roles and Feminism. 1. One of the most prominent themes is the exploration of traditional gender roles and the ...\n\n[Summary",
+    techniques: "",
     excerpts: [],
-    insights: "So Long a Letter (French: Une si longue lettre) is a semi-autobiographical epistolary novel originally written in French by the Senegalese writer Mariama Bâ. It was her first novel. Its theme is the condition of women in Western African society. As the novel begins, Ramatoulaye Fall is beginning a letter to her lifelong friend Aissatou Bâ.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/So%20Long%20a%20Letter"
-    // }
+    insights: "[So Long a Letter by Mariama Bâ Plot Summary - LitCharts] So Long a Letter begins when Ramatoulaye, a Senegalese woman living in Dakar, the country's capital, decides to write a letter to her old friend Aissatou, who ...\n\n[So Long a Letter - Wikipedia] Its theme is the condition of women in Western African society. So Long a Letter. Author, Mariama Bâ. Original title, Une si ...\n\n[So Long a Letter Summary and Analysis of Chapter 1-5 - GradeSaver] So Long a Letter study guide contains a biography of Mariama Bâ, literature essays, quiz questions, major themes, characters, and a full ...\n\n[So Lon",
   },
 
   "gods-bits-of-wood": {
