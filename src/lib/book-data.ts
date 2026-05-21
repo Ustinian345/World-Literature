@@ -1402,7 +1402,7 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
     insights: "[In Search of Lost Time - Wikipedia] In Search of Lost Time follows the narrator's recollections of childhood and experiences into adulthood in late 19th-century and early 20th-century high-society ...\n\n[In Search of Lost Time by Marcel Proust | Goodreads] \"In Search of Lost Time\" is a novel in seven volumes. The novel began to take shape in 1909. Proust continued to work on it until his final illness in the ...\n\n[In Search of Lost Time | Summary, Word Count, Length, & Proust] 'In Search of Lost Time' is a novel in seven parts by French author Marcel Proust, published as 'A la recherche du tem",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%BD%E5%BF%86%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E", tier: "reference", fetchedAt: "2026-05-21T05:37:06.077Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E8%BF%BD%E5%BF%86%E4%BC%BC%E6%B0%B4%E5%B9%B4%E5%8D%8E", tier: "reference", fetchedAt: "2026-05-21T05:42:37.260Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },
@@ -2297,33 +2297,31 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
   "time-of-hero": {
     id: "time-of-hero",
     characters: [
-      { name: "The Time", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Hero", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Faber", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" },
-      { name: "Mario Vargas Llosa", role: "角色", description: "\"The Time of the Hero\" 中出现的角色。更多信息请通过搜索链接核实。" }
+      { name: "The Time", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "Hero", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "Summary", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "Characters", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "Setting", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "Britannica", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "Mario Vargas Llosa", role: "角色", description: "The Time of the Hero 中的主要角色。" },
+      { name: "The City", role: "角色", description: "The Time of the Hero 中的主要角色。" }
     ],
-    plotSummary: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
+    plotSummary: "The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and the Dogs”). The novel describes adolescents in a Peruvian military school striving to survive in a hostile and violent environment. The corruption of the military school suggests a larger\n\nThe Time of the Hero Introduction References & Edit History Related Topics Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents CITE verified Cite While every effort has been made to follow citation style rules, there may be some discrepancies. Please refer to the appropriate style manual or other sources if you have any questions. Select Citation Style MLA APA Chicago Manual of Style Copy Citation Share Share Share to social media Facebook X URL https://www.britannica.com/topic/The-Time-of-the-Hero Feedback External Websites Feedback Corrections? Updates? Omissio",
     plotNodes: [
-      { label: "第 1 部分", description: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。 《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。" },
-      { label: "第 2 部分", description: "Subjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence" }
+      { label: "Part 1", description: "The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and the Dogs”)." },
+      { label: "Part 2", description: "The Time of the Hero Introduction References & Edit History Related Topics Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its " }
     ],
-    themeAnalysis: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
-    techniques: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
-    excerpts: [],
-    insights: "《The Time of the Hero》是1995年Faber &#38; Faber出版的图书，作者是Mario Vargas Llosa。\n《The Time of the Hero》是1995年Faber & Faber出版的图书，作者是Mario Vargas Llosa。 [1]\n\nSubjects: Josephine, Empress, consort of Napoleon I, Emperor of the French, 1763-1814 -- Correspondence; Napoleon I, Emperor of the French, 1769-1821 -- Correspondence",
+    themeAnalysis: "[Analysis of Mario Vargas Llosa's Novels - Literary Theory and Criticism] Vargas Llosa returns to the themes of injustice, political corruption, and defeat of The Time of the Hero and Captain Pantoja and the Special ...\n\n[Introduction & Overview of The Time of the Hero - BookRags.com] The Time of the Hero Summary & Study Guide includes comprehensive information and analysis to help you understand the book. This study guide contains the ...\n\n[The Time of the Hero: Analysis of Major Characters - EBSCO] \"The Time of the Hero\" is a novel that explores the lives of cadets at the Leoncio Prado Military Academy in Lima, Peru, focusing on their personal ...\n\n[The Time of the Hero by Mario Vargas Llosa (Book ... - Amazon.com] This engaging summary presents an analysis of The Time of the Hero by Mar",
+    techniques: "The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and the Dogs”). The novel describes adolescents in a Peruvian military school striving to survive in a hostile and violent environment. The corruption of the military school suggests a larger\n\nThe Time of the Hero Introduction References & Edit History Related Topics Quizzes Famous Novels, First Lines Quiz Famous Novels, Last Lines Quiz Book-to-Screen Name Change Quiz Guess the Book by its Chapter Titles The Literary World (Famous Novels) Contents CITE verified Cite While every effort has",
+    excerpts: [
+      { quote: "The Time of the Hero", context: "From The Time of the Hero" }
+    ],
+    insights: "[The Time of the Hero - Wikipedia] The Time of the Hero is a 1963 novel by Peruvian writer and Nobel laureate Mario Vargas Llosa. It was Vargas Llosa's first novel and is set among the cadets ...\n\n[Introduction & Overview of The Time of the Hero - BookRags.com] The Time of the Hero Summary & Study Guide includes comprehensive information and analysis to help you understand the book. This study guide contains the ...\n\n[The Time of the Hero | Summary, Characters & Setting - Britannica] The Time of the Hero, novel by Mario Vargas Llosa, published in 1963 as La ciudad y los perros (“The City and t",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/The%20Time%20of%20the%20Hero", tier: "reference", fetchedAt: "2026-05-21T04:42:02.798Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
-        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/37499", tier: "original_text", fetchedAt: "2026-05-21T04:42:22.776Z", contributedFields: ["insights"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/The%20Time%20of%20the%20Hero", tier: "reference", fetchedAt: "2026-05-21T05:41:46.222Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
-      reliability: "fallback",
-      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
-      searchLinks: [
-        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=The%20Time%20of%20the%20Hero%20Mario%20Vargas%20Llosa" },
-        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=The%20Time%20of%20the%20Hero%20Mario%20Vargas%20Llosa" },
-        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=The%20Time%20of%20the%20Hero" },
-        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=The%20Time%20of%20the%20Hero" },
-      ],
+      reliability: "medium",
     },
   },
 
@@ -2516,20 +2514,26 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "beloved": {
     id: "beloved",
-    plotSummary: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。 [2-3] [8]作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。 [5-6]莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。 [4] [8]\n\n1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。 [2] [10]\n\n《宠儿》讲述一个叫塞丝的黑奴为了获取自由，只身从“甜蜜之家”的肯塔基农庄逃亡到辛辛那提的农舍。一个月后，她被奴隶主追捕，为了让自己的孩子摆脱做奴隶的悲惨命运，她毅然将孩子的喉咙割断后下葬。这个惨死在亲生母亲手里的孩子，被取名为“宠儿”。她也因为亲手杀死了自己的孩子，在后来一直受到社区人们的仇视和排斥并忍受着良知的折磨和巨大的孤独。宠儿阴魂不散，于十八年后重返人间，她化作少女，搅得家里鸡犬不宁，不仅向母亲讨爱债，还不择手段地引诱和纠缠保罗，将母亲刚刚稳定和",
+    characters: [
+      { name: "Beloved Character Analysis", role: "角色", description: "Beloved 中的主要角色。" },
+      { name: "Course Hero", role: "角色", description: "Beloved 中的主要角色。" },
+      { name: "Toni Morrison", role: "角色", description: "Beloved 中的主要角色。" },
+      { name: "Beloved", role: "角色", description: "Beloved 中的主要角色。" }
+    ],
+    plotSummary: "[Beloved by Toni Morrison | Summary, Analysis & Plot - Lesson] The Beloved plot takes place about ten years after emancipation, but the effects of slavery are still very much present in the minds of its various characters.\n\n[Beloved by Toni Morrison : r/books - Reddit] Themes and analysis of Beloved. Beloved book reviews and recommendations. Beloved plot summary and key points. Character analysis of Sethe in ...\n\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万",
     plotNodes: [
-      { label: "Part 1", description: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形" },
-      { label: "Part 2", description: "该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。" },
-      { label: "Part 3", description: "1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。" },
-      { label: "Part 4", description: "《宠儿》讲述一个叫塞丝的黑奴为了获取自由，只身从“甜蜜之家”的肯塔基农庄逃亡到辛辛那提的农舍。一个月后，她被奴隶主追捕，为了让自己的孩子摆脱做奴隶的悲惨命运，她毅然将孩子的喉咙割断后下葬。这个惨死在亲生母亲手里的孩子，被取名为“宠儿”。她也因为亲手杀死了自己的孩子，在后来一直受到社区人们的仇视和排斥并忍受着良知的折磨和巨大的孤独。宠儿阴魂不散，于十八年后重返人间，她化作少女，搅得家里鸡犬不宁，不仅" }
+      { label: "Part 1", description: "[Beloved by Toni Morrison | Summary, Analysis & Plot - Lesson] The Beloved plot takes place about ten years after emancipation, but the effects of slavery are still very much present in the minds of i" },
+      { label: "Part 2", description: "[Beloved by Toni Morrison : r/books - Reddit] Themes and analysis of Beloved." },
+      { label: "Part 3", description: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形" },
+      { label: "Part 4", description: "该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万" }
     ],
     themeAnalysis: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。 [2-3] [8]作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。 [5-6]莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。 [4] [8]\n\n1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。 [2] [10]\n\n《宠儿》讲述一个叫塞丝的黑奴为了获取自由，只身从“甜蜜之家",
-    techniques: "",
+    techniques: "[Beloved Character Analysis - Course Hero] This study guide and infographic for Toni Morrison's Beloved offer summary and analysis on themes, symbols, and other literary devices found in the text.",
     excerpts: [],
-    insights: "《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。作品采用时空交错的多重视角叙事，将现实与回忆交织，通过意识流手法打破线性时间结构，形成历史与现实的多声部对话。莫里森在文本中融入了黑人传统文化元素，包括民间信仰、口述传统和神话原型，构建出独特的黑人文学表述体系。1988年，小说获普利策奖，1993年助推作者获得诺贝尔文学奖。\n《宠儿》是美国作家托妮·莫里森创作的长篇小说，取材于19世纪黑奴玛格丽特·加纳的真实事件，以1873年美国俄亥俄州辛辛那提镇为背景，讲述黑人女性塞丝在奴隶制废除后仍被弑婴往事纠缠的故事。 [1] [3] [11]\n\n该作于1987年出版，是莫里森的第五部小说，小说通过弑婴母亲塞丝、还魂女儿宠儿和幸存者丹芙三代女性的命运，展现奴隶制对黑人群体造成的持续性精神创伤。塞丝后背形如“苦樱桃树”的伤痕象征种族压迫的历史记忆，宠儿的鬼魂形象则折射出六千万黑奴贸易受难者的集体创伤。 [2-",
+    insights: "[Beloved Character Analysis - LitCharts] Beloved · All Themes · Slavery Theme Icon. Slavery · Motherhood Theme Icon. Motherhood · Storytelling, Memory, and the Past Theme Icon. Storytelling, Memory, and ...\n\n[Beloved: Character List - SparkNotes] On an allegorical level, Beloved represents the inescapable, horrible past of slavery returned to haunt the present. Her presence, which grows increasingly ...\n\n[Beloved by Toni Morrison | Summary, Analysis & Plot - Lesson] The Beloved plot takes place about ten years after emancipation, but the effects of slavery are still very much present in the mi",
     sourceAttribution: {
       sources: [
-        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A0%E5%84%BF", tier: "reference", fetchedAt: "2026-05-21T04:42:55.182Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "百度百科", url: "https://baike.baidu.com/item/%E5%AE%A0%E5%84%BF", tier: "reference", fetchedAt: "2026-05-21T05:42:26.392Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
       ],
       reliability: "medium",
     },

@@ -646,5 +646,14 @@
     "continent": "asia",
     "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
     "processedAt": "2026-05-21T05:41:28.881Z"
+  },
+  {
+    "bookId": "tb-luotuoxiangzi",
+    "title": "骆驼祥子",
+    "author": "老舍",
+    "source": "textbook",
+    "continent": "asia",
+    "reason": "dataScore=0 (chars:0 plot:0 nodes:0 themes:0)",
+    "processedAt": "2026-05-21T05:42:15.628Z"
   }
 ]
