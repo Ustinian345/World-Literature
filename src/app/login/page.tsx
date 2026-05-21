@@ -27,7 +27,9 @@ export default function LoginPage() {
       });
 
       if (result?.error) {
-        setError(result.error);
+        setError(result.error === "CredentialsSignin"
+          ? (isRegister ? "注册失败：邮箱可能已被注册，或密码少于6位" : "邮箱或密码错误")
+          : result.error);
       } else if (!result?.ok) {
         setError(isRegister ? "注册失败，请重试" : "登录失败，请重试");
       } else {

@@ -1,7 +1,8 @@
-export { auth as middleware } from "@/lib/auth";
+import { auth } from "@/lib/auth";
+
+export const proxy = auth;
 
 export const config = {
-  // 需要登录才能访问的页面
   matcher: [
     "/profile/:path*",
     "/dashboard/:path*",

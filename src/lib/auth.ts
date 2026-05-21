@@ -45,17 +45,17 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
         if (action === "register") {
           const name = (credentials.name as string) || email.split("@")[0];
-          if (password.length < 6) throw new Error("密码至少6位");
+          if (password.length < 6) return null;
           const existing = findUser(email);
-          if (existing) throw new Error("该邮箱已注册");
+          if (existing) return null;
           const user = createUser(email, password, name);
-          if (!user) throw new Error("注册失败");
+          if (!user) return null;
           return { id: email, email, name: user.name };
         }
 
         // login
         const user = findUser(email);
-        if (!user || user.password !== password) throw new Error("邮箱或密码错误");
+        if (!user || user.password !== password) return null;
         return { id: email, email: user.email, name: user.name };
       },
     }),
