@@ -41,7 +41,8 @@ export function NewWorksArchiveClient() {
   useEffect(() => { fetchArticles(); }, [fetchArticles]);
 
   const totalPages = Math.ceil(total / limit);
-  const langLabel: Record<string, string> = { zh: "中", en: "EN", ja: "日", ko: "韩" };
+  const langLabel: Record<string, string> = { zh: "中文", en: "EN", ja: "日", ko: "韩", other: "其他" };
+  const langColor: Record<string, string> = { zh: "bg-red-50 text-red-700", en: "bg-blue-50 text-blue-700", ja: "bg-pink-50 text-pink-700", ko: "bg-green-50 text-green-700", other: "bg-purple-50 text-purple-700" };
 
   return (
     <div>
@@ -73,7 +74,7 @@ export function NewWorksArchiveClient() {
       ) : (
         <div className="space-y-4">
           {articles.map((article) => (
-            <ArticleRow key={article.id} article={article} langLabel={langLabel} />
+            <ArticleRow key={article.id} article={article} langLabel={langLabel} langColor={langColor} />
           ))}
         </div>
       )}
@@ -98,7 +99,7 @@ export function NewWorksArchiveClient() {
   );
 }
 
-function ArticleRow({ article, langLabel }: { article: Article; langLabel: Record<string, string> }) {
+function ArticleRow({ article, langLabel, langColor }: { article: Article; langLabel: Record<string, string>; langColor: Record<string, string> }) {
   const { data: session } = useSession();
   const router = useRouter();
   const [faved, setFaved] = useState(false);
@@ -136,7 +137,7 @@ function ArticleRow({ article, langLabel }: { article: Article; langLabel: Recor
           <div className="mt-1.5 flex flex-wrap items-center gap-2">
             <span className="text-xs text-stone-500">{article.author}</span>
             <span className="rounded bg-stone-100 px-1.5 py-0.5 text-xs text-stone-600">{article.source}</span>
-            <span className="rounded bg-blue-50 px-1.5 py-0.5 text-xs text-blue-700">{langLabel[article.language] || article.language}</span>
+            <span className={`rounded px-1.5 py-0.5 text-xs ${langColor[article.language] || "bg-stone-100 text-stone-600"}`}>{langLabel[article.language] || article.language}</span>
             <span className="text-xs text-stone-400">{article.publishedAt?.slice(0, 10)}</span>
           </div>
         </div>

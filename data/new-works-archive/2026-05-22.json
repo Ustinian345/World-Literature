@@ -2,7 +2,7 @@
   "date": "2026-05-22",
   "articles": [
     {
-      "id": "rss-1779422029218-0",
+      "id": "en-rss-1779424181632-ei1vpu",
       "title": "Lit Hub Daily: May 21, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
@@ -11,13 +11,14 @@
       "criticism": "",
       "language": "en",
       "tags": [
+        "literary",
         "文学评论"
       ],
       "publishedAt": "2026-05-21 10:30:25",
-      "collectedAt": "2026-05-22T03:53:49.218Z"
+      "collectedAt": "2026-05-22T04:29:41.632Z"
     },
     {
-      "id": "rss-1779422029220-1",
+      "id": "en-rss-1779424181634-ymi3c3",
       "title": "Namwali Serpell and Tracy K. Smith Discuss Toni Morrison’s The Bluest Eye",
       "author": "Passages: On Morrison",
       "source": "Literary Hub",
@@ -26,72 +27,75 @@
       "criticism": "",
       "language": "en",
       "tags": [
-        "虚构文学",
-        "短篇小说"
+        "literary",
+        "虚构文学"
       ],
       "publishedAt": "2026-05-21 09:10:57",
-      "collectedAt": "2026-05-22T03:53:49.220Z"
+      "collectedAt": "2026-05-22T04:29:41.634Z"
     },
     {
-      "id": "rss-1779422029220-2",
-      "title": "Why We Shouldn’t Feel Guilty For Not Being Extremely Well Read",
-      "author": "Ed Simon",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/why-we-shouldnt-feel-guilty-for-not-being-extremely-well-read/",
-      "excerpt": "David Lodge, in his 1975 campus novel Changing Places, imagines a cocktail party game that makes fiendish use of imposter syndrome. Visiting professor Phillip Swallow introduces the faculty of fictional Euphoric State University to “Humiliation,” a game whereby every participant",
+      "id": "en-rss-1779424183843-bj434t",
+      "title": "Independent People",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/independent-people/",
+      "excerpt": "‘What sets Scandinavian literature apart from the rest of European literature? Why, at its best, does its fiction seem to pack in more force, pound for pound?’ The editor introduces the issue. The post Independent People appeared first on Granta .",
       "criticism": "",
       "language": "en",
       "tags": [
-        "虚构文学",
-        "短篇小说"
+        "literary",
+        "虚构文学"
       ],
-      "publishedAt": "2026-05-21 08:59:52",
-      "collectedAt": "2026-05-22T03:53:49.220Z"
+      "publishedAt": "2026-05-21 07:00:24",
+      "collectedAt": "2026-05-22T04:29:43.843Z"
     },
     {
-      "id": "rss-1779422029220-3",
-      "title": "What Happens When Billionaires Control the Media?",
-      "author": "Nick Romeo",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/what-happens-when-billionaires-control-the-media/",
-      "excerpt": "While living in a lavish hilltop castle on the California coast, a wildly rich media mogul recruits charismatic foreign dictators as columnists, criticizes one of his own reporters for being too anti-Nazi, and tries to interest America’s president in a",
+      "id": "en-rss-1779424183843-jqpo3q",
+      "title": "The High Priestess",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/the-high-priestess/",
+      "excerpt": "‘As a child, to the puzzlement of those around me, I developed an interest in tarot cards.’ A new story by Olga Ravn. The post The High Priestess appeared first on Granta .",
       "criticism": "",
       "language": "en",
       "tags": [
+        "literary",
+        "虚构文学"
+      ],
+      "publishedAt": "2026-05-21 06:59:48",
+      "collectedAt": "2026-05-22T04:29:43.843Z"
+    },
+    {
+      "id": "other-rss-1779424186851-vynk6y",
+      "title": "Global Reads: Summer Children’s and YA Releases Spanning Four Continents",
+      "author": "Nina Perrotta",
+      "source": "Words Without Borders",
+      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-05/global-reads-summer-childrens-and-ya-releases-spanning-four-continents/",
+      "excerpt": "Picture Books Aya Has Never Seen a Bear Written in Chinese by Gerelchimeg Blackcrane, illustrated by Jiu’er, translated by Paul Qiao and Helen Mixter Published by Aldana Libros Reviewed by Ruth Ahmedzai Kemp “The Oroqen people believe that they and all other lives in the forest are part of Mother Earth,” reads the inscription in The post Global Reads: Summer Children’s and YA Releases Spanning Four Continents appeared first on Words Without Borders .",
+      "criticism": "",
+      "language": "other",
+      "tags": [
+        "translation",
+        "文学评论"
+      ],
+      "publishedAt": "2026-05-21 13:00:01",
+      "collectedAt": "2026-05-22T04:29:46.851Z"
+    },
+    {
+      "id": "other-rss-1779424186851-cvmf4q",
+      "title": "The City and the Writer: In al-Kabri with Mai Serhan",
+      "author": "Nina Perrotta",
+      "source": "Words Without Borders",
+      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-05/the-city-and-the-writer-in-al-kabri-with-mai-serhan-nathalie-handal/",
+      "excerpt": "If each city is like a game of chess, the day when I have learned the rules, I shall finally possess my empire, even if I shall never succeed in knowing all the cities it contains. —Italo Calvino, Invisible Cities Can you describe the mood of al-Kabri as you feel/see it? The word that The post The City and the Writer: In al-Kabri with Mai Serhan appeared first on Words Without Borders .",
+      "criticism": "",
+      "language": "other",
+      "tags": [
+        "translation",
         "当代文学"
       ],
-      "publishedAt": "2026-05-21 08:59:50",
-      "collectedAt": "2026-05-22T03:53:49.220Z"
-    },
-    {
-      "id": "hn-32898737",
-      "title": "Show HN: Confabulists – “Substack for Fiction”",
-      "author": "pipnonsense",
-      "source": "Hacker News",
-      "sourceUrl": "https://news.ycombinator.com/item?id=32898737",
-      "excerpt": "",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "科技与文化"
-      ],
-      "publishedAt": "2022-09-19T14:23:04Z",
-      "collectedAt": "2026-05-22T03:53:52.468Z"
-    },
-    {
-      "id": "hn-6069052",
-      "title": "Not ad, Up to 200 books free for you, as i will be gone",
-      "author": "ghosthamlet",
-      "source": "Hacker News",
-      "sourceUrl": "https://news.ycombinator.com/item?id=6069052",
-      "excerpt": "",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "科技与文化"
-      ],
-      "publishedAt": "2013-07-19T09:17:46Z",
-      "collectedAt": "2026-05-22T03:53:52.468Z"
+      "publishedAt": "2026-05-13 13:00:11",
+      "collectedAt": "2026-05-22T04:29:46.851Z"
     }
   ]
 }
