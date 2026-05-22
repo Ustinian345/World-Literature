@@ -18,8 +18,8 @@
     "recommend:fetch": "npx tsx scripts/fetch-daily-recommendation.ts",
     "recommend:dry": "npx tsx scripts/fetch-daily-recommendation.ts --dry-run",
     "recommend:snapshot": "npx tsx scripts/build-works-snapshot.ts",
-    "newworks:fetch": "npx tsx scripts/fetch-new-works.ts --local",
-    "newworks:ci": "npx tsx scripts/fetch-new-works.ts --ci",
+    "newworks:fetch": "npx tsx scripts/fetch-new-works.ts --ci",
+    "newworks:local": "npx tsx scripts/fetch-new-works.ts --local",
     "newworks:dry": "npx tsx scripts/fetch-new-works.ts --ci --dry-run"
   },
   "dependencies": {

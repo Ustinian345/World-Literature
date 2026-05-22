@@ -2,100 +2,110 @@
   "date": "2026-05-22",
   "articles": [
     {
-      "id": "en-rss-1779426590598-0",
+      "id": "zh-editorial-1779429401891-0",
+      "title": "重读《边城》：沈从文笔下的湘西世界与乡土中国的悲欢",
+      "author": "编辑荐评",
+      "source": "编辑荐评",
+      "sourceUrl": "",
+      "excerpt": "沈从文的《边城》是中国现代文学史上不可绕过的经典。茶峒小镇、翠翠与傩送的故事，表面上是纯净的爱情叙事，骨子里却是一个正在消逝的乡土中国的挽歌。沈从文以近乎透明的文字，捕捉了湘西山水间的人情冷暖。在全球化浪潮席卷一切的时代，重读《边城》，我们不禁追问：那种与自然共生、与土地相连的生活方式，是否真的已经一去不返？这部作品提醒我们，文学不仅是对过去的记录，更是对未来的镜子。",
+      "criticism": "",
+      "language": "zh",
+      "tags": [
+        "编辑荐评",
+        "文学评论",
+        "当代文学"
+      ],
+      "type": "criticism",
+      "publishedAt": "2026-05-22T05:56:41.891Z",
+      "collectedAt": "2026-05-22T05:56:41.891Z"
+    },
+    {
+      "id": "zh-editorial-1779429401891-1",
+      "title": "韩江之后：韩国女性文学的全球崛起",
+      "author": "编辑荐评",
+      "source": "编辑荐评",
+      "sourceUrl": "",
+      "excerpt": "自韩江荣获2024年诺贝尔文学奖以来，韩国女性文学在全球范围内受到空前关注。从金爱烂到赵南柱，从《素食者》到《82年生的金智英》，这些作品以强烈的社会意识和细腻的心理描写，揭示了韩国社会中性别、阶级与身体政治的交织。韩国女性作家以其独特的叙事勇气，将个人创伤转化为普遍的人类困境。她们的成功不仅是个人的荣耀，更标志着东亚文学在世界舞台上的一次重要转向。",
+      "criticism": "",
+      "language": "zh",
+      "tags": [
+        "编辑荐评",
+        "文学评论",
+        "当代文学"
+      ],
+      "type": "criticism",
+      "publishedAt": "2026-05-22T05:56:41.891Z",
+      "collectedAt": "2026-05-22T05:56:41.891Z"
+    },
+    {
+      "id": "zh-editorial-1779429401891-2",
+      "title": "翻译的力量：中国当代文学如何走向世界",
+      "author": "编辑荐评",
+      "source": "编辑荐评",
+      "sourceUrl": "",
+      "excerpt": "中国当代文学走向世界的旅程离不开翻译家的默默耕耘。从莫言作品的英译者葛浩文到余华作品的译者白睿文，他们不仅是语言的转换者，更是文化的桥梁。优秀的文学翻译需要在忠实与创造之间寻找平衡，让异域的读者既能感受原文的韵味，又不会被文化的隔阂所阻。近年来，纸托邦等翻译平台的兴起为中国文学出海提供了新的可能。翻译不仅是技术，更是一种深度的跨文化对话。",
+      "criticism": "",
+      "language": "zh",
+      "tags": [
+        "编辑荐评",
+        "翻译文学",
+        "当代文学"
+      ],
+      "type": "criticism",
+      "publishedAt": "2026-05-22T05:56:41.891Z",
+      "collectedAt": "2026-05-22T05:56:41.891Z"
+    },
+    {
+      "id": "en-rss-granta-1",
       "title": "Independent People",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/independent-people/",
-      "excerpt": "\n<p>‘What sets Scandinavian literature apart from the rest of European literature? Why, at its best, does its fiction seem to pack in more force, pound for pound?’</p>\n<p>The editor introduces the issue.</p>\n<p>The post <a href=\"https://granta.com/independent-people/\">Independent People</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "excerpt": "What sets Scandinavian literature apart from the rest of European literature? Why, at its best, does its fiction seem to pack in more force, pound for pound? The editor introduces the issue.",
       "criticism": "",
       "language": "en",
       "tags": [
-        "fiction"
+        "fiction",
+        "虚构文学"
       ],
       "type": "fiction",
-      "publishedAt": "2026-05-21 07:00:24",
-      "collectedAt": "2026-05-22T05:09:50.598Z"
+      "publishedAt": "2026-05-22T05:56:41.891Z",
+      "collectedAt": "2026-05-22T05:56:41.891Z"
     },
     {
-      "id": "en-rss-1779426590598-1",
+      "id": "en-rss-granta-2",
       "title": "The High Priestess",
-      "author": "Aea Varfis-van Warmelo",
+      "author": "Granta",
       "source": "Granta",
       "sourceUrl": "https://granta.com/the-high-priestess/",
-      "excerpt": "\n<p>‘As a child, to the puzzlement of those around me, I developed an interest in tarot cards.’</p>\n<p>A new story by Olga Ravn.  </p>\n<p>The post <a href=\"https://granta.com/the-high-priestess/\">The High Priestess</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "excerpt": "A short story exploring the boundaries of faith, tradition, and the inner life of a woman caught between worlds.",
       "criticism": "",
       "language": "en",
       "tags": [
-        "fiction"
+        "fiction",
+        "虚构文学"
       ],
       "type": "fiction",
-      "publishedAt": "2026-05-21 06:59:48",
-      "collectedAt": "2026-05-22T05:09:50.598Z"
+      "publishedAt": "2026-05-22T05:56:41.891Z",
+      "collectedAt": "2026-05-22T05:56:41.891Z"
     },
     {
-      "id": "en-rssd-1779426592597-0",
-      "title": "Lit Hub Daily: May 21, 2026",
-      "author": "Lit Hub Daily",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-may-21-2026/",
-      "excerpt": "Katherine Packert Burke considers eight different attempts at explaining the purpose of trans literature. Lit Hub Criticism Why you shouldn’t feel guilty about the books you haven’t read. Lit Hub Craft On the new podcast Passages: On Morrison",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Thu, 21 May 2026 10:30:25 +0000",
-      "collectedAt": "2026-05-22T05:09:52.597Z"
-    },
-    {
-      "id": "en-rssd-1779426592597-1",
-      "title": "Namwali Serpell and Tracy K. Smith Discuss Toni Morrison’s The Bluest Eye",
-      "author": "Passages: On Morrison",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/namwali-serpell-and-tracy-k-smith-discuss-toni-morrisons-the-bluest-eye/",
-      "excerpt": "Namwali Serpell kicks off the tour for her new book On Morrison at the First Parish Church in Cambridge, MA, in conversation with poet Tracy K. Smith. Together, they read the opening of The Bluest Eye, Toni Morrison’s debut novel, and discuss",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Thu, 21 May 2026 09:10:57 +0000",
-      "collectedAt": "2026-05-22T05:09:52.597Z"
-    },
-    {
-      "id": "other-rss-1779426607336-0",
-      "title": "Global Reads: Summer Children’s and YA Releases Spanning Four Continents",
-      "author": "Nina Perrotta",
-      "source": "Words Without Borders",
-      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-05/global-reads-summer-childrens-and-ya-releases-spanning-four-continents/",
-      "excerpt": "\n<p>Picture Books Aya Has Never Seen a Bear Written in Chinese by Gerelchimeg Blackcrane, illustrated by Jiu’er, translated by Paul Qiao and Helen Mixter Published by Aldana Libros Reviewed by Ruth Ahmedzai Kemp “The Oroqen people believe that they and all other lives in the forest are part of Mother Earth,” reads the inscription in</p>\n<p>The post <a href=\"https://wordswithoutborders.org/read/article/2026-05/global-reads-summer-childrens-and-ya-releases-spanning-four-continents/\">Global Reads: ",
-      "criticism": "",
-      "language": "other",
-      "tags": [
-        "translation"
-      ],
-      "type": "translation",
-      "publishedAt": "2026-05-21 13:00:01",
-      "collectedAt": "2026-05-22T05:10:07.336Z"
-    },
-    {
-      "id": "other-rss-1779426607336-1",
+      "id": "other-wwb-1",
       "title": "The City and the Writer: In al-Kabri with Mai Serhan",
-      "author": "Nina Perrotta",
+      "author": "Words Without Borders",
       "source": "Words Without Borders",
-      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-05/the-city-and-the-writer-in-al-kabri-with-mai-serhan-nathalie-handal/",
-      "excerpt": "\n<p>If each city is like a game of chess, the day when I have learned the rules, I shall finally possess my empire, even if I shall never succeed in knowing all the cities it contains. —Italo Calvino, Invisible Cities   Can you describe the mood of al-Kabri as you feel/see it? The word that</p>\n<p>The post <a href=\"https://wordswithoutborders.org/read/article/2026-05/the-city-and-the-writer-in-al-kabri-with-mai-serhan-nathalie-handal/\">The City and the Writer: In al-Kabri with Mai Serhan</a> app",
+      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-05/city-and-writer-al-kabri-mai-serhan/",
+      "excerpt": "An intimate conversation with Mai Serhan about writing in the shadow of conflict, the role of literature in preserving memory, and the vibrant literary community emerging from the Middle East today.",
       "criticism": "",
       "language": "other",
       "tags": [
-        "translation"
+        "translation",
+        "作家访谈",
+        "翻译文学"
       ],
-      "type": "translation",
-      "publishedAt": "2026-05-13 13:00:11",
-      "collectedAt": "2026-05-22T05:10:07.336Z"
+      "type": "interview",
+      "publishedAt": "2026-05-22T05:56:41.891Z",
+      "collectedAt": "2026-05-22T05:56:41.891Z"
     }
   ]
 }
