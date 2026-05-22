@@ -12,7 +12,7 @@ export type StoredUser = {
   passwordHash: string;
   avatar: string | null;
   provider: string;
-  preferences: unknown;
+  preferences?: unknown;
   createdAt: Date;
 };
 
