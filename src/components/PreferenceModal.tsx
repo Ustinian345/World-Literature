@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
-import { useRouter } from "next/navigation";
 
 const ALL_TAGS = [
   "古典文学", "现代文学", "魔幻现实主义", "爱情小说", "战争文学",
@@ -11,50 +10,47 @@ const ALL_TAGS = [
   "诺贝尔奖作品", "流亡文学", "女性文学", "成长小说", "存在主义",
 ];
 
+const CHECK_KEY = "needsPreferenceCheck";
+
 export default function PreferenceModal() {
   const { data: session, update } = useSession();
-  const router = useRouter();
   const [visible, setVisible] = useState(false);
   const [selected, setSelected] = useState<string[]>([]);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
 
-  // 防止同一登录会话中重复弹出
-  const dismissedRef = useRef(false);
-  // 跟踪上次处理过的用户 email，切换账号时重置
-  const lastEmailRef = useRef<string | null>(null);
-
   useEffect(() => {
-    const email = session?.user?.email;
-    if (!email) return;
+    if (!session?.user?.id) return;
 
-    // 切换账号时重置
-    if (lastEmailRef.current !== email) {
-      lastEmailRef.current = email;
-      dismissedRef.current = false;
-    }
-
-    // 已经保存过或已关闭，不再弹出
-    if (dismissedRef.current) return;
-
-    // 等待欢迎弹窗关闭
+    // 等待欢迎弹窗先关掉
     if (sessionStorage.getItem("wl-welcome-number")) return;
 
+    const hasFlag = localStorage.getItem(CHECK_KEY) === "true";
     const isReset = sessionStorage.getItem("wl-reset-preferences") === "1";
-    const prefs = session.user.preferences;
-    const needsSetup = !prefs || prefs.length === 0;
+    const needsSetup = !session.user.preferences || session.user.preferences.length === 0;
 
-    // 非首次设置且非重置 → 不弹
-    if (!needsSetup && !isReset) return;
+    // 既不需要设置也不是重置 → 清理标记，不弹
+    if (!needsSetup && !isReset) {
+      if (hasFlag) localStorage.removeItem(CHECK_KEY);
+      return;
+    }
+
+    // 需要设置但没标记 → 自动补标记 (Google 登录等场景)
+    if (needsSetup && !hasFlag) {
+      localStorage.setItem(CHECK_KEY, "true");
+    }
+
+    // 有标记才弹
+    if (localStorage.getItem(CHECK_KEY) !== "true") return;
 
     // 重置时预填已有偏好
-    if (isReset && prefs && prefs.length > 0) {
-      setSelected([...prefs]);
+    if (isReset && session.user.preferences?.length) {
+      setSelected([...session.user.preferences]);
     }
 
     const timer = setTimeout(() => setVisible(true), 600);
     return () => clearTimeout(timer);
-  }, [session?.user?.email, session?.user?.preferences]);
+  }, [session?.user?.id, session?.user?.preferences]);
 
   function toggleTag(tag: string) {
     setSelected((prev) =>
@@ -68,7 +64,7 @@ export default function PreferenceModal() {
       setError("请至少选择一个偏好标签");
       return;
     }
-    if (saving) return; // 防止重复提交
+    if (saving) return;
 
     setSaving(true);
     setError("");
@@ -86,16 +82,15 @@ export default function PreferenceModal() {
         return;
       }
 
-      // 刷新 session 以同步 preferences
+      // 刷新 session 让 preferences 同步到 token
       await update();
 
-      // 标记为已处理，防止同一会话再次弹出
-      dismissedRef.current = true;
+      // 清除所有触发标记
+      localStorage.removeItem(CHECK_KEY);
       sessionStorage.removeItem("wl-reset-preferences");
-      setVisible(false);
 
-      // 刷新页面数据
-      router.refresh();
+      setVisible(false);
+      setSaving(false);
     } catch {
       setError("网络错误，请重试");
       setSaving(false);
@@ -106,9 +101,7 @@ export default function PreferenceModal() {
 
   return (
     <div className="fixed inset-0 z-[101] flex items-center justify-center bg-black/50 p-5 backdrop-blur-sm">
-      {/* 遮罩不响应点击，防止轻易关闭 */}
       <div className="relative w-full max-w-lg overflow-hidden rounded-3xl bg-cream shadow-2xl">
-        {/* 顶部装饰 */}
         <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-terracotta/10 to-transparent" />
 
         <div className="relative px-6 pb-6 pt-10">
@@ -119,7 +112,6 @@ export default function PreferenceModal() {
             选出你感兴趣的文学类型，我们为你定制每日推荐
           </p>
 
-          {/* 标签网格 */}
           <div className="mb-6 flex flex-wrap justify-center gap-2">
             {ALL_TAGS.map((tag) => {
               const active = selected.includes(tag);

@@ -411,15 +411,26 @@ function SettingsTab({ user, updateSession }: { user: { name?: string | null; em
 
 function PreferencesSection({ user: _user }: { user: { name?: string | null; email?: string | null; image?: string | null } }) {
   const { data: session } = useSession();
-  const prefs = session?.user?.preferences;
+  const [prefs, setPrefs] = useState<string[] | null>(null);
+  const [loadingPrefs, setLoadingPrefs] = useState(true);
+
+  useEffect(() => {
+    // 从 API 实时读取数据库最新值，而非依赖 session 快照
+    fetch("/api/user/me")
+      .then((r) => r.json())
+      .then((d) => setPrefs(d.preferences || null))
+      .catch(() => setPrefs(session?.user?.preferences || null))
+      .finally(() => setLoadingPrefs(false));
+  }, [session?.user?.email]);
+
   return (
     <div className="rounded-xl border border-stone-200 bg-stone-50 p-5">
       <p className="mb-4 font-heading-cn text-sm font-semibold text-umber">文学偏好</p>
       <p className="mb-3 font-heading-cn text-xs text-stone-500">
-        当前偏好：{prefs && prefs.length > 0 ? prefs.join(" · ") : "未设置"}
+        当前偏好：{loadingPrefs ? "加载中..." : (prefs && prefs.length > 0 ? prefs.join(" · ") : "未设置")}
       </p>
       <button type="button"
-        onClick={() => { sessionStorage.setItem("wl-reset-preferences", "1"); window.location.reload(); }}
+        onClick={() => { localStorage.setItem("needsPreferenceCheck", "true"); sessionStorage.setItem("wl-reset-preferences", "1"); window.location.reload(); }}
         className="rounded-lg border border-amber/40 bg-amber/5 px-4 py-2 font-heading-cn text-sm text-amber-dark transition-colors hover:bg-amber/10">
         重新设置偏好
       </button>

@@ -59,6 +59,8 @@ export function LoginForm() {
             : `登录失败: ${result.error}`
         );
       } else if (result?.ok) {
+        // 标记需要检查偏好设置（PreferenceModal 读取此标志）
+        localStorage.setItem("needsPreferenceCheck", "true");
         window.location.href = "/";
       }
     } catch {
