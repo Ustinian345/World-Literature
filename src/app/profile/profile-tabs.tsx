@@ -322,7 +322,8 @@ function ArticleCard({ article, onRefresh }: { article: { id: string; articleId:
    设置 Tab
    ================================================================ */
 
-function SettingsTab({ user, updateSession }: { user: { name?: string | null; email?: string | null; image?: string | null }; updateSession: () => Promise<unknown> }) {
+function SettingsTab({ user, updateSession }: { user: { name?: string | null; email?: string | null; image?: string | null }; updateSession: (data?: Record<string, unknown>) => Promise<unknown> }) {
+  const { data: session } = useSession();
   const [name, setName] = useState((user.name as string) || "");
   const [avatarUrl, setAvatarUrl] = useState<string>(user.image || "");
   const [currentPassword, setCurrentPassword] = useState("");
@@ -345,7 +346,7 @@ function SettingsTab({ user, updateSession }: { user: { name?: string | null; em
     }
 
     try {
-      // 1. 保存昵称/头像到数据库
+      // 1. 写入数据库
       const res1 = await fetch("/api/user/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -366,15 +367,15 @@ function SettingsTab({ user, updateSession }: { user: { name?: string | null; em
         setCurrentPassword(""); setNewPassword("");
       }
 
-      // 3. 刷新 session — 从数据库重新拉取 name/avatar
-      await updateSession();
+      // 3. 立即刷新客户端 session — 所有 useSession() 组件同步更新
+      await updateSession({ name: finalName, image: finalAvatar });
 
       setMessage({ type: "success", text: "保存成功" });
     } catch { setMessage({ type: "error", text: "网络错误" }); }
     setSaving(false);
   }
 
-  const displayAvatar = avatarUrl || user.image;
+  const displayAvatar = avatarUrl || session?.user?.image || user.image;
   const showImage = !!displayAvatar && displayAvatar.startsWith("http");
 
   return (
