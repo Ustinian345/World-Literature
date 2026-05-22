@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
 
 const ALL_TAGS = [
@@ -10,47 +10,51 @@ const ALL_TAGS = [
   "诺贝尔奖作品", "流亡文学", "女性文学", "成长小说", "存在主义",
 ];
 
-const CHECK_KEY = "needsPreferenceCheck";
-
 export default function PreferenceModal() {
   const { data: session, update } = useSession();
   const [visible, setVisible] = useState(false);
   const [selected, setSelected] = useState<string[]>([]);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
+  const checkedRef = useRef(false);
 
   useEffect(() => {
+    // 必须已登录 + 只检查一次
     if (!session?.user?.id) return;
+    if (checkedRef.current) return;
 
-    // 等待欢迎弹窗先关掉
-    if (sessionStorage.getItem("wl-welcome-number")) return;
+    // 将 justLoggedIn 转为 wl-show-preference，方便后续统一读取
+    if (sessionStorage.getItem("justLoggedIn") === "true") {
+      sessionStorage.removeItem("justLoggedIn");
+      sessionStorage.setItem("wl-show-preference", "true");
+    }
 
-    const hasFlag = localStorage.getItem(CHECK_KEY) === "true";
+    const shouldShow = sessionStorage.getItem("wl-show-preference") === "true";
+    if (!shouldShow) return; // 无标记 → 永不弹出
+
+    checkedRef.current = true;
+
     const isReset = sessionStorage.getItem("wl-reset-preferences") === "1";
-    const needsSetup = !session.user.preferences || session.user.preferences.length === 0;
+    const prefs = session.user.preferences;
+    const needsSetup = !prefs || prefs.length === 0;
 
-    // 既不需要设置也不是重置 → 清理标记，不弹
+    // 非首次设置且非重置 → 清理标记，不弹
     if (!needsSetup && !isReset) {
-      if (hasFlag) localStorage.removeItem(CHECK_KEY);
+      sessionStorage.removeItem("wl-show-preference");
+      sessionStorage.removeItem("wl-reset-preferences");
       return;
     }
 
-    // 需要设置但没标记 → 自动补标记 (Google 登录等场景)
-    if (needsSetup && !hasFlag) {
-      localStorage.setItem(CHECK_KEY, "true");
-    }
-
-    // 有标记才弹
-    if (localStorage.getItem(CHECK_KEY) !== "true") return;
-
     // 重置时预填已有偏好
-    if (isReset && session.user.preferences?.length) {
-      setSelected([...session.user.preferences]);
+    if (isReset && prefs?.length) {
+      setSelected([...prefs]);
     }
 
-    const timer = setTimeout(() => setVisible(true), 600);
+    // 等待欢迎弹窗先关掉
+    const wait = sessionStorage.getItem("wl-welcome-number") ? 1200 : 400;
+    const timer = setTimeout(() => setVisible(true), wait);
     return () => clearTimeout(timer);
-  }, [session?.user?.id, session?.user?.preferences]);
+  }, [session?.user?.id]);
 
   function toggleTag(tag: string) {
     setSelected((prev) =>
@@ -82,11 +86,11 @@ export default function PreferenceModal() {
         return;
       }
 
-      // 刷新 session 让 preferences 同步到 token
+      // 刷新 session — 同步 preferences 到 token
       await update();
 
       // 清除所有触发标记
-      localStorage.removeItem(CHECK_KEY);
+      sessionStorage.removeItem("wl-show-preference");
       sessionStorage.removeItem("wl-reset-preferences");
 
       setVisible(false);

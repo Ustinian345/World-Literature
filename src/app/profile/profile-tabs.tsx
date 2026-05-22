@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
@@ -324,34 +324,37 @@ function ArticleCard({ article, onRefresh }: { article: { id: string; articleId:
 
 function SettingsTab({ user, updateSession }: { user: { name?: string | null; email?: string | null; image?: string | null }; updateSession: () => Promise<unknown> }) {
   const [name, setName] = useState((user.name as string) || "");
-  const [avatar, setAvatar] = useState<string>(user.image || "");
+  const [avatarUrl, setAvatarUrl] = useState<string>(user.image || "");
   const [currentPassword, setCurrentPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
   const [message, setMessage] = useState<{ type: "success" | "error"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
-  const fileRef = useRef<HTMLInputElement>(null);
-
-  function handleAvatarChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    if (file.size > 500 * 1024) { setMessage({ type: "error", text: "头像文件不能超过 500KB" }); return; }
-    const reader = new FileReader();
-    reader.onload = () => { setAvatar(reader.result as string); setMessage(null); };
-    reader.readAsDataURL(file);
-  }
 
   async function handleSave(e: React.FormEvent) {
     e.preventDefault();
     setMessage(null);
     setSaving(true);
+
+    const finalName = name.trim();
+    const finalAvatar = avatarUrl.trim() || undefined;
+
+    if (!finalName) {
+      setMessage({ type: "error", text: "昵称不能为空" });
+      setSaving(false);
+      return;
+    }
+
     try {
+      // 1. 保存昵称/头像到数据库
       const res1 = await fetch("/api/user/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name: name.trim(), avatar: avatar || undefined }),
+        body: JSON.stringify({ name: finalName, avatar: finalAvatar }),
       });
       const d1 = await res1.json();
       if (!res1.ok) { setMessage({ type: "error", text: d1.error || "保存失败" }); setSaving(false); return; }
+
+      // 2. 修改密码（如填写）
       if (currentPassword && newPassword) {
         const res2 = await fetch("/api/user/change-password", {
           method: "POST",
@@ -362,23 +365,44 @@ function SettingsTab({ user, updateSession }: { user: { name?: string | null; em
         if (!res2.ok) { setMessage({ type: "error", text: d2.error || "密码修改失败" }); setSaving(false); return; }
         setCurrentPassword(""); setNewPassword("");
       }
+
+      // 3. 刷新 session — 从数据库重新拉取 name/avatar
       await updateSession();
+
       setMessage({ type: "success", text: "保存成功" });
     } catch { setMessage({ type: "error", text: "网络错误" }); }
     setSaving(false);
   }
 
+  const displayAvatar = avatarUrl || user.image;
+  const showImage = !!displayAvatar && displayAvatar.startsWith("http");
+
   return (
     <form onSubmit={handleSave} className="space-y-6">
       <div className="text-center">
-        <div className="mx-auto flex h-24 w-24 cursor-pointer items-center justify-center rounded-full bg-stone-100 text-4xl font-bold shadow overflow-hidden hover:ring-2 ring-terracotta transition-all"
-          onClick={() => fileRef.current?.click()} title="点击更换头像">
-          {avatar ? <img src={avatar} alt="" className="h-full w-full object-cover" />
-            : (name || user.email || "?").charAt(0).toUpperCase()}
+        <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-stone-100 text-4xl font-bold shadow overflow-hidden">
+          {showImage ? (
+            <img src={displayAvatar!} alt="" className="h-full w-full object-cover" onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }} />
+          ) : (
+            (name || user.email || "?").charAt(0).toUpperCase()
+          )}
         </div>
-        <input ref={fileRef} type="file" accept="image/*" onChange={handleAvatarChange} className="hidden" />
-        <p className="mt-2 font-heading-cn text-xs text-stone-400">点击头像更换（≤500KB）</p>
       </div>
+
+      {/* 头像 URL */}
+      <div>
+        <label className="mb-2 block font-heading-cn text-sm font-medium text-umber">头像 URL</label>
+        <input
+          type="url"
+          value={avatarUrl}
+          onChange={(e) => setAvatarUrl(e.target.value)}
+          placeholder="https://example.com/avatar.jpg"
+          className="w-full rounded-lg border border-stone-300 bg-white px-4 py-3 font-heading-cn text-sm text-umber placeholder:text-stone-400 focus:border-terracotta focus:outline-none focus:ring-2 focus:ring-terracotta/20"
+        />
+        <p className="mt-1 font-heading-cn text-xs text-stone-400">输入图片 URL 作为头像（可选）</p>
+      </div>
+
+      {/* 昵称 */}
       <div>
         <label className="mb-2 block font-heading-cn text-sm font-medium text-umber">昵称</label>
         <input type="text" value={name} onChange={(e) => setName(e.target.value)}
@@ -430,9 +454,9 @@ function PreferencesSection({ user: _user }: { user: { name?: string | null; ema
         当前偏好：{loadingPrefs ? "加载中..." : (prefs && prefs.length > 0 ? prefs.join(" · ") : "未设置")}
       </p>
       <button type="button"
-        onClick={() => { localStorage.setItem("needsPreferenceCheck", "true"); sessionStorage.setItem("wl-reset-preferences", "1"); window.location.reload(); }}
+        onClick={() => { sessionStorage.setItem("wl-show-preference", "true"); sessionStorage.setItem("wl-reset-preferences", "1"); window.location.reload(); }}
         className="rounded-lg border border-amber/40 bg-amber/5 px-4 py-2 font-heading-cn text-sm text-amber-dark transition-colors hover:bg-amber/10">
-        重新设置偏好
+        修改偏好
       </button>
     </div>
   );
