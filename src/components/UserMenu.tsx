@@ -72,12 +72,6 @@ export default function UserMenu() {
             >
               📖 我的书架
             </a>
-            <a
-              href="/bookmarks"
-              className="block px-4 py-2 font-heading-cn text-sm text-umber-light transition-colors hover:bg-stone-50"
-            >
-              🔖 收藏列表
-            </a>
           </div>
 
           {/* 退出 */}

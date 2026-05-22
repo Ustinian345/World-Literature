@@ -1,23 +1,34 @@
 "use client";
 
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 import { useState, useEffect, useCallback } from "react";
 
 export function BookmarkButton({ workId }: { workId: string }) {
   const { data: session } = useSession();
+  const router = useRouter();
   const [bookmarked, setBookmarked] = useState(false);
   const [animating, setAnimating] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!session?.user) return;
-    fetch("/api/bookmarks")
+    if (!session?.user) {
+      setBookmarked(false);
+      setLoading(false);
+      return;
+    }
+    fetch(`/api/bookmarks?workId=${encodeURIComponent(workId)}`)
       .then((r) => r.json())
-      .then((d) => { if (d.bookmarks) setBookmarked(d.bookmarks.includes(workId)); })
-      .catch(() => {});
+      .then((d) => { setBookmarked(!!d.bookmarked); })
+      .catch(() => {})
+      .finally(() => setLoading(false));
   }, [session, workId]);
 
   const toggle = useCallback(async () => {
-    if (!session) return;
+    if (!session) {
+      router.push("/login");
+      return;
+    }
     setAnimating(true);
     setTimeout(() => setAnimating(false), 400);
 
@@ -30,9 +41,17 @@ export function BookmarkButton({ workId }: { workId: string }) {
         body: JSON.stringify({ workId, action: next ? "add" : "remove" }),
       });
     } catch {
-      setBookmarked(!next); // revert on error
+      setBookmarked(!next);
     }
-  }, [session, workId, bookmarked]);
+  }, [session, workId, bookmarked, router]);
+
+  if (loading) {
+    return (
+      <div className="fixed bottom-6 left-6 z-50 flex h-11 w-11 items-center justify-center rounded-full border border-sand/40 bg-warm-white/90 shadow-lg">
+        <div className="h-4 w-4 animate-pulse rounded-full bg-stone-200" />
+      </div>
+    );
+  }
 
   return (
     <button
@@ -42,8 +61,8 @@ export function BookmarkButton({ workId }: { workId: string }) {
           ? "border-terracotta/30 bg-terracotta/10 text-terracotta shadow-terracotta/10"
           : "border-sand/40 bg-warm-white/90 text-umber-light/40 hover:text-terracotta"
       } ${animating ? "bookmark-animate" : ""}`}
-      aria-label={bookmarked ? "取消收藏" : "收藏此书"}
-      title={session ? (bookmarked ? "已收藏" : "收藏此书") : "请先登录"}
+      aria-label={session ? (bookmarked ? "取消收藏" : "收藏此书") : "请先登录"}
+      title={session ? (bookmarked ? "已收藏" : "收藏此书") : "请先登录以收藏"}
     >
       <svg className="h-5 w-5" fill={bookmarked ? "currentColor" : "none"} viewBox="0 0 24 24" stroke="currentColor" strokeWidth={bookmarked ? 0 : 1.8}>
         <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
@@ -58,10 +77,13 @@ export function BookmarkStar({ workId, className = "" }: { workId: string; class
   const [bookmarked, setBookmarked] = useState(false);
 
   useEffect(() => {
-    if (!session?.user) return;
-    fetch("/api/bookmarks")
+    if (!session?.user) {
+      setBookmarked(false);
+      return;
+    }
+    fetch(`/api/bookmarks?workId=${encodeURIComponent(workId)}`)
       .then((r) => r.json())
-      .then((d) => { if (d.bookmarks) setBookmarked(d.bookmarks.includes(workId)); })
+      .then((d) => { setBookmarked(!!d.bookmarked); })
       .catch(() => {});
   }, [session, workId]);
 
