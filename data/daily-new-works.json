@@ -2,103 +2,7 @@
   "date": "2026-05-22",
   "articles": [
     {
-      "id": "zh-rss-1779425492417-0",
-      "title": "特朗普再次表示将与赖清德通话，或激怒中国",
-      "author": "JOHN YOON,储百亮,AMY CHANG CHIEN",
-      "source": "纽约时报中文网",
-      "sourceUrl": "https://cn.nytimes.com/usa/20260522/trump-taiwan-president-call-weapons-sale-china/?utm_source=RSS",
-      "excerpt": "特朗普称他将与赖清德通话，讨论潜在的对台军售问题。这是他一周内第二次表示将与台湾总统通话。此举将打破长期以来的外交惯例，并有可能引发中国的报复。<p><img src=\"https://static01.nyt.com/images/2026/05/21/multimedia/21xp-trump-taiwan-fbhv/21xp-trump-taiwan-fbhv-articleLarge.jpg\" alt=\"特朗普总统周三表示，他将与台湾总统讨论可能的武器销售事宜。 Doug Mills/The New York Times\"></p>                    <p>Doug Mills/The New York Times</p>                    <p>特朗普总统周三表示，他将与台湾总统讨论可能的武器销售事宜。</p>\n",
-      "criticism": "",
-      "language": "zh",
-      "tags": [
-        "文化评论",
-        "当代文学"
-      ],
-      "publishedAt": "2026-05-22 01:01:35",
-      "collectedAt": "2026-05-22T04:51:32.417Z"
-    },
-    {
-      "id": "zh-rss-1779425492419-1",
-      "title": "特朗普和他的顾问们显然根本没读过修昔底德",
-      "author": "LYDIA POLGREEN",
-      "source": "纽约时报中文网",
-      "sourceUrl": "https://cn.nytimes.com/opinion/20260521/trump-xi-iran-war/?utm_source=RSS",
-      "excerpt": "特朗普沉迷于自身的施暴能力，误以为贯彻自身意志的力量是无穷无尽的。伊朗战争的战略错误源于对权力的误读，也暴露了他的权力之渺小。<p><img src=\"https://static01.nyt.com/images/2026/05/20/multimedia/15polgreen-twfc/15polgreen-twfc-videoLarge-v2.jpg\" alt=\" Max Slobodda for The New York Times\"></p>                    <p>Max Slobodda for The New York Times</p>                    <p></p>\n",
-      "criticism": "",
-      "language": "zh",
-      "tags": [
-        "文化评论",
-        "当代文学"
-      ],
-      "publishedAt": "2026-05-22 00:38:08",
-      "collectedAt": "2026-05-22T04:51:32.419Z"
-    },
-    {
-      "id": "zh-rss-1779425494845-0",
-      "title": "美國起訴卡斯特羅後，古巴局勢的三種可能",
-      "author": "BBC中文",
-      "source": "BBC中文",
-      "sourceUrl": "https://www.bbc.com/zhongwen/articles/c1k2gm0xx31o/trad?at_medium=RSS&at_campaign=rss",
-      "excerpt": "特朗普政府一直對古巴的共產政權施加巨大經濟壓力。",
-      "criticism": "",
-      "language": "zh",
-      "tags": [
-        "国际文化",
-        "当代文学"
-      ],
-      "publishedAt": "2026-05-22 04:46:19",
-      "collectedAt": "2026-05-22T04:51:34.845Z"
-    },
-    {
-      "id": "zh-rss-1779425494845-1",
-      "title": "未來「正被推入黑暗」：從緬甸到委內瑞拉，民間如何抵抗官方網絡封鎖",
-      "author": "BBC中文",
-      "source": "BBC中文",
-      "sourceUrl": "https://www.bbc.com/zhongwen/articles/cx21ywx9y2xo/trad?at_medium=RSS&at_campaign=rss",
-      "excerpt": "從緬甸到委內瑞拉，在網絡封鎖頻繁的年代，民間正想方設法繞過官方網絡封鎖與打擊。",
-      "criticism": "",
-      "language": "zh",
-      "tags": [
-        "国际文化",
-        "当代文学"
-      ],
-      "publishedAt": "2026-05-22 00:20:48",
-      "collectedAt": "2026-05-22T04:51:34.845Z"
-    },
-    {
-      "id": "en-rss-1779425539019-0",
-      "title": "Lit Hub Daily: May 21, 2026",
-      "author": "Lit Hub Daily",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-may-21-2026/",
-      "excerpt": "Katherine Packert Burke considers eight different attempts at explaining the purpose of trans literature. | Lit Hub Criticism Why you shouldn’t feel guilty about the books you haven’t read. | Lit Hub Craft On the new podcast Passages: On Morrison",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "literary",
-        "文学评论"
-      ],
-      "publishedAt": "2026-05-21 10:30:25",
-      "collectedAt": "2026-05-22T04:52:19.019Z"
-    },
-    {
-      "id": "en-rss-1779425539019-1",
-      "title": "Namwali Serpell and Tracy K. Smith Discuss Toni Morrison’s The Bluest Eye",
-      "author": "Passages: On Morrison",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/namwali-serpell-and-tracy-k-smith-discuss-toni-morrisons-the-bluest-eye/",
-      "excerpt": "Namwali Serpell kicks off the tour for her new book On Morrison at the First Parish Church in Cambridge, MA, in conversation with poet Tracy K. Smith. Together, they read the opening of The Bluest Eye, Toni Morrison’s debut novel, and discuss",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "literary",
-        "虚构文学"
-      ],
-      "publishedAt": "2026-05-21 09:10:57",
-      "collectedAt": "2026-05-22T04:52:19.019Z"
-    },
-    {
-      "id": "en-rss-1779425540276-0",
+      "id": "en-rss-1779426590598-0",
       "title": "Independent People",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -107,14 +11,14 @@
       "criticism": "",
       "language": "en",
       "tags": [
-        "literary",
-        "虚构文学"
+        "fiction"
       ],
+      "type": "fiction",
       "publishedAt": "2026-05-21 07:00:24",
-      "collectedAt": "2026-05-22T04:52:20.276Z"
+      "collectedAt": "2026-05-22T05:09:50.598Z"
     },
     {
-      "id": "en-rss-1779425540276-1",
+      "id": "en-rss-1779426590598-1",
       "title": "The High Priestess",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -123,14 +27,46 @@
       "criticism": "",
       "language": "en",
       "tags": [
-        "literary",
-        "虚构文学"
+        "fiction"
       ],
+      "type": "fiction",
       "publishedAt": "2026-05-21 06:59:48",
-      "collectedAt": "2026-05-22T04:52:20.276Z"
+      "collectedAt": "2026-05-22T05:09:50.598Z"
     },
     {
-      "id": "other-rss-1779425544094-0",
+      "id": "en-rssd-1779426592597-0",
+      "title": "Lit Hub Daily: May 21, 2026",
+      "author": "Lit Hub Daily",
+      "source": "Literary Hub",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-may-21-2026/",
+      "excerpt": "Katherine Packert Burke considers eight different attempts at explaining the purpose of trans literature. Lit Hub Criticism Why you shouldn’t feel guilty about the books you haven’t read. Lit Hub Craft On the new podcast Passages: On Morrison",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Thu, 21 May 2026 10:30:25 +0000",
+      "collectedAt": "2026-05-22T05:09:52.597Z"
+    },
+    {
+      "id": "en-rssd-1779426592597-1",
+      "title": "Namwali Serpell and Tracy K. Smith Discuss Toni Morrison’s The Bluest Eye",
+      "author": "Passages: On Morrison",
+      "source": "Literary Hub",
+      "sourceUrl": "https://lithub.com/namwali-serpell-and-tracy-k-smith-discuss-toni-morrisons-the-bluest-eye/",
+      "excerpt": "Namwali Serpell kicks off the tour for her new book On Morrison at the First Parish Church in Cambridge, MA, in conversation with poet Tracy K. Smith. Together, they read the opening of The Bluest Eye, Toni Morrison’s debut novel, and discuss",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Thu, 21 May 2026 09:10:57 +0000",
+      "collectedAt": "2026-05-22T05:09:52.597Z"
+    },
+    {
+      "id": "other-rss-1779426607336-0",
       "title": "Global Reads: Summer Children’s and YA Releases Spanning Four Continents",
       "author": "Nina Perrotta",
       "source": "Words Without Borders",
@@ -139,14 +75,14 @@
       "criticism": "",
       "language": "other",
       "tags": [
-        "translation",
-        "文学评论"
+        "translation"
       ],
+      "type": "translation",
       "publishedAt": "2026-05-21 13:00:01",
-      "collectedAt": "2026-05-22T04:52:24.094Z"
+      "collectedAt": "2026-05-22T05:10:07.336Z"
     },
     {
-      "id": "other-rss-1779425544094-1",
+      "id": "other-rss-1779426607336-1",
       "title": "The City and the Writer: In al-Kabri with Mai Serhan",
       "author": "Nina Perrotta",
       "source": "Words Without Borders",
@@ -155,11 +91,11 @@
       "criticism": "",
       "language": "other",
       "tags": [
-        "translation",
-        "当代文学"
+        "translation"
       ],
+      "type": "translation",
       "publishedAt": "2026-05-13 13:00:11",
-      "collectedAt": "2026-05-22T04:52:24.094Z"
+      "collectedAt": "2026-05-22T05:10:07.336Z"
     }
   ]
 }

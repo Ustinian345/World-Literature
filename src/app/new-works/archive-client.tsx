@@ -99,6 +99,8 @@ export function NewWorksArchiveClient() {
   );
 }
 
+const typeLabels: Record<string, string> = { fiction: "小说", essay: "散文", poetry: "诗歌", criticism: "评论", interview: "访谈", translation: "译介" };
+
 function ArticleRow({ article, langLabel, langColor }: { article: Article; langLabel: Record<string, string>; langColor: Record<string, string> }) {
   const { data: session } = useSession();
   const router = useRouter();
@@ -138,6 +140,9 @@ function ArticleRow({ article, langLabel, langColor }: { article: Article; langL
             <span className="text-xs text-stone-500">{article.author}</span>
             <span className="rounded bg-stone-100 px-1.5 py-0.5 text-xs text-stone-600">{article.source}</span>
             <span className={`rounded px-1.5 py-0.5 text-xs ${langColor[article.language] || "bg-stone-100 text-stone-600"}`}>{langLabel[article.language] || article.language}</span>
+            {(article as any).type && (
+              <span className="rounded bg-amber/10 px-1.5 py-0.5 text-xs text-amber-dark">{typeLabels[(article as any).type] || (article as any).type}</span>
+            )}
             <span className="text-xs text-stone-400">{article.publishedAt?.slice(0, 10)}</span>
           </div>
         </div>

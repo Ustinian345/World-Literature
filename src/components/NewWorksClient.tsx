@@ -64,6 +64,7 @@ function ArticleCard({ article, loggedIn }: { article: Article; loggedIn: boolea
 
   const langLabel: Record<string, string> = { zh: "中文", en: "EN", ja: "日", ko: "韩", other: "其他" };
   const langColor: Record<string, string> = { zh: "bg-red-50 text-red-700", en: "bg-blue-50 text-blue-700", ja: "bg-pink-50 text-pink-700", ko: "bg-green-50 text-green-700", other: "bg-purple-50 text-purple-700" };
+  const typeLabels: Record<string, string> = { fiction: "小说", essay: "散文", poetry: "诗歌", criticism: "评论", interview: "访谈", translation: "译介" };
 
   return (
     <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm transition-all hover:shadow-md">
@@ -76,6 +77,9 @@ function ArticleCard({ article, loggedIn }: { article: Article; loggedIn: boolea
             <span className="text-xs text-stone-500">{article.author}</span>
             <span className="rounded bg-stone-100 px-1.5 py-0.5 text-xs text-stone-600">{article.source}</span>
             <span className={`rounded px-1.5 py-0.5 text-xs ${langColor[article.language] || "bg-stone-100 text-stone-600"}`}>{langLabel[article.language] || article.language}</span>
+            {(article as any).type && (
+              <span className="rounded bg-amber/10 px-1.5 py-0.5 text-xs text-amber-dark">{typeLabels[(article as any).type] || (article as any).type}</span>
+            )}
           </div>
         </div>
         <button
