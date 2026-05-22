@@ -1,10 +1,20 @@
+# ================================================================
+# 每日文学热点自动抓取 + AI 分析
+# 每天北京时间 00:00（UTC 16:00）执行
+# ================================================================
+# 需要的 GitHub Secrets：
+#   ANTHROPIC_API_KEY  — 用于 Claude API 深度分析（必填）
+#   OPENAI_API_KEY     — 降级备选，Anthropic 不可用时使用（选填）
+#   SERPER_API_KEY     — Google 搜索 API，用于扩展新闻源（选填）
+# ================================================================
+
 name: Daily Literature Trends
 
 on:
   schedule:
-    # 每天 UTC 08:00（北京 16:00）运行
-    - cron: "0 8 * * *"
-  workflow_dispatch: # 手动触发
+    # 北京时间每天零点 (UTC+8 → UTC 16:00)
+    - cron: "0 16 * * *"
+  workflow_dispatch:
 
 jobs:
   fetch-and-commit:
@@ -29,16 +39,19 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: npm run trends:fetch
 
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/daily-trends.json
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
+
+          if git diff --quiet HEAD -- data/daily-trends.json; then
+            echo "⏭ daily-trends.json 无变化，跳过 commit"
           else
-            git commit -m "data: update daily literary trends [skip ci]"
+            git add data/daily-trends.json
+            git commit -m "data: 更新每日文学热点 [automated]"
             git push
+            echo "✅ 已推送更新，Vercel 将自动重新部署"
           fi
