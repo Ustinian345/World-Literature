@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 // ================================================================
-// 每日新文抓取 — 纯文学内容聚合 (fiction / essay / poetry / criticism)
-// 目标比例：中文 40% / 英文 40% / 其他 20%
+// 每日新文抓取 — 纯文学内容聚合
+// 固定配额：中文 3 篇 / 英文 2 篇 / 其他 1 篇
 // 用法: npx tsx scripts/fetch-new-works.ts [--dry-run] [--ci|--local]
 // ================================================================
 
@@ -66,7 +66,7 @@ const OTHER_SOURCES: SourceDef[] = [
   { name: "Words Without Borders Asia", rss: "https://wordswithoutborders.org/region/asia/feed/", lang: "other", category: "translation", maxArticles: 2 },
 ];
 
-const QUOTAS: Record<string, number> = { zh: 4, en: 4, other: 2 };
+const QUOTAS: Record<string, number> = { zh: 3, en: 2, other: 1 };
 
 // ================================================================
 // RSS XML 直接解析
@@ -198,37 +198,40 @@ function extractArticlesFromHTML(html: string, src: SourceDef): Article[] {
 // AI 编辑荐评（中文源全失败时补位）
 // ================================================================
 
-async function generateEditorial(): Promise<Article[]> {
-  if (!ANTHROPIC_KEY) return [];
-  console.log("   🤖 中文来源全失败，AI 生成编辑荐评...");
-  try {
-    const resp = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: { "Content-Type": "application/json", "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01" },
-      body: JSON.stringify({
-        model: "claude-sonnet-4-6", max_tokens: 1024,
-        messages: [{ role: "user", content: `你是世界文学总站的中文编辑。写一篇200字的中文文学荐评。主题可选：近期华语文学新作/经典作家纪念导读/文学趋势观察。只输出JSON：{"title":"标题","body":"正文"}` }],
-      }),
-      signal: AbortSignal.timeout(30000),
-    });
-    if (!resp.ok) return [];
-    const data = (await resp.json()) as { content?: Array<{ text: string }> };
-    const text = data.content?.[0]?.text || "";
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) return [];
-    const { title, body } = JSON.parse(jsonMatch[0]);
-    if (!title || !body) return [];
-    console.log(`   ✓ AI 荐评: ${title}`);
-    return [{
-      id: `zh-editorial-${Date.now()}`, title, author: "编辑荐评", source: "编辑荐评", sourceUrl: "",
-      excerpt: body.slice(0, 500), criticism: "", language: "zh",
-      tags: ["编辑荐评", "文学评论"], type: "criticism" as ArticleType,
-      publishedAt: new Date().toISOString(), collectedAt: new Date().toISOString(),
-    }];
-  } catch (e) {
-    console.log(`   ⚠ AI 补位失败: ${(e as Error).message}`);
-    return [];
+async function generateEditorials(count: number): Promise<Article[]> {
+  if (!ANTHROPIC_KEY || count <= 0) return [];
+  console.log(`   🤖 中文不足${count}篇，AI生成编辑荐评...`);
+  const articles: Article[] = [];
+  for (let i = 0; i < count; i++) {
+    try {
+      const resp = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-api-key": ANTHROPIC_KEY, "anthropic-version": "2023-06-01" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-6", max_tokens: 1024,
+          messages: [{ role: "user", content: `你是世界文学总站的中文编辑。请写一篇中文文学荐评（约200字），主题与第${i + 1}篇不同。可选方向：华语新作评介/翻译文学推荐/经典重读/作家诞辰纪念/文学现象观察/诗歌赏析/散文荐读。只输出JSON：{"title":"标题","body":"正文"}` }],
+        }),
+        signal: AbortSignal.timeout(30000),
+      });
+      if (!resp.ok) continue;
+      const data = (await resp.json()) as { content?: Array<{ text: string }> };
+      const text = data.content?.[0]?.text || "";
+      const jsonMatch = text.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) continue;
+      const { title, body } = JSON.parse(jsonMatch[0]);
+      if (!title || !body) continue;
+      console.log(`   ✓ AI荐评 #${i + 1}: ${title}`);
+      articles.push({
+        id: `zh-editorial-${Date.now()}-${i}`, title, author: "编辑荐评", source: "编辑荐评", sourceUrl: "",
+        excerpt: body.slice(0, 500), criticism: "", language: "zh",
+        tags: ["编辑荐评", "文学评论"], type: "criticism" as ArticleType,
+        publishedAt: new Date().toISOString(), collectedAt: new Date().toISOString(),
+      });
+    } catch (e) {
+      console.log(`   ⚠ AI荐评 #${i + 1} 失败: ${(e as Error).message}`);
+    }
   }
+  return articles;
 }
 
 // ================================================================
@@ -455,25 +458,36 @@ async function main() {
     }
   }
 
-  // ---- CI 中文补位 ----
-  if (allByLang["zh"].length === 0 && isCI) {
-    const ai = await generateEditorial();
-    if (ai.length > 0) { allByLang["zh"] = ai; console.log(`   AI: ${ai.length} 篇`); }
+  // ---- CI 中文补位：不够 3 篇时 AI 生成 ----
+  if (isCI) {
+    const zhShort = QUOTAS.zh - (allByLang["zh"]?.length || 0);
+    if (zhShort > 0) {
+      const ai = await generateEditorials(zhShort);
+      if (ai.length > 0) {
+        allByLang["zh"] = [...(allByLang["zh"] || []), ...ai];
+        console.log(`   AI 补位: ${ai.length} 篇`);
+      }
+    }
   }
 
-  // ---- 配额裁剪 ----
+  // ---- 配额裁剪：严格 3/2/1 ----
   const final: Article[] = [];
-  for (const lang of ["zh", "en", "other"]) {
-    const quota = QUOTAS[lang] || 3;
-    let articles = allByLang[lang] || [];
-    if (articles.length < quota && lang !== "en") {
-      const used = new Set(final.map((f) => f.id));
-      const enPool = (allByLang["en"] || []).filter((a) => !used.has(a.id));
-      const fillers = enPool.slice(0, quota - articles.length);
-      if (fillers.length > 0) { console.log(`   🔄 ${lang} 不足，英文补 ${fillers.length} 篇`); articles = [...articles, ...fillers]; }
-    }
-    final.push(...articles.slice(0, quota));
+
+  // zh: 3篇
+  final.push(...(allByLang["zh"] || []).slice(0, QUOTAS.zh));
+
+  // en: 2篇
+  const enSlice = (allByLang["en"] || []).slice(0, QUOTAS.en);
+  final.push(...enSlice);
+
+  // other: 1篇 → 不足时从 EN 剩余池借用
+  const used = new Set(final.map((f) => f.id));
+  let otherArticles = (allByLang["other"] || []).slice(0, QUOTAS.other);
+  if (otherArticles.length < QUOTAS.other) {
+    const spare = (allByLang["en"] || []).filter((a) => !used.has(a.id)).slice(0, QUOTAS.other - otherArticles.length);
+    if (spare.length > 0) { console.log(`   🔄 other 不足，EN 借用 ${spare.length} 篇`); otherArticles = [...otherArticles, ...spare]; }
   }
+  final.push(...otherArticles);
 
   const unique = dedupeByTitle(final);
 
