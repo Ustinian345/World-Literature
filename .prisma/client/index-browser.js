@@ -139,6 +139,26 @@ exports.Prisma.BookmarkScalarFieldEnum = {
   createdAt: 'createdAt'
 };
 
+exports.Prisma.FavoriteTrendScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  trendId: 'trendId',
+  trendDate: 'trendDate',
+  trendTitle: 'trendTitle',
+  savedAt: 'savedAt'
+};
+
+exports.Prisma.FavoriteArticleScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  articleId: 'articleId',
+  articleTitle: 'articleTitle',
+  articleSource: 'articleSource',
+  articleDate: 'articleDate',
+  excerpt: 'excerpt',
+  savedAt: 'savedAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -168,7 +188,9 @@ exports.Prisma.NullsOrder = {
 
 exports.Prisma.ModelName = {
   User: 'User',
-  Bookmark: 'Bookmark'
+  Bookmark: 'Bookmark',
+  FavoriteTrend: 'FavoriteTrend',
+  FavoriteArticle: 'FavoriteArticle'
 };
 
 /**
