@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 const ALL_TAGS = [
   "古典文学", "现代文学", "魔幻现实主义", "爱情小说", "战争文学",
@@ -12,33 +13,48 @@ const ALL_TAGS = [
 
 export default function PreferenceModal() {
   const { data: session, update } = useSession();
+  const router = useRouter();
   const [visible, setVisible] = useState(false);
   const [selected, setSelected] = useState<string[]>([]);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    if (!session?.user?.email) return;
+  // 防止同一登录会话中重复弹出
+  const dismissedRef = useRef(false);
+  // 跟踪上次处理过的用户 email，切换账号时重置
+  const lastEmailRef = useRef<string | null>(null);
 
-    // 等待欢迎弹窗关掉
-    const welcomeActive = sessionStorage.getItem("wl-welcome-number");
-    if (welcomeActive) return;
+  useEffect(() => {
+    const email = session?.user?.email;
+    if (!email) return;
+
+    // 切换账号时重置
+    if (lastEmailRef.current !== email) {
+      lastEmailRef.current = email;
+      dismissedRef.current = false;
+    }
+
+    // 已经保存过或已关闭，不再弹出
+    if (dismissedRef.current) return;
+
+    // 等待欢迎弹窗关闭
+    if (sessionStorage.getItem("wl-welcome-number")) return;
 
     const isReset = sessionStorage.getItem("wl-reset-preferences") === "1";
+    const prefs = session.user.preferences;
+    const needsSetup = !prefs || prefs.length === 0;
 
-    // 首次设置：preferences 为空时弹出
-    const needsSetup = !session.user.preferences || session.user.preferences.length === 0;
-
+    // 非首次设置且非重置 → 不弹
     if (!needsSetup && !isReset) return;
 
-    // pre-select current preferences when resetting
-    if (isReset && session.user.preferences) {
-      setSelected([...session.user.preferences]);
+    // 重置时预填已有偏好
+    if (isReset && prefs && prefs.length > 0) {
+      setSelected([...prefs]);
     }
 
     const timer = setTimeout(() => setVisible(true), 600);
     return () => clearTimeout(timer);
-  }, [session]);
+  }, [session?.user?.email, session?.user?.preferences]);
 
   function toggleTag(tag: string) {
     setSelected((prev) =>
@@ -52,6 +68,8 @@ export default function PreferenceModal() {
       setError("请至少选择一个偏好标签");
       return;
     }
+    if (saving) return; // 防止重复提交
+
     setSaving(true);
     setError("");
 
@@ -67,19 +85,28 @@ export default function PreferenceModal() {
         setSaving(false);
         return;
       }
+
+      // 刷新 session 以同步 preferences
       await update();
+
+      // 标记为已处理，防止同一会话再次弹出
+      dismissedRef.current = true;
       sessionStorage.removeItem("wl-reset-preferences");
       setVisible(false);
+
+      // 刷新页面数据
+      router.refresh();
     } catch {
       setError("网络错误，请重试");
+      setSaving(false);
     }
-    setSaving(false);
   }
 
   if (!visible) return null;
 
   return (
     <div className="fixed inset-0 z-[101] flex items-center justify-center bg-black/50 p-5 backdrop-blur-sm">
+      {/* 遮罩不响应点击，防止轻易关闭 */}
       <div className="relative w-full max-w-lg overflow-hidden rounded-3xl bg-cream shadow-2xl">
         {/* 顶部装饰 */}
         <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-terracotta/10 to-transparent" />
@@ -99,12 +126,14 @@ export default function PreferenceModal() {
               return (
                 <button
                   key={tag}
+                  type="button"
                   onClick={() => toggleTag(tag)}
+                  disabled={saving}
                   className={`rounded-full px-4 py-2 font-heading-cn text-sm transition-all ${
                     active
                       ? "bg-terracotta text-white shadow-md"
                       : "bg-stone-100 text-stone-600 hover:bg-stone-200"
-                  }`}
+                  } disabled:opacity-50`}
                 >
                   {tag}
                 </button>
