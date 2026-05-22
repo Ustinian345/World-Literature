@@ -13,7 +13,7 @@ const ARCHIVE_DIR = path.join(__dirname, "..", "data", "new-works-archive");
 const USER_AGENT = "WorldLiteratureBot/1.0 (+https://github.com/world-literature)";
 const ANTHROPIC_KEY = process.env.ANTHROPIC_API_KEY || "";
 
-type ArticleType = "fiction" | "essay" | "poetry" | "criticism" | "interview" | "translation";
+type ArticleType = "fiction" | "essay" | "poetry" | "criticism" | "interview" | "translation" | "play" | "nonfiction";
 
 interface Article {
   id: string; title: string; author: string;
@@ -33,9 +33,13 @@ interface SourceDef {
 // ================================================================
 
 const CI_ZH_SOURCES: SourceDef[] = [
-  { name: "端传媒文化", rss: "https://theinitium.com/feed/", lang: "zh", category: "criticism", maxArticles: 2 },
-  { name: "联合早报文艺", rss: "https://www.zaobao.com.sg/culture/rss.xml", lang: "zh", category: "essay", maxArticles: 2 },
-  { name: "香港文学馆", rss: "https://www.hklf.hk/feed/", lang: "zh", category: "criticism", maxArticles: 2 },
+  { name: "端传媒文化", rss: "https://theinitium.com/feed/", fallbackUrl: "https://theinitium.com/channel/culture/", lang: "zh", category: "criticism", maxArticles: 2 },
+  { name: "联合早报文艺", rss: "https://www.zaobao.com.sg/culture/rss.xml", fallbackUrl: "https://www.zaobao.com.sg/culture", lang: "zh", category: "essay", maxArticles: 2 },
+  { name: "香港文学馆", rss: "https://www.hkliterature.net/feed/", fallbackUrl: "https://www.hkliterature.net/", lang: "zh", category: "criticism", maxArticles: 2 },
+  { name: "明报文化", rss: "https://news.mingpao.com/rss/culture.xml", fallbackUrl: "https://news.mingpao.com/ins/文化", lang: "zh", category: "essay", maxArticles: 2 },
+  { name: "字花文学", rss: "https://zihua.com.hk/feed/", fallbackUrl: "https://zihua.com.hk/", lang: "zh", category: "fiction", maxArticles: 2 },
+  { name: "BBC中文文化", rss: "https://www.bbc.com/zhongwen/simp/culture_and_arts/rss.xml", fallbackUrl: "https://www.bbc.com/zhongwen/simp/topics/culture_and_arts", lang: "zh", category: "criticism", maxArticles: 2 },
+  { name: "澳门文学馆", rss: "https://www.macauliterature.org.mo/feed/", fallbackUrl: "https://www.macauliterature.org.mo/", lang: "zh", category: "criticism", maxArticles: 2 },
 ];
 
 const LOCAL_ZH_SOURCES: SourceDef[] = [
@@ -46,17 +50,20 @@ const LOCAL_ZH_SOURCES: SourceDef[] = [
 
 // ---- 英文文学来源 ----
 const EN_SOURCES: SourceDef[] = [
-  { name: "The New Yorker", rss: "https://www.newyorker.com/feed/fiction", lang: "en", category: "fiction", maxArticles: 2 },
+  { name: "The New Yorker Fiction", rss: "https://www.newyorker.com/feed/fiction", lang: "en", category: "fiction", maxArticles: 2 },
+  { name: "The New Yorker Poetry", rss: "https://www.newyorker.com/feed/poems", lang: "en", category: "poetry", maxArticles: 2 },
   { name: "The Paris Review", rss: "https://www.theparisreview.org/feed/", lang: "en", category: "interview", maxArticles: 2 },
   { name: "Granta", rss: "https://granta.com/feed/", lang: "en", category: "fiction", maxArticles: 2 },
   { name: "Literary Hub", rss: "https://lithub.com/feed/", lang: "en", category: "criticism", maxArticles: 2 },
   { name: "Poetry Foundation", rss: "https://www.poetryfoundation.org/feed", lang: "en", category: "poetry", maxArticles: 2 },
+  { name: "Words Without Borders", rss: "https://wordswithoutborders.org/feed/", lang: "en", category: "translation", maxArticles: 2 },
+  { name: "Asymptote Journal", rss: "https://www.asymptotejournal.com/feed/", lang: "en", category: "translation", maxArticles: 2 },
 ];
 
-// ---- 全球文学翻译 ----
+// ---- 其他地区 ----
 const OTHER_SOURCES: SourceDef[] = [
-  { name: "Words Without Borders", rss: "https://wordswithoutborders.org/feed/", lang: "other", category: "translation", maxArticles: 2 },
-  { name: "Asymptote Journal", rss: "https://www.asymptotejournal.com/feed/", lang: "other", category: "translation", maxArticles: 2 },
+  { name: "KLTI Korea", rss: "https://www.klti.or.kr/eng/rss/noticeRss.do", lang: "other", category: "translation", maxArticles: 2 },
+  { name: "Words Without Borders Asia", rss: "https://wordswithoutborders.org/region/asia/feed/", lang: "other", category: "translation", maxArticles: 2 },
 ];
 
 const QUOTAS: Record<string, number> = { zh: 4, en: 4, other: 2 };
@@ -304,7 +311,7 @@ async function classifyWithAI(articles: Article[]): Promise<Article[]> {
           content: `你是一个文学内容过滤器。判断以下${preFiltered.length}篇文章是否属于文学范畴（小说/散文/诗歌/书评/作家访谈/翻译文学）。新闻、政治、商业内容应拒绝。
 
 对每篇文章输出一行，格式: [序号] yes|no type
-type 必须是以下之一: fiction, essay, poetry, criticism, interview, translation, none
+type 必须是以下之一: fiction, essay, poetry, criticism, interview, translation, play, nonfiction, none
 
 示例:
 [0] yes criticism
@@ -343,6 +350,8 @@ ${items}`
           criticism: ["文学评论"],
           interview: ["作家访谈"],
           translation: ["翻译文学"],
+          play: ["戏剧"],
+          nonfiction: ["非虚构"],
         };
         article.tags = [...new Set([...article.tags, ...(typeTags[type] || ["当代文学"])])];
         results.push(article);
@@ -391,6 +400,7 @@ function dedupeByTitle(articles: Article[]): Article[] {
 const TYPE_LABELS: Record<string, string> = {
   fiction: "小说", essay: "散文", poetry: "诗歌",
   criticism: "评论", interview: "访谈", translation: "译介",
+  play: "戏剧", nonfiction: "非虚构",
 };
 
 function sleep(ms: number) { return new Promise((r) => setTimeout(r, ms)); }

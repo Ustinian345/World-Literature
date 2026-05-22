@@ -99,7 +99,7 @@ export function NewWorksArchiveClient() {
   );
 }
 
-const typeLabels: Record<string, string> = { fiction: "小说", essay: "散文", poetry: "诗歌", criticism: "评论", interview: "访谈", translation: "译介" };
+const typeLabels: Record<string, string> = { fiction: "小说", essay: "散文", poetry: "诗歌", criticism: "评论", interview: "访谈", translation: "译介", play: "戏剧", nonfiction: "非虚构" };
 
 function ArticleRow({ article, langLabel, langColor }: { article: Article; langLabel: Record<string, string>; langColor: Record<string, string> }) {
   const { data: session } = useSession();

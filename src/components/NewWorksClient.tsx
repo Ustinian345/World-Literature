@@ -64,7 +64,7 @@ function ArticleCard({ article, loggedIn }: { article: Article; loggedIn: boolea
 
   const langLabel: Record<string, string> = { zh: "中文", en: "EN", ja: "日", ko: "韩", other: "其他" };
   const langColor: Record<string, string> = { zh: "bg-red-50 text-red-700", en: "bg-blue-50 text-blue-700", ja: "bg-pink-50 text-pink-700", ko: "bg-green-50 text-green-700", other: "bg-purple-50 text-purple-700" };
-  const typeLabels: Record<string, string> = { fiction: "小说", essay: "散文", poetry: "诗歌", criticism: "评论", interview: "访谈", translation: "译介" };
+  const typeLabels: Record<string, string> = { fiction: "小说", essay: "散文", poetry: "诗歌", criticism: "评论", interview: "访谈", translation: "译介", play: "戏剧", nonfiction: "非虚构" };
 
   return (
     <div className="rounded-xl border border-stone-200 bg-white p-4 shadow-sm transition-all hover:shadow-md">

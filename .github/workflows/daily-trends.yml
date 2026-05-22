@@ -60,6 +60,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          TODAY=$(date +%Y-%m-%d)
           CHANGED=0
 
           for FILE in \
@@ -84,7 +85,7 @@ jobs:
           done
 
           if [ "$CHANGED" -eq 1 ]; then
-            git commit -m "data: 更新每日文学数据 [automated]"
+            git commit -m "daily: update trends/recommendation/new-works ${TODAY} [automated]"
             git push
             echo "✅ 已推送更新，Vercel 将自动重新部署"
           else
