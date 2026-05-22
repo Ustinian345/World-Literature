@@ -14,7 +14,10 @@
     "lit:batch": "npx tsx scripts/fetch-literature-data.ts --batch",
     "lit:batch-all": "npx tsx scripts/fetch-literature-data.ts --batch-all",
     "trends:fetch": "npx tsx scripts/fetch-daily-trends.ts",
-    "trends:dry": "npx tsx scripts/fetch-daily-trends.ts --dry-run"
+    "trends:dry": "npx tsx scripts/fetch-daily-trends.ts --dry-run",
+    "recommend:fetch": "npx tsx scripts/fetch-daily-recommendation.ts",
+    "recommend:dry": "npx tsx scripts/fetch-daily-recommendation.ts --dry-run",
+    "recommend:snapshot": "npx tsx scripts/build-works-snapshot.ts"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",

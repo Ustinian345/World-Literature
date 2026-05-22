@@ -6,6 +6,7 @@ declare module "next-auth" {
       id: string;
       isNewUser?: boolean;
       userNumber?: number;
+      preferences?: string[] | null;
       name?: string | null;
       email?: string | null;
       image?: string | null;
@@ -18,6 +19,7 @@ declare module "next-auth/jwt" {
     id: string;
     isNewUser?: boolean;
     userNumber?: number;
+    preferences?: string[] | null;
     provider?: string;
   }
 }

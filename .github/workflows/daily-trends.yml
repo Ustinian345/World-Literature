@@ -1,9 +1,9 @@
 # ================================================================
-# 每日文学热点自动抓取 + AI 分析
+# 每日文学热点 + 个性化书籍推荐
 # 每天北京时间 00:00（UTC 16:00）执行
 # ================================================================
 # 需要的 GitHub Secrets：
-#   ANTHROPIC_API_KEY  — 用于 Claude API 深度分析（必填）
+#   ANTHROPIC_API_KEY  — 用于 Claude API 深度分析及推荐理由生成（必填）
 #   OPENAI_API_KEY     — 降级备选，Anthropic 不可用时使用（选填）
 #   SERPER_API_KEY     — Google 搜索 API，用于扩展新闻源（选填）
 # ================================================================
@@ -35,6 +35,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build works snapshot
+        run: npm run recommend:snapshot
+
       - name: Fetch daily trends
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -42,16 +45,43 @@ jobs:
           SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}
         run: npm run trends:fetch
 
+      - name: Fetch daily recommendation
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run recommend:fetch
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet HEAD -- data/daily-trends.json; then
-            echo "⏭ daily-trends.json 无变化，跳过 commit"
-          else
+          CHANGED=0
+
+          if ! git diff --quiet HEAD -- data/daily-trends.json; then
             git add data/daily-trends.json
-            git commit -m "data: 更新每日文学热点 [automated]"
+            CHANGED=1
+          fi
+
+          if ! git diff --quiet HEAD -- data/daily-recommendation.json; then
+            git add data/daily-recommendation.json
+            CHANGED=1
+          fi
+
+          if ! git diff --quiet HEAD -- data/recommendation-history.json; then
+            git add data/recommendation-history.json
+            CHANGED=1
+          fi
+
+          if ! git diff --quiet HEAD -- data/works-snapshot.json; then
+            git add data/works-snapshot.json
+            CHANGED=1
+          fi
+
+          if [ "$CHANGED" -eq 1 ]; then
+            git commit -m "data: 更新每日文学热点与书籍推荐 [automated]"
             git push
             echo "✅ 已推送更新，Vercel 将自动重新部署"
+          else
+            echo "⏭ 所有数据文件无变化，跳过 commit"
           fi

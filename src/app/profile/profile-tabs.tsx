@@ -220,6 +220,9 @@ function SettingsTab({ user, updateSession }: { user: { name?: string | null; em
         </div>
       </div>
 
+      {/* 文学偏好 */}
+      <PreferencesSection user={user} />
+
       {message && (
         <div className={`rounded-lg p-4 text-sm ${message.type === "success" ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700"}`}>
           {message.text}
@@ -240,5 +243,29 @@ function SettingsTab({ user, updateSession }: { user: { name?: string | null; em
         </button>
       </div>
     </form>
+  );
+}
+
+function PreferencesSection({ user: _user }: { user: { name?: string | null; email?: string | null; image?: string | null } }) {
+  const { data: session } = useSession();
+  const prefs = session?.user?.preferences;
+
+  return (
+    <div className="rounded-xl border border-stone-200 bg-stone-50 p-5">
+      <p className="mb-4 font-heading-cn text-sm font-semibold text-umber">文学偏好</p>
+      <p className="mb-3 font-heading-cn text-xs text-stone-500">
+        当前偏好：{prefs && prefs.length > 0 ? prefs.join(" · ") : "未设置"}
+      </p>
+      <button
+        type="button"
+        onClick={() => {
+          sessionStorage.setItem("wl-reset-preferences", "1");
+          window.location.reload();
+        }}
+        className="rounded-lg border border-amber/40 bg-amber/5 px-4 py-2 font-heading-cn text-sm text-amber-dark transition-colors hover:bg-amber/10"
+      >
+        重新设置偏好
+      </button>
+    </div>
   );
 }

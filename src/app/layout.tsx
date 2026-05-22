@@ -4,6 +4,7 @@ import { Playfair_Display, Noto_Serif_SC, EB_Garamond } from "next/font/google";
 import SessionProvider from "@/components/SessionProvider";
 import UserMenu from "@/components/UserMenu";
 import WelcomeModal from "@/components/WelcomeModal";
+import PreferenceModal from "@/components/PreferenceModal";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -235,6 +236,7 @@ export default function RootLayout({
           </div>
         </footer>
         <WelcomeModal />
+        <PreferenceModal />
         </SessionProvider>
       </body>
     </html>

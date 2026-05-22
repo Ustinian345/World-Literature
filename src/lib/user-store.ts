@@ -12,6 +12,7 @@ export type StoredUser = {
   passwordHash: string;
   avatar: string | null;
   provider: string;
+  preferences: unknown;
   createdAt: Date;
 };
 
@@ -78,5 +79,17 @@ export const userStore = {
         provider,
       },
     });
+  },
+
+  async updatePreferences(userId: string, preferences: string[]): Promise<StoredUser | null> {
+    return prisma.user.update({
+      where: { id: userId },
+      data: { preferences },
+    }).catch(() => null);
+  },
+
+  async getPreferences(userId: string): Promise<string[] | null> {
+    const user = await prisma.user.findUnique({ where: { id: userId }, select: { preferences: true } });
+    return (user?.preferences as string[] | null) || null;
   },
 };

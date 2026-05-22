@@ -48,12 +48,14 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
         const u = user as Record<string, unknown>;
         token.isNewUser = u.isNewUser === true;
         token.userNumber = (u.userNumber as number) || 0;
+        token.preferences = (u.preferences as string[] | null) || null;
       }
       if (trigger === "update" && token.email) {
         const stored = await userStore.findByEmail(token.email as string);
         if (stored) {
           token.name = stored.name;
           token.picture = stored.avatar || null;
+          token.preferences = stored.preferences as string[] | null;
         }
       }
       if (account?.provider === "google") {
@@ -68,6 +70,7 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
       if (session.user) {
         session.user.name = token.name as string;
         session.user.image = (token.picture as string) || null;
+        session.user.preferences = token.preferences as string[] | null;
         const u = session.user as unknown as Record<string, unknown>;
         u.id = token.id;
         u.isNewUser = token.isNewUser || false;
