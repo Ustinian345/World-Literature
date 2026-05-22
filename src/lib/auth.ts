@@ -35,6 +35,7 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
           email: user.email,
           name: user.name,
           image: user.avatar || null,
+          preferences: user.preferences as string[] | null,
         };
       },
     }),
@@ -61,7 +62,8 @@ export const { handlers, auth, signIn: serverSignIn, signOut: serverSignOut } = 
       if (account?.provider === "google") {
         token.provider = "google";
         if (token.email) {
-          await userStore.ensure(token.email as string, token.name as string, undefined, "google");
+          const stored = await userStore.ensure(token.email as string, token.name as string, undefined, "google");
+          token.preferences = (stored.preferences as string[] | null) || null;
         }
       }
       return token;
