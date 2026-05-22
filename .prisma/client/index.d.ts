@@ -33,6 +33,11 @@ export type FavoriteTrend = $Result.DefaultSelection<Prisma.$FavoriteTrendPayloa
  * 
  */
 export type FavoriteArticle = $Result.DefaultSelection<Prisma.$FavoriteArticlePayload>
+/**
+ * Model DailyRecommendation
+ * 
+ */
+export type DailyRecommendation = $Result.DefaultSelection<Prisma.$DailyRecommendationPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -194,6 +199,16 @@ export class PrismaClient<
     * ```
     */
   get favoriteArticle(): Prisma.FavoriteArticleDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.dailyRecommendation`: Exposes CRUD operations for the **DailyRecommendation** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more DailyRecommendations
+    * const dailyRecommendations = await prisma.dailyRecommendation.findMany()
+    * ```
+    */
+  get dailyRecommendation(): Prisma.DailyRecommendationDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -631,7 +646,8 @@ export namespace Prisma {
     User: 'User',
     Bookmark: 'Bookmark',
     FavoriteTrend: 'FavoriteTrend',
-    FavoriteArticle: 'FavoriteArticle'
+    FavoriteArticle: 'FavoriteArticle',
+    DailyRecommendation: 'DailyRecommendation'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -647,7 +663,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "user" | "bookmark" | "favoriteTrend" | "favoriteArticle"
+      modelProps: "user" | "bookmark" | "favoriteTrend" | "favoriteArticle" | "dailyRecommendation"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -947,6 +963,80 @@ export namespace Prisma {
           }
         }
       }
+      DailyRecommendation: {
+        payload: Prisma.$DailyRecommendationPayload<ExtArgs>
+        fields: Prisma.DailyRecommendationFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.DailyRecommendationFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.DailyRecommendationFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>
+          }
+          findFirst: {
+            args: Prisma.DailyRecommendationFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.DailyRecommendationFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>
+          }
+          findMany: {
+            args: Prisma.DailyRecommendationFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>[]
+          }
+          create: {
+            args: Prisma.DailyRecommendationCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>
+          }
+          createMany: {
+            args: Prisma.DailyRecommendationCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.DailyRecommendationCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>[]
+          }
+          delete: {
+            args: Prisma.DailyRecommendationDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>
+          }
+          update: {
+            args: Prisma.DailyRecommendationUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>
+          }
+          deleteMany: {
+            args: Prisma.DailyRecommendationDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.DailyRecommendationUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.DailyRecommendationUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>[]
+          }
+          upsert: {
+            args: Prisma.DailyRecommendationUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyRecommendationPayload>
+          }
+          aggregate: {
+            args: Prisma.DailyRecommendationAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateDailyRecommendation>
+          }
+          groupBy: {
+            args: Prisma.DailyRecommendationGroupByArgs<ExtArgs>
+            result: $Utils.Optional<DailyRecommendationGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.DailyRecommendationCountArgs<ExtArgs>
+            result: $Utils.Optional<DailyRecommendationCountAggregateOutputType> | number
+          }
+        }
+      }
     }
   } & {
     other: {
@@ -1059,6 +1149,7 @@ export namespace Prisma {
     bookmark?: BookmarkOmit
     favoriteTrend?: FavoriteTrendOmit
     favoriteArticle?: FavoriteArticleOmit
+    dailyRecommendation?: DailyRecommendationOmit
   }
 
   /* Types for Logging */
@@ -1142,12 +1233,14 @@ export namespace Prisma {
     bookmarks: number
     favoriteTrends: number
     favoriteArticles: number
+    dailyRecommendations: number
   }
 
   export type UserCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     bookmarks?: boolean | UserCountOutputTypeCountBookmarksArgs
     favoriteTrends?: boolean | UserCountOutputTypeCountFavoriteTrendsArgs
     favoriteArticles?: boolean | UserCountOutputTypeCountFavoriteArticlesArgs
+    dailyRecommendations?: boolean | UserCountOutputTypeCountDailyRecommendationsArgs
   }
 
   // Custom InputTypes
@@ -1180,6 +1273,13 @@ export namespace Prisma {
    */
   export type UserCountOutputTypeCountFavoriteArticlesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: FavoriteArticleWhereInput
+  }
+
+  /**
+   * UserCountOutputType without action
+   */
+  export type UserCountOutputTypeCountDailyRecommendationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: DailyRecommendationWhereInput
   }
 
 
@@ -1382,6 +1482,7 @@ export namespace Prisma {
     bookmarks?: boolean | User$bookmarksArgs<ExtArgs>
     favoriteTrends?: boolean | User$favoriteTrendsArgs<ExtArgs>
     favoriteArticles?: boolean | User$favoriteArticlesArgs<ExtArgs>
+    dailyRecommendations?: boolean | User$dailyRecommendationsArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["user"]>
 
@@ -1426,6 +1527,7 @@ export namespace Prisma {
     bookmarks?: boolean | User$bookmarksArgs<ExtArgs>
     favoriteTrends?: boolean | User$favoriteTrendsArgs<ExtArgs>
     favoriteArticles?: boolean | User$favoriteArticlesArgs<ExtArgs>
+    dailyRecommendations?: boolean | User$dailyRecommendationsArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type UserIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -1437,6 +1539,7 @@ export namespace Prisma {
       bookmarks: Prisma.$BookmarkPayload<ExtArgs>[]
       favoriteTrends: Prisma.$FavoriteTrendPayload<ExtArgs>[]
       favoriteArticles: Prisma.$FavoriteArticlePayload<ExtArgs>[]
+      dailyRecommendations: Prisma.$DailyRecommendationPayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -1845,6 +1948,7 @@ export namespace Prisma {
     bookmarks<T extends User$bookmarksArgs<ExtArgs> = {}>(args?: Subset<T, User$bookmarksArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BookmarkPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     favoriteTrends<T extends User$favoriteTrendsArgs<ExtArgs> = {}>(args?: Subset<T, User$favoriteTrendsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FavoriteTrendPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     favoriteArticles<T extends User$favoriteArticlesArgs<ExtArgs> = {}>(args?: Subset<T, User$favoriteArticlesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$FavoriteArticlePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    dailyRecommendations<T extends User$dailyRecommendationsArgs<ExtArgs> = {}>(args?: Subset<T, User$dailyRecommendationsArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2345,6 +2449,30 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: FavoriteArticleScalarFieldEnum | FavoriteArticleScalarFieldEnum[]
+  }
+
+  /**
+   * User.dailyRecommendations
+   */
+  export type User$dailyRecommendationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    where?: DailyRecommendationWhereInput
+    orderBy?: DailyRecommendationOrderByWithRelationInput | DailyRecommendationOrderByWithRelationInput[]
+    cursor?: DailyRecommendationWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: DailyRecommendationScalarFieldEnum | DailyRecommendationScalarFieldEnum[]
   }
 
   /**
@@ -5595,6 +5723,1082 @@ export namespace Prisma {
 
 
   /**
+   * Model DailyRecommendation
+   */
+
+  export type AggregateDailyRecommendation = {
+    _count: DailyRecommendationCountAggregateOutputType | null
+    _min: DailyRecommendationMinAggregateOutputType | null
+    _max: DailyRecommendationMaxAggregateOutputType | null
+  }
+
+  export type DailyRecommendationMinAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    bookId: string | null
+    date: string | null
+    reason: string | null
+    createdAt: Date | null
+  }
+
+  export type DailyRecommendationMaxAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    bookId: string | null
+    date: string | null
+    reason: string | null
+    createdAt: Date | null
+  }
+
+  export type DailyRecommendationCountAggregateOutputType = {
+    id: number
+    userId: number
+    bookId: number
+    date: number
+    reason: number
+    createdAt: number
+    _all: number
+  }
+
+
+  export type DailyRecommendationMinAggregateInputType = {
+    id?: true
+    userId?: true
+    bookId?: true
+    date?: true
+    reason?: true
+    createdAt?: true
+  }
+
+  export type DailyRecommendationMaxAggregateInputType = {
+    id?: true
+    userId?: true
+    bookId?: true
+    date?: true
+    reason?: true
+    createdAt?: true
+  }
+
+  export type DailyRecommendationCountAggregateInputType = {
+    id?: true
+    userId?: true
+    bookId?: true
+    date?: true
+    reason?: true
+    createdAt?: true
+    _all?: true
+  }
+
+  export type DailyRecommendationAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which DailyRecommendation to aggregate.
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyRecommendations to fetch.
+     */
+    orderBy?: DailyRecommendationOrderByWithRelationInput | DailyRecommendationOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: DailyRecommendationWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyRecommendations from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyRecommendations.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned DailyRecommendations
+    **/
+    _count?: true | DailyRecommendationCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: DailyRecommendationMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: DailyRecommendationMaxAggregateInputType
+  }
+
+  export type GetDailyRecommendationAggregateType<T extends DailyRecommendationAggregateArgs> = {
+        [P in keyof T & keyof AggregateDailyRecommendation]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateDailyRecommendation[P]>
+      : GetScalarType<T[P], AggregateDailyRecommendation[P]>
+  }
+
+
+
+
+  export type DailyRecommendationGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: DailyRecommendationWhereInput
+    orderBy?: DailyRecommendationOrderByWithAggregationInput | DailyRecommendationOrderByWithAggregationInput[]
+    by: DailyRecommendationScalarFieldEnum[] | DailyRecommendationScalarFieldEnum
+    having?: DailyRecommendationScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: DailyRecommendationCountAggregateInputType | true
+    _min?: DailyRecommendationMinAggregateInputType
+    _max?: DailyRecommendationMaxAggregateInputType
+  }
+
+  export type DailyRecommendationGroupByOutputType = {
+    id: string
+    userId: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt: Date
+    _count: DailyRecommendationCountAggregateOutputType | null
+    _min: DailyRecommendationMinAggregateOutputType | null
+    _max: DailyRecommendationMaxAggregateOutputType | null
+  }
+
+  type GetDailyRecommendationGroupByPayload<T extends DailyRecommendationGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<DailyRecommendationGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof DailyRecommendationGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], DailyRecommendationGroupByOutputType[P]>
+            : GetScalarType<T[P], DailyRecommendationGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type DailyRecommendationSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    bookId?: boolean
+    date?: boolean
+    reason?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["dailyRecommendation"]>
+
+  export type DailyRecommendationSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    bookId?: boolean
+    date?: boolean
+    reason?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["dailyRecommendation"]>
+
+  export type DailyRecommendationSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    bookId?: boolean
+    date?: boolean
+    reason?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["dailyRecommendation"]>
+
+  export type DailyRecommendationSelectScalar = {
+    id?: boolean
+    userId?: boolean
+    bookId?: boolean
+    date?: boolean
+    reason?: boolean
+    createdAt?: boolean
+  }
+
+  export type DailyRecommendationOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "bookId" | "date" | "reason" | "createdAt", ExtArgs["result"]["dailyRecommendation"]>
+  export type DailyRecommendationInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+  export type DailyRecommendationIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+  export type DailyRecommendationIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+
+  export type $DailyRecommendationPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "DailyRecommendation"
+    objects: {
+      user: Prisma.$UserPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      userId: string
+      bookId: string
+      date: string
+      reason: string
+      createdAt: Date
+    }, ExtArgs["result"]["dailyRecommendation"]>
+    composites: {}
+  }
+
+  type DailyRecommendationGetPayload<S extends boolean | null | undefined | DailyRecommendationDefaultArgs> = $Result.GetResult<Prisma.$DailyRecommendationPayload, S>
+
+  type DailyRecommendationCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<DailyRecommendationFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: DailyRecommendationCountAggregateInputType | true
+    }
+
+  export interface DailyRecommendationDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['DailyRecommendation'], meta: { name: 'DailyRecommendation' } }
+    /**
+     * Find zero or one DailyRecommendation that matches the filter.
+     * @param {DailyRecommendationFindUniqueArgs} args - Arguments to find a DailyRecommendation
+     * @example
+     * // Get one DailyRecommendation
+     * const dailyRecommendation = await prisma.dailyRecommendation.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends DailyRecommendationFindUniqueArgs>(args: SelectSubset<T, DailyRecommendationFindUniqueArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one DailyRecommendation that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {DailyRecommendationFindUniqueOrThrowArgs} args - Arguments to find a DailyRecommendation
+     * @example
+     * // Get one DailyRecommendation
+     * const dailyRecommendation = await prisma.dailyRecommendation.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends DailyRecommendationFindUniqueOrThrowArgs>(args: SelectSubset<T, DailyRecommendationFindUniqueOrThrowArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first DailyRecommendation that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationFindFirstArgs} args - Arguments to find a DailyRecommendation
+     * @example
+     * // Get one DailyRecommendation
+     * const dailyRecommendation = await prisma.dailyRecommendation.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends DailyRecommendationFindFirstArgs>(args?: SelectSubset<T, DailyRecommendationFindFirstArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first DailyRecommendation that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationFindFirstOrThrowArgs} args - Arguments to find a DailyRecommendation
+     * @example
+     * // Get one DailyRecommendation
+     * const dailyRecommendation = await prisma.dailyRecommendation.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends DailyRecommendationFindFirstOrThrowArgs>(args?: SelectSubset<T, DailyRecommendationFindFirstOrThrowArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more DailyRecommendations that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all DailyRecommendations
+     * const dailyRecommendations = await prisma.dailyRecommendation.findMany()
+     * 
+     * // Get first 10 DailyRecommendations
+     * const dailyRecommendations = await prisma.dailyRecommendation.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const dailyRecommendationWithIdOnly = await prisma.dailyRecommendation.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends DailyRecommendationFindManyArgs>(args?: SelectSubset<T, DailyRecommendationFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a DailyRecommendation.
+     * @param {DailyRecommendationCreateArgs} args - Arguments to create a DailyRecommendation.
+     * @example
+     * // Create one DailyRecommendation
+     * const DailyRecommendation = await prisma.dailyRecommendation.create({
+     *   data: {
+     *     // ... data to create a DailyRecommendation
+     *   }
+     * })
+     * 
+     */
+    create<T extends DailyRecommendationCreateArgs>(args: SelectSubset<T, DailyRecommendationCreateArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many DailyRecommendations.
+     * @param {DailyRecommendationCreateManyArgs} args - Arguments to create many DailyRecommendations.
+     * @example
+     * // Create many DailyRecommendations
+     * const dailyRecommendation = await prisma.dailyRecommendation.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends DailyRecommendationCreateManyArgs>(args?: SelectSubset<T, DailyRecommendationCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many DailyRecommendations and returns the data saved in the database.
+     * @param {DailyRecommendationCreateManyAndReturnArgs} args - Arguments to create many DailyRecommendations.
+     * @example
+     * // Create many DailyRecommendations
+     * const dailyRecommendation = await prisma.dailyRecommendation.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many DailyRecommendations and only return the `id`
+     * const dailyRecommendationWithIdOnly = await prisma.dailyRecommendation.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends DailyRecommendationCreateManyAndReturnArgs>(args?: SelectSubset<T, DailyRecommendationCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a DailyRecommendation.
+     * @param {DailyRecommendationDeleteArgs} args - Arguments to delete one DailyRecommendation.
+     * @example
+     * // Delete one DailyRecommendation
+     * const DailyRecommendation = await prisma.dailyRecommendation.delete({
+     *   where: {
+     *     // ... filter to delete one DailyRecommendation
+     *   }
+     * })
+     * 
+     */
+    delete<T extends DailyRecommendationDeleteArgs>(args: SelectSubset<T, DailyRecommendationDeleteArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one DailyRecommendation.
+     * @param {DailyRecommendationUpdateArgs} args - Arguments to update one DailyRecommendation.
+     * @example
+     * // Update one DailyRecommendation
+     * const dailyRecommendation = await prisma.dailyRecommendation.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends DailyRecommendationUpdateArgs>(args: SelectSubset<T, DailyRecommendationUpdateArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more DailyRecommendations.
+     * @param {DailyRecommendationDeleteManyArgs} args - Arguments to filter DailyRecommendations to delete.
+     * @example
+     * // Delete a few DailyRecommendations
+     * const { count } = await prisma.dailyRecommendation.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends DailyRecommendationDeleteManyArgs>(args?: SelectSubset<T, DailyRecommendationDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more DailyRecommendations.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many DailyRecommendations
+     * const dailyRecommendation = await prisma.dailyRecommendation.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends DailyRecommendationUpdateManyArgs>(args: SelectSubset<T, DailyRecommendationUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more DailyRecommendations and returns the data updated in the database.
+     * @param {DailyRecommendationUpdateManyAndReturnArgs} args - Arguments to update many DailyRecommendations.
+     * @example
+     * // Update many DailyRecommendations
+     * const dailyRecommendation = await prisma.dailyRecommendation.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more DailyRecommendations and only return the `id`
+     * const dailyRecommendationWithIdOnly = await prisma.dailyRecommendation.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends DailyRecommendationUpdateManyAndReturnArgs>(args: SelectSubset<T, DailyRecommendationUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one DailyRecommendation.
+     * @param {DailyRecommendationUpsertArgs} args - Arguments to update or create a DailyRecommendation.
+     * @example
+     * // Update or create a DailyRecommendation
+     * const dailyRecommendation = await prisma.dailyRecommendation.upsert({
+     *   create: {
+     *     // ... data to create a DailyRecommendation
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the DailyRecommendation we want to update
+     *   }
+     * })
+     */
+    upsert<T extends DailyRecommendationUpsertArgs>(args: SelectSubset<T, DailyRecommendationUpsertArgs<ExtArgs>>): Prisma__DailyRecommendationClient<$Result.GetResult<Prisma.$DailyRecommendationPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of DailyRecommendations.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationCountArgs} args - Arguments to filter DailyRecommendations to count.
+     * @example
+     * // Count the number of DailyRecommendations
+     * const count = await prisma.dailyRecommendation.count({
+     *   where: {
+     *     // ... the filter for the DailyRecommendations we want to count
+     *   }
+     * })
+    **/
+    count<T extends DailyRecommendationCountArgs>(
+      args?: Subset<T, DailyRecommendationCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], DailyRecommendationCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a DailyRecommendation.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends DailyRecommendationAggregateArgs>(args: Subset<T, DailyRecommendationAggregateArgs>): Prisma.PrismaPromise<GetDailyRecommendationAggregateType<T>>
+
+    /**
+     * Group by DailyRecommendation.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyRecommendationGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends DailyRecommendationGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: DailyRecommendationGroupByArgs['orderBy'] }
+        : { orderBy?: DailyRecommendationGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, DailyRecommendationGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetDailyRecommendationGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the DailyRecommendation model
+   */
+  readonly fields: DailyRecommendationFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for DailyRecommendation.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__DailyRecommendationClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    user<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the DailyRecommendation model
+   */
+  interface DailyRecommendationFieldRefs {
+    readonly id: FieldRef<"DailyRecommendation", 'String'>
+    readonly userId: FieldRef<"DailyRecommendation", 'String'>
+    readonly bookId: FieldRef<"DailyRecommendation", 'String'>
+    readonly date: FieldRef<"DailyRecommendation", 'String'>
+    readonly reason: FieldRef<"DailyRecommendation", 'String'>
+    readonly createdAt: FieldRef<"DailyRecommendation", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * DailyRecommendation findUnique
+   */
+  export type DailyRecommendationFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * Filter, which DailyRecommendation to fetch.
+     */
+    where: DailyRecommendationWhereUniqueInput
+  }
+
+  /**
+   * DailyRecommendation findUniqueOrThrow
+   */
+  export type DailyRecommendationFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * Filter, which DailyRecommendation to fetch.
+     */
+    where: DailyRecommendationWhereUniqueInput
+  }
+
+  /**
+   * DailyRecommendation findFirst
+   */
+  export type DailyRecommendationFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * Filter, which DailyRecommendation to fetch.
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyRecommendations to fetch.
+     */
+    orderBy?: DailyRecommendationOrderByWithRelationInput | DailyRecommendationOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for DailyRecommendations.
+     */
+    cursor?: DailyRecommendationWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyRecommendations from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyRecommendations.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyRecommendations.
+     */
+    distinct?: DailyRecommendationScalarFieldEnum | DailyRecommendationScalarFieldEnum[]
+  }
+
+  /**
+   * DailyRecommendation findFirstOrThrow
+   */
+  export type DailyRecommendationFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * Filter, which DailyRecommendation to fetch.
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyRecommendations to fetch.
+     */
+    orderBy?: DailyRecommendationOrderByWithRelationInput | DailyRecommendationOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for DailyRecommendations.
+     */
+    cursor?: DailyRecommendationWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyRecommendations from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyRecommendations.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyRecommendations.
+     */
+    distinct?: DailyRecommendationScalarFieldEnum | DailyRecommendationScalarFieldEnum[]
+  }
+
+  /**
+   * DailyRecommendation findMany
+   */
+  export type DailyRecommendationFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * Filter, which DailyRecommendations to fetch.
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyRecommendations to fetch.
+     */
+    orderBy?: DailyRecommendationOrderByWithRelationInput | DailyRecommendationOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing DailyRecommendations.
+     */
+    cursor?: DailyRecommendationWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyRecommendations from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyRecommendations.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyRecommendations.
+     */
+    distinct?: DailyRecommendationScalarFieldEnum | DailyRecommendationScalarFieldEnum[]
+  }
+
+  /**
+   * DailyRecommendation create
+   */
+  export type DailyRecommendationCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * The data needed to create a DailyRecommendation.
+     */
+    data: XOR<DailyRecommendationCreateInput, DailyRecommendationUncheckedCreateInput>
+  }
+
+  /**
+   * DailyRecommendation createMany
+   */
+  export type DailyRecommendationCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many DailyRecommendations.
+     */
+    data: DailyRecommendationCreateManyInput | DailyRecommendationCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * DailyRecommendation createManyAndReturn
+   */
+  export type DailyRecommendationCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * The data used to create many DailyRecommendations.
+     */
+    data: DailyRecommendationCreateManyInput | DailyRecommendationCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * DailyRecommendation update
+   */
+  export type DailyRecommendationUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * The data needed to update a DailyRecommendation.
+     */
+    data: XOR<DailyRecommendationUpdateInput, DailyRecommendationUncheckedUpdateInput>
+    /**
+     * Choose, which DailyRecommendation to update.
+     */
+    where: DailyRecommendationWhereUniqueInput
+  }
+
+  /**
+   * DailyRecommendation updateMany
+   */
+  export type DailyRecommendationUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update DailyRecommendations.
+     */
+    data: XOR<DailyRecommendationUpdateManyMutationInput, DailyRecommendationUncheckedUpdateManyInput>
+    /**
+     * Filter which DailyRecommendations to update
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * Limit how many DailyRecommendations to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyRecommendation updateManyAndReturn
+   */
+  export type DailyRecommendationUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * The data used to update DailyRecommendations.
+     */
+    data: XOR<DailyRecommendationUpdateManyMutationInput, DailyRecommendationUncheckedUpdateManyInput>
+    /**
+     * Filter which DailyRecommendations to update
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * Limit how many DailyRecommendations to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * DailyRecommendation upsert
+   */
+  export type DailyRecommendationUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * The filter to search for the DailyRecommendation to update in case it exists.
+     */
+    where: DailyRecommendationWhereUniqueInput
+    /**
+     * In case the DailyRecommendation found by the `where` argument doesn't exist, create a new DailyRecommendation with this data.
+     */
+    create: XOR<DailyRecommendationCreateInput, DailyRecommendationUncheckedCreateInput>
+    /**
+     * In case the DailyRecommendation was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<DailyRecommendationUpdateInput, DailyRecommendationUncheckedUpdateInput>
+  }
+
+  /**
+   * DailyRecommendation delete
+   */
+  export type DailyRecommendationDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+    /**
+     * Filter which DailyRecommendation to delete.
+     */
+    where: DailyRecommendationWhereUniqueInput
+  }
+
+  /**
+   * DailyRecommendation deleteMany
+   */
+  export type DailyRecommendationDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which DailyRecommendations to delete
+     */
+    where?: DailyRecommendationWhereInput
+    /**
+     * Limit how many DailyRecommendations to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyRecommendation without action
+   */
+  export type DailyRecommendationDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyRecommendation
+     */
+    select?: DailyRecommendationSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyRecommendation
+     */
+    omit?: DailyRecommendationOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: DailyRecommendationInclude<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -5657,6 +6861,18 @@ export namespace Prisma {
   };
 
   export type FavoriteArticleScalarFieldEnum = (typeof FavoriteArticleScalarFieldEnum)[keyof typeof FavoriteArticleScalarFieldEnum]
+
+
+  export const DailyRecommendationScalarFieldEnum: {
+    id: 'id',
+    userId: 'userId',
+    bookId: 'bookId',
+    date: 'date',
+    reason: 'reason',
+    createdAt: 'createdAt'
+  };
+
+  export type DailyRecommendationScalarFieldEnum = (typeof DailyRecommendationScalarFieldEnum)[keyof typeof DailyRecommendationScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -5780,6 +6996,7 @@ export namespace Prisma {
     bookmarks?: BookmarkListRelationFilter
     favoriteTrends?: FavoriteTrendListRelationFilter
     favoriteArticles?: FavoriteArticleListRelationFilter
+    dailyRecommendations?: DailyRecommendationListRelationFilter
   }
 
   export type UserOrderByWithRelationInput = {
@@ -5795,6 +7012,7 @@ export namespace Prisma {
     bookmarks?: BookmarkOrderByRelationAggregateInput
     favoriteTrends?: FavoriteTrendOrderByRelationAggregateInput
     favoriteArticles?: FavoriteArticleOrderByRelationAggregateInput
+    dailyRecommendations?: DailyRecommendationOrderByRelationAggregateInput
   }
 
   export type UserWhereUniqueInput = Prisma.AtLeast<{
@@ -5813,6 +7031,7 @@ export namespace Prisma {
     bookmarks?: BookmarkListRelationFilter
     favoriteTrends?: FavoriteTrendListRelationFilter
     favoriteArticles?: FavoriteArticleListRelationFilter
+    dailyRecommendations?: DailyRecommendationListRelationFilter
   }, "id" | "email">
 
   export type UserOrderByWithAggregationInput = {
@@ -6028,6 +7247,67 @@ export namespace Prisma {
     savedAt?: DateTimeWithAggregatesFilter<"FavoriteArticle"> | Date | string
   }
 
+  export type DailyRecommendationWhereInput = {
+    AND?: DailyRecommendationWhereInput | DailyRecommendationWhereInput[]
+    OR?: DailyRecommendationWhereInput[]
+    NOT?: DailyRecommendationWhereInput | DailyRecommendationWhereInput[]
+    id?: StringFilter<"DailyRecommendation"> | string
+    userId?: StringFilter<"DailyRecommendation"> | string
+    bookId?: StringFilter<"DailyRecommendation"> | string
+    date?: StringFilter<"DailyRecommendation"> | string
+    reason?: StringFilter<"DailyRecommendation"> | string
+    createdAt?: DateTimeFilter<"DailyRecommendation"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+  }
+
+  export type DailyRecommendationOrderByWithRelationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    bookId?: SortOrder
+    date?: SortOrder
+    reason?: SortOrder
+    createdAt?: SortOrder
+    user?: UserOrderByWithRelationInput
+  }
+
+  export type DailyRecommendationWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    userId_date?: DailyRecommendationUserIdDateCompoundUniqueInput
+    AND?: DailyRecommendationWhereInput | DailyRecommendationWhereInput[]
+    OR?: DailyRecommendationWhereInput[]
+    NOT?: DailyRecommendationWhereInput | DailyRecommendationWhereInput[]
+    userId?: StringFilter<"DailyRecommendation"> | string
+    bookId?: StringFilter<"DailyRecommendation"> | string
+    date?: StringFilter<"DailyRecommendation"> | string
+    reason?: StringFilter<"DailyRecommendation"> | string
+    createdAt?: DateTimeFilter<"DailyRecommendation"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+  }, "id" | "userId_date">
+
+  export type DailyRecommendationOrderByWithAggregationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    bookId?: SortOrder
+    date?: SortOrder
+    reason?: SortOrder
+    createdAt?: SortOrder
+    _count?: DailyRecommendationCountOrderByAggregateInput
+    _max?: DailyRecommendationMaxOrderByAggregateInput
+    _min?: DailyRecommendationMinOrderByAggregateInput
+  }
+
+  export type DailyRecommendationScalarWhereWithAggregatesInput = {
+    AND?: DailyRecommendationScalarWhereWithAggregatesInput | DailyRecommendationScalarWhereWithAggregatesInput[]
+    OR?: DailyRecommendationScalarWhereWithAggregatesInput[]
+    NOT?: DailyRecommendationScalarWhereWithAggregatesInput | DailyRecommendationScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"DailyRecommendation"> | string
+    userId?: StringWithAggregatesFilter<"DailyRecommendation"> | string
+    bookId?: StringWithAggregatesFilter<"DailyRecommendation"> | string
+    date?: StringWithAggregatesFilter<"DailyRecommendation"> | string
+    reason?: StringWithAggregatesFilter<"DailyRecommendation"> | string
+    createdAt?: DateTimeWithAggregatesFilter<"DailyRecommendation"> | Date | string
+  }
+
   export type UserCreateInput = {
     id?: string
     email: string
@@ -6041,6 +7321,7 @@ export namespace Prisma {
     bookmarks?: BookmarkCreateNestedManyWithoutUserInput
     favoriteTrends?: FavoriteTrendCreateNestedManyWithoutUserInput
     favoriteArticles?: FavoriteArticleCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateInput = {
@@ -6056,6 +7337,7 @@ export namespace Prisma {
     bookmarks?: BookmarkUncheckedCreateNestedManyWithoutUserInput
     favoriteTrends?: FavoriteTrendUncheckedCreateNestedManyWithoutUserInput
     favoriteArticles?: FavoriteArticleUncheckedCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserUpdateInput = {
@@ -6071,6 +7353,7 @@ export namespace Prisma {
     bookmarks?: BookmarkUpdateManyWithoutUserNestedInput
     favoriteTrends?: FavoriteTrendUpdateManyWithoutUserNestedInput
     favoriteArticles?: FavoriteArticleUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateInput = {
@@ -6086,6 +7369,7 @@ export namespace Prisma {
     bookmarks?: BookmarkUncheckedUpdateManyWithoutUserNestedInput
     favoriteTrends?: FavoriteTrendUncheckedUpdateManyWithoutUserNestedInput
     favoriteArticles?: FavoriteArticleUncheckedUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateManyInput = {
@@ -6310,6 +7594,68 @@ export namespace Prisma {
     savedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
+  export type DailyRecommendationCreateInput = {
+    id?: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt?: Date | string
+    user: UserCreateNestedOneWithoutDailyRecommendationsInput
+  }
+
+  export type DailyRecommendationUncheckedCreateInput = {
+    id?: string
+    userId: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt?: Date | string
+  }
+
+  export type DailyRecommendationUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    user?: UserUpdateOneRequiredWithoutDailyRecommendationsNestedInput
+  }
+
+  export type DailyRecommendationUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyRecommendationCreateManyInput = {
+    id?: string
+    userId: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt?: Date | string
+  }
+
+  export type DailyRecommendationUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyRecommendationUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
   export type StringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
     in?: string[] | ListStringFieldRefInput<$PrismaModel>
@@ -6392,6 +7738,12 @@ export namespace Prisma {
     none?: FavoriteArticleWhereInput
   }
 
+  export type DailyRecommendationListRelationFilter = {
+    every?: DailyRecommendationWhereInput
+    some?: DailyRecommendationWhereInput
+    none?: DailyRecommendationWhereInput
+  }
+
   export type SortOrderInput = {
     sort: SortOrder
     nulls?: NullsOrder
@@ -6406,6 +7758,10 @@ export namespace Prisma {
   }
 
   export type FavoriteArticleOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type DailyRecommendationOrderByRelationAggregateInput = {
     _count?: SortOrder
   }
 
@@ -6620,6 +7976,38 @@ export namespace Prisma {
     savedAt?: SortOrder
   }
 
+  export type DailyRecommendationUserIdDateCompoundUniqueInput = {
+    userId: string
+    date: string
+  }
+
+  export type DailyRecommendationCountOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    bookId?: SortOrder
+    date?: SortOrder
+    reason?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyRecommendationMaxOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    bookId?: SortOrder
+    date?: SortOrder
+    reason?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyRecommendationMinOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    bookId?: SortOrder
+    date?: SortOrder
+    reason?: SortOrder
+    createdAt?: SortOrder
+  }
+
   export type BookmarkCreateNestedManyWithoutUserInput = {
     create?: XOR<BookmarkCreateWithoutUserInput, BookmarkUncheckedCreateWithoutUserInput> | BookmarkCreateWithoutUserInput[] | BookmarkUncheckedCreateWithoutUserInput[]
     connectOrCreate?: BookmarkCreateOrConnectWithoutUserInput | BookmarkCreateOrConnectWithoutUserInput[]
@@ -6641,6 +8029,13 @@ export namespace Prisma {
     connect?: FavoriteArticleWhereUniqueInput | FavoriteArticleWhereUniqueInput[]
   }
 
+  export type DailyRecommendationCreateNestedManyWithoutUserInput = {
+    create?: XOR<DailyRecommendationCreateWithoutUserInput, DailyRecommendationUncheckedCreateWithoutUserInput> | DailyRecommendationCreateWithoutUserInput[] | DailyRecommendationUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: DailyRecommendationCreateOrConnectWithoutUserInput | DailyRecommendationCreateOrConnectWithoutUserInput[]
+    createMany?: DailyRecommendationCreateManyUserInputEnvelope
+    connect?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+  }
+
   export type BookmarkUncheckedCreateNestedManyWithoutUserInput = {
     create?: XOR<BookmarkCreateWithoutUserInput, BookmarkUncheckedCreateWithoutUserInput> | BookmarkCreateWithoutUserInput[] | BookmarkUncheckedCreateWithoutUserInput[]
     connectOrCreate?: BookmarkCreateOrConnectWithoutUserInput | BookmarkCreateOrConnectWithoutUserInput[]
@@ -6660,6 +8055,13 @@ export namespace Prisma {
     connectOrCreate?: FavoriteArticleCreateOrConnectWithoutUserInput | FavoriteArticleCreateOrConnectWithoutUserInput[]
     createMany?: FavoriteArticleCreateManyUserInputEnvelope
     connect?: FavoriteArticleWhereUniqueInput | FavoriteArticleWhereUniqueInput[]
+  }
+
+  export type DailyRecommendationUncheckedCreateNestedManyWithoutUserInput = {
+    create?: XOR<DailyRecommendationCreateWithoutUserInput, DailyRecommendationUncheckedCreateWithoutUserInput> | DailyRecommendationCreateWithoutUserInput[] | DailyRecommendationUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: DailyRecommendationCreateOrConnectWithoutUserInput | DailyRecommendationCreateOrConnectWithoutUserInput[]
+    createMany?: DailyRecommendationCreateManyUserInputEnvelope
+    connect?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
   }
 
   export type StringFieldUpdateOperationsInput = {
@@ -6716,6 +8118,20 @@ export namespace Prisma {
     deleteMany?: FavoriteArticleScalarWhereInput | FavoriteArticleScalarWhereInput[]
   }
 
+  export type DailyRecommendationUpdateManyWithoutUserNestedInput = {
+    create?: XOR<DailyRecommendationCreateWithoutUserInput, DailyRecommendationUncheckedCreateWithoutUserInput> | DailyRecommendationCreateWithoutUserInput[] | DailyRecommendationUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: DailyRecommendationCreateOrConnectWithoutUserInput | DailyRecommendationCreateOrConnectWithoutUserInput[]
+    upsert?: DailyRecommendationUpsertWithWhereUniqueWithoutUserInput | DailyRecommendationUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: DailyRecommendationCreateManyUserInputEnvelope
+    set?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    disconnect?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    delete?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    connect?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    update?: DailyRecommendationUpdateWithWhereUniqueWithoutUserInput | DailyRecommendationUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: DailyRecommendationUpdateManyWithWhereWithoutUserInput | DailyRecommendationUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: DailyRecommendationScalarWhereInput | DailyRecommendationScalarWhereInput[]
+  }
+
   export type BookmarkUncheckedUpdateManyWithoutUserNestedInput = {
     create?: XOR<BookmarkCreateWithoutUserInput, BookmarkUncheckedCreateWithoutUserInput> | BookmarkCreateWithoutUserInput[] | BookmarkUncheckedCreateWithoutUserInput[]
     connectOrCreate?: BookmarkCreateOrConnectWithoutUserInput | BookmarkCreateOrConnectWithoutUserInput[]
@@ -6758,6 +8174,20 @@ export namespace Prisma {
     deleteMany?: FavoriteArticleScalarWhereInput | FavoriteArticleScalarWhereInput[]
   }
 
+  export type DailyRecommendationUncheckedUpdateManyWithoutUserNestedInput = {
+    create?: XOR<DailyRecommendationCreateWithoutUserInput, DailyRecommendationUncheckedCreateWithoutUserInput> | DailyRecommendationCreateWithoutUserInput[] | DailyRecommendationUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: DailyRecommendationCreateOrConnectWithoutUserInput | DailyRecommendationCreateOrConnectWithoutUserInput[]
+    upsert?: DailyRecommendationUpsertWithWhereUniqueWithoutUserInput | DailyRecommendationUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: DailyRecommendationCreateManyUserInputEnvelope
+    set?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    disconnect?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    delete?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    connect?: DailyRecommendationWhereUniqueInput | DailyRecommendationWhereUniqueInput[]
+    update?: DailyRecommendationUpdateWithWhereUniqueWithoutUserInput | DailyRecommendationUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: DailyRecommendationUpdateManyWithWhereWithoutUserInput | DailyRecommendationUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: DailyRecommendationScalarWhereInput | DailyRecommendationScalarWhereInput[]
+  }
+
   export type UserCreateNestedOneWithoutBookmarksInput = {
     create?: XOR<UserCreateWithoutBookmarksInput, UserUncheckedCreateWithoutBookmarksInput>
     connectOrCreate?: UserCreateOrConnectWithoutBookmarksInput
@@ -6798,6 +8228,20 @@ export namespace Prisma {
     upsert?: UserUpsertWithoutFavoriteArticlesInput
     connect?: UserWhereUniqueInput
     update?: XOR<XOR<UserUpdateToOneWithWhereWithoutFavoriteArticlesInput, UserUpdateWithoutFavoriteArticlesInput>, UserUncheckedUpdateWithoutFavoriteArticlesInput>
+  }
+
+  export type UserCreateNestedOneWithoutDailyRecommendationsInput = {
+    create?: XOR<UserCreateWithoutDailyRecommendationsInput, UserUncheckedCreateWithoutDailyRecommendationsInput>
+    connectOrCreate?: UserCreateOrConnectWithoutDailyRecommendationsInput
+    connect?: UserWhereUniqueInput
+  }
+
+  export type UserUpdateOneRequiredWithoutDailyRecommendationsNestedInput = {
+    create?: XOR<UserCreateWithoutDailyRecommendationsInput, UserUncheckedCreateWithoutDailyRecommendationsInput>
+    connectOrCreate?: UserCreateOrConnectWithoutDailyRecommendationsInput
+    upsert?: UserUpsertWithoutDailyRecommendationsInput
+    connect?: UserWhereUniqueInput
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutDailyRecommendationsInput, UserUpdateWithoutDailyRecommendationsInput>, UserUncheckedUpdateWithoutDailyRecommendationsInput>
   }
 
   export type NestedStringFilter<$PrismaModel = never> = {
@@ -7010,6 +8454,32 @@ export namespace Prisma {
     skipDuplicates?: boolean
   }
 
+  export type DailyRecommendationCreateWithoutUserInput = {
+    id?: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt?: Date | string
+  }
+
+  export type DailyRecommendationUncheckedCreateWithoutUserInput = {
+    id?: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt?: Date | string
+  }
+
+  export type DailyRecommendationCreateOrConnectWithoutUserInput = {
+    where: DailyRecommendationWhereUniqueInput
+    create: XOR<DailyRecommendationCreateWithoutUserInput, DailyRecommendationUncheckedCreateWithoutUserInput>
+  }
+
+  export type DailyRecommendationCreateManyUserInputEnvelope = {
+    data: DailyRecommendationCreateManyUserInput | DailyRecommendationCreateManyUserInput[]
+    skipDuplicates?: boolean
+  }
+
   export type BookmarkUpsertWithWhereUniqueWithoutUserInput = {
     where: BookmarkWhereUniqueInput
     update: XOR<BookmarkUpdateWithoutUserInput, BookmarkUncheckedUpdateWithoutUserInput>
@@ -7094,6 +8564,34 @@ export namespace Prisma {
     savedAt?: DateTimeFilter<"FavoriteArticle"> | Date | string
   }
 
+  export type DailyRecommendationUpsertWithWhereUniqueWithoutUserInput = {
+    where: DailyRecommendationWhereUniqueInput
+    update: XOR<DailyRecommendationUpdateWithoutUserInput, DailyRecommendationUncheckedUpdateWithoutUserInput>
+    create: XOR<DailyRecommendationCreateWithoutUserInput, DailyRecommendationUncheckedCreateWithoutUserInput>
+  }
+
+  export type DailyRecommendationUpdateWithWhereUniqueWithoutUserInput = {
+    where: DailyRecommendationWhereUniqueInput
+    data: XOR<DailyRecommendationUpdateWithoutUserInput, DailyRecommendationUncheckedUpdateWithoutUserInput>
+  }
+
+  export type DailyRecommendationUpdateManyWithWhereWithoutUserInput = {
+    where: DailyRecommendationScalarWhereInput
+    data: XOR<DailyRecommendationUpdateManyMutationInput, DailyRecommendationUncheckedUpdateManyWithoutUserInput>
+  }
+
+  export type DailyRecommendationScalarWhereInput = {
+    AND?: DailyRecommendationScalarWhereInput | DailyRecommendationScalarWhereInput[]
+    OR?: DailyRecommendationScalarWhereInput[]
+    NOT?: DailyRecommendationScalarWhereInput | DailyRecommendationScalarWhereInput[]
+    id?: StringFilter<"DailyRecommendation"> | string
+    userId?: StringFilter<"DailyRecommendation"> | string
+    bookId?: StringFilter<"DailyRecommendation"> | string
+    date?: StringFilter<"DailyRecommendation"> | string
+    reason?: StringFilter<"DailyRecommendation"> | string
+    createdAt?: DateTimeFilter<"DailyRecommendation"> | Date | string
+  }
+
   export type UserCreateWithoutBookmarksInput = {
     id?: string
     email: string
@@ -7106,6 +8604,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     favoriteTrends?: FavoriteTrendCreateNestedManyWithoutUserInput
     favoriteArticles?: FavoriteArticleCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutBookmarksInput = {
@@ -7120,6 +8619,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     favoriteTrends?: FavoriteTrendUncheckedCreateNestedManyWithoutUserInput
     favoriteArticles?: FavoriteArticleUncheckedCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutBookmarksInput = {
@@ -7150,6 +8650,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     favoriteTrends?: FavoriteTrendUpdateManyWithoutUserNestedInput
     favoriteArticles?: FavoriteArticleUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutBookmarksInput = {
@@ -7164,6 +8665,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     favoriteTrends?: FavoriteTrendUncheckedUpdateManyWithoutUserNestedInput
     favoriteArticles?: FavoriteArticleUncheckedUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateWithoutFavoriteTrendsInput = {
@@ -7178,6 +8680,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     bookmarks?: BookmarkCreateNestedManyWithoutUserInput
     favoriteArticles?: FavoriteArticleCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutFavoriteTrendsInput = {
@@ -7192,6 +8695,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     bookmarks?: BookmarkUncheckedCreateNestedManyWithoutUserInput
     favoriteArticles?: FavoriteArticleUncheckedCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutFavoriteTrendsInput = {
@@ -7222,6 +8726,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     bookmarks?: BookmarkUpdateManyWithoutUserNestedInput
     favoriteArticles?: FavoriteArticleUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutFavoriteTrendsInput = {
@@ -7236,6 +8741,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     bookmarks?: BookmarkUncheckedUpdateManyWithoutUserNestedInput
     favoriteArticles?: FavoriteArticleUncheckedUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateWithoutFavoriteArticlesInput = {
@@ -7250,6 +8756,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     bookmarks?: BookmarkCreateNestedManyWithoutUserInput
     favoriteTrends?: FavoriteTrendCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutFavoriteArticlesInput = {
@@ -7264,6 +8771,7 @@ export namespace Prisma {
     updatedAt?: Date | string
     bookmarks?: BookmarkUncheckedCreateNestedManyWithoutUserInput
     favoriteTrends?: FavoriteTrendUncheckedCreateNestedManyWithoutUserInput
+    dailyRecommendations?: DailyRecommendationUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutFavoriteArticlesInput = {
@@ -7294,6 +8802,7 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     bookmarks?: BookmarkUpdateManyWithoutUserNestedInput
     favoriteTrends?: FavoriteTrendUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutFavoriteArticlesInput = {
@@ -7308,6 +8817,83 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     bookmarks?: BookmarkUncheckedUpdateManyWithoutUserNestedInput
     favoriteTrends?: FavoriteTrendUncheckedUpdateManyWithoutUserNestedInput
+    dailyRecommendations?: DailyRecommendationUncheckedUpdateManyWithoutUserNestedInput
+  }
+
+  export type UserCreateWithoutDailyRecommendationsInput = {
+    id?: string
+    email: string
+    name: string
+    passwordHash?: string
+    avatar?: string | null
+    provider?: string
+    preferences?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    bookmarks?: BookmarkCreateNestedManyWithoutUserInput
+    favoriteTrends?: FavoriteTrendCreateNestedManyWithoutUserInput
+    favoriteArticles?: FavoriteArticleCreateNestedManyWithoutUserInput
+  }
+
+  export type UserUncheckedCreateWithoutDailyRecommendationsInput = {
+    id?: string
+    email: string
+    name: string
+    passwordHash?: string
+    avatar?: string | null
+    provider?: string
+    preferences?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    bookmarks?: BookmarkUncheckedCreateNestedManyWithoutUserInput
+    favoriteTrends?: FavoriteTrendUncheckedCreateNestedManyWithoutUserInput
+    favoriteArticles?: FavoriteArticleUncheckedCreateNestedManyWithoutUserInput
+  }
+
+  export type UserCreateOrConnectWithoutDailyRecommendationsInput = {
+    where: UserWhereUniqueInput
+    create: XOR<UserCreateWithoutDailyRecommendationsInput, UserUncheckedCreateWithoutDailyRecommendationsInput>
+  }
+
+  export type UserUpsertWithoutDailyRecommendationsInput = {
+    update: XOR<UserUpdateWithoutDailyRecommendationsInput, UserUncheckedUpdateWithoutDailyRecommendationsInput>
+    create: XOR<UserCreateWithoutDailyRecommendationsInput, UserUncheckedCreateWithoutDailyRecommendationsInput>
+    where?: UserWhereInput
+  }
+
+  export type UserUpdateToOneWithWhereWithoutDailyRecommendationsInput = {
+    where?: UserWhereInput
+    data: XOR<UserUpdateWithoutDailyRecommendationsInput, UserUncheckedUpdateWithoutDailyRecommendationsInput>
+  }
+
+  export type UserUpdateWithoutDailyRecommendationsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    email?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    avatar?: NullableStringFieldUpdateOperationsInput | string | null
+    provider?: StringFieldUpdateOperationsInput | string
+    preferences?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    bookmarks?: BookmarkUpdateManyWithoutUserNestedInput
+    favoriteTrends?: FavoriteTrendUpdateManyWithoutUserNestedInput
+    favoriteArticles?: FavoriteArticleUpdateManyWithoutUserNestedInput
+  }
+
+  export type UserUncheckedUpdateWithoutDailyRecommendationsInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    email?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    avatar?: NullableStringFieldUpdateOperationsInput | string | null
+    provider?: StringFieldUpdateOperationsInput | string
+    preferences?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    bookmarks?: BookmarkUncheckedUpdateManyWithoutUserNestedInput
+    favoriteTrends?: FavoriteTrendUncheckedUpdateManyWithoutUserNestedInput
+    favoriteArticles?: FavoriteArticleUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type BookmarkCreateManyUserInput = {
@@ -7332,6 +8918,14 @@ export namespace Prisma {
     articleDate: string
     excerpt?: string | null
     savedAt?: Date | string
+  }
+
+  export type DailyRecommendationCreateManyUserInput = {
+    id?: string
+    bookId: string
+    date: string
+    reason: string
+    createdAt?: Date | string
   }
 
   export type BookmarkUpdateWithoutUserInput = {
@@ -7404,6 +8998,30 @@ export namespace Prisma {
     articleDate?: StringFieldUpdateOperationsInput | string
     excerpt?: NullableStringFieldUpdateOperationsInput | string | null
     savedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyRecommendationUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyRecommendationUncheckedUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyRecommendationUncheckedUpdateManyWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    bookId?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
 

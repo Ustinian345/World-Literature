@@ -159,6 +159,15 @@ exports.Prisma.FavoriteArticleScalarFieldEnum = {
   savedAt: 'savedAt'
 };
 
+exports.Prisma.DailyRecommendationScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  bookId: 'bookId',
+  date: 'date',
+  reason: 'reason',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -190,7 +199,8 @@ exports.Prisma.ModelName = {
   User: 'User',
   Bookmark: 'Bookmark',
   FavoriteTrend: 'FavoriteTrend',
-  FavoriteArticle: 'FavoriteArticle'
+  FavoriteArticle: 'FavoriteArticle',
+  DailyRecommendation: 'DailyRecommendation'
 };
 
 /**
