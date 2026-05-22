@@ -1,55 +1,27 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-21T09:05:34.291Z",
-    "sources": ["reddit/r/books", "reddit/r/literature", "hackernews", "rss/lithub"],
-    "totalPostsAnalyzed": 12,
-    "llmUsed": true
+    "generatedAt": "2026-05-22T17:48:53.528Z",
+    "sources": [
+      "reddit/r/books",
+      "reddit/r/literature",
+      "hackernews",
+      "rss/lithub"
+    ],
+    "totalPostsAnalyzed": 13,
+    "llmUsed": false
   },
   "topics": [
     {
-      "title": "社交阅读平台的复兴：独立开发者重塑文学社区",
-      "background": "Hacker News 上多位独立开发者展示了面向书迷的社交平台产品——从 Bibliou 到 Confabulists，社区型阅读工具正在成为新的创业热点。这些产品试图在 Goodreads 之外开辟更专注的文学社交空间。",
-      "perspectives": "开发者认为现有平台（如 Goodreads）过于商业化，缺乏真正的文学讨论氛围。用户渴望无广告、以内容为核心的阅读社交体验。独立产品通过邀请制、小众社区和高质量讨论来吸引核心读者群体。",
-      "insight": "这反映了数字时代读者对「深度阅读社区」的渴求——不是快餐式书评，而是慢思考、深交流的文学公共空间。当算法推荐主导阅读选择时，人为策划和社区驱动的发现机制反而成为稀缺价值。",
+      "title": "Today's Hottest Literary Discussion",
+      "background": "10 trending posts from Reddit and Hacker News communities.",
+      "perspectives": "\"Show HN: I Built Bibliou – A Social Platform for Book Lovers\" — Hacker News | \"Show HN: Confabulists – “Substack for Fiction”\" — Hacker News | \"Show HN: I reviewed about 300 academic papers of 2025 to write a book on startup\" — Hacker News",
+      "insight": "The literary community continues to engage with both classic works and contemporary releases. Topics span genre fiction, literary criticism, and reading culture.",
       "source_links": [
         "https://www.bibliou.com",
-        "https://news.ycombinator.com/item?id=32898737"
-      ]
-    },
-    {
-      "title": "「不博学无罪」：当代读者的阅读焦虑与自我和解",
-      "background": "LitHub 发表文章探讨了读者因「读书不够多」而产生的愧疚感。在社交媒体晒书单、年度阅读挑战盛行的时代，许多人感到阅读变成了一场竞赛而非享受。",
-      "perspectives": "一派认为阅读挑战有积极激励作用；另一派主张回归阅读本质——深度理解比数量更重要。文章强调，文学的价值不在于读了多少本，而在于每本书在生命中留下的痕迹。",
-      "insight": "阅读焦虑本质上是数字时代绩效文化侵入精神生活的症状。当阅读被量化为「本/年」，我们失去的是与文本慢速对话的能力。或许真正需要的不只是更多书单，而是重新学习如何为一本书停留。",
-      "source_links": [
-        "https://lithub.com/why-we-shouldnt-feel-guilty-for-not-being-extremely-well-read/"
-      ]
-    },
-    {
-      "title": "亿万富翁掌控媒体后的文学出版格局",
-      "background": "LitHub 报道了亿万富翁收购媒体机构对文学出版的深远影响。当少数超级富豪掌控主要出版渠道和书评媒体时，文学多样性面临前所未有的挑战。",
-      "perspectives": "独立书店和中小型出版社正在联合抵制这种垄断趋势。作家群体呼吁读者通过直接支持独立书店和本地文学节来维护文学生态的多元化。同时，Substack 等自助平台让作者绕过传统出版商直接触达读者。",
-      "insight": "文学史的每一页都写着：伟大的作品往往诞生于边缘而非中心。当资本集中威胁到声音的多样性时，独立出版和数字直连读者的模式可能成为下一个文艺复兴的土壤。",
-      "source_links": [
-        "https://lithub.com/what-happens-when-billionaires-control-the-media/"
-      ]
-    },
-    {
-      "title": "AI 与文学创作：从辅助工具到共生关系",
-      "background": "近期 Hacker News 和文学社区热议 AI 在写作中的角色演变。从最初的文本生成到现在的深度协作，AI 正在重新定义「作者」的边界。",
-      "perspectives": "保守派认为 AI 写作缺乏人类情感深度；实验派则将 AI 视为「无限灵感生成器」，在诗歌、实验小说中探索人机共创。文学期刊开始设立 AI 共创专题，但也引发关于原创性和版权的激烈讨论。",
-      "insight": "技术史告诉我们，照相机没有杀死绘画——它解放了绘画。AI 或许同样会推动文学走向更深层的人类独特性：情感、直觉、对不确定性的拥抱。真正的文学永远是技术无法抵达的内心荒野。",
-      "source_links": [
-        "https://news.ycombinator.com/item?id=46906324"
-      ]
-    },
-    {
-      "title": "2025 年学术研究如何重塑阅读认知",
-      "background": "一位独立研究者回顾了 2025 年约 300 篇关于阅读和文学的学术论文，并撰写了一本面向大众的书籍。研究涵盖数字阅读对大脑的影响、小说阅读与同理心的关系、以及多语种阅读的认知优势。",
-      "perspectives": "学术界的分歧集中在：数字阅读是否削弱深度理解能力？研究显示屏幕阅读在信息检索上更高效，但纸质阅读在沉浸式理解上仍有优势。多语种阅读者的认知灵活性显著高于单语读者。",
-      "insight": "阅读不仅仅是获取信息——它是一场神经系统的全面锻炼。当我们「深读」一本小说时，大脑激活的区域与真实体验惊人地重叠。在这个意义上，每一本书都是一次虚拟的人生旅程。",
-      "source_links": [
-        "https://news.ycombinator.com/item?id=32898737"
+        "https://news.ycombinator.com/item?id=32898737",
+        "https://news.ycombinator.com/item?id=46906324",
+        "https://lithub.com/everyone-is-an-ai-cop-now-what-happens-when-an-ai-generated-story-wins-a-prestigious-prize/",
+        "https://lithub.com/lit-hub-daily-may-22-2026/"
       ]
     }
   ]
