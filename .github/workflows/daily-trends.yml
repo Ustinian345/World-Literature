@@ -50,10 +50,10 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: npm run recommend:fetch
 
-      - name: Fetch new works
+      - name: Fetch new works (CI mode)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: npm run newworks:fetch
+        run: npm run newworks:fetch -- --ci
 
       - name: Commit and push if changed
         run: |

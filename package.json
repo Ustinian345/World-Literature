@@ -18,8 +18,9 @@
     "recommend:fetch": "npx tsx scripts/fetch-daily-recommendation.ts",
     "recommend:dry": "npx tsx scripts/fetch-daily-recommendation.ts --dry-run",
     "recommend:snapshot": "npx tsx scripts/build-works-snapshot.ts",
-    "newworks:fetch": "npx tsx scripts/fetch-new-works.ts",
-    "newworks:dry": "npx tsx scripts/fetch-new-works.ts --dry-run"
+    "newworks:fetch": "npx tsx scripts/fetch-new-works.ts --local",
+    "newworks:ci": "npx tsx scripts/fetch-new-works.ts --ci",
+    "newworks:dry": "npx tsx scripts/fetch-new-works.ts --ci --dry-run"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
