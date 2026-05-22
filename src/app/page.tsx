@@ -7,6 +7,7 @@ import { HeroMosaic } from "@/components/HeroMosaic";
 import { getBookCoverImages } from "@/lib/mosaic-images";
 import TrendingTopics from "@/components/TrendingTopics";
 import DailyRecommendation from "@/components/DailyRecommendation";
+import DailyNewWorks from "@/components/DailyNewWorks";
 
 export default function Home() {
   const countrySet = new Set(allWorks.map(w => w.country));
@@ -89,6 +90,11 @@ export default function Home() {
       {/* ===== 今日推荐 ===== */}
       <Suspense fallback={<div className="py-10 text-center text-stone-400">加载中...</div>}>
         <DailyRecommendation />
+      </Suspense>
+
+      {/* ===== 今日新文 ===== */}
+      <Suspense fallback={<div className="py-10 text-center text-stone-400">加载中...</div>}>
+        <DailyNewWorks />
       </Suspense>
 
       {/* ===== 探索六大洲 ===== */}

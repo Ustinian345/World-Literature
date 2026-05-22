@@ -1,18 +1,17 @@
 # ================================================================
-# 每日文学热点 + 个性化书籍推荐
+# 每日文学热点 + 书籍推荐 + 新文抓取
 # 每天北京时间 00:00（UTC 16:00）执行
 # ================================================================
 # 需要的 GitHub Secrets：
-#   ANTHROPIC_API_KEY  — 用于 Claude API 深度分析及推荐理由生成（必填）
-#   OPENAI_API_KEY     — 降级备选，Anthropic 不可用时使用（选填）
-#   SERPER_API_KEY     — Google 搜索 API，用于扩展新闻源（选填）
+#   ANTHROPIC_API_KEY  — Claude API 深度分析、推荐理由、新文摘要（必填）
+#   OPENAI_API_KEY     — 降级备选（选填）
+#   SERPER_API_KEY     — Google 搜索扩展新闻源（选填）
 # ================================================================
 
-name: Daily Literature Trends
+name: Daily Literature Update
 
 on:
   schedule:
-    # 北京时间每天零点 (UTC+8 → UTC 16:00)
     - cron: "0 16 * * *"
   workflow_dispatch:
 
@@ -51,6 +50,11 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: npm run recommend:fetch
 
+      - name: Fetch new works
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run newworks:fetch
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
@@ -58,28 +62,29 @@ jobs:
 
           CHANGED=0
 
-          if ! git diff --quiet HEAD -- data/daily-trends.json; then
-            git add data/daily-trends.json
-            CHANGED=1
-          fi
-
-          if ! git diff --quiet HEAD -- data/daily-recommendation.json; then
-            git add data/daily-recommendation.json
-            CHANGED=1
-          fi
-
-          if ! git diff --quiet HEAD -- data/recommendation-history.json; then
-            git add data/recommendation-history.json
-            CHANGED=1
-          fi
-
-          if ! git diff --quiet HEAD -- data/works-snapshot.json; then
-            git add data/works-snapshot.json
-            CHANGED=1
-          fi
+          for FILE in \
+            data/daily-trends.json \
+            data/daily-recommendation.json \
+            data/daily-new-works.json \
+            data/recommendation-history.json \
+            data/works-snapshot.json \
+            "data/new-works-archive/" \
+          ; do
+            if [ -d "$FILE" ]; then
+              if ! git diff --quiet HEAD -- "$FILE"; then
+                git add "$FILE"
+                CHANGED=1
+              fi
+            else
+              if ! git diff --quiet HEAD -- "$FILE"; then
+                git add "$FILE"
+                CHANGED=1
+              fi
+            fi
+          done
 
           if [ "$CHANGED" -eq 1 ]; then
-            git commit -m "data: 更新每日文学热点与书籍推荐 [automated]"
+            git commit -m "data: 更新每日文学数据 [automated]"
             git push
             echo "✅ 已推送更新，Vercel 将自动重新部署"
           else

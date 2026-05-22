@@ -18,6 +18,8 @@ model User {
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
   bookmarks    Bookmark[]
+  favoriteTrends   FavoriteTrend[]
+  favoriteArticles FavoriteArticle[]
 }
 
 model Bookmark {
@@ -28,4 +30,30 @@ model Bookmark {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, workId])
+}
+
+model FavoriteTrend {
+  id         String   @id @default(cuid())
+  userId     String
+  trendId    String
+  trendDate  String
+  trendTitle String
+  savedAt    DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, trendId])
+}
+
+model FavoriteArticle {
+  id            String   @id @default(cuid())
+  userId        String
+  articleId     String
+  articleTitle  String
+  articleSource String
+  articleDate   String
+  excerpt       String?
+  savedAt       DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, articleId])
 }

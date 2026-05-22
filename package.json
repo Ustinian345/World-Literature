@@ -17,7 +17,9 @@
     "trends:dry": "npx tsx scripts/fetch-daily-trends.ts --dry-run",
     "recommend:fetch": "npx tsx scripts/fetch-daily-recommendation.ts",
     "recommend:dry": "npx tsx scripts/fetch-daily-recommendation.ts --dry-run",
-    "recommend:snapshot": "npx tsx scripts/build-works-snapshot.ts"
+    "recommend:snapshot": "npx tsx scripts/build-works-snapshot.ts",
+    "newworks:fetch": "npx tsx scripts/fetch-new-works.ts",
+    "newworks:dry": "npx tsx scripts/fetch-new-works.ts --dry-run"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",
