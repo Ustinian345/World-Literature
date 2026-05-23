@@ -1,8 +1,24 @@
 {
-  "date": "2026-05-22",
+  "date": "2026-05-23",
   "articles": [
     {
-      "id": "en-rssd-1779472152835-0",
+      "id": "en-rssd-1779555372681-0",
+      "title": "Podcast Olga Ravn",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/podcast-olga-ravn/",
+      "excerpt": "'Intelligence and consciousness are two very different things.' Olga Ravn on technology, its relationship with humanity, and Tove Ditlevsen's influence. The post Podcast | Olga Ravn appeared first on Granta .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "Fri, 22 May 2026 19:52:50 +0000",
+      "collectedAt": "2026-05-23T16:56:12.682Z"
+    },
+    {
+      "id": "en-rssd-1779555372682-1",
       "title": "Independent People",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Thu, 21 May 2026 07:00:24 +0000",
-      "collectedAt": "2026-05-22T17:49:12.835Z"
+      "collectedAt": "2026-05-23T16:56:12.682Z"
     },
     {
-      "id": "en-rssd-1779472152835-1",
-      "title": "The High Priestess",
-      "author": "Aea Varfis-van Warmelo",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/the-high-priestess/",
-      "excerpt": "‘As a child, to the puzzlement of those around me, I developed an interest in tarot cards.’ A new story by Olga Ravn. The post The High Priestess appeared first on Granta .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "Thu, 21 May 2026 06:59:48 +0000",
-      "collectedAt": "2026-05-22T17:49:12.835Z"
-    },
-    {
-      "id": "en-rssd-1779472153646-0",
-      "title": "Everyone is an AI Cop Now: What Happens When an AI-Generated Story Wins a Prestigious Prize",
-      "author": "Innocent Chizaram Ilo",
+      "id": "en-rssd-1779555373659-0",
+      "title": "Lit Hub Weekly: May 18 22, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/everyone-is-an-ai-cop-now-what-happens-when-an-ai-generated-story-wins-a-prestigious-prize/",
-      "excerpt": "In the early hours of Sunday, May 17th 2026, I stumbled on a tweet by Nigerian literary critic and essayist, Chimezie Chike, accusing Jamir Nazir, the newly minted 2026 Commonwealth Short Story Prize Winner (Caribbean Region), of winning the coveted",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-may-18-22-2026/",
+      "excerpt": "“I never imagined reading books and turning them into movies was a job.” It is, and if you can read a book every two days (and write a book report about it), it could be yours… Lit Hub Film",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 22 May 2026 11:02:38 +0000",
-      "collectedAt": "2026-05-22T17:49:13.646Z"
+      "publishedAt": "Sat, 23 May 2026 10:30:16 +0000",
+      "collectedAt": "2026-05-23T16:56:13.659Z"
     }
   ]
 }
