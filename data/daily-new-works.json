@@ -1,8 +1,8 @@
 {
-  "date": "2026-05-24",
+  "date": "2026-05-25",
   "articles": [
     {
-      "id": "en-rssd-1779641806185-0",
+      "id": "en-rssd-1779730788677-0",
       "title": "Podcast Olga Ravn",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,15 +15,15 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 22 May 2026 19:52:50 +0000",
-      "collectedAt": "2026-05-24T16:56:46.185Z"
+      "collectedAt": "2026-05-25T17:39:48.677Z"
     },
     {
-      "id": "en-rssd-1779641806185-1",
-      "title": "Independent People",
+      "id": "en-rssd-1779730788677-1",
+      "title": "Independent People?",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/independent-people/",
-      "excerpt": "‘What sets Scandinavian literature apart from the rest of European literature? Why, at its best, does its fiction seem to pack in more force, pound for pound?’ The editor introduces the issue. The post Independent People appeared first on Granta .",
+      "excerpt": "‘What sets Scandinavian literature apart from the rest of European literature? Why, at its best, does its fiction seem to pack in more force, pound for pound?’ The editor introduces the issue. The post Independent People? appeared first on Granta .",
       "criticism": "",
       "language": "en",
       "tags": [
@@ -31,10 +31,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Thu, 21 May 2026 07:00:24 +0000",
-      "collectedAt": "2026-05-24T16:56:46.185Z"
+      "collectedAt": "2026-05-25T17:39:48.677Z"
     },
     {
-      "id": "en-rssd-1779641807082-0",
+      "id": "en-rssd-1779730789471-0",
       "title": "Lit Hub Weekly: May 18 22, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
@@ -47,7 +47,7 @@
       ],
       "type": "criticism",
       "publishedAt": "Sat, 23 May 2026 10:30:16 +0000",
-      "collectedAt": "2026-05-24T16:56:47.082Z"
+      "collectedAt": "2026-05-25T17:39:49.471Z"
     }
   ]
 }
