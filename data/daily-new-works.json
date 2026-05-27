@@ -1,8 +1,24 @@
 {
-  "date": "2026-05-26",
+  "date": "2026-05-27",
   "articles": [
     {
-      "id": "en-rssd-1779819802389-0",
+      "id": "en-rssd-1779906192128-0",
+      "title": "The Narcissus Complex",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/the-narcissus-complex/",
+      "excerpt": "‘What a great burden it was to be the artist son of a famous artist father.’ Daisy Rockwell on her father, painting, and her family’s psychoanalytic history. The post The Narcissus Complex appeared first on Granta .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "Wed, 27 May 2026 15:35:25 +0000",
+      "collectedAt": "2026-05-27T18:23:12.128Z"
+    },
+    {
+      "id": "en-rssd-1779906192128-1",
       "title": "Podcast Olga Ravn",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 22 May 2026 19:52:50 +0000",
-      "collectedAt": "2026-05-26T18:23:22.389Z"
+      "collectedAt": "2026-05-27T18:23:12.128Z"
     },
     {
-      "id": "en-rssd-1779819802390-1",
-      "title": "Independent People?",
-      "author": "Aea Varfis-van Warmelo",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/independent-people/",
-      "excerpt": "‘What sets Scandinavian literature apart from the rest of European literature? Why, at its best, does its fiction seem to pack in more force, pound for pound?’ The editor introduces the issue. The post Independent People? appeared first on Granta .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "Thu, 21 May 2026 07:00:24 +0000",
-      "collectedAt": "2026-05-26T18:23:22.390Z"
-    },
-    {
-      "id": "en-rssd-1779819803351-0",
-      "title": "Why Pope Leo quoted Gandalf in his response to the rise of AI.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1779906192786-0",
+      "title": "Lit Hub Daily: May 27, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/why-pope-leo-quoted-gandalf-in-his-response-to-the-rise-of-ai/",
-      "excerpt": "In a moving message this weekend, Pope Leo XIV spoke out against the rising tide of AI and urged his followers to recommit to a radical humanism. The message—delivered in the form of an encyclical letter, periodic for popes—calls for",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-may-27-2026/",
+      "excerpt": "Why Michael Crichton’s best novel flopped when it was adapted to film. Lit Hub Film Mary Berman remembers the “gut-churning” experience of showing her parents her debut novel. Lit Hub Craft Thomas Asbridge considers the influence of religion",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 26 May 2026 17:26:59 +0000",
-      "collectedAt": "2026-05-26T18:23:23.351Z"
+      "publishedAt": "Wed, 27 May 2026 10:30:24 +0000",
+      "collectedAt": "2026-05-27T18:23:12.786Z"
     }
   ]
 }
