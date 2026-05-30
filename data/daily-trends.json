@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-29T18:29:28.160Z",
+    "generatedAt": "2026-05-30T16:57:35.614Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 12,
+    "totalPostsAnalyzed": 11,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/hudson-williams-has-pretty-good-taste-in-books/",
-        "https://lithub.com/lit-hub-daily-may-29-2026/"
+        "https://lithub.com/lit-hub-weekly-may-25-29-2026/",
+        "https://lithub.com/francesca-wade-has-won-the-plutarch-award-for-gertrude-stein-an-afterlife/"
       ]
     }
   ]

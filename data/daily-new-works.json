@@ -1,13 +1,13 @@
 {
-  "date": "2026-05-29",
+  "date": "2026-05-30",
   "articles": [
     {
-      "id": "en-rssd-1780079387824-0",
+      "id": "en-rssd-1780160273701-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/melanie-klein-among-the-u-boats/",
-      "excerpt": "Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”. Ben Parker on Melanie Klein and child psychology. The post Melanie Klein Among the U-Boats appeared first on Granta .",
+      "excerpt": "‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ Ben Parker on Melanie Klein and child psychology. The post Melanie Klein Among the U-Boats appeared first on Granta .",
       "criticism": "",
       "language": "en",
       "tags": [
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-05-29T18:29:47.824Z"
+      "collectedAt": "2026-05-30T16:57:53.702Z"
     },
     {
-      "id": "en-rssd-1780079387825-1",
+      "id": "en-rssd-1780160273702-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-05-29T18:29:47.825Z"
+      "collectedAt": "2026-05-30T16:57:53.702Z"
     },
     {
-      "id": "en-rssd-1780079388601-0",
-      "title": "Hudson Williams has pretty good taste in books.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1780160274606-0",
+      "title": "Lit Hub Weekly: May 25 29, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/hudson-williams-has-pretty-good-taste-in-books/",
-      "excerpt": "Hudson Williams, the Canadian sweetheart behind the smash hit Heated Rivalry, has pledged his allegiance to the English department. Your favorite hockey hunk is a reader, people. And we must say, the ice king s got pretty good taste. According to",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-may-25-29-2026/",
+      "excerpt": "Spend your summer reading with Lit Hub! Welcome to the Best of the Best Books reading challenge, where you’ll have the chance to meet your reading goals, win prizes, and prove you’re better than your friends. Lit Hub What",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 29 May 2026 16:22:09 +0000",
-      "collectedAt": "2026-05-29T18:29:48.601Z"
+      "publishedAt": "Sat, 30 May 2026 10:30:12 +0000",
+      "collectedAt": "2026-05-30T16:57:54.606Z"
     }
   ]
 }
