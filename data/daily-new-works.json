@@ -1,8 +1,8 @@
 {
-  "date": "2026-05-30",
+  "date": "2026-05-31",
   "articles": [
     {
-      "id": "en-rssd-1780160273701-0",
+      "id": "en-rssd-1780246924510-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-05-30T16:57:53.702Z"
+      "collectedAt": "2026-05-31T17:02:04.510Z"
     },
     {
-      "id": "en-rssd-1780160273702-1",
+      "id": "en-rssd-1780246924510-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,10 +31,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-05-30T16:57:53.702Z"
+      "collectedAt": "2026-05-31T17:02:04.510Z"
     },
     {
-      "id": "en-rssd-1780160274606-0",
+      "id": "en-rssd-1780246925323-0",
       "title": "Lit Hub Weekly: May 25 29, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
@@ -47,7 +47,7 @@
       ],
       "type": "criticism",
       "publishedAt": "Sat, 30 May 2026 10:30:12 +0000",
-      "collectedAt": "2026-05-30T16:57:54.606Z"
+      "collectedAt": "2026-05-31T17:02:05.323Z"
     }
   ]
 }
