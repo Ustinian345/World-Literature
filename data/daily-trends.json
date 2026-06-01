@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-05-31T17:01:45.044Z",
+    "generatedAt": "2026-06-01T20:13:37.258Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 11,
+    "totalPostsAnalyzed": 13,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/lit-hub-weekly-may-25-29-2026/",
-        "https://lithub.com/francesca-wade-has-won-the-plutarch-award-for-gertrude-stein-an-afterlife/"
+        "https://lithub.com/lit-hub-daily-june-1-2026/",
+        "https://lithub.com/unicorn-diversions-robot-valets-and-more-junes-best-sci-fi-and-fantasy-books/"
       ]
     }
   ]

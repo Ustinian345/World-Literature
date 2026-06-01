@@ -1,16 +1,16 @@
 {
-  "date": "2026-05-31",
+  "date": "2026-06-01",
   "book": {
-    "id": "analects-of-confucius-kr",
-    "title": "春香传",
-    "author": "佚名",
+    "id": "ramayana",
+    "title": "罗摩衍那",
+    "author": "蚁垤",
     "tags": [
+      "古典文学",
       "爱情小说",
-      "现代文学",
       "东亚文学"
     ],
-    "cover": "from-pink-600 via-rose-500 to-red-400",
-    "summary": "《春香传》是佚名的代表作，来自朝鲜/韩国。朝鲜半岛最著名的古典爱情故事，讲述了艺妓之女春香与贵族公子李梦龙的坚贞爱情，以盘索里说唱形式流传至今。。这部作品深刻影响了世界文学，值得每一位文学爱好者细细品读。",
-    "slug": "analects-of-confucius-kr"
+    "cover": "from-emerald-700 via-green-500 to-yellow-400",
+    "summary": "《罗摩衍那》是蚁垤的代表作，来自印度。印度两大史诗之一，讲述了罗摩王子流放、救妻的传奇故事，深刻影响了南亚与东南亚的文化。。这部作品深刻影响了世界文学，值得每一位文学爱好者细细品读。",
+    "slug": "ramayana"
   }
 }
