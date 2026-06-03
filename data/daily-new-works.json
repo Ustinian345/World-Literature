@@ -1,53 +1,53 @@
 {
-  "date": "2026-06-02",
+  "date": "2026-06-03",
   "articles": [
     {
-      "id": "en-rssd-1780429131259-0",
+      "id": "en-rss-1780515923836-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/melanie-klein-among-the-u-boats/",
-      "excerpt": "‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ Ben Parker on Melanie Klein and child psychology. The post Melanie Klein Among the U-Boats appeared first on Granta .",
+      "excerpt": "\n<p>‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ </p>\n<p>Ben Parker on Melanie Klein and child psychology.</p>\n<p>The post <a href=\"https://granta.com/melanie-klein-among-the-u-boats/\">Melanie Klein Among the U-Boats</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
       "criticism": "",
       "language": "en",
       "tags": [
         "fiction"
       ],
       "type": "fiction",
-      "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-02T19:38:51.259Z"
+      "publishedAt": "2026-05-29 16:02:23",
+      "collectedAt": "2026-06-03T19:45:23.836Z"
     },
     {
-      "id": "en-rssd-1780429131260-1",
+      "id": "en-rss-1780515923836-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/lacan-in-tirana/",
-      "excerpt": "‘Psychoanalysis never truly took root in Albania during the early decades of the twentieth century and, after the communist takeover in 1944, it was actively suppressed by the regime.’ Ardian Vehbiu on Jacques Lacan’s visit to Albania. The post Lacan in Tirana appeared first on Granta .",
+      "excerpt": "\n<p>‘Psychoanalysis never truly took root in Albania during the early decades of the twentieth century and, after the communist takeover in 1944, it was actively suppressed by the regime.’ </p>\n<p>Ardian Vehbiu on Jacques Lacan’s visit to Albania.</p>\n<p>The post <a href=\"https://granta.com/lacan-in-tirana/\">Lacan in Tirana</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
       "criticism": "",
       "language": "en",
       "tags": [
         "fiction"
       ],
       "type": "fiction",
-      "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-06-02T19:38:51.260Z"
+      "publishedAt": "2026-05-29 13:03:31",
+      "collectedAt": "2026-06-03T19:45:23.836Z"
     },
     {
-      "id": "en-rssd-1780429132189-0",
-      "title": "What to read next if you loved I Love Boosters.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1780515924661-0",
+      "title": "Lit Hub Daily: June 3, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/what-to-read-next-if-you-loved-i-love-boosters/",
-      "excerpt": "Last weekend, Boots Riley s I Love Boosters hit theaters, blowing a breath of fresh air into the American cinema. Riley, the funkmaster filmmaker behind 2018 s Sorry to Bother You, is best known for a highly gonzo, socialist surrealist aesthetic. And just like his",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-june-3-2026/",
+      "excerpt": "What do you do when your book detailing Civil War-era censorship is censored by the US government? Lit Hub Politics “Maybe it’s fair to call this mysticism, but it could also be called democracy. Because it acknowledges the fundamental,",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 02 Jun 2026 16:31:32 +0000",
-      "collectedAt": "2026-06-02T19:38:52.189Z"
+      "publishedAt": "Wed, 03 Jun 2026 10:30:24 +0000",
+      "collectedAt": "2026-06-03T19:45:24.661Z"
     }
   ]
 }
