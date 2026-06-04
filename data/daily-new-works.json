@@ -1,53 +1,69 @@
 {
-  "date": "2026-06-03",
+  "date": "2026-06-04",
   "articles": [
     {
-      "id": "en-rss-1780515923836-0",
+      "id": "zh-rssd-1780596739501-1",
+      "title": "哲古華拉Tee青年和朋友們：在沒有六四的普通日子，他們想活出價值",
+      "author": "端傳媒編輯部",
+      "source": "端传媒文化",
+      "sourceUrl": "https://theinitium.com/20260604-hongkong-mainland-8964-37th-guevara-tee-youth/",
+      "excerpt": "如果世界正常，他更想做文青。但世界不正常。",
+      "criticism": "",
+      "language": "zh",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Wed, 03 Jun 2026 23:00:41 GMT",
+      "collectedAt": "2026-06-04T18:12:19.501Z"
+    },
+    {
+      "id": "en-rssd-1780596755359-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/melanie-klein-among-the-u-boats/",
-      "excerpt": "\n<p>‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ </p>\n<p>Ben Parker on Melanie Klein and child psychology.</p>\n<p>The post <a href=\"https://granta.com/melanie-klein-among-the-u-boats/\">Melanie Klein Among the U-Boats</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "excerpt": "‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ Ben Parker on Melanie Klein and child psychology. The post Melanie Klein Among the U-Boats appeared first on Granta .",
       "criticism": "",
       "language": "en",
       "tags": [
         "fiction"
       ],
       "type": "fiction",
-      "publishedAt": "2026-05-29 16:02:23",
-      "collectedAt": "2026-06-03T19:45:23.836Z"
+      "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
+      "collectedAt": "2026-06-04T18:12:35.359Z"
     },
     {
-      "id": "en-rss-1780515923836-1",
+      "id": "en-rssd-1780596755360-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/lacan-in-tirana/",
-      "excerpt": "\n<p>‘Psychoanalysis never truly took root in Albania during the early decades of the twentieth century and, after the communist takeover in 1944, it was actively suppressed by the regime.’ </p>\n<p>Ardian Vehbiu on Jacques Lacan’s visit to Albania.</p>\n<p>The post <a href=\"https://granta.com/lacan-in-tirana/\">Lacan in Tirana</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "excerpt": "‘Psychoanalysis never truly took root in Albania during the early decades of the twentieth century and, after the communist takeover in 1944, it was actively suppressed by the regime.’ Ardian Vehbiu on Jacques Lacan’s visit to Albania. The post Lacan in Tirana appeared first on Granta .",
       "criticism": "",
       "language": "en",
       "tags": [
         "fiction"
       ],
       "type": "fiction",
-      "publishedAt": "2026-05-29 13:03:31",
-      "collectedAt": "2026-06-03T19:45:23.836Z"
+      "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
+      "collectedAt": "2026-06-04T18:12:35.360Z"
     },
     {
-      "id": "en-rssd-1780515924661-0",
-      "title": "Lit Hub Daily: June 3, 2026",
-      "author": "Lit Hub Daily",
+      "id": "en-rssd-1780596756002-0",
+      "title": "Five totally plausible reading trends to watch out for this summer.",
+      "author": "Brittany Allen",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-3-2026/",
-      "excerpt": "What do you do when your book detailing Civil War-era censorship is censored by the US government? Lit Hub Politics “Maybe it’s fair to call this mysticism, but it could also be called democracy. Because it acknowledges the fundamental,",
+      "sourceUrl": "https://lithub.com/five-summer-reading-trends-to-watch-out-for/",
+      "excerpt": "What s everyone reading this summer? No, better yet—what do we think everyone else will be reading? Is 2026 the season of the post-trauma plot? Are we reading big books, or novellas? Indoors or out? Will this summer see the ascendance",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Wed, 03 Jun 2026 10:30:24 +0000",
-      "collectedAt": "2026-06-03T19:45:24.661Z"
+      "publishedAt": "Thu, 04 Jun 2026 16:41:03 +0000",
+      "collectedAt": "2026-06-04T18:12:36.002Z"
     }
   ]
 }
