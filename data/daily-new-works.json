@@ -1,24 +1,8 @@
 {
-  "date": "2026-06-04",
+  "date": "2026-06-05",
   "articles": [
     {
-      "id": "zh-rssd-1780596739501-1",
-      "title": "哲古華拉Tee青年和朋友們：在沒有六四的普通日子，他們想活出價值",
-      "author": "端傳媒編輯部",
-      "source": "端传媒文化",
-      "sourceUrl": "https://theinitium.com/20260604-hongkong-mainland-8964-37th-guevara-tee-youth/",
-      "excerpt": "如果世界正常，他更想做文青。但世界不正常。",
-      "criticism": "",
-      "language": "zh",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Wed, 03 Jun 2026 23:00:41 GMT",
-      "collectedAt": "2026-06-04T18:12:19.501Z"
-    },
-    {
-      "id": "en-rssd-1780596755359-0",
+      "id": "en-rssd-1780681828767-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-04T18:12:35.359Z"
+      "collectedAt": "2026-06-05T17:50:28.767Z"
     },
     {
-      "id": "en-rssd-1780596755360-1",
+      "id": "en-rssd-1780681828767-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -47,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-06-04T18:12:35.360Z"
+      "collectedAt": "2026-06-05T17:50:28.767Z"
     },
     {
-      "id": "en-rssd-1780596756002-0",
-      "title": "Five totally plausible reading trends to watch out for this summer.",
+      "id": "en-rssd-1780681829485-0",
+      "title": "Here’s what’s making us happy this week.",
       "author": "Brittany Allen",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/five-summer-reading-trends-to-watch-out-for/",
-      "excerpt": "What s everyone reading this summer? No, better yet—what do we think everyone else will be reading? Is 2026 the season of the post-trauma plot? Are we reading big books, or novellas? Indoors or out? Will this summer see the ascendance",
+      "sourceUrl": "https://lithub.com/heres-whats-making-us-happy-this-week-10/",
+      "excerpt": "Hello, Lit Hubbers. It s been a while. But the spring sun has put this staffer in a joy-lifting mood once again. What s been making us happy recently? Earlier this month, Molly Odintz enjoyed the Austin Psych Fest, which brought a",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Thu, 04 Jun 2026 16:41:03 +0000",
-      "collectedAt": "2026-06-04T18:12:36.002Z"
+      "publishedAt": "Fri, 05 Jun 2026 17:16:11 +0000",
+      "collectedAt": "2026-06-05T17:50:29.485Z"
     }
   ]
 }
