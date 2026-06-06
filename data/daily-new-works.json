@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-05",
+  "date": "2026-06-06",
   "articles": [
     {
-      "id": "en-rssd-1780681828767-0",
+      "id": "en-rssd-1780765636238-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-05T17:50:28.767Z"
+      "collectedAt": "2026-06-06T17:07:16.238Z"
     },
     {
-      "id": "en-rssd-1780681828767-1",
+      "id": "en-rssd-1780765636239-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-06-05T17:50:28.767Z"
+      "collectedAt": "2026-06-06T17:07:16.239Z"
     },
     {
-      "id": "en-rssd-1780681829485-0",
-      "title": "Here’s what’s making us happy this week.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1780765637073-0",
+      "title": "Lit Hub Weekly: June 1 5, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/heres-whats-making-us-happy-this-week-10/",
-      "excerpt": "Hello, Lit Hubbers. It s been a while. But the spring sun has put this staffer in a joy-lifting mood once again. What s been making us happy recently? Earlier this month, Molly Odintz enjoyed the Austin Psych Fest, which brought a",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-1-5-2026/",
+      "excerpt": "Sharon Blackie explores the grounding power of fairy tales. Lit Hub Criticism What do you do when your book detailing Civil War-era censorship is censored by the US government? Lit Hub Politics “Maybe it’s fair to call this",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 05 Jun 2026 17:16:11 +0000",
-      "collectedAt": "2026-06-05T17:50:29.485Z"
+      "publishedAt": "Sat, 06 Jun 2026 10:30:21 +0000",
+      "collectedAt": "2026-06-06T17:07:17.073Z"
     }
   ]
 }
