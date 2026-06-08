@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-06-07T17:10:38.847Z",
+    "generatedAt": "2026-06-08T18:22:49.531Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 12,
+    "totalPostsAnalyzed": 13,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/lit-hub-weekly-june-1-5-2026/",
-        "https://lithub.com/heres-whats-making-us-happy-this-week-10/"
+        "https://lithub.com/here-are-the-winners-of-the-2025-stoker-awards/",
+        "https://lithub.com/here-are-the-winners-of-the-61st-annual-nebula-awards/"
       ]
     }
   ]

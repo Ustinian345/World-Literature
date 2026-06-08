@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-07",
+  "date": "2026-06-08",
   "articles": [
     {
-      "id": "en-rssd-1780852258497-0",
+      "id": "en-rssd-1780942989882-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-07T17:10:58.497Z"
+      "collectedAt": "2026-06-08T18:23:09.882Z"
     },
     {
-      "id": "en-rssd-1780852258497-1",
+      "id": "en-rssd-1780942989882-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-06-07T17:10:58.497Z"
+      "collectedAt": "2026-06-08T18:23:09.882Z"
     },
     {
-      "id": "en-rssd-1780852259255-0",
-      "title": "Lit Hub Weekly: June 1 5, 2026",
-      "author": "Lit Hub Daily",
+      "id": "en-rssd-1780942990707-0",
+      "title": "Here are the winners of this year’s Bram Stoker Awards.",
+      "author": "Drew Broussard",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-1-5-2026/",
-      "excerpt": "Sharon Blackie explores the grounding power of fairy tales. Lit Hub Criticism What do you do when your book detailing Civil War-era censorship is censored by the US government? Lit Hub Politics “Maybe it’s fair to call this",
+      "sourceUrl": "https://lithub.com/here-are-the-winners-of-the-2025-stoker-awards/",
+      "excerpt": "The Horror Writers Association (HWA) has announced the recipients of the 2025 Bram Stoker Awards for Superior Achievement. Named in honor of Bram Stoker (Dracula) and awarded annually since 1988, the awards are given for superior achievement, not for best",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Sat, 06 Jun 2026 10:30:21 +0000",
-      "collectedAt": "2026-06-07T17:10:59.255Z"
+      "publishedAt": "Mon, 08 Jun 2026 13:36:59 +0000",
+      "collectedAt": "2026-06-08T18:23:10.707Z"
     }
   ]
 }
