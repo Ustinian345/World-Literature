@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-08",
+  "date": "2026-06-09",
   "articles": [
     {
-      "id": "en-rssd-1780942989882-0",
+      "id": "en-rssd-1781027877964-0",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-08T18:23:09.882Z"
+      "collectedAt": "2026-06-09T17:57:57.964Z"
     },
     {
-      "id": "en-rssd-1780942989882-1",
+      "id": "en-rssd-1781027877965-1",
       "title": "Lacan in Tirana",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-06-08T18:23:09.882Z"
+      "collectedAt": "2026-06-09T17:57:57.965Z"
     },
     {
-      "id": "en-rssd-1780942990707-0",
-      "title": "Here are the winners of this year’s Bram Stoker Awards.",
-      "author": "Drew Broussard",
+      "id": "en-rssd-1781027878790-0",
+      "title": "Lit Hub Daily: June 9, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/here-are-the-winners-of-the-2025-stoker-awards/",
-      "excerpt": "The Horror Writers Association (HWA) has announced the recipients of the 2025 Bram Stoker Awards for Superior Achievement. Named in honor of Bram Stoker (Dracula) and awarded annually since 1988, the awards are given for superior achievement, not for best",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-june-9-2026/",
+      "excerpt": "How remaining unmarried allowed Muriel Spark’s “intellectual monster” to run free. Lit Hub Biography Dave Eggers talks to Jane Ciabattari about writing a novel that understands visual artists (as a visual artist). Lit Hub In Conversation Books by",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Mon, 08 Jun 2026 13:36:59 +0000",
-      "collectedAt": "2026-06-08T18:23:10.707Z"
+      "publishedAt": "Tue, 09 Jun 2026 10:30:48 +0000",
+      "collectedAt": "2026-06-09T17:57:58.790Z"
     }
   ]
 }
