@@ -1,8 +1,24 @@
 {
-  "date": "2026-06-09",
+  "date": "2026-06-10",
   "articles": [
     {
-      "id": "en-rssd-1781027877964-0",
+      "id": "en-rssd-1781116092042-0",
+      "title": "Three Stories",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/three-stories-solstad/",
+      "excerpt": "‘When Agnar Berger unlocks his car door and climbs in, it’s like crawling into some part of himself.’ Three stories by Dag Solstad, translated by Damion Searls. The post Three Stories appeared first on Granta .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "Wed, 10 Jun 2026 16:23:51 +0000",
+      "collectedAt": "2026-06-10T18:28:12.042Z"
+    },
+    {
+      "id": "en-rssd-1781116092042-1",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-09T17:57:57.964Z"
+      "collectedAt": "2026-06-10T18:28:12.042Z"
     },
     {
-      "id": "en-rssd-1781027877965-1",
-      "title": "Lacan in Tirana",
-      "author": "Aea Varfis-van Warmelo",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/lacan-in-tirana/",
-      "excerpt": "‘Psychoanalysis never truly took root in Albania during the early decades of the twentieth century and, after the communist takeover in 1944, it was actively suppressed by the regime.’ Ardian Vehbiu on Jacques Lacan’s visit to Albania. The post Lacan in Tirana appeared first on Granta .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "Fri, 29 May 2026 13:03:31 +0000",
-      "collectedAt": "2026-06-09T17:57:57.965Z"
-    },
-    {
-      "id": "en-rssd-1781027878790-0",
-      "title": "Lit Hub Daily: June 9, 2026",
+      "id": "en-rssd-1781116096924-0",
+      "title": "Lit Hub Daily: June 10, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-9-2026/",
-      "excerpt": "How remaining unmarried allowed Muriel Spark’s “intellectual monster” to run free. Lit Hub Biography Dave Eggers talks to Jane Ciabattari about writing a novel that understands visual artists (as a visual artist). Lit Hub In Conversation Books by",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-june-10-2026/",
+      "excerpt": "Helen Bain follows in Sylvia Plath s footsteps from Paris to Wellesley. Lit Hub Biography Sofia Montrone on becoming reacquainted with her grandfather through fiction: Before I was a writer with characters of my own, I was imagining Ben. Lit Hub",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 09 Jun 2026 10:30:48 +0000",
-      "collectedAt": "2026-06-09T17:57:58.790Z"
+      "publishedAt": "Wed, 10 Jun 2026 10:30:25 +0000",
+      "collectedAt": "2026-06-10T18:28:16.924Z"
     }
   ]
 }
