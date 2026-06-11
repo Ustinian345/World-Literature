@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-10",
+  "date": "2026-06-11",
   "articles": [
     {
-      "id": "en-rssd-1781116092042-0",
+      "id": "en-rssd-1781203486559-0",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Wed, 10 Jun 2026 16:23:51 +0000",
-      "collectedAt": "2026-06-10T18:28:12.042Z"
+      "collectedAt": "2026-06-11T18:44:46.560Z"
     },
     {
-      "id": "en-rssd-1781116092042-1",
+      "id": "en-rssd-1781203486560-1",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-10T18:28:12.042Z"
+      "collectedAt": "2026-06-11T18:44:46.560Z"
     },
     {
-      "id": "en-rssd-1781116096924-0",
-      "title": "Lit Hub Daily: June 10, 2026",
+      "id": "en-rssd-1781203487352-0",
+      "title": "Lit Hub Daily: June 11, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-10-2026/",
-      "excerpt": "Helen Bain follows in Sylvia Plath s footsteps from Paris to Wellesley. Lit Hub Biography Sofia Montrone on becoming reacquainted with her grandfather through fiction: Before I was a writer with characters of my own, I was imagining Ben. Lit Hub",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-june-11-2026/",
+      "excerpt": "Round two of our Best of the Best Books Reading Challenge​begins today with 50 of the greatest summer novels of all time!​ Lit Hub Thomas Levenson pushes back against anti-vaxxer arguments: Microbial pathogens don’t participate in human philosophical disputation—and once they",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Wed, 10 Jun 2026 10:30:25 +0000",
-      "collectedAt": "2026-06-10T18:28:16.924Z"
+      "publishedAt": "Thu, 11 Jun 2026 10:30:20 +0000",
+      "collectedAt": "2026-06-11T18:44:47.352Z"
     }
   ]
 }
