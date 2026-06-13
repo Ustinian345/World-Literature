@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-12",
+  "date": "2026-06-13",
   "articles": [
     {
-      "id": "en-rssd-1781287391057-0",
+      "id": "en-rssd-1781371116516-0",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Wed, 10 Jun 2026 16:23:51 +0000",
-      "collectedAt": "2026-06-12T18:03:11.057Z"
+      "collectedAt": "2026-06-13T17:18:36.516Z"
     },
     {
-      "id": "en-rssd-1781287391057-1",
+      "id": "en-rssd-1781371116516-1",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-12T18:03:11.057Z"
+      "collectedAt": "2026-06-13T17:18:36.517Z"
     },
     {
-      "id": "en-rssd-1781287391879-0",
-      "title": "Lit Hub Daily: June 12, 2026",
+      "id": "en-rssd-1781371117297-0",
+      "title": "Lit Hub Weekly: June 8 12, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-12-2026/",
-      "excerpt": "If literacy is in decline, why are bookstores booming? Bookstores are filling a social void. Lit Hub Bookstores Korean poets and their translators pair poetry collections with K-pop albums. Lit Hub On Translation Did you know the Mayflower Puritans",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-8-12-2026/",
+      "excerpt": "Round two of our Best of the Best Books Reading Challenge ​is underway with 50 of the greatest summer novels of all time!​ Lit Hub Helen Bain follows in Sylvia Plath’s footsteps from Paris to Wellesley. Lit Hub Biography",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 12 Jun 2026 10:30:44 +0000",
-      "collectedAt": "2026-06-12T18:03:11.879Z"
+      "publishedAt": "Sat, 13 Jun 2026 10:30:48 +0000",
+      "collectedAt": "2026-06-13T17:18:37.297Z"
     }
   ]
 }
