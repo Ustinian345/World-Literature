@@ -1,53 +1,53 @@
 {
-  "date": "2026-06-14",
+  "date": "2026-06-15",
   "articles": [
     {
-      "id": "en-rssd-1781457380988-0",
-      "title": "Lit Hub Weekly: June 8 12, 2026",
-      "author": "Lit Hub Daily",
+      "id": "en-rssd-1781552609073-0",
+      "title": "Three Stories",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/three-stories-solstad/",
+      "excerpt": "‘When Agnar Berger unlocks his car door and climbs in, it’s like crawling into some part of himself.’ Three stories by Dag Solstad, translated by Damion Searls. The post Three Stories appeared first on Granta .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "Wed, 10 Jun 2026 16:23:51 +0000",
+      "collectedAt": "2026-06-15T19:43:29.073Z"
+    },
+    {
+      "id": "en-rssd-1781552609073-1",
+      "title": "Melanie Klein Among the U-Boats",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/melanie-klein-among-the-u-boats/",
+      "excerpt": "‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ Ben Parker on Melanie Klein and child psychology. The post Melanie Klein Among the U-Boats appeared first on Granta .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
+      "collectedAt": "2026-06-15T19:43:29.073Z"
+    },
+    {
+      "id": "en-rssd-1781552609763-0",
+      "title": "See David Hockney’s odd and lovely illustrations for his favorite Brothers Grimm fairy tales.",
+      "author": "Emily Temple",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-8-12-2026/",
-      "excerpt": "Round two of our Best of the Best Books Reading Challenge ​is underway with 50 of the greatest summer novels of all time!​ Lit Hub Helen Bain follows in Sylvia Plath’s footsteps from Paris to Wellesley. Lit Hub Biography",
+      "sourceUrl": "https://lithub.com/see-david-hockneys-odd-and-lovely-illustrations-for-his-favorite-brothers-grimm-fairy-tales/",
+      "excerpt": "The beloved British artist David Hockney, who died last week at the age of 88, is celebrated for his vibrant paintings, his innovative techniques, and his joyful kookiness. He also, like many visionaries and other people who know what s good",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Sat, 13 Jun 2026 10:30:48 +0000",
-      "collectedAt": "2026-06-14T17:16:20.988Z"
-    },
-    {
-      "id": "en-rssd-1781457380988-1",
-      "title": "Lit Hub Daily: June 12, 2026",
-      "author": "Lit Hub Daily",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-12-2026/",
-      "excerpt": "If literacy is in decline, why are bookstores booming? Bookstores are filling a social void. Lit Hub Bookstores Korean poets and their translators pair poetry collections with K-pop albums. Lit Hub On Translation Did you know the Mayflower Puritans",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Fri, 12 Jun 2026 10:30:44 +0000",
-      "collectedAt": "2026-06-14T17:16:20.988Z"
-    },
-    {
-      "id": "en-rssd-1781457383520-0",
-      "title": "Portentous Song",
-      "author": "Alex Tan",
-      "source": "Words Without Borders",
-      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-06/portentous-song-mehrdad-wolpe/",
-      "excerpt": "The farmer’s shovel is bloody as he lifts it from the field of young wheat. The women’s needles are bloody, and the rare bread on the table is bloody. The men’s hands are bloody, because in this land nobody’s enemy gets away. Here, a mother’s womb is the best place to meet one’s end, for The post Portentous Song appeared first on Words Without Borders .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "translation"
-      ],
-      "type": "translation",
-      "publishedAt": "Tue, 09 Jun 2026 13:00:35 +0000",
-      "collectedAt": "2026-06-14T17:16:23.521Z"
+      "publishedAt": "Mon, 15 Jun 2026 13:04:40 +0000",
+      "collectedAt": "2026-06-15T19:43:29.763Z"
     }
   ]
 }
