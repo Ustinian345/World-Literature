@@ -1,16 +1,16 @@
 {
-  "date": "2026-06-15",
+  "date": "2026-06-16",
   "book": {
-    "id": "pride-and-prejudice",
-    "title": "傲慢与偏见",
-    "author": "简·奥斯汀",
+    "id": "great-expectations",
+    "title": "远大前程",
+    "author": "查尔斯·狄更斯",
     "tags": [
       "古典文学",
       "爱情小说",
       "现代文学"
     ],
-    "cover": "from-emerald-600 via-green-500 to-teal-400",
-    "summary": "《傲慢与偏见》是简·奥斯汀的代表作，来自英国。有钱的单身汉总要娶位太太，这是一条举世公认的真理。伊丽莎白·班纳特与达西先生的故事，是英语文学中最受欢迎的爱情小说。。这部作品深刻影响了世界文学，值得每一位文学爱好者细细品读。",
-    "slug": "pride-and-prejudice"
+    "cover": "from-blue-700 via-indigo-600 to-gray-600",
+    "summary": "《远大前程》是查尔斯·狄更斯的代表作，来自英国。孤儿皮普从贫困到'绅士'的成长之路，狄更斯以精湛的叙事技巧描绘了维多利亚时代的阶级、财富与人性。。这部作品深刻影响了世界文学，值得每一位文学爱好者细细品读。",
+    "slug": "great-expectations"
   }
 }

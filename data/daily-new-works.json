@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-15",
+  "date": "2026-06-16",
   "articles": [
     {
-      "id": "en-rssd-1781552609073-0",
+      "id": "en-rssd-1781638277894-0",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "Wed, 10 Jun 2026 16:23:51 +0000",
-      "collectedAt": "2026-06-15T19:43:29.073Z"
+      "collectedAt": "2026-06-16T19:31:17.894Z"
     },
     {
-      "id": "en-rssd-1781552609073-1",
+      "id": "en-rssd-1781638277894-1",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-15T19:43:29.073Z"
+      "collectedAt": "2026-06-16T19:31:17.894Z"
     },
     {
-      "id": "en-rssd-1781552609763-0",
-      "title": "See David Hockney’s odd and lovely illustrations for his favorite Brothers Grimm fairy tales.",
-      "author": "Emily Temple",
+      "id": "en-rssd-1781638278740-0",
+      "title": "The Rumpus is back!",
+      "author": "Brittany Allen",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/see-david-hockneys-odd-and-lovely-illustrations-for-his-favorite-brothers-grimm-fairy-tales/",
-      "excerpt": "The beloved British artist David Hockney, who died last week at the age of 88, is celebrated for his vibrant paintings, his innovative techniques, and his joyful kookiness. He also, like many visionaries and other people who know what s good",
+      "sourceUrl": "https://lithub.com/the-rumpus-is-back/",
+      "excerpt": "Last year, publishing power couple Roxane Gay and Debbie Millman acquired beloved online lit mag The Rumpus. Today, the new leaders celebrated the launch of their rebranded site with new essays, fiction, and a fresh design. The Rumpus was founded",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Mon, 15 Jun 2026 13:04:40 +0000",
-      "collectedAt": "2026-06-15T19:43:29.763Z"
+      "publishedAt": "Tue, 16 Jun 2026 17:45:46 +0000",
+      "collectedAt": "2026-06-16T19:31:18.740Z"
     }
   ]
 }
