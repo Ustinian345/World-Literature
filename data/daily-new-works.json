@@ -1,53 +1,53 @@
 {
-  "date": "2026-06-16",
+  "date": "2026-06-17",
   "articles": [
     {
-      "id": "en-rssd-1781638277894-0",
+      "id": "en-rss-1781720065666-0",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/three-stories-solstad/",
-      "excerpt": "‘When Agnar Berger unlocks his car door and climbs in, it’s like crawling into some part of himself.’ Three stories by Dag Solstad, translated by Damion Searls. The post Three Stories appeared first on Granta .",
+      "excerpt": "\n<p>‘When Agnar Berger unlocks his car door and climbs in, it’s like crawling into some part of himself.’ </p>\n<p>Three stories by Dag Solstad, translated by Damion Searls.</p>\n<p>The post <a href=\"https://granta.com/three-stories-solstad/\">Three Stories</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
       "criticism": "",
       "language": "en",
       "tags": [
         "fiction"
       ],
       "type": "fiction",
-      "publishedAt": "Wed, 10 Jun 2026 16:23:51 +0000",
-      "collectedAt": "2026-06-16T19:31:17.894Z"
+      "publishedAt": "2026-06-10 16:23:51",
+      "collectedAt": "2026-06-17T18:14:25.666Z"
     },
     {
-      "id": "en-rssd-1781638277894-1",
+      "id": "en-rss-1781720065666-1",
       "title": "Melanie Klein Among the U-Boats",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
       "sourceUrl": "https://granta.com/melanie-klein-among-the-u-boats/",
-      "excerpt": "‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ Ben Parker on Melanie Klein and child psychology. The post Melanie Klein Among the U-Boats appeared first on Granta .",
+      "excerpt": "\n<p>‘Whenever Richard mentioned Hitler, Klein unwaveringly substituted “Hitler” with “penis”.’ </p>\n<p>Ben Parker on Melanie Klein and child psychology.</p>\n<p>The post <a href=\"https://granta.com/melanie-klein-among-the-u-boats/\">Melanie Klein Among the U-Boats</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
       "criticism": "",
       "language": "en",
       "tags": [
         "fiction"
       ],
       "type": "fiction",
-      "publishedAt": "Fri, 29 May 2026 16:02:23 +0000",
-      "collectedAt": "2026-06-16T19:31:17.894Z"
+      "publishedAt": "2026-05-29 16:02:23",
+      "collectedAt": "2026-06-17T18:14:25.666Z"
     },
     {
-      "id": "en-rssd-1781638278740-0",
-      "title": "The Rumpus is back!",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1781720066645-0",
+      "title": "Here are the finalists for the 2026 Dayton Literary Peace Prize.",
+      "author": "Literary Hub",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/the-rumpus-is-back/",
-      "excerpt": "Last year, publishing power couple Roxane Gay and Debbie Millman acquired beloved online lit mag The Rumpus. Today, the new leaders celebrated the launch of their rebranded site with new essays, fiction, and a fresh design. The Rumpus was founded",
+      "sourceUrl": "https://lithub.com/here-are-the-finalists-for-the-2026-dayton-literary-peace-prize/",
+      "excerpt": "Today, the Dayton Literary Peace Prize Foundation, which celebrates writers whose work demonstrates the power of the written word to foster peace, announced the finalists for its 2026 Dayton Literary Peace Prize (for books published in 2025). The winners will",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 16 Jun 2026 17:45:46 +0000",
-      "collectedAt": "2026-06-16T19:31:18.740Z"
+      "publishedAt": "Wed, 17 Jun 2026 15:42:55 +0000",
+      "collectedAt": "2026-06-17T18:14:26.645Z"
     }
   ]
 }
