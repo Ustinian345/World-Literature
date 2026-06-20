@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-19",
+  "date": "2026-06-20",
   "articles": [
     {
-      "id": "en-rss-1781891530237-0",
+      "id": "en-rss-1781976112828-0",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-19T17:52:10.237Z"
+      "collectedAt": "2026-06-20T17:21:52.828Z"
     },
     {
-      "id": "en-rss-1781891530237-1",
+      "id": "en-rss-1781976112828-1",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-10 16:23:51",
-      "collectedAt": "2026-06-19T17:52:10.237Z"
+      "collectedAt": "2026-06-20T17:21:52.828Z"
     },
     {
-      "id": "en-rssd-1781891531113-0",
-      "title": "On the Other Side Is March",
-      "author": "Lit Hub Excerpts",
+      "id": "en-rssd-1781976113703-0",
+      "title": "Lit Hub Weekly: June 15 19, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/on-the-other-side-is-march/",
-      "excerpt": "I’m a woman in my early sixties. Somewhere between late and never. No longer the career woman, mother, housewife and lover doing it all, meeting every demand, and then some, just with my left hand. Now I’m wife, mother, grandmother,",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-15-19-2026/",
+      "excerpt": "Emily Temple reads every summer reading list (so you don’t have to). Lit Hub Reading Lists Why Robert W. Service’s “The Cremation of Sam McGee” is a good poem for bad dads. Lit Hub Criticism Through layers of",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 19 Jun 2026 11:04:15 +0000",
-      "collectedAt": "2026-06-19T17:52:11.113Z"
+      "publishedAt": "Sat, 20 Jun 2026 10:30:24 +0000",
+      "collectedAt": "2026-06-20T17:21:53.703Z"
     }
   ]
 }
