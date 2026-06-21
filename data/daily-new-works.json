@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-20",
+  "date": "2026-06-21",
   "articles": [
     {
-      "id": "en-rss-1781976112828-0",
+      "id": "en-rss-1782062690318-0",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-20T17:21:52.828Z"
+      "collectedAt": "2026-06-21T17:24:50.318Z"
     },
     {
-      "id": "en-rss-1781976112828-1",
+      "id": "en-rss-1782062690318-1",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,10 +31,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-10 16:23:51",
-      "collectedAt": "2026-06-20T17:21:52.828Z"
+      "collectedAt": "2026-06-21T17:24:50.318Z"
     },
     {
-      "id": "en-rssd-1781976113703-0",
+      "id": "en-rssd-1782062691220-0",
       "title": "Lit Hub Weekly: June 15 19, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
@@ -47,7 +47,7 @@
       ],
       "type": "criticism",
       "publishedAt": "Sat, 20 Jun 2026 10:30:24 +0000",
-      "collectedAt": "2026-06-20T17:21:53.703Z"
+      "collectedAt": "2026-06-21T17:24:51.220Z"
     }
   ]
 }
