@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-22",
+  "date": "2026-06-23",
   "articles": [
     {
-      "id": "en-rss-1782156156653-0",
+      "id": "en-rss-1782236904651-0",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-22T19:22:36.653Z"
+      "collectedAt": "2026-06-23T17:48:24.651Z"
     },
     {
-      "id": "en-rss-1782156156653-1",
+      "id": "en-rss-1782236904651-1",
       "title": "Three Stories",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-10 16:23:51",
-      "collectedAt": "2026-06-22T19:22:36.653Z"
+      "collectedAt": "2026-06-23T17:48:24.651Z"
     },
     {
-      "id": "en-rssd-1782156157690-0",
-      "title": "The Black List and Zando are hunting for the next great horror novel.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1782236905347-0",
+      "title": "Lit Hub Daily: June 23, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/the-black-list-and-zando-are-hunting-for-the-next-great-horror-novel/",
-      "excerpt": "Attention, thrill-seekers. The Black List and Zando are teaming up on a mission to identify the next great horror novelist. Could it be you? The inaugural Evil Twin Manuscript Initiative will select an unpublished or self-published horror novel for a",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-june-23-2026/",
+      "excerpt": "Why the elder Millennial experience of American life is a cycle of getting your hopes up and being let down. Lit Hub Memoir Justin Ellis explores the labor history and racial solidarity of mid-century Minneapolis. Lit Hub History",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Mon, 22 Jun 2026 14:00:33 +0000",
-      "collectedAt": "2026-06-22T19:22:37.690Z"
+      "publishedAt": "Tue, 23 Jun 2026 10:30:03 +0000",
+      "collectedAt": "2026-06-23T17:48:25.347Z"
     }
   ]
 }
