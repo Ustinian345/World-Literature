@@ -1,8 +1,24 @@
 {
-  "date": "2026-06-23",
+  "date": "2026-06-24",
   "articles": [
     {
-      "id": "en-rss-1782236904651-0",
+      "id": "en-rss-1782323457813-0",
+      "title": "The God Dimension",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/the-god-dimension/",
+      "excerpt": "\n<p>‘The joy of being religious is that you discipline yourself in seeing more deeply than you would otherwise see.’ </p>\n<p>Merve Emre discusses religion and writing with Marilynne Robinson and Jon Fosse. </p>\n<p>The post <a href=\"https://granta.com/the-god-dimension/\">The God Dimension</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-06-24 11:03:49",
+      "collectedAt": "2026-06-24T17:50:57.813Z"
+    },
+    {
+      "id": "en-rss-1782323457813-1",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-23T17:48:24.651Z"
+      "collectedAt": "2026-06-24T17:50:57.813Z"
     },
     {
-      "id": "en-rss-1782236904651-1",
-      "title": "Three Stories",
-      "author": "Aea Varfis-van Warmelo",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/three-stories-solstad/",
-      "excerpt": "\n<p>‘When Agnar Berger unlocks his car door and climbs in, it’s like crawling into some part of himself.’ </p>\n<p>Three stories by Dag Solstad, translated by Damion Searls.</p>\n<p>The post <a href=\"https://granta.com/three-stories-solstad/\">Three Stories</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-06-10 16:23:51",
-      "collectedAt": "2026-06-23T17:48:24.651Z"
-    },
-    {
-      "id": "en-rssd-1782236905347-0",
-      "title": "Lit Hub Daily: June 23, 2026",
-      "author": "Lit Hub Daily",
+      "id": "en-rssd-1782323458609-0",
+      "title": "My Mother’s Voice: Messages From Tehran",
+      "author": "Shohreh Laici",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-23-2026/",
-      "excerpt": "Why the elder Millennial experience of American life is a cycle of getting your hopes up and being let down. Lit Hub Memoir Justin Ellis explores the labor history and racial solidarity of mid-century Minneapolis. Lit Hub History",
+      "sourceUrl": "https://lithub.com/my-mothers-voice-messages-from-tehran/",
+      "excerpt": "The walls were cracked, the ceiling collapsing. Ruins underfoot. My manuscript spread haphazardly across the areas untouched by rubble. Pages lifting and settling on top of one another in the early morning or evening I could not tell. I only",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 23 Jun 2026 10:30:03 +0000",
-      "collectedAt": "2026-06-23T17:48:25.347Z"
+      "publishedAt": "Wed, 24 Jun 2026 11:28:58 +0000",
+      "collectedAt": "2026-06-24T17:50:58.610Z"
     }
   ]
 }
