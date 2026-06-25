@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-06-24T17:50:36.962Z",
+    "generatedAt": "2026-06-25T18:06:23.508Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 12,
+    "totalPostsAnalyzed": 13,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/my-mothers-voice-messages-from-tehran/",
-        "https://lithub.com/lit-hub-daily-june-24-2026/"
+        "https://lithub.com/the-american-library-association-is-auctioning-off-some-primo-vintage-read-posters/",
+        "https://lithub.com/three-key-takeaways-from-the-new-sense-and-sensibility-trailer/"
       ]
     }
   ]
