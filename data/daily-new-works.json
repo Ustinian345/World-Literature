@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-25",
+  "date": "2026-06-26",
   "articles": [
     {
-      "id": "en-rss-1782410802295-0",
+      "id": "en-rss-1782495823489-0",
       "title": "The God Dimension",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-24 11:03:49",
-      "collectedAt": "2026-06-25T18:06:42.295Z"
+      "collectedAt": "2026-06-26T17:43:43.489Z"
     },
     {
-      "id": "en-rss-1782410802295-1",
+      "id": "en-rss-1782495823489-1",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-25T18:06:42.295Z"
+      "collectedAt": "2026-06-26T17:43:43.489Z"
     },
     {
-      "id": "en-rssd-1782410802965-0",
-      "title": "The American Library Association is auctioning off some primo vintage READ posters.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1782495824350-0",
+      "title": "Lit Hub Daily: June 26, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/the-american-library-association-is-auctioning-off-some-primo-vintage-read-posters/",
-      "excerpt": "This summer, the American Library Association is auctioning off a rare cache of its iconic READ posters to commemorate the org s 150th year of doing business. Thanks to a partnership with Heritage Auctions, the largest collections auctioneer in the world,",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-june-26-2026/",
+      "excerpt": "How is queer history admitted to the historical record? Demetris Papadimitropoulos on Tennessee Williams, Daniel Ciba s Blue Roses and the ambiguity of proof. Lit Hub Criticism I don’t remember the exact content of the poem, but it was the first",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Thu, 25 Jun 2026 16:33:50 +0000",
-      "collectedAt": "2026-06-25T18:06:42.965Z"
+      "publishedAt": "Fri, 26 Jun 2026 10:30:43 +0000",
+      "collectedAt": "2026-06-26T17:43:44.350Z"
     }
   ]
 }
