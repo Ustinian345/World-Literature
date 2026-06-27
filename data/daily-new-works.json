@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-26",
+  "date": "2026-06-27",
   "articles": [
     {
-      "id": "en-rss-1782495823489-0",
+      "id": "en-rss-1782579908878-0",
       "title": "The God Dimension",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-24 11:03:49",
-      "collectedAt": "2026-06-26T17:43:43.489Z"
+      "collectedAt": "2026-06-27T17:05:08.878Z"
     },
     {
-      "id": "en-rss-1782495823489-1",
+      "id": "en-rss-1782579908878-1",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-26T17:43:43.489Z"
+      "collectedAt": "2026-06-27T17:05:08.878Z"
     },
     {
-      "id": "en-rssd-1782495824350-0",
-      "title": "Lit Hub Daily: June 26, 2026",
+      "id": "en-rssd-1782579909679-0",
+      "title": "Lit Hub Weekly: June 22 26, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-26-2026/",
-      "excerpt": "How is queer history admitted to the historical record? Demetris Papadimitropoulos on Tennessee Williams, Daniel Ciba s Blue Roses and the ambiguity of proof. Lit Hub Criticism I don’t remember the exact content of the poem, but it was the first",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-22-26-2026/",
+      "excerpt": "Maggie McKinley considers Joan Didion’s “future-oriented” nostalgia. Lit Hub Criticism “I would never blame them. But being around Americans while this country is bombing mine is the last thing I can do.” Iranian writer Shohreh Laici on war and",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 26 Jun 2026 10:30:43 +0000",
-      "collectedAt": "2026-06-26T17:43:44.350Z"
+      "publishedAt": "Sat, 27 Jun 2026 10:30:54 +0000",
+      "collectedAt": "2026-06-27T17:05:09.679Z"
     }
   ]
 }
