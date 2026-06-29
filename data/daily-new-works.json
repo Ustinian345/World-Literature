@@ -1,53 +1,53 @@
 {
-  "date": "2026-06-28",
+  "date": "2026-06-29",
   "articles": [
     {
-      "id": "en-rssd-1782666254675-0",
-      "title": "Lit Hub Weekly: June 22 26, 2026",
-      "author": "Lit Hub Daily",
+      "id": "en-rss-1782756385206-0",
+      "title": "The God Dimension",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/the-god-dimension/",
+      "excerpt": "\n<p>‘The joy of being religious is that you discipline yourself in seeing more deeply than you would otherwise see.’ </p>\n<p>Merve Emre discusses religion and writing with Marilynne Robinson and Jon Fosse. </p>\n<p>The post <a href=\"https://granta.com/the-god-dimension/\">The God Dimension</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-06-24 11:03:49",
+      "collectedAt": "2026-06-29T18:06:25.206Z"
+    },
+    {
+      "id": "en-rss-1782756385206-1",
+      "title": "Two Poems",
+      "author": "Aea Varfis-van Warmelo",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/two-poems-stueland/",
+      "excerpt": "\n<p>‘I / had to trust   That what I was witnessing was not / a destruction   That everything I had / done could be reshuffled’ <br><br>Two poems by Espen Stueland, translated by Ingvild Burkey.</p>\n<p>The post <a href=\"https://granta.com/two-poems-stueland/\">Two Poems</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-06-17 16:35:25",
+      "collectedAt": "2026-06-29T18:06:25.206Z"
+    },
+    {
+      "id": "en-rssd-1782756385918-0",
+      "title": "Here’s the shortlist for the 2026 Ursula K. Le Guin Prize for Fiction.",
+      "author": "Literary Hub",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-22-26-2026/",
-      "excerpt": "Maggie McKinley considers Joan Didion’s “future-oriented” nostalgia. Lit Hub Criticism “I would never blame them. But being around Americans while this country is bombing mine is the last thing I can do.” Iranian writer Shohreh Laici on war and",
+      "sourceUrl": "https://lithub.com/heres-the-shortlist-for-the-2026-ursula-k-le-guin-prize-for-fiction/",
+      "excerpt": "The Ursula K. Le Guin Foundation has announced the shortlist for the Ursula K. Le Guin Prize for Fiction, which annually awards $25,000 to the author of a book who best represents the legendary writer’s literary, moral, and aesthetic ideals:",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Sat, 27 Jun 2026 10:30:54 +0000",
-      "collectedAt": "2026-06-28T17:04:14.675Z"
-    },
-    {
-      "id": "en-rssd-1782666254675-1",
-      "title": "Lit Hub Daily: June 26, 2026",
-      "author": "Lit Hub Daily",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-june-26-2026/",
-      "excerpt": "How is queer history admitted to the historical record? Demetris Papadimitropoulos on Tennessee Williams, Daniel Ciba s Blue Roses and the ambiguity of proof. Lit Hub Criticism I don’t remember the exact content of the poem, but it was the first",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Fri, 26 Jun 2026 10:30:43 +0000",
-      "collectedAt": "2026-06-28T17:04:14.675Z"
-    },
-    {
-      "id": "en-rssd-1782666258299-0",
-      "title": "A Letter from the Farmer Suicide Commission",
-      "author": "Cheryl Ong",
-      "source": "Words Without Borders",
-      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-06/a-letter-from-the-farmer-suicide-commission/",
-      "excerpt": "Your Excellency, The King, I find myself at a loss as to how best to pay my respects. The traditional forms of reverence have grown so stale, so worn out, that the time has come for new ways to be invented. How insolent is it that an ode to you should be sung in the The post A Letter from the Farmer Suicide Commission appeared first on Words Without Borders .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "translation"
-      ],
-      "type": "translation",
-      "publishedAt": "Thu, 25 Jun 2026 13:00:50 +0000",
-      "collectedAt": "2026-06-28T17:04:18.299Z"
+      "publishedAt": "Mon, 29 Jun 2026 16:33:30 +0000",
+      "collectedAt": "2026-06-29T18:06:25.918Z"
     }
   ]
 }
