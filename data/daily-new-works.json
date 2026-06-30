@@ -1,8 +1,8 @@
 {
-  "date": "2026-06-29",
+  "date": "2026-06-30",
   "articles": [
     {
-      "id": "en-rss-1782756385206-0",
+      "id": "en-rss-1782841778509-0",
       "title": "The God Dimension",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-24 11:03:49",
-      "collectedAt": "2026-06-29T18:06:25.206Z"
+      "collectedAt": "2026-06-30T17:49:38.509Z"
     },
     {
-      "id": "en-rss-1782756385206-1",
+      "id": "en-rss-1782841778509-1",
       "title": "Two Poems",
       "author": "Aea Varfis-van Warmelo",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-29T18:06:25.206Z"
+      "collectedAt": "2026-06-30T17:49:38.509Z"
     },
     {
-      "id": "en-rssd-1782756385918-0",
-      "title": "Here’s the shortlist for the 2026 Ursula K. Le Guin Prize for Fiction.",
-      "author": "Literary Hub",
+      "id": "en-rssd-1782841779332-0",
+      "title": "The Bible is now required reading for Texas public school students.",
+      "author": "Brittany Allen",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/heres-the-shortlist-for-the-2026-ursula-k-le-guin-prize-for-fiction/",
-      "excerpt": "The Ursula K. Le Guin Foundation has announced the shortlist for the Ursula K. Le Guin Prize for Fiction, which annually awards $25,000 to the author of a book who best represents the legendary writer’s literary, moral, and aesthetic ideals:",
+      "sourceUrl": "https://lithub.com/the-bible-is-now-required-reading-for-texas-public-school-students/",
+      "excerpt": "You win, Veggie Tales. The Bible is officially making its way into the Texas public school curriculum. This decision comes after the Republican-led State Board of Education approved a new mandatory reading list on Friday, in a decision that also",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Mon, 29 Jun 2026 16:33:30 +0000",
-      "collectedAt": "2026-06-29T18:06:25.918Z"
+      "publishedAt": "Tue, 30 Jun 2026 15:36:27 +0000",
+      "collectedAt": "2026-06-30T17:49:39.332Z"
     }
   ]
 }

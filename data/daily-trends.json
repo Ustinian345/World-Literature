@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-06-29T18:05:54.485Z",
+    "generatedAt": "2026-06-30T17:49:23.139Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 12,
+    "totalPostsAnalyzed": 13,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/heres-the-shortlist-for-the-2026-ursula-k-le-guin-prize-for-fiction/",
-        "https://lithub.com/lit-hub-daily-june-29-2026/"
+        "https://lithub.com/the-bible-is-now-required-reading-for-texas-public-school-students/",
+        "https://lithub.com/lit-hub-daily-june-30-2026/"
       ]
     }
   ]
