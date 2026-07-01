@@ -1,53 +1,53 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "articles": [
     {
-      "id": "en-rss-1782841778509-0",
-      "title": "The God Dimension",
-      "author": "Brodie Crellin",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/the-god-dimension/",
-      "excerpt": "\n<p>‘The joy of being religious is that you discipline yourself in seeing more deeply than you would otherwise see.’ </p>\n<p>Merve Emre discusses religion and writing with Marilynne Robinson and Jon Fosse. </p>\n<p>The post <a href=\"https://granta.com/the-god-dimension/\">The God Dimension</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-06-24 11:03:49",
-      "collectedAt": "2026-06-30T17:49:38.509Z"
-    },
-    {
-      "id": "en-rss-1782841778509-1",
-      "title": "Two Poems",
-      "author": "Aea Varfis-van Warmelo",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/two-poems-stueland/",
-      "excerpt": "\n<p>‘I / had to trust   That what I was witnessing was not / a destruction   That everything I had / done could be reshuffled’ <br><br>Two poems by Espen Stueland, translated by Ingvild Burkey.</p>\n<p>The post <a href=\"https://granta.com/two-poems-stueland/\">Two Poems</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-06-17 16:35:25",
-      "collectedAt": "2026-06-30T17:49:38.509Z"
-    },
-    {
-      "id": "en-rssd-1782841779332-0",
-      "title": "The Bible is now required reading for Texas public school students.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1782928273541-0",
+      "title": "Lit Hub Daily: July 1, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/the-bible-is-now-required-reading-for-texas-public-school-students/",
-      "excerpt": "You win, Veggie Tales. The Bible is officially making its way into the Texas public school curriculum. This decision comes after the Republican-led State Board of Education approved a new mandatory reading list on Friday, in a decision that also",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-july-1-2026/",
+      "excerpt": "Get ready for part two! These are the 258 books we re most anticipating in the second half of 2026. Lit Hub Reading Lists We re begging you to let Maggie Gyllenhaal adapt The Bell Jar. Lit Hub Film Why Soledad",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 30 Jun 2026 15:36:27 +0000",
-      "collectedAt": "2026-06-30T17:49:39.332Z"
+      "publishedAt": "Wed, 01 Jul 2026 10:30:23 +0000",
+      "collectedAt": "2026-07-01T17:51:13.541Z"
+    },
+    {
+      "id": "en-rssd-1782928273541-1",
+      "title": "Will “American” Ever Be a Fully Distinct Language of Its Own?",
+      "author": "Ed Simon",
+      "source": "Literary Hub",
+      "sourceUrl": "https://lithub.com/will-american-ever-be-a-fully-distinct-language-of-its-own/",
+      "excerpt": "More than a decade ago, while on research fellowship at the British Library, I used to while away off-hours at the various pubs in King’s Cross, including a slightly dissolute bar on Cromer Street where in between mysterious meat pies",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Wed, 01 Jul 2026 09:10:32 +0000",
+      "collectedAt": "2026-07-01T17:51:13.541Z"
+    },
+    {
+      "id": "en-rssd-1782928277043-0",
+      "title": "The Watchlist: June 2026",
+      "author": "Nina Perrotta",
+      "source": "Words Without Borders",
+      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-06/the-watchlist-june-2026-tobias-carroll/",
+      "excerpt": "From Transit Books On the Other Side Is March by Sólrún Michelson, translated from the Faroese by Marita Thomsen Fiction 121 pages ISBN 9798893380491 US$18.95 What the publisher says: “A lyrical portrait of caretaking and the invisible labor of motherhood, On the Other Side Is March is a tribute to The post The Watchlist: June 2026 appeared first on Words Without Borders .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "translation"
+      ],
+      "type": "translation",
+      "publishedAt": "Mon, 29 Jun 2026 13:00:30 +0000",
+      "collectedAt": "2026-07-01T17:51:17.044Z"
     }
   ]
 }
