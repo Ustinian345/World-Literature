@@ -1,40 +1,56 @@
 {
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "articles": [
     {
-      "id": "en-rssd-1782928273541-0",
-      "title": "Lit Hub Daily: July 1, 2026",
-      "author": "Lit Hub Daily",
+      "id": "zh-rssd-1783014103555-0",
+      "title": "「電扇的法國」對陣「空調的法國」：極端熱浪照出的政治分裂｜Whatsnew",
+      "author": "Matthieu ZHANG",
+      "source": "端传媒文化",
+      "sourceUrl": "https://theinitium.com/20260702-whatsnew-france-heatwave-air-contioner-political-agenda/",
+      "excerpt": "在以左翼為主的政治與文化精英中，空調長期帶有某種禁忌色彩。",
+      "criticism": "",
+      "language": "zh",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Thu, 02 Jul 2026 10:00:46 GMT",
+      "collectedAt": "2026-07-02T17:41:43.556Z"
+    },
+    {
+      "id": "en-rssd-1783014123149-0",
+      "title": "What to read next based on your favorite A24 movie.",
+      "author": "Brittany Allen",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-july-1-2026/",
-      "excerpt": "Get ready for part two! These are the 258 books we re most anticipating in the second half of 2026. Lit Hub Reading Lists We re begging you to let Maggie Gyllenhaal adapt The Bell Jar. Lit Hub Film Why Soledad",
+      "sourceUrl": "https://lithub.com/what-to-read-next-based-on-your-favorite-a24-movie/",
+      "excerpt": "Have you heard? A24 is taking over Hollywood. Possibly the world. The indie company that initially marketed itself as the edgy underdog has become a pillar/last bastion of extra-Marvel movies. No longer so scrappy, the gang of cinephiles that s likely",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Wed, 01 Jul 2026 10:30:23 +0000",
-      "collectedAt": "2026-07-01T17:51:13.541Z"
+      "publishedAt": "Thu, 02 Jul 2026 16:39:13 +0000",
+      "collectedAt": "2026-07-02T17:42:03.149Z"
     },
     {
-      "id": "en-rssd-1782928273541-1",
-      "title": "Will “American” Ever Be a Fully Distinct Language of Its Own?",
-      "author": "Ed Simon",
+      "id": "en-rssd-1783014123149-1",
+      "title": "The Independent Press Top 40 Bestsellers: Fiction",
+      "author": "Literary Hub",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/will-american-ever-be-a-fully-distinct-language-of-its-own/",
-      "excerpt": "More than a decade ago, while on research fellowship at the British Library, I used to while away off-hours at the various pubs in King’s Cross, including a slightly dissolute bar on Cromer Street where in between mysterious meat pies",
+      "sourceUrl": "https://lithub.com/the-independent-press-top-40-bestsellers-fiction-24/",
+      "excerpt": "Here are this week’s Independent Press Top 40 Bestsellers for fiction, based on sales in hundreds of independent bookstores nationwide, generously provided by the American Booksellers Association. Compiled, designed, and distributed by The Independent Publishers Caucus. * 1. The Calamity",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Wed, 01 Jul 2026 09:10:32 +0000",
-      "collectedAt": "2026-07-01T17:51:13.541Z"
+      "publishedAt": "Thu, 02 Jul 2026 13:13:35 +0000",
+      "collectedAt": "2026-07-02T17:42:03.149Z"
     },
     {
-      "id": "en-rssd-1782928277043-0",
+      "id": "en-rssd-1783014126887-0",
       "title": "The Watchlist: June 2026",
       "author": "Nina Perrotta",
       "source": "Words Without Borders",
@@ -47,7 +63,7 @@
       ],
       "type": "translation",
       "publishedAt": "Mon, 29 Jun 2026 13:00:30 +0000",
-      "collectedAt": "2026-07-01T17:51:17.044Z"
+      "collectedAt": "2026-07-02T17:42:06.887Z"
     }
   ]
 }
