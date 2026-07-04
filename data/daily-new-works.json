@@ -1,8 +1,24 @@
 {
-  "date": "2026-07-03",
+  "date": "2026-07-04",
   "articles": [
     {
-      "id": "en-rss-1783099205575-0",
+      "id": "en-rss-1783184372672-0",
+      "title": "America 250",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/america-250/",
+      "excerpt": "\n<p>‘Now – on Donald Trump’s eightieth birthday, and to mark the 250th anniversary of the Declaration of Independence – seven cage fights would take place in a temporary arena on the South Lawn of the White House.’</p>\n<p>Jordan Castro attends the UFC Freedom 250.</p>\n<p>The post <a href=\"https://granta.com/america-250/\">America 250</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-07-03 12:08:20",
+      "collectedAt": "2026-07-04T16:59:32.672Z"
+    },
+    {
+      "id": "en-rss-1783184372672-1",
       "title": "Here Comes the Sun",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-02 14:15:17",
-      "collectedAt": "2026-07-03T17:20:05.575Z"
+      "collectedAt": "2026-07-04T16:59:32.672Z"
     },
     {
-      "id": "en-rss-1783099205576-1",
-      "title": "disappearing acts",
-      "author": "Aea Varfis-van Warmelo",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/disappearing-acts/",
-      "excerpt": "\n<p>‘Mathias hadn’t realized that if there is a crazy woman in any story, at any point in time and under any circumstances whatsoever, then I will always be on her side.’ </p>\n<p> Fiction by Amalie Langballe, translated by Hunter Simpson.</p>\n<p>The post <a href=\"https://granta.com/disappearing-acts/\">disappearing acts</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-07-01 14:25:09",
-      "collectedAt": "2026-07-03T17:20:05.576Z"
-    },
-    {
-      "id": "en-rssd-1783099206497-0",
-      "title": "What to read next based on your favorite A24 movie.",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1783184373398-0",
+      "title": "Lit Hub Weekly: June 29 July 3, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/what-to-read-next-based-on-your-favorite-a24-movie/",
-      "excerpt": "Have you heard? A24 is taking over Hollywood. Possibly the world. The indie company that initially marketed itself as the edgy underdog has become a pillar/last bastion of extra-Marvel movies. No longer so scrappy, the gang of cinephiles that s likely",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-29-july-3-2026/",
+      "excerpt": "Get ready for part two! These are the 258 books we’re most anticipating in the second half of 2026. Lit Hub Reading Lists Did you know that Ancient Roman romance novels went hard? Lit Hub History Why readers",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Thu, 02 Jul 2026 16:39:13 +0000",
-      "collectedAt": "2026-07-03T17:20:06.498Z"
+      "publishedAt": "Sat, 04 Jul 2026 10:30:29 +0000",
+      "collectedAt": "2026-07-04T16:59:33.398Z"
     }
   ]
 }
