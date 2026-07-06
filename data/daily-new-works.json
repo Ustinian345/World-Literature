@@ -1,53 +1,53 @@
 {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "articles": [
     {
-      "id": "en-rssd-1783271049351-0",
-      "title": "Lit Hub Weekly: June 29 July 3, 2026",
-      "author": "Lit Hub Daily",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-weekly-june-29-july-3-2026/",
-      "excerpt": "Get ready for part two! These are the 258 books we’re most anticipating in the second half of 2026. Lit Hub Reading Lists Did you know that Ancient Roman romance novels went hard? Lit Hub History Why readers",
+      "id": "en-rss-1783361276136-0",
+      "title": "America 250",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/america-250/",
+      "excerpt": "\n<p>‘Now – on Donald Trump’s eightieth birthday, and to mark the 250th anniversary of the Declaration of Independence – seven cage fights would take place in a temporary arena on the South Lawn of the White House.’</p>\n<p>Jordan Castro attends the UFC Freedom 250.</p>\n<p>The post <a href=\"https://granta.com/america-250/\">America 250</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
       "criticism": "",
       "language": "en",
       "tags": [
-        "criticism"
+        "fiction"
       ],
-      "type": "criticism",
-      "publishedAt": "Sat, 04 Jul 2026 10:30:29 +0000",
-      "collectedAt": "2026-07-05T17:04:09.351Z"
+      "type": "fiction",
+      "publishedAt": "2026-07-03 12:08:20",
+      "collectedAt": "2026-07-06T18:07:56.136Z"
     },
     {
-      "id": "en-rssd-1783271049351-1",
-      "title": "What to read next based on your favorite A24 movie.",
+      "id": "en-rss-1783361276136-1",
+      "title": "Here Comes the Sun",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/here-comes-the-sun/",
+      "excerpt": "\n<p>‘I, Helga Mork (49), have a feeling something’s going on, only I don’t know what it is.’ </p>\n<p>Fiction by Gunnhild Øyehaug, translated by Kari Dickson. </p>\n<p>The post <a href=\"https://granta.com/here-comes-the-sun/\">Here Comes the Sun</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-07-02 14:15:17",
+      "collectedAt": "2026-07-06T18:07:56.136Z"
+    },
+    {
+      "id": "en-rssd-1783361277522-0",
+      "title": "An English crafter is in hot water after accidentally gifting children erotic hedgehogs?",
       "author": "Brittany Allen",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/what-to-read-next-based-on-your-favorite-a24-movie/",
-      "excerpt": "Have you heard? A24 is taking over Hollywood. Possibly the world. The indie company that initially marketed itself as the edgy underdog has become a pillar/last bastion of extra-Marvel movies. No longer so scrappy, the gang of cinephiles that s likely",
+      "sourceUrl": "https://lithub.com/an-english-crafter-is-in-hot-water-after-accidentally-gifting-children-erotic-hedgehogs/",
+      "excerpt": "A U.K. crafter came under fire this weekend when parents discovered that his handmade hedgehogs had been assembled with pages from an erotic novel. As The Guardian reported, the unidentified hobbyist made his little creations from donated books, often to",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Thu, 02 Jul 2026 16:39:13 +0000",
-      "collectedAt": "2026-07-05T17:04:09.351Z"
-    },
-    {
-      "id": "en-rssd-1783271051939-0",
-      "title": "The Watchlist: June 2026",
-      "author": "Nina Perrotta",
-      "source": "Words Without Borders",
-      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-06/the-watchlist-june-2026-tobias-carroll/",
-      "excerpt": "From Transit Books On the Other Side Is March by Sólrún Michelson, translated from the Faroese by Marita Thomsen Fiction 121 pages ISBN 9798893380491 US$18.95 What the publisher says: “A lyrical portrait of caretaking and the invisible labor of motherhood, On the Other Side Is March is a tribute to The post The Watchlist: June 2026 appeared first on Words Without Borders .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "translation"
-      ],
-      "type": "translation",
-      "publishedAt": "Mon, 29 Jun 2026 13:00:30 +0000",
-      "collectedAt": "2026-07-05T17:04:11.939Z"
+      "publishedAt": "Mon, 06 Jul 2026 16:14:44 +0000",
+      "collectedAt": "2026-07-06T18:07:57.523Z"
     }
   ]
 }
