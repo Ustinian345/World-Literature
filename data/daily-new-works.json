@@ -1,8 +1,24 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "articles": [
     {
-      "id": "en-rss-1783361276136-0",
+      "id": "en-rss-1783446927371-0",
+      "title": "I Want You to Do Something for Me",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/i-want-you-to-do-something-for-me/",
+      "excerpt": "\n<p>‘We’re fine as we are, he said, what do we need kids for? And then time passed and eventually we couldn’t.’</p>\n<p>Fiction by Krisztina Tóth, translated from the Hungarian by Owen Good. </p>\n<p>The post <a href=\"https://granta.com/i-want-you-to-do-something-for-me/\">I Want You to Do Something for Me</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-07-07 12:33:00",
+      "collectedAt": "2026-07-07T17:55:27.371Z"
+    },
+    {
+      "id": "en-rss-1783446927371-1",
       "title": "America 250",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-03 12:08:20",
-      "collectedAt": "2026-07-06T18:07:56.136Z"
+      "collectedAt": "2026-07-07T17:55:27.371Z"
     },
     {
-      "id": "en-rss-1783361276136-1",
-      "title": "Here Comes the Sun",
-      "author": "Brodie Crellin",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/here-comes-the-sun/",
-      "excerpt": "\n<p>‘I, Helga Mork (49), have a feeling something’s going on, only I don’t know what it is.’ </p>\n<p>Fiction by Gunnhild Øyehaug, translated by Kari Dickson. </p>\n<p>The post <a href=\"https://granta.com/here-comes-the-sun/\">Here Comes the Sun</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-07-02 14:15:17",
-      "collectedAt": "2026-07-06T18:07:56.136Z"
-    },
-    {
-      "id": "en-rssd-1783361277522-0",
-      "title": "An English crafter is in hot water after accidentally gifting children erotic hedgehogs?",
-      "author": "Brittany Allen",
+      "id": "en-rssd-1783446928180-0",
+      "title": "Lit Hub Daily: July 7, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/an-english-crafter-is-in-hot-water-after-accidentally-gifting-children-erotic-hedgehogs/",
-      "excerpt": "A U.K. crafter came under fire this weekend when parents discovered that his handmade hedgehogs had been assembled with pages from an erotic novel. As The Guardian reported, the unidentified hobbyist made his little creations from donated books, often to",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-july-7-2026/",
+      "excerpt": "How Joyce Carol Oates, queen of the literary internet, examines the dispiriting effects of technology on contemporary life in her new collection, The Frenzy. Lit Hub Criticism Bryan Charles follows AI s slow, steady invasion of literary translation. Lit Hub",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Mon, 06 Jul 2026 16:14:44 +0000",
-      "collectedAt": "2026-07-06T18:07:57.523Z"
+      "publishedAt": "Tue, 07 Jul 2026 10:30:43 +0000",
+      "collectedAt": "2026-07-07T17:55:28.180Z"
     }
   ]
 }
