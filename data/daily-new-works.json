@@ -1,8 +1,24 @@
 {
-  "date": "2026-07-07",
+  "date": "2026-07-08",
   "articles": [
     {
-      "id": "en-rss-1783446927371-0",
+      "id": "en-rss-1783531513966-0",
+      "title": "Every Time You Breathe, You Inhale the Dust from Our Bones",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/every-time-you-breathe-you-inhale-the-dust-from-our-bones/",
+      "excerpt": "\n<p>‘The thought of her own money. Money that wasn’t for household costs, money that was hers alone, little doses of freedom.’ </p>\n<p>Fiction by Ditte Holm Bro, translated by Sherilyn Hellberg.</p>\n<p>The post <a href=\"https://granta.com/every-time-you-breathe-you-inhale-the-dust-from-our-bones/\">Every Time You Breathe, You Inhale the Dust from Our Bones</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-07-07 15:11:10",
+      "collectedAt": "2026-07-08T17:25:13.966Z"
+    },
+    {
+      "id": "en-rss-1783531513966-1",
       "title": "I Want You to Do Something for Me",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,39 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 12:33:00",
-      "collectedAt": "2026-07-07T17:55:27.371Z"
+      "collectedAt": "2026-07-08T17:25:13.966Z"
     },
     {
-      "id": "en-rss-1783446927371-1",
-      "title": "America 250",
-      "author": "Brodie Crellin",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/america-250/",
-      "excerpt": "\n<p>‘Now – on Donald Trump’s eightieth birthday, and to mark the 250th anniversary of the Declaration of Independence – seven cage fights would take place in a temporary arena on the South Lawn of the White House.’</p>\n<p>Jordan Castro attends the UFC Freedom 250.</p>\n<p>The post <a href=\"https://granta.com/america-250/\">America 250</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-07-03 12:08:20",
-      "collectedAt": "2026-07-07T17:55:27.371Z"
-    },
-    {
-      "id": "en-rssd-1783446928180-0",
-      "title": "Lit Hub Daily: July 7, 2026",
+      "id": "en-rssd-1783531514688-0",
+      "title": "Lit Hub Daily: July 8, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-july-7-2026/",
-      "excerpt": "How Joyce Carol Oates, queen of the literary internet, examines the dispiriting effects of technology on contemporary life in her new collection, The Frenzy. Lit Hub Criticism Bryan Charles follows AI s slow, steady invasion of literary translation. Lit Hub",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-july-8-2026/",
+      "excerpt": "How Jane Austen subverted the kind of romance she mastered by writing Emma. Lit Hub Criticism Lisa Owens explores the taboo ways women writers arrange the balance between creativity with family. Lit Hub Craft Why do our public",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 07 Jul 2026 10:30:43 +0000",
-      "collectedAt": "2026-07-07T17:55:28.180Z"
+      "publishedAt": "Wed, 08 Jul 2026 10:30:49 +0000",
+      "collectedAt": "2026-07-08T17:25:14.688Z"
     }
   ]
 }
