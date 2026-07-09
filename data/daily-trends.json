@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-07-08T17:24:56.479Z",
+    "generatedAt": "2026-07-09T17:51:24.884Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 12,
+    "totalPostsAnalyzed": 13,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/lit-hub-daily-july-8-2026/",
-        "https://lithub.com/how-jane-austen-blew-a-hole-through-the-romance-genre-she-created/"
+        "https://lithub.com/remembering-tom-stoppard-a-night-at-the-theater/",
+        "https://lithub.com/today-is-tom-stoppard-day-in-the-uk/"
       ]
     }
   ]
