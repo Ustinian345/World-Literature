@@ -1,53 +1,53 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "articles": [
     {
-      "id": "en-rssd-1783619503410-0",
-      "title": "Remembering Tom Stoppard: A Night at the Theater",
-      "author": "Morgan Entrekin",
+      "id": "en-rss-1783705441906-0",
+      "title": "Every Time You Breathe, You Inhale the Dust from Our Bones",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/every-time-you-breathe-you-inhale-the-dust-from-our-bones/",
+      "excerpt": "\n<p>‘The thought of her own money. Money that wasn’t for household costs, money that was hers alone, little doses of freedom.’ </p>\n<p>Fiction by Ditte Holm Bro, translated by Sherilyn Hellberg.</p>\n<p>The post <a href=\"https://granta.com/every-time-you-breathe-you-inhale-the-dust-from-our-bones/\">Every Time You Breathe, You Inhale the Dust from Our Bones</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-07-07 15:11:10",
+      "collectedAt": "2026-07-10T17:44:01.906Z"
+    },
+    {
+      "id": "en-rss-1783705441906-1",
+      "title": "I Want You to Do Something for Me",
+      "author": "Brodie Crellin",
+      "source": "Granta",
+      "sourceUrl": "https://granta.com/i-want-you-to-do-something-for-me/",
+      "excerpt": "\n<p>‘We’re fine as we are, he said, what do we need kids for? And then time passed and eventually we couldn’t.’</p>\n<p>Fiction by Krisztina Tóth, translated from the Hungarian by Owen Good. </p>\n<p>The post <a href=\"https://granta.com/i-want-you-to-do-something-for-me/\">I Want You to Do Something for Me</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "fiction"
+      ],
+      "type": "fiction",
+      "publishedAt": "2026-07-07 12:33:00",
+      "collectedAt": "2026-07-10T17:44:01.906Z"
+    },
+    {
+      "id": "en-rssd-1783705442574-0",
+      "title": "Lit Hub Daily: July 10, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/remembering-tom-stoppard-a-night-at-the-theater/",
-      "excerpt": "In London today there will be a memorial celebration for Tom Stoppard. When Tom passed away last November, he was acclaimed and eulogized brilliantly all over the world. To read some of those encomiums you can head here. But in",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-july-10-2026/",
+      "excerpt": "Zach St. George explores the wild scams of Australia s snake venom con men. Lit Hub History How activists Kevin Tubbs and Jacob Ferguson brought environmental liberation of the fae variety to America. Lit Hub Climate Change During his years",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Thu, 09 Jul 2026 11:21:27 +0000",
-      "collectedAt": "2026-07-09T17:51:43.410Z"
-    },
-    {
-      "id": "en-rssd-1783619503410-1",
-      "title": "Today is Tom Stoppard Day in the UK",
-      "author": "Brittany Allen",
-      "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/today-is-tom-stoppard-day-in-the-uk/",
-      "excerpt": "Today in London a who’s who of the literary world will be observing what may be the inaugural memorial day for the late playwright Tom Stoppard. Celebrations center around the renaming of the Duke of York s theatre in Stoppard s honor",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Thu, 09 Jul 2026 11:18:37 +0000",
-      "collectedAt": "2026-07-09T17:51:43.410Z"
-    },
-    {
-      "id": "en-rssd-1783619506451-0",
-      "title": "“Wonderful Stubbornness”: An Encomium for Laurence Laluyaux",
-      "author": "Nina Perrotta",
-      "source": "Words Without Borders",
-      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-07/wonderful-stubbornness-an-encomium-for-laurence-laluyaux-valeria-luiselli/",
-      "excerpt": "In September of 2010, almost two decades ago, I had an exchange of emails that redirected the course of my life. I was twenty-seven, had just published a book of essays with a then tiny publishing house in Mexico City, had just had a baby, and was trying to finish my first novel. I received The post “Wonderful Stubbornness”: An Encomium for Laurence Laluyaux appeared first on Words Without Borders .",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "translation"
-      ],
-      "type": "translation",
-      "publishedAt": "Wed, 08 Jul 2026 13:00:58 +0000",
-      "collectedAt": "2026-07-09T17:51:46.451Z"
+      "publishedAt": "Fri, 10 Jul 2026 10:30:16 +0000",
+      "collectedAt": "2026-07-10T17:44:02.575Z"
     }
   ]
 }
