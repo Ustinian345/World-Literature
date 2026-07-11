@@ -1,8 +1,8 @@
 {
-  "date": "2026-07-10",
+  "date": "2026-07-11",
   "articles": [
     {
-      "id": "en-rss-1783705441906-0",
+      "id": "en-rss-1783788690936-0",
       "title": "Every Time You Breathe, You Inhale the Dust from Our Bones",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 15:11:10",
-      "collectedAt": "2026-07-10T17:44:01.906Z"
+      "collectedAt": "2026-07-11T16:51:30.936Z"
     },
     {
-      "id": "en-rss-1783705441906-1",
+      "id": "en-rss-1783788690936-1",
       "title": "I Want You to Do Something for Me",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 12:33:00",
-      "collectedAt": "2026-07-10T17:44:01.906Z"
+      "collectedAt": "2026-07-11T16:51:30.936Z"
     },
     {
-      "id": "en-rssd-1783705442574-0",
-      "title": "Lit Hub Daily: July 10, 2026",
+      "id": "en-rssd-1783788692000-0",
+      "title": "Lit Hub Weekly: July 6 10, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-july-10-2026/",
-      "excerpt": "Zach St. George explores the wild scams of Australia s snake venom con men. Lit Hub History How activists Kevin Tubbs and Jacob Ferguson brought environmental liberation of the fae variety to America. Lit Hub Climate Change During his years",
+      "sourceUrl": "https://lithub.com/lit-hub-weekly-july-6-10-2026/",
+      "excerpt": "Lisa Owens explores the “taboo” ways women writers arrange the balance between creativity with family. Lit Hub Craft How Jane Austen subverted the kind of romance she mastered by writing Emma. Lit Hub Biography How Joyce Carol Oates,",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Fri, 10 Jul 2026 10:30:16 +0000",
-      "collectedAt": "2026-07-10T17:44:02.575Z"
+      "publishedAt": "Sat, 11 Jul 2026 10:30:06 +0000",
+      "collectedAt": "2026-07-11T16:51:32.000Z"
     }
   ]
 }

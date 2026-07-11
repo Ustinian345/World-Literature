@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-07-10T17:43:41.992Z",
+    "generatedAt": "2026-07-11T16:51:12.154Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 13,
+    "totalPostsAnalyzed": 12,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/lit-hub-daily-july-10-2026/",
-        "https://lithub.com/the-au-pair/"
+        "https://lithub.com/lit-hub-weekly-july-6-10-2026/",
+        "https://lithub.com/a-new-mary-oliver-documentary-captures-the-poets-wild-and-precious-life/"
       ]
     }
   ]
