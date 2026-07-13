@@ -1,8 +1,8 @@
 {
-  "date": "2026-07-12",
+  "date": "2026-07-13",
   "articles": [
     {
-      "id": "en-rss-1783875286981-0",
+      "id": "en-rss-1783965093976-0",
       "title": "Every Time You Breathe, You Inhale the Dust from Our Bones",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,10 +15,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 15:11:10",
-      "collectedAt": "2026-07-12T16:54:46.981Z"
+      "collectedAt": "2026-07-13T17:51:33.976Z"
     },
     {
-      "id": "en-rss-1783875286981-1",
+      "id": "en-rss-1783965093976-1",
       "title": "I Want You to Do Something for Me",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -31,23 +31,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 12:33:00",
-      "collectedAt": "2026-07-12T16:54:46.981Z"
+      "collectedAt": "2026-07-13T17:51:33.976Z"
     },
     {
-      "id": "en-rssd-1783875288001-0",
-      "title": "Lit Hub Weekly: July 6 10, 2026",
-      "author": "Lit Hub Daily",
+      "id": "en-rssd-1783965094925-0",
+      "title": "Tegan Nia Swanson has won the 2026 DAG Prize for Literature.",
+      "author": "Literary Hub",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-weekly-july-6-10-2026/",
-      "excerpt": "Lisa Owens explores the “taboo” ways women writers arrange the balance between creativity with family. Lit Hub Craft How Jane Austen subverted the kind of romance she mastered by writing Emma. Lit Hub Biography How Joyce Carol Oates,",
+      "sourceUrl": "https://lithub.com/tegan-nia-swanson-has-won-the-2026-dag-prize-for-literature/",
+      "excerpt": "Today, the DAG Foundation announced the winners of its second annual DAG Prizes, which award $20,000 each to a visual artist, a writer, and a musician “whose work expands the possibilities for American art.” In particular, the DAG Prize for",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Sat, 11 Jul 2026 10:30:06 +0000",
-      "collectedAt": "2026-07-12T16:54:48.001Z"
+      "publishedAt": "Mon, 13 Jul 2026 16:00:09 +0000",
+      "collectedAt": "2026-07-13T17:51:34.925Z"
     }
   ]
 }

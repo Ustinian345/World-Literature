@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "generatedAt": "2026-07-12T16:54:27.227Z",
+    "generatedAt": "2026-07-13T17:51:17.025Z",
     "sources": [
       "reddit/r/books",
       "reddit/r/literature",
       "hackernews",
       "rss/lithub"
     ],
-    "totalPostsAnalyzed": 12,
+    "totalPostsAnalyzed": 13,
     "llmUsed": false
   },
   "topics": [
@@ -20,8 +20,8 @@
         "https://www.bibliou.com",
         "https://news.ycombinator.com/item?id=32898737",
         "https://news.ycombinator.com/item?id=46906324",
-        "https://lithub.com/lit-hub-weekly-july-6-10-2026/",
-        "https://lithub.com/a-new-mary-oliver-documentary-captures-the-poets-wild-and-precious-life/"
+        "https://lithub.com/tegan-nia-swanson-has-won-the-2026-dag-prize-for-literature/",
+        "https://lithub.com/salvador-dali-made-a-tarot-deck-for-the-james-bond-film-live-and-let-die/"
       ]
     }
   ]
