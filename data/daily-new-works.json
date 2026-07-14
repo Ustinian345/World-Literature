@@ -1,8 +1,24 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "articles": [
     {
-      "id": "en-rss-1783965093976-0",
+      "id": "zh-rssd-1784048961402-1",
+      "title": "不說辱女詞，斷絕戀愛腦：「愛女」網文在追求什麼？",
+      "author": "白駒",
+      "source": "端传媒文化",
+      "sourceUrl": "https://theinitium.com/20260714-mainland-philogyny-online-literature/",
+      "excerpt": "「我要看女人的故事， 把女人當做一個人來寫的故事。」",
+      "criticism": "",
+      "language": "zh",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Mon, 13 Jul 2026 23:00:22 GMT",
+      "collectedAt": "2026-07-14T17:09:21.402Z"
+    },
+    {
+      "id": "en-rss-1784048976329-0",
       "title": "Every Time You Breathe, You Inhale the Dust from Our Bones",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -15,10 +31,10 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 15:11:10",
-      "collectedAt": "2026-07-13T17:51:33.976Z"
+      "collectedAt": "2026-07-14T17:09:36.329Z"
     },
     {
-      "id": "en-rss-1783965093976-1",
+      "id": "en-rss-1784048976329-1",
       "title": "I Want You to Do Something for Me",
       "author": "Brodie Crellin",
       "source": "Granta",
@@ -31,23 +47,23 @@
       ],
       "type": "fiction",
       "publishedAt": "2026-07-07 12:33:00",
-      "collectedAt": "2026-07-13T17:51:33.976Z"
+      "collectedAt": "2026-07-14T17:09:36.329Z"
     },
     {
-      "id": "en-rssd-1783965094925-0",
-      "title": "Tegan Nia Swanson has won the 2026 DAG Prize for Literature.",
-      "author": "Literary Hub",
+      "id": "en-rssd-1784048977247-0",
+      "title": "Lit Hub Daily: July 14, 2026",
+      "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/tegan-nia-swanson-has-won-the-2026-dag-prize-for-literature/",
-      "excerpt": "Today, the DAG Foundation announced the winners of its second annual DAG Prizes, which award $20,000 each to a visual artist, a writer, and a musician “whose work expands the possibilities for American art.” In particular, the DAG Prize for",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-july-14-2026/",
+      "excerpt": "I usually just write my way into things. Eric Olson profiles Sigrid Nunez on the release of her collection, It Will Come Back to You. Lit Hub Craft Angela Flournoy explores why Jean Said Makdisi’s Beirut Fragments is less",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Mon, 13 Jul 2026 16:00:09 +0000",
-      "collectedAt": "2026-07-13T17:51:34.925Z"
+      "publishedAt": "Tue, 14 Jul 2026 10:30:05 +0000",
+      "collectedAt": "2026-07-14T17:09:37.247Z"
     }
   ]
 }
