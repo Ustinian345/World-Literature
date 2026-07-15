@@ -1,69 +1,53 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "articles": [
     {
-      "id": "zh-rssd-1784048961402-1",
-      "title": "不說辱女詞，斷絕戀愛腦：「愛女」網文在追求什麼？",
-      "author": "白駒",
-      "source": "端传媒文化",
-      "sourceUrl": "https://theinitium.com/20260714-mainland-philogyny-online-literature/",
-      "excerpt": "「我要看女人的故事， 把女人當做一個人來寫的故事。」",
-      "criticism": "",
-      "language": "zh",
-      "tags": [
-        "criticism"
-      ],
-      "type": "criticism",
-      "publishedAt": "Mon, 13 Jul 2026 23:00:22 GMT",
-      "collectedAt": "2026-07-14T17:09:21.402Z"
-    },
-    {
-      "id": "en-rss-1784048976329-0",
-      "title": "Every Time You Breathe, You Inhale the Dust from Our Bones",
-      "author": "Brodie Crellin",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/every-time-you-breathe-you-inhale-the-dust-from-our-bones/",
-      "excerpt": "\n<p>‘The thought of her own money. Money that wasn’t for household costs, money that was hers alone, little doses of freedom.’ </p>\n<p>Fiction by Ditte Holm Bro, translated by Sherilyn Hellberg.</p>\n<p>The post <a href=\"https://granta.com/every-time-you-breathe-you-inhale-the-dust-from-our-bones/\">Every Time You Breathe, You Inhale the Dust from Our Bones</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-07-07 15:11:10",
-      "collectedAt": "2026-07-14T17:09:36.329Z"
-    },
-    {
-      "id": "en-rss-1784048976329-1",
-      "title": "I Want You to Do Something for Me",
-      "author": "Brodie Crellin",
-      "source": "Granta",
-      "sourceUrl": "https://granta.com/i-want-you-to-do-something-for-me/",
-      "excerpt": "\n<p>‘We’re fine as we are, he said, what do we need kids for? And then time passed and eventually we couldn’t.’</p>\n<p>Fiction by Krisztina Tóth, translated from the Hungarian by Owen Good. </p>\n<p>The post <a href=\"https://granta.com/i-want-you-to-do-something-for-me/\">I Want You to Do Something for Me</a> appeared first on <a href=\"https://granta.com/\">Granta</a>.</p>\n",
-      "criticism": "",
-      "language": "en",
-      "tags": [
-        "fiction"
-      ],
-      "type": "fiction",
-      "publishedAt": "2026-07-07 12:33:00",
-      "collectedAt": "2026-07-14T17:09:36.329Z"
-    },
-    {
-      "id": "en-rssd-1784048977247-0",
-      "title": "Lit Hub Daily: July 14, 2026",
+      "id": "en-rssd-1784135557257-0",
+      "title": "Lit Hub Daily: July 15, 2026",
       "author": "Lit Hub Daily",
       "source": "Literary Hub",
-      "sourceUrl": "https://lithub.com/lit-hub-daily-july-14-2026/",
-      "excerpt": "I usually just write my way into things. Eric Olson profiles Sigrid Nunez on the release of her collection, It Will Come Back to You. Lit Hub Craft Angela Flournoy explores why Jean Said Makdisi’s Beirut Fragments is less",
+      "sourceUrl": "https://lithub.com/lit-hub-daily-july-15-2026/",
+      "excerpt": "How it feels when one of your poems is literally going to the Moon. Lit Hub Nature Why Steven W. Thrasher is suing Northwestern University (and the US government). Lit Hub Politics Put simply, people don’t buy books.",
       "criticism": "",
       "language": "en",
       "tags": [
         "criticism"
       ],
       "type": "criticism",
-      "publishedAt": "Tue, 14 Jul 2026 10:30:05 +0000",
-      "collectedAt": "2026-07-14T17:09:37.247Z"
+      "publishedAt": "Wed, 15 Jul 2026 10:30:23 +0000",
+      "collectedAt": "2026-07-15T17:12:37.257Z"
+    },
+    {
+      "id": "en-rssd-1784135557258-1",
+      "title": "Publishing Has a Hologram Problem. And It’s Growing.",
+      "author": "Robert Moor",
+      "source": "Literary Hub",
+      "sourceUrl": "https://lithub.com/publishing-has-a-hologram-problem-and-its-growing/",
+      "excerpt": "If you’ve ever walked through a bookstore with an author by your side, you may have noticed something peculiar: writers don’t check out new books the way normal people do. Your average reader, when they pick up a book, will",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "criticism"
+      ],
+      "type": "criticism",
+      "publishedAt": "Wed, 15 Jul 2026 09:10:26 +0000",
+      "collectedAt": "2026-07-15T17:12:37.258Z"
+    },
+    {
+      "id": "en-rssd-1784135560531-0",
+      "title": "“Shouting at a Low Volume”: A Conversation with E. M. Palitha Edirisooriya",
+      "author": "Cheryl Ong",
+      "source": "Words Without Borders",
+      "sourceUrl": "https://wordswithoutborders.org/read/article/2026-07/shouting-at-a-low-volume-a-conversation-with-e-m-palitha-edirisooriya-pathirage-porawagamage/",
+      "excerpt": "E. M. Palitha Edirisooriya’s collection of poems, මාවතේ ත්‍රීවීල් ජීවිතේ (Life on Three Wheels), is a genre-bending work in which the author gathers his lived experiences and reflections as a three-wheeler driver in Sri Lanka. Written in a distinctly choppy, zigzag style, the book switches between ornate written Sinhala and spoken slang, incorporating popular song The post “Shouting at a Low Volume”: A Conversation with E. M. Palitha Edirisooriya appeared first on Words Without Borders .",
+      "criticism": "",
+      "language": "en",
+      "tags": [
+        "translation"
+      ],
+      "type": "translation",
+      "publishedAt": "Tue, 14 Jul 2026 13:00:20 +0000",
+      "collectedAt": "2026-07-15T17:12:40.531Z"
     }
   ]
 }
