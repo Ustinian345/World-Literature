@@ -1,0 +1,401 @@
+/**
+ * 一次性数据入库脚本
+ * 将所有静态 TypeScript/JSON 数据灌入 Neon PostgreSQL
+ *
+ * 用法：npx tsx scripts/seed-from-static.ts
+ */
+
+// 显式加载 .env（tsx 不会自动加载）
+import "dotenv/config";
+
+import { PrismaClient } from "../.prisma/client";
+import { PrismaNeon } from "@prisma/adapter-neon";
+import { neonConfig } from "@neondatabase/serverless";
+
+// Neon 使用 WebSocket 连接（走 HTTPS，不依赖 TCP 5432 端口）
+neonConfig.useSecureWebSocket = true;
+neonConfig.pipelineTLS = true;
+
+const adapter = new PrismaNeon({ connectionString: process.env.DATABASE_URL! });
+const prisma = new PrismaClient({ adapter });
+
+// ================================================================
+// 1. 导入静态数据源
+// ================================================================
+
+// 核心作品 + 扩展（allWorks）
+import { works as coreWorks, continents } from "../src/lib/data.ts.bak";
+import { uniqueExpandedWorks } from "../src/lib/works/index.ts.bak";
+
+// 作品详情（bookDetails）
+import { bookDetails } from "../src/lib/book-data.ts.bak";
+
+// 扩展人物（allCharacters）
+import { allCharacters } from "../src/lib/character-data.ts.bak";
+
+// 背景图片（bg-images.json）
+import bgImages from "../data/bg-images.json.bak";
+
+// 文学奖
+import { awards } from "../src/lib/award-data.ts.bak";
+import { awardWinners } from "../src/lib/award-data.ts.bak";
+
+// 每日趋势
+import dailyTrendsRaw from "../data/daily-trends.json";
+
+// 每日新文
+import dailyNewWorksRaw from "../data/daily-new-works.json";
+
+// 归档新文
+import fs from "fs";
+import path from "path";
+
+// ================================================================
+// 2. 辅助函数
+// ================================================================
+
+function loadArchiveArticles(): typeof dailyNewWorksRaw["articles"] {
+  // 从项目根目录运行，所以直接用相对路径
+  const archiveDir = path.resolve(process.cwd(), "data/new-works-archive");
+  const allArticles: typeof dailyNewWorksRaw["articles"] = [];
+  try {
+    const files = fs.readdirSync(archiveDir).filter(f => f.endsWith(".json"));
+    for (const file of files) {
+      const data = JSON.parse(fs.readFileSync(path.join(archiveDir, file), "utf-8"));
+      if (data.articles) allArticles.push(...data.articles);
+    }
+  } catch {
+    console.log("  (无归档新文文件)");
+  }
+  return allArticles;
+}
+
+// ================================================================
+// 3. 主流程
+// ================================================================
+
+async function main() {
+  console.log("🚀 开始静态数据入库...\n");
+
+  // ---------- Works ----------
+  console.log("📚 导入作品基础数据 (allWorks)...");
+  const allWorks = [...coreWorks, ...uniqueExpandedWorks.filter(
+    ew => !coreWorks.some((cw: { id: string }) => cw.id === ew.id)
+  )];
+
+  let workCount = 0;
+  for (const w of allWorks) {
+    await prisma.work.upsert({
+      where: { id: w.id },
+      create: {
+        id: w.id,
+        title: w.title,
+        titleEn: w.titleEn,
+        author: w.author,
+        country: w.country,
+        flag: w.flag ?? "",
+        continent: w.continent,
+        era: w.era,
+        genres: w.genre,
+        themes: w.themes,
+        excerpt: w.excerpt ?? "",
+        gradient: w.gradient ?? "",
+        year: w.year ?? null,
+        featured: w.featured ?? false,
+      },
+      update: {
+        title: w.title,
+        titleEn: w.titleEn,
+        author: w.author,
+        country: w.country,
+        flag: w.flag ?? "",
+        continent: w.continent,
+        era: w.era,
+        genres: w.genre,
+        themes: w.themes,
+        excerpt: w.excerpt ?? "",
+        gradient: w.gradient ?? "",
+        year: w.year ?? null,
+        featured: w.featured ?? false,
+      },
+    });
+    workCount++;
+  }
+  console.log(`  ✅ 已导入 ${workCount} 部作品\n`);
+
+  // ---------- WorkDetail ----------
+  console.log("📖 导入作品详情 (bookDetails)...");
+  let detailCount = 0;
+  for (const [workId, detail] of Object.entries(bookDetails)) {
+    if (!detail) continue;
+
+    await prisma.workDetail.upsert({
+      where: { workId },
+      create: {
+        id: workId,
+        workId,
+        characters: (detail as any).characters ?? [],
+        plotSummary: detail.plotSummary ?? "",
+        plotNodes: (detail.plotNodes as any) ?? [],
+        themeAnalysis: detail.themeAnalysis ?? "",
+        techniques: detail.techniques ?? "",
+        excerpts: (detail as any).excerpts ?? [],
+        insights: detail.insights ?? "",
+        sourceAttribution: (detail as any).sourceAttribution ?? null,
+      },
+      update: {
+        characters: (detail as any).characters ?? [],
+        plotSummary: detail.plotSummary ?? "",
+        plotNodes: (detail.plotNodes as any) ?? [],
+        themeAnalysis: detail.themeAnalysis ?? "",
+        techniques: detail.techniques ?? "",
+        excerpts: (detail as any).excerpts ?? [],
+        insights: detail.insights ?? "",
+        sourceAttribution: (detail as any).sourceAttribution ?? null,
+      },
+    });
+    detailCount++;
+  }
+  console.log(`  ✅ 已导入 ${detailCount} 部作品详情\n`);
+
+  // ---------- WorkCharacter ----------
+  console.log("👤 导入人物数据 (allCharacters)...");
+  let charCount = 0;
+  for (const [workId, chars] of Object.entries(allCharacters)) {
+    if (!Array.isArray(chars)) continue;
+    for (const ch of chars as Array<{ name: string; role: string; description: string }>) {
+      // 先删除旧数据再插入，保证幂等
+      await prisma.workCharacter.deleteMany({ where: { workId, name: ch.name } });
+      await prisma.workCharacter.create({
+        data: {
+          workId,
+          name: ch.name,
+          role: ch.role,
+          description: ch.description,
+        },
+      });
+      charCount++;
+    }
+  }
+  console.log(`  ✅ 已导入 ${charCount} 个人物\n`);
+
+  // ---------- BgImage ----------
+  console.log("🖼️  导入背景图片 (bg-images.json)...");
+  let bgCount = 0;
+  for (const [key, value] of Object.entries(bgImages)) {
+    if (key.startsWith("_")) continue;
+    const record = value as any;
+    if (!record.url && record.status !== "completed") continue; // 跳过纯失效条目避免噪音
+
+    await prisma.bgImage.upsert({
+      where: { workId: key },
+      create: {
+        workId: key,
+        url: record.url ?? "",
+        status: record.status ?? "pending",
+        source: record.source ?? "unsplash",
+        photographer: record.photographer ?? "",
+        photographerUrl: record.photographerUrl ?? "",
+        searchQuery: record.searchQuery ?? "",
+        fetchedAt: record.fetchedAt ? new Date(record.fetchedAt) : null,
+      },
+      update: {
+        url: record.url ?? "",
+        status: record.status ?? "pending",
+        source: record.source ?? "unsplash",
+        photographer: record.photographer ?? "",
+        photographerUrl: record.photographerUrl ?? "",
+        searchQuery: record.searchQuery ?? "",
+        fetchedAt: record.fetchedAt ? new Date(record.fetchedAt) : null,
+      },
+    });
+    bgCount++;
+  }
+  console.log(`  ✅ 已导入 ${bgCount} 张背景图\n`);
+
+  // ---------- Award ----------
+  console.log("🏆 导入文学奖数据...");
+  let awardCount = 0;
+  for (const a of awards) {
+    await prisma.award.upsert({
+      where: { slug: a.slug },
+      create: {
+        slug: a.slug,
+        name: a.name,
+        nameEn: a.nameEn,
+        description: a.description,
+        established: a.established,
+        country: a.country,
+        flag: a.flag,
+        frequency: a.frequency,
+        category: a.category,
+        gradient: a.gradient,
+        icon: a.icon,
+        website: a.website ?? null,
+        introduction: a.introduction,
+      },
+      update: {
+        name: a.name,
+        nameEn: a.nameEn,
+        description: a.description,
+        established: a.established,
+        country: a.country,
+        flag: a.flag,
+        frequency: a.frequency,
+        category: a.category,
+        gradient: a.gradient,
+        icon: a.icon,
+        website: a.website ?? null,
+        introduction: a.introduction,
+      },
+    });
+    awardCount++;
+  }
+  console.log(`  ✅ 已导入 ${awardCount} 个奖项\n`);
+
+  // ---------- AwardWinner ----------
+  console.log("🥇 导入获奖记录...");
+  let winnerCount = 0;
+  // 先清空再插入（用 upsert 保证幂等）
+  for (const w of awardWinners) {
+    const key = `${w.awardSlug}|${w.workId}|${w.year}`;
+    await prisma.awardWinner.upsert({
+      where: {
+        workId_awardSlug_year: {
+          workId: w.workId,
+          awardSlug: w.awardSlug,
+          year: w.year,
+        },
+      },
+      create: {
+        workId: w.workId,
+        awardSlug: w.awardSlug,
+        year: w.year,
+        category: w.category ?? null,
+      },
+      update: {
+        category: w.category ?? null,
+      },
+    });
+    winnerCount++;
+  }
+  console.log(`  ✅ 已导入 ${winnerCount} 条获奖记录\n`);
+
+  // ---------- DailyTrend ----------
+  console.log("📊 导入每日趋势...");
+  let trendCount = 0;
+  const trendsData = dailyTrendsRaw as any;
+  if (trendsData.topics && Array.isArray(trendsData.topics)) {
+    const meta = trendsData._meta ?? {};
+    const date = meta.generatedAt
+      ? new Date(meta.generatedAt).toISOString().slice(0, 10)
+      : new Date().toISOString().slice(0, 10);
+
+    for (const t of trendsData.topics as Array<any>) {
+      await prisma.dailyTrend.create({
+        data: {
+          date,
+          title: t.title,
+          background: t.background ?? "",
+          perspectives: t.perspectives ?? "",
+          insight: t.insight ?? "",
+          sourceLinks: t.source_links ?? [],
+          sourceType: t.source_type ?? null,
+          generatedAt: meta.generatedAt ? new Date(meta.generatedAt) : new Date(),
+          totalPostsAnalyzed: meta.totalPostsAnalyzed ?? 0,
+        },
+      });
+      trendCount++;
+    }
+  }
+  console.log(`  ✅ 已导入 ${trendCount} 条趋势\n`);
+
+  // ---------- DailyNewWork ----------
+  console.log("📰 导入每日新文...");
+  let newsCount = 0;
+
+  // 当前新文
+  const currentData = dailyNewWorksRaw as any;
+  const allArticles = [
+    ...(currentData.articles ?? []),
+    ...loadArchiveArticles(),
+  ];
+
+  // 去重（按 id）
+  const seen = new Set<string>();
+  for (const article of allArticles) {
+    if (seen.has(article.id)) continue;
+    seen.add(article.id);
+
+    await prisma.dailyNewWork.upsert({
+      where: { id: article.id },
+      create: {
+        id: article.id,
+        title: article.title,
+        author: article.author ?? "未知",
+        source: article.source,
+        sourceUrl: article.sourceUrl ?? "",
+        excerpt: article.excerpt ?? "",
+        fullContent: article.fullContent ?? null,
+        criticism: article.criticism ?? null,
+        language: article.language ?? "zh",
+        tags: article.tags ?? [],
+        type: article.type ?? "criticism",
+        publishedAt: new Date(article.publishedAt),
+        collectedAt: new Date(article.collectedAt),
+        date: article.publishedAt
+          ? new Date(article.publishedAt).toISOString().slice(0, 10)
+          : new Date().toISOString().slice(0, 10),
+      },
+      update: {
+        title: article.title,
+        author: article.author ?? "未知",
+        source: article.source,
+        excerpt: article.excerpt ?? "",
+        fullContent: article.fullContent ?? null,
+        criticism: article.criticism ?? null,
+        language: article.language ?? "zh",
+        tags: article.tags ?? [],
+        type: article.type ?? "criticism",
+      },
+    });
+    newsCount++;
+  }
+  console.log(`  ✅ 已导入 ${newsCount} 篇新文\n`);
+
+  // ================================================================
+  // 统计
+  // ================================================================
+
+  console.log("═══════════════════════════════════════");
+  console.log("📊 入库统计");
+  console.log("═══════════════════════════════════════");
+  const dbWorkCount = await prisma.work.count();
+  const dbDetailCount = await prisma.workDetail.count();
+  const dbCharCount = await prisma.workCharacter.count();
+  const dbBgCount = await prisma.bgImage.count();
+  const dbAwardCount = await prisma.award.count();
+  const dbWinnerCount = await prisma.awardWinner.count();
+  const dbTrendCount = await prisma.dailyTrend.count();
+  const dbNewsCount = await prisma.dailyNewWork.count();
+
+  console.log(`  Works:          ${dbWorkCount}`);
+  console.log(`  WorkDetails:    ${dbDetailCount}`);
+  console.log(`  Characters:     ${dbCharCount}`);
+  console.log(`  BgImages:       ${dbBgCount}`);
+  console.log(`  Awards:         ${dbAwardCount}`);
+  console.log(`  AwardWinners:   ${dbWinnerCount}`);
+  console.log(`  DailyTrends:    ${dbTrendCount}`);
+  console.log(`  DailyNewWorks:  ${dbNewsCount}`);
+  console.log("═══════════════════════════════════════");
+  console.log("\n🎉 静态数据入库完成！");
+}
+
+main()
+  .catch((e) => {
+    console.error("❌ 入库失败:", e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

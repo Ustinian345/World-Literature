@@ -9,6 +9,7 @@ interface Article {
   source: string;
   sourceUrl: string;
   excerpt: string;
+  fullContent?: string;
   criticism: string;
   language: string;
   tags: string[];

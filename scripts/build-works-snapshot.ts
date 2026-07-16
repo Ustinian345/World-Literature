@@ -5,7 +5,7 @@ import * as fs from "fs";
 import * as path from "path";
 
 async function main() {
-  const { allWorks } = await import("../src/lib/data");
+  const { allWorks } = await import("../src/lib/data.ts.bak");
 
   const works = allWorks.map((w) => ({
     id: w.id,

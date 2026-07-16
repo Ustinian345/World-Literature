@@ -1,6 +1,6 @@
 "use client";
 
-import type { SourceAttribution } from "@/lib/book-data";
+import type { SourceAttribution } from "@/lib/book-data-types";
 
 interface ContentSourcesProps {
   attribution?: SourceAttribution;

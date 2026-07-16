@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { Work } from "@/lib/data";
+import type { Work } from "@/lib/data-types";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];

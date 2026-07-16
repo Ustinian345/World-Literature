@@ -32,7 +32,7 @@ loadEnvFile(path.join(__dirname, "..", ".env"));
 
 // ---- 直接在脚本中内联需要的逻辑（避免 TS 模块解析问题） ----
 
-const DATA_PATH = path.join(__dirname, "..", "data", "bg-images.json");
+const DATA_PATH = path.join(__dirname, "..", "data", "bg-images.json.bak");
 
 interface BgRecord {
   url: string;
@@ -51,8 +51,8 @@ interface BgRecord {
 
 async function main() {
   // 动态导入数据模块
-  const { allWorks } = await import("../src/lib/data");
-  const { bookDetails } = await import("../src/lib/book-data");
+  const { allWorks } = await import("../src/lib/data.ts.bak");
+  const { bookDetails } = await import("../src/lib/book-data.ts.bak");
   const { buildSearchContext, fetchRealBackground } = await import("../src/lib/bg-fetcher");
   const { getBgImage } = await import("../src/lib/bg-store");
 

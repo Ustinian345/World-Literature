@@ -9,6 +9,7 @@ interface Topic {
   perspectives: string;
   insight: string;
   source_links: string[];
+  source_type?: string;
 }
 
 interface DailyTrends {
@@ -54,6 +55,11 @@ export default async function TrendDetailPage({
           </h1>
           <p className="mt-3 font-heading-cn text-sm text-white/50">
             生成时间: {data._meta.generatedAt.slice(0, 10)} · {data._meta.llmUsed ? "AI 深度分析" : "社区聚合"}
+            {topic.source_type && (
+              <span className={`ml-3 inline-block rounded-full px-3 py-0.5 text-xs ${topic.source_type === "编辑推荐话题" ? "bg-amber/20 text-amber" : "bg-emerald-600/20 text-emerald-300"}`}>
+                {topic.source_type}
+              </span>
+            )}
           </p>
         </div>
       </div>

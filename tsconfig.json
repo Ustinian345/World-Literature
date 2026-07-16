@@ -30,5 +30,18 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "scripts/batch-fetch-bg.ts",
+    "scripts/build-works-snapshot.ts",
+    "scripts/fetch-literature-data.ts",
+    "scripts/scan-completeness.ts",
+    "scripts/seed-from-static.ts.bak",
+    "scripts/seed-from-static.ts",
+    "src/lib/data.ts.bak",
+    "src/lib/book-data.ts.bak",
+    "src/lib/character-data.ts.bak",
+    "src/lib/award-data.ts.bak",
+    "src/lib/works"
+  ]
 }

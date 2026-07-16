@@ -4,8 +4,8 @@
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { prisma } from "@/lib/prisma";
 import { getTextbookWorksByLevel, getTextbookLevelInfo, textbookLevels } from "@/lib/textbook-data";
-import { allWorks } from "@/lib/data";
 import type { TextbookLevel } from "@/lib/textbook-data";
 
 export function generateStaticParams() {
@@ -25,6 +25,13 @@ export default async function TextbookLevelPage({ params }: { params: Promise<{ 
   if (!info) notFound();
 
   const works = getTextbookWorksByLevel(level as TextbookLevel);
+
+  // 批量查询系统作品映射
+  const workIds = [...new Set(works.map((tw) => tw.workId).filter(Boolean))];
+  const sysWorks = workIds.length > 0
+    ? await prisma.work.findMany({ where: { id: { in: workIds as string[] } } })
+    : [];
+  const sysWorkMap = new Map(sysWorks.map((w) => [w.id, w]));
 
   return (
     <div className="min-h-screen bg-cream">
@@ -59,8 +66,7 @@ export default async function TextbookLevelPage({ params }: { params: Promise<{ 
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {works.map((tw) => {
-              // 查找系统中的对应作品
-              const sysWork = tw.workId ? allWorks.find((w) => w.id === tw.workId) : null;
+              const sysWork = tw.workId ? sysWorkMap.get(tw.workId) : null;
               const href = sysWork ? `/works/${sysWork.id}` : "#";
               const hasDetail = !!sysWork;
 

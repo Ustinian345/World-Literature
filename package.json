@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "prisma generate && next build",
+    "db:migrate": "npx prisma migrate deploy",
+    "db:push": "npx prisma db push",
     "start": "next start",
     "lint": "eslint",
     "bg:batch": "npx tsx scripts/batch-fetch-bg.ts",
@@ -20,9 +22,13 @@
     "recommend:snapshot": "npx tsx scripts/build-works-snapshot.ts",
     "newworks:fetch": "npx tsx scripts/fetch-new-works.ts --ci",
     "newworks:local": "npx tsx scripts/fetch-new-works.ts --local",
-    "newworks:dry": "npx tsx scripts/fetch-new-works.ts --ci --dry-run"
+    "newworks:dry": "npx tsx scripts/fetch-new-works.ts --ci --dry-run",
+    "db:seed-static": "npx tsx scripts/seed-from-static.ts",
+    "db:seed": "npx tsx scripts/seed-from-static.ts"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
+    "@prisma/adapter-neon": "^7.8.0",
     "@prisma/adapter-pg": "^7.8.0",
     "@prisma/client": "^7.8.0",
     "bcryptjs": "^3.0.3",

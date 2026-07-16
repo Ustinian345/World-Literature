@@ -168,6 +168,120 @@ exports.Prisma.DailyRecommendationScalarFieldEnum = {
   createdAt: 'createdAt'
 };
 
+exports.Prisma.WorkScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  titleEn: 'titleEn',
+  author: 'author',
+  country: 'country',
+  flag: 'flag',
+  continent: 'continent',
+  era: 'era',
+  genres: 'genres',
+  themes: 'themes',
+  excerpt: 'excerpt',
+  gradient: 'gradient',
+  year: 'year',
+  featured: 'featured',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.WorkDetailScalarFieldEnum = {
+  id: 'id',
+  workId: 'workId',
+  characters: 'characters',
+  plotSummary: 'plotSummary',
+  plotNodes: 'plotNodes',
+  themeAnalysis: 'themeAnalysis',
+  techniques: 'techniques',
+  excerpts: 'excerpts',
+  insights: 'insights',
+  sourceAttribution: 'sourceAttribution',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.WorkCharacterScalarFieldEnum = {
+  id: 'id',
+  workId: 'workId',
+  name: 'name',
+  role: 'role',
+  description: 'description'
+};
+
+exports.Prisma.BgImageScalarFieldEnum = {
+  id: 'id',
+  workId: 'workId',
+  url: 'url',
+  status: 'status',
+  source: 'source',
+  photographer: 'photographer',
+  photographerUrl: 'photographerUrl',
+  searchQuery: 'searchQuery',
+  fetchedAt: 'fetchedAt',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.AwardScalarFieldEnum = {
+  slug: 'slug',
+  name: 'name',
+  nameEn: 'nameEn',
+  description: 'description',
+  established: 'established',
+  country: 'country',
+  flag: 'flag',
+  frequency: 'frequency',
+  category: 'category',
+  gradient: 'gradient',
+  icon: 'icon',
+  website: 'website',
+  introduction: 'introduction',
+  createdAt: 'createdAt',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.AwardWinnerScalarFieldEnum = {
+  id: 'id',
+  workId: 'workId',
+  awardSlug: 'awardSlug',
+  year: 'year',
+  category: 'category'
+};
+
+exports.Prisma.DailyTrendScalarFieldEnum = {
+  id: 'id',
+  date: 'date',
+  title: 'title',
+  background: 'background',
+  perspectives: 'perspectives',
+  insight: 'insight',
+  sourceLinks: 'sourceLinks',
+  sourceType: 'sourceType',
+  generatedAt: 'generatedAt',
+  totalPostsAnalyzed: 'totalPostsAnalyzed',
+  createdAt: 'createdAt'
+};
+
+exports.Prisma.DailyNewWorkScalarFieldEnum = {
+  id: 'id',
+  title: 'title',
+  author: 'author',
+  source: 'source',
+  sourceUrl: 'sourceUrl',
+  excerpt: 'excerpt',
+  fullContent: 'fullContent',
+  criticism: 'criticism',
+  language: 'language',
+  tags: 'tags',
+  type: 'type',
+  publishedAt: 'publishedAt',
+  collectedAt: 'collectedAt',
+  date: 'date',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -175,6 +289,10 @@ exports.Prisma.SortOrder = {
 
 exports.Prisma.NullableJsonNullValueInput = {
   DbNull: Prisma.DbNull,
+  JsonNull: Prisma.JsonNull
+};
+
+exports.Prisma.JsonNullValueInput = {
   JsonNull: Prisma.JsonNull
 };
 
@@ -200,7 +318,15 @@ exports.Prisma.ModelName = {
   Bookmark: 'Bookmark',
   FavoriteTrend: 'FavoriteTrend',
   FavoriteArticle: 'FavoriteArticle',
-  DailyRecommendation: 'DailyRecommendation'
+  DailyRecommendation: 'DailyRecommendation',
+  Work: 'Work',
+  WorkDetail: 'WorkDetail',
+  WorkCharacter: 'WorkCharacter',
+  BgImage: 'BgImage',
+  Award: 'Award',
+  AwardWinner: 'AwardWinner',
+  DailyTrend: 'DailyTrend',
+  DailyNewWork: 'DailyNewWork'
 };
 
 /**

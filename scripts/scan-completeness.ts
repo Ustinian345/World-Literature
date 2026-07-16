@@ -73,18 +73,18 @@ function calcPriority(missing: string[]): number {
 
 async function main() {
   // --- 加载所有数据源 ---
-  const { bookDetails } = (await import("../src/lib/book-data")) as {
+  const { bookDetails } = (await import("../src/lib/book-data.ts.bak")) as {
     bookDetails: Record<string, MinimalDetail>;
   };
-  const { works: coreWorks } = (await import("../src/lib/data")) as {
+  const { works: coreWorks } = (await import("../src/lib/data.ts.bak")) as {
     works: Array<{ id: string; title: string; titleEn: string; author: string; continent: string }>;
   };
 
   // award-data
-  const { awardWinners } = (await import("../src/lib/award-data")) as {
+  const { awardWinners } = (await import("../src/lib/award-data.ts.bak")) as {
     awardWinners: Array<{ workId: string; awardSlug: string; year: number; category?: string }>;
   };
-  const { awards } = (await import("../src/lib/award-data")) as {
+  const { awards } = (await import("../src/lib/award-data.ts.bak")) as {
     awards: Array<{ slug: string; name: string }>;
   };
 

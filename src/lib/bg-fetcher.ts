@@ -3,8 +3,8 @@
 // 从书籍元数据中提取视觉关键词，搜索适合做背景的高质量真实图片
 // ================================================================
 
-import type { Work } from "./data";
-import type { WorkDetail } from "./book-data";
+import type { Work } from "./data-types";
+import type { WorkDetail } from "./book-data-types";
 import { getBgImage, setBgImage } from "./bg-store";
 import type { BgImageRecord } from "./bg-store";
 

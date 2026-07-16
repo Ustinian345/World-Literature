@@ -38,6 +38,46 @@ export type FavoriteArticle = $Result.DefaultSelection<Prisma.$FavoriteArticlePa
  * 
  */
 export type DailyRecommendation = $Result.DefaultSelection<Prisma.$DailyRecommendationPayload>
+/**
+ * Model Work
+ * 
+ */
+export type Work = $Result.DefaultSelection<Prisma.$WorkPayload>
+/**
+ * Model WorkDetail
+ * 
+ */
+export type WorkDetail = $Result.DefaultSelection<Prisma.$WorkDetailPayload>
+/**
+ * Model WorkCharacter
+ * 
+ */
+export type WorkCharacter = $Result.DefaultSelection<Prisma.$WorkCharacterPayload>
+/**
+ * Model BgImage
+ * 
+ */
+export type BgImage = $Result.DefaultSelection<Prisma.$BgImagePayload>
+/**
+ * Model Award
+ * 
+ */
+export type Award = $Result.DefaultSelection<Prisma.$AwardPayload>
+/**
+ * Model AwardWinner
+ * 
+ */
+export type AwardWinner = $Result.DefaultSelection<Prisma.$AwardWinnerPayload>
+/**
+ * Model DailyTrend
+ * 
+ */
+export type DailyTrend = $Result.DefaultSelection<Prisma.$DailyTrendPayload>
+/**
+ * Model DailyNewWork
+ * 
+ */
+export type DailyNewWork = $Result.DefaultSelection<Prisma.$DailyNewWorkPayload>
 
 /**
  * ##  Prisma Client ʲˢ
@@ -209,6 +249,86 @@ export class PrismaClient<
     * ```
     */
   get dailyRecommendation(): Prisma.DailyRecommendationDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.work`: Exposes CRUD operations for the **Work** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Works
+    * const works = await prisma.work.findMany()
+    * ```
+    */
+  get work(): Prisma.WorkDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.workDetail`: Exposes CRUD operations for the **WorkDetail** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more WorkDetails
+    * const workDetails = await prisma.workDetail.findMany()
+    * ```
+    */
+  get workDetail(): Prisma.WorkDetailDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.workCharacter`: Exposes CRUD operations for the **WorkCharacter** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more WorkCharacters
+    * const workCharacters = await prisma.workCharacter.findMany()
+    * ```
+    */
+  get workCharacter(): Prisma.WorkCharacterDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.bgImage`: Exposes CRUD operations for the **BgImage** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more BgImages
+    * const bgImages = await prisma.bgImage.findMany()
+    * ```
+    */
+  get bgImage(): Prisma.BgImageDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.award`: Exposes CRUD operations for the **Award** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Awards
+    * const awards = await prisma.award.findMany()
+    * ```
+    */
+  get award(): Prisma.AwardDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.awardWinner`: Exposes CRUD operations for the **AwardWinner** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more AwardWinners
+    * const awardWinners = await prisma.awardWinner.findMany()
+    * ```
+    */
+  get awardWinner(): Prisma.AwardWinnerDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.dailyTrend`: Exposes CRUD operations for the **DailyTrend** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more DailyTrends
+    * const dailyTrends = await prisma.dailyTrend.findMany()
+    * ```
+    */
+  get dailyTrend(): Prisma.DailyTrendDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.dailyNewWork`: Exposes CRUD operations for the **DailyNewWork** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more DailyNewWorks
+    * const dailyNewWorks = await prisma.dailyNewWork.findMany()
+    * ```
+    */
+  get dailyNewWork(): Prisma.DailyNewWorkDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -647,7 +767,15 @@ export namespace Prisma {
     Bookmark: 'Bookmark',
     FavoriteTrend: 'FavoriteTrend',
     FavoriteArticle: 'FavoriteArticle',
-    DailyRecommendation: 'DailyRecommendation'
+    DailyRecommendation: 'DailyRecommendation',
+    Work: 'Work',
+    WorkDetail: 'WorkDetail',
+    WorkCharacter: 'WorkCharacter',
+    BgImage: 'BgImage',
+    Award: 'Award',
+    AwardWinner: 'AwardWinner',
+    DailyTrend: 'DailyTrend',
+    DailyNewWork: 'DailyNewWork'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -663,7 +791,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "user" | "bookmark" | "favoriteTrend" | "favoriteArticle" | "dailyRecommendation"
+      modelProps: "user" | "bookmark" | "favoriteTrend" | "favoriteArticle" | "dailyRecommendation" | "work" | "workDetail" | "workCharacter" | "bgImage" | "award" | "awardWinner" | "dailyTrend" | "dailyNewWork"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1037,6 +1165,598 @@ export namespace Prisma {
           }
         }
       }
+      Work: {
+        payload: Prisma.$WorkPayload<ExtArgs>
+        fields: Prisma.WorkFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.WorkFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.WorkFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>
+          }
+          findFirst: {
+            args: Prisma.WorkFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.WorkFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>
+          }
+          findMany: {
+            args: Prisma.WorkFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>[]
+          }
+          create: {
+            args: Prisma.WorkCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>
+          }
+          createMany: {
+            args: Prisma.WorkCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.WorkCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>[]
+          }
+          delete: {
+            args: Prisma.WorkDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>
+          }
+          update: {
+            args: Prisma.WorkUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>
+          }
+          deleteMany: {
+            args: Prisma.WorkDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.WorkUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.WorkUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>[]
+          }
+          upsert: {
+            args: Prisma.WorkUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkPayload>
+          }
+          aggregate: {
+            args: Prisma.WorkAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateWork>
+          }
+          groupBy: {
+            args: Prisma.WorkGroupByArgs<ExtArgs>
+            result: $Utils.Optional<WorkGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.WorkCountArgs<ExtArgs>
+            result: $Utils.Optional<WorkCountAggregateOutputType> | number
+          }
+        }
+      }
+      WorkDetail: {
+        payload: Prisma.$WorkDetailPayload<ExtArgs>
+        fields: Prisma.WorkDetailFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.WorkDetailFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.WorkDetailFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>
+          }
+          findFirst: {
+            args: Prisma.WorkDetailFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.WorkDetailFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>
+          }
+          findMany: {
+            args: Prisma.WorkDetailFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>[]
+          }
+          create: {
+            args: Prisma.WorkDetailCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>
+          }
+          createMany: {
+            args: Prisma.WorkDetailCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.WorkDetailCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>[]
+          }
+          delete: {
+            args: Prisma.WorkDetailDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>
+          }
+          update: {
+            args: Prisma.WorkDetailUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>
+          }
+          deleteMany: {
+            args: Prisma.WorkDetailDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.WorkDetailUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.WorkDetailUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>[]
+          }
+          upsert: {
+            args: Prisma.WorkDetailUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkDetailPayload>
+          }
+          aggregate: {
+            args: Prisma.WorkDetailAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateWorkDetail>
+          }
+          groupBy: {
+            args: Prisma.WorkDetailGroupByArgs<ExtArgs>
+            result: $Utils.Optional<WorkDetailGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.WorkDetailCountArgs<ExtArgs>
+            result: $Utils.Optional<WorkDetailCountAggregateOutputType> | number
+          }
+        }
+      }
+      WorkCharacter: {
+        payload: Prisma.$WorkCharacterPayload<ExtArgs>
+        fields: Prisma.WorkCharacterFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.WorkCharacterFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.WorkCharacterFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>
+          }
+          findFirst: {
+            args: Prisma.WorkCharacterFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.WorkCharacterFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>
+          }
+          findMany: {
+            args: Prisma.WorkCharacterFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>[]
+          }
+          create: {
+            args: Prisma.WorkCharacterCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>
+          }
+          createMany: {
+            args: Prisma.WorkCharacterCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.WorkCharacterCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>[]
+          }
+          delete: {
+            args: Prisma.WorkCharacterDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>
+          }
+          update: {
+            args: Prisma.WorkCharacterUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>
+          }
+          deleteMany: {
+            args: Prisma.WorkCharacterDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.WorkCharacterUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.WorkCharacterUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>[]
+          }
+          upsert: {
+            args: Prisma.WorkCharacterUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$WorkCharacterPayload>
+          }
+          aggregate: {
+            args: Prisma.WorkCharacterAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateWorkCharacter>
+          }
+          groupBy: {
+            args: Prisma.WorkCharacterGroupByArgs<ExtArgs>
+            result: $Utils.Optional<WorkCharacterGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.WorkCharacterCountArgs<ExtArgs>
+            result: $Utils.Optional<WorkCharacterCountAggregateOutputType> | number
+          }
+        }
+      }
+      BgImage: {
+        payload: Prisma.$BgImagePayload<ExtArgs>
+        fields: Prisma.BgImageFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.BgImageFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.BgImageFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>
+          }
+          findFirst: {
+            args: Prisma.BgImageFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.BgImageFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>
+          }
+          findMany: {
+            args: Prisma.BgImageFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>[]
+          }
+          create: {
+            args: Prisma.BgImageCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>
+          }
+          createMany: {
+            args: Prisma.BgImageCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.BgImageCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>[]
+          }
+          delete: {
+            args: Prisma.BgImageDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>
+          }
+          update: {
+            args: Prisma.BgImageUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>
+          }
+          deleteMany: {
+            args: Prisma.BgImageDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.BgImageUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.BgImageUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>[]
+          }
+          upsert: {
+            args: Prisma.BgImageUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$BgImagePayload>
+          }
+          aggregate: {
+            args: Prisma.BgImageAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateBgImage>
+          }
+          groupBy: {
+            args: Prisma.BgImageGroupByArgs<ExtArgs>
+            result: $Utils.Optional<BgImageGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.BgImageCountArgs<ExtArgs>
+            result: $Utils.Optional<BgImageCountAggregateOutputType> | number
+          }
+        }
+      }
+      Award: {
+        payload: Prisma.$AwardPayload<ExtArgs>
+        fields: Prisma.AwardFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.AwardFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.AwardFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>
+          }
+          findFirst: {
+            args: Prisma.AwardFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.AwardFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>
+          }
+          findMany: {
+            args: Prisma.AwardFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>[]
+          }
+          create: {
+            args: Prisma.AwardCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>
+          }
+          createMany: {
+            args: Prisma.AwardCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.AwardCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>[]
+          }
+          delete: {
+            args: Prisma.AwardDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>
+          }
+          update: {
+            args: Prisma.AwardUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>
+          }
+          deleteMany: {
+            args: Prisma.AwardDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.AwardUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.AwardUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>[]
+          }
+          upsert: {
+            args: Prisma.AwardUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardPayload>
+          }
+          aggregate: {
+            args: Prisma.AwardAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateAward>
+          }
+          groupBy: {
+            args: Prisma.AwardGroupByArgs<ExtArgs>
+            result: $Utils.Optional<AwardGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.AwardCountArgs<ExtArgs>
+            result: $Utils.Optional<AwardCountAggregateOutputType> | number
+          }
+        }
+      }
+      AwardWinner: {
+        payload: Prisma.$AwardWinnerPayload<ExtArgs>
+        fields: Prisma.AwardWinnerFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.AwardWinnerFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.AwardWinnerFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>
+          }
+          findFirst: {
+            args: Prisma.AwardWinnerFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.AwardWinnerFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>
+          }
+          findMany: {
+            args: Prisma.AwardWinnerFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>[]
+          }
+          create: {
+            args: Prisma.AwardWinnerCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>
+          }
+          createMany: {
+            args: Prisma.AwardWinnerCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.AwardWinnerCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>[]
+          }
+          delete: {
+            args: Prisma.AwardWinnerDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>
+          }
+          update: {
+            args: Prisma.AwardWinnerUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>
+          }
+          deleteMany: {
+            args: Prisma.AwardWinnerDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.AwardWinnerUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.AwardWinnerUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>[]
+          }
+          upsert: {
+            args: Prisma.AwardWinnerUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$AwardWinnerPayload>
+          }
+          aggregate: {
+            args: Prisma.AwardWinnerAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateAwardWinner>
+          }
+          groupBy: {
+            args: Prisma.AwardWinnerGroupByArgs<ExtArgs>
+            result: $Utils.Optional<AwardWinnerGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.AwardWinnerCountArgs<ExtArgs>
+            result: $Utils.Optional<AwardWinnerCountAggregateOutputType> | number
+          }
+        }
+      }
+      DailyTrend: {
+        payload: Prisma.$DailyTrendPayload<ExtArgs>
+        fields: Prisma.DailyTrendFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.DailyTrendFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.DailyTrendFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>
+          }
+          findFirst: {
+            args: Prisma.DailyTrendFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.DailyTrendFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>
+          }
+          findMany: {
+            args: Prisma.DailyTrendFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>[]
+          }
+          create: {
+            args: Prisma.DailyTrendCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>
+          }
+          createMany: {
+            args: Prisma.DailyTrendCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.DailyTrendCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>[]
+          }
+          delete: {
+            args: Prisma.DailyTrendDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>
+          }
+          update: {
+            args: Prisma.DailyTrendUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>
+          }
+          deleteMany: {
+            args: Prisma.DailyTrendDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.DailyTrendUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.DailyTrendUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>[]
+          }
+          upsert: {
+            args: Prisma.DailyTrendUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyTrendPayload>
+          }
+          aggregate: {
+            args: Prisma.DailyTrendAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateDailyTrend>
+          }
+          groupBy: {
+            args: Prisma.DailyTrendGroupByArgs<ExtArgs>
+            result: $Utils.Optional<DailyTrendGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.DailyTrendCountArgs<ExtArgs>
+            result: $Utils.Optional<DailyTrendCountAggregateOutputType> | number
+          }
+        }
+      }
+      DailyNewWork: {
+        payload: Prisma.$DailyNewWorkPayload<ExtArgs>
+        fields: Prisma.DailyNewWorkFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.DailyNewWorkFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.DailyNewWorkFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>
+          }
+          findFirst: {
+            args: Prisma.DailyNewWorkFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.DailyNewWorkFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>
+          }
+          findMany: {
+            args: Prisma.DailyNewWorkFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>[]
+          }
+          create: {
+            args: Prisma.DailyNewWorkCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>
+          }
+          createMany: {
+            args: Prisma.DailyNewWorkCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.DailyNewWorkCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>[]
+          }
+          delete: {
+            args: Prisma.DailyNewWorkDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>
+          }
+          update: {
+            args: Prisma.DailyNewWorkUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>
+          }
+          deleteMany: {
+            args: Prisma.DailyNewWorkDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.DailyNewWorkUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.DailyNewWorkUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>[]
+          }
+          upsert: {
+            args: Prisma.DailyNewWorkUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$DailyNewWorkPayload>
+          }
+          aggregate: {
+            args: Prisma.DailyNewWorkAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateDailyNewWork>
+          }
+          groupBy: {
+            args: Prisma.DailyNewWorkGroupByArgs<ExtArgs>
+            result: $Utils.Optional<DailyNewWorkGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.DailyNewWorkCountArgs<ExtArgs>
+            result: $Utils.Optional<DailyNewWorkCountAggregateOutputType> | number
+          }
+        }
+      }
     }
   } & {
     other: {
@@ -1150,6 +1870,14 @@ export namespace Prisma {
     favoriteTrend?: FavoriteTrendOmit
     favoriteArticle?: FavoriteArticleOmit
     dailyRecommendation?: DailyRecommendationOmit
+    work?: WorkOmit
+    workDetail?: WorkDetailOmit
+    workCharacter?: WorkCharacterOmit
+    bgImage?: BgImageOmit
+    award?: AwardOmit
+    awardWinner?: AwardWinnerOmit
+    dailyTrend?: DailyTrendOmit
+    dailyNewWork?: DailyNewWorkOmit
   }
 
   /* Types for Logging */
@@ -1280,6 +2008,77 @@ export namespace Prisma {
    */
   export type UserCountOutputTypeCountDailyRecommendationsArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: DailyRecommendationWhereInput
+  }
+
+
+  /**
+   * Count Type WorkCountOutputType
+   */
+
+  export type WorkCountOutputType = {
+    characters: number
+    awardWinners: number
+  }
+
+  export type WorkCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    characters?: boolean | WorkCountOutputTypeCountCharactersArgs
+    awardWinners?: boolean | WorkCountOutputTypeCountAwardWinnersArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * WorkCountOutputType without action
+   */
+  export type WorkCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCountOutputType
+     */
+    select?: WorkCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * WorkCountOutputType without action
+   */
+  export type WorkCountOutputTypeCountCharactersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: WorkCharacterWhereInput
+  }
+
+  /**
+   * WorkCountOutputType without action
+   */
+  export type WorkCountOutputTypeCountAwardWinnersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: AwardWinnerWhereInput
+  }
+
+
+  /**
+   * Count Type AwardCountOutputType
+   */
+
+  export type AwardCountOutputType = {
+    winners: number
+  }
+
+  export type AwardCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    winners?: boolean | AwardCountOutputTypeCountWinnersArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * AwardCountOutputType without action
+   */
+  export type AwardCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardCountOutputType
+     */
+    select?: AwardCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * AwardCountOutputType without action
+   */
+  export type AwardCountOutputTypeCountWinnersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: AwardWinnerWhereInput
   }
 
 
@@ -6799,6 +7598,9250 @@ export namespace Prisma {
 
 
   /**
+   * Model Work
+   */
+
+  export type AggregateWork = {
+    _count: WorkCountAggregateOutputType | null
+    _avg: WorkAvgAggregateOutputType | null
+    _sum: WorkSumAggregateOutputType | null
+    _min: WorkMinAggregateOutputType | null
+    _max: WorkMaxAggregateOutputType | null
+  }
+
+  export type WorkAvgAggregateOutputType = {
+    year: number | null
+  }
+
+  export type WorkSumAggregateOutputType = {
+    year: number | null
+  }
+
+  export type WorkMinAggregateOutputType = {
+    id: string | null
+    title: string | null
+    titleEn: string | null
+    author: string | null
+    country: string | null
+    flag: string | null
+    continent: string | null
+    era: string | null
+    excerpt: string | null
+    gradient: string | null
+    year: number | null
+    featured: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type WorkMaxAggregateOutputType = {
+    id: string | null
+    title: string | null
+    titleEn: string | null
+    author: string | null
+    country: string | null
+    flag: string | null
+    continent: string | null
+    era: string | null
+    excerpt: string | null
+    gradient: string | null
+    year: number | null
+    featured: boolean | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type WorkCountAggregateOutputType = {
+    id: number
+    title: number
+    titleEn: number
+    author: number
+    country: number
+    flag: number
+    continent: number
+    era: number
+    genres: number
+    themes: number
+    excerpt: number
+    gradient: number
+    year: number
+    featured: number
+    createdAt: number
+    updatedAt: number
+    _all: number
+  }
+
+
+  export type WorkAvgAggregateInputType = {
+    year?: true
+  }
+
+  export type WorkSumAggregateInputType = {
+    year?: true
+  }
+
+  export type WorkMinAggregateInputType = {
+    id?: true
+    title?: true
+    titleEn?: true
+    author?: true
+    country?: true
+    flag?: true
+    continent?: true
+    era?: true
+    excerpt?: true
+    gradient?: true
+    year?: true
+    featured?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type WorkMaxAggregateInputType = {
+    id?: true
+    title?: true
+    titleEn?: true
+    author?: true
+    country?: true
+    flag?: true
+    continent?: true
+    era?: true
+    excerpt?: true
+    gradient?: true
+    year?: true
+    featured?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type WorkCountAggregateInputType = {
+    id?: true
+    title?: true
+    titleEn?: true
+    author?: true
+    country?: true
+    flag?: true
+    continent?: true
+    era?: true
+    genres?: true
+    themes?: true
+    excerpt?: true
+    gradient?: true
+    year?: true
+    featured?: true
+    createdAt?: true
+    updatedAt?: true
+    _all?: true
+  }
+
+  export type WorkAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Work to aggregate.
+     */
+    where?: WorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Works to fetch.
+     */
+    orderBy?: WorkOrderByWithRelationInput | WorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: WorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Works from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Works.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned Works
+    **/
+    _count?: true | WorkCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: WorkAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: WorkSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: WorkMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: WorkMaxAggregateInputType
+  }
+
+  export type GetWorkAggregateType<T extends WorkAggregateArgs> = {
+        [P in keyof T & keyof AggregateWork]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateWork[P]>
+      : GetScalarType<T[P], AggregateWork[P]>
+  }
+
+
+
+
+  export type WorkGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: WorkWhereInput
+    orderBy?: WorkOrderByWithAggregationInput | WorkOrderByWithAggregationInput[]
+    by: WorkScalarFieldEnum[] | WorkScalarFieldEnum
+    having?: WorkScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: WorkCountAggregateInputType | true
+    _avg?: WorkAvgAggregateInputType
+    _sum?: WorkSumAggregateInputType
+    _min?: WorkMinAggregateInputType
+    _max?: WorkMaxAggregateInputType
+  }
+
+  export type WorkGroupByOutputType = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag: string
+    continent: string
+    era: string
+    genres: JsonValue
+    themes: JsonValue
+    excerpt: string
+    gradient: string
+    year: number | null
+    featured: boolean
+    createdAt: Date
+    updatedAt: Date
+    _count: WorkCountAggregateOutputType | null
+    _avg: WorkAvgAggregateOutputType | null
+    _sum: WorkSumAggregateOutputType | null
+    _min: WorkMinAggregateOutputType | null
+    _max: WorkMaxAggregateOutputType | null
+  }
+
+  type GetWorkGroupByPayload<T extends WorkGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<WorkGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof WorkGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], WorkGroupByOutputType[P]>
+            : GetScalarType<T[P], WorkGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type WorkSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    title?: boolean
+    titleEn?: boolean
+    author?: boolean
+    country?: boolean
+    flag?: boolean
+    continent?: boolean
+    era?: boolean
+    genres?: boolean
+    themes?: boolean
+    excerpt?: boolean
+    gradient?: boolean
+    year?: boolean
+    featured?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    detail?: boolean | Work$detailArgs<ExtArgs>
+    characters?: boolean | Work$charactersArgs<ExtArgs>
+    bgImage?: boolean | Work$bgImageArgs<ExtArgs>
+    awardWinners?: boolean | Work$awardWinnersArgs<ExtArgs>
+    _count?: boolean | WorkCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["work"]>
+
+  export type WorkSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    title?: boolean
+    titleEn?: boolean
+    author?: boolean
+    country?: boolean
+    flag?: boolean
+    continent?: boolean
+    era?: boolean
+    genres?: boolean
+    themes?: boolean
+    excerpt?: boolean
+    gradient?: boolean
+    year?: boolean
+    featured?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }, ExtArgs["result"]["work"]>
+
+  export type WorkSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    title?: boolean
+    titleEn?: boolean
+    author?: boolean
+    country?: boolean
+    flag?: boolean
+    continent?: boolean
+    era?: boolean
+    genres?: boolean
+    themes?: boolean
+    excerpt?: boolean
+    gradient?: boolean
+    year?: boolean
+    featured?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }, ExtArgs["result"]["work"]>
+
+  export type WorkSelectScalar = {
+    id?: boolean
+    title?: boolean
+    titleEn?: boolean
+    author?: boolean
+    country?: boolean
+    flag?: boolean
+    continent?: boolean
+    era?: boolean
+    genres?: boolean
+    themes?: boolean
+    excerpt?: boolean
+    gradient?: boolean
+    year?: boolean
+    featured?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }
+
+  export type WorkOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "titleEn" | "author" | "country" | "flag" | "continent" | "era" | "genres" | "themes" | "excerpt" | "gradient" | "year" | "featured" | "createdAt" | "updatedAt", ExtArgs["result"]["work"]>
+  export type WorkInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    detail?: boolean | Work$detailArgs<ExtArgs>
+    characters?: boolean | Work$charactersArgs<ExtArgs>
+    bgImage?: boolean | Work$bgImageArgs<ExtArgs>
+    awardWinners?: boolean | Work$awardWinnersArgs<ExtArgs>
+    _count?: boolean | WorkCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type WorkIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type WorkIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $WorkPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Work"
+    objects: {
+      detail: Prisma.$WorkDetailPayload<ExtArgs> | null
+      characters: Prisma.$WorkCharacterPayload<ExtArgs>[]
+      bgImage: Prisma.$BgImagePayload<ExtArgs> | null
+      awardWinners: Prisma.$AwardWinnerPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      title: string
+      titleEn: string
+      author: string
+      country: string
+      flag: string
+      continent: string
+      era: string
+      genres: Prisma.JsonValue
+      themes: Prisma.JsonValue
+      excerpt: string
+      gradient: string
+      year: number | null
+      featured: boolean
+      createdAt: Date
+      updatedAt: Date
+    }, ExtArgs["result"]["work"]>
+    composites: {}
+  }
+
+  type WorkGetPayload<S extends boolean | null | undefined | WorkDefaultArgs> = $Result.GetResult<Prisma.$WorkPayload, S>
+
+  type WorkCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<WorkFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: WorkCountAggregateInputType | true
+    }
+
+  export interface WorkDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Work'], meta: { name: 'Work' } }
+    /**
+     * Find zero or one Work that matches the filter.
+     * @param {WorkFindUniqueArgs} args - Arguments to find a Work
+     * @example
+     * // Get one Work
+     * const work = await prisma.work.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends WorkFindUniqueArgs>(args: SelectSubset<T, WorkFindUniqueArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Work that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {WorkFindUniqueOrThrowArgs} args - Arguments to find a Work
+     * @example
+     * // Get one Work
+     * const work = await prisma.work.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends WorkFindUniqueOrThrowArgs>(args: SelectSubset<T, WorkFindUniqueOrThrowArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Work that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkFindFirstArgs} args - Arguments to find a Work
+     * @example
+     * // Get one Work
+     * const work = await prisma.work.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends WorkFindFirstArgs>(args?: SelectSubset<T, WorkFindFirstArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Work that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkFindFirstOrThrowArgs} args - Arguments to find a Work
+     * @example
+     * // Get one Work
+     * const work = await prisma.work.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends WorkFindFirstOrThrowArgs>(args?: SelectSubset<T, WorkFindFirstOrThrowArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Works that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Works
+     * const works = await prisma.work.findMany()
+     * 
+     * // Get first 10 Works
+     * const works = await prisma.work.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const workWithIdOnly = await prisma.work.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends WorkFindManyArgs>(args?: SelectSubset<T, WorkFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Work.
+     * @param {WorkCreateArgs} args - Arguments to create a Work.
+     * @example
+     * // Create one Work
+     * const Work = await prisma.work.create({
+     *   data: {
+     *     // ... data to create a Work
+     *   }
+     * })
+     * 
+     */
+    create<T extends WorkCreateArgs>(args: SelectSubset<T, WorkCreateArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Works.
+     * @param {WorkCreateManyArgs} args - Arguments to create many Works.
+     * @example
+     * // Create many Works
+     * const work = await prisma.work.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends WorkCreateManyArgs>(args?: SelectSubset<T, WorkCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Works and returns the data saved in the database.
+     * @param {WorkCreateManyAndReturnArgs} args - Arguments to create many Works.
+     * @example
+     * // Create many Works
+     * const work = await prisma.work.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Works and only return the `id`
+     * const workWithIdOnly = await prisma.work.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends WorkCreateManyAndReturnArgs>(args?: SelectSubset<T, WorkCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Work.
+     * @param {WorkDeleteArgs} args - Arguments to delete one Work.
+     * @example
+     * // Delete one Work
+     * const Work = await prisma.work.delete({
+     *   where: {
+     *     // ... filter to delete one Work
+     *   }
+     * })
+     * 
+     */
+    delete<T extends WorkDeleteArgs>(args: SelectSubset<T, WorkDeleteArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Work.
+     * @param {WorkUpdateArgs} args - Arguments to update one Work.
+     * @example
+     * // Update one Work
+     * const work = await prisma.work.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends WorkUpdateArgs>(args: SelectSubset<T, WorkUpdateArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Works.
+     * @param {WorkDeleteManyArgs} args - Arguments to filter Works to delete.
+     * @example
+     * // Delete a few Works
+     * const { count } = await prisma.work.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends WorkDeleteManyArgs>(args?: SelectSubset<T, WorkDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Works.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Works
+     * const work = await prisma.work.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends WorkUpdateManyArgs>(args: SelectSubset<T, WorkUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Works and returns the data updated in the database.
+     * @param {WorkUpdateManyAndReturnArgs} args - Arguments to update many Works.
+     * @example
+     * // Update many Works
+     * const work = await prisma.work.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Works and only return the `id`
+     * const workWithIdOnly = await prisma.work.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends WorkUpdateManyAndReturnArgs>(args: SelectSubset<T, WorkUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Work.
+     * @param {WorkUpsertArgs} args - Arguments to update or create a Work.
+     * @example
+     * // Update or create a Work
+     * const work = await prisma.work.upsert({
+     *   create: {
+     *     // ... data to create a Work
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Work we want to update
+     *   }
+     * })
+     */
+    upsert<T extends WorkUpsertArgs>(args: SelectSubset<T, WorkUpsertArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Works.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCountArgs} args - Arguments to filter Works to count.
+     * @example
+     * // Count the number of Works
+     * const count = await prisma.work.count({
+     *   where: {
+     *     // ... the filter for the Works we want to count
+     *   }
+     * })
+    **/
+    count<T extends WorkCountArgs>(
+      args?: Subset<T, WorkCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], WorkCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Work.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends WorkAggregateArgs>(args: Subset<T, WorkAggregateArgs>): Prisma.PrismaPromise<GetWorkAggregateType<T>>
+
+    /**
+     * Group by Work.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends WorkGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: WorkGroupByArgs['orderBy'] }
+        : { orderBy?: WorkGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, WorkGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetWorkGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the Work model
+   */
+  readonly fields: WorkFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for Work.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__WorkClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    detail<T extends Work$detailArgs<ExtArgs> = {}>(args?: Subset<T, Work$detailArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    characters<T extends Work$charactersArgs<ExtArgs> = {}>(args?: Subset<T, Work$charactersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    bgImage<T extends Work$bgImageArgs<ExtArgs> = {}>(args?: Subset<T, Work$bgImageArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+    awardWinners<T extends Work$awardWinnersArgs<ExtArgs> = {}>(args?: Subset<T, Work$awardWinnersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the Work model
+   */
+  interface WorkFieldRefs {
+    readonly id: FieldRef<"Work", 'String'>
+    readonly title: FieldRef<"Work", 'String'>
+    readonly titleEn: FieldRef<"Work", 'String'>
+    readonly author: FieldRef<"Work", 'String'>
+    readonly country: FieldRef<"Work", 'String'>
+    readonly flag: FieldRef<"Work", 'String'>
+    readonly continent: FieldRef<"Work", 'String'>
+    readonly era: FieldRef<"Work", 'String'>
+    readonly genres: FieldRef<"Work", 'Json'>
+    readonly themes: FieldRef<"Work", 'Json'>
+    readonly excerpt: FieldRef<"Work", 'String'>
+    readonly gradient: FieldRef<"Work", 'String'>
+    readonly year: FieldRef<"Work", 'Int'>
+    readonly featured: FieldRef<"Work", 'Boolean'>
+    readonly createdAt: FieldRef<"Work", 'DateTime'>
+    readonly updatedAt: FieldRef<"Work", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * Work findUnique
+   */
+  export type WorkFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * Filter, which Work to fetch.
+     */
+    where: WorkWhereUniqueInput
+  }
+
+  /**
+   * Work findUniqueOrThrow
+   */
+  export type WorkFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * Filter, which Work to fetch.
+     */
+    where: WorkWhereUniqueInput
+  }
+
+  /**
+   * Work findFirst
+   */
+  export type WorkFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * Filter, which Work to fetch.
+     */
+    where?: WorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Works to fetch.
+     */
+    orderBy?: WorkOrderByWithRelationInput | WorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Works.
+     */
+    cursor?: WorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Works from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Works.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Works.
+     */
+    distinct?: WorkScalarFieldEnum | WorkScalarFieldEnum[]
+  }
+
+  /**
+   * Work findFirstOrThrow
+   */
+  export type WorkFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * Filter, which Work to fetch.
+     */
+    where?: WorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Works to fetch.
+     */
+    orderBy?: WorkOrderByWithRelationInput | WorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Works.
+     */
+    cursor?: WorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Works from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Works.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Works.
+     */
+    distinct?: WorkScalarFieldEnum | WorkScalarFieldEnum[]
+  }
+
+  /**
+   * Work findMany
+   */
+  export type WorkFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * Filter, which Works to fetch.
+     */
+    where?: WorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Works to fetch.
+     */
+    orderBy?: WorkOrderByWithRelationInput | WorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing Works.
+     */
+    cursor?: WorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Works from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Works.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Works.
+     */
+    distinct?: WorkScalarFieldEnum | WorkScalarFieldEnum[]
+  }
+
+  /**
+   * Work create
+   */
+  export type WorkCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * The data needed to create a Work.
+     */
+    data: XOR<WorkCreateInput, WorkUncheckedCreateInput>
+  }
+
+  /**
+   * Work createMany
+   */
+  export type WorkCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many Works.
+     */
+    data: WorkCreateManyInput | WorkCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Work createManyAndReturn
+   */
+  export type WorkCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * The data used to create many Works.
+     */
+    data: WorkCreateManyInput | WorkCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Work update
+   */
+  export type WorkUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * The data needed to update a Work.
+     */
+    data: XOR<WorkUpdateInput, WorkUncheckedUpdateInput>
+    /**
+     * Choose, which Work to update.
+     */
+    where: WorkWhereUniqueInput
+  }
+
+  /**
+   * Work updateMany
+   */
+  export type WorkUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update Works.
+     */
+    data: XOR<WorkUpdateManyMutationInput, WorkUncheckedUpdateManyInput>
+    /**
+     * Filter which Works to update
+     */
+    where?: WorkWhereInput
+    /**
+     * Limit how many Works to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Work updateManyAndReturn
+   */
+  export type WorkUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * The data used to update Works.
+     */
+    data: XOR<WorkUpdateManyMutationInput, WorkUncheckedUpdateManyInput>
+    /**
+     * Filter which Works to update
+     */
+    where?: WorkWhereInput
+    /**
+     * Limit how many Works to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Work upsert
+   */
+  export type WorkUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * The filter to search for the Work to update in case it exists.
+     */
+    where: WorkWhereUniqueInput
+    /**
+     * In case the Work found by the `where` argument doesn't exist, create a new Work with this data.
+     */
+    create: XOR<WorkCreateInput, WorkUncheckedCreateInput>
+    /**
+     * In case the Work was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<WorkUpdateInput, WorkUncheckedUpdateInput>
+  }
+
+  /**
+   * Work delete
+   */
+  export type WorkDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+    /**
+     * Filter which Work to delete.
+     */
+    where: WorkWhereUniqueInput
+  }
+
+  /**
+   * Work deleteMany
+   */
+  export type WorkDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Works to delete
+     */
+    where?: WorkWhereInput
+    /**
+     * Limit how many Works to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * Work.detail
+   */
+  export type Work$detailArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    where?: WorkDetailWhereInput
+  }
+
+  /**
+   * Work.characters
+   */
+  export type Work$charactersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    where?: WorkCharacterWhereInput
+    orderBy?: WorkCharacterOrderByWithRelationInput | WorkCharacterOrderByWithRelationInput[]
+    cursor?: WorkCharacterWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: WorkCharacterScalarFieldEnum | WorkCharacterScalarFieldEnum[]
+  }
+
+  /**
+   * Work.bgImage
+   */
+  export type Work$bgImageArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    where?: BgImageWhereInput
+  }
+
+  /**
+   * Work.awardWinners
+   */
+  export type Work$awardWinnersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    where?: AwardWinnerWhereInput
+    orderBy?: AwardWinnerOrderByWithRelationInput | AwardWinnerOrderByWithRelationInput[]
+    cursor?: AwardWinnerWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: AwardWinnerScalarFieldEnum | AwardWinnerScalarFieldEnum[]
+  }
+
+  /**
+   * Work without action
+   */
+  export type WorkDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Work
+     */
+    select?: WorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Work
+     */
+    omit?: WorkOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model WorkDetail
+   */
+
+  export type AggregateWorkDetail = {
+    _count: WorkDetailCountAggregateOutputType | null
+    _min: WorkDetailMinAggregateOutputType | null
+    _max: WorkDetailMaxAggregateOutputType | null
+  }
+
+  export type WorkDetailMinAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    plotSummary: string | null
+    themeAnalysis: string | null
+    techniques: string | null
+    insights: string | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type WorkDetailMaxAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    plotSummary: string | null
+    themeAnalysis: string | null
+    techniques: string | null
+    insights: string | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type WorkDetailCountAggregateOutputType = {
+    id: number
+    workId: number
+    characters: number
+    plotSummary: number
+    plotNodes: number
+    themeAnalysis: number
+    techniques: number
+    excerpts: number
+    insights: number
+    sourceAttribution: number
+    createdAt: number
+    updatedAt: number
+    _all: number
+  }
+
+
+  export type WorkDetailMinAggregateInputType = {
+    id?: true
+    workId?: true
+    plotSummary?: true
+    themeAnalysis?: true
+    techniques?: true
+    insights?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type WorkDetailMaxAggregateInputType = {
+    id?: true
+    workId?: true
+    plotSummary?: true
+    themeAnalysis?: true
+    techniques?: true
+    insights?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type WorkDetailCountAggregateInputType = {
+    id?: true
+    workId?: true
+    characters?: true
+    plotSummary?: true
+    plotNodes?: true
+    themeAnalysis?: true
+    techniques?: true
+    excerpts?: true
+    insights?: true
+    sourceAttribution?: true
+    createdAt?: true
+    updatedAt?: true
+    _all?: true
+  }
+
+  export type WorkDetailAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which WorkDetail to aggregate.
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkDetails to fetch.
+     */
+    orderBy?: WorkDetailOrderByWithRelationInput | WorkDetailOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: WorkDetailWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkDetails from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkDetails.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned WorkDetails
+    **/
+    _count?: true | WorkDetailCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: WorkDetailMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: WorkDetailMaxAggregateInputType
+  }
+
+  export type GetWorkDetailAggregateType<T extends WorkDetailAggregateArgs> = {
+        [P in keyof T & keyof AggregateWorkDetail]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateWorkDetail[P]>
+      : GetScalarType<T[P], AggregateWorkDetail[P]>
+  }
+
+
+
+
+  export type WorkDetailGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: WorkDetailWhereInput
+    orderBy?: WorkDetailOrderByWithAggregationInput | WorkDetailOrderByWithAggregationInput[]
+    by: WorkDetailScalarFieldEnum[] | WorkDetailScalarFieldEnum
+    having?: WorkDetailScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: WorkDetailCountAggregateInputType | true
+    _min?: WorkDetailMinAggregateInputType
+    _max?: WorkDetailMaxAggregateInputType
+  }
+
+  export type WorkDetailGroupByOutputType = {
+    id: string
+    workId: string
+    characters: JsonValue
+    plotSummary: string
+    plotNodes: JsonValue
+    themeAnalysis: string
+    techniques: string
+    excerpts: JsonValue
+    insights: string
+    sourceAttribution: JsonValue | null
+    createdAt: Date
+    updatedAt: Date
+    _count: WorkDetailCountAggregateOutputType | null
+    _min: WorkDetailMinAggregateOutputType | null
+    _max: WorkDetailMaxAggregateOutputType | null
+  }
+
+  type GetWorkDetailGroupByPayload<T extends WorkDetailGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<WorkDetailGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof WorkDetailGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], WorkDetailGroupByOutputType[P]>
+            : GetScalarType<T[P], WorkDetailGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type WorkDetailSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    characters?: boolean
+    plotSummary?: boolean
+    plotNodes?: boolean
+    themeAnalysis?: boolean
+    techniques?: boolean
+    excerpts?: boolean
+    insights?: boolean
+    sourceAttribution?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["workDetail"]>
+
+  export type WorkDetailSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    characters?: boolean
+    plotSummary?: boolean
+    plotNodes?: boolean
+    themeAnalysis?: boolean
+    techniques?: boolean
+    excerpts?: boolean
+    insights?: boolean
+    sourceAttribution?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["workDetail"]>
+
+  export type WorkDetailSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    characters?: boolean
+    plotSummary?: boolean
+    plotNodes?: boolean
+    themeAnalysis?: boolean
+    techniques?: boolean
+    excerpts?: boolean
+    insights?: boolean
+    sourceAttribution?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["workDetail"]>
+
+  export type WorkDetailSelectScalar = {
+    id?: boolean
+    workId?: boolean
+    characters?: boolean
+    plotSummary?: boolean
+    plotNodes?: boolean
+    themeAnalysis?: boolean
+    techniques?: boolean
+    excerpts?: boolean
+    insights?: boolean
+    sourceAttribution?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }
+
+  export type WorkDetailOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "workId" | "characters" | "plotSummary" | "plotNodes" | "themeAnalysis" | "techniques" | "excerpts" | "insights" | "sourceAttribution" | "createdAt" | "updatedAt", ExtArgs["result"]["workDetail"]>
+  export type WorkDetailInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+  export type WorkDetailIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+  export type WorkDetailIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+
+  export type $WorkDetailPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "WorkDetail"
+    objects: {
+      work: Prisma.$WorkPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      workId: string
+      /**
+       * 作品内嵌人物（取自 book-data.ts 的 characters 字段）
+       */
+      characters: Prisma.JsonValue
+      plotSummary: string
+      plotNodes: Prisma.JsonValue
+      themeAnalysis: string
+      techniques: string
+      excerpts: Prisma.JsonValue
+      insights: string
+      /**
+       * 内容来源归因
+       */
+      sourceAttribution: Prisma.JsonValue | null
+      createdAt: Date
+      updatedAt: Date
+    }, ExtArgs["result"]["workDetail"]>
+    composites: {}
+  }
+
+  type WorkDetailGetPayload<S extends boolean | null | undefined | WorkDetailDefaultArgs> = $Result.GetResult<Prisma.$WorkDetailPayload, S>
+
+  type WorkDetailCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<WorkDetailFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: WorkDetailCountAggregateInputType | true
+    }
+
+  export interface WorkDetailDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['WorkDetail'], meta: { name: 'WorkDetail' } }
+    /**
+     * Find zero or one WorkDetail that matches the filter.
+     * @param {WorkDetailFindUniqueArgs} args - Arguments to find a WorkDetail
+     * @example
+     * // Get one WorkDetail
+     * const workDetail = await prisma.workDetail.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends WorkDetailFindUniqueArgs>(args: SelectSubset<T, WorkDetailFindUniqueArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one WorkDetail that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {WorkDetailFindUniqueOrThrowArgs} args - Arguments to find a WorkDetail
+     * @example
+     * // Get one WorkDetail
+     * const workDetail = await prisma.workDetail.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends WorkDetailFindUniqueOrThrowArgs>(args: SelectSubset<T, WorkDetailFindUniqueOrThrowArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first WorkDetail that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailFindFirstArgs} args - Arguments to find a WorkDetail
+     * @example
+     * // Get one WorkDetail
+     * const workDetail = await prisma.workDetail.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends WorkDetailFindFirstArgs>(args?: SelectSubset<T, WorkDetailFindFirstArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first WorkDetail that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailFindFirstOrThrowArgs} args - Arguments to find a WorkDetail
+     * @example
+     * // Get one WorkDetail
+     * const workDetail = await prisma.workDetail.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends WorkDetailFindFirstOrThrowArgs>(args?: SelectSubset<T, WorkDetailFindFirstOrThrowArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more WorkDetails that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all WorkDetails
+     * const workDetails = await prisma.workDetail.findMany()
+     * 
+     * // Get first 10 WorkDetails
+     * const workDetails = await prisma.workDetail.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const workDetailWithIdOnly = await prisma.workDetail.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends WorkDetailFindManyArgs>(args?: SelectSubset<T, WorkDetailFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a WorkDetail.
+     * @param {WorkDetailCreateArgs} args - Arguments to create a WorkDetail.
+     * @example
+     * // Create one WorkDetail
+     * const WorkDetail = await prisma.workDetail.create({
+     *   data: {
+     *     // ... data to create a WorkDetail
+     *   }
+     * })
+     * 
+     */
+    create<T extends WorkDetailCreateArgs>(args: SelectSubset<T, WorkDetailCreateArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many WorkDetails.
+     * @param {WorkDetailCreateManyArgs} args - Arguments to create many WorkDetails.
+     * @example
+     * // Create many WorkDetails
+     * const workDetail = await prisma.workDetail.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends WorkDetailCreateManyArgs>(args?: SelectSubset<T, WorkDetailCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many WorkDetails and returns the data saved in the database.
+     * @param {WorkDetailCreateManyAndReturnArgs} args - Arguments to create many WorkDetails.
+     * @example
+     * // Create many WorkDetails
+     * const workDetail = await prisma.workDetail.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many WorkDetails and only return the `id`
+     * const workDetailWithIdOnly = await prisma.workDetail.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends WorkDetailCreateManyAndReturnArgs>(args?: SelectSubset<T, WorkDetailCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a WorkDetail.
+     * @param {WorkDetailDeleteArgs} args - Arguments to delete one WorkDetail.
+     * @example
+     * // Delete one WorkDetail
+     * const WorkDetail = await prisma.workDetail.delete({
+     *   where: {
+     *     // ... filter to delete one WorkDetail
+     *   }
+     * })
+     * 
+     */
+    delete<T extends WorkDetailDeleteArgs>(args: SelectSubset<T, WorkDetailDeleteArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one WorkDetail.
+     * @param {WorkDetailUpdateArgs} args - Arguments to update one WorkDetail.
+     * @example
+     * // Update one WorkDetail
+     * const workDetail = await prisma.workDetail.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends WorkDetailUpdateArgs>(args: SelectSubset<T, WorkDetailUpdateArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more WorkDetails.
+     * @param {WorkDetailDeleteManyArgs} args - Arguments to filter WorkDetails to delete.
+     * @example
+     * // Delete a few WorkDetails
+     * const { count } = await prisma.workDetail.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends WorkDetailDeleteManyArgs>(args?: SelectSubset<T, WorkDetailDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more WorkDetails.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many WorkDetails
+     * const workDetail = await prisma.workDetail.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends WorkDetailUpdateManyArgs>(args: SelectSubset<T, WorkDetailUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more WorkDetails and returns the data updated in the database.
+     * @param {WorkDetailUpdateManyAndReturnArgs} args - Arguments to update many WorkDetails.
+     * @example
+     * // Update many WorkDetails
+     * const workDetail = await prisma.workDetail.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more WorkDetails and only return the `id`
+     * const workDetailWithIdOnly = await prisma.workDetail.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends WorkDetailUpdateManyAndReturnArgs>(args: SelectSubset<T, WorkDetailUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one WorkDetail.
+     * @param {WorkDetailUpsertArgs} args - Arguments to update or create a WorkDetail.
+     * @example
+     * // Update or create a WorkDetail
+     * const workDetail = await prisma.workDetail.upsert({
+     *   create: {
+     *     // ... data to create a WorkDetail
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the WorkDetail we want to update
+     *   }
+     * })
+     */
+    upsert<T extends WorkDetailUpsertArgs>(args: SelectSubset<T, WorkDetailUpsertArgs<ExtArgs>>): Prisma__WorkDetailClient<$Result.GetResult<Prisma.$WorkDetailPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of WorkDetails.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailCountArgs} args - Arguments to filter WorkDetails to count.
+     * @example
+     * // Count the number of WorkDetails
+     * const count = await prisma.workDetail.count({
+     *   where: {
+     *     // ... the filter for the WorkDetails we want to count
+     *   }
+     * })
+    **/
+    count<T extends WorkDetailCountArgs>(
+      args?: Subset<T, WorkDetailCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], WorkDetailCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a WorkDetail.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends WorkDetailAggregateArgs>(args: Subset<T, WorkDetailAggregateArgs>): Prisma.PrismaPromise<GetWorkDetailAggregateType<T>>
+
+    /**
+     * Group by WorkDetail.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkDetailGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends WorkDetailGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: WorkDetailGroupByArgs['orderBy'] }
+        : { orderBy?: WorkDetailGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, WorkDetailGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetWorkDetailGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the WorkDetail model
+   */
+  readonly fields: WorkDetailFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for WorkDetail.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__WorkDetailClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    work<T extends WorkDefaultArgs<ExtArgs> = {}>(args?: Subset<T, WorkDefaultArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the WorkDetail model
+   */
+  interface WorkDetailFieldRefs {
+    readonly id: FieldRef<"WorkDetail", 'String'>
+    readonly workId: FieldRef<"WorkDetail", 'String'>
+    readonly characters: FieldRef<"WorkDetail", 'Json'>
+    readonly plotSummary: FieldRef<"WorkDetail", 'String'>
+    readonly plotNodes: FieldRef<"WorkDetail", 'Json'>
+    readonly themeAnalysis: FieldRef<"WorkDetail", 'String'>
+    readonly techniques: FieldRef<"WorkDetail", 'String'>
+    readonly excerpts: FieldRef<"WorkDetail", 'Json'>
+    readonly insights: FieldRef<"WorkDetail", 'String'>
+    readonly sourceAttribution: FieldRef<"WorkDetail", 'Json'>
+    readonly createdAt: FieldRef<"WorkDetail", 'DateTime'>
+    readonly updatedAt: FieldRef<"WorkDetail", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * WorkDetail findUnique
+   */
+  export type WorkDetailFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkDetail to fetch.
+     */
+    where: WorkDetailWhereUniqueInput
+  }
+
+  /**
+   * WorkDetail findUniqueOrThrow
+   */
+  export type WorkDetailFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkDetail to fetch.
+     */
+    where: WorkDetailWhereUniqueInput
+  }
+
+  /**
+   * WorkDetail findFirst
+   */
+  export type WorkDetailFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkDetail to fetch.
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkDetails to fetch.
+     */
+    orderBy?: WorkDetailOrderByWithRelationInput | WorkDetailOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for WorkDetails.
+     */
+    cursor?: WorkDetailWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkDetails from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkDetails.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of WorkDetails.
+     */
+    distinct?: WorkDetailScalarFieldEnum | WorkDetailScalarFieldEnum[]
+  }
+
+  /**
+   * WorkDetail findFirstOrThrow
+   */
+  export type WorkDetailFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkDetail to fetch.
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkDetails to fetch.
+     */
+    orderBy?: WorkDetailOrderByWithRelationInput | WorkDetailOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for WorkDetails.
+     */
+    cursor?: WorkDetailWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkDetails from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkDetails.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of WorkDetails.
+     */
+    distinct?: WorkDetailScalarFieldEnum | WorkDetailScalarFieldEnum[]
+  }
+
+  /**
+   * WorkDetail findMany
+   */
+  export type WorkDetailFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkDetails to fetch.
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkDetails to fetch.
+     */
+    orderBy?: WorkDetailOrderByWithRelationInput | WorkDetailOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing WorkDetails.
+     */
+    cursor?: WorkDetailWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkDetails from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkDetails.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of WorkDetails.
+     */
+    distinct?: WorkDetailScalarFieldEnum | WorkDetailScalarFieldEnum[]
+  }
+
+  /**
+   * WorkDetail create
+   */
+  export type WorkDetailCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * The data needed to create a WorkDetail.
+     */
+    data: XOR<WorkDetailCreateInput, WorkDetailUncheckedCreateInput>
+  }
+
+  /**
+   * WorkDetail createMany
+   */
+  export type WorkDetailCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many WorkDetails.
+     */
+    data: WorkDetailCreateManyInput | WorkDetailCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * WorkDetail createManyAndReturn
+   */
+  export type WorkDetailCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * The data used to create many WorkDetails.
+     */
+    data: WorkDetailCreateManyInput | WorkDetailCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * WorkDetail update
+   */
+  export type WorkDetailUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * The data needed to update a WorkDetail.
+     */
+    data: XOR<WorkDetailUpdateInput, WorkDetailUncheckedUpdateInput>
+    /**
+     * Choose, which WorkDetail to update.
+     */
+    where: WorkDetailWhereUniqueInput
+  }
+
+  /**
+   * WorkDetail updateMany
+   */
+  export type WorkDetailUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update WorkDetails.
+     */
+    data: XOR<WorkDetailUpdateManyMutationInput, WorkDetailUncheckedUpdateManyInput>
+    /**
+     * Filter which WorkDetails to update
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * Limit how many WorkDetails to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * WorkDetail updateManyAndReturn
+   */
+  export type WorkDetailUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * The data used to update WorkDetails.
+     */
+    data: XOR<WorkDetailUpdateManyMutationInput, WorkDetailUncheckedUpdateManyInput>
+    /**
+     * Filter which WorkDetails to update
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * Limit how many WorkDetails to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * WorkDetail upsert
+   */
+  export type WorkDetailUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * The filter to search for the WorkDetail to update in case it exists.
+     */
+    where: WorkDetailWhereUniqueInput
+    /**
+     * In case the WorkDetail found by the `where` argument doesn't exist, create a new WorkDetail with this data.
+     */
+    create: XOR<WorkDetailCreateInput, WorkDetailUncheckedCreateInput>
+    /**
+     * In case the WorkDetail was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<WorkDetailUpdateInput, WorkDetailUncheckedUpdateInput>
+  }
+
+  /**
+   * WorkDetail delete
+   */
+  export type WorkDetailDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+    /**
+     * Filter which WorkDetail to delete.
+     */
+    where: WorkDetailWhereUniqueInput
+  }
+
+  /**
+   * WorkDetail deleteMany
+   */
+  export type WorkDetailDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which WorkDetails to delete
+     */
+    where?: WorkDetailWhereInput
+    /**
+     * Limit how many WorkDetails to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * WorkDetail without action
+   */
+  export type WorkDetailDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkDetail
+     */
+    select?: WorkDetailSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkDetail
+     */
+    omit?: WorkDetailOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkDetailInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model WorkCharacter
+   */
+
+  export type AggregateWorkCharacter = {
+    _count: WorkCharacterCountAggregateOutputType | null
+    _min: WorkCharacterMinAggregateOutputType | null
+    _max: WorkCharacterMaxAggregateOutputType | null
+  }
+
+  export type WorkCharacterMinAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    name: string | null
+    role: string | null
+    description: string | null
+  }
+
+  export type WorkCharacterMaxAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    name: string | null
+    role: string | null
+    description: string | null
+  }
+
+  export type WorkCharacterCountAggregateOutputType = {
+    id: number
+    workId: number
+    name: number
+    role: number
+    description: number
+    _all: number
+  }
+
+
+  export type WorkCharacterMinAggregateInputType = {
+    id?: true
+    workId?: true
+    name?: true
+    role?: true
+    description?: true
+  }
+
+  export type WorkCharacterMaxAggregateInputType = {
+    id?: true
+    workId?: true
+    name?: true
+    role?: true
+    description?: true
+  }
+
+  export type WorkCharacterCountAggregateInputType = {
+    id?: true
+    workId?: true
+    name?: true
+    role?: true
+    description?: true
+    _all?: true
+  }
+
+  export type WorkCharacterAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which WorkCharacter to aggregate.
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkCharacters to fetch.
+     */
+    orderBy?: WorkCharacterOrderByWithRelationInput | WorkCharacterOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: WorkCharacterWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkCharacters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkCharacters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned WorkCharacters
+    **/
+    _count?: true | WorkCharacterCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: WorkCharacterMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: WorkCharacterMaxAggregateInputType
+  }
+
+  export type GetWorkCharacterAggregateType<T extends WorkCharacterAggregateArgs> = {
+        [P in keyof T & keyof AggregateWorkCharacter]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateWorkCharacter[P]>
+      : GetScalarType<T[P], AggregateWorkCharacter[P]>
+  }
+
+
+
+
+  export type WorkCharacterGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: WorkCharacterWhereInput
+    orderBy?: WorkCharacterOrderByWithAggregationInput | WorkCharacterOrderByWithAggregationInput[]
+    by: WorkCharacterScalarFieldEnum[] | WorkCharacterScalarFieldEnum
+    having?: WorkCharacterScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: WorkCharacterCountAggregateInputType | true
+    _min?: WorkCharacterMinAggregateInputType
+    _max?: WorkCharacterMaxAggregateInputType
+  }
+
+  export type WorkCharacterGroupByOutputType = {
+    id: string
+    workId: string
+    name: string
+    role: string
+    description: string
+    _count: WorkCharacterCountAggregateOutputType | null
+    _min: WorkCharacterMinAggregateOutputType | null
+    _max: WorkCharacterMaxAggregateOutputType | null
+  }
+
+  type GetWorkCharacterGroupByPayload<T extends WorkCharacterGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<WorkCharacterGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof WorkCharacterGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], WorkCharacterGroupByOutputType[P]>
+            : GetScalarType<T[P], WorkCharacterGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type WorkCharacterSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    name?: boolean
+    role?: boolean
+    description?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["workCharacter"]>
+
+  export type WorkCharacterSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    name?: boolean
+    role?: boolean
+    description?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["workCharacter"]>
+
+  export type WorkCharacterSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    name?: boolean
+    role?: boolean
+    description?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["workCharacter"]>
+
+  export type WorkCharacterSelectScalar = {
+    id?: boolean
+    workId?: boolean
+    name?: boolean
+    role?: boolean
+    description?: boolean
+  }
+
+  export type WorkCharacterOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "workId" | "name" | "role" | "description", ExtArgs["result"]["workCharacter"]>
+  export type WorkCharacterInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+  export type WorkCharacterIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+  export type WorkCharacterIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+
+  export type $WorkCharacterPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "WorkCharacter"
+    objects: {
+      work: Prisma.$WorkPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      workId: string
+      name: string
+      role: string
+      description: string
+    }, ExtArgs["result"]["workCharacter"]>
+    composites: {}
+  }
+
+  type WorkCharacterGetPayload<S extends boolean | null | undefined | WorkCharacterDefaultArgs> = $Result.GetResult<Prisma.$WorkCharacterPayload, S>
+
+  type WorkCharacterCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<WorkCharacterFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: WorkCharacterCountAggregateInputType | true
+    }
+
+  export interface WorkCharacterDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['WorkCharacter'], meta: { name: 'WorkCharacter' } }
+    /**
+     * Find zero or one WorkCharacter that matches the filter.
+     * @param {WorkCharacterFindUniqueArgs} args - Arguments to find a WorkCharacter
+     * @example
+     * // Get one WorkCharacter
+     * const workCharacter = await prisma.workCharacter.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends WorkCharacterFindUniqueArgs>(args: SelectSubset<T, WorkCharacterFindUniqueArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one WorkCharacter that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {WorkCharacterFindUniqueOrThrowArgs} args - Arguments to find a WorkCharacter
+     * @example
+     * // Get one WorkCharacter
+     * const workCharacter = await prisma.workCharacter.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends WorkCharacterFindUniqueOrThrowArgs>(args: SelectSubset<T, WorkCharacterFindUniqueOrThrowArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first WorkCharacter that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterFindFirstArgs} args - Arguments to find a WorkCharacter
+     * @example
+     * // Get one WorkCharacter
+     * const workCharacter = await prisma.workCharacter.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends WorkCharacterFindFirstArgs>(args?: SelectSubset<T, WorkCharacterFindFirstArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first WorkCharacter that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterFindFirstOrThrowArgs} args - Arguments to find a WorkCharacter
+     * @example
+     * // Get one WorkCharacter
+     * const workCharacter = await prisma.workCharacter.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends WorkCharacterFindFirstOrThrowArgs>(args?: SelectSubset<T, WorkCharacterFindFirstOrThrowArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more WorkCharacters that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all WorkCharacters
+     * const workCharacters = await prisma.workCharacter.findMany()
+     * 
+     * // Get first 10 WorkCharacters
+     * const workCharacters = await prisma.workCharacter.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const workCharacterWithIdOnly = await prisma.workCharacter.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends WorkCharacterFindManyArgs>(args?: SelectSubset<T, WorkCharacterFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a WorkCharacter.
+     * @param {WorkCharacterCreateArgs} args - Arguments to create a WorkCharacter.
+     * @example
+     * // Create one WorkCharacter
+     * const WorkCharacter = await prisma.workCharacter.create({
+     *   data: {
+     *     // ... data to create a WorkCharacter
+     *   }
+     * })
+     * 
+     */
+    create<T extends WorkCharacterCreateArgs>(args: SelectSubset<T, WorkCharacterCreateArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many WorkCharacters.
+     * @param {WorkCharacterCreateManyArgs} args - Arguments to create many WorkCharacters.
+     * @example
+     * // Create many WorkCharacters
+     * const workCharacter = await prisma.workCharacter.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends WorkCharacterCreateManyArgs>(args?: SelectSubset<T, WorkCharacterCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many WorkCharacters and returns the data saved in the database.
+     * @param {WorkCharacterCreateManyAndReturnArgs} args - Arguments to create many WorkCharacters.
+     * @example
+     * // Create many WorkCharacters
+     * const workCharacter = await prisma.workCharacter.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many WorkCharacters and only return the `id`
+     * const workCharacterWithIdOnly = await prisma.workCharacter.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends WorkCharacterCreateManyAndReturnArgs>(args?: SelectSubset<T, WorkCharacterCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a WorkCharacter.
+     * @param {WorkCharacterDeleteArgs} args - Arguments to delete one WorkCharacter.
+     * @example
+     * // Delete one WorkCharacter
+     * const WorkCharacter = await prisma.workCharacter.delete({
+     *   where: {
+     *     // ... filter to delete one WorkCharacter
+     *   }
+     * })
+     * 
+     */
+    delete<T extends WorkCharacterDeleteArgs>(args: SelectSubset<T, WorkCharacterDeleteArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one WorkCharacter.
+     * @param {WorkCharacterUpdateArgs} args - Arguments to update one WorkCharacter.
+     * @example
+     * // Update one WorkCharacter
+     * const workCharacter = await prisma.workCharacter.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends WorkCharacterUpdateArgs>(args: SelectSubset<T, WorkCharacterUpdateArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more WorkCharacters.
+     * @param {WorkCharacterDeleteManyArgs} args - Arguments to filter WorkCharacters to delete.
+     * @example
+     * // Delete a few WorkCharacters
+     * const { count } = await prisma.workCharacter.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends WorkCharacterDeleteManyArgs>(args?: SelectSubset<T, WorkCharacterDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more WorkCharacters.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many WorkCharacters
+     * const workCharacter = await prisma.workCharacter.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends WorkCharacterUpdateManyArgs>(args: SelectSubset<T, WorkCharacterUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more WorkCharacters and returns the data updated in the database.
+     * @param {WorkCharacterUpdateManyAndReturnArgs} args - Arguments to update many WorkCharacters.
+     * @example
+     * // Update many WorkCharacters
+     * const workCharacter = await prisma.workCharacter.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more WorkCharacters and only return the `id`
+     * const workCharacterWithIdOnly = await prisma.workCharacter.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends WorkCharacterUpdateManyAndReturnArgs>(args: SelectSubset<T, WorkCharacterUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one WorkCharacter.
+     * @param {WorkCharacterUpsertArgs} args - Arguments to update or create a WorkCharacter.
+     * @example
+     * // Update or create a WorkCharacter
+     * const workCharacter = await prisma.workCharacter.upsert({
+     *   create: {
+     *     // ... data to create a WorkCharacter
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the WorkCharacter we want to update
+     *   }
+     * })
+     */
+    upsert<T extends WorkCharacterUpsertArgs>(args: SelectSubset<T, WorkCharacterUpsertArgs<ExtArgs>>): Prisma__WorkCharacterClient<$Result.GetResult<Prisma.$WorkCharacterPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of WorkCharacters.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterCountArgs} args - Arguments to filter WorkCharacters to count.
+     * @example
+     * // Count the number of WorkCharacters
+     * const count = await prisma.workCharacter.count({
+     *   where: {
+     *     // ... the filter for the WorkCharacters we want to count
+     *   }
+     * })
+    **/
+    count<T extends WorkCharacterCountArgs>(
+      args?: Subset<T, WorkCharacterCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], WorkCharacterCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a WorkCharacter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends WorkCharacterAggregateArgs>(args: Subset<T, WorkCharacterAggregateArgs>): Prisma.PrismaPromise<GetWorkCharacterAggregateType<T>>
+
+    /**
+     * Group by WorkCharacter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {WorkCharacterGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends WorkCharacterGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: WorkCharacterGroupByArgs['orderBy'] }
+        : { orderBy?: WorkCharacterGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, WorkCharacterGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetWorkCharacterGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the WorkCharacter model
+   */
+  readonly fields: WorkCharacterFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for WorkCharacter.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__WorkCharacterClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    work<T extends WorkDefaultArgs<ExtArgs> = {}>(args?: Subset<T, WorkDefaultArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the WorkCharacter model
+   */
+  interface WorkCharacterFieldRefs {
+    readonly id: FieldRef<"WorkCharacter", 'String'>
+    readonly workId: FieldRef<"WorkCharacter", 'String'>
+    readonly name: FieldRef<"WorkCharacter", 'String'>
+    readonly role: FieldRef<"WorkCharacter", 'String'>
+    readonly description: FieldRef<"WorkCharacter", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * WorkCharacter findUnique
+   */
+  export type WorkCharacterFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkCharacter to fetch.
+     */
+    where: WorkCharacterWhereUniqueInput
+  }
+
+  /**
+   * WorkCharacter findUniqueOrThrow
+   */
+  export type WorkCharacterFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkCharacter to fetch.
+     */
+    where: WorkCharacterWhereUniqueInput
+  }
+
+  /**
+   * WorkCharacter findFirst
+   */
+  export type WorkCharacterFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkCharacter to fetch.
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkCharacters to fetch.
+     */
+    orderBy?: WorkCharacterOrderByWithRelationInput | WorkCharacterOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for WorkCharacters.
+     */
+    cursor?: WorkCharacterWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkCharacters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkCharacters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of WorkCharacters.
+     */
+    distinct?: WorkCharacterScalarFieldEnum | WorkCharacterScalarFieldEnum[]
+  }
+
+  /**
+   * WorkCharacter findFirstOrThrow
+   */
+  export type WorkCharacterFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkCharacter to fetch.
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkCharacters to fetch.
+     */
+    orderBy?: WorkCharacterOrderByWithRelationInput | WorkCharacterOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for WorkCharacters.
+     */
+    cursor?: WorkCharacterWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkCharacters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkCharacters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of WorkCharacters.
+     */
+    distinct?: WorkCharacterScalarFieldEnum | WorkCharacterScalarFieldEnum[]
+  }
+
+  /**
+   * WorkCharacter findMany
+   */
+  export type WorkCharacterFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * Filter, which WorkCharacters to fetch.
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of WorkCharacters to fetch.
+     */
+    orderBy?: WorkCharacterOrderByWithRelationInput | WorkCharacterOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing WorkCharacters.
+     */
+    cursor?: WorkCharacterWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` WorkCharacters from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` WorkCharacters.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of WorkCharacters.
+     */
+    distinct?: WorkCharacterScalarFieldEnum | WorkCharacterScalarFieldEnum[]
+  }
+
+  /**
+   * WorkCharacter create
+   */
+  export type WorkCharacterCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * The data needed to create a WorkCharacter.
+     */
+    data: XOR<WorkCharacterCreateInput, WorkCharacterUncheckedCreateInput>
+  }
+
+  /**
+   * WorkCharacter createMany
+   */
+  export type WorkCharacterCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many WorkCharacters.
+     */
+    data: WorkCharacterCreateManyInput | WorkCharacterCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * WorkCharacter createManyAndReturn
+   */
+  export type WorkCharacterCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * The data used to create many WorkCharacters.
+     */
+    data: WorkCharacterCreateManyInput | WorkCharacterCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * WorkCharacter update
+   */
+  export type WorkCharacterUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * The data needed to update a WorkCharacter.
+     */
+    data: XOR<WorkCharacterUpdateInput, WorkCharacterUncheckedUpdateInput>
+    /**
+     * Choose, which WorkCharacter to update.
+     */
+    where: WorkCharacterWhereUniqueInput
+  }
+
+  /**
+   * WorkCharacter updateMany
+   */
+  export type WorkCharacterUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update WorkCharacters.
+     */
+    data: XOR<WorkCharacterUpdateManyMutationInput, WorkCharacterUncheckedUpdateManyInput>
+    /**
+     * Filter which WorkCharacters to update
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * Limit how many WorkCharacters to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * WorkCharacter updateManyAndReturn
+   */
+  export type WorkCharacterUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * The data used to update WorkCharacters.
+     */
+    data: XOR<WorkCharacterUpdateManyMutationInput, WorkCharacterUncheckedUpdateManyInput>
+    /**
+     * Filter which WorkCharacters to update
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * Limit how many WorkCharacters to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * WorkCharacter upsert
+   */
+  export type WorkCharacterUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * The filter to search for the WorkCharacter to update in case it exists.
+     */
+    where: WorkCharacterWhereUniqueInput
+    /**
+     * In case the WorkCharacter found by the `where` argument doesn't exist, create a new WorkCharacter with this data.
+     */
+    create: XOR<WorkCharacterCreateInput, WorkCharacterUncheckedCreateInput>
+    /**
+     * In case the WorkCharacter was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<WorkCharacterUpdateInput, WorkCharacterUncheckedUpdateInput>
+  }
+
+  /**
+   * WorkCharacter delete
+   */
+  export type WorkCharacterDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+    /**
+     * Filter which WorkCharacter to delete.
+     */
+    where: WorkCharacterWhereUniqueInput
+  }
+
+  /**
+   * WorkCharacter deleteMany
+   */
+  export type WorkCharacterDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which WorkCharacters to delete
+     */
+    where?: WorkCharacterWhereInput
+    /**
+     * Limit how many WorkCharacters to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * WorkCharacter without action
+   */
+  export type WorkCharacterDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the WorkCharacter
+     */
+    select?: WorkCharacterSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the WorkCharacter
+     */
+    omit?: WorkCharacterOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: WorkCharacterInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model BgImage
+   */
+
+  export type AggregateBgImage = {
+    _count: BgImageCountAggregateOutputType | null
+    _min: BgImageMinAggregateOutputType | null
+    _max: BgImageMaxAggregateOutputType | null
+  }
+
+  export type BgImageMinAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    url: string | null
+    status: string | null
+    source: string | null
+    photographer: string | null
+    photographerUrl: string | null
+    searchQuery: string | null
+    fetchedAt: Date | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type BgImageMaxAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    url: string | null
+    status: string | null
+    source: string | null
+    photographer: string | null
+    photographerUrl: string | null
+    searchQuery: string | null
+    fetchedAt: Date | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type BgImageCountAggregateOutputType = {
+    id: number
+    workId: number
+    url: number
+    status: number
+    source: number
+    photographer: number
+    photographerUrl: number
+    searchQuery: number
+    fetchedAt: number
+    createdAt: number
+    updatedAt: number
+    _all: number
+  }
+
+
+  export type BgImageMinAggregateInputType = {
+    id?: true
+    workId?: true
+    url?: true
+    status?: true
+    source?: true
+    photographer?: true
+    photographerUrl?: true
+    searchQuery?: true
+    fetchedAt?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type BgImageMaxAggregateInputType = {
+    id?: true
+    workId?: true
+    url?: true
+    status?: true
+    source?: true
+    photographer?: true
+    photographerUrl?: true
+    searchQuery?: true
+    fetchedAt?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type BgImageCountAggregateInputType = {
+    id?: true
+    workId?: true
+    url?: true
+    status?: true
+    source?: true
+    photographer?: true
+    photographerUrl?: true
+    searchQuery?: true
+    fetchedAt?: true
+    createdAt?: true
+    updatedAt?: true
+    _all?: true
+  }
+
+  export type BgImageAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which BgImage to aggregate.
+     */
+    where?: BgImageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of BgImages to fetch.
+     */
+    orderBy?: BgImageOrderByWithRelationInput | BgImageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: BgImageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` BgImages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` BgImages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned BgImages
+    **/
+    _count?: true | BgImageCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: BgImageMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: BgImageMaxAggregateInputType
+  }
+
+  export type GetBgImageAggregateType<T extends BgImageAggregateArgs> = {
+        [P in keyof T & keyof AggregateBgImage]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateBgImage[P]>
+      : GetScalarType<T[P], AggregateBgImage[P]>
+  }
+
+
+
+
+  export type BgImageGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: BgImageWhereInput
+    orderBy?: BgImageOrderByWithAggregationInput | BgImageOrderByWithAggregationInput[]
+    by: BgImageScalarFieldEnum[] | BgImageScalarFieldEnum
+    having?: BgImageScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: BgImageCountAggregateInputType | true
+    _min?: BgImageMinAggregateInputType
+    _max?: BgImageMaxAggregateInputType
+  }
+
+  export type BgImageGroupByOutputType = {
+    id: string
+    workId: string
+    url: string
+    status: string
+    source: string
+    photographer: string
+    photographerUrl: string
+    searchQuery: string
+    fetchedAt: Date | null
+    createdAt: Date
+    updatedAt: Date
+    _count: BgImageCountAggregateOutputType | null
+    _min: BgImageMinAggregateOutputType | null
+    _max: BgImageMaxAggregateOutputType | null
+  }
+
+  type GetBgImageGroupByPayload<T extends BgImageGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<BgImageGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof BgImageGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], BgImageGroupByOutputType[P]>
+            : GetScalarType<T[P], BgImageGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type BgImageSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    url?: boolean
+    status?: boolean
+    source?: boolean
+    photographer?: boolean
+    photographerUrl?: boolean
+    searchQuery?: boolean
+    fetchedAt?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["bgImage"]>
+
+  export type BgImageSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    url?: boolean
+    status?: boolean
+    source?: boolean
+    photographer?: boolean
+    photographerUrl?: boolean
+    searchQuery?: boolean
+    fetchedAt?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["bgImage"]>
+
+  export type BgImageSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    url?: boolean
+    status?: boolean
+    source?: boolean
+    photographer?: boolean
+    photographerUrl?: boolean
+    searchQuery?: boolean
+    fetchedAt?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["bgImage"]>
+
+  export type BgImageSelectScalar = {
+    id?: boolean
+    workId?: boolean
+    url?: boolean
+    status?: boolean
+    source?: boolean
+    photographer?: boolean
+    photographerUrl?: boolean
+    searchQuery?: boolean
+    fetchedAt?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }
+
+  export type BgImageOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "workId" | "url" | "status" | "source" | "photographer" | "photographerUrl" | "searchQuery" | "fetchedAt" | "createdAt" | "updatedAt", ExtArgs["result"]["bgImage"]>
+  export type BgImageInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+  export type BgImageIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+  export type BgImageIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+  }
+
+  export type $BgImagePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "BgImage"
+    objects: {
+      work: Prisma.$WorkPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      workId: string
+      url: string
+      status: string
+      source: string
+      photographer: string
+      photographerUrl: string
+      searchQuery: string
+      fetchedAt: Date | null
+      createdAt: Date
+      updatedAt: Date
+    }, ExtArgs["result"]["bgImage"]>
+    composites: {}
+  }
+
+  type BgImageGetPayload<S extends boolean | null | undefined | BgImageDefaultArgs> = $Result.GetResult<Prisma.$BgImagePayload, S>
+
+  type BgImageCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<BgImageFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: BgImageCountAggregateInputType | true
+    }
+
+  export interface BgImageDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['BgImage'], meta: { name: 'BgImage' } }
+    /**
+     * Find zero or one BgImage that matches the filter.
+     * @param {BgImageFindUniqueArgs} args - Arguments to find a BgImage
+     * @example
+     * // Get one BgImage
+     * const bgImage = await prisma.bgImage.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends BgImageFindUniqueArgs>(args: SelectSubset<T, BgImageFindUniqueArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one BgImage that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {BgImageFindUniqueOrThrowArgs} args - Arguments to find a BgImage
+     * @example
+     * // Get one BgImage
+     * const bgImage = await prisma.bgImage.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends BgImageFindUniqueOrThrowArgs>(args: SelectSubset<T, BgImageFindUniqueOrThrowArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first BgImage that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageFindFirstArgs} args - Arguments to find a BgImage
+     * @example
+     * // Get one BgImage
+     * const bgImage = await prisma.bgImage.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends BgImageFindFirstArgs>(args?: SelectSubset<T, BgImageFindFirstArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first BgImage that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageFindFirstOrThrowArgs} args - Arguments to find a BgImage
+     * @example
+     * // Get one BgImage
+     * const bgImage = await prisma.bgImage.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends BgImageFindFirstOrThrowArgs>(args?: SelectSubset<T, BgImageFindFirstOrThrowArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more BgImages that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all BgImages
+     * const bgImages = await prisma.bgImage.findMany()
+     * 
+     * // Get first 10 BgImages
+     * const bgImages = await prisma.bgImage.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const bgImageWithIdOnly = await prisma.bgImage.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends BgImageFindManyArgs>(args?: SelectSubset<T, BgImageFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a BgImage.
+     * @param {BgImageCreateArgs} args - Arguments to create a BgImage.
+     * @example
+     * // Create one BgImage
+     * const BgImage = await prisma.bgImage.create({
+     *   data: {
+     *     // ... data to create a BgImage
+     *   }
+     * })
+     * 
+     */
+    create<T extends BgImageCreateArgs>(args: SelectSubset<T, BgImageCreateArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many BgImages.
+     * @param {BgImageCreateManyArgs} args - Arguments to create many BgImages.
+     * @example
+     * // Create many BgImages
+     * const bgImage = await prisma.bgImage.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends BgImageCreateManyArgs>(args?: SelectSubset<T, BgImageCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many BgImages and returns the data saved in the database.
+     * @param {BgImageCreateManyAndReturnArgs} args - Arguments to create many BgImages.
+     * @example
+     * // Create many BgImages
+     * const bgImage = await prisma.bgImage.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many BgImages and only return the `id`
+     * const bgImageWithIdOnly = await prisma.bgImage.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends BgImageCreateManyAndReturnArgs>(args?: SelectSubset<T, BgImageCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a BgImage.
+     * @param {BgImageDeleteArgs} args - Arguments to delete one BgImage.
+     * @example
+     * // Delete one BgImage
+     * const BgImage = await prisma.bgImage.delete({
+     *   where: {
+     *     // ... filter to delete one BgImage
+     *   }
+     * })
+     * 
+     */
+    delete<T extends BgImageDeleteArgs>(args: SelectSubset<T, BgImageDeleteArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one BgImage.
+     * @param {BgImageUpdateArgs} args - Arguments to update one BgImage.
+     * @example
+     * // Update one BgImage
+     * const bgImage = await prisma.bgImage.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends BgImageUpdateArgs>(args: SelectSubset<T, BgImageUpdateArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more BgImages.
+     * @param {BgImageDeleteManyArgs} args - Arguments to filter BgImages to delete.
+     * @example
+     * // Delete a few BgImages
+     * const { count } = await prisma.bgImage.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends BgImageDeleteManyArgs>(args?: SelectSubset<T, BgImageDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more BgImages.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many BgImages
+     * const bgImage = await prisma.bgImage.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends BgImageUpdateManyArgs>(args: SelectSubset<T, BgImageUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more BgImages and returns the data updated in the database.
+     * @param {BgImageUpdateManyAndReturnArgs} args - Arguments to update many BgImages.
+     * @example
+     * // Update many BgImages
+     * const bgImage = await prisma.bgImage.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more BgImages and only return the `id`
+     * const bgImageWithIdOnly = await prisma.bgImage.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends BgImageUpdateManyAndReturnArgs>(args: SelectSubset<T, BgImageUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one BgImage.
+     * @param {BgImageUpsertArgs} args - Arguments to update or create a BgImage.
+     * @example
+     * // Update or create a BgImage
+     * const bgImage = await prisma.bgImage.upsert({
+     *   create: {
+     *     // ... data to create a BgImage
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the BgImage we want to update
+     *   }
+     * })
+     */
+    upsert<T extends BgImageUpsertArgs>(args: SelectSubset<T, BgImageUpsertArgs<ExtArgs>>): Prisma__BgImageClient<$Result.GetResult<Prisma.$BgImagePayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of BgImages.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageCountArgs} args - Arguments to filter BgImages to count.
+     * @example
+     * // Count the number of BgImages
+     * const count = await prisma.bgImage.count({
+     *   where: {
+     *     // ... the filter for the BgImages we want to count
+     *   }
+     * })
+    **/
+    count<T extends BgImageCountArgs>(
+      args?: Subset<T, BgImageCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], BgImageCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a BgImage.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends BgImageAggregateArgs>(args: Subset<T, BgImageAggregateArgs>): Prisma.PrismaPromise<GetBgImageAggregateType<T>>
+
+    /**
+     * Group by BgImage.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {BgImageGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends BgImageGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: BgImageGroupByArgs['orderBy'] }
+        : { orderBy?: BgImageGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, BgImageGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetBgImageGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the BgImage model
+   */
+  readonly fields: BgImageFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for BgImage.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__BgImageClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    work<T extends WorkDefaultArgs<ExtArgs> = {}>(args?: Subset<T, WorkDefaultArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the BgImage model
+   */
+  interface BgImageFieldRefs {
+    readonly id: FieldRef<"BgImage", 'String'>
+    readonly workId: FieldRef<"BgImage", 'String'>
+    readonly url: FieldRef<"BgImage", 'String'>
+    readonly status: FieldRef<"BgImage", 'String'>
+    readonly source: FieldRef<"BgImage", 'String'>
+    readonly photographer: FieldRef<"BgImage", 'String'>
+    readonly photographerUrl: FieldRef<"BgImage", 'String'>
+    readonly searchQuery: FieldRef<"BgImage", 'String'>
+    readonly fetchedAt: FieldRef<"BgImage", 'DateTime'>
+    readonly createdAt: FieldRef<"BgImage", 'DateTime'>
+    readonly updatedAt: FieldRef<"BgImage", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * BgImage findUnique
+   */
+  export type BgImageFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * Filter, which BgImage to fetch.
+     */
+    where: BgImageWhereUniqueInput
+  }
+
+  /**
+   * BgImage findUniqueOrThrow
+   */
+  export type BgImageFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * Filter, which BgImage to fetch.
+     */
+    where: BgImageWhereUniqueInput
+  }
+
+  /**
+   * BgImage findFirst
+   */
+  export type BgImageFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * Filter, which BgImage to fetch.
+     */
+    where?: BgImageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of BgImages to fetch.
+     */
+    orderBy?: BgImageOrderByWithRelationInput | BgImageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for BgImages.
+     */
+    cursor?: BgImageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` BgImages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` BgImages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of BgImages.
+     */
+    distinct?: BgImageScalarFieldEnum | BgImageScalarFieldEnum[]
+  }
+
+  /**
+   * BgImage findFirstOrThrow
+   */
+  export type BgImageFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * Filter, which BgImage to fetch.
+     */
+    where?: BgImageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of BgImages to fetch.
+     */
+    orderBy?: BgImageOrderByWithRelationInput | BgImageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for BgImages.
+     */
+    cursor?: BgImageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` BgImages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` BgImages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of BgImages.
+     */
+    distinct?: BgImageScalarFieldEnum | BgImageScalarFieldEnum[]
+  }
+
+  /**
+   * BgImage findMany
+   */
+  export type BgImageFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * Filter, which BgImages to fetch.
+     */
+    where?: BgImageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of BgImages to fetch.
+     */
+    orderBy?: BgImageOrderByWithRelationInput | BgImageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing BgImages.
+     */
+    cursor?: BgImageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` BgImages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` BgImages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of BgImages.
+     */
+    distinct?: BgImageScalarFieldEnum | BgImageScalarFieldEnum[]
+  }
+
+  /**
+   * BgImage create
+   */
+  export type BgImageCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * The data needed to create a BgImage.
+     */
+    data: XOR<BgImageCreateInput, BgImageUncheckedCreateInput>
+  }
+
+  /**
+   * BgImage createMany
+   */
+  export type BgImageCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many BgImages.
+     */
+    data: BgImageCreateManyInput | BgImageCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * BgImage createManyAndReturn
+   */
+  export type BgImageCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * The data used to create many BgImages.
+     */
+    data: BgImageCreateManyInput | BgImageCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * BgImage update
+   */
+  export type BgImageUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * The data needed to update a BgImage.
+     */
+    data: XOR<BgImageUpdateInput, BgImageUncheckedUpdateInput>
+    /**
+     * Choose, which BgImage to update.
+     */
+    where: BgImageWhereUniqueInput
+  }
+
+  /**
+   * BgImage updateMany
+   */
+  export type BgImageUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update BgImages.
+     */
+    data: XOR<BgImageUpdateManyMutationInput, BgImageUncheckedUpdateManyInput>
+    /**
+     * Filter which BgImages to update
+     */
+    where?: BgImageWhereInput
+    /**
+     * Limit how many BgImages to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * BgImage updateManyAndReturn
+   */
+  export type BgImageUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * The data used to update BgImages.
+     */
+    data: XOR<BgImageUpdateManyMutationInput, BgImageUncheckedUpdateManyInput>
+    /**
+     * Filter which BgImages to update
+     */
+    where?: BgImageWhereInput
+    /**
+     * Limit how many BgImages to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * BgImage upsert
+   */
+  export type BgImageUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * The filter to search for the BgImage to update in case it exists.
+     */
+    where: BgImageWhereUniqueInput
+    /**
+     * In case the BgImage found by the `where` argument doesn't exist, create a new BgImage with this data.
+     */
+    create: XOR<BgImageCreateInput, BgImageUncheckedCreateInput>
+    /**
+     * In case the BgImage was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<BgImageUpdateInput, BgImageUncheckedUpdateInput>
+  }
+
+  /**
+   * BgImage delete
+   */
+  export type BgImageDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+    /**
+     * Filter which BgImage to delete.
+     */
+    where: BgImageWhereUniqueInput
+  }
+
+  /**
+   * BgImage deleteMany
+   */
+  export type BgImageDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which BgImages to delete
+     */
+    where?: BgImageWhereInput
+    /**
+     * Limit how many BgImages to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * BgImage without action
+   */
+  export type BgImageDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the BgImage
+     */
+    select?: BgImageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the BgImage
+     */
+    omit?: BgImageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: BgImageInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model Award
+   */
+
+  export type AggregateAward = {
+    _count: AwardCountAggregateOutputType | null
+    _avg: AwardAvgAggregateOutputType | null
+    _sum: AwardSumAggregateOutputType | null
+    _min: AwardMinAggregateOutputType | null
+    _max: AwardMaxAggregateOutputType | null
+  }
+
+  export type AwardAvgAggregateOutputType = {
+    established: number | null
+  }
+
+  export type AwardSumAggregateOutputType = {
+    established: number | null
+  }
+
+  export type AwardMinAggregateOutputType = {
+    slug: string | null
+    name: string | null
+    nameEn: string | null
+    description: string | null
+    established: number | null
+    country: string | null
+    flag: string | null
+    frequency: string | null
+    category: string | null
+    gradient: string | null
+    icon: string | null
+    website: string | null
+    introduction: string | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type AwardMaxAggregateOutputType = {
+    slug: string | null
+    name: string | null
+    nameEn: string | null
+    description: string | null
+    established: number | null
+    country: string | null
+    flag: string | null
+    frequency: string | null
+    category: string | null
+    gradient: string | null
+    icon: string | null
+    website: string | null
+    introduction: string | null
+    createdAt: Date | null
+    updatedAt: Date | null
+  }
+
+  export type AwardCountAggregateOutputType = {
+    slug: number
+    name: number
+    nameEn: number
+    description: number
+    established: number
+    country: number
+    flag: number
+    frequency: number
+    category: number
+    gradient: number
+    icon: number
+    website: number
+    introduction: number
+    createdAt: number
+    updatedAt: number
+    _all: number
+  }
+
+
+  export type AwardAvgAggregateInputType = {
+    established?: true
+  }
+
+  export type AwardSumAggregateInputType = {
+    established?: true
+  }
+
+  export type AwardMinAggregateInputType = {
+    slug?: true
+    name?: true
+    nameEn?: true
+    description?: true
+    established?: true
+    country?: true
+    flag?: true
+    frequency?: true
+    category?: true
+    gradient?: true
+    icon?: true
+    website?: true
+    introduction?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type AwardMaxAggregateInputType = {
+    slug?: true
+    name?: true
+    nameEn?: true
+    description?: true
+    established?: true
+    country?: true
+    flag?: true
+    frequency?: true
+    category?: true
+    gradient?: true
+    icon?: true
+    website?: true
+    introduction?: true
+    createdAt?: true
+    updatedAt?: true
+  }
+
+  export type AwardCountAggregateInputType = {
+    slug?: true
+    name?: true
+    nameEn?: true
+    description?: true
+    established?: true
+    country?: true
+    flag?: true
+    frequency?: true
+    category?: true
+    gradient?: true
+    icon?: true
+    website?: true
+    introduction?: true
+    createdAt?: true
+    updatedAt?: true
+    _all?: true
+  }
+
+  export type AwardAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Award to aggregate.
+     */
+    where?: AwardWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Awards to fetch.
+     */
+    orderBy?: AwardOrderByWithRelationInput | AwardOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: AwardWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Awards from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Awards.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned Awards
+    **/
+    _count?: true | AwardCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: AwardAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: AwardSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: AwardMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: AwardMaxAggregateInputType
+  }
+
+  export type GetAwardAggregateType<T extends AwardAggregateArgs> = {
+        [P in keyof T & keyof AggregateAward]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateAward[P]>
+      : GetScalarType<T[P], AggregateAward[P]>
+  }
+
+
+
+
+  export type AwardGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: AwardWhereInput
+    orderBy?: AwardOrderByWithAggregationInput | AwardOrderByWithAggregationInput[]
+    by: AwardScalarFieldEnum[] | AwardScalarFieldEnum
+    having?: AwardScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: AwardCountAggregateInputType | true
+    _avg?: AwardAvgAggregateInputType
+    _sum?: AwardSumAggregateInputType
+    _min?: AwardMinAggregateInputType
+    _max?: AwardMaxAggregateInputType
+  }
+
+  export type AwardGroupByOutputType = {
+    slug: string
+    name: string
+    nameEn: string
+    description: string
+    established: number
+    country: string
+    flag: string
+    frequency: string
+    category: string
+    gradient: string
+    icon: string
+    website: string | null
+    introduction: string
+    createdAt: Date
+    updatedAt: Date
+    _count: AwardCountAggregateOutputType | null
+    _avg: AwardAvgAggregateOutputType | null
+    _sum: AwardSumAggregateOutputType | null
+    _min: AwardMinAggregateOutputType | null
+    _max: AwardMaxAggregateOutputType | null
+  }
+
+  type GetAwardGroupByPayload<T extends AwardGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<AwardGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof AwardGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], AwardGroupByOutputType[P]>
+            : GetScalarType<T[P], AwardGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type AwardSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    slug?: boolean
+    name?: boolean
+    nameEn?: boolean
+    description?: boolean
+    established?: boolean
+    country?: boolean
+    flag?: boolean
+    frequency?: boolean
+    category?: boolean
+    gradient?: boolean
+    icon?: boolean
+    website?: boolean
+    introduction?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+    winners?: boolean | Award$winnersArgs<ExtArgs>
+    _count?: boolean | AwardCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["award"]>
+
+  export type AwardSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    slug?: boolean
+    name?: boolean
+    nameEn?: boolean
+    description?: boolean
+    established?: boolean
+    country?: boolean
+    flag?: boolean
+    frequency?: boolean
+    category?: boolean
+    gradient?: boolean
+    icon?: boolean
+    website?: boolean
+    introduction?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }, ExtArgs["result"]["award"]>
+
+  export type AwardSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    slug?: boolean
+    name?: boolean
+    nameEn?: boolean
+    description?: boolean
+    established?: boolean
+    country?: boolean
+    flag?: boolean
+    frequency?: boolean
+    category?: boolean
+    gradient?: boolean
+    icon?: boolean
+    website?: boolean
+    introduction?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }, ExtArgs["result"]["award"]>
+
+  export type AwardSelectScalar = {
+    slug?: boolean
+    name?: boolean
+    nameEn?: boolean
+    description?: boolean
+    established?: boolean
+    country?: boolean
+    flag?: boolean
+    frequency?: boolean
+    category?: boolean
+    gradient?: boolean
+    icon?: boolean
+    website?: boolean
+    introduction?: boolean
+    createdAt?: boolean
+    updatedAt?: boolean
+  }
+
+  export type AwardOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"slug" | "name" | "nameEn" | "description" | "established" | "country" | "flag" | "frequency" | "category" | "gradient" | "icon" | "website" | "introduction" | "createdAt" | "updatedAt", ExtArgs["result"]["award"]>
+  export type AwardInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    winners?: boolean | Award$winnersArgs<ExtArgs>
+    _count?: boolean | AwardCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type AwardIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type AwardIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $AwardPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Award"
+    objects: {
+      winners: Prisma.$AwardWinnerPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      slug: string
+      name: string
+      nameEn: string
+      description: string
+      established: number
+      country: string
+      flag: string
+      frequency: string
+      category: string
+      gradient: string
+      icon: string
+      website: string | null
+      introduction: string
+      createdAt: Date
+      updatedAt: Date
+    }, ExtArgs["result"]["award"]>
+    composites: {}
+  }
+
+  type AwardGetPayload<S extends boolean | null | undefined | AwardDefaultArgs> = $Result.GetResult<Prisma.$AwardPayload, S>
+
+  type AwardCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<AwardFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: AwardCountAggregateInputType | true
+    }
+
+  export interface AwardDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Award'], meta: { name: 'Award' } }
+    /**
+     * Find zero or one Award that matches the filter.
+     * @param {AwardFindUniqueArgs} args - Arguments to find a Award
+     * @example
+     * // Get one Award
+     * const award = await prisma.award.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends AwardFindUniqueArgs>(args: SelectSubset<T, AwardFindUniqueArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Award that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {AwardFindUniqueOrThrowArgs} args - Arguments to find a Award
+     * @example
+     * // Get one Award
+     * const award = await prisma.award.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends AwardFindUniqueOrThrowArgs>(args: SelectSubset<T, AwardFindUniqueOrThrowArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Award that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardFindFirstArgs} args - Arguments to find a Award
+     * @example
+     * // Get one Award
+     * const award = await prisma.award.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends AwardFindFirstArgs>(args?: SelectSubset<T, AwardFindFirstArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Award that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardFindFirstOrThrowArgs} args - Arguments to find a Award
+     * @example
+     * // Get one Award
+     * const award = await prisma.award.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends AwardFindFirstOrThrowArgs>(args?: SelectSubset<T, AwardFindFirstOrThrowArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Awards that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Awards
+     * const awards = await prisma.award.findMany()
+     * 
+     * // Get first 10 Awards
+     * const awards = await prisma.award.findMany({ take: 10 })
+     * 
+     * // Only select the `slug`
+     * const awardWithSlugOnly = await prisma.award.findMany({ select: { slug: true } })
+     * 
+     */
+    findMany<T extends AwardFindManyArgs>(args?: SelectSubset<T, AwardFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Award.
+     * @param {AwardCreateArgs} args - Arguments to create a Award.
+     * @example
+     * // Create one Award
+     * const Award = await prisma.award.create({
+     *   data: {
+     *     // ... data to create a Award
+     *   }
+     * })
+     * 
+     */
+    create<T extends AwardCreateArgs>(args: SelectSubset<T, AwardCreateArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Awards.
+     * @param {AwardCreateManyArgs} args - Arguments to create many Awards.
+     * @example
+     * // Create many Awards
+     * const award = await prisma.award.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends AwardCreateManyArgs>(args?: SelectSubset<T, AwardCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Awards and returns the data saved in the database.
+     * @param {AwardCreateManyAndReturnArgs} args - Arguments to create many Awards.
+     * @example
+     * // Create many Awards
+     * const award = await prisma.award.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Awards and only return the `slug`
+     * const awardWithSlugOnly = await prisma.award.createManyAndReturn({
+     *   select: { slug: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends AwardCreateManyAndReturnArgs>(args?: SelectSubset<T, AwardCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Award.
+     * @param {AwardDeleteArgs} args - Arguments to delete one Award.
+     * @example
+     * // Delete one Award
+     * const Award = await prisma.award.delete({
+     *   where: {
+     *     // ... filter to delete one Award
+     *   }
+     * })
+     * 
+     */
+    delete<T extends AwardDeleteArgs>(args: SelectSubset<T, AwardDeleteArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Award.
+     * @param {AwardUpdateArgs} args - Arguments to update one Award.
+     * @example
+     * // Update one Award
+     * const award = await prisma.award.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends AwardUpdateArgs>(args: SelectSubset<T, AwardUpdateArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Awards.
+     * @param {AwardDeleteManyArgs} args - Arguments to filter Awards to delete.
+     * @example
+     * // Delete a few Awards
+     * const { count } = await prisma.award.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends AwardDeleteManyArgs>(args?: SelectSubset<T, AwardDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Awards.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Awards
+     * const award = await prisma.award.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends AwardUpdateManyArgs>(args: SelectSubset<T, AwardUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Awards and returns the data updated in the database.
+     * @param {AwardUpdateManyAndReturnArgs} args - Arguments to update many Awards.
+     * @example
+     * // Update many Awards
+     * const award = await prisma.award.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Awards and only return the `slug`
+     * const awardWithSlugOnly = await prisma.award.updateManyAndReturn({
+     *   select: { slug: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends AwardUpdateManyAndReturnArgs>(args: SelectSubset<T, AwardUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Award.
+     * @param {AwardUpsertArgs} args - Arguments to update or create a Award.
+     * @example
+     * // Update or create a Award
+     * const award = await prisma.award.upsert({
+     *   create: {
+     *     // ... data to create a Award
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Award we want to update
+     *   }
+     * })
+     */
+    upsert<T extends AwardUpsertArgs>(args: SelectSubset<T, AwardUpsertArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Awards.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardCountArgs} args - Arguments to filter Awards to count.
+     * @example
+     * // Count the number of Awards
+     * const count = await prisma.award.count({
+     *   where: {
+     *     // ... the filter for the Awards we want to count
+     *   }
+     * })
+    **/
+    count<T extends AwardCountArgs>(
+      args?: Subset<T, AwardCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], AwardCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Award.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends AwardAggregateArgs>(args: Subset<T, AwardAggregateArgs>): Prisma.PrismaPromise<GetAwardAggregateType<T>>
+
+    /**
+     * Group by Award.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends AwardGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: AwardGroupByArgs['orderBy'] }
+        : { orderBy?: AwardGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, AwardGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetAwardGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the Award model
+   */
+  readonly fields: AwardFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for Award.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__AwardClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    winners<T extends Award$winnersArgs<ExtArgs> = {}>(args?: Subset<T, Award$winnersArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the Award model
+   */
+  interface AwardFieldRefs {
+    readonly slug: FieldRef<"Award", 'String'>
+    readonly name: FieldRef<"Award", 'String'>
+    readonly nameEn: FieldRef<"Award", 'String'>
+    readonly description: FieldRef<"Award", 'String'>
+    readonly established: FieldRef<"Award", 'Int'>
+    readonly country: FieldRef<"Award", 'String'>
+    readonly flag: FieldRef<"Award", 'String'>
+    readonly frequency: FieldRef<"Award", 'String'>
+    readonly category: FieldRef<"Award", 'String'>
+    readonly gradient: FieldRef<"Award", 'String'>
+    readonly icon: FieldRef<"Award", 'String'>
+    readonly website: FieldRef<"Award", 'String'>
+    readonly introduction: FieldRef<"Award", 'String'>
+    readonly createdAt: FieldRef<"Award", 'DateTime'>
+    readonly updatedAt: FieldRef<"Award", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * Award findUnique
+   */
+  export type AwardFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * Filter, which Award to fetch.
+     */
+    where: AwardWhereUniqueInput
+  }
+
+  /**
+   * Award findUniqueOrThrow
+   */
+  export type AwardFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * Filter, which Award to fetch.
+     */
+    where: AwardWhereUniqueInput
+  }
+
+  /**
+   * Award findFirst
+   */
+  export type AwardFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * Filter, which Award to fetch.
+     */
+    where?: AwardWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Awards to fetch.
+     */
+    orderBy?: AwardOrderByWithRelationInput | AwardOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Awards.
+     */
+    cursor?: AwardWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Awards from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Awards.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Awards.
+     */
+    distinct?: AwardScalarFieldEnum | AwardScalarFieldEnum[]
+  }
+
+  /**
+   * Award findFirstOrThrow
+   */
+  export type AwardFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * Filter, which Award to fetch.
+     */
+    where?: AwardWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Awards to fetch.
+     */
+    orderBy?: AwardOrderByWithRelationInput | AwardOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Awards.
+     */
+    cursor?: AwardWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Awards from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Awards.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Awards.
+     */
+    distinct?: AwardScalarFieldEnum | AwardScalarFieldEnum[]
+  }
+
+  /**
+   * Award findMany
+   */
+  export type AwardFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * Filter, which Awards to fetch.
+     */
+    where?: AwardWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Awards to fetch.
+     */
+    orderBy?: AwardOrderByWithRelationInput | AwardOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing Awards.
+     */
+    cursor?: AwardWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Awards from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Awards.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Awards.
+     */
+    distinct?: AwardScalarFieldEnum | AwardScalarFieldEnum[]
+  }
+
+  /**
+   * Award create
+   */
+  export type AwardCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * The data needed to create a Award.
+     */
+    data: XOR<AwardCreateInput, AwardUncheckedCreateInput>
+  }
+
+  /**
+   * Award createMany
+   */
+  export type AwardCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many Awards.
+     */
+    data: AwardCreateManyInput | AwardCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Award createManyAndReturn
+   */
+  export type AwardCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * The data used to create many Awards.
+     */
+    data: AwardCreateManyInput | AwardCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Award update
+   */
+  export type AwardUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * The data needed to update a Award.
+     */
+    data: XOR<AwardUpdateInput, AwardUncheckedUpdateInput>
+    /**
+     * Choose, which Award to update.
+     */
+    where: AwardWhereUniqueInput
+  }
+
+  /**
+   * Award updateMany
+   */
+  export type AwardUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update Awards.
+     */
+    data: XOR<AwardUpdateManyMutationInput, AwardUncheckedUpdateManyInput>
+    /**
+     * Filter which Awards to update
+     */
+    where?: AwardWhereInput
+    /**
+     * Limit how many Awards to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Award updateManyAndReturn
+   */
+  export type AwardUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * The data used to update Awards.
+     */
+    data: XOR<AwardUpdateManyMutationInput, AwardUncheckedUpdateManyInput>
+    /**
+     * Filter which Awards to update
+     */
+    where?: AwardWhereInput
+    /**
+     * Limit how many Awards to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Award upsert
+   */
+  export type AwardUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * The filter to search for the Award to update in case it exists.
+     */
+    where: AwardWhereUniqueInput
+    /**
+     * In case the Award found by the `where` argument doesn't exist, create a new Award with this data.
+     */
+    create: XOR<AwardCreateInput, AwardUncheckedCreateInput>
+    /**
+     * In case the Award was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<AwardUpdateInput, AwardUncheckedUpdateInput>
+  }
+
+  /**
+   * Award delete
+   */
+  export type AwardDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+    /**
+     * Filter which Award to delete.
+     */
+    where: AwardWhereUniqueInput
+  }
+
+  /**
+   * Award deleteMany
+   */
+  export type AwardDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Awards to delete
+     */
+    where?: AwardWhereInput
+    /**
+     * Limit how many Awards to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * Award.winners
+   */
+  export type Award$winnersArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    where?: AwardWinnerWhereInput
+    orderBy?: AwardWinnerOrderByWithRelationInput | AwardWinnerOrderByWithRelationInput[]
+    cursor?: AwardWinnerWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: AwardWinnerScalarFieldEnum | AwardWinnerScalarFieldEnum[]
+  }
+
+  /**
+   * Award without action
+   */
+  export type AwardDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Award
+     */
+    select?: AwardSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Award
+     */
+    omit?: AwardOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model AwardWinner
+   */
+
+  export type AggregateAwardWinner = {
+    _count: AwardWinnerCountAggregateOutputType | null
+    _avg: AwardWinnerAvgAggregateOutputType | null
+    _sum: AwardWinnerSumAggregateOutputType | null
+    _min: AwardWinnerMinAggregateOutputType | null
+    _max: AwardWinnerMaxAggregateOutputType | null
+  }
+
+  export type AwardWinnerAvgAggregateOutputType = {
+    year: number | null
+  }
+
+  export type AwardWinnerSumAggregateOutputType = {
+    year: number | null
+  }
+
+  export type AwardWinnerMinAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    awardSlug: string | null
+    year: number | null
+    category: string | null
+  }
+
+  export type AwardWinnerMaxAggregateOutputType = {
+    id: string | null
+    workId: string | null
+    awardSlug: string | null
+    year: number | null
+    category: string | null
+  }
+
+  export type AwardWinnerCountAggregateOutputType = {
+    id: number
+    workId: number
+    awardSlug: number
+    year: number
+    category: number
+    _all: number
+  }
+
+
+  export type AwardWinnerAvgAggregateInputType = {
+    year?: true
+  }
+
+  export type AwardWinnerSumAggregateInputType = {
+    year?: true
+  }
+
+  export type AwardWinnerMinAggregateInputType = {
+    id?: true
+    workId?: true
+    awardSlug?: true
+    year?: true
+    category?: true
+  }
+
+  export type AwardWinnerMaxAggregateInputType = {
+    id?: true
+    workId?: true
+    awardSlug?: true
+    year?: true
+    category?: true
+  }
+
+  export type AwardWinnerCountAggregateInputType = {
+    id?: true
+    workId?: true
+    awardSlug?: true
+    year?: true
+    category?: true
+    _all?: true
+  }
+
+  export type AwardWinnerAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which AwardWinner to aggregate.
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of AwardWinners to fetch.
+     */
+    orderBy?: AwardWinnerOrderByWithRelationInput | AwardWinnerOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: AwardWinnerWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` AwardWinners from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` AwardWinners.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned AwardWinners
+    **/
+    _count?: true | AwardWinnerCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: AwardWinnerAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: AwardWinnerSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: AwardWinnerMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: AwardWinnerMaxAggregateInputType
+  }
+
+  export type GetAwardWinnerAggregateType<T extends AwardWinnerAggregateArgs> = {
+        [P in keyof T & keyof AggregateAwardWinner]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateAwardWinner[P]>
+      : GetScalarType<T[P], AggregateAwardWinner[P]>
+  }
+
+
+
+
+  export type AwardWinnerGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: AwardWinnerWhereInput
+    orderBy?: AwardWinnerOrderByWithAggregationInput | AwardWinnerOrderByWithAggregationInput[]
+    by: AwardWinnerScalarFieldEnum[] | AwardWinnerScalarFieldEnum
+    having?: AwardWinnerScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: AwardWinnerCountAggregateInputType | true
+    _avg?: AwardWinnerAvgAggregateInputType
+    _sum?: AwardWinnerSumAggregateInputType
+    _min?: AwardWinnerMinAggregateInputType
+    _max?: AwardWinnerMaxAggregateInputType
+  }
+
+  export type AwardWinnerGroupByOutputType = {
+    id: string
+    workId: string
+    awardSlug: string
+    year: number
+    category: string | null
+    _count: AwardWinnerCountAggregateOutputType | null
+    _avg: AwardWinnerAvgAggregateOutputType | null
+    _sum: AwardWinnerSumAggregateOutputType | null
+    _min: AwardWinnerMinAggregateOutputType | null
+    _max: AwardWinnerMaxAggregateOutputType | null
+  }
+
+  type GetAwardWinnerGroupByPayload<T extends AwardWinnerGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<AwardWinnerGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof AwardWinnerGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], AwardWinnerGroupByOutputType[P]>
+            : GetScalarType<T[P], AwardWinnerGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type AwardWinnerSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    awardSlug?: boolean
+    year?: boolean
+    category?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+    award?: boolean | AwardDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["awardWinner"]>
+
+  export type AwardWinnerSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    awardSlug?: boolean
+    year?: boolean
+    category?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+    award?: boolean | AwardDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["awardWinner"]>
+
+  export type AwardWinnerSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    workId?: boolean
+    awardSlug?: boolean
+    year?: boolean
+    category?: boolean
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+    award?: boolean | AwardDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["awardWinner"]>
+
+  export type AwardWinnerSelectScalar = {
+    id?: boolean
+    workId?: boolean
+    awardSlug?: boolean
+    year?: boolean
+    category?: boolean
+  }
+
+  export type AwardWinnerOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "workId" | "awardSlug" | "year" | "category", ExtArgs["result"]["awardWinner"]>
+  export type AwardWinnerInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+    award?: boolean | AwardDefaultArgs<ExtArgs>
+  }
+  export type AwardWinnerIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+    award?: boolean | AwardDefaultArgs<ExtArgs>
+  }
+  export type AwardWinnerIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    work?: boolean | WorkDefaultArgs<ExtArgs>
+    award?: boolean | AwardDefaultArgs<ExtArgs>
+  }
+
+  export type $AwardWinnerPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "AwardWinner"
+    objects: {
+      work: Prisma.$WorkPayload<ExtArgs>
+      award: Prisma.$AwardPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      workId: string
+      awardSlug: string
+      year: number
+      category: string | null
+    }, ExtArgs["result"]["awardWinner"]>
+    composites: {}
+  }
+
+  type AwardWinnerGetPayload<S extends boolean | null | undefined | AwardWinnerDefaultArgs> = $Result.GetResult<Prisma.$AwardWinnerPayload, S>
+
+  type AwardWinnerCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<AwardWinnerFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: AwardWinnerCountAggregateInputType | true
+    }
+
+  export interface AwardWinnerDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['AwardWinner'], meta: { name: 'AwardWinner' } }
+    /**
+     * Find zero or one AwardWinner that matches the filter.
+     * @param {AwardWinnerFindUniqueArgs} args - Arguments to find a AwardWinner
+     * @example
+     * // Get one AwardWinner
+     * const awardWinner = await prisma.awardWinner.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends AwardWinnerFindUniqueArgs>(args: SelectSubset<T, AwardWinnerFindUniqueArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one AwardWinner that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {AwardWinnerFindUniqueOrThrowArgs} args - Arguments to find a AwardWinner
+     * @example
+     * // Get one AwardWinner
+     * const awardWinner = await prisma.awardWinner.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends AwardWinnerFindUniqueOrThrowArgs>(args: SelectSubset<T, AwardWinnerFindUniqueOrThrowArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first AwardWinner that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerFindFirstArgs} args - Arguments to find a AwardWinner
+     * @example
+     * // Get one AwardWinner
+     * const awardWinner = await prisma.awardWinner.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends AwardWinnerFindFirstArgs>(args?: SelectSubset<T, AwardWinnerFindFirstArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first AwardWinner that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerFindFirstOrThrowArgs} args - Arguments to find a AwardWinner
+     * @example
+     * // Get one AwardWinner
+     * const awardWinner = await prisma.awardWinner.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends AwardWinnerFindFirstOrThrowArgs>(args?: SelectSubset<T, AwardWinnerFindFirstOrThrowArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more AwardWinners that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all AwardWinners
+     * const awardWinners = await prisma.awardWinner.findMany()
+     * 
+     * // Get first 10 AwardWinners
+     * const awardWinners = await prisma.awardWinner.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const awardWinnerWithIdOnly = await prisma.awardWinner.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends AwardWinnerFindManyArgs>(args?: SelectSubset<T, AwardWinnerFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a AwardWinner.
+     * @param {AwardWinnerCreateArgs} args - Arguments to create a AwardWinner.
+     * @example
+     * // Create one AwardWinner
+     * const AwardWinner = await prisma.awardWinner.create({
+     *   data: {
+     *     // ... data to create a AwardWinner
+     *   }
+     * })
+     * 
+     */
+    create<T extends AwardWinnerCreateArgs>(args: SelectSubset<T, AwardWinnerCreateArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many AwardWinners.
+     * @param {AwardWinnerCreateManyArgs} args - Arguments to create many AwardWinners.
+     * @example
+     * // Create many AwardWinners
+     * const awardWinner = await prisma.awardWinner.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends AwardWinnerCreateManyArgs>(args?: SelectSubset<T, AwardWinnerCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many AwardWinners and returns the data saved in the database.
+     * @param {AwardWinnerCreateManyAndReturnArgs} args - Arguments to create many AwardWinners.
+     * @example
+     * // Create many AwardWinners
+     * const awardWinner = await prisma.awardWinner.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many AwardWinners and only return the `id`
+     * const awardWinnerWithIdOnly = await prisma.awardWinner.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends AwardWinnerCreateManyAndReturnArgs>(args?: SelectSubset<T, AwardWinnerCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a AwardWinner.
+     * @param {AwardWinnerDeleteArgs} args - Arguments to delete one AwardWinner.
+     * @example
+     * // Delete one AwardWinner
+     * const AwardWinner = await prisma.awardWinner.delete({
+     *   where: {
+     *     // ... filter to delete one AwardWinner
+     *   }
+     * })
+     * 
+     */
+    delete<T extends AwardWinnerDeleteArgs>(args: SelectSubset<T, AwardWinnerDeleteArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one AwardWinner.
+     * @param {AwardWinnerUpdateArgs} args - Arguments to update one AwardWinner.
+     * @example
+     * // Update one AwardWinner
+     * const awardWinner = await prisma.awardWinner.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends AwardWinnerUpdateArgs>(args: SelectSubset<T, AwardWinnerUpdateArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more AwardWinners.
+     * @param {AwardWinnerDeleteManyArgs} args - Arguments to filter AwardWinners to delete.
+     * @example
+     * // Delete a few AwardWinners
+     * const { count } = await prisma.awardWinner.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends AwardWinnerDeleteManyArgs>(args?: SelectSubset<T, AwardWinnerDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more AwardWinners.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many AwardWinners
+     * const awardWinner = await prisma.awardWinner.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends AwardWinnerUpdateManyArgs>(args: SelectSubset<T, AwardWinnerUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more AwardWinners and returns the data updated in the database.
+     * @param {AwardWinnerUpdateManyAndReturnArgs} args - Arguments to update many AwardWinners.
+     * @example
+     * // Update many AwardWinners
+     * const awardWinner = await prisma.awardWinner.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more AwardWinners and only return the `id`
+     * const awardWinnerWithIdOnly = await prisma.awardWinner.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends AwardWinnerUpdateManyAndReturnArgs>(args: SelectSubset<T, AwardWinnerUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one AwardWinner.
+     * @param {AwardWinnerUpsertArgs} args - Arguments to update or create a AwardWinner.
+     * @example
+     * // Update or create a AwardWinner
+     * const awardWinner = await prisma.awardWinner.upsert({
+     *   create: {
+     *     // ... data to create a AwardWinner
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the AwardWinner we want to update
+     *   }
+     * })
+     */
+    upsert<T extends AwardWinnerUpsertArgs>(args: SelectSubset<T, AwardWinnerUpsertArgs<ExtArgs>>): Prisma__AwardWinnerClient<$Result.GetResult<Prisma.$AwardWinnerPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of AwardWinners.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerCountArgs} args - Arguments to filter AwardWinners to count.
+     * @example
+     * // Count the number of AwardWinners
+     * const count = await prisma.awardWinner.count({
+     *   where: {
+     *     // ... the filter for the AwardWinners we want to count
+     *   }
+     * })
+    **/
+    count<T extends AwardWinnerCountArgs>(
+      args?: Subset<T, AwardWinnerCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], AwardWinnerCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a AwardWinner.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends AwardWinnerAggregateArgs>(args: Subset<T, AwardWinnerAggregateArgs>): Prisma.PrismaPromise<GetAwardWinnerAggregateType<T>>
+
+    /**
+     * Group by AwardWinner.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {AwardWinnerGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends AwardWinnerGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: AwardWinnerGroupByArgs['orderBy'] }
+        : { orderBy?: AwardWinnerGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, AwardWinnerGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetAwardWinnerGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the AwardWinner model
+   */
+  readonly fields: AwardWinnerFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for AwardWinner.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__AwardWinnerClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    work<T extends WorkDefaultArgs<ExtArgs> = {}>(args?: Subset<T, WorkDefaultArgs<ExtArgs>>): Prisma__WorkClient<$Result.GetResult<Prisma.$WorkPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    award<T extends AwardDefaultArgs<ExtArgs> = {}>(args?: Subset<T, AwardDefaultArgs<ExtArgs>>): Prisma__AwardClient<$Result.GetResult<Prisma.$AwardPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the AwardWinner model
+   */
+  interface AwardWinnerFieldRefs {
+    readonly id: FieldRef<"AwardWinner", 'String'>
+    readonly workId: FieldRef<"AwardWinner", 'String'>
+    readonly awardSlug: FieldRef<"AwardWinner", 'String'>
+    readonly year: FieldRef<"AwardWinner", 'Int'>
+    readonly category: FieldRef<"AwardWinner", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * AwardWinner findUnique
+   */
+  export type AwardWinnerFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * Filter, which AwardWinner to fetch.
+     */
+    where: AwardWinnerWhereUniqueInput
+  }
+
+  /**
+   * AwardWinner findUniqueOrThrow
+   */
+  export type AwardWinnerFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * Filter, which AwardWinner to fetch.
+     */
+    where: AwardWinnerWhereUniqueInput
+  }
+
+  /**
+   * AwardWinner findFirst
+   */
+  export type AwardWinnerFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * Filter, which AwardWinner to fetch.
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of AwardWinners to fetch.
+     */
+    orderBy?: AwardWinnerOrderByWithRelationInput | AwardWinnerOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for AwardWinners.
+     */
+    cursor?: AwardWinnerWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` AwardWinners from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` AwardWinners.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of AwardWinners.
+     */
+    distinct?: AwardWinnerScalarFieldEnum | AwardWinnerScalarFieldEnum[]
+  }
+
+  /**
+   * AwardWinner findFirstOrThrow
+   */
+  export type AwardWinnerFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * Filter, which AwardWinner to fetch.
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of AwardWinners to fetch.
+     */
+    orderBy?: AwardWinnerOrderByWithRelationInput | AwardWinnerOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for AwardWinners.
+     */
+    cursor?: AwardWinnerWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` AwardWinners from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` AwardWinners.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of AwardWinners.
+     */
+    distinct?: AwardWinnerScalarFieldEnum | AwardWinnerScalarFieldEnum[]
+  }
+
+  /**
+   * AwardWinner findMany
+   */
+  export type AwardWinnerFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * Filter, which AwardWinners to fetch.
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of AwardWinners to fetch.
+     */
+    orderBy?: AwardWinnerOrderByWithRelationInput | AwardWinnerOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing AwardWinners.
+     */
+    cursor?: AwardWinnerWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` AwardWinners from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` AwardWinners.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of AwardWinners.
+     */
+    distinct?: AwardWinnerScalarFieldEnum | AwardWinnerScalarFieldEnum[]
+  }
+
+  /**
+   * AwardWinner create
+   */
+  export type AwardWinnerCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * The data needed to create a AwardWinner.
+     */
+    data: XOR<AwardWinnerCreateInput, AwardWinnerUncheckedCreateInput>
+  }
+
+  /**
+   * AwardWinner createMany
+   */
+  export type AwardWinnerCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many AwardWinners.
+     */
+    data: AwardWinnerCreateManyInput | AwardWinnerCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * AwardWinner createManyAndReturn
+   */
+  export type AwardWinnerCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * The data used to create many AwardWinners.
+     */
+    data: AwardWinnerCreateManyInput | AwardWinnerCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * AwardWinner update
+   */
+  export type AwardWinnerUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * The data needed to update a AwardWinner.
+     */
+    data: XOR<AwardWinnerUpdateInput, AwardWinnerUncheckedUpdateInput>
+    /**
+     * Choose, which AwardWinner to update.
+     */
+    where: AwardWinnerWhereUniqueInput
+  }
+
+  /**
+   * AwardWinner updateMany
+   */
+  export type AwardWinnerUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update AwardWinners.
+     */
+    data: XOR<AwardWinnerUpdateManyMutationInput, AwardWinnerUncheckedUpdateManyInput>
+    /**
+     * Filter which AwardWinners to update
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * Limit how many AwardWinners to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * AwardWinner updateManyAndReturn
+   */
+  export type AwardWinnerUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * The data used to update AwardWinners.
+     */
+    data: XOR<AwardWinnerUpdateManyMutationInput, AwardWinnerUncheckedUpdateManyInput>
+    /**
+     * Filter which AwardWinners to update
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * Limit how many AwardWinners to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * AwardWinner upsert
+   */
+  export type AwardWinnerUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * The filter to search for the AwardWinner to update in case it exists.
+     */
+    where: AwardWinnerWhereUniqueInput
+    /**
+     * In case the AwardWinner found by the `where` argument doesn't exist, create a new AwardWinner with this data.
+     */
+    create: XOR<AwardWinnerCreateInput, AwardWinnerUncheckedCreateInput>
+    /**
+     * In case the AwardWinner was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<AwardWinnerUpdateInput, AwardWinnerUncheckedUpdateInput>
+  }
+
+  /**
+   * AwardWinner delete
+   */
+  export type AwardWinnerDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+    /**
+     * Filter which AwardWinner to delete.
+     */
+    where: AwardWinnerWhereUniqueInput
+  }
+
+  /**
+   * AwardWinner deleteMany
+   */
+  export type AwardWinnerDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which AwardWinners to delete
+     */
+    where?: AwardWinnerWhereInput
+    /**
+     * Limit how many AwardWinners to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * AwardWinner without action
+   */
+  export type AwardWinnerDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the AwardWinner
+     */
+    select?: AwardWinnerSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the AwardWinner
+     */
+    omit?: AwardWinnerOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: AwardWinnerInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model DailyTrend
+   */
+
+  export type AggregateDailyTrend = {
+    _count: DailyTrendCountAggregateOutputType | null
+    _avg: DailyTrendAvgAggregateOutputType | null
+    _sum: DailyTrendSumAggregateOutputType | null
+    _min: DailyTrendMinAggregateOutputType | null
+    _max: DailyTrendMaxAggregateOutputType | null
+  }
+
+  export type DailyTrendAvgAggregateOutputType = {
+    totalPostsAnalyzed: number | null
+  }
+
+  export type DailyTrendSumAggregateOutputType = {
+    totalPostsAnalyzed: number | null
+  }
+
+  export type DailyTrendMinAggregateOutputType = {
+    id: string | null
+    date: string | null
+    title: string | null
+    background: string | null
+    perspectives: string | null
+    insight: string | null
+    sourceType: string | null
+    generatedAt: Date | null
+    totalPostsAnalyzed: number | null
+    createdAt: Date | null
+  }
+
+  export type DailyTrendMaxAggregateOutputType = {
+    id: string | null
+    date: string | null
+    title: string | null
+    background: string | null
+    perspectives: string | null
+    insight: string | null
+    sourceType: string | null
+    generatedAt: Date | null
+    totalPostsAnalyzed: number | null
+    createdAt: Date | null
+  }
+
+  export type DailyTrendCountAggregateOutputType = {
+    id: number
+    date: number
+    title: number
+    background: number
+    perspectives: number
+    insight: number
+    sourceLinks: number
+    sourceType: number
+    generatedAt: number
+    totalPostsAnalyzed: number
+    createdAt: number
+    _all: number
+  }
+
+
+  export type DailyTrendAvgAggregateInputType = {
+    totalPostsAnalyzed?: true
+  }
+
+  export type DailyTrendSumAggregateInputType = {
+    totalPostsAnalyzed?: true
+  }
+
+  export type DailyTrendMinAggregateInputType = {
+    id?: true
+    date?: true
+    title?: true
+    background?: true
+    perspectives?: true
+    insight?: true
+    sourceType?: true
+    generatedAt?: true
+    totalPostsAnalyzed?: true
+    createdAt?: true
+  }
+
+  export type DailyTrendMaxAggregateInputType = {
+    id?: true
+    date?: true
+    title?: true
+    background?: true
+    perspectives?: true
+    insight?: true
+    sourceType?: true
+    generatedAt?: true
+    totalPostsAnalyzed?: true
+    createdAt?: true
+  }
+
+  export type DailyTrendCountAggregateInputType = {
+    id?: true
+    date?: true
+    title?: true
+    background?: true
+    perspectives?: true
+    insight?: true
+    sourceLinks?: true
+    sourceType?: true
+    generatedAt?: true
+    totalPostsAnalyzed?: true
+    createdAt?: true
+    _all?: true
+  }
+
+  export type DailyTrendAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which DailyTrend to aggregate.
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyTrends to fetch.
+     */
+    orderBy?: DailyTrendOrderByWithRelationInput | DailyTrendOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: DailyTrendWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyTrends from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyTrends.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned DailyTrends
+    **/
+    _count?: true | DailyTrendCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: DailyTrendAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: DailyTrendSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: DailyTrendMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: DailyTrendMaxAggregateInputType
+  }
+
+  export type GetDailyTrendAggregateType<T extends DailyTrendAggregateArgs> = {
+        [P in keyof T & keyof AggregateDailyTrend]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateDailyTrend[P]>
+      : GetScalarType<T[P], AggregateDailyTrend[P]>
+  }
+
+
+
+
+  export type DailyTrendGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: DailyTrendWhereInput
+    orderBy?: DailyTrendOrderByWithAggregationInput | DailyTrendOrderByWithAggregationInput[]
+    by: DailyTrendScalarFieldEnum[] | DailyTrendScalarFieldEnum
+    having?: DailyTrendScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: DailyTrendCountAggregateInputType | true
+    _avg?: DailyTrendAvgAggregateInputType
+    _sum?: DailyTrendSumAggregateInputType
+    _min?: DailyTrendMinAggregateInputType
+    _max?: DailyTrendMaxAggregateInputType
+  }
+
+  export type DailyTrendGroupByOutputType = {
+    id: string
+    date: string
+    title: string
+    background: string
+    perspectives: string
+    insight: string
+    sourceLinks: JsonValue
+    sourceType: string | null
+    generatedAt: Date
+    totalPostsAnalyzed: number
+    createdAt: Date
+    _count: DailyTrendCountAggregateOutputType | null
+    _avg: DailyTrendAvgAggregateOutputType | null
+    _sum: DailyTrendSumAggregateOutputType | null
+    _min: DailyTrendMinAggregateOutputType | null
+    _max: DailyTrendMaxAggregateOutputType | null
+  }
+
+  type GetDailyTrendGroupByPayload<T extends DailyTrendGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<DailyTrendGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof DailyTrendGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], DailyTrendGroupByOutputType[P]>
+            : GetScalarType<T[P], DailyTrendGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type DailyTrendSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    date?: boolean
+    title?: boolean
+    background?: boolean
+    perspectives?: boolean
+    insight?: boolean
+    sourceLinks?: boolean
+    sourceType?: boolean
+    generatedAt?: boolean
+    totalPostsAnalyzed?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["dailyTrend"]>
+
+  export type DailyTrendSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    date?: boolean
+    title?: boolean
+    background?: boolean
+    perspectives?: boolean
+    insight?: boolean
+    sourceLinks?: boolean
+    sourceType?: boolean
+    generatedAt?: boolean
+    totalPostsAnalyzed?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["dailyTrend"]>
+
+  export type DailyTrendSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    date?: boolean
+    title?: boolean
+    background?: boolean
+    perspectives?: boolean
+    insight?: boolean
+    sourceLinks?: boolean
+    sourceType?: boolean
+    generatedAt?: boolean
+    totalPostsAnalyzed?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["dailyTrend"]>
+
+  export type DailyTrendSelectScalar = {
+    id?: boolean
+    date?: boolean
+    title?: boolean
+    background?: boolean
+    perspectives?: boolean
+    insight?: boolean
+    sourceLinks?: boolean
+    sourceType?: boolean
+    generatedAt?: boolean
+    totalPostsAnalyzed?: boolean
+    createdAt?: boolean
+  }
+
+  export type DailyTrendOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "date" | "title" | "background" | "perspectives" | "insight" | "sourceLinks" | "sourceType" | "generatedAt" | "totalPostsAnalyzed" | "createdAt", ExtArgs["result"]["dailyTrend"]>
+
+  export type $DailyTrendPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "DailyTrend"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      date: string
+      title: string
+      background: string
+      perspectives: string
+      insight: string
+      sourceLinks: Prisma.JsonValue
+      sourceType: string | null
+      generatedAt: Date
+      totalPostsAnalyzed: number
+      createdAt: Date
+    }, ExtArgs["result"]["dailyTrend"]>
+    composites: {}
+  }
+
+  type DailyTrendGetPayload<S extends boolean | null | undefined | DailyTrendDefaultArgs> = $Result.GetResult<Prisma.$DailyTrendPayload, S>
+
+  type DailyTrendCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<DailyTrendFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: DailyTrendCountAggregateInputType | true
+    }
+
+  export interface DailyTrendDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['DailyTrend'], meta: { name: 'DailyTrend' } }
+    /**
+     * Find zero or one DailyTrend that matches the filter.
+     * @param {DailyTrendFindUniqueArgs} args - Arguments to find a DailyTrend
+     * @example
+     * // Get one DailyTrend
+     * const dailyTrend = await prisma.dailyTrend.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends DailyTrendFindUniqueArgs>(args: SelectSubset<T, DailyTrendFindUniqueArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one DailyTrend that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {DailyTrendFindUniqueOrThrowArgs} args - Arguments to find a DailyTrend
+     * @example
+     * // Get one DailyTrend
+     * const dailyTrend = await prisma.dailyTrend.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends DailyTrendFindUniqueOrThrowArgs>(args: SelectSubset<T, DailyTrendFindUniqueOrThrowArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first DailyTrend that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendFindFirstArgs} args - Arguments to find a DailyTrend
+     * @example
+     * // Get one DailyTrend
+     * const dailyTrend = await prisma.dailyTrend.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends DailyTrendFindFirstArgs>(args?: SelectSubset<T, DailyTrendFindFirstArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first DailyTrend that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendFindFirstOrThrowArgs} args - Arguments to find a DailyTrend
+     * @example
+     * // Get one DailyTrend
+     * const dailyTrend = await prisma.dailyTrend.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends DailyTrendFindFirstOrThrowArgs>(args?: SelectSubset<T, DailyTrendFindFirstOrThrowArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more DailyTrends that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all DailyTrends
+     * const dailyTrends = await prisma.dailyTrend.findMany()
+     * 
+     * // Get first 10 DailyTrends
+     * const dailyTrends = await prisma.dailyTrend.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const dailyTrendWithIdOnly = await prisma.dailyTrend.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends DailyTrendFindManyArgs>(args?: SelectSubset<T, DailyTrendFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a DailyTrend.
+     * @param {DailyTrendCreateArgs} args - Arguments to create a DailyTrend.
+     * @example
+     * // Create one DailyTrend
+     * const DailyTrend = await prisma.dailyTrend.create({
+     *   data: {
+     *     // ... data to create a DailyTrend
+     *   }
+     * })
+     * 
+     */
+    create<T extends DailyTrendCreateArgs>(args: SelectSubset<T, DailyTrendCreateArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many DailyTrends.
+     * @param {DailyTrendCreateManyArgs} args - Arguments to create many DailyTrends.
+     * @example
+     * // Create many DailyTrends
+     * const dailyTrend = await prisma.dailyTrend.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends DailyTrendCreateManyArgs>(args?: SelectSubset<T, DailyTrendCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many DailyTrends and returns the data saved in the database.
+     * @param {DailyTrendCreateManyAndReturnArgs} args - Arguments to create many DailyTrends.
+     * @example
+     * // Create many DailyTrends
+     * const dailyTrend = await prisma.dailyTrend.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many DailyTrends and only return the `id`
+     * const dailyTrendWithIdOnly = await prisma.dailyTrend.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends DailyTrendCreateManyAndReturnArgs>(args?: SelectSubset<T, DailyTrendCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a DailyTrend.
+     * @param {DailyTrendDeleteArgs} args - Arguments to delete one DailyTrend.
+     * @example
+     * // Delete one DailyTrend
+     * const DailyTrend = await prisma.dailyTrend.delete({
+     *   where: {
+     *     // ... filter to delete one DailyTrend
+     *   }
+     * })
+     * 
+     */
+    delete<T extends DailyTrendDeleteArgs>(args: SelectSubset<T, DailyTrendDeleteArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one DailyTrend.
+     * @param {DailyTrendUpdateArgs} args - Arguments to update one DailyTrend.
+     * @example
+     * // Update one DailyTrend
+     * const dailyTrend = await prisma.dailyTrend.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends DailyTrendUpdateArgs>(args: SelectSubset<T, DailyTrendUpdateArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more DailyTrends.
+     * @param {DailyTrendDeleteManyArgs} args - Arguments to filter DailyTrends to delete.
+     * @example
+     * // Delete a few DailyTrends
+     * const { count } = await prisma.dailyTrend.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends DailyTrendDeleteManyArgs>(args?: SelectSubset<T, DailyTrendDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more DailyTrends.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many DailyTrends
+     * const dailyTrend = await prisma.dailyTrend.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends DailyTrendUpdateManyArgs>(args: SelectSubset<T, DailyTrendUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more DailyTrends and returns the data updated in the database.
+     * @param {DailyTrendUpdateManyAndReturnArgs} args - Arguments to update many DailyTrends.
+     * @example
+     * // Update many DailyTrends
+     * const dailyTrend = await prisma.dailyTrend.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more DailyTrends and only return the `id`
+     * const dailyTrendWithIdOnly = await prisma.dailyTrend.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends DailyTrendUpdateManyAndReturnArgs>(args: SelectSubset<T, DailyTrendUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one DailyTrend.
+     * @param {DailyTrendUpsertArgs} args - Arguments to update or create a DailyTrend.
+     * @example
+     * // Update or create a DailyTrend
+     * const dailyTrend = await prisma.dailyTrend.upsert({
+     *   create: {
+     *     // ... data to create a DailyTrend
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the DailyTrend we want to update
+     *   }
+     * })
+     */
+    upsert<T extends DailyTrendUpsertArgs>(args: SelectSubset<T, DailyTrendUpsertArgs<ExtArgs>>): Prisma__DailyTrendClient<$Result.GetResult<Prisma.$DailyTrendPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of DailyTrends.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendCountArgs} args - Arguments to filter DailyTrends to count.
+     * @example
+     * // Count the number of DailyTrends
+     * const count = await prisma.dailyTrend.count({
+     *   where: {
+     *     // ... the filter for the DailyTrends we want to count
+     *   }
+     * })
+    **/
+    count<T extends DailyTrendCountArgs>(
+      args?: Subset<T, DailyTrendCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], DailyTrendCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a DailyTrend.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends DailyTrendAggregateArgs>(args: Subset<T, DailyTrendAggregateArgs>): Prisma.PrismaPromise<GetDailyTrendAggregateType<T>>
+
+    /**
+     * Group by DailyTrend.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyTrendGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends DailyTrendGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: DailyTrendGroupByArgs['orderBy'] }
+        : { orderBy?: DailyTrendGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, DailyTrendGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetDailyTrendGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the DailyTrend model
+   */
+  readonly fields: DailyTrendFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for DailyTrend.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__DailyTrendClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the DailyTrend model
+   */
+  interface DailyTrendFieldRefs {
+    readonly id: FieldRef<"DailyTrend", 'String'>
+    readonly date: FieldRef<"DailyTrend", 'String'>
+    readonly title: FieldRef<"DailyTrend", 'String'>
+    readonly background: FieldRef<"DailyTrend", 'String'>
+    readonly perspectives: FieldRef<"DailyTrend", 'String'>
+    readonly insight: FieldRef<"DailyTrend", 'String'>
+    readonly sourceLinks: FieldRef<"DailyTrend", 'Json'>
+    readonly sourceType: FieldRef<"DailyTrend", 'String'>
+    readonly generatedAt: FieldRef<"DailyTrend", 'DateTime'>
+    readonly totalPostsAnalyzed: FieldRef<"DailyTrend", 'Int'>
+    readonly createdAt: FieldRef<"DailyTrend", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * DailyTrend findUnique
+   */
+  export type DailyTrendFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyTrend to fetch.
+     */
+    where: DailyTrendWhereUniqueInput
+  }
+
+  /**
+   * DailyTrend findUniqueOrThrow
+   */
+  export type DailyTrendFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyTrend to fetch.
+     */
+    where: DailyTrendWhereUniqueInput
+  }
+
+  /**
+   * DailyTrend findFirst
+   */
+  export type DailyTrendFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyTrend to fetch.
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyTrends to fetch.
+     */
+    orderBy?: DailyTrendOrderByWithRelationInput | DailyTrendOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for DailyTrends.
+     */
+    cursor?: DailyTrendWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyTrends from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyTrends.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyTrends.
+     */
+    distinct?: DailyTrendScalarFieldEnum | DailyTrendScalarFieldEnum[]
+  }
+
+  /**
+   * DailyTrend findFirstOrThrow
+   */
+  export type DailyTrendFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyTrend to fetch.
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyTrends to fetch.
+     */
+    orderBy?: DailyTrendOrderByWithRelationInput | DailyTrendOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for DailyTrends.
+     */
+    cursor?: DailyTrendWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyTrends from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyTrends.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyTrends.
+     */
+    distinct?: DailyTrendScalarFieldEnum | DailyTrendScalarFieldEnum[]
+  }
+
+  /**
+   * DailyTrend findMany
+   */
+  export type DailyTrendFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyTrends to fetch.
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyTrends to fetch.
+     */
+    orderBy?: DailyTrendOrderByWithRelationInput | DailyTrendOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing DailyTrends.
+     */
+    cursor?: DailyTrendWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyTrends from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyTrends.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyTrends.
+     */
+    distinct?: DailyTrendScalarFieldEnum | DailyTrendScalarFieldEnum[]
+  }
+
+  /**
+   * DailyTrend create
+   */
+  export type DailyTrendCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * The data needed to create a DailyTrend.
+     */
+    data: XOR<DailyTrendCreateInput, DailyTrendUncheckedCreateInput>
+  }
+
+  /**
+   * DailyTrend createMany
+   */
+  export type DailyTrendCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many DailyTrends.
+     */
+    data: DailyTrendCreateManyInput | DailyTrendCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * DailyTrend createManyAndReturn
+   */
+  export type DailyTrendCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * The data used to create many DailyTrends.
+     */
+    data: DailyTrendCreateManyInput | DailyTrendCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * DailyTrend update
+   */
+  export type DailyTrendUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * The data needed to update a DailyTrend.
+     */
+    data: XOR<DailyTrendUpdateInput, DailyTrendUncheckedUpdateInput>
+    /**
+     * Choose, which DailyTrend to update.
+     */
+    where: DailyTrendWhereUniqueInput
+  }
+
+  /**
+   * DailyTrend updateMany
+   */
+  export type DailyTrendUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update DailyTrends.
+     */
+    data: XOR<DailyTrendUpdateManyMutationInput, DailyTrendUncheckedUpdateManyInput>
+    /**
+     * Filter which DailyTrends to update
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * Limit how many DailyTrends to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyTrend updateManyAndReturn
+   */
+  export type DailyTrendUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * The data used to update DailyTrends.
+     */
+    data: XOR<DailyTrendUpdateManyMutationInput, DailyTrendUncheckedUpdateManyInput>
+    /**
+     * Filter which DailyTrends to update
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * Limit how many DailyTrends to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyTrend upsert
+   */
+  export type DailyTrendUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * The filter to search for the DailyTrend to update in case it exists.
+     */
+    where: DailyTrendWhereUniqueInput
+    /**
+     * In case the DailyTrend found by the `where` argument doesn't exist, create a new DailyTrend with this data.
+     */
+    create: XOR<DailyTrendCreateInput, DailyTrendUncheckedCreateInput>
+    /**
+     * In case the DailyTrend was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<DailyTrendUpdateInput, DailyTrendUncheckedUpdateInput>
+  }
+
+  /**
+   * DailyTrend delete
+   */
+  export type DailyTrendDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+    /**
+     * Filter which DailyTrend to delete.
+     */
+    where: DailyTrendWhereUniqueInput
+  }
+
+  /**
+   * DailyTrend deleteMany
+   */
+  export type DailyTrendDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which DailyTrends to delete
+     */
+    where?: DailyTrendWhereInput
+    /**
+     * Limit how many DailyTrends to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyTrend without action
+   */
+  export type DailyTrendDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyTrend
+     */
+    select?: DailyTrendSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyTrend
+     */
+    omit?: DailyTrendOmit<ExtArgs> | null
+  }
+
+
+  /**
+   * Model DailyNewWork
+   */
+
+  export type AggregateDailyNewWork = {
+    _count: DailyNewWorkCountAggregateOutputType | null
+    _min: DailyNewWorkMinAggregateOutputType | null
+    _max: DailyNewWorkMaxAggregateOutputType | null
+  }
+
+  export type DailyNewWorkMinAggregateOutputType = {
+    id: string | null
+    title: string | null
+    author: string | null
+    source: string | null
+    sourceUrl: string | null
+    excerpt: string | null
+    fullContent: string | null
+    criticism: string | null
+    language: string | null
+    type: string | null
+    publishedAt: Date | null
+    collectedAt: Date | null
+    date: string | null
+    createdAt: Date | null
+  }
+
+  export type DailyNewWorkMaxAggregateOutputType = {
+    id: string | null
+    title: string | null
+    author: string | null
+    source: string | null
+    sourceUrl: string | null
+    excerpt: string | null
+    fullContent: string | null
+    criticism: string | null
+    language: string | null
+    type: string | null
+    publishedAt: Date | null
+    collectedAt: Date | null
+    date: string | null
+    createdAt: Date | null
+  }
+
+  export type DailyNewWorkCountAggregateOutputType = {
+    id: number
+    title: number
+    author: number
+    source: number
+    sourceUrl: number
+    excerpt: number
+    fullContent: number
+    criticism: number
+    language: number
+    tags: number
+    type: number
+    publishedAt: number
+    collectedAt: number
+    date: number
+    createdAt: number
+    _all: number
+  }
+
+
+  export type DailyNewWorkMinAggregateInputType = {
+    id?: true
+    title?: true
+    author?: true
+    source?: true
+    sourceUrl?: true
+    excerpt?: true
+    fullContent?: true
+    criticism?: true
+    language?: true
+    type?: true
+    publishedAt?: true
+    collectedAt?: true
+    date?: true
+    createdAt?: true
+  }
+
+  export type DailyNewWorkMaxAggregateInputType = {
+    id?: true
+    title?: true
+    author?: true
+    source?: true
+    sourceUrl?: true
+    excerpt?: true
+    fullContent?: true
+    criticism?: true
+    language?: true
+    type?: true
+    publishedAt?: true
+    collectedAt?: true
+    date?: true
+    createdAt?: true
+  }
+
+  export type DailyNewWorkCountAggregateInputType = {
+    id?: true
+    title?: true
+    author?: true
+    source?: true
+    sourceUrl?: true
+    excerpt?: true
+    fullContent?: true
+    criticism?: true
+    language?: true
+    tags?: true
+    type?: true
+    publishedAt?: true
+    collectedAt?: true
+    date?: true
+    createdAt?: true
+    _all?: true
+  }
+
+  export type DailyNewWorkAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which DailyNewWork to aggregate.
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyNewWorks to fetch.
+     */
+    orderBy?: DailyNewWorkOrderByWithRelationInput | DailyNewWorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: DailyNewWorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyNewWorks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyNewWorks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned DailyNewWorks
+    **/
+    _count?: true | DailyNewWorkCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: DailyNewWorkMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: DailyNewWorkMaxAggregateInputType
+  }
+
+  export type GetDailyNewWorkAggregateType<T extends DailyNewWorkAggregateArgs> = {
+        [P in keyof T & keyof AggregateDailyNewWork]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateDailyNewWork[P]>
+      : GetScalarType<T[P], AggregateDailyNewWork[P]>
+  }
+
+
+
+
+  export type DailyNewWorkGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: DailyNewWorkWhereInput
+    orderBy?: DailyNewWorkOrderByWithAggregationInput | DailyNewWorkOrderByWithAggregationInput[]
+    by: DailyNewWorkScalarFieldEnum[] | DailyNewWorkScalarFieldEnum
+    having?: DailyNewWorkScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: DailyNewWorkCountAggregateInputType | true
+    _min?: DailyNewWorkMinAggregateInputType
+    _max?: DailyNewWorkMaxAggregateInputType
+  }
+
+  export type DailyNewWorkGroupByOutputType = {
+    id: string
+    title: string
+    author: string
+    source: string
+    sourceUrl: string
+    excerpt: string
+    fullContent: string | null
+    criticism: string | null
+    language: string
+    tags: JsonValue
+    type: string
+    publishedAt: Date
+    collectedAt: Date
+    date: string
+    createdAt: Date
+    _count: DailyNewWorkCountAggregateOutputType | null
+    _min: DailyNewWorkMinAggregateOutputType | null
+    _max: DailyNewWorkMaxAggregateOutputType | null
+  }
+
+  type GetDailyNewWorkGroupByPayload<T extends DailyNewWorkGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<DailyNewWorkGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof DailyNewWorkGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], DailyNewWorkGroupByOutputType[P]>
+            : GetScalarType<T[P], DailyNewWorkGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type DailyNewWorkSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    title?: boolean
+    author?: boolean
+    source?: boolean
+    sourceUrl?: boolean
+    excerpt?: boolean
+    fullContent?: boolean
+    criticism?: boolean
+    language?: boolean
+    tags?: boolean
+    type?: boolean
+    publishedAt?: boolean
+    collectedAt?: boolean
+    date?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["dailyNewWork"]>
+
+  export type DailyNewWorkSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    title?: boolean
+    author?: boolean
+    source?: boolean
+    sourceUrl?: boolean
+    excerpt?: boolean
+    fullContent?: boolean
+    criticism?: boolean
+    language?: boolean
+    tags?: boolean
+    type?: boolean
+    publishedAt?: boolean
+    collectedAt?: boolean
+    date?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["dailyNewWork"]>
+
+  export type DailyNewWorkSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    title?: boolean
+    author?: boolean
+    source?: boolean
+    sourceUrl?: boolean
+    excerpt?: boolean
+    fullContent?: boolean
+    criticism?: boolean
+    language?: boolean
+    tags?: boolean
+    type?: boolean
+    publishedAt?: boolean
+    collectedAt?: boolean
+    date?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["dailyNewWork"]>
+
+  export type DailyNewWorkSelectScalar = {
+    id?: boolean
+    title?: boolean
+    author?: boolean
+    source?: boolean
+    sourceUrl?: boolean
+    excerpt?: boolean
+    fullContent?: boolean
+    criticism?: boolean
+    language?: boolean
+    tags?: boolean
+    type?: boolean
+    publishedAt?: boolean
+    collectedAt?: boolean
+    date?: boolean
+    createdAt?: boolean
+  }
+
+  export type DailyNewWorkOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "title" | "author" | "source" | "sourceUrl" | "excerpt" | "fullContent" | "criticism" | "language" | "tags" | "type" | "publishedAt" | "collectedAt" | "date" | "createdAt", ExtArgs["result"]["dailyNewWork"]>
+
+  export type $DailyNewWorkPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "DailyNewWork"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      title: string
+      author: string
+      source: string
+      sourceUrl: string
+      excerpt: string
+      fullContent: string | null
+      criticism: string | null
+      language: string
+      tags: Prisma.JsonValue
+      type: string
+      publishedAt: Date
+      collectedAt: Date
+      date: string
+      createdAt: Date
+    }, ExtArgs["result"]["dailyNewWork"]>
+    composites: {}
+  }
+
+  type DailyNewWorkGetPayload<S extends boolean | null | undefined | DailyNewWorkDefaultArgs> = $Result.GetResult<Prisma.$DailyNewWorkPayload, S>
+
+  type DailyNewWorkCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<DailyNewWorkFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: DailyNewWorkCountAggregateInputType | true
+    }
+
+  export interface DailyNewWorkDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['DailyNewWork'], meta: { name: 'DailyNewWork' } }
+    /**
+     * Find zero or one DailyNewWork that matches the filter.
+     * @param {DailyNewWorkFindUniqueArgs} args - Arguments to find a DailyNewWork
+     * @example
+     * // Get one DailyNewWork
+     * const dailyNewWork = await prisma.dailyNewWork.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends DailyNewWorkFindUniqueArgs>(args: SelectSubset<T, DailyNewWorkFindUniqueArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one DailyNewWork that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {DailyNewWorkFindUniqueOrThrowArgs} args - Arguments to find a DailyNewWork
+     * @example
+     * // Get one DailyNewWork
+     * const dailyNewWork = await prisma.dailyNewWork.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends DailyNewWorkFindUniqueOrThrowArgs>(args: SelectSubset<T, DailyNewWorkFindUniqueOrThrowArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first DailyNewWork that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkFindFirstArgs} args - Arguments to find a DailyNewWork
+     * @example
+     * // Get one DailyNewWork
+     * const dailyNewWork = await prisma.dailyNewWork.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends DailyNewWorkFindFirstArgs>(args?: SelectSubset<T, DailyNewWorkFindFirstArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first DailyNewWork that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkFindFirstOrThrowArgs} args - Arguments to find a DailyNewWork
+     * @example
+     * // Get one DailyNewWork
+     * const dailyNewWork = await prisma.dailyNewWork.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends DailyNewWorkFindFirstOrThrowArgs>(args?: SelectSubset<T, DailyNewWorkFindFirstOrThrowArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more DailyNewWorks that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all DailyNewWorks
+     * const dailyNewWorks = await prisma.dailyNewWork.findMany()
+     * 
+     * // Get first 10 DailyNewWorks
+     * const dailyNewWorks = await prisma.dailyNewWork.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const dailyNewWorkWithIdOnly = await prisma.dailyNewWork.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends DailyNewWorkFindManyArgs>(args?: SelectSubset<T, DailyNewWorkFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a DailyNewWork.
+     * @param {DailyNewWorkCreateArgs} args - Arguments to create a DailyNewWork.
+     * @example
+     * // Create one DailyNewWork
+     * const DailyNewWork = await prisma.dailyNewWork.create({
+     *   data: {
+     *     // ... data to create a DailyNewWork
+     *   }
+     * })
+     * 
+     */
+    create<T extends DailyNewWorkCreateArgs>(args: SelectSubset<T, DailyNewWorkCreateArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many DailyNewWorks.
+     * @param {DailyNewWorkCreateManyArgs} args - Arguments to create many DailyNewWorks.
+     * @example
+     * // Create many DailyNewWorks
+     * const dailyNewWork = await prisma.dailyNewWork.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends DailyNewWorkCreateManyArgs>(args?: SelectSubset<T, DailyNewWorkCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many DailyNewWorks and returns the data saved in the database.
+     * @param {DailyNewWorkCreateManyAndReturnArgs} args - Arguments to create many DailyNewWorks.
+     * @example
+     * // Create many DailyNewWorks
+     * const dailyNewWork = await prisma.dailyNewWork.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many DailyNewWorks and only return the `id`
+     * const dailyNewWorkWithIdOnly = await prisma.dailyNewWork.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends DailyNewWorkCreateManyAndReturnArgs>(args?: SelectSubset<T, DailyNewWorkCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a DailyNewWork.
+     * @param {DailyNewWorkDeleteArgs} args - Arguments to delete one DailyNewWork.
+     * @example
+     * // Delete one DailyNewWork
+     * const DailyNewWork = await prisma.dailyNewWork.delete({
+     *   where: {
+     *     // ... filter to delete one DailyNewWork
+     *   }
+     * })
+     * 
+     */
+    delete<T extends DailyNewWorkDeleteArgs>(args: SelectSubset<T, DailyNewWorkDeleteArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one DailyNewWork.
+     * @param {DailyNewWorkUpdateArgs} args - Arguments to update one DailyNewWork.
+     * @example
+     * // Update one DailyNewWork
+     * const dailyNewWork = await prisma.dailyNewWork.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends DailyNewWorkUpdateArgs>(args: SelectSubset<T, DailyNewWorkUpdateArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more DailyNewWorks.
+     * @param {DailyNewWorkDeleteManyArgs} args - Arguments to filter DailyNewWorks to delete.
+     * @example
+     * // Delete a few DailyNewWorks
+     * const { count } = await prisma.dailyNewWork.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends DailyNewWorkDeleteManyArgs>(args?: SelectSubset<T, DailyNewWorkDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more DailyNewWorks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many DailyNewWorks
+     * const dailyNewWork = await prisma.dailyNewWork.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends DailyNewWorkUpdateManyArgs>(args: SelectSubset<T, DailyNewWorkUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more DailyNewWorks and returns the data updated in the database.
+     * @param {DailyNewWorkUpdateManyAndReturnArgs} args - Arguments to update many DailyNewWorks.
+     * @example
+     * // Update many DailyNewWorks
+     * const dailyNewWork = await prisma.dailyNewWork.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more DailyNewWorks and only return the `id`
+     * const dailyNewWorkWithIdOnly = await prisma.dailyNewWork.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends DailyNewWorkUpdateManyAndReturnArgs>(args: SelectSubset<T, DailyNewWorkUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one DailyNewWork.
+     * @param {DailyNewWorkUpsertArgs} args - Arguments to update or create a DailyNewWork.
+     * @example
+     * // Update or create a DailyNewWork
+     * const dailyNewWork = await prisma.dailyNewWork.upsert({
+     *   create: {
+     *     // ... data to create a DailyNewWork
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the DailyNewWork we want to update
+     *   }
+     * })
+     */
+    upsert<T extends DailyNewWorkUpsertArgs>(args: SelectSubset<T, DailyNewWorkUpsertArgs<ExtArgs>>): Prisma__DailyNewWorkClient<$Result.GetResult<Prisma.$DailyNewWorkPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of DailyNewWorks.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkCountArgs} args - Arguments to filter DailyNewWorks to count.
+     * @example
+     * // Count the number of DailyNewWorks
+     * const count = await prisma.dailyNewWork.count({
+     *   where: {
+     *     // ... the filter for the DailyNewWorks we want to count
+     *   }
+     * })
+    **/
+    count<T extends DailyNewWorkCountArgs>(
+      args?: Subset<T, DailyNewWorkCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], DailyNewWorkCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a DailyNewWork.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends DailyNewWorkAggregateArgs>(args: Subset<T, DailyNewWorkAggregateArgs>): Prisma.PrismaPromise<GetDailyNewWorkAggregateType<T>>
+
+    /**
+     * Group by DailyNewWork.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {DailyNewWorkGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends DailyNewWorkGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: DailyNewWorkGroupByArgs['orderBy'] }
+        : { orderBy?: DailyNewWorkGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, DailyNewWorkGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetDailyNewWorkGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the DailyNewWork model
+   */
+  readonly fields: DailyNewWorkFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for DailyNewWork.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__DailyNewWorkClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the DailyNewWork model
+   */
+  interface DailyNewWorkFieldRefs {
+    readonly id: FieldRef<"DailyNewWork", 'String'>
+    readonly title: FieldRef<"DailyNewWork", 'String'>
+    readonly author: FieldRef<"DailyNewWork", 'String'>
+    readonly source: FieldRef<"DailyNewWork", 'String'>
+    readonly sourceUrl: FieldRef<"DailyNewWork", 'String'>
+    readonly excerpt: FieldRef<"DailyNewWork", 'String'>
+    readonly fullContent: FieldRef<"DailyNewWork", 'String'>
+    readonly criticism: FieldRef<"DailyNewWork", 'String'>
+    readonly language: FieldRef<"DailyNewWork", 'String'>
+    readonly tags: FieldRef<"DailyNewWork", 'Json'>
+    readonly type: FieldRef<"DailyNewWork", 'String'>
+    readonly publishedAt: FieldRef<"DailyNewWork", 'DateTime'>
+    readonly collectedAt: FieldRef<"DailyNewWork", 'DateTime'>
+    readonly date: FieldRef<"DailyNewWork", 'String'>
+    readonly createdAt: FieldRef<"DailyNewWork", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * DailyNewWork findUnique
+   */
+  export type DailyNewWorkFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyNewWork to fetch.
+     */
+    where: DailyNewWorkWhereUniqueInput
+  }
+
+  /**
+   * DailyNewWork findUniqueOrThrow
+   */
+  export type DailyNewWorkFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyNewWork to fetch.
+     */
+    where: DailyNewWorkWhereUniqueInput
+  }
+
+  /**
+   * DailyNewWork findFirst
+   */
+  export type DailyNewWorkFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyNewWork to fetch.
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyNewWorks to fetch.
+     */
+    orderBy?: DailyNewWorkOrderByWithRelationInput | DailyNewWorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for DailyNewWorks.
+     */
+    cursor?: DailyNewWorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyNewWorks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyNewWorks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyNewWorks.
+     */
+    distinct?: DailyNewWorkScalarFieldEnum | DailyNewWorkScalarFieldEnum[]
+  }
+
+  /**
+   * DailyNewWork findFirstOrThrow
+   */
+  export type DailyNewWorkFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyNewWork to fetch.
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyNewWorks to fetch.
+     */
+    orderBy?: DailyNewWorkOrderByWithRelationInput | DailyNewWorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for DailyNewWorks.
+     */
+    cursor?: DailyNewWorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyNewWorks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyNewWorks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyNewWorks.
+     */
+    distinct?: DailyNewWorkScalarFieldEnum | DailyNewWorkScalarFieldEnum[]
+  }
+
+  /**
+   * DailyNewWork findMany
+   */
+  export type DailyNewWorkFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * Filter, which DailyNewWorks to fetch.
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of DailyNewWorks to fetch.
+     */
+    orderBy?: DailyNewWorkOrderByWithRelationInput | DailyNewWorkOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing DailyNewWorks.
+     */
+    cursor?: DailyNewWorkWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` DailyNewWorks from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` DailyNewWorks.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of DailyNewWorks.
+     */
+    distinct?: DailyNewWorkScalarFieldEnum | DailyNewWorkScalarFieldEnum[]
+  }
+
+  /**
+   * DailyNewWork create
+   */
+  export type DailyNewWorkCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * The data needed to create a DailyNewWork.
+     */
+    data: XOR<DailyNewWorkCreateInput, DailyNewWorkUncheckedCreateInput>
+  }
+
+  /**
+   * DailyNewWork createMany
+   */
+  export type DailyNewWorkCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many DailyNewWorks.
+     */
+    data: DailyNewWorkCreateManyInput | DailyNewWorkCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * DailyNewWork createManyAndReturn
+   */
+  export type DailyNewWorkCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * The data used to create many DailyNewWorks.
+     */
+    data: DailyNewWorkCreateManyInput | DailyNewWorkCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * DailyNewWork update
+   */
+  export type DailyNewWorkUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * The data needed to update a DailyNewWork.
+     */
+    data: XOR<DailyNewWorkUpdateInput, DailyNewWorkUncheckedUpdateInput>
+    /**
+     * Choose, which DailyNewWork to update.
+     */
+    where: DailyNewWorkWhereUniqueInput
+  }
+
+  /**
+   * DailyNewWork updateMany
+   */
+  export type DailyNewWorkUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update DailyNewWorks.
+     */
+    data: XOR<DailyNewWorkUpdateManyMutationInput, DailyNewWorkUncheckedUpdateManyInput>
+    /**
+     * Filter which DailyNewWorks to update
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * Limit how many DailyNewWorks to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyNewWork updateManyAndReturn
+   */
+  export type DailyNewWorkUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * The data used to update DailyNewWorks.
+     */
+    data: XOR<DailyNewWorkUpdateManyMutationInput, DailyNewWorkUncheckedUpdateManyInput>
+    /**
+     * Filter which DailyNewWorks to update
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * Limit how many DailyNewWorks to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyNewWork upsert
+   */
+  export type DailyNewWorkUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * The filter to search for the DailyNewWork to update in case it exists.
+     */
+    where: DailyNewWorkWhereUniqueInput
+    /**
+     * In case the DailyNewWork found by the `where` argument doesn't exist, create a new DailyNewWork with this data.
+     */
+    create: XOR<DailyNewWorkCreateInput, DailyNewWorkUncheckedCreateInput>
+    /**
+     * In case the DailyNewWork was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<DailyNewWorkUpdateInput, DailyNewWorkUncheckedUpdateInput>
+  }
+
+  /**
+   * DailyNewWork delete
+   */
+  export type DailyNewWorkDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+    /**
+     * Filter which DailyNewWork to delete.
+     */
+    where: DailyNewWorkWhereUniqueInput
+  }
+
+  /**
+   * DailyNewWork deleteMany
+   */
+  export type DailyNewWorkDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which DailyNewWorks to delete
+     */
+    where?: DailyNewWorkWhereInput
+    /**
+     * Limit how many DailyNewWorks to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * DailyNewWork without action
+   */
+  export type DailyNewWorkDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the DailyNewWork
+     */
+    select?: DailyNewWorkSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the DailyNewWork
+     */
+    omit?: DailyNewWorkOmit<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -6875,6 +16918,144 @@ export namespace Prisma {
   export type DailyRecommendationScalarFieldEnum = (typeof DailyRecommendationScalarFieldEnum)[keyof typeof DailyRecommendationScalarFieldEnum]
 
 
+  export const WorkScalarFieldEnum: {
+    id: 'id',
+    title: 'title',
+    titleEn: 'titleEn',
+    author: 'author',
+    country: 'country',
+    flag: 'flag',
+    continent: 'continent',
+    era: 'era',
+    genres: 'genres',
+    themes: 'themes',
+    excerpt: 'excerpt',
+    gradient: 'gradient',
+    year: 'year',
+    featured: 'featured',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+  };
+
+  export type WorkScalarFieldEnum = (typeof WorkScalarFieldEnum)[keyof typeof WorkScalarFieldEnum]
+
+
+  export const WorkDetailScalarFieldEnum: {
+    id: 'id',
+    workId: 'workId',
+    characters: 'characters',
+    plotSummary: 'plotSummary',
+    plotNodes: 'plotNodes',
+    themeAnalysis: 'themeAnalysis',
+    techniques: 'techniques',
+    excerpts: 'excerpts',
+    insights: 'insights',
+    sourceAttribution: 'sourceAttribution',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+  };
+
+  export type WorkDetailScalarFieldEnum = (typeof WorkDetailScalarFieldEnum)[keyof typeof WorkDetailScalarFieldEnum]
+
+
+  export const WorkCharacterScalarFieldEnum: {
+    id: 'id',
+    workId: 'workId',
+    name: 'name',
+    role: 'role',
+    description: 'description'
+  };
+
+  export type WorkCharacterScalarFieldEnum = (typeof WorkCharacterScalarFieldEnum)[keyof typeof WorkCharacterScalarFieldEnum]
+
+
+  export const BgImageScalarFieldEnum: {
+    id: 'id',
+    workId: 'workId',
+    url: 'url',
+    status: 'status',
+    source: 'source',
+    photographer: 'photographer',
+    photographerUrl: 'photographerUrl',
+    searchQuery: 'searchQuery',
+    fetchedAt: 'fetchedAt',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+  };
+
+  export type BgImageScalarFieldEnum = (typeof BgImageScalarFieldEnum)[keyof typeof BgImageScalarFieldEnum]
+
+
+  export const AwardScalarFieldEnum: {
+    slug: 'slug',
+    name: 'name',
+    nameEn: 'nameEn',
+    description: 'description',
+    established: 'established',
+    country: 'country',
+    flag: 'flag',
+    frequency: 'frequency',
+    category: 'category',
+    gradient: 'gradient',
+    icon: 'icon',
+    website: 'website',
+    introduction: 'introduction',
+    createdAt: 'createdAt',
+    updatedAt: 'updatedAt'
+  };
+
+  export type AwardScalarFieldEnum = (typeof AwardScalarFieldEnum)[keyof typeof AwardScalarFieldEnum]
+
+
+  export const AwardWinnerScalarFieldEnum: {
+    id: 'id',
+    workId: 'workId',
+    awardSlug: 'awardSlug',
+    year: 'year',
+    category: 'category'
+  };
+
+  export type AwardWinnerScalarFieldEnum = (typeof AwardWinnerScalarFieldEnum)[keyof typeof AwardWinnerScalarFieldEnum]
+
+
+  export const DailyTrendScalarFieldEnum: {
+    id: 'id',
+    date: 'date',
+    title: 'title',
+    background: 'background',
+    perspectives: 'perspectives',
+    insight: 'insight',
+    sourceLinks: 'sourceLinks',
+    sourceType: 'sourceType',
+    generatedAt: 'generatedAt',
+    totalPostsAnalyzed: 'totalPostsAnalyzed',
+    createdAt: 'createdAt'
+  };
+
+  export type DailyTrendScalarFieldEnum = (typeof DailyTrendScalarFieldEnum)[keyof typeof DailyTrendScalarFieldEnum]
+
+
+  export const DailyNewWorkScalarFieldEnum: {
+    id: 'id',
+    title: 'title',
+    author: 'author',
+    source: 'source',
+    sourceUrl: 'sourceUrl',
+    excerpt: 'excerpt',
+    fullContent: 'fullContent',
+    criticism: 'criticism',
+    language: 'language',
+    tags: 'tags',
+    type: 'type',
+    publishedAt: 'publishedAt',
+    collectedAt: 'collectedAt',
+    date: 'date',
+    createdAt: 'createdAt'
+  };
+
+  export type DailyNewWorkScalarFieldEnum = (typeof DailyNewWorkScalarFieldEnum)[keyof typeof DailyNewWorkScalarFieldEnum]
+
+
   export const SortOrder: {
     asc: 'asc',
     desc: 'desc'
@@ -6889,6 +17070,13 @@ export namespace Prisma {
   };
 
   export type NullableJsonNullValueInput = (typeof NullableJsonNullValueInput)[keyof typeof NullableJsonNullValueInput]
+
+
+  export const JsonNullValueInput: {
+    JsonNull: typeof JsonNull
+  };
+
+  export type JsonNullValueInput = (typeof JsonNullValueInput)[keyof typeof JsonNullValueInput]
 
 
   export const QueryMode: {
@@ -6974,6 +17162,27 @@ export namespace Prisma {
    * Reference to a field of type 'Int[]'
    */
   export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
+    
+
+
+  /**
+   * Reference to a field of type 'Boolean'
+   */
+  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
+    
+
+
+  /**
+   * Reference to a field of type 'Float'
+   */
+  export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
+    
+
+
+  /**
+   * Reference to a field of type 'Float[]'
+   */
+  export type ListFloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float[]'>
     
   /**
    * Deep Input Types
@@ -7306,6 +17515,711 @@ export namespace Prisma {
     date?: StringWithAggregatesFilter<"DailyRecommendation"> | string
     reason?: StringWithAggregatesFilter<"DailyRecommendation"> | string
     createdAt?: DateTimeWithAggregatesFilter<"DailyRecommendation"> | Date | string
+  }
+
+  export type WorkWhereInput = {
+    AND?: WorkWhereInput | WorkWhereInput[]
+    OR?: WorkWhereInput[]
+    NOT?: WorkWhereInput | WorkWhereInput[]
+    id?: StringFilter<"Work"> | string
+    title?: StringFilter<"Work"> | string
+    titleEn?: StringFilter<"Work"> | string
+    author?: StringFilter<"Work"> | string
+    country?: StringFilter<"Work"> | string
+    flag?: StringFilter<"Work"> | string
+    continent?: StringFilter<"Work"> | string
+    era?: StringFilter<"Work"> | string
+    genres?: JsonFilter<"Work">
+    themes?: JsonFilter<"Work">
+    excerpt?: StringFilter<"Work"> | string
+    gradient?: StringFilter<"Work"> | string
+    year?: IntNullableFilter<"Work"> | number | null
+    featured?: BoolFilter<"Work"> | boolean
+    createdAt?: DateTimeFilter<"Work"> | Date | string
+    updatedAt?: DateTimeFilter<"Work"> | Date | string
+    detail?: XOR<WorkDetailNullableScalarRelationFilter, WorkDetailWhereInput> | null
+    characters?: WorkCharacterListRelationFilter
+    bgImage?: XOR<BgImageNullableScalarRelationFilter, BgImageWhereInput> | null
+    awardWinners?: AwardWinnerListRelationFilter
+  }
+
+  export type WorkOrderByWithRelationInput = {
+    id?: SortOrder
+    title?: SortOrder
+    titleEn?: SortOrder
+    author?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    continent?: SortOrder
+    era?: SortOrder
+    genres?: SortOrder
+    themes?: SortOrder
+    excerpt?: SortOrder
+    gradient?: SortOrder
+    year?: SortOrderInput | SortOrder
+    featured?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    detail?: WorkDetailOrderByWithRelationInput
+    characters?: WorkCharacterOrderByRelationAggregateInput
+    bgImage?: BgImageOrderByWithRelationInput
+    awardWinners?: AwardWinnerOrderByRelationAggregateInput
+  }
+
+  export type WorkWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: WorkWhereInput | WorkWhereInput[]
+    OR?: WorkWhereInput[]
+    NOT?: WorkWhereInput | WorkWhereInput[]
+    title?: StringFilter<"Work"> | string
+    titleEn?: StringFilter<"Work"> | string
+    author?: StringFilter<"Work"> | string
+    country?: StringFilter<"Work"> | string
+    flag?: StringFilter<"Work"> | string
+    continent?: StringFilter<"Work"> | string
+    era?: StringFilter<"Work"> | string
+    genres?: JsonFilter<"Work">
+    themes?: JsonFilter<"Work">
+    excerpt?: StringFilter<"Work"> | string
+    gradient?: StringFilter<"Work"> | string
+    year?: IntNullableFilter<"Work"> | number | null
+    featured?: BoolFilter<"Work"> | boolean
+    createdAt?: DateTimeFilter<"Work"> | Date | string
+    updatedAt?: DateTimeFilter<"Work"> | Date | string
+    detail?: XOR<WorkDetailNullableScalarRelationFilter, WorkDetailWhereInput> | null
+    characters?: WorkCharacterListRelationFilter
+    bgImage?: XOR<BgImageNullableScalarRelationFilter, BgImageWhereInput> | null
+    awardWinners?: AwardWinnerListRelationFilter
+  }, "id">
+
+  export type WorkOrderByWithAggregationInput = {
+    id?: SortOrder
+    title?: SortOrder
+    titleEn?: SortOrder
+    author?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    continent?: SortOrder
+    era?: SortOrder
+    genres?: SortOrder
+    themes?: SortOrder
+    excerpt?: SortOrder
+    gradient?: SortOrder
+    year?: SortOrderInput | SortOrder
+    featured?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    _count?: WorkCountOrderByAggregateInput
+    _avg?: WorkAvgOrderByAggregateInput
+    _max?: WorkMaxOrderByAggregateInput
+    _min?: WorkMinOrderByAggregateInput
+    _sum?: WorkSumOrderByAggregateInput
+  }
+
+  export type WorkScalarWhereWithAggregatesInput = {
+    AND?: WorkScalarWhereWithAggregatesInput | WorkScalarWhereWithAggregatesInput[]
+    OR?: WorkScalarWhereWithAggregatesInput[]
+    NOT?: WorkScalarWhereWithAggregatesInput | WorkScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"Work"> | string
+    title?: StringWithAggregatesFilter<"Work"> | string
+    titleEn?: StringWithAggregatesFilter<"Work"> | string
+    author?: StringWithAggregatesFilter<"Work"> | string
+    country?: StringWithAggregatesFilter<"Work"> | string
+    flag?: StringWithAggregatesFilter<"Work"> | string
+    continent?: StringWithAggregatesFilter<"Work"> | string
+    era?: StringWithAggregatesFilter<"Work"> | string
+    genres?: JsonWithAggregatesFilter<"Work">
+    themes?: JsonWithAggregatesFilter<"Work">
+    excerpt?: StringWithAggregatesFilter<"Work"> | string
+    gradient?: StringWithAggregatesFilter<"Work"> | string
+    year?: IntNullableWithAggregatesFilter<"Work"> | number | null
+    featured?: BoolWithAggregatesFilter<"Work"> | boolean
+    createdAt?: DateTimeWithAggregatesFilter<"Work"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"Work"> | Date | string
+  }
+
+  export type WorkDetailWhereInput = {
+    AND?: WorkDetailWhereInput | WorkDetailWhereInput[]
+    OR?: WorkDetailWhereInput[]
+    NOT?: WorkDetailWhereInput | WorkDetailWhereInput[]
+    id?: StringFilter<"WorkDetail"> | string
+    workId?: StringFilter<"WorkDetail"> | string
+    characters?: JsonFilter<"WorkDetail">
+    plotSummary?: StringFilter<"WorkDetail"> | string
+    plotNodes?: JsonFilter<"WorkDetail">
+    themeAnalysis?: StringFilter<"WorkDetail"> | string
+    techniques?: StringFilter<"WorkDetail"> | string
+    excerpts?: JsonFilter<"WorkDetail">
+    insights?: StringFilter<"WorkDetail"> | string
+    sourceAttribution?: JsonNullableFilter<"WorkDetail">
+    createdAt?: DateTimeFilter<"WorkDetail"> | Date | string
+    updatedAt?: DateTimeFilter<"WorkDetail"> | Date | string
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+  }
+
+  export type WorkDetailOrderByWithRelationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    characters?: SortOrder
+    plotSummary?: SortOrder
+    plotNodes?: SortOrder
+    themeAnalysis?: SortOrder
+    techniques?: SortOrder
+    excerpts?: SortOrder
+    insights?: SortOrder
+    sourceAttribution?: SortOrderInput | SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    work?: WorkOrderByWithRelationInput
+  }
+
+  export type WorkDetailWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    workId?: string
+    AND?: WorkDetailWhereInput | WorkDetailWhereInput[]
+    OR?: WorkDetailWhereInput[]
+    NOT?: WorkDetailWhereInput | WorkDetailWhereInput[]
+    characters?: JsonFilter<"WorkDetail">
+    plotSummary?: StringFilter<"WorkDetail"> | string
+    plotNodes?: JsonFilter<"WorkDetail">
+    themeAnalysis?: StringFilter<"WorkDetail"> | string
+    techniques?: StringFilter<"WorkDetail"> | string
+    excerpts?: JsonFilter<"WorkDetail">
+    insights?: StringFilter<"WorkDetail"> | string
+    sourceAttribution?: JsonNullableFilter<"WorkDetail">
+    createdAt?: DateTimeFilter<"WorkDetail"> | Date | string
+    updatedAt?: DateTimeFilter<"WorkDetail"> | Date | string
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+  }, "id" | "workId">
+
+  export type WorkDetailOrderByWithAggregationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    characters?: SortOrder
+    plotSummary?: SortOrder
+    plotNodes?: SortOrder
+    themeAnalysis?: SortOrder
+    techniques?: SortOrder
+    excerpts?: SortOrder
+    insights?: SortOrder
+    sourceAttribution?: SortOrderInput | SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    _count?: WorkDetailCountOrderByAggregateInput
+    _max?: WorkDetailMaxOrderByAggregateInput
+    _min?: WorkDetailMinOrderByAggregateInput
+  }
+
+  export type WorkDetailScalarWhereWithAggregatesInput = {
+    AND?: WorkDetailScalarWhereWithAggregatesInput | WorkDetailScalarWhereWithAggregatesInput[]
+    OR?: WorkDetailScalarWhereWithAggregatesInput[]
+    NOT?: WorkDetailScalarWhereWithAggregatesInput | WorkDetailScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"WorkDetail"> | string
+    workId?: StringWithAggregatesFilter<"WorkDetail"> | string
+    characters?: JsonWithAggregatesFilter<"WorkDetail">
+    plotSummary?: StringWithAggregatesFilter<"WorkDetail"> | string
+    plotNodes?: JsonWithAggregatesFilter<"WorkDetail">
+    themeAnalysis?: StringWithAggregatesFilter<"WorkDetail"> | string
+    techniques?: StringWithAggregatesFilter<"WorkDetail"> | string
+    excerpts?: JsonWithAggregatesFilter<"WorkDetail">
+    insights?: StringWithAggregatesFilter<"WorkDetail"> | string
+    sourceAttribution?: JsonNullableWithAggregatesFilter<"WorkDetail">
+    createdAt?: DateTimeWithAggregatesFilter<"WorkDetail"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"WorkDetail"> | Date | string
+  }
+
+  export type WorkCharacterWhereInput = {
+    AND?: WorkCharacterWhereInput | WorkCharacterWhereInput[]
+    OR?: WorkCharacterWhereInput[]
+    NOT?: WorkCharacterWhereInput | WorkCharacterWhereInput[]
+    id?: StringFilter<"WorkCharacter"> | string
+    workId?: StringFilter<"WorkCharacter"> | string
+    name?: StringFilter<"WorkCharacter"> | string
+    role?: StringFilter<"WorkCharacter"> | string
+    description?: StringFilter<"WorkCharacter"> | string
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+  }
+
+  export type WorkCharacterOrderByWithRelationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    name?: SortOrder
+    role?: SortOrder
+    description?: SortOrder
+    work?: WorkOrderByWithRelationInput
+  }
+
+  export type WorkCharacterWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: WorkCharacterWhereInput | WorkCharacterWhereInput[]
+    OR?: WorkCharacterWhereInput[]
+    NOT?: WorkCharacterWhereInput | WorkCharacterWhereInput[]
+    workId?: StringFilter<"WorkCharacter"> | string
+    name?: StringFilter<"WorkCharacter"> | string
+    role?: StringFilter<"WorkCharacter"> | string
+    description?: StringFilter<"WorkCharacter"> | string
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+  }, "id">
+
+  export type WorkCharacterOrderByWithAggregationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    name?: SortOrder
+    role?: SortOrder
+    description?: SortOrder
+    _count?: WorkCharacterCountOrderByAggregateInput
+    _max?: WorkCharacterMaxOrderByAggregateInput
+    _min?: WorkCharacterMinOrderByAggregateInput
+  }
+
+  export type WorkCharacterScalarWhereWithAggregatesInput = {
+    AND?: WorkCharacterScalarWhereWithAggregatesInput | WorkCharacterScalarWhereWithAggregatesInput[]
+    OR?: WorkCharacterScalarWhereWithAggregatesInput[]
+    NOT?: WorkCharacterScalarWhereWithAggregatesInput | WorkCharacterScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"WorkCharacter"> | string
+    workId?: StringWithAggregatesFilter<"WorkCharacter"> | string
+    name?: StringWithAggregatesFilter<"WorkCharacter"> | string
+    role?: StringWithAggregatesFilter<"WorkCharacter"> | string
+    description?: StringWithAggregatesFilter<"WorkCharacter"> | string
+  }
+
+  export type BgImageWhereInput = {
+    AND?: BgImageWhereInput | BgImageWhereInput[]
+    OR?: BgImageWhereInput[]
+    NOT?: BgImageWhereInput | BgImageWhereInput[]
+    id?: StringFilter<"BgImage"> | string
+    workId?: StringFilter<"BgImage"> | string
+    url?: StringFilter<"BgImage"> | string
+    status?: StringFilter<"BgImage"> | string
+    source?: StringFilter<"BgImage"> | string
+    photographer?: StringFilter<"BgImage"> | string
+    photographerUrl?: StringFilter<"BgImage"> | string
+    searchQuery?: StringFilter<"BgImage"> | string
+    fetchedAt?: DateTimeNullableFilter<"BgImage"> | Date | string | null
+    createdAt?: DateTimeFilter<"BgImage"> | Date | string
+    updatedAt?: DateTimeFilter<"BgImage"> | Date | string
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+  }
+
+  export type BgImageOrderByWithRelationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    url?: SortOrder
+    status?: SortOrder
+    source?: SortOrder
+    photographer?: SortOrder
+    photographerUrl?: SortOrder
+    searchQuery?: SortOrder
+    fetchedAt?: SortOrderInput | SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    work?: WorkOrderByWithRelationInput
+  }
+
+  export type BgImageWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    workId?: string
+    AND?: BgImageWhereInput | BgImageWhereInput[]
+    OR?: BgImageWhereInput[]
+    NOT?: BgImageWhereInput | BgImageWhereInput[]
+    url?: StringFilter<"BgImage"> | string
+    status?: StringFilter<"BgImage"> | string
+    source?: StringFilter<"BgImage"> | string
+    photographer?: StringFilter<"BgImage"> | string
+    photographerUrl?: StringFilter<"BgImage"> | string
+    searchQuery?: StringFilter<"BgImage"> | string
+    fetchedAt?: DateTimeNullableFilter<"BgImage"> | Date | string | null
+    createdAt?: DateTimeFilter<"BgImage"> | Date | string
+    updatedAt?: DateTimeFilter<"BgImage"> | Date | string
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+  }, "id" | "workId">
+
+  export type BgImageOrderByWithAggregationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    url?: SortOrder
+    status?: SortOrder
+    source?: SortOrder
+    photographer?: SortOrder
+    photographerUrl?: SortOrder
+    searchQuery?: SortOrder
+    fetchedAt?: SortOrderInput | SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    _count?: BgImageCountOrderByAggregateInput
+    _max?: BgImageMaxOrderByAggregateInput
+    _min?: BgImageMinOrderByAggregateInput
+  }
+
+  export type BgImageScalarWhereWithAggregatesInput = {
+    AND?: BgImageScalarWhereWithAggregatesInput | BgImageScalarWhereWithAggregatesInput[]
+    OR?: BgImageScalarWhereWithAggregatesInput[]
+    NOT?: BgImageScalarWhereWithAggregatesInput | BgImageScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"BgImage"> | string
+    workId?: StringWithAggregatesFilter<"BgImage"> | string
+    url?: StringWithAggregatesFilter<"BgImage"> | string
+    status?: StringWithAggregatesFilter<"BgImage"> | string
+    source?: StringWithAggregatesFilter<"BgImage"> | string
+    photographer?: StringWithAggregatesFilter<"BgImage"> | string
+    photographerUrl?: StringWithAggregatesFilter<"BgImage"> | string
+    searchQuery?: StringWithAggregatesFilter<"BgImage"> | string
+    fetchedAt?: DateTimeNullableWithAggregatesFilter<"BgImage"> | Date | string | null
+    createdAt?: DateTimeWithAggregatesFilter<"BgImage"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"BgImage"> | Date | string
+  }
+
+  export type AwardWhereInput = {
+    AND?: AwardWhereInput | AwardWhereInput[]
+    OR?: AwardWhereInput[]
+    NOT?: AwardWhereInput | AwardWhereInput[]
+    slug?: StringFilter<"Award"> | string
+    name?: StringFilter<"Award"> | string
+    nameEn?: StringFilter<"Award"> | string
+    description?: StringFilter<"Award"> | string
+    established?: IntFilter<"Award"> | number
+    country?: StringFilter<"Award"> | string
+    flag?: StringFilter<"Award"> | string
+    frequency?: StringFilter<"Award"> | string
+    category?: StringFilter<"Award"> | string
+    gradient?: StringFilter<"Award"> | string
+    icon?: StringFilter<"Award"> | string
+    website?: StringNullableFilter<"Award"> | string | null
+    introduction?: StringFilter<"Award"> | string
+    createdAt?: DateTimeFilter<"Award"> | Date | string
+    updatedAt?: DateTimeFilter<"Award"> | Date | string
+    winners?: AwardWinnerListRelationFilter
+  }
+
+  export type AwardOrderByWithRelationInput = {
+    slug?: SortOrder
+    name?: SortOrder
+    nameEn?: SortOrder
+    description?: SortOrder
+    established?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    frequency?: SortOrder
+    category?: SortOrder
+    gradient?: SortOrder
+    icon?: SortOrder
+    website?: SortOrderInput | SortOrder
+    introduction?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    winners?: AwardWinnerOrderByRelationAggregateInput
+  }
+
+  export type AwardWhereUniqueInput = Prisma.AtLeast<{
+    slug?: string
+    AND?: AwardWhereInput | AwardWhereInput[]
+    OR?: AwardWhereInput[]
+    NOT?: AwardWhereInput | AwardWhereInput[]
+    name?: StringFilter<"Award"> | string
+    nameEn?: StringFilter<"Award"> | string
+    description?: StringFilter<"Award"> | string
+    established?: IntFilter<"Award"> | number
+    country?: StringFilter<"Award"> | string
+    flag?: StringFilter<"Award"> | string
+    frequency?: StringFilter<"Award"> | string
+    category?: StringFilter<"Award"> | string
+    gradient?: StringFilter<"Award"> | string
+    icon?: StringFilter<"Award"> | string
+    website?: StringNullableFilter<"Award"> | string | null
+    introduction?: StringFilter<"Award"> | string
+    createdAt?: DateTimeFilter<"Award"> | Date | string
+    updatedAt?: DateTimeFilter<"Award"> | Date | string
+    winners?: AwardWinnerListRelationFilter
+  }, "slug">
+
+  export type AwardOrderByWithAggregationInput = {
+    slug?: SortOrder
+    name?: SortOrder
+    nameEn?: SortOrder
+    description?: SortOrder
+    established?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    frequency?: SortOrder
+    category?: SortOrder
+    gradient?: SortOrder
+    icon?: SortOrder
+    website?: SortOrderInput | SortOrder
+    introduction?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+    _count?: AwardCountOrderByAggregateInput
+    _avg?: AwardAvgOrderByAggregateInput
+    _max?: AwardMaxOrderByAggregateInput
+    _min?: AwardMinOrderByAggregateInput
+    _sum?: AwardSumOrderByAggregateInput
+  }
+
+  export type AwardScalarWhereWithAggregatesInput = {
+    AND?: AwardScalarWhereWithAggregatesInput | AwardScalarWhereWithAggregatesInput[]
+    OR?: AwardScalarWhereWithAggregatesInput[]
+    NOT?: AwardScalarWhereWithAggregatesInput | AwardScalarWhereWithAggregatesInput[]
+    slug?: StringWithAggregatesFilter<"Award"> | string
+    name?: StringWithAggregatesFilter<"Award"> | string
+    nameEn?: StringWithAggregatesFilter<"Award"> | string
+    description?: StringWithAggregatesFilter<"Award"> | string
+    established?: IntWithAggregatesFilter<"Award"> | number
+    country?: StringWithAggregatesFilter<"Award"> | string
+    flag?: StringWithAggregatesFilter<"Award"> | string
+    frequency?: StringWithAggregatesFilter<"Award"> | string
+    category?: StringWithAggregatesFilter<"Award"> | string
+    gradient?: StringWithAggregatesFilter<"Award"> | string
+    icon?: StringWithAggregatesFilter<"Award"> | string
+    website?: StringNullableWithAggregatesFilter<"Award"> | string | null
+    introduction?: StringWithAggregatesFilter<"Award"> | string
+    createdAt?: DateTimeWithAggregatesFilter<"Award"> | Date | string
+    updatedAt?: DateTimeWithAggregatesFilter<"Award"> | Date | string
+  }
+
+  export type AwardWinnerWhereInput = {
+    AND?: AwardWinnerWhereInput | AwardWinnerWhereInput[]
+    OR?: AwardWinnerWhereInput[]
+    NOT?: AwardWinnerWhereInput | AwardWinnerWhereInput[]
+    id?: StringFilter<"AwardWinner"> | string
+    workId?: StringFilter<"AwardWinner"> | string
+    awardSlug?: StringFilter<"AwardWinner"> | string
+    year?: IntFilter<"AwardWinner"> | number
+    category?: StringNullableFilter<"AwardWinner"> | string | null
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+    award?: XOR<AwardScalarRelationFilter, AwardWhereInput>
+  }
+
+  export type AwardWinnerOrderByWithRelationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    awardSlug?: SortOrder
+    year?: SortOrder
+    category?: SortOrderInput | SortOrder
+    work?: WorkOrderByWithRelationInput
+    award?: AwardOrderByWithRelationInput
+  }
+
+  export type AwardWinnerWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    workId_awardSlug_year?: AwardWinnerWorkIdAwardSlugYearCompoundUniqueInput
+    AND?: AwardWinnerWhereInput | AwardWinnerWhereInput[]
+    OR?: AwardWinnerWhereInput[]
+    NOT?: AwardWinnerWhereInput | AwardWinnerWhereInput[]
+    workId?: StringFilter<"AwardWinner"> | string
+    awardSlug?: StringFilter<"AwardWinner"> | string
+    year?: IntFilter<"AwardWinner"> | number
+    category?: StringNullableFilter<"AwardWinner"> | string | null
+    work?: XOR<WorkScalarRelationFilter, WorkWhereInput>
+    award?: XOR<AwardScalarRelationFilter, AwardWhereInput>
+  }, "id" | "workId_awardSlug_year">
+
+  export type AwardWinnerOrderByWithAggregationInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    awardSlug?: SortOrder
+    year?: SortOrder
+    category?: SortOrderInput | SortOrder
+    _count?: AwardWinnerCountOrderByAggregateInput
+    _avg?: AwardWinnerAvgOrderByAggregateInput
+    _max?: AwardWinnerMaxOrderByAggregateInput
+    _min?: AwardWinnerMinOrderByAggregateInput
+    _sum?: AwardWinnerSumOrderByAggregateInput
+  }
+
+  export type AwardWinnerScalarWhereWithAggregatesInput = {
+    AND?: AwardWinnerScalarWhereWithAggregatesInput | AwardWinnerScalarWhereWithAggregatesInput[]
+    OR?: AwardWinnerScalarWhereWithAggregatesInput[]
+    NOT?: AwardWinnerScalarWhereWithAggregatesInput | AwardWinnerScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"AwardWinner"> | string
+    workId?: StringWithAggregatesFilter<"AwardWinner"> | string
+    awardSlug?: StringWithAggregatesFilter<"AwardWinner"> | string
+    year?: IntWithAggregatesFilter<"AwardWinner"> | number
+    category?: StringNullableWithAggregatesFilter<"AwardWinner"> | string | null
+  }
+
+  export type DailyTrendWhereInput = {
+    AND?: DailyTrendWhereInput | DailyTrendWhereInput[]
+    OR?: DailyTrendWhereInput[]
+    NOT?: DailyTrendWhereInput | DailyTrendWhereInput[]
+    id?: StringFilter<"DailyTrend"> | string
+    date?: StringFilter<"DailyTrend"> | string
+    title?: StringFilter<"DailyTrend"> | string
+    background?: StringFilter<"DailyTrend"> | string
+    perspectives?: StringFilter<"DailyTrend"> | string
+    insight?: StringFilter<"DailyTrend"> | string
+    sourceLinks?: JsonFilter<"DailyTrend">
+    sourceType?: StringNullableFilter<"DailyTrend"> | string | null
+    generatedAt?: DateTimeFilter<"DailyTrend"> | Date | string
+    totalPostsAnalyzed?: IntFilter<"DailyTrend"> | number
+    createdAt?: DateTimeFilter<"DailyTrend"> | Date | string
+  }
+
+  export type DailyTrendOrderByWithRelationInput = {
+    id?: SortOrder
+    date?: SortOrder
+    title?: SortOrder
+    background?: SortOrder
+    perspectives?: SortOrder
+    insight?: SortOrder
+    sourceLinks?: SortOrder
+    sourceType?: SortOrderInput | SortOrder
+    generatedAt?: SortOrder
+    totalPostsAnalyzed?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyTrendWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: DailyTrendWhereInput | DailyTrendWhereInput[]
+    OR?: DailyTrendWhereInput[]
+    NOT?: DailyTrendWhereInput | DailyTrendWhereInput[]
+    date?: StringFilter<"DailyTrend"> | string
+    title?: StringFilter<"DailyTrend"> | string
+    background?: StringFilter<"DailyTrend"> | string
+    perspectives?: StringFilter<"DailyTrend"> | string
+    insight?: StringFilter<"DailyTrend"> | string
+    sourceLinks?: JsonFilter<"DailyTrend">
+    sourceType?: StringNullableFilter<"DailyTrend"> | string | null
+    generatedAt?: DateTimeFilter<"DailyTrend"> | Date | string
+    totalPostsAnalyzed?: IntFilter<"DailyTrend"> | number
+    createdAt?: DateTimeFilter<"DailyTrend"> | Date | string
+  }, "id">
+
+  export type DailyTrendOrderByWithAggregationInput = {
+    id?: SortOrder
+    date?: SortOrder
+    title?: SortOrder
+    background?: SortOrder
+    perspectives?: SortOrder
+    insight?: SortOrder
+    sourceLinks?: SortOrder
+    sourceType?: SortOrderInput | SortOrder
+    generatedAt?: SortOrder
+    totalPostsAnalyzed?: SortOrder
+    createdAt?: SortOrder
+    _count?: DailyTrendCountOrderByAggregateInput
+    _avg?: DailyTrendAvgOrderByAggregateInput
+    _max?: DailyTrendMaxOrderByAggregateInput
+    _min?: DailyTrendMinOrderByAggregateInput
+    _sum?: DailyTrendSumOrderByAggregateInput
+  }
+
+  export type DailyTrendScalarWhereWithAggregatesInput = {
+    AND?: DailyTrendScalarWhereWithAggregatesInput | DailyTrendScalarWhereWithAggregatesInput[]
+    OR?: DailyTrendScalarWhereWithAggregatesInput[]
+    NOT?: DailyTrendScalarWhereWithAggregatesInput | DailyTrendScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"DailyTrend"> | string
+    date?: StringWithAggregatesFilter<"DailyTrend"> | string
+    title?: StringWithAggregatesFilter<"DailyTrend"> | string
+    background?: StringWithAggregatesFilter<"DailyTrend"> | string
+    perspectives?: StringWithAggregatesFilter<"DailyTrend"> | string
+    insight?: StringWithAggregatesFilter<"DailyTrend"> | string
+    sourceLinks?: JsonWithAggregatesFilter<"DailyTrend">
+    sourceType?: StringNullableWithAggregatesFilter<"DailyTrend"> | string | null
+    generatedAt?: DateTimeWithAggregatesFilter<"DailyTrend"> | Date | string
+    totalPostsAnalyzed?: IntWithAggregatesFilter<"DailyTrend"> | number
+    createdAt?: DateTimeWithAggregatesFilter<"DailyTrend"> | Date | string
+  }
+
+  export type DailyNewWorkWhereInput = {
+    AND?: DailyNewWorkWhereInput | DailyNewWorkWhereInput[]
+    OR?: DailyNewWorkWhereInput[]
+    NOT?: DailyNewWorkWhereInput | DailyNewWorkWhereInput[]
+    id?: StringFilter<"DailyNewWork"> | string
+    title?: StringFilter<"DailyNewWork"> | string
+    author?: StringFilter<"DailyNewWork"> | string
+    source?: StringFilter<"DailyNewWork"> | string
+    sourceUrl?: StringFilter<"DailyNewWork"> | string
+    excerpt?: StringFilter<"DailyNewWork"> | string
+    fullContent?: StringNullableFilter<"DailyNewWork"> | string | null
+    criticism?: StringNullableFilter<"DailyNewWork"> | string | null
+    language?: StringFilter<"DailyNewWork"> | string
+    tags?: JsonFilter<"DailyNewWork">
+    type?: StringFilter<"DailyNewWork"> | string
+    publishedAt?: DateTimeFilter<"DailyNewWork"> | Date | string
+    collectedAt?: DateTimeFilter<"DailyNewWork"> | Date | string
+    date?: StringFilter<"DailyNewWork"> | string
+    createdAt?: DateTimeFilter<"DailyNewWork"> | Date | string
+  }
+
+  export type DailyNewWorkOrderByWithRelationInput = {
+    id?: SortOrder
+    title?: SortOrder
+    author?: SortOrder
+    source?: SortOrder
+    sourceUrl?: SortOrder
+    excerpt?: SortOrder
+    fullContent?: SortOrderInput | SortOrder
+    criticism?: SortOrderInput | SortOrder
+    language?: SortOrder
+    tags?: SortOrder
+    type?: SortOrder
+    publishedAt?: SortOrder
+    collectedAt?: SortOrder
+    date?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyNewWorkWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: DailyNewWorkWhereInput | DailyNewWorkWhereInput[]
+    OR?: DailyNewWorkWhereInput[]
+    NOT?: DailyNewWorkWhereInput | DailyNewWorkWhereInput[]
+    title?: StringFilter<"DailyNewWork"> | string
+    author?: StringFilter<"DailyNewWork"> | string
+    source?: StringFilter<"DailyNewWork"> | string
+    sourceUrl?: StringFilter<"DailyNewWork"> | string
+    excerpt?: StringFilter<"DailyNewWork"> | string
+    fullContent?: StringNullableFilter<"DailyNewWork"> | string | null
+    criticism?: StringNullableFilter<"DailyNewWork"> | string | null
+    language?: StringFilter<"DailyNewWork"> | string
+    tags?: JsonFilter<"DailyNewWork">
+    type?: StringFilter<"DailyNewWork"> | string
+    publishedAt?: DateTimeFilter<"DailyNewWork"> | Date | string
+    collectedAt?: DateTimeFilter<"DailyNewWork"> | Date | string
+    date?: StringFilter<"DailyNewWork"> | string
+    createdAt?: DateTimeFilter<"DailyNewWork"> | Date | string
+  }, "id">
+
+  export type DailyNewWorkOrderByWithAggregationInput = {
+    id?: SortOrder
+    title?: SortOrder
+    author?: SortOrder
+    source?: SortOrder
+    sourceUrl?: SortOrder
+    excerpt?: SortOrder
+    fullContent?: SortOrderInput | SortOrder
+    criticism?: SortOrderInput | SortOrder
+    language?: SortOrder
+    tags?: SortOrder
+    type?: SortOrder
+    publishedAt?: SortOrder
+    collectedAt?: SortOrder
+    date?: SortOrder
+    createdAt?: SortOrder
+    _count?: DailyNewWorkCountOrderByAggregateInput
+    _max?: DailyNewWorkMaxOrderByAggregateInput
+    _min?: DailyNewWorkMinOrderByAggregateInput
+  }
+
+  export type DailyNewWorkScalarWhereWithAggregatesInput = {
+    AND?: DailyNewWorkScalarWhereWithAggregatesInput | DailyNewWorkScalarWhereWithAggregatesInput[]
+    OR?: DailyNewWorkScalarWhereWithAggregatesInput[]
+    NOT?: DailyNewWorkScalarWhereWithAggregatesInput | DailyNewWorkScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    title?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    author?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    source?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    sourceUrl?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    excerpt?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    fullContent?: StringNullableWithAggregatesFilter<"DailyNewWork"> | string | null
+    criticism?: StringNullableWithAggregatesFilter<"DailyNewWork"> | string | null
+    language?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    tags?: JsonWithAggregatesFilter<"DailyNewWork">
+    type?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    publishedAt?: DateTimeWithAggregatesFilter<"DailyNewWork"> | Date | string
+    collectedAt?: DateTimeWithAggregatesFilter<"DailyNewWork"> | Date | string
+    date?: StringWithAggregatesFilter<"DailyNewWork"> | string
+    createdAt?: DateTimeWithAggregatesFilter<"DailyNewWork"> | Date | string
   }
 
   export type UserCreateInput = {
@@ -7653,6 +18567,819 @@ export namespace Prisma {
     bookId?: StringFieldUpdateOperationsInput | string
     date?: StringFieldUpdateOperationsInput | string
     reason?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkCreateInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailCreateNestedOneWithoutWorkInput
+    characters?: WorkCharacterCreateNestedManyWithoutWorkInput
+    bgImage?: BgImageCreateNestedOneWithoutWorkInput
+    awardWinners?: AwardWinnerCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkUncheckedCreateInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailUncheckedCreateNestedOneWithoutWorkInput
+    characters?: WorkCharacterUncheckedCreateNestedManyWithoutWorkInput
+    bgImage?: BgImageUncheckedCreateNestedOneWithoutWorkInput
+    awardWinners?: AwardWinnerUncheckedCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUpdateOneWithoutWorkNestedInput
+    characters?: WorkCharacterUpdateManyWithoutWorkNestedInput
+    bgImage?: BgImageUpdateOneWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUncheckedUpdateOneWithoutWorkNestedInput
+    characters?: WorkCharacterUncheckedUpdateManyWithoutWorkNestedInput
+    bgImage?: BgImageUncheckedUpdateOneWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUncheckedUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkCreateManyInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type WorkUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkDetailCreateInput = {
+    id: string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: string
+    techniques?: string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    work: WorkCreateNestedOneWithoutDetailInput
+  }
+
+  export type WorkDetailUncheckedCreateInput = {
+    id: string
+    workId: string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: string
+    techniques?: string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type WorkDetailUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: StringFieldUpdateOperationsInput | string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: StringFieldUpdateOperationsInput | string
+    techniques?: StringFieldUpdateOperationsInput | string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: StringFieldUpdateOperationsInput | string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    work?: WorkUpdateOneRequiredWithoutDetailNestedInput
+  }
+
+  export type WorkDetailUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: StringFieldUpdateOperationsInput | string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: StringFieldUpdateOperationsInput | string
+    techniques?: StringFieldUpdateOperationsInput | string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: StringFieldUpdateOperationsInput | string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkDetailCreateManyInput = {
+    id: string
+    workId: string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: string
+    techniques?: string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type WorkDetailUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: StringFieldUpdateOperationsInput | string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: StringFieldUpdateOperationsInput | string
+    techniques?: StringFieldUpdateOperationsInput | string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: StringFieldUpdateOperationsInput | string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkDetailUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: StringFieldUpdateOperationsInput | string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: StringFieldUpdateOperationsInput | string
+    techniques?: StringFieldUpdateOperationsInput | string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: StringFieldUpdateOperationsInput | string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkCharacterCreateInput = {
+    id?: string
+    name: string
+    role: string
+    description: string
+    work: WorkCreateNestedOneWithoutCharactersInput
+  }
+
+  export type WorkCharacterUncheckedCreateInput = {
+    id?: string
+    workId: string
+    name: string
+    role: string
+    description: string
+  }
+
+  export type WorkCharacterUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    work?: WorkUpdateOneRequiredWithoutCharactersNestedInput
+  }
+
+  export type WorkCharacterUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type WorkCharacterCreateManyInput = {
+    id?: string
+    workId: string
+    name: string
+    role: string
+    description: string
+  }
+
+  export type WorkCharacterUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type WorkCharacterUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type BgImageCreateInput = {
+    id?: string
+    url?: string
+    status?: string
+    source?: string
+    photographer?: string
+    photographerUrl?: string
+    searchQuery?: string
+    fetchedAt?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    work: WorkCreateNestedOneWithoutBgImageInput
+  }
+
+  export type BgImageUncheckedCreateInput = {
+    id?: string
+    workId: string
+    url?: string
+    status?: string
+    source?: string
+    photographer?: string
+    photographerUrl?: string
+    searchQuery?: string
+    fetchedAt?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type BgImageUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    photographer?: StringFieldUpdateOperationsInput | string
+    photographerUrl?: StringFieldUpdateOperationsInput | string
+    searchQuery?: StringFieldUpdateOperationsInput | string
+    fetchedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    work?: WorkUpdateOneRequiredWithoutBgImageNestedInput
+  }
+
+  export type BgImageUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    photographer?: StringFieldUpdateOperationsInput | string
+    photographerUrl?: StringFieldUpdateOperationsInput | string
+    searchQuery?: StringFieldUpdateOperationsInput | string
+    fetchedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type BgImageCreateManyInput = {
+    id?: string
+    workId: string
+    url?: string
+    status?: string
+    source?: string
+    photographer?: string
+    photographerUrl?: string
+    searchQuery?: string
+    fetchedAt?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type BgImageUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    photographer?: StringFieldUpdateOperationsInput | string
+    photographerUrl?: StringFieldUpdateOperationsInput | string
+    searchQuery?: StringFieldUpdateOperationsInput | string
+    fetchedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type BgImageUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    photographer?: StringFieldUpdateOperationsInput | string
+    photographerUrl?: StringFieldUpdateOperationsInput | string
+    searchQuery?: StringFieldUpdateOperationsInput | string
+    fetchedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type AwardCreateInput = {
+    slug: string
+    name: string
+    nameEn: string
+    description: string
+    established: number
+    country: string
+    flag: string
+    frequency: string
+    category: string
+    gradient: string
+    icon: string
+    website?: string | null
+    introduction: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    winners?: AwardWinnerCreateNestedManyWithoutAwardInput
+  }
+
+  export type AwardUncheckedCreateInput = {
+    slug: string
+    name: string
+    nameEn: string
+    description: string
+    established: number
+    country: string
+    flag: string
+    frequency: string
+    category: string
+    gradient: string
+    icon: string
+    website?: string | null
+    introduction: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    winners?: AwardWinnerUncheckedCreateNestedManyWithoutAwardInput
+  }
+
+  export type AwardUpdateInput = {
+    slug?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    nameEn?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    established?: IntFieldUpdateOperationsInput | number
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    frequency?: StringFieldUpdateOperationsInput | string
+    category?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    icon?: StringFieldUpdateOperationsInput | string
+    website?: NullableStringFieldUpdateOperationsInput | string | null
+    introduction?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    winners?: AwardWinnerUpdateManyWithoutAwardNestedInput
+  }
+
+  export type AwardUncheckedUpdateInput = {
+    slug?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    nameEn?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    established?: IntFieldUpdateOperationsInput | number
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    frequency?: StringFieldUpdateOperationsInput | string
+    category?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    icon?: StringFieldUpdateOperationsInput | string
+    website?: NullableStringFieldUpdateOperationsInput | string | null
+    introduction?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    winners?: AwardWinnerUncheckedUpdateManyWithoutAwardNestedInput
+  }
+
+  export type AwardCreateManyInput = {
+    slug: string
+    name: string
+    nameEn: string
+    description: string
+    established: number
+    country: string
+    flag: string
+    frequency: string
+    category: string
+    gradient: string
+    icon: string
+    website?: string | null
+    introduction: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type AwardUpdateManyMutationInput = {
+    slug?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    nameEn?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    established?: IntFieldUpdateOperationsInput | number
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    frequency?: StringFieldUpdateOperationsInput | string
+    category?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    icon?: StringFieldUpdateOperationsInput | string
+    website?: NullableStringFieldUpdateOperationsInput | string | null
+    introduction?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type AwardUncheckedUpdateManyInput = {
+    slug?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    nameEn?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    established?: IntFieldUpdateOperationsInput | number
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    frequency?: StringFieldUpdateOperationsInput | string
+    category?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    icon?: StringFieldUpdateOperationsInput | string
+    website?: NullableStringFieldUpdateOperationsInput | string | null
+    introduction?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type AwardWinnerCreateInput = {
+    id?: string
+    year: number
+    category?: string | null
+    work: WorkCreateNestedOneWithoutAwardWinnersInput
+    award: AwardCreateNestedOneWithoutWinnersInput
+  }
+
+  export type AwardWinnerUncheckedCreateInput = {
+    id?: string
+    workId: string
+    awardSlug: string
+    year: number
+    category?: string | null
+  }
+
+  export type AwardWinnerUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+    work?: WorkUpdateOneRequiredWithoutAwardWinnersNestedInput
+    award?: AwardUpdateOneRequiredWithoutWinnersNestedInput
+  }
+
+  export type AwardWinnerUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    awardSlug?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type AwardWinnerCreateManyInput = {
+    id?: string
+    workId: string
+    awardSlug: string
+    year: number
+    category?: string | null
+  }
+
+  export type AwardWinnerUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type AwardWinnerUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    awardSlug?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type DailyTrendCreateInput = {
+    id?: string
+    date: string
+    title: string
+    background: string
+    perspectives: string
+    insight: string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: string | null
+    generatedAt: Date | string
+    totalPostsAnalyzed?: number
+    createdAt?: Date | string
+  }
+
+  export type DailyTrendUncheckedCreateInput = {
+    id?: string
+    date: string
+    title: string
+    background: string
+    perspectives: string
+    insight: string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: string | null
+    generatedAt: Date | string
+    totalPostsAnalyzed?: number
+    createdAt?: Date | string
+  }
+
+  export type DailyTrendUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    background?: StringFieldUpdateOperationsInput | string
+    perspectives?: StringFieldUpdateOperationsInput | string
+    insight?: StringFieldUpdateOperationsInput | string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: NullableStringFieldUpdateOperationsInput | string | null
+    generatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    totalPostsAnalyzed?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyTrendUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    background?: StringFieldUpdateOperationsInput | string
+    perspectives?: StringFieldUpdateOperationsInput | string
+    insight?: StringFieldUpdateOperationsInput | string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: NullableStringFieldUpdateOperationsInput | string | null
+    generatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    totalPostsAnalyzed?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyTrendCreateManyInput = {
+    id?: string
+    date: string
+    title: string
+    background: string
+    perspectives: string
+    insight: string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: string | null
+    generatedAt: Date | string
+    totalPostsAnalyzed?: number
+    createdAt?: Date | string
+  }
+
+  export type DailyTrendUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    background?: StringFieldUpdateOperationsInput | string
+    perspectives?: StringFieldUpdateOperationsInput | string
+    insight?: StringFieldUpdateOperationsInput | string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: NullableStringFieldUpdateOperationsInput | string | null
+    generatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    totalPostsAnalyzed?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyTrendUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    date?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    background?: StringFieldUpdateOperationsInput | string
+    perspectives?: StringFieldUpdateOperationsInput | string
+    insight?: StringFieldUpdateOperationsInput | string
+    sourceLinks?: JsonNullValueInput | InputJsonValue
+    sourceType?: NullableStringFieldUpdateOperationsInput | string | null
+    generatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    totalPostsAnalyzed?: IntFieldUpdateOperationsInput | number
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyNewWorkCreateInput = {
+    id: string
+    title: string
+    author: string
+    source: string
+    sourceUrl?: string
+    excerpt: string
+    fullContent?: string | null
+    criticism?: string | null
+    language: string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: string
+    publishedAt: Date | string
+    collectedAt: Date | string
+    date: string
+    createdAt?: Date | string
+  }
+
+  export type DailyNewWorkUncheckedCreateInput = {
+    id: string
+    title: string
+    author: string
+    source: string
+    sourceUrl?: string
+    excerpt: string
+    fullContent?: string | null
+    criticism?: string | null
+    language: string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: string
+    publishedAt: Date | string
+    collectedAt: Date | string
+    date: string
+    createdAt?: Date | string
+  }
+
+  export type DailyNewWorkUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    sourceUrl?: StringFieldUpdateOperationsInput | string
+    excerpt?: StringFieldUpdateOperationsInput | string
+    fullContent?: NullableStringFieldUpdateOperationsInput | string | null
+    criticism?: NullableStringFieldUpdateOperationsInput | string | null
+    language?: StringFieldUpdateOperationsInput | string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: StringFieldUpdateOperationsInput | string
+    publishedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    collectedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    date?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyNewWorkUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    sourceUrl?: StringFieldUpdateOperationsInput | string
+    excerpt?: StringFieldUpdateOperationsInput | string
+    fullContent?: NullableStringFieldUpdateOperationsInput | string | null
+    criticism?: NullableStringFieldUpdateOperationsInput | string | null
+    language?: StringFieldUpdateOperationsInput | string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: StringFieldUpdateOperationsInput | string
+    publishedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    collectedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    date?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyNewWorkCreateManyInput = {
+    id: string
+    title: string
+    author: string
+    source: string
+    sourceUrl?: string
+    excerpt: string
+    fullContent?: string | null
+    criticism?: string | null
+    language: string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: string
+    publishedAt: Date | string
+    collectedAt: Date | string
+    date: string
+    createdAt?: Date | string
+  }
+
+  export type DailyNewWorkUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    sourceUrl?: StringFieldUpdateOperationsInput | string
+    excerpt?: StringFieldUpdateOperationsInput | string
+    fullContent?: NullableStringFieldUpdateOperationsInput | string | null
+    criticism?: NullableStringFieldUpdateOperationsInput | string | null
+    language?: StringFieldUpdateOperationsInput | string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: StringFieldUpdateOperationsInput | string
+    publishedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    collectedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    date?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type DailyNewWorkUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    sourceUrl?: StringFieldUpdateOperationsInput | string
+    excerpt?: StringFieldUpdateOperationsInput | string
+    fullContent?: NullableStringFieldUpdateOperationsInput | string | null
+    criticism?: NullableStringFieldUpdateOperationsInput | string | null
+    language?: StringFieldUpdateOperationsInput | string
+    tags?: JsonNullValueInput | InputJsonValue
+    type?: StringFieldUpdateOperationsInput | string
+    publishedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    collectedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    date?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
@@ -8007,6 +19734,551 @@ export namespace Prisma {
     reason?: SortOrder
     createdAt?: SortOrder
   }
+  export type JsonFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
+
+  export type IntNullableFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  }
+
+  export type BoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
+  export type WorkDetailNullableScalarRelationFilter = {
+    is?: WorkDetailWhereInput | null
+    isNot?: WorkDetailWhereInput | null
+  }
+
+  export type WorkCharacterListRelationFilter = {
+    every?: WorkCharacterWhereInput
+    some?: WorkCharacterWhereInput
+    none?: WorkCharacterWhereInput
+  }
+
+  export type BgImageNullableScalarRelationFilter = {
+    is?: BgImageWhereInput | null
+    isNot?: BgImageWhereInput | null
+  }
+
+  export type AwardWinnerListRelationFilter = {
+    every?: AwardWinnerWhereInput
+    some?: AwardWinnerWhereInput
+    none?: AwardWinnerWhereInput
+  }
+
+  export type WorkCharacterOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type AwardWinnerOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type WorkCountOrderByAggregateInput = {
+    id?: SortOrder
+    title?: SortOrder
+    titleEn?: SortOrder
+    author?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    continent?: SortOrder
+    era?: SortOrder
+    genres?: SortOrder
+    themes?: SortOrder
+    excerpt?: SortOrder
+    gradient?: SortOrder
+    year?: SortOrder
+    featured?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type WorkAvgOrderByAggregateInput = {
+    year?: SortOrder
+  }
+
+  export type WorkMaxOrderByAggregateInput = {
+    id?: SortOrder
+    title?: SortOrder
+    titleEn?: SortOrder
+    author?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    continent?: SortOrder
+    era?: SortOrder
+    excerpt?: SortOrder
+    gradient?: SortOrder
+    year?: SortOrder
+    featured?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type WorkMinOrderByAggregateInput = {
+    id?: SortOrder
+    title?: SortOrder
+    titleEn?: SortOrder
+    author?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    continent?: SortOrder
+    era?: SortOrder
+    excerpt?: SortOrder
+    gradient?: SortOrder
+    year?: SortOrder
+    featured?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type WorkSumOrderByAggregateInput = {
+    year?: SortOrder
+  }
+  export type JsonWithAggregatesFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonWithAggregatesFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonWithAggregatesFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonWithAggregatesFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedJsonFilter<$PrismaModel>
+    _max?: NestedJsonFilter<$PrismaModel>
+  }
+
+  export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedFloatNullableFilter<$PrismaModel>
+    _sum?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedIntNullableFilter<$PrismaModel>
+    _max?: NestedIntNullableFilter<$PrismaModel>
+  }
+
+  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
+  export type WorkScalarRelationFilter = {
+    is?: WorkWhereInput
+    isNot?: WorkWhereInput
+  }
+
+  export type WorkDetailCountOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    characters?: SortOrder
+    plotSummary?: SortOrder
+    plotNodes?: SortOrder
+    themeAnalysis?: SortOrder
+    techniques?: SortOrder
+    excerpts?: SortOrder
+    insights?: SortOrder
+    sourceAttribution?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type WorkDetailMaxOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    plotSummary?: SortOrder
+    themeAnalysis?: SortOrder
+    techniques?: SortOrder
+    insights?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type WorkDetailMinOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    plotSummary?: SortOrder
+    themeAnalysis?: SortOrder
+    techniques?: SortOrder
+    insights?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type WorkCharacterCountOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    name?: SortOrder
+    role?: SortOrder
+    description?: SortOrder
+  }
+
+  export type WorkCharacterMaxOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    name?: SortOrder
+    role?: SortOrder
+    description?: SortOrder
+  }
+
+  export type WorkCharacterMinOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    name?: SortOrder
+    role?: SortOrder
+    description?: SortOrder
+  }
+
+  export type DateTimeNullableFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
+  }
+
+  export type BgImageCountOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    url?: SortOrder
+    status?: SortOrder
+    source?: SortOrder
+    photographer?: SortOrder
+    photographerUrl?: SortOrder
+    searchQuery?: SortOrder
+    fetchedAt?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type BgImageMaxOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    url?: SortOrder
+    status?: SortOrder
+    source?: SortOrder
+    photographer?: SortOrder
+    photographerUrl?: SortOrder
+    searchQuery?: SortOrder
+    fetchedAt?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type BgImageMinOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    url?: SortOrder
+    status?: SortOrder
+    source?: SortOrder
+    photographer?: SortOrder
+    photographerUrl?: SortOrder
+    searchQuery?: SortOrder
+    fetchedAt?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type DateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableWithAggregatesFilter<$PrismaModel> | Date | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedDateTimeNullableFilter<$PrismaModel>
+    _max?: NestedDateTimeNullableFilter<$PrismaModel>
+  }
+
+  export type IntFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntFilter<$PrismaModel> | number
+  }
+
+  export type AwardCountOrderByAggregateInput = {
+    slug?: SortOrder
+    name?: SortOrder
+    nameEn?: SortOrder
+    description?: SortOrder
+    established?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    frequency?: SortOrder
+    category?: SortOrder
+    gradient?: SortOrder
+    icon?: SortOrder
+    website?: SortOrder
+    introduction?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type AwardAvgOrderByAggregateInput = {
+    established?: SortOrder
+  }
+
+  export type AwardMaxOrderByAggregateInput = {
+    slug?: SortOrder
+    name?: SortOrder
+    nameEn?: SortOrder
+    description?: SortOrder
+    established?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    frequency?: SortOrder
+    category?: SortOrder
+    gradient?: SortOrder
+    icon?: SortOrder
+    website?: SortOrder
+    introduction?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type AwardMinOrderByAggregateInput = {
+    slug?: SortOrder
+    name?: SortOrder
+    nameEn?: SortOrder
+    description?: SortOrder
+    established?: SortOrder
+    country?: SortOrder
+    flag?: SortOrder
+    frequency?: SortOrder
+    category?: SortOrder
+    gradient?: SortOrder
+    icon?: SortOrder
+    website?: SortOrder
+    introduction?: SortOrder
+    createdAt?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type AwardSumOrderByAggregateInput = {
+    established?: SortOrder
+  }
+
+  export type IntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
+  export type AwardScalarRelationFilter = {
+    is?: AwardWhereInput
+    isNot?: AwardWhereInput
+  }
+
+  export type AwardWinnerWorkIdAwardSlugYearCompoundUniqueInput = {
+    workId: string
+    awardSlug: string
+    year: number
+  }
+
+  export type AwardWinnerCountOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    awardSlug?: SortOrder
+    year?: SortOrder
+    category?: SortOrder
+  }
+
+  export type AwardWinnerAvgOrderByAggregateInput = {
+    year?: SortOrder
+  }
+
+  export type AwardWinnerMaxOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    awardSlug?: SortOrder
+    year?: SortOrder
+    category?: SortOrder
+  }
+
+  export type AwardWinnerMinOrderByAggregateInput = {
+    id?: SortOrder
+    workId?: SortOrder
+    awardSlug?: SortOrder
+    year?: SortOrder
+    category?: SortOrder
+  }
+
+  export type AwardWinnerSumOrderByAggregateInput = {
+    year?: SortOrder
+  }
+
+  export type DailyTrendCountOrderByAggregateInput = {
+    id?: SortOrder
+    date?: SortOrder
+    title?: SortOrder
+    background?: SortOrder
+    perspectives?: SortOrder
+    insight?: SortOrder
+    sourceLinks?: SortOrder
+    sourceType?: SortOrder
+    generatedAt?: SortOrder
+    totalPostsAnalyzed?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyTrendAvgOrderByAggregateInput = {
+    totalPostsAnalyzed?: SortOrder
+  }
+
+  export type DailyTrendMaxOrderByAggregateInput = {
+    id?: SortOrder
+    date?: SortOrder
+    title?: SortOrder
+    background?: SortOrder
+    perspectives?: SortOrder
+    insight?: SortOrder
+    sourceType?: SortOrder
+    generatedAt?: SortOrder
+    totalPostsAnalyzed?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyTrendMinOrderByAggregateInput = {
+    id?: SortOrder
+    date?: SortOrder
+    title?: SortOrder
+    background?: SortOrder
+    perspectives?: SortOrder
+    insight?: SortOrder
+    sourceType?: SortOrder
+    generatedAt?: SortOrder
+    totalPostsAnalyzed?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyTrendSumOrderByAggregateInput = {
+    totalPostsAnalyzed?: SortOrder
+  }
+
+  export type DailyNewWorkCountOrderByAggregateInput = {
+    id?: SortOrder
+    title?: SortOrder
+    author?: SortOrder
+    source?: SortOrder
+    sourceUrl?: SortOrder
+    excerpt?: SortOrder
+    fullContent?: SortOrder
+    criticism?: SortOrder
+    language?: SortOrder
+    tags?: SortOrder
+    type?: SortOrder
+    publishedAt?: SortOrder
+    collectedAt?: SortOrder
+    date?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyNewWorkMaxOrderByAggregateInput = {
+    id?: SortOrder
+    title?: SortOrder
+    author?: SortOrder
+    source?: SortOrder
+    sourceUrl?: SortOrder
+    excerpt?: SortOrder
+    fullContent?: SortOrder
+    criticism?: SortOrder
+    language?: SortOrder
+    type?: SortOrder
+    publishedAt?: SortOrder
+    collectedAt?: SortOrder
+    date?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type DailyNewWorkMinOrderByAggregateInput = {
+    id?: SortOrder
+    title?: SortOrder
+    author?: SortOrder
+    source?: SortOrder
+    sourceUrl?: SortOrder
+    excerpt?: SortOrder
+    fullContent?: SortOrder
+    criticism?: SortOrder
+    language?: SortOrder
+    type?: SortOrder
+    publishedAt?: SortOrder
+    collectedAt?: SortOrder
+    date?: SortOrder
+    createdAt?: SortOrder
+  }
 
   export type BookmarkCreateNestedManyWithoutUserInput = {
     create?: XOR<BookmarkCreateWithoutUserInput, BookmarkUncheckedCreateWithoutUserInput> | BookmarkCreateWithoutUserInput[] | BookmarkUncheckedCreateWithoutUserInput[]
@@ -8244,6 +20516,290 @@ export namespace Prisma {
     update?: XOR<XOR<UserUpdateToOneWithWhereWithoutDailyRecommendationsInput, UserUpdateWithoutDailyRecommendationsInput>, UserUncheckedUpdateWithoutDailyRecommendationsInput>
   }
 
+  export type WorkDetailCreateNestedOneWithoutWorkInput = {
+    create?: XOR<WorkDetailCreateWithoutWorkInput, WorkDetailUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: WorkDetailCreateOrConnectWithoutWorkInput
+    connect?: WorkDetailWhereUniqueInput
+  }
+
+  export type WorkCharacterCreateNestedManyWithoutWorkInput = {
+    create?: XOR<WorkCharacterCreateWithoutWorkInput, WorkCharacterUncheckedCreateWithoutWorkInput> | WorkCharacterCreateWithoutWorkInput[] | WorkCharacterUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: WorkCharacterCreateOrConnectWithoutWorkInput | WorkCharacterCreateOrConnectWithoutWorkInput[]
+    createMany?: WorkCharacterCreateManyWorkInputEnvelope
+    connect?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+  }
+
+  export type BgImageCreateNestedOneWithoutWorkInput = {
+    create?: XOR<BgImageCreateWithoutWorkInput, BgImageUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: BgImageCreateOrConnectWithoutWorkInput
+    connect?: BgImageWhereUniqueInput
+  }
+
+  export type AwardWinnerCreateNestedManyWithoutWorkInput = {
+    create?: XOR<AwardWinnerCreateWithoutWorkInput, AwardWinnerUncheckedCreateWithoutWorkInput> | AwardWinnerCreateWithoutWorkInput[] | AwardWinnerUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutWorkInput | AwardWinnerCreateOrConnectWithoutWorkInput[]
+    createMany?: AwardWinnerCreateManyWorkInputEnvelope
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+  }
+
+  export type WorkDetailUncheckedCreateNestedOneWithoutWorkInput = {
+    create?: XOR<WorkDetailCreateWithoutWorkInput, WorkDetailUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: WorkDetailCreateOrConnectWithoutWorkInput
+    connect?: WorkDetailWhereUniqueInput
+  }
+
+  export type WorkCharacterUncheckedCreateNestedManyWithoutWorkInput = {
+    create?: XOR<WorkCharacterCreateWithoutWorkInput, WorkCharacterUncheckedCreateWithoutWorkInput> | WorkCharacterCreateWithoutWorkInput[] | WorkCharacterUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: WorkCharacterCreateOrConnectWithoutWorkInput | WorkCharacterCreateOrConnectWithoutWorkInput[]
+    createMany?: WorkCharacterCreateManyWorkInputEnvelope
+    connect?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+  }
+
+  export type BgImageUncheckedCreateNestedOneWithoutWorkInput = {
+    create?: XOR<BgImageCreateWithoutWorkInput, BgImageUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: BgImageCreateOrConnectWithoutWorkInput
+    connect?: BgImageWhereUniqueInput
+  }
+
+  export type AwardWinnerUncheckedCreateNestedManyWithoutWorkInput = {
+    create?: XOR<AwardWinnerCreateWithoutWorkInput, AwardWinnerUncheckedCreateWithoutWorkInput> | AwardWinnerCreateWithoutWorkInput[] | AwardWinnerUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutWorkInput | AwardWinnerCreateOrConnectWithoutWorkInput[]
+    createMany?: AwardWinnerCreateManyWorkInputEnvelope
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+  }
+
+  export type NullableIntFieldUpdateOperationsInput = {
+    set?: number | null
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
+  export type BoolFieldUpdateOperationsInput = {
+    set?: boolean
+  }
+
+  export type WorkDetailUpdateOneWithoutWorkNestedInput = {
+    create?: XOR<WorkDetailCreateWithoutWorkInput, WorkDetailUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: WorkDetailCreateOrConnectWithoutWorkInput
+    upsert?: WorkDetailUpsertWithoutWorkInput
+    disconnect?: WorkDetailWhereInput | boolean
+    delete?: WorkDetailWhereInput | boolean
+    connect?: WorkDetailWhereUniqueInput
+    update?: XOR<XOR<WorkDetailUpdateToOneWithWhereWithoutWorkInput, WorkDetailUpdateWithoutWorkInput>, WorkDetailUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type WorkCharacterUpdateManyWithoutWorkNestedInput = {
+    create?: XOR<WorkCharacterCreateWithoutWorkInput, WorkCharacterUncheckedCreateWithoutWorkInput> | WorkCharacterCreateWithoutWorkInput[] | WorkCharacterUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: WorkCharacterCreateOrConnectWithoutWorkInput | WorkCharacterCreateOrConnectWithoutWorkInput[]
+    upsert?: WorkCharacterUpsertWithWhereUniqueWithoutWorkInput | WorkCharacterUpsertWithWhereUniqueWithoutWorkInput[]
+    createMany?: WorkCharacterCreateManyWorkInputEnvelope
+    set?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    disconnect?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    delete?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    connect?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    update?: WorkCharacterUpdateWithWhereUniqueWithoutWorkInput | WorkCharacterUpdateWithWhereUniqueWithoutWorkInput[]
+    updateMany?: WorkCharacterUpdateManyWithWhereWithoutWorkInput | WorkCharacterUpdateManyWithWhereWithoutWorkInput[]
+    deleteMany?: WorkCharacterScalarWhereInput | WorkCharacterScalarWhereInput[]
+  }
+
+  export type BgImageUpdateOneWithoutWorkNestedInput = {
+    create?: XOR<BgImageCreateWithoutWorkInput, BgImageUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: BgImageCreateOrConnectWithoutWorkInput
+    upsert?: BgImageUpsertWithoutWorkInput
+    disconnect?: BgImageWhereInput | boolean
+    delete?: BgImageWhereInput | boolean
+    connect?: BgImageWhereUniqueInput
+    update?: XOR<XOR<BgImageUpdateToOneWithWhereWithoutWorkInput, BgImageUpdateWithoutWorkInput>, BgImageUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type AwardWinnerUpdateManyWithoutWorkNestedInput = {
+    create?: XOR<AwardWinnerCreateWithoutWorkInput, AwardWinnerUncheckedCreateWithoutWorkInput> | AwardWinnerCreateWithoutWorkInput[] | AwardWinnerUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutWorkInput | AwardWinnerCreateOrConnectWithoutWorkInput[]
+    upsert?: AwardWinnerUpsertWithWhereUniqueWithoutWorkInput | AwardWinnerUpsertWithWhereUniqueWithoutWorkInput[]
+    createMany?: AwardWinnerCreateManyWorkInputEnvelope
+    set?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    disconnect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    delete?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    update?: AwardWinnerUpdateWithWhereUniqueWithoutWorkInput | AwardWinnerUpdateWithWhereUniqueWithoutWorkInput[]
+    updateMany?: AwardWinnerUpdateManyWithWhereWithoutWorkInput | AwardWinnerUpdateManyWithWhereWithoutWorkInput[]
+    deleteMany?: AwardWinnerScalarWhereInput | AwardWinnerScalarWhereInput[]
+  }
+
+  export type WorkDetailUncheckedUpdateOneWithoutWorkNestedInput = {
+    create?: XOR<WorkDetailCreateWithoutWorkInput, WorkDetailUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: WorkDetailCreateOrConnectWithoutWorkInput
+    upsert?: WorkDetailUpsertWithoutWorkInput
+    disconnect?: WorkDetailWhereInput | boolean
+    delete?: WorkDetailWhereInput | boolean
+    connect?: WorkDetailWhereUniqueInput
+    update?: XOR<XOR<WorkDetailUpdateToOneWithWhereWithoutWorkInput, WorkDetailUpdateWithoutWorkInput>, WorkDetailUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type WorkCharacterUncheckedUpdateManyWithoutWorkNestedInput = {
+    create?: XOR<WorkCharacterCreateWithoutWorkInput, WorkCharacterUncheckedCreateWithoutWorkInput> | WorkCharacterCreateWithoutWorkInput[] | WorkCharacterUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: WorkCharacterCreateOrConnectWithoutWorkInput | WorkCharacterCreateOrConnectWithoutWorkInput[]
+    upsert?: WorkCharacterUpsertWithWhereUniqueWithoutWorkInput | WorkCharacterUpsertWithWhereUniqueWithoutWorkInput[]
+    createMany?: WorkCharacterCreateManyWorkInputEnvelope
+    set?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    disconnect?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    delete?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    connect?: WorkCharacterWhereUniqueInput | WorkCharacterWhereUniqueInput[]
+    update?: WorkCharacterUpdateWithWhereUniqueWithoutWorkInput | WorkCharacterUpdateWithWhereUniqueWithoutWorkInput[]
+    updateMany?: WorkCharacterUpdateManyWithWhereWithoutWorkInput | WorkCharacterUpdateManyWithWhereWithoutWorkInput[]
+    deleteMany?: WorkCharacterScalarWhereInput | WorkCharacterScalarWhereInput[]
+  }
+
+  export type BgImageUncheckedUpdateOneWithoutWorkNestedInput = {
+    create?: XOR<BgImageCreateWithoutWorkInput, BgImageUncheckedCreateWithoutWorkInput>
+    connectOrCreate?: BgImageCreateOrConnectWithoutWorkInput
+    upsert?: BgImageUpsertWithoutWorkInput
+    disconnect?: BgImageWhereInput | boolean
+    delete?: BgImageWhereInput | boolean
+    connect?: BgImageWhereUniqueInput
+    update?: XOR<XOR<BgImageUpdateToOneWithWhereWithoutWorkInput, BgImageUpdateWithoutWorkInput>, BgImageUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type AwardWinnerUncheckedUpdateManyWithoutWorkNestedInput = {
+    create?: XOR<AwardWinnerCreateWithoutWorkInput, AwardWinnerUncheckedCreateWithoutWorkInput> | AwardWinnerCreateWithoutWorkInput[] | AwardWinnerUncheckedCreateWithoutWorkInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutWorkInput | AwardWinnerCreateOrConnectWithoutWorkInput[]
+    upsert?: AwardWinnerUpsertWithWhereUniqueWithoutWorkInput | AwardWinnerUpsertWithWhereUniqueWithoutWorkInput[]
+    createMany?: AwardWinnerCreateManyWorkInputEnvelope
+    set?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    disconnect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    delete?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    update?: AwardWinnerUpdateWithWhereUniqueWithoutWorkInput | AwardWinnerUpdateWithWhereUniqueWithoutWorkInput[]
+    updateMany?: AwardWinnerUpdateManyWithWhereWithoutWorkInput | AwardWinnerUpdateManyWithWhereWithoutWorkInput[]
+    deleteMany?: AwardWinnerScalarWhereInput | AwardWinnerScalarWhereInput[]
+  }
+
+  export type WorkCreateNestedOneWithoutDetailInput = {
+    create?: XOR<WorkCreateWithoutDetailInput, WorkUncheckedCreateWithoutDetailInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutDetailInput
+    connect?: WorkWhereUniqueInput
+  }
+
+  export type WorkUpdateOneRequiredWithoutDetailNestedInput = {
+    create?: XOR<WorkCreateWithoutDetailInput, WorkUncheckedCreateWithoutDetailInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutDetailInput
+    upsert?: WorkUpsertWithoutDetailInput
+    connect?: WorkWhereUniqueInput
+    update?: XOR<XOR<WorkUpdateToOneWithWhereWithoutDetailInput, WorkUpdateWithoutDetailInput>, WorkUncheckedUpdateWithoutDetailInput>
+  }
+
+  export type WorkCreateNestedOneWithoutCharactersInput = {
+    create?: XOR<WorkCreateWithoutCharactersInput, WorkUncheckedCreateWithoutCharactersInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutCharactersInput
+    connect?: WorkWhereUniqueInput
+  }
+
+  export type WorkUpdateOneRequiredWithoutCharactersNestedInput = {
+    create?: XOR<WorkCreateWithoutCharactersInput, WorkUncheckedCreateWithoutCharactersInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutCharactersInput
+    upsert?: WorkUpsertWithoutCharactersInput
+    connect?: WorkWhereUniqueInput
+    update?: XOR<XOR<WorkUpdateToOneWithWhereWithoutCharactersInput, WorkUpdateWithoutCharactersInput>, WorkUncheckedUpdateWithoutCharactersInput>
+  }
+
+  export type WorkCreateNestedOneWithoutBgImageInput = {
+    create?: XOR<WorkCreateWithoutBgImageInput, WorkUncheckedCreateWithoutBgImageInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutBgImageInput
+    connect?: WorkWhereUniqueInput
+  }
+
+  export type NullableDateTimeFieldUpdateOperationsInput = {
+    set?: Date | string | null
+  }
+
+  export type WorkUpdateOneRequiredWithoutBgImageNestedInput = {
+    create?: XOR<WorkCreateWithoutBgImageInput, WorkUncheckedCreateWithoutBgImageInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutBgImageInput
+    upsert?: WorkUpsertWithoutBgImageInput
+    connect?: WorkWhereUniqueInput
+    update?: XOR<XOR<WorkUpdateToOneWithWhereWithoutBgImageInput, WorkUpdateWithoutBgImageInput>, WorkUncheckedUpdateWithoutBgImageInput>
+  }
+
+  export type AwardWinnerCreateNestedManyWithoutAwardInput = {
+    create?: XOR<AwardWinnerCreateWithoutAwardInput, AwardWinnerUncheckedCreateWithoutAwardInput> | AwardWinnerCreateWithoutAwardInput[] | AwardWinnerUncheckedCreateWithoutAwardInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutAwardInput | AwardWinnerCreateOrConnectWithoutAwardInput[]
+    createMany?: AwardWinnerCreateManyAwardInputEnvelope
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+  }
+
+  export type AwardWinnerUncheckedCreateNestedManyWithoutAwardInput = {
+    create?: XOR<AwardWinnerCreateWithoutAwardInput, AwardWinnerUncheckedCreateWithoutAwardInput> | AwardWinnerCreateWithoutAwardInput[] | AwardWinnerUncheckedCreateWithoutAwardInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutAwardInput | AwardWinnerCreateOrConnectWithoutAwardInput[]
+    createMany?: AwardWinnerCreateManyAwardInputEnvelope
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+  }
+
+  export type IntFieldUpdateOperationsInput = {
+    set?: number
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
+  export type AwardWinnerUpdateManyWithoutAwardNestedInput = {
+    create?: XOR<AwardWinnerCreateWithoutAwardInput, AwardWinnerUncheckedCreateWithoutAwardInput> | AwardWinnerCreateWithoutAwardInput[] | AwardWinnerUncheckedCreateWithoutAwardInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutAwardInput | AwardWinnerCreateOrConnectWithoutAwardInput[]
+    upsert?: AwardWinnerUpsertWithWhereUniqueWithoutAwardInput | AwardWinnerUpsertWithWhereUniqueWithoutAwardInput[]
+    createMany?: AwardWinnerCreateManyAwardInputEnvelope
+    set?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    disconnect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    delete?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    update?: AwardWinnerUpdateWithWhereUniqueWithoutAwardInput | AwardWinnerUpdateWithWhereUniqueWithoutAwardInput[]
+    updateMany?: AwardWinnerUpdateManyWithWhereWithoutAwardInput | AwardWinnerUpdateManyWithWhereWithoutAwardInput[]
+    deleteMany?: AwardWinnerScalarWhereInput | AwardWinnerScalarWhereInput[]
+  }
+
+  export type AwardWinnerUncheckedUpdateManyWithoutAwardNestedInput = {
+    create?: XOR<AwardWinnerCreateWithoutAwardInput, AwardWinnerUncheckedCreateWithoutAwardInput> | AwardWinnerCreateWithoutAwardInput[] | AwardWinnerUncheckedCreateWithoutAwardInput[]
+    connectOrCreate?: AwardWinnerCreateOrConnectWithoutAwardInput | AwardWinnerCreateOrConnectWithoutAwardInput[]
+    upsert?: AwardWinnerUpsertWithWhereUniqueWithoutAwardInput | AwardWinnerUpsertWithWhereUniqueWithoutAwardInput[]
+    createMany?: AwardWinnerCreateManyAwardInputEnvelope
+    set?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    disconnect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    delete?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    connect?: AwardWinnerWhereUniqueInput | AwardWinnerWhereUniqueInput[]
+    update?: AwardWinnerUpdateWithWhereUniqueWithoutAwardInput | AwardWinnerUpdateWithWhereUniqueWithoutAwardInput[]
+    updateMany?: AwardWinnerUpdateManyWithWhereWithoutAwardInput | AwardWinnerUpdateManyWithWhereWithoutAwardInput[]
+    deleteMany?: AwardWinnerScalarWhereInput | AwardWinnerScalarWhereInput[]
+  }
+
+  export type WorkCreateNestedOneWithoutAwardWinnersInput = {
+    create?: XOR<WorkCreateWithoutAwardWinnersInput, WorkUncheckedCreateWithoutAwardWinnersInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutAwardWinnersInput
+    connect?: WorkWhereUniqueInput
+  }
+
+  export type AwardCreateNestedOneWithoutWinnersInput = {
+    create?: XOR<AwardCreateWithoutWinnersInput, AwardUncheckedCreateWithoutWinnersInput>
+    connectOrCreate?: AwardCreateOrConnectWithoutWinnersInput
+    connect?: AwardWhereUniqueInput
+  }
+
+  export type WorkUpdateOneRequiredWithoutAwardWinnersNestedInput = {
+    create?: XOR<WorkCreateWithoutAwardWinnersInput, WorkUncheckedCreateWithoutAwardWinnersInput>
+    connectOrCreate?: WorkCreateOrConnectWithoutAwardWinnersInput
+    upsert?: WorkUpsertWithoutAwardWinnersInput
+    connect?: WorkWhereUniqueInput
+    update?: XOR<XOR<WorkUpdateToOneWithWhereWithoutAwardWinnersInput, WorkUpdateWithoutAwardWinnersInput>, WorkUncheckedUpdateWithoutAwardWinnersInput>
+  }
+
+  export type AwardUpdateOneRequiredWithoutWinnersNestedInput = {
+    create?: XOR<AwardCreateWithoutWinnersInput, AwardUncheckedCreateWithoutWinnersInput>
+    connectOrCreate?: AwardCreateOrConnectWithoutWinnersInput
+    upsert?: AwardUpsertWithoutWinnersInput
+    connect?: AwardWhereUniqueInput
+    update?: XOR<XOR<AwardUpdateToOneWithWhereWithoutWinnersInput, AwardUpdateWithoutWinnersInput>, AwardUncheckedUpdateWithoutWinnersInput>
+  }
+
   export type NestedStringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
     in?: string[] | ListStringFieldRefInput<$PrismaModel>
@@ -8374,6 +20930,121 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedDateTimeFilter<$PrismaModel>
     _max?: NestedDateTimeFilter<$PrismaModel>
+  }
+
+  export type NestedBoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+  export type NestedJsonFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<NestedJsonFilterBase<$PrismaModel>>, Exclude<keyof Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>,
+        Required<NestedJsonFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<NestedJsonFilterBase<$PrismaModel>>, 'path'>>
+
+  export type NestedJsonFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
+
+  export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedFloatNullableFilter<$PrismaModel>
+    _sum?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedIntNullableFilter<$PrismaModel>
+    _max?: NestedIntNullableFilter<$PrismaModel>
+  }
+
+  export type NestedFloatNullableFilter<$PrismaModel = never> = {
+    equals?: number | FloatFieldRefInput<$PrismaModel> | null
+    in?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel> | null
+    lt?: number | FloatFieldRefInput<$PrismaModel>
+    lte?: number | FloatFieldRefInput<$PrismaModel>
+    gt?: number | FloatFieldRefInput<$PrismaModel>
+    gte?: number | FloatFieldRefInput<$PrismaModel>
+    not?: NestedFloatNullableFilter<$PrismaModel> | number | null
+  }
+
+  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
+  export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
+  }
+
+  export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableWithAggregatesFilter<$PrismaModel> | Date | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedDateTimeNullableFilter<$PrismaModel>
+    _max?: NestedDateTimeNullableFilter<$PrismaModel>
+  }
+
+  export type NestedIntWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel>
+    in?: number[] | ListIntFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel>
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntWithAggregatesFilter<$PrismaModel> | number
+    _count?: NestedIntFilter<$PrismaModel>
+    _avg?: NestedFloatFilter<$PrismaModel>
+    _sum?: NestedIntFilter<$PrismaModel>
+    _min?: NestedIntFilter<$PrismaModel>
+    _max?: NestedIntFilter<$PrismaModel>
+  }
+
+  export type NestedFloatFilter<$PrismaModel = never> = {
+    equals?: number | FloatFieldRefInput<$PrismaModel>
+    in?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    notIn?: number[] | ListFloatFieldRefInput<$PrismaModel>
+    lt?: number | FloatFieldRefInput<$PrismaModel>
+    lte?: number | FloatFieldRefInput<$PrismaModel>
+    gt?: number | FloatFieldRefInput<$PrismaModel>
+    gte?: number | FloatFieldRefInput<$PrismaModel>
+    not?: NestedFloatFilter<$PrismaModel> | number
   }
 
   export type BookmarkCreateWithoutUserInput = {
@@ -8896,6 +21567,792 @@ export namespace Prisma {
     favoriteArticles?: FavoriteArticleUncheckedUpdateManyWithoutUserNestedInput
   }
 
+  export type WorkDetailCreateWithoutWorkInput = {
+    id: string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: string
+    techniques?: string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type WorkDetailUncheckedCreateWithoutWorkInput = {
+    id: string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: string
+    techniques?: string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type WorkDetailCreateOrConnectWithoutWorkInput = {
+    where: WorkDetailWhereUniqueInput
+    create: XOR<WorkDetailCreateWithoutWorkInput, WorkDetailUncheckedCreateWithoutWorkInput>
+  }
+
+  export type WorkCharacterCreateWithoutWorkInput = {
+    id?: string
+    name: string
+    role: string
+    description: string
+  }
+
+  export type WorkCharacterUncheckedCreateWithoutWorkInput = {
+    id?: string
+    name: string
+    role: string
+    description: string
+  }
+
+  export type WorkCharacterCreateOrConnectWithoutWorkInput = {
+    where: WorkCharacterWhereUniqueInput
+    create: XOR<WorkCharacterCreateWithoutWorkInput, WorkCharacterUncheckedCreateWithoutWorkInput>
+  }
+
+  export type WorkCharacterCreateManyWorkInputEnvelope = {
+    data: WorkCharacterCreateManyWorkInput | WorkCharacterCreateManyWorkInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type BgImageCreateWithoutWorkInput = {
+    id?: string
+    url?: string
+    status?: string
+    source?: string
+    photographer?: string
+    photographerUrl?: string
+    searchQuery?: string
+    fetchedAt?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type BgImageUncheckedCreateWithoutWorkInput = {
+    id?: string
+    url?: string
+    status?: string
+    source?: string
+    photographer?: string
+    photographerUrl?: string
+    searchQuery?: string
+    fetchedAt?: Date | string | null
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type BgImageCreateOrConnectWithoutWorkInput = {
+    where: BgImageWhereUniqueInput
+    create: XOR<BgImageCreateWithoutWorkInput, BgImageUncheckedCreateWithoutWorkInput>
+  }
+
+  export type AwardWinnerCreateWithoutWorkInput = {
+    id?: string
+    year: number
+    category?: string | null
+    award: AwardCreateNestedOneWithoutWinnersInput
+  }
+
+  export type AwardWinnerUncheckedCreateWithoutWorkInput = {
+    id?: string
+    awardSlug: string
+    year: number
+    category?: string | null
+  }
+
+  export type AwardWinnerCreateOrConnectWithoutWorkInput = {
+    where: AwardWinnerWhereUniqueInput
+    create: XOR<AwardWinnerCreateWithoutWorkInput, AwardWinnerUncheckedCreateWithoutWorkInput>
+  }
+
+  export type AwardWinnerCreateManyWorkInputEnvelope = {
+    data: AwardWinnerCreateManyWorkInput | AwardWinnerCreateManyWorkInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type WorkDetailUpsertWithoutWorkInput = {
+    update: XOR<WorkDetailUpdateWithoutWorkInput, WorkDetailUncheckedUpdateWithoutWorkInput>
+    create: XOR<WorkDetailCreateWithoutWorkInput, WorkDetailUncheckedCreateWithoutWorkInput>
+    where?: WorkDetailWhereInput
+  }
+
+  export type WorkDetailUpdateToOneWithWhereWithoutWorkInput = {
+    where?: WorkDetailWhereInput
+    data: XOR<WorkDetailUpdateWithoutWorkInput, WorkDetailUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type WorkDetailUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: StringFieldUpdateOperationsInput | string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: StringFieldUpdateOperationsInput | string
+    techniques?: StringFieldUpdateOperationsInput | string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: StringFieldUpdateOperationsInput | string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkDetailUncheckedUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    characters?: JsonNullValueInput | InputJsonValue
+    plotSummary?: StringFieldUpdateOperationsInput | string
+    plotNodes?: JsonNullValueInput | InputJsonValue
+    themeAnalysis?: StringFieldUpdateOperationsInput | string
+    techniques?: StringFieldUpdateOperationsInput | string
+    excerpts?: JsonNullValueInput | InputJsonValue
+    insights?: StringFieldUpdateOperationsInput | string
+    sourceAttribution?: NullableJsonNullValueInput | InputJsonValue
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkCharacterUpsertWithWhereUniqueWithoutWorkInput = {
+    where: WorkCharacterWhereUniqueInput
+    update: XOR<WorkCharacterUpdateWithoutWorkInput, WorkCharacterUncheckedUpdateWithoutWorkInput>
+    create: XOR<WorkCharacterCreateWithoutWorkInput, WorkCharacterUncheckedCreateWithoutWorkInput>
+  }
+
+  export type WorkCharacterUpdateWithWhereUniqueWithoutWorkInput = {
+    where: WorkCharacterWhereUniqueInput
+    data: XOR<WorkCharacterUpdateWithoutWorkInput, WorkCharacterUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type WorkCharacterUpdateManyWithWhereWithoutWorkInput = {
+    where: WorkCharacterScalarWhereInput
+    data: XOR<WorkCharacterUpdateManyMutationInput, WorkCharacterUncheckedUpdateManyWithoutWorkInput>
+  }
+
+  export type WorkCharacterScalarWhereInput = {
+    AND?: WorkCharacterScalarWhereInput | WorkCharacterScalarWhereInput[]
+    OR?: WorkCharacterScalarWhereInput[]
+    NOT?: WorkCharacterScalarWhereInput | WorkCharacterScalarWhereInput[]
+    id?: StringFilter<"WorkCharacter"> | string
+    workId?: StringFilter<"WorkCharacter"> | string
+    name?: StringFilter<"WorkCharacter"> | string
+    role?: StringFilter<"WorkCharacter"> | string
+    description?: StringFilter<"WorkCharacter"> | string
+  }
+
+  export type BgImageUpsertWithoutWorkInput = {
+    update: XOR<BgImageUpdateWithoutWorkInput, BgImageUncheckedUpdateWithoutWorkInput>
+    create: XOR<BgImageCreateWithoutWorkInput, BgImageUncheckedCreateWithoutWorkInput>
+    where?: BgImageWhereInput
+  }
+
+  export type BgImageUpdateToOneWithWhereWithoutWorkInput = {
+    where?: BgImageWhereInput
+    data: XOR<BgImageUpdateWithoutWorkInput, BgImageUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type BgImageUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    photographer?: StringFieldUpdateOperationsInput | string
+    photographerUrl?: StringFieldUpdateOperationsInput | string
+    searchQuery?: StringFieldUpdateOperationsInput | string
+    fetchedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type BgImageUncheckedUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    url?: StringFieldUpdateOperationsInput | string
+    status?: StringFieldUpdateOperationsInput | string
+    source?: StringFieldUpdateOperationsInput | string
+    photographer?: StringFieldUpdateOperationsInput | string
+    photographerUrl?: StringFieldUpdateOperationsInput | string
+    searchQuery?: StringFieldUpdateOperationsInput | string
+    fetchedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type AwardWinnerUpsertWithWhereUniqueWithoutWorkInput = {
+    where: AwardWinnerWhereUniqueInput
+    update: XOR<AwardWinnerUpdateWithoutWorkInput, AwardWinnerUncheckedUpdateWithoutWorkInput>
+    create: XOR<AwardWinnerCreateWithoutWorkInput, AwardWinnerUncheckedCreateWithoutWorkInput>
+  }
+
+  export type AwardWinnerUpdateWithWhereUniqueWithoutWorkInput = {
+    where: AwardWinnerWhereUniqueInput
+    data: XOR<AwardWinnerUpdateWithoutWorkInput, AwardWinnerUncheckedUpdateWithoutWorkInput>
+  }
+
+  export type AwardWinnerUpdateManyWithWhereWithoutWorkInput = {
+    where: AwardWinnerScalarWhereInput
+    data: XOR<AwardWinnerUpdateManyMutationInput, AwardWinnerUncheckedUpdateManyWithoutWorkInput>
+  }
+
+  export type AwardWinnerScalarWhereInput = {
+    AND?: AwardWinnerScalarWhereInput | AwardWinnerScalarWhereInput[]
+    OR?: AwardWinnerScalarWhereInput[]
+    NOT?: AwardWinnerScalarWhereInput | AwardWinnerScalarWhereInput[]
+    id?: StringFilter<"AwardWinner"> | string
+    workId?: StringFilter<"AwardWinner"> | string
+    awardSlug?: StringFilter<"AwardWinner"> | string
+    year?: IntFilter<"AwardWinner"> | number
+    category?: StringNullableFilter<"AwardWinner"> | string | null
+  }
+
+  export type WorkCreateWithoutDetailInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    characters?: WorkCharacterCreateNestedManyWithoutWorkInput
+    bgImage?: BgImageCreateNestedOneWithoutWorkInput
+    awardWinners?: AwardWinnerCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkUncheckedCreateWithoutDetailInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    characters?: WorkCharacterUncheckedCreateNestedManyWithoutWorkInput
+    bgImage?: BgImageUncheckedCreateNestedOneWithoutWorkInput
+    awardWinners?: AwardWinnerUncheckedCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkCreateOrConnectWithoutDetailInput = {
+    where: WorkWhereUniqueInput
+    create: XOR<WorkCreateWithoutDetailInput, WorkUncheckedCreateWithoutDetailInput>
+  }
+
+  export type WorkUpsertWithoutDetailInput = {
+    update: XOR<WorkUpdateWithoutDetailInput, WorkUncheckedUpdateWithoutDetailInput>
+    create: XOR<WorkCreateWithoutDetailInput, WorkUncheckedCreateWithoutDetailInput>
+    where?: WorkWhereInput
+  }
+
+  export type WorkUpdateToOneWithWhereWithoutDetailInput = {
+    where?: WorkWhereInput
+    data: XOR<WorkUpdateWithoutDetailInput, WorkUncheckedUpdateWithoutDetailInput>
+  }
+
+  export type WorkUpdateWithoutDetailInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    characters?: WorkCharacterUpdateManyWithoutWorkNestedInput
+    bgImage?: BgImageUpdateOneWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkUncheckedUpdateWithoutDetailInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    characters?: WorkCharacterUncheckedUpdateManyWithoutWorkNestedInput
+    bgImage?: BgImageUncheckedUpdateOneWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUncheckedUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkCreateWithoutCharactersInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailCreateNestedOneWithoutWorkInput
+    bgImage?: BgImageCreateNestedOneWithoutWorkInput
+    awardWinners?: AwardWinnerCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkUncheckedCreateWithoutCharactersInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailUncheckedCreateNestedOneWithoutWorkInput
+    bgImage?: BgImageUncheckedCreateNestedOneWithoutWorkInput
+    awardWinners?: AwardWinnerUncheckedCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkCreateOrConnectWithoutCharactersInput = {
+    where: WorkWhereUniqueInput
+    create: XOR<WorkCreateWithoutCharactersInput, WorkUncheckedCreateWithoutCharactersInput>
+  }
+
+  export type WorkUpsertWithoutCharactersInput = {
+    update: XOR<WorkUpdateWithoutCharactersInput, WorkUncheckedUpdateWithoutCharactersInput>
+    create: XOR<WorkCreateWithoutCharactersInput, WorkUncheckedCreateWithoutCharactersInput>
+    where?: WorkWhereInput
+  }
+
+  export type WorkUpdateToOneWithWhereWithoutCharactersInput = {
+    where?: WorkWhereInput
+    data: XOR<WorkUpdateWithoutCharactersInput, WorkUncheckedUpdateWithoutCharactersInput>
+  }
+
+  export type WorkUpdateWithoutCharactersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUpdateOneWithoutWorkNestedInput
+    bgImage?: BgImageUpdateOneWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkUncheckedUpdateWithoutCharactersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUncheckedUpdateOneWithoutWorkNestedInput
+    bgImage?: BgImageUncheckedUpdateOneWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUncheckedUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkCreateWithoutBgImageInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailCreateNestedOneWithoutWorkInput
+    characters?: WorkCharacterCreateNestedManyWithoutWorkInput
+    awardWinners?: AwardWinnerCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkUncheckedCreateWithoutBgImageInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailUncheckedCreateNestedOneWithoutWorkInput
+    characters?: WorkCharacterUncheckedCreateNestedManyWithoutWorkInput
+    awardWinners?: AwardWinnerUncheckedCreateNestedManyWithoutWorkInput
+  }
+
+  export type WorkCreateOrConnectWithoutBgImageInput = {
+    where: WorkWhereUniqueInput
+    create: XOR<WorkCreateWithoutBgImageInput, WorkUncheckedCreateWithoutBgImageInput>
+  }
+
+  export type WorkUpsertWithoutBgImageInput = {
+    update: XOR<WorkUpdateWithoutBgImageInput, WorkUncheckedUpdateWithoutBgImageInput>
+    create: XOR<WorkCreateWithoutBgImageInput, WorkUncheckedCreateWithoutBgImageInput>
+    where?: WorkWhereInput
+  }
+
+  export type WorkUpdateToOneWithWhereWithoutBgImageInput = {
+    where?: WorkWhereInput
+    data: XOR<WorkUpdateWithoutBgImageInput, WorkUncheckedUpdateWithoutBgImageInput>
+  }
+
+  export type WorkUpdateWithoutBgImageInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUpdateOneWithoutWorkNestedInput
+    characters?: WorkCharacterUpdateManyWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUpdateManyWithoutWorkNestedInput
+  }
+
+  export type WorkUncheckedUpdateWithoutBgImageInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUncheckedUpdateOneWithoutWorkNestedInput
+    characters?: WorkCharacterUncheckedUpdateManyWithoutWorkNestedInput
+    awardWinners?: AwardWinnerUncheckedUpdateManyWithoutWorkNestedInput
+  }
+
+  export type AwardWinnerCreateWithoutAwardInput = {
+    id?: string
+    year: number
+    category?: string | null
+    work: WorkCreateNestedOneWithoutAwardWinnersInput
+  }
+
+  export type AwardWinnerUncheckedCreateWithoutAwardInput = {
+    id?: string
+    workId: string
+    year: number
+    category?: string | null
+  }
+
+  export type AwardWinnerCreateOrConnectWithoutAwardInput = {
+    where: AwardWinnerWhereUniqueInput
+    create: XOR<AwardWinnerCreateWithoutAwardInput, AwardWinnerUncheckedCreateWithoutAwardInput>
+  }
+
+  export type AwardWinnerCreateManyAwardInputEnvelope = {
+    data: AwardWinnerCreateManyAwardInput | AwardWinnerCreateManyAwardInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type AwardWinnerUpsertWithWhereUniqueWithoutAwardInput = {
+    where: AwardWinnerWhereUniqueInput
+    update: XOR<AwardWinnerUpdateWithoutAwardInput, AwardWinnerUncheckedUpdateWithoutAwardInput>
+    create: XOR<AwardWinnerCreateWithoutAwardInput, AwardWinnerUncheckedCreateWithoutAwardInput>
+  }
+
+  export type AwardWinnerUpdateWithWhereUniqueWithoutAwardInput = {
+    where: AwardWinnerWhereUniqueInput
+    data: XOR<AwardWinnerUpdateWithoutAwardInput, AwardWinnerUncheckedUpdateWithoutAwardInput>
+  }
+
+  export type AwardWinnerUpdateManyWithWhereWithoutAwardInput = {
+    where: AwardWinnerScalarWhereInput
+    data: XOR<AwardWinnerUpdateManyMutationInput, AwardWinnerUncheckedUpdateManyWithoutAwardInput>
+  }
+
+  export type WorkCreateWithoutAwardWinnersInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailCreateNestedOneWithoutWorkInput
+    characters?: WorkCharacterCreateNestedManyWithoutWorkInput
+    bgImage?: BgImageCreateNestedOneWithoutWorkInput
+  }
+
+  export type WorkUncheckedCreateWithoutAwardWinnersInput = {
+    id: string
+    title: string
+    titleEn: string
+    author: string
+    country: string
+    flag?: string
+    continent: string
+    era: string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: string
+    gradient?: string
+    year?: number | null
+    featured?: boolean
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    detail?: WorkDetailUncheckedCreateNestedOneWithoutWorkInput
+    characters?: WorkCharacterUncheckedCreateNestedManyWithoutWorkInput
+    bgImage?: BgImageUncheckedCreateNestedOneWithoutWorkInput
+  }
+
+  export type WorkCreateOrConnectWithoutAwardWinnersInput = {
+    where: WorkWhereUniqueInput
+    create: XOR<WorkCreateWithoutAwardWinnersInput, WorkUncheckedCreateWithoutAwardWinnersInput>
+  }
+
+  export type AwardCreateWithoutWinnersInput = {
+    slug: string
+    name: string
+    nameEn: string
+    description: string
+    established: number
+    country: string
+    flag: string
+    frequency: string
+    category: string
+    gradient: string
+    icon: string
+    website?: string | null
+    introduction: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type AwardUncheckedCreateWithoutWinnersInput = {
+    slug: string
+    name: string
+    nameEn: string
+    description: string
+    established: number
+    country: string
+    flag: string
+    frequency: string
+    category: string
+    gradient: string
+    icon: string
+    website?: string | null
+    introduction: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+  }
+
+  export type AwardCreateOrConnectWithoutWinnersInput = {
+    where: AwardWhereUniqueInput
+    create: XOR<AwardCreateWithoutWinnersInput, AwardUncheckedCreateWithoutWinnersInput>
+  }
+
+  export type WorkUpsertWithoutAwardWinnersInput = {
+    update: XOR<WorkUpdateWithoutAwardWinnersInput, WorkUncheckedUpdateWithoutAwardWinnersInput>
+    create: XOR<WorkCreateWithoutAwardWinnersInput, WorkUncheckedCreateWithoutAwardWinnersInput>
+    where?: WorkWhereInput
+  }
+
+  export type WorkUpdateToOneWithWhereWithoutAwardWinnersInput = {
+    where?: WorkWhereInput
+    data: XOR<WorkUpdateWithoutAwardWinnersInput, WorkUncheckedUpdateWithoutAwardWinnersInput>
+  }
+
+  export type WorkUpdateWithoutAwardWinnersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUpdateOneWithoutWorkNestedInput
+    characters?: WorkCharacterUpdateManyWithoutWorkNestedInput
+    bgImage?: BgImageUpdateOneWithoutWorkNestedInput
+  }
+
+  export type WorkUncheckedUpdateWithoutAwardWinnersInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    title?: StringFieldUpdateOperationsInput | string
+    titleEn?: StringFieldUpdateOperationsInput | string
+    author?: StringFieldUpdateOperationsInput | string
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    continent?: StringFieldUpdateOperationsInput | string
+    era?: StringFieldUpdateOperationsInput | string
+    genres?: JsonNullValueInput | InputJsonValue
+    themes?: JsonNullValueInput | InputJsonValue
+    excerpt?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    year?: NullableIntFieldUpdateOperationsInput | number | null
+    featured?: BoolFieldUpdateOperationsInput | boolean
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    detail?: WorkDetailUncheckedUpdateOneWithoutWorkNestedInput
+    characters?: WorkCharacterUncheckedUpdateManyWithoutWorkNestedInput
+    bgImage?: BgImageUncheckedUpdateOneWithoutWorkNestedInput
+  }
+
+  export type AwardUpsertWithoutWinnersInput = {
+    update: XOR<AwardUpdateWithoutWinnersInput, AwardUncheckedUpdateWithoutWinnersInput>
+    create: XOR<AwardCreateWithoutWinnersInput, AwardUncheckedCreateWithoutWinnersInput>
+    where?: AwardWhereInput
+  }
+
+  export type AwardUpdateToOneWithWhereWithoutWinnersInput = {
+    where?: AwardWhereInput
+    data: XOR<AwardUpdateWithoutWinnersInput, AwardUncheckedUpdateWithoutWinnersInput>
+  }
+
+  export type AwardUpdateWithoutWinnersInput = {
+    slug?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    nameEn?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    established?: IntFieldUpdateOperationsInput | number
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    frequency?: StringFieldUpdateOperationsInput | string
+    category?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    icon?: StringFieldUpdateOperationsInput | string
+    website?: NullableStringFieldUpdateOperationsInput | string | null
+    introduction?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type AwardUncheckedUpdateWithoutWinnersInput = {
+    slug?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    nameEn?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+    established?: IntFieldUpdateOperationsInput | number
+    country?: StringFieldUpdateOperationsInput | string
+    flag?: StringFieldUpdateOperationsInput | string
+    frequency?: StringFieldUpdateOperationsInput | string
+    category?: StringFieldUpdateOperationsInput | string
+    gradient?: StringFieldUpdateOperationsInput | string
+    icon?: StringFieldUpdateOperationsInput | string
+    website?: NullableStringFieldUpdateOperationsInput | string | null
+    introduction?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
   export type BookmarkCreateManyUserInput = {
     id?: string
     workId: string
@@ -9022,6 +22479,90 @@ export namespace Prisma {
     date?: StringFieldUpdateOperationsInput | string
     reason?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type WorkCharacterCreateManyWorkInput = {
+    id?: string
+    name: string
+    role: string
+    description: string
+  }
+
+  export type AwardWinnerCreateManyWorkInput = {
+    id?: string
+    awardSlug: string
+    year: number
+    category?: string | null
+  }
+
+  export type WorkCharacterUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type WorkCharacterUncheckedUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type WorkCharacterUncheckedUpdateManyWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    name?: StringFieldUpdateOperationsInput | string
+    role?: StringFieldUpdateOperationsInput | string
+    description?: StringFieldUpdateOperationsInput | string
+  }
+
+  export type AwardWinnerUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+    award?: AwardUpdateOneRequiredWithoutWinnersNestedInput
+  }
+
+  export type AwardWinnerUncheckedUpdateWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    awardSlug?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type AwardWinnerUncheckedUpdateManyWithoutWorkInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    awardSlug?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type AwardWinnerCreateManyAwardInput = {
+    id?: string
+    workId: string
+    year: number
+    category?: string | null
+  }
+
+  export type AwardWinnerUpdateWithoutAwardInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+    work?: WorkUpdateOneRequiredWithoutAwardWinnersNestedInput
+  }
+
+  export type AwardWinnerUncheckedUpdateWithoutAwardInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type AwardWinnerUncheckedUpdateManyWithoutAwardInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    workId?: StringFieldUpdateOperationsInput | string
+    year?: IntFieldUpdateOperationsInput | number
+    category?: NullableStringFieldUpdateOperationsInput | string | null
   }
 
 

@@ -7,8 +7,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getBgImage, getBgStats } from "@/lib/bg-store";
 import { buildSearchContext, buildSearchQuery, fetchRealBackground } from "@/lib/bg-fetcher";
-import { allWorks } from "@/lib/data";
-import { bookDetails } from "@/lib/book-data";
+import { prisma } from "@/lib/prisma";
 
 /** GET — 查询背景图片状态 */
 export async function GET(request: NextRequest) {
@@ -72,21 +71,33 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ error: "Missing workIds" }, { status: 400 });
       }
 
-      // 找到对应的 Work 对象
+      // 从数据库查找 Work 对象
+      const [dbWorks, dbDetails] = await Promise.all([
+        prisma.work.findMany({ where: { id: { in: workIds } } }),
+        prisma.workDetail.findMany({ where: { workId: { in: workIds } } }),
+      ]);
+      const workMap = new Map(dbWorks.map((w) => [w.id, w]));
+      const detailMap = new Map(dbDetails.map((d) => [d.workId, d]));
+
       const results: Record<string, { status: string; url?: string }> = {};
       for (const id of workIds) {
-        const work = allWorks.find((w) => w.id === id);
-        if (!work) {
+        const dbWork = workMap.get(id);
+        if (!dbWork) {
           results[id] = { status: "not_found" };
           continue;
         }
-        const detail = bookDetails[id] as { plotSummary?: string; characters?: Array<{ name: string }> } | undefined;
-        const ctx = buildSearchContext(work, detail);
-        const record = await fetchRealBackground(ctx);
-        results[id] = {
-          status: record?.status || "failed",
-          url: record?.url,
+        const work = {
+          ...dbWork,
+          genre: (dbWork.genres as string[]) ?? [],
+          themes: (dbWork.themes as string[]) ?? [],
         };
+        const dbDetail = detailMap.get(id);
+        const detail = dbDetail
+          ? { plotSummary: dbDetail.plotSummary, characters: dbDetail.characters as Array<{ name: string }> | undefined }
+          : undefined;
+        const ctx = buildSearchContext(work as any, detail);
+        const record = await fetchRealBackground(ctx);
+        results[id] = { status: record?.status || "failed", url: record?.url };
       }
 
       return NextResponse.json({ results });
@@ -122,14 +133,24 @@ export async function POST(request: NextRequest) {
     }
   }
 
-  // 查找 Work 数据
-  const work = allWorks.find((w) => w.id === workId);
-  if (!work) {
+  // 从数据库查找 Work 数据
+  const [dbWork, dbDetail] = await Promise.all([
+    prisma.work.findUnique({ where: { id: workId } }),
+    prisma.workDetail.findUnique({ where: { workId } }),
+  ]);
+  if (!dbWork) {
     return NextResponse.json({ error: "Work not found" }, { status: 404 });
   }
 
-  const detail = bookDetails[workId] as { plotSummary?: string; characters?: Array<{ name: string }> } | undefined;
-  const ctx = buildSearchContext(work, detail);
+  const work = {
+    ...dbWork,
+    genre: (dbWork.genres as string[]) ?? [],
+    themes: (dbWork.themes as string[]) ?? [],
+  };
+  const detail = dbDetail
+    ? { plotSummary: dbDetail.plotSummary, characters: dbDetail.characters as Array<{ name: string }> | undefined }
+    : undefined;
+  const ctx = buildSearchContext(work as any, detail);
 
   // 执行搜索
   const record = await fetchRealBackground(ctx);

@@ -2863,14 +2863,25 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
 
   "2666": {
     id: "2666",
-    plotSummary: "2666 is the final novel by Roberto Bolaño. It was released posthumously in 2004, a year following his death. It is over 1100 pages long in the original Spanish. It is divided into five parts. An English-language translation by Natasha Wimmer was published in the United States in 2008 by Farrar, Straus and Giroux and in the United Kingdom in 2009 by Picador. It is a fragmentary novel.",
-    themeAnalysis: "2666 is the final novel by Roberto Bolaño. It was released posthumously in 2004, a year following his death. It is over 1100 pages long in the original Spanish. It is divided into five parts. An English-language translation by Natasha Wimmer was published in the United States in 2008 by Farrar, Straus and Giroux and in the United Kingdom in 2009 by Picador. It is a fragmentary novel.",
-    techniques: "2666 is the final novel by Roberto Bolaño. It was released posthumously in 2004, a year following his death. It is over 1100 pages long in the original Spanish. It is divided into five parts. An English-language translation by Natasha Wimmer was published in the United States in 2008 by Farrar, Straus and Giroux and in the United Kingdom in 2009 by Picador. It is a fragmentary novel.",
+    plotSummary: "《2666》是智利作家罗贝托·波拉尼奥创作的长篇小说，首次出版于2004年。《2666》的小说由五个各自独立却又相互串联的部分组成。众多人物及故事围绕着神秘的德国作家本诺·冯·阿琴波尔迪、作者虚构的墨西哥边境城市圣特蕾莎以及在当地发生的一系列妇女谋杀案展开。该书将爱情、凶杀、战争、文学研究和创作以及悬疑等诸多元素自然地糅在一个统一体里，其创作艺术既是对20世纪下半叶各类小说技巧的高度概括，又有作者独具匠心的创造。2008年，该书被《纽约时报》和《时代》选为“年度最佳小说”，并获得美国国家书评人协会奖“最佳小说”奖。\n《2666》是智利作家罗贝托·波拉尼奥创作的长篇小说，首次出版于2004年。\n\n《2666》的小说由五个各自独立却又相互串联的部分组成。众多人物及故事围绕着神秘的德国作家本诺·冯·阿琴波尔迪、作者虚构的墨西哥边境城市圣特蕾莎以及在当地发生的一系列妇女谋杀案展开 [5]。该书将爱情、凶杀、战争、文学研究和创作以及悬疑等诸多元素自然地糅在一个统一体里，其创作艺术既是对20世纪下半叶各类小说技巧的高度概括，又有作者独具匠心的创造 [2]。\n\n2008年，该书被《纽约时报》和《时代》选为“年度最佳小说”，并获得美国国家书评人协会奖“最佳小说”奖 [3]。\n\n第一卷《文学评论家》，讲述有四位文学评论家先后都在研究同一位德国作家的故事。四位分别来自法国、意大利、西班牙和英国的文学教授，三男一女，由于对一位名叫本诺·冯·阿琴波尔迪的德国作家产生浓厚兴趣而走到一起。四人在国际研讨会上先后相识，由于学术观点一致而成为朋友和情人。这位姓叫阿琴波尔迪的作家越来越受到世人推崇，甚至传说有望获得诺贝尔文学奖，但他本人却远离尘嚣，行踪隐秘。几位教授偶然得知他的踪迹，于是开始了寻找这位神秘的作家的漫长旅途。最后，他们在墨西哥开会时听说了杀害妇女的事情。\n\n第二卷《阿玛尔菲塔诺》，讲述因1973年智利政变而流亡的智利哲学教授奥斯卡·阿玛尔菲塔诺的故事。他的妻子疯狂地爱上一位患有精神病的诗人，从此一去不返。失意的教授带着17岁的女儿罗莎·阿玛尔菲塔诺从西班牙来到了墨西哥圣特蕾莎（作者虚构的城市）。最后，他也听说了杀害妇女的罪行，而且黑社会的手也伸向了他的女儿。\n\n第三卷《法特》，讲述美国记者奥斯卡·法特（意为命运）去墨西哥采访拳击赛的遭遇。法特刚刚为母亲操办了简单的葬礼，情绪低落，百无聊",
+    plotNodes: [
+      { label: "Part 1", description: "《2666》是智利作家罗贝托·波拉尼奥创作的长篇小说，首次出版于2004年。《2666》的小说由五个各自独立却又相互串联的部分组成。众多人物及故事围绕着神秘的德国作家本诺·冯·阿琴波尔迪、作者虚构的墨西哥边境城市圣特蕾莎以及在当地发生的一系列妇女谋杀案展开。该书将爱情、凶杀、战争、文学研究和创作以及悬疑等诸多元素自然地糅在一个统一体里，其创作艺术既是对20世纪下半叶各类小说技巧的高度概括，又有作者" },
+      { label: "Part 2", description: "《2666》的小说由五个各自独立却又相互串联的部分组成。众多人物及故事围绕着神秘的德国作家本诺·冯·阿琴波尔迪、作者虚构的墨西哥边境城市圣特蕾莎以及在当地发生的一系列妇女谋杀案展开 [5]。该书将爱情、凶杀、战争、文学研究和创作以及悬疑等诸多元素自然地糅在一个统一体里，其创作艺术既是对20世纪下半叶各类小说技巧的高度概括，又有作者独具匠心的创造 [2]。" },
+      { label: "Part 3", description: "2008年，该书被《纽约时报》和《时代》选为“年度最佳小说”，并获得美国国家书评人协会奖“最佳小说”奖 [3]。" },
+      { label: "Part 4", description: "第一卷《文学评论家》，讲述有四位文学评论家先后都在研究同一位德国作家的故事。四位分别来自法国、意大利、西班牙和英国的文学教授，三男一女，由于对一位名叫本诺·冯·阿琴波尔迪的德国作家产生浓厚兴趣而走到一起。四人在国际研讨会上先后相识，由于学术观点一致而成为朋友和情人。这位姓叫阿琴波尔迪的作家越来越受到世人推崇，甚至传说有望获得诺贝尔文学奖，但他本人却远离尘嚣，行踪隐秘。几位教授偶然得知他的踪迹，于是" },
+      { label: "Part 5", description: "第二卷《阿玛尔菲塔诺》，讲述因1973年智利政变而流亡的智利哲学教授奥斯卡·阿玛尔菲塔诺的故事。他的妻子疯狂地爱上一位患有精神病的诗人，从此一去不返。失意的教授带着17岁的女儿罗莎·阿玛尔菲塔诺从西班牙来到了墨西哥圣特蕾莎（作者虚构的城市）。最后，他也听说了杀害妇女的罪行，而且黑社会的手也伸向了他的女儿。" },
+      { label: "Part 6", description: "第三卷《法特》，讲述美国记者奥斯卡·法特（意为命运）去墨西哥采访拳击赛的遭遇。法特刚刚为母亲操办了简单的葬礼，情绪低落，百无聊" }
+    ],
+    themeAnalysis: "",
+    techniques: "",
     excerpts: [],
-    insights: "2666 is the final novel by Roberto Bolaño. It was released posthumously in 2004, a year following his death. It is over 1100 pages long in the original Spanish. It is divided into five parts. An English-language translation by Natasha Wimmer was published in the United States in 2008 by Farrar, Straus and Giroux and in the United Kingdom in 2009 by Picador. It is a fragmentary novel.",
-    // _sources: {
-    //   wikipedia_en: "https://en.wikipedia.org/wiki/2666"
-    // }
+    insights: "《2666》是智利作家罗贝托·波拉尼奥创作的长篇小说，首次出版于2004年。《2666》的小说由五个各自独立却又相互串联的部分组成。众多人物及故事围绕着神秘的德国作家本诺·冯·阿琴波尔迪、作者虚构的墨西哥边境城市圣特蕾莎以及在当地发生的一系列妇女谋杀案展开。该书将爱情、凶杀、战争、文学研究和创作以及悬疑等诸多元素自然地糅在一个统一体里，其创作艺术既是对20世纪下半叶各类小说技巧的高度概括，又有作者独具匠心的创造。2008年，该书被《纽约时报》和《时代》选为“年度最佳小说”，并获得美国国家书评人协会奖“最佳小说”奖。\n《2666》是智利作家罗贝托·波拉尼奥创作的长篇小说，首次出版于2004年。\n\n《2666》的小说由五个各自独立却又相互串联的部分组成。众多人物及故事围绕着神秘的德国作家本诺·冯·阿琴波尔迪、作者虚构的墨西哥边境城市圣特蕾莎以及在当地发生的一系列妇女谋杀案展开 [5]。该书将爱情、凶杀、战争、文学研究和创作以及悬疑等诸多元素自然地糅在一个统一体里，其创作艺术既是对20世纪下半叶各类小说技巧的高度概括，又有作者独具匠心的创造 [2]。\n\n2008年，该书被《纽约时报》和《时代》选为“年度最佳小说”，并获得美国国家书评人协会奖“最佳小说”奖 [3]。\n\n第一卷《文学评论家》，讲述有四位文学评论家先后都在研究同一位德国作家的故事。四位分别来自法国、意大利、西班牙和英国的文学教",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/2666", tier: "reference", fetchedAt: "2026-05-21T14:21:18.404Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+      ],
+      reliability: "medium",
+    },
   },
 
   "catch-22": {
@@ -3665,6 +3676,200 @@ export const bookDetails: Record<string, PartialWorkDetail> = {
         { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=blindness" },
         { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=blindness" },
         { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=blindness" },
+      ],
+    },
+  },
+
+  "schindlers-ark": {
+    id: "schindlers-ark",
+    characters: [
+      { name: "Schindler", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Thomas Keneally", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "German", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Oskar Schindler", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Jews", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Poland", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Holocaust", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "List", role: "角色", description: "\"schindlers-ark\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Schindler’s Ark (1982) is a historical novel by Thomas Keneally, first published in 1982 and based on the life of German industrialist Oskar Schindler, who protected Jews in Poland from being murdered during the Holocaust. It was adapted as the film Schindler’s List, directed by Steven Spielberg.",
+    plotNodes: [
+      { label: "第 1 部分", description: "Schindler’s Ark (1982) is a historical novel by Thomas Keneally, first published in 1982 and based on the life of German industrialist Oskar Schindler, who protected Jews in Poland from being murdered" }
+    ],
+    themeAnalysis: "Schindler’s Ark (1982) is a historical novel by Thomas Keneally, first published in 1982 and based on the life of German industrialist Oskar Schindler, who protected Jews in Poland from being murdered during the Holocaust. It was adapted as the film Schindler’s List, directed by Steven Spielberg.",
+    techniques: "Schindler’s Ark (1982) is a historical novel by Thomas Keneally, first published in 1982 and based on the life of German industrialist Oskar Schindler, who protected Jews in Poland from being murdered during the Holocaust. It was adapted as the film Schindler’s List, directed by Steven Spielberg.",
+    excerpts: [],
+    insights: "Schindler’s Ark (1982) is a historical novel by Thomas Keneally, first published in 1982 and based on the life of German industrialist Oskar Schindler, who protected Jews in Poland from being murdered during the Holocaust. It was adapted as the film Schindler’s List, directed by Steven Spielberg.",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/schindlers-ark", tier: "reference", fetchedAt: "2026-05-21T13:49:06.498Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=schindlers-ark" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=schindlers-ark" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=schindlers-ark" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=schindlers-ark" },
+      ],
+    },
+  },
+
+  "the-river-between": {
+    id: "the-river-between",
+    characters: [
+      { name: "The River Between", role: "角色", description: "\"the-river-between\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Ngugi", role: "角色", description: "\"the-river-between\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Thiong", role: "角色", description: "\"the-river-between\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Gikuyu", role: "角色", description: "\"the-river-between\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Kenya", role: "角色", description: "\"the-river-between\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "The River Between by Ngugi wa Thiong’o is a novel, first published in 1965, that explores the tensions between traditional Gikuyu culture and colonial influences in Kenya through the tragic love story of two young people from rival villages.",
+    plotNodes: [
+      { label: "第 1 部分", description: "The River Between by Ngugi wa Thiong’o is a novel, first published in 1965, that explores the tensions between traditional Gikuyu culture and colonial influences in Kenya through the tragic love story" }
+    ],
+    themeAnalysis: "The River Between by Ngugi wa Thiong’o is a novel, first published in 1965, that explores the tensions between traditional Gikuyu culture and colonial influences in Kenya through the tragic love story of two young people from rival villages.",
+    techniques: "The River Between by Ngugi wa Thiong’o is a novel, first published in 1965, that explores the tensions between traditional Gikuyu culture and colonial influences in Kenya through the tragic love story of two young people from rival villages.",
+    excerpts: [],
+    insights: "The River Between by Ngugi wa Thiong’o is a novel, first published in 1965, that explores the tensions between traditional Gikuyu culture and colonial influences in Kenya through the tragic love story of two young people from rival villages.",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/the-river-between", tier: "reference", fetchedAt: "2026-05-21T13:54:42.840Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=the-river-between" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=the-river-between" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=the-river-between" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=the-river-between" },
+      ],
+    },
+  },
+
+  "maru": {
+    id: "maru",
+    characters: [
+      { name: "Maru", role: "角色", description: "\"maru\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Cho Sung Choo", role: "角色", description: "\"maru\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Other articles where Maru is discussed: African literature: English: Maru (1971), a novel by Bessie Head, tells a story about the liberation of the San people from ethnic and racial oppression and about the liberation of the Tswana people of Dilepe from their prejudices and hatreds. It is a story of a flawed world…",
+    plotNodes: [
+      { label: "第 1 部分", description: "Other articles where Maru is discussed: African literature: English: Maru (1971), a novel by Bessie Head, tells a story about the liberation of the San people from ethnic and racial oppression and abo" }
+    ],
+    themeAnalysis: "Maru，本名赵成洙(Cho Sung Choo)，1997年7月28日出生，是韩国《星际争霸2》职业电竞选手，现效力于JinAir GreenWings战队。2010年，年仅13岁的Maru成为星际2职业比赛最年轻的选手，并晋级首届GSL公开赛正赛。2013年，Maru完成了OSL最年轻的王者之路。 2015年，Maru在SSL第一赛季夺得冠军。2018年，Maru获得GSL第二赛季冠军，并在雅加达亚运会电竞表演项目中夺得金牌。2023年，Maru在IEM卡托维兹站总决赛中不敌中国选手李培楠。2024年，Maru获得StarsWar11星际争霸2总冠军。\nMaru，本名赵成洙(Cho Sung Choo)，1997年7月28日出生，是韩国《星际争霸2》职业电竞选手，现效力于JinAir GreenWings战队。 [13]\n\n2010年，年仅13岁的Maru成为星际2职业比赛最年轻的选手，并晋级首届GSL公开赛正赛。 [1]2013年，Maru完成了OSL最年轻的王者之路。 2015年，Maru在SSL第一赛季夺得冠军。",
+    techniques: "Maru，本名赵成洙(Cho Sung Choo)，1997年7月28日出生，是韩国《星际争霸2》职业电竞选手，现效力于JinAir GreenWings战队。2010年，年仅13岁的Maru成为星际2职业比赛最年轻的选手，并晋级首届GSL公开赛正赛。2013年，Maru完成了OSL最年轻的王者之路。 2015年，Maru在SSL第一赛季夺得冠军。2018年，Maru获得GSL第二赛季冠军，并在雅加达亚运会电竞表演项目中夺得金牌。2023年，Maru在IEM卡托维兹站总决赛中不敌中国选手李培楠。2024年，Maru获得StarsWar11星际争霸2总冠军。\nMaru，本名赵成洙(Cho Sung Choo)，1997年7月28日出生，是韩国《星际争霸2》职业电竞选手，现效力于JinAir GreenWings战队。",
+    excerpts: [],
+    insights: "Maru，本名赵成洙(Cho Sung Choo)，1997年7月28日出生，是韩国《星际争霸2》职业电竞选手，现效力于JinAir GreenWings战队。2010年，年仅13岁的Maru成为星际2职业比赛最年轻的选手，并晋级首届GSL公开赛正赛。2013年，Maru完成了OSL最年轻的王者之路。 2015年，Maru在SSL第一赛季夺得冠军。2018年，Maru获得GSL第二赛季冠军，并在雅加达亚运会电竞表演项目中夺得金牌。2023年，Maru在IEM卡托维兹站总决赛中不敌中国选手李培楠。2024年，Maru获得StarsWar11星际争霸2总冠军。\nMaru，本名赵成洙(Cho Sung Choo)，1997年7月28日出生，是韩国《星际争霸2》职业电竞选手，现效力于JinAir GreenWings战队。",
+    sourceAttribution: {
+      sources: [
+        { label: "百度百科", url: "https://baike.baidu.com/item/maru", tier: "reference", fetchedAt: "2026-05-21T14:07:30.804Z", contributedFields: ["plotSummary", "characters", "themeAnalysis"] },
+        { label: "Project Gutenberg", url: "https://www.gutenberg.org/ebooks/45422", tier: "original_text", fetchedAt: "2026-05-21T14:07:47.809Z", contributedFields: ["insights"] },
+        { label: "Britannica", url: "https://www.britannica.com/topic/maru", tier: "reference", fetchedAt: "2026-05-21T14:07:47.809Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=maru" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=maru" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=maru" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=maru" },
+      ],
+    },
+  },
+
+  "petals-of-blood": {
+    id: "petals-of-blood",
+    characters: [
+      { name: "Other", role: "角色", description: "\"petals-of-blood\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Petals", role: "角色", description: "\"petals-of-blood\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Blood", role: "角色", description: "\"petals-of-blood\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Ngugi", role: "角色", description: "\"petals-of-blood\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Thiong", role: "角色", description: "\"petals-of-blood\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "East Africa", role: "角色", description: "\"petals-of-blood\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Other articles where Petals of Blood is discussed: Ngugi wa Thiong’o: Petals of Blood (1977) deals with social and economic problems in East Africa after independence, particularly the continued exploitation of peasants and workers by foreign business interests and a greedy indigenous bourgeoisie.",
+    plotNodes: [
+      { label: "第 1 部分", description: "Other articles where Petals of Blood is discussed: Ngugi wa Thiong’o: Petals of Blood (1977) deals with social and economic problems in East Africa after independence, particularly the continued explo" }
+    ],
+    themeAnalysis: "Other articles where Petals of Blood is discussed: Ngugi wa Thiong’o: Petals of Blood (1977) deals with social and economic problems in East Africa after independence, particularly the continued exploitation of peasants and workers by foreign business interests and a greedy indigenous bourgeoisie.",
+    techniques: "Other articles where Petals of Blood is discussed: Ngugi wa Thiong’o: Petals of Blood (1977) deals with social and economic problems in East Africa after independence, particularly the continued exploitation of peasants and workers by foreign business interests and a greedy indigenous bourgeoisie.",
+    excerpts: [],
+    insights: "Other articles where Petals of Blood is discussed: Ngugi wa Thiong’o: Petals of Blood (1977) deals with social and economic problems in East Africa after independence, particularly the continued exploitation of peasants and workers by foreign business interests and a greedy indigenous bourgeoisie.",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/petals-of-blood", tier: "reference", fetchedAt: "2026-05-21T14:18:27.109Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=petals-of-blood" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=petals-of-blood" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=petals-of-blood" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=petals-of-blood" },
+      ],
+    },
+  },
+
+  "no-longer-at-ease": {
+    id: "no-longer-at-ease",
+    characters: [
+      { name: "Other", role: "角色", description: "\"no-longer-at-ease\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "No Longer", role: "角色", description: "\"no-longer-at-ease\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Ease", role: "角色", description: "\"no-longer-at-ease\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Chinua Achebe", role: "角色", description: "\"no-longer-at-ease\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "England", role: "角色", description: "\"no-longer-at-ease\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Other articles where No Longer at Ease is discussed: Chinua Achebe: In the sequel No Longer at Ease (1960) he portrayed a newly appointed civil servant, recently returned from university study in England, who is unable to sustain the moral values he believes to be correct in the face of the obligations and temptations of his new position.",
+    plotNodes: [
+      { label: "第 1 部分", description: "Other articles where No Longer at Ease is discussed: Chinua Achebe: In the sequel No Longer at Ease (1960) he portrayed a newly appointed civil servant, recently returned from university study in Engl" }
+    ],
+    themeAnalysis: "Other articles where No Longer at Ease is discussed: Chinua Achebe: In the sequel No Longer at Ease (1960) he portrayed a newly appointed civil servant, recently returned from university study in England, who is unable to sustain the moral values he believes to be correct in the face of the obligations and temptations of his new position.",
+    techniques: "Other articles where No Longer at Ease is discussed: Chinua Achebe: In the sequel No Longer at Ease (1960) he portrayed a newly appointed civil servant, recently returned from university study in England, who is unable to sustain the moral values he believes to be correct in the face of the obligations and temptations of his new position.",
+    excerpts: [],
+    insights: "Other articles where No Longer at Ease is discussed: Chinua Achebe: In the sequel No Longer at Ease (1960) he portrayed a newly appointed civil servant, recently returned from university study in England, who is unable to sustain the moral values he believes to be correct in the face of the obligations and temptations of his new position.",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/no-longer-at-ease", tier: "reference", fetchedAt: "2026-05-21T14:20:00.937Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=no-longer-at-ease" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=no-longer-at-ease" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=no-longer-at-ease" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=no-longer-at-ease" },
+      ],
+    },
+  },
+
+  "emily-dickinson": {
+    id: "emily-dickinson",
+    characters: [
+      { name: "Emily Dickinson", role: "角色", description: "\"emily-dickinson\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "American", role: "角色", description: "\"emily-dickinson\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "With Walt Whitman", role: "角色", description: "\"emily-dickinson\" 中出现的角色。更多信息请通过搜索链接核实。" },
+      { name: "Dickinson", role: "角色", description: "\"emily-dickinson\" 中出现的角色。更多信息请通过搜索链接核实。" }
+    ],
+    plotSummary: "Emily Dickinson was an American lyric poet who lived in seclusion and commanded a singular brilliance of style and integrity of vision. With Walt Whitman, Dickinson is widely considered to be one of the two leading 19th-century American poets.",
+    plotNodes: [
+      { label: "第 1 部分", description: "Emily Dickinson was an American lyric poet who lived in seclusion and commanded a singular brilliance of style and integrity of vision. With Walt Whitman, Dickinson is widely considered to be one of t" }
+    ],
+    themeAnalysis: "Emily Dickinson was an American lyric poet who lived in seclusion and commanded a singular brilliance of style and integrity of vision. With Walt Whitman, Dickinson is widely considered to be one of the two leading 19th-century American poets.",
+    techniques: "Emily Dickinson was an American lyric poet who lived in seclusion and commanded a singular brilliance of style and integrity of vision. With Walt Whitman, Dickinson is widely considered to be one of the two leading 19th-century American poets.",
+    excerpts: [],
+    insights: "Emily Dickinson was an American lyric poet who lived in seclusion and commanded a singular brilliance of style and integrity of vision. With Walt Whitman, Dickinson is widely considered to be one of the two leading 19th-century American poets.",
+    sourceAttribution: {
+      sources: [
+        { label: "Britannica", url: "https://www.britannica.com/topic/emily-dickinson", tier: "reference", fetchedAt: "2026-05-21T14:25:06.344Z", contributedFields: ["plotSummary", "themeAnalysis"] },
+      ],
+      reliability: "fallback",
+      disclaimer: "内容基于有限公开来源提炼，建议读者通过以下搜索链接核实信息。",
+      searchLinks: [
+        { label: "Google Books 搜索", url: "https://www.google.com/search?tbm=bks&q=emily-dickinson" },
+        { label: "Wikipedia 搜索", url: "https://en.wikipedia.org/w/index.php?search=emily-dickinson" },
+        { label: "百度百科 搜索", url: "https://baike.baidu.com/search?word=emily-dickinson" },
+        { label: "豆瓣读书 搜索", url: "https://book.douban.com/subject_search?search_text=emily-dickinson" },
       ],
     },
   },

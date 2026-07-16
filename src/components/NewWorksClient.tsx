@@ -11,6 +11,7 @@ interface Article {
   source: string;
   sourceUrl: string;
   excerpt: string;
+  fullContent?: string;
   criticism: string;
   language: string;
   tags: string[];
@@ -95,9 +96,9 @@ function ArticleCard({ article, loggedIn }: { article: Article; loggedIn: boolea
       {article.excerpt && (
         <div className="mt-2">
           <p className={`font-heading-cn text-xs leading-relaxed text-stone-600 ${expanded ? "" : "line-clamp-3"}`}>
-            {article.excerpt}
+            {expanded && article.fullContent ? article.fullContent : article.excerpt}
           </p>
-          {article.excerpt.length > 200 && (
+          {((article.fullContent && article.fullContent.length > article.excerpt.length) || (!article.fullContent && article.excerpt.length > 200)) && (
             <button
               onClick={() => setExpanded(!expanded)}
               className="mt-1 text-xs text-terracotta hover:underline"

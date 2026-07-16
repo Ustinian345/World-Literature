@@ -4,176 +4,132 @@
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { awards, getWinnersByAward, getAward } from "@/lib/award-data";
-import { allWorks } from "@/lib/data";
+import { prisma } from "@/lib/prisma";
 import { HeroMosaic } from "@/components/HeroMosaic";
-import { getBookCoverImages } from "@/lib/mosaic-images";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const awards = await prisma.award.findMany({ select: { slug: true } });
   return awards.map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const award = getAward(slug);
+  const award = await prisma.award.findUnique({ where: { slug } });
   if (!award) return { title: "未找到" };
-  return {
-    title: `${award.name} — 世界文学总站`,
-    description: award.description,
-  };
+  return { title: `${award.name} — 世界文学总站`, description: award.description };
 }
 
 export default async function AwardPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const award = getAward(slug);
+
+  const [award, winners, coverUrls] = await Promise.all([
+    prisma.award.findUnique({ where: { slug } }),
+    prisma.awardWinner.findMany({
+      where: { awardSlug: slug },
+      include: { work: true },
+      orderBy: { year: "asc" },
+    }),
+    prisma.bgImage.findMany({
+      where: { status: "completed", url: { not: "" } },
+      select: { url: true },
+      take: 50,
+    }).then((imgs) =>
+      imgs.map((b) => {
+        const photoId = (b.url as string).match(/photo-([^?]+)/)?.[1];
+        return photoId ? `https://images.unsplash.com/photo-${photoId}?w=400&q=75&fit=crop` : (b.url as string);
+      })
+    ),
+  ]);
+
   if (!award) notFound();
 
-  const winners = getWinnersByAward(slug);
-  const winnerWorks = winners
-    .map((w) => {
-      const work = allWorks.find((wk) => wk.id === w.workId);
-      return { winner: w, work };
-    })
-    .filter((x) => x.work != null);
-
-  const bookImages = getBookCoverImages();
-
   return (
-    <div className="min-h-screen bg-cream">
+    <>
+      {/* 头部 */}
       <section className={`relative mt-16 overflow-hidden bg-gradient-to-br ${award.gradient}`}>
-        <HeroMosaic bookImages={bookImages} speed={50} />
-        <div className="absolute inset-0 bg-black/15 z-[5]" />
-        <div className="relative z-10 mx-auto max-w-5xl px-5 py-16 sm:py-24">
-          <Link
-            href="/awards"
-            className="inline-flex items-center gap-1.5 rounded-full bg-white/8 px-4 py-1.5 font-[system-ui] text-sm text-white/70 backdrop-blur-sm transition-all hover:bg-white/15 hover:text-white"
-          >
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-              <path d="m15 18-6-6 6-6" />
-            </svg>
-            返回奖项总览
+        <HeroMosaic bookImages={coverUrls} speed={50} />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="relative z-10 mx-auto max-w-6xl px-5 py-16 sm:py-24 text-center">
+          <Link href="/#awards" className="inline-flex items-center gap-1.5 font-[system-ui] text-sm text-white/70 transition-colors hover:text-white">
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path d="m15 18-6-6 6-6" /></svg>
+            返回首页
           </Link>
-
-          <div className="mt-8 flex items-center gap-5">
-            <span className="text-5xl">{award.icon}</span>
-            <div>
-              <h1 className="font-heading-cn text-4xl font-black text-white sm:text-5xl">
-                {award.name}
-              </h1>
-              <p className="mt-1 font-heading-en text-xl italic text-white/50">{award.nameEn}</p>
+          <div className="mt-6 flex flex-col items-center text-center">
+            <span className="text-6xl">{award.icon}</span>
+            <span className="mt-4 font-[system-ui] text-sm font-medium uppercase tracking-[0.25em] text-amber-light/90">{award.nameEn}</span>
+            <h1 className="mt-3 font-heading-cn text-4xl font-black text-white sm:text-5xl">{award.name}</h1>
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-cream/85">{award.description}</p>
+            <div className="mt-6 flex flex-wrap justify-center gap-4 font-[system-ui] text-sm text-cream/70">
+              <span>{award.flag} {award.country}</span>
+              <span>·</span>
+              <span>{award.established} 年创立</span>
+              <span>·</span>
+              <span>{award.frequency}</span>
+              {award.website && <><span>·</span><a href={award.website} target="_blank" rel="noopener" className="underline hover:text-white">官网</a></>}
             </div>
           </div>
-
-          {/* 元数据标签 */}
-          <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-full bg-white/10 px-4 py-1.5 font-[system-ui] text-sm text-white/80 backdrop-blur-sm">
-              {award.flag} {award.country}
-            </span>
-            <span className="rounded-full bg-white/10 px-4 py-1.5 font-[system-ui] text-sm text-white/80 backdrop-blur-sm">
-              {award.established}年创立
-            </span>
-            <span className="rounded-full bg-white/10 px-4 py-1.5 font-[system-ui] text-sm text-white/80 backdrop-blur-sm">
-              {award.frequency}
-            </span>
-            <span className="rounded-full bg-white/10 px-4 py-1.5 font-[system-ui] text-sm text-white/80 backdrop-blur-sm">
-              收录 {winnerWorks.length} 部获奖作品
-            </span>
-          </div>
-        </div>
-        <div className="relative z-10 h-12">
-          <svg className="absolute bottom-0 w-full" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,48 C480,16 960,64 1440,48 L1440,64 L0,64 Z" fill="var(--color-cream)" opacity="0.2" />
-          </svg>
         </div>
       </section>
 
-      {/* 奖项简介 */}
-      <section className="py-10 sm:py-16">
+      {/* 奖项介绍 */}
+      <section className="bg-cream py-14 sm:py-20">
         <div className="mx-auto max-w-5xl px-5">
-          <div className="mb-8 flex items-center gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-amber-dark text-white shadow-lg">
-              <span className="text-lg">📖</span>
+          <div className="mb-10 flex items-center gap-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-umber text-white shadow-lg"><span className="text-xl">📖</span></div>
+            <div>
+              <h2 className="font-heading-cn text-3xl font-bold text-umber">奖项介绍</h2>
+              <div className="mt-1 h-0.5 w-16 bg-gradient-to-r from-umber to-transparent" />
             </div>
-            <h2 className="font-heading-cn text-2xl font-bold text-umber">奖项简介</h2>
           </div>
-          <div className="rounded-2xl bg-book-page p-6 shadow-sm sm:p-8">
-            {award.introduction.split("\n\n").filter(Boolean).map((para, i) => (
-              <p key={i} className={`font-[system-ui] text-lg leading-relaxed text-umber-light ${i > 0 ? "mt-4" : ""}`}>
-                {para}
-              </p>
+          <div className="rounded-2xl bg-warm-white p-6 shadow-card sm:p-10">
+            {award.introduction.split("\n\n").map((p, i) => (
+              <p key={i} className={`font-body text-base leading-relaxed text-umber-light ${i > 0 ? "mt-4" : ""}`}>{p}</p>
             ))}
           </div>
         </div>
       </section>
 
       {/* 获奖作品列表 */}
-      <section className="bg-parchment/35 py-10 sm:py-16">
+      <section className="bg-parchment py-14 sm:py-20">
         <div className="mx-auto max-w-5xl px-5">
-          <div className="mb-8 flex items-center gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-terracotta text-white shadow-lg">
-              <span className="text-lg">🏅</span>
+          <div className="mb-10 flex items-center gap-4">
+            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-amber-dark text-white shadow-lg"><span className="text-xl">🏅</span></div>
+            <div>
+              <h2 className="font-heading-cn text-3xl font-bold text-umber">获奖作品</h2>
+              <p className="mt-1 text-sm text-stone-500">{winners.length} 部作品</p>
+              <div className="mt-1 h-0.5 w-16 bg-gradient-to-r from-amber-dark to-transparent" />
             </div>
-            <h2 className="font-heading-cn text-2xl font-bold text-umber">
-              收录获奖作品
-              <span className="ml-3 font-[system-ui] text-base font-normal text-umber-light/40">
-                ({winnerWorks.length} 部)
-              </span>
-            </h2>
           </div>
 
-          {winnerWorks.length === 0 ? (
-            <div className="rounded-2xl border border-sand/20 bg-warm-white/60 p-12 text-center">
-              <p className="font-[system-ui] text-base text-umber-light/40">
-                该奖项的收录作品正在建设中，敬请期待。
-              </p>
-            </div>
+          {winners.length === 0 ? (
+            <div className="py-16 text-center"><p className="font-heading-cn text-xl text-umber-light">暂无获奖作品数据</p></div>
           ) : (
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {winnerWorks.map(({ winner, work }) => (
-                <Link
-                  key={`${winner.workId}-${winner.year}`}
-                  href={`/works/${winner.workId}`}
-                  className="group block rounded-2xl border border-sand/20 bg-warm-white/80 p-5 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-lg"
-                >
-                  {/* 获奖年份徽章 */}
-                  <div className="mb-3 flex items-center gap-3">
-                    <span className={`shrink-0 rounded-full bg-gradient-to-r ${award.gradient} px-3 py-1 font-heading-en text-xs font-bold text-white shadow-sm`}>
-                      {winner.year}
-                    </span>
-                    {winner.category && (
-                      <span className="font-[system-ui] text-xs text-umber-light/40 truncate">
-                        {winner.category}
-                      </span>
-                    )}
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {winners.map(({ work, year, category }) => (
+                <Link key={`${work.id}-${year}`} href={`/works/${work.id}`} className="group flex flex-col overflow-hidden rounded-xl border border-sand/50 bg-warm-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+                  <div className={`flex h-32 items-center justify-center bg-gradient-to-br ${work.gradient}`}>
+                    <span className="font-heading-cn text-xl font-bold text-white/85">{work.title}</span>
+                    {work.titleEn && <span className="absolute bottom-2 right-3 font-heading-en text-[10px] italic text-white/50">{work.titleEn}</span>}
                   </div>
-
-                  {/* 书名 */}
-                  <h3 className="font-heading-cn text-lg font-bold text-umber group-hover:text-terracotta transition-colors">
-                    {work!.title}
-                  </h3>
-                  {work!.titleEn && (
-                    <p className="mt-0.5 font-heading-en text-sm italic text-umber-light/30 truncate">
-                      {work!.titleEn}
-                    </p>
-                  )}
-
-                  {/* 作者 + 标签 */}
-                  <div className="mt-3 flex flex-wrap items-center gap-2">
-                    <span className="font-[system-ui] text-sm text-umber-light/50">
-                      {work!.flag} {work!.author}
-                    </span>
-                    <span className="text-umber-light/20">·</span>
-                    <span className="font-[system-ui] text-sm text-umber-light/40">{work!.era.replace(" (—", " — ").replace(")", "")}</span>
+                  <div className="flex flex-1 flex-col p-4">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <span className="text-base">{work.flag}</span>
+                      <span className="font-[system-ui] text-[11px] font-medium text-amber-dark">{work.country}</span>
+                    </div>
+                    <h3 className="mt-1.5 font-heading-cn text-lg font-bold text-umber">{work.title}</h3>
+                    <p className="mt-0.5 font-body text-sm italic text-umber-light">{work.author}</p>
+                    <div className="mt-3 flex items-center gap-3 border-t border-sand/40 pt-2.5">
+                      <span className="rounded-full bg-amber/10 px-2 py-0.5 font-[system-ui] text-[10px] font-medium text-amber-dark">{year}</span>
+                      {category && <span className="font-[system-ui] text-[10px] text-umber-light/60">{category}</span>}
+                      <span className="ml-auto font-[system-ui] text-[10px] text-terracotta/70 group-hover:text-terracotta">查看详情 →</span>
+                    </div>
                   </div>
-
-                  {/* 渐变指示条 */}
-                  <div className={`mt-3 h-0.5 w-0 rounded-full bg-gradient-to-r ${award.gradient} transition-all duration-500 group-hover:w-full`} />
                 </Link>
               ))}
             </div>
           )}
         </div>
       </section>
-    </div>
+    </>
   );
 }

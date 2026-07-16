@@ -6,6 +6,7 @@ interface Topic {
   perspectives: string;
   insight: string;
   source_links: string[];
+  source_type?: string;
 }
 
 interface DailyTrends {
@@ -97,7 +98,7 @@ export default async function TrendingTopics() {
 
         {/* 底部提示 */}
         <p className="mt-6 text-center font-heading-cn text-xs text-stone-400">
-          📡 数据来自 Reddit r/books, r/literature, Hacker News, LitHub RSS
+          📡 数据来自 Reddit (r/books, r/literature, r/printSF), Hacker News, LitHub, The Guardian, NYT, WWB, 端传媒
         </p>
       </div>
     </section>

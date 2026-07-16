@@ -7,19 +7,23 @@ datasource db {
   provider = "postgresql"
 }
 
+// ==============================
+// 用户体系
+// ==============================
+
 model User {
-  id           String     @id @default(cuid())
-  email        String     @unique
-  name         String
-  passwordHash String     @default("")
-  avatar       String?
-  provider     String     @default("credentials")
-  preferences  Json?
-  createdAt    DateTime   @default(now())
-  updatedAt    DateTime   @updatedAt
-  bookmarks    Bookmark[]
-  favoriteTrends      FavoriteTrend[]
-  favoriteArticles    FavoriteArticle[]
+  id                   String               @id @default(cuid())
+  email                String               @unique
+  name                 String
+  passwordHash         String               @default("")
+  avatar               String?
+  provider             String               @default("credentials")
+  preferences          Json?
+  createdAt            DateTime             @default(now())
+  updatedAt            DateTime             @updatedAt
+  bookmarks            Bookmark[]
+  favoriteTrends       FavoriteTrend[]
+  favoriteArticles     FavoriteArticle[]
   dailyRecommendations DailyRecommendation[]
 }
 
@@ -69,4 +73,180 @@ model DailyRecommendation {
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, date])
+}
+
+// ==============================
+// 作品核心数据（替代 lib/data.ts + lib/works/*.ts）
+// ==============================
+
+model Work {
+  id        String   @id
+  title     String
+  titleEn   String
+  author    String
+  country   String
+  flag      String   @default("")
+  continent String   // asia | europe | africa | americas | oceania
+  era       String
+  genres    Json     @default("[]") // Genre[]
+  themes    Json     @default("[]") // Theme[]
+  excerpt   String   @default("") @db.Text
+  gradient  String   @default("")
+  year      Int?
+  featured  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  detail              WorkDetail?
+  characters          WorkCharacter[]
+  bgImage             BgImage?
+  awardWinners        AwardWinner[]
+
+  @@index([continent])
+  @@index([featured])
+  @@index([author])
+}
+
+// ==============================
+// 作品深度详情（替代 lib/book-data.ts 中的 plotSummary/themeAnalysis/excerpts 等）
+// 与 Work 为 1:1 关系
+// ==============================
+
+model WorkDetail {
+  id                String   @id // 与 Work.id 相同
+  workId            String   @unique
+  work              Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
+
+  /// 作品内嵌人物（取自 book-data.ts 的 characters 字段）
+  characters        Json     @default("[]")
+  plotSummary       String   @default("") @db.Text
+  plotNodes         Json     @default("[]") // { label: string; description: string }[]
+  themeAnalysis     String   @default("") @db.Text
+  techniques        String   @default("") @db.Text
+  excerpts          Json     @default("[]") // { quote: string; context: string }[]
+  insights          String   @default("") @db.Text
+
+  /// 内容来源归因
+  sourceAttribution Json?
+
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}
+
+// ==============================
+// 扩展人物数据库（替代 lib/character-data.ts 的 allCharacters）
+// ==============================
+
+model WorkCharacter {
+  id          String   @id @default(cuid())
+  workId      String
+  work        Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
+  name        String
+  role        String
+  description String   @db.Text
+
+  @@index([workId])
+}
+
+// ==============================
+// 书籍背景图片（替代 data/bg-images.json → mosaic-images.ts 的运行时读取）
+// ==============================
+
+model BgImage {
+  id              String   @id @default(cuid())
+  workId          String   @unique
+  work            Work     @relation(fields: [workId], references: [id], onDelete: Cascade)
+  url             String   @default("")
+  status          String   @default("pending") // completed | failed | pending
+  source          String   @default("unsplash")
+  photographer    String   @default("")
+  photographerUrl String   @default("")
+  searchQuery     String   @default("")
+  fetchedAt       DateTime?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+// ==============================
+// 文学奖（替代 lib/award-data.ts）
+// ==============================
+
+model Award {
+  slug         String        @id
+  name         String
+  nameEn       String
+  description  String        @db.Text
+  established  Int
+  country      String
+  flag         String
+  frequency    String
+  category     String        // international | chinese
+  gradient     String
+  icon         String
+  website      String?
+  introduction String        @db.Text
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  winners      AwardWinner[]
+}
+
+model AwardWinner {
+  id        String @id @default(cuid())
+  workId    String
+  awardSlug String
+  year      Int
+  category  String?
+
+  work      Work  @relation(fields: [workId], references: [id], onDelete: Cascade)
+  award     Award @relation(fields: [awardSlug], references: [slug], onDelete: Cascade)
+
+  @@unique([workId, awardSlug, year])
+  @@index([awardSlug])
+}
+
+// ==============================
+// 每日文学趋势（替代 data/daily-trends.json）
+// ==============================
+
+model DailyTrend {
+  id                 String   @id @default(cuid())
+  date               String
+  title              String
+  background         String   @db.Text
+  perspectives       String   @db.Text
+  insight            String   @db.Text
+  sourceLinks        Json     @default("[]") // string[]
+  sourceType         String?
+  generatedAt        DateTime
+  totalPostsAnalyzed Int      @default(0)
+  createdAt          DateTime @default(now())
+
+  @@index([date])
+}
+
+// ==============================
+// 今日新文（替代 data/daily-new-works.json + data/new-works-archive/）
+// ==============================
+
+model DailyNewWork {
+  id          String   @id
+  title       String
+  author      String
+  source      String
+  sourceUrl   String   @default("")
+  excerpt     String   @db.Text
+  fullContent String?  @db.Text
+  criticism   String?
+  language    String
+  tags        Json     @default("[]") // string[]
+  type        String   @default("criticism")
+  publishedAt DateTime
+  collectedAt DateTime
+  date        String
+
+  createdAt   DateTime @default(now())
+
+  @@index([date])
+  @@index([language])
 }

@@ -1359,7 +1359,7 @@ async function fetchLiteratureData(
   let bookAuthor = searchConfig?.authorEn || "";
 
   try {
-    const { works } = (await import("../src/lib/data")) as {
+    const { works } = (await import("../src/lib/data.ts.bak")) as {
       works: Array<{ id: string; title: string; author: string; titleEn: string }>;
     };
     const found = works.find((w) => w.id === bookId);
@@ -2298,7 +2298,7 @@ async function main() {
     let bookAuthor = searchConfig?.authorEn || "";
 
     try {
-      const { works } = (await import("../src/lib/data")) as {
+      const { works } = (await import("../src/lib/data.ts.bak")) as {
         works: Array<{ id: string; title: string; author: string; titleEn: string }>;
       };
       const found = works.find((w) => w.id === bookId);
@@ -2424,7 +2424,7 @@ async function main() {
   // 检查是否已有数据（非 force 模式）
   if (!forceMode) {
     try {
-      const { bookDetails } = (await import("../src/lib/book-data")) as {
+      const { bookDetails } = (await import("../src/lib/book-data.ts.bak")) as {
         bookDetails: Record<string, unknown>;
       };
       const existing = bookDetails[bookId];

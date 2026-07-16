@@ -1,11 +1,14 @@
 import { PrismaClient } from "../../.prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
-import { Pool } from "pg";
+import { PrismaNeon } from "@prisma/adapter-neon";
+import { neonConfig } from "@neondatabase/serverless";
 
 const globalForPrisma = globalThis as unknown as {
   prisma: PrismaClient | undefined;
-  pool: Pool | undefined;
 };
+
+// Neon 使用 WebSocket 连接（走 HTTPS，不依赖 TCP 5432 端口）
+neonConfig.useSecureWebSocket = true;
+neonConfig.pipelineTLS = true;
 
 function createPrismaClient(): PrismaClient {
   const connectionString = process.env.DATABASE_URL;
@@ -13,8 +16,7 @@ function createPrismaClient(): PrismaClient {
     throw new Error("DATABASE_URL environment variable is not set");
   }
 
-  const pool = new Pool({ connectionString, max: 5 });
-  const adapter = new PrismaPg(pool);
+  const adapter = new PrismaNeon({ connectionString });
   return new PrismaClient({ adapter });
 }
 

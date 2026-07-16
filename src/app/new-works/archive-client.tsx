@@ -11,6 +11,7 @@ interface Article {
   source: string;
   sourceUrl: string;
   excerpt: string;
+  fullContent?: string;
   language: string;
   tags: string[];
   publishedAt: string;
@@ -152,8 +153,8 @@ function ArticleRow({ article, langLabel, langColor }: { article: Article; langL
       </div>
       {article.excerpt && (
         <div className="mt-2">
-          <p className={`text-xs leading-relaxed text-stone-600 ${expanded ? "" : "line-clamp-3"}`}>{article.excerpt}</p>
-          {article.excerpt.length > 200 && (
+          <p className={`text-xs leading-relaxed text-stone-600 ${expanded ? "" : "line-clamp-3"}`}>{expanded && article.fullContent ? article.fullContent : article.excerpt}</p>
+          {((article.fullContent && article.fullContent.length > article.excerpt.length) || (!article.fullContent && article.excerpt.length > 200)) && (
             <button onClick={() => setExpanded(!expanded)} className="mt-1 text-xs text-terracotta hover:underline">
               {expanded ? "收起" : "展开全文"}
             </button>

@@ -18,11 +18,15 @@ export async function GET() {
     return NextResponse.json({ recommendation: null });
   }
 
+  // 附带作品数据，消除前端 allWorks 导入
+  const book = await prisma.work.findUnique({ where: { id: rec.bookId } });
+
   return NextResponse.json({
     recommendation: {
       bookId: rec.bookId,
       date: rec.date,
       reason: rec.reason,
+      book,
     },
   });
 }

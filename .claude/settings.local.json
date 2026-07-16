@@ -67,7 +67,26 @@
       "Bash(rm src/app/api/profile/update/route.ts)",
       "Bash(rm -rf src/app/api/profile)",
       "Bash(npx prisma *)",
-      "Bash(DATABASE_URL=\"file:./prisma/dev.db\" npx prisma migrate dev --name add-bookmarks)"
+      "Bash(DATABASE_URL=\"file:./prisma/dev.db\" npx prisma migrate dev --name add-bookmarks)",
+      "Bash(python3 -m json.tool)",
+      "Bash(taskkill /PID 24656 /F)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //F //PID 24656)",
+      "Bash(python3 -c ' *)",
+      "Bash(taskkill //F //IM \"node.exe\")",
+      "Bash(git reset *)",
+      "Bash(grep -rn \"from.*\\\\.\\\\.\\\\/.*data\\\\/\" src/ --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(grep -rn \"from.*@/lib/book-data\\\\|from.*\\\\.\\\\/book-data\\\\|from.*@/lib/works/\" src/app/ --include=\"*.tsx\" --include=\"*.ts\")",
+      "Bash(grep -rn \"^import.*from \\\\\"@/lib/\\\\|^import.*from \\\\\"\\\\.\\\\./lib\\\\|^import.*from \\\\\"\\\\.\\\\.\\\\/lib\" src/app/ --include=\"*.tsx\")",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/data\"|..\\\\/src\\\\/lib\\\\/data.ts.bak\"|g' scripts/batch-fetch-bg.ts)",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/book-data\"|..\\\\/src\\\\/lib\\\\/book-data.ts.bak\"|g' scripts/batch-fetch-bg.ts)",
+      "Bash(sed -i 's|bg-images.json\"|bg-images.json.bak\"|g' scripts/batch-fetch-bg.ts)",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/data\"\\)|..\\\\/src\\\\/lib\\\\/data.ts.bak\"\\)|g' scripts/fetch-literature-data.ts)",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/book-data\"\\)|..\\\\/src\\\\/lib\\\\/book-data.ts.bak\"\\)|g' scripts/fetch-literature-data.ts)",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/data\"\\)|..\\\\/src\\\\/lib\\\\/data.ts.bak\"\\)|g' scripts/scan-completeness.ts)",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/book-data\"\\)|..\\\\/src\\\\/lib\\\\/book-data.ts.bak\"\\)|g' scripts/scan-completeness.ts)",
+      "Bash(sed -i 's|..\\\\/src\\\\/lib\\\\/award-data\"\\)|..\\\\/src\\\\/lib\\\\/award-data.ts.bak\"\\)|g' scripts/scan-completeness.ts)"
     ]
   }
 }

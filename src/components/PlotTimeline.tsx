@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { PlotNode } from "@/lib/book-data";
+import type { PlotNode } from "@/lib/book-data-types";
 
 export function PlotTimeline({ nodes, gradient }: { nodes: PlotNode[]; gradient: string }) {
   const [visibleNodes, setVisibleNodes] = useState<Set<number>>(new Set([0]));

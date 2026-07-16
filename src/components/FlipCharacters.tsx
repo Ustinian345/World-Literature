@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import type { Character } from "@/lib/book-data";
+import type { Character } from "@/lib/book-data-types";
 
 export function FlipCharacters({ characters }: { characters: Character[] }) {
   const [flipped, setFlipped] = useState<Set<number>>(new Set());

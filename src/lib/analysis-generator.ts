@@ -4,8 +4,8 @@
 // 大幅扩充模板池以消除"公式化"感
 // ================================================================
 
-import type { Work } from "./data";
-import type { WorkDetail, PlotNode, Excerpt, Character } from "./book-data";
+import type { Work } from "./data-types";
+import type { WorkDetail, PlotNode, Excerpt, Character } from "./book-data-types";
 
 /* ---------- 辅助 ---------- */
 

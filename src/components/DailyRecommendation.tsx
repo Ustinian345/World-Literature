@@ -4,17 +4,31 @@ import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { allWorks } from "@/lib/data";
+
+interface RecBook {
+  id: string;
+  title: string;
+  titleEn: string;
+  author: string;
+  country: string;
+  flag: string;
+  gradient: string;
+  genres: unknown;
+  themes: unknown;
+  continent: string;
+  era: string;
+  excerpt: string;
+}
 
 export default function DailyRecommendation() {
   const { data: session } = useSession();
   const router = useRouter();
   const prefs = session?.user?.preferences;
-  const hasPrefs = prefs && prefs.length > 0;
+  const hasPrefs = prefs && (prefs as unknown[]).length > 0;
 
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
-  const [rec, setRec] = useState<{ bookId: string; date: string; reason: string } | null>(null);
+  const [rec, setRec] = useState<{ bookId: string; date: string; reason: string; book?: RecBook } | null>(null);
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -29,7 +43,6 @@ export default function DailyRecommendation() {
           setRec(d.recommendation);
           setLoading(false);
         } else {
-          // 还没有今天的推荐，触发生成
           setGenerating(true);
           return fetch("/api/recommendation/daily/generate", { method: "POST" });
         }
@@ -43,8 +56,8 @@ export default function DailyRecommendation() {
       .finally(() => { setLoading(false); setGenerating(false); });
   }, [session?.user?.id, hasPrefs]);
 
-  const book = rec ? allWorks.find((w) => w.id === rec.bookId) : null;
-  const matchedTags = book && prefs ? computeTags(book).filter((t) => prefs.includes(t)) : [];
+  const book = rec?.book ?? null;
+  const matchedTags = book && prefs ? computeTags(book).filter((t) => (prefs as string[]).includes(t)) : [];
 
   return (
     <section className="bg-cream py-12 sm:py-16">
@@ -59,7 +72,7 @@ export default function DailyRecommendation() {
           </div>
         </div>
 
-        {/* 未登录 / 未设置偏好 → 占位卡片 */}
+        {/* 未登录 / 未设置偏好 */}
         {(!session || !hasPrefs) && !loading && (
           <div className="rounded-2xl border border-dashed border-amber/30 bg-amber/5 p-10 text-center">
             <div className="text-4xl mb-4">📚</div>
@@ -115,28 +128,21 @@ export default function DailyRecommendation() {
                 <h3 className="font-heading-cn text-xl font-bold text-umber group-hover:text-terracotta transition-colors">{book.title}</h3>
                 <p className="mt-1 font-body text-sm italic text-umber-light">{book.author} · {book.country}</p>
 
-                {/* 匹配的偏好标签（高亮） */}
                 {matchedTags.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {matchedTags.map((tag) => (
-                      <span key={tag} className="rounded-full bg-terracotta/15 px-2.5 py-0.5 font-heading-cn text-xs text-terracotta font-medium">
-                        {tag}
-                      </span>
+                      <span key={tag} className="rounded-full bg-terracotta/15 px-2.5 py-0.5 font-heading-cn text-xs text-terracotta font-medium">{tag}</span>
                     ))}
                   </div>
                 )}
 
                 <p className="mt-3 font-heading-cn text-sm leading-relaxed text-stone-600">{rec.reason}</p>
 
-                <span className="mt-3 inline-flex items-center gap-1 self-start rounded-full bg-terracotta/10 px-3 py-1 font-heading-cn text-xs text-terracotta">
-                  根据你的偏好推荐
-                </span>
+                <span className="mt-3 inline-flex items-center gap-1 self-start rounded-full bg-terracotta/10 px-3 py-1 font-heading-cn text-xs text-terracotta">根据你的偏好推荐</span>
 
                 <span className="mt-4 inline-flex items-center gap-1 font-heading-cn text-sm font-medium text-terracotta group-hover:underline">
                   查看详情
-                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                    <path d="m9 18 6-6-6-6" />
-                  </svg>
+                  <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5"><path d="m9 18 6-6-6-6" /></svg>
                 </span>
               </div>
             </div>
@@ -147,9 +153,11 @@ export default function DailyRecommendation() {
   );
 }
 
-function computeTags(w: (typeof allWorks)[number]): string[] {
+function computeTags(w: RecBook): string[] {
+  const genres = (w.genres as string[]) ?? [];
+  const themes = (w.themes as string[]) ?? [];
   const tags: string[] = [];
-  for (const g of w.genre) {
+  for (const g of genres) {
     if (g === "诗歌") tags.push("诗歌散文");
     if (g === "小说") tags.push("古典文学");
     if (g === "戏剧") tags.push("古典文学");
@@ -157,7 +165,7 @@ function computeTags(w: (typeof allWorks)[number]): string[] {
     if (g === "散文/随笔") tags.push("诗歌散文");
     if (g === "哲学") tags.push("哲学文学");
   }
-  for (const t of w.themes) {
+  for (const t of themes) {
     if (t === "爱情") tags.push("爱情小说");
     if (t === "战争") tags.push("战争文学");
     if (t === "历史") tags.push("历史小说");

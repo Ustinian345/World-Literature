@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useSession, signOut } from "next-auth/react";
 import Link from "next/link";
-import { allWorks } from "@/lib/data";
+// 不再导入 allWorks — 通过 /api/works/batch 按需获取
 
 type MainTab = "bookshelf" | "settings";
 type BookshelfSubTab = "books" | "trends" | "articles";
@@ -95,10 +95,25 @@ function SavedBooksTab() {
   const [bookmarkIds, setBookmarkIds] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const [books, setBooks] = useState<any[]>([]);
+
   const fetchBookmarks = () => {
+    setLoading(true);
     fetch("/api/bookmarks")
       .then((r) => r.json())
-      .then((d) => setBookmarkIds(d.bookmarks || []))
+      .then((d) => {
+        const ids: string[] = d.bookmarks || [];
+        setBookmarkIds(ids);
+        if (ids.length > 0) {
+          return fetch("/api/works/batch", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ids }),
+          }).then((r) => r.json()).then((data) => setBooks(data.works || []));
+        } else {
+          setBooks([]);
+        }
+      })
       .catch(() => {})
       .finally(() => setLoading(false));
   };
@@ -119,7 +134,7 @@ function SavedBooksTab() {
     );
   }
 
-  const books = bookmarkIds.map((id) => allWorks.find((w) => w.id === id)).filter(Boolean);
+  // books 已通过 /api/works/batch 获取
 
   return (
     <div className="space-y-3">
